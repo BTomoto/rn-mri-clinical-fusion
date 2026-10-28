@@ -34,3 +34,8 @@ node_modules/
 /reports/imaging_qc_workbook_input.json
 /outputs/imaging-qc-20261028/preview_*.png
 /outputs/imaging-qc-20261028/*.inspect.ndjson
+/data/metadata/baseline_qc/mask_series_members.jsonl
+/data/processed/cohort_dicom_file_qc.csv
+/reports/baseline_qc_workbook_input.json
+/outputs/baseline-qc-20261028/preview_*.png
+/outputs/baseline-qc-20261028/*.inspect.ndjson

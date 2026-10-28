@@ -7,7 +7,7 @@
   "downloaded_uncompressed_bytes": 18893573108,
   "patients_with_downloaded_mri": 63,
   "patient_date_pairs_with_downloaded_mri": 111,
-  "notebooks_executed": 7,
+  "notebooks_executed": 8,
   "prediction_model_fitted": false,
   "outcome_adjudication_complete": false,
   "image_quality_and_lesion_segmentation_complete": false,
@@ -27,7 +27,7 @@
   "complete_image_qc": false,
   "verified_non_events": 0,
   "models_fitted": false,
-  "notebook_execution_method": "00-04 ordinary Python executor; 05-06 in-process ipykernel via Jupyter client",
+  "notebook_execution_method": "00-04 ordinary Python executor; 05-07 in-process ipykernel via Jupyter client",
   "github_main_project_file_count_previous_commit": 82,
   "previous_figshare_snapshot": {
     "recorded_rn_times": 32,
@@ -52,7 +52,8 @@
   "additional_baseline_imaging_studies": 4,
   "notebook_kernel_validation_completed": [
     "notebooks/05_endpoint_versions_and_followup.ipynb",
-    "notebooks/06_additional_baseline_imaging_qc.ipynb"
+    "notebooks/06_additional_baseline_imaging_qc.ipynb",
+    "notebooks/07_baseline_mask_series_qc.ipynb"
   ],
   "notebook_kernel_execution_report": "reports/kernel_execution.json",
   "separate_kernel_server_tested": false,
@@ -64,5 +65,13 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Extend all-file QC to archived baseline stacks; verify sequence/contrast and endpoint evidence before prediction"
+  "next_work_item": "Investigate 12 mask-grid discrepancies; restore and audit corresponding FLAIR series; verify public endpoint evidence before prediction",
+  "baseline_mask_series_all_file_technical_audit_complete": true,
+  "baseline_mask_series_dicom_files": 6936,
+  "baseline_mask_series_directories": 48,
+  "baseline_mask_grid_equivalent_lesions": 42,
+  "baseline_mask_grid_review_pending_lesions": 12,
+  "baseline_mask_series_constant_slices": 3,
+  "baseline_mask_series_spacing_tag_discrepancies": 26,
+  "baseline_mask_series_qc_report": "reports/baseline_mask_series_qc_20261028.md"
 }

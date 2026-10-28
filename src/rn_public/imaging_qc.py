@@ -1,6 +1,21 @@
 """Conservative single-frame DICOM geometry checks; never adjudicate RN."""
 import itertools
+import re
 import numpy as np
+
+
+def resolve_series_name(mask_name, available):
+    """Resolve only exact names or unique punctuation/case variants.
+
+    Preserve both names; numerical grid checks must independently verify mapping.
+    Never choose a fuzzy match or one of several normalized candidates.
+    """
+    available=set(available)
+    if mask_name in available:return mask_name,'exact'
+    canonical=lambda name:re.sub(r'[^a-z0-9]','',name.casefold())
+    choices=[name for name in available if canonical(name)==canonical(mask_name)]
+    if len(choices)!=1:raise ValueError(f'Unresolved or ambiguous series name: {mask_name}: {choices}')
+    return choices[0],'unique_punctuation_case_variant'
 
 
 def stack_geometry(positions, orientations, spacings, shape):
@@ -37,7 +52,9 @@ def stack_geometry(positions, orientations, spacings, shape):
     if result['duplicate_plane_count']:
         result['reason'] = 'repeated_planes_do_not_stack'
         return result
-    delta = np.median(np.diff(p, axis=0), axis=0)
+    # NiBabel's multi-slice affine: the first and last plane anchor the volume.
+    # A median incremental vector can accumulate scanner rounding errors.
+    delta = (p[-1]-p[0])/(len(p)-1)
     residual = float(np.max(np.linalg.norm(p-(p[0]+np.arange(len(p))[:, None]*delta), axis=1)))
     result.update(max_step_deviation_mm=float(np.max(np.abs(gaps-step))),
                   affine_position_residual_mm=residual)
@@ -51,6 +68,7 @@ def stack_geometry(positions, orientations, spacings, shape):
     a[:3, 3] = p[0]
     a = np.diag([-1., -1., 1., 1.])@a  # DICOM LPS -> NIfTI RAS
     result.update(geometry_regular=1, reason='regular_stack', affine_ras=a,
+                  affine_step_estimator='first_last_position_difference_over_intervals',
                   order=order, volume_shape=(int(shape[1]), int(shape[0]), len(p)))
     return result
 
@@ -72,10 +90,13 @@ def grid_alignment(mask_shape, mask_affine, image_shape, image_affine, tolerance
     mapped = (t@homogeneous.T).T[:, :3]
     exact = (rounded@homogeneous.T).T[:, :3]
     error = float(np.max(abs(mapped-exact)))
+    error_mm=float(np.max(np.linalg.norm((image_affine[:3,:3]@(mapped-exact).T).T,axis=1)))
     covers_grid = (np.array_equal(exact.min(axis=0), np.zeros(3))
                    and np.array_equal(exact.max(axis=0), np.asarray(image_shape)-1))
     ok = bool(signed_permutation and covers_grid and error <= tolerance_voxels)
     return dict(grid_equivalent=int(ok), max_corner_error_voxels=error,
+                max_corner_error_mm=error_mm,
+                signed_permutation_and_extent_match=int(signed_permutation and covers_grid),
                 tolerance_voxels=tolerance_voxels, mask_to_image_voxel_transform=t.tolist(),
                 integer_reindex_transform=rounded.astype(int).tolist() if ok else None,
                 interpolation_performed=False, registration_performed=False)

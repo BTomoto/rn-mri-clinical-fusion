@@ -1,0 +1,78 @@
+{
+  "scope": "complete series named by current baseline masks",
+  "lesions": 54,
+  "patients": 41,
+  "studies": 48,
+  "series_directories": 48,
+  "dicom_files": 6936,
+  "bytes": 3187195004,
+  "restored_from_parts": 6816,
+  "verified_archive_parts": [
+    {
+      "filename": "RN_MRI_part_01_of_16.zip",
+      "sha256": "8caf5f3fcb240bf81c0f50a72458ef771a47036f694d4c692535a99560a8d226"
+    },
+    {
+      "filename": "RN_MRI_part_02_of_16.zip",
+      "sha256": "324baeb1217b068acc2cb5c3bce22b2f96b0a0ca7a60f683a5cab0d0272ea964"
+    },
+    {
+      "filename": "RN_MRI_part_03_of_16.zip",
+      "sha256": "71c01698fe125c52ce2d56a671ba8dc1232355d5be700a7c933ce2f7ba451a4e"
+    },
+    {
+      "filename": "RN_MRI_part_04_of_16.zip",
+      "sha256": "4584336706741e92abc899883b922f5d79229bca65dca5eeab8dc238d63aa716"
+    },
+    {
+      "filename": "RN_MRI_part_05_of_16.zip",
+      "sha256": "9b041981c1e18a8f0981fdad960f36bdc1438fdc7243b0ba38188b404f07b7c6"
+    },
+    {
+      "filename": "RN_MRI_part_06_of_16.zip",
+      "sha256": "77bb0d9322ca927deb930d2662e9c21f2c608f96f58674324e011779e53a164f"
+    },
+    {
+      "filename": "RN_MRI_part_07_of_16.zip",
+      "sha256": "09444cdd57c71608b832e2069a5f0284262c677c0064ce5145c8a9173e4008c1"
+    },
+    {
+      "filename": "RN_MRI_part_08_of_16.zip",
+      "sha256": "9fac0bbccac0d1f6c5e7e00883ea461927c8ad41a18c5c3fbb27b1e5b9353ebd"
+    },
+    {
+      "filename": "RN_MRI_part_09_of_16.zip",
+      "sha256": "58dac12b71d75cfc2196dd72bb7877b876f6ffe5aa6925fc2291a460ba6350bb"
+    },
+    {
+      "filename": "RN_MRI_part_10_of_16.zip",
+      "sha256": "046f4212f0d9122d0466d1508e0313e73cbcec7d561e4a550a57f716a456f6e1"
+    },
+    {
+      "filename": "RN_MRI_part_11_of_16.zip",
+      "sha256": "364102b580f5a9a6828e6da5d7507017c9e1b636b83c271439d6706dc7192858"
+    },
+    {
+      "filename": "RN_MRI_part_12_of_16.zip",
+      "sha256": "5282713faa6894818ae9ee4c6500df93b41db7231f05f12a7188e6e895002e30"
+    },
+    {
+      "filename": "RN_MRI_part_13_of_16.zip",
+      "sha256": "11696577abca535eae753fc572c70ebeb80265c9c3450e436b156c1719ce7356"
+    },
+    {
+      "filename": "RN_MRI_part_14_of_16.zip",
+      "sha256": "5d64cade96e95e00c98da7cbb200744a1e4c3def3d107ffa1aab031da5fbd48f"
+    },
+    {
+      "filename": "RN_MRI_part_15_of_16.zip",
+      "sha256": "e794a3576a98d7f62f5c01a57058b144a3146caed30224cfbbf513e9cbc592d9"
+    },
+    {
+      "filename": "RN_MRI_part_16_of_16.zip",
+      "sha256": "c93d27af27ce21da1708fc59067897da855141b39cb4eca7d642246855ad807d"
+    }
+  ],
+  "all_selected_file_sha256_match": true,
+  "all_project_selected_mri_restored": false
+}

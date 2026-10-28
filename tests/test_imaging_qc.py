@@ -3,10 +3,14 @@ from pathlib import Path
 import sys
 import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
-from rn_public.imaging_qc import stack_geometry, grid_alignment, sequence_hints
+from rn_public.imaging_qc import stack_geometry, grid_alignment, sequence_hints, resolve_series_name
 
 
 class ImagingQCTest(unittest.TestCase):
+    def test_name_variants_require_unique_non_fuzzy_match(self):
+        self.assertEqual(resolve_series_name('AXIAL_+C',['AXIAL_C','FLAIR']),('AXIAL_C','unique_punctuation_case_variant'))
+        with self.assertRaises(ValueError):resolve_series_name('AXIAL_+C',['AXIAL_C','AXIAL-C'])
+        with self.assertRaises(ValueError):resolve_series_name('AXIAL_+C',['AXIAL_PRE'])
     def geometry(self, positions):
         n=len(positions)
         return stack_geometry(positions, [[1,0,0,0,1,0]]*n, [[2,3]]*n, (7,9))
@@ -21,6 +25,12 @@ class ImagingQCTest(unittest.TestCase):
     def test_repeated_planes_and_missing_planes_rejected(self):
         self.assertEqual(self.geometry([[0,0,z] for z in [0,1,1,2]])['geometry_regular'],0)
         self.assertEqual(self.geometry([[0,0,z] for z in [0,1,2,4]])['geometry_regular'],0)
+
+    def test_affine_anchors_last_plane_despite_increment_rounding(self):
+        g=self.geometry([[0,0,z] for z in [0,1.0004,2.0001,3.0003]])
+        self.assertEqual(g['geometry_regular'],1)
+        self.assertAlmostEqual(g['affine_ras'][2,2],1.0001)
+        self.assertAlmostEqual((g['affine_ras']@np.array([0,0,3,1]))[2],3.0003)
 
     def test_variable_orientation_rejected(self):
         g=stack_geometry([[0,0,0],[0,0,1]],[[1,0,0,0,1,0],[0,1,0,1,0,0]],[[1,1]]*2,(4,4))

@@ -1,6 +1,7 @@
 """All-file technical QC of the four added baseline studies; no RN labels."""
 from pathlib import Path
 import collections
+import gzip
 import hashlib
 import importlib.metadata
 import json
@@ -17,7 +18,7 @@ import matplotlib.pyplot as plt
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from rn_public.imaging_qc import stack_geometry, grid_alignment, sequence_hints
+from rn_public.imaging_qc import stack_geometry, grid_alignment, sequence_hints, resolve_series_name
 
 
 def source_path(record):
@@ -34,9 +35,13 @@ def vector(d,tag,n):
     except (AttributeError,TypeError,ValueError):return [float('nan')]*n
 
 
-def run():
-    manifest=ROOT/'data/metadata/endpoint_followup/additional_baseline_imaging.jsonl'
-    entries=[json.loads(line) for line in manifest.read_text().splitlines()]
+def run(manifest_relative='data/metadata/endpoint_followup/additional_baseline_imaging.jsonl',
+        prefix='additional', output_subdir='imaging-qc-20261028',
+        scope='all files in four added baseline studies only',
+        mask_candidates_only=False, write_overlays=True):
+    manifest=ROOT/manifest_relative
+    manifest_bytes=manifest.read_bytes() if manifest.is_file() else gzip.decompress(Path(str(manifest)+'.gz').read_bytes())
+    entries=[json.loads(line) for line in manifest_bytes.decode().splitlines()]
     if len({e['member'] for e in entries})!=len(entries):raise ValueError('Duplicate source members')
     files=[];headers={};paths={}
     for e in entries:
@@ -118,10 +123,13 @@ def run():
         series.append(r)
     s=pd.DataFrame(series)
     a=pd.read_csv(ROOT/'data/processed/followup_availability_current.csv',dtype={'patient_id':str,'baseline_study_date_code':str,'baseline_mask_date_code':str})
+    if mask_candidates_only:
+        a=a[a.baseline_mask_available==1].copy()
+        a['baseline_study_date_code']=a.baseline_mask_date_code
     studies={(e['patient_id'],e['study_date_code']) for e in entries}
     candidates=a[[ (r.patient_id,r.baseline_study_date_code) in studies for r in a.itertuples() ]]
     mask_records=[]
-    output=ROOT/'outputs/imaging-qc-20261028';output.mkdir(parents=True,exist_ok=True)
+    output=ROOT/'outputs'/output_subdir;output.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(ROOT/'data/raw/openbtai/NIFTIs_Masks.zip') as z:
         for c in candidates.itertuples():
             r=dict(lesion_key=c.lesion_key,patient_id=c.patient_id,study_date_code=c.baseline_study_date_code,
@@ -130,8 +138,14 @@ def run():
                    anatomical_review_complete=0,use_for_model=0)
             if c.baseline_mask_available:
                 name=str(c.baseline_mask_file);target=name.removeprefix(f'{c.patient_id}_{c.baseline_mask_date_code}_').removesuffix('_msk.nii')
+                available=s[(s.patient_id==c.patient_id)&(s.study_date_code==c.baseline_mask_date_code)].series_name
+                try:
+                    resolved,rule=resolve_series_name(target,available)
+                    r.update(mask_series_name=target,dicom_series_name=resolved,name_match_rule=rule)
+                except ValueError:
+                    resolved=None;r['name_match_rule']='unresolved_or_ambiguous'
                 matching=[(k,g,recs) for k,(g,recs) in valid_stacks.items()
-                          if recs[0]['patient_id']==c.patient_id and recs[0]['study_date_code']==c.baseline_mask_date_code and Path(k[0]).name==target]
+                          if recs[0]['patient_id']==c.patient_id and recs[0]['study_date_code']==c.baseline_mask_date_code and Path(k[0]).name==resolved]
                 members=[n for n in z.namelist() if Path(n).name==name and '__MACOSX' not in n]
                 if len(matching)!=1 or len(members)!=1:
                     r['alignment_status']='ambiguous_or_missing_matching_stack'
@@ -149,9 +163,20 @@ def run():
                              alignment_status='grid_equivalent_no_interpolation' if align['grid_equivalent'] else 'grid_mismatch_requires_review')
                     labels=np.asanyarray(mask.dataobj);coords=np.argwhere((labels//10)==int(c.lesion_id))
                     r['target_voxels']=len(coords)
+                    if len(coords):
+                        t=np.asarray(align['mask_to_image_voxel_transform'])
+                        continuous=(t[:3,:3]@coords.T).T+t[:3,3]
+                        inside=np.all((continuous>=-.5)&(continuous<np.array(g['volume_shape'])-.5),axis=1)
+                        r['target_voxels_inside_image_fov']=int(inside.sum())
+                        nearest=np.rint(continuous).astype(int)
+                        r['target_max_reindex_error_mm']=float(np.max(np.linalg.norm((g['affine_ras'][:3,:3]@(continuous-nearest).T).T,axis=1)))
+                        constant=np.array([recs[i].get('constant_pixel_array',0) for i in g['order']])
+                        valid=(nearest[:,2]>=0)&(nearest[:,2]<len(constant))
+                        r['target_voxels_on_constant_slices']=int(constant[nearest[valid,2]].sum())
                     if align['grid_equivalent'] and len(coords):
                         t=np.asarray(align['integer_reindex_transform']);mapped=(t[:3,:3]@coords.T).T+t[:3,3]
                         r['target_voxels_inside_image']=int(np.all((mapped>=0)&(mapped<np.array(g['volume_shape'])),axis=1).sum())
+                    if align['grid_equivalent'] and len(coords) and write_overlays:
                         ordered=[recs[i] for i in g['order']]
                         target_slices=np.unique(mapped[:,2]);chosen=target_slices[np.linspace(0,len(target_slices)-1,min(3,len(target_slices))).round().astype(int)]
                         fig,axes=plt.subplots(1,len(chosen),figsize=(4*len(chosen),4),squeeze=False)
@@ -165,14 +190,17 @@ def run():
                         fig.tight_layout();fig.savefig(output/f'{c.lesion_key}_mask_overlay.png',dpi=150);plt.close(fig)
             mask_records.append(r)
     m=pd.DataFrame(mask_records)
-    f.to_csv(ROOT/'data/processed/additional_dicom_file_qc.csv',index=False)
-    s.to_csv(ROOT/'data/processed/additional_dicom_series_qc.csv',index=False)
+    file_csv=f.to_csv(index=False).encode()
+    (ROOT/f'data/processed/{prefix}_dicom_file_qc.csv').write_bytes(file_csv)
+    if prefix!='additional':
+        (ROOT/f'data/processed/{prefix}_dicom_file_qc.csv.gz').write_bytes(gzip.compress(file_csv,mtime=0))
+    s.to_csv(ROOT/f'data/processed/{prefix}_dicom_series_qc.csv',index=False)
     # Serialize matrices in flat CSV fields; raw numeric matrices stay in JSON.
     flat=m.copy()
     for col in ['mask_to_image_voxel_transform','integer_reindex_transform']:
         if col in flat:flat[col]=flat[col].map(lambda x:json.dumps(x) if isinstance(x,list) else x)
-    flat.to_csv(ROOT/'data/processed/additional_baseline_mask_alignment.csv',index=False)
-    summary=dict(scope='all files in four added baseline studies only',studies=len(studies),
+    flat.to_csv(ROOT/f'data/processed/{prefix}_baseline_mask_alignment.csv',index=False)
+    summary=dict(scope=scope,studies=len(studies),
         dicom_files=len(f),series_uid_groups=len(s),series_directories=int(f.series_directory.nunique()),
         integrity_verified_files=int((f.sha256_match*f.crc32_match*f.size_match).sum()),
         pixel_decodable_files=int(f.pixel_decodable.sum()),nonfinite_pixel_arrays=int((f.pixel_finite==0).sum()),
@@ -189,7 +217,7 @@ def run():
         grid_equivalent_masks=int(m.grid_equivalent.sum()),
         engineering_tolerances=dict(direction_or_spacing_abs=1e-4,duplicate_plane_mm=1e-3,
             plane_step_abs_mm=.05,plane_step_relative=.01,affine_residual_mm=.1,grid_corner_voxels=1e-3),
-        manifest_sha256=hashlib.sha256(manifest.read_bytes()).hexdigest(),
+        manifest_sha256=hashlib.sha256(manifest_bytes).hexdigest(),
         input_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in [
             'data/processed/followup_availability_current.csv','data/processed/mask_file_audit.csv',
             'data/raw/openbtai/NIFTIs_Masks.zip']},
@@ -200,13 +228,18 @@ def run():
         next_steps=['Extend all-file QC to previously archived baseline studies',
                     'Verify contrast timing and T2-FLAIR selection before registration',
                     'Resolve lesion-level RN and event-free surveillance evidence before prediction'])
+    if mask_candidates_only:
+        summary['baseline_lesion_candidates']=summary.pop('baseline_lesion_candidates_in_added_studies')
+        summary['next_steps']=['Investigate mask-grid discrepancies without changing source labels',
+                              'Restore and audit corresponding FLAIR series before registration',
+                              'Resolve lesion-level RN and event-free surveillance evidence before prediction']
     # pandas object NaNs in absent columns must be valid JSON nulls.
     def json_safe(v):
         if isinstance(v,dict):return {k:json_safe(x) for k,x in v.items()}
         if isinstance(v,list):return [json_safe(x) for x in v]
         return None if isinstance(v,float) and not np.isfinite(v) else v
     summary=json_safe(summary)
-    (ROOT/'reports/additional_imaging_qc.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False,allow_nan=False))
+    (ROOT/f'reports/{prefix}_imaging_qc.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False,allow_nan=False))
     print(json.dumps({k:v for k,v in summary.items() if k!='masks'},indent=2),flush=True)
     return summary
 

@@ -51,7 +51,12 @@
       "alignment_status": "no_contemporaneous_baseline_mask",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
+      "mask_series_name": null,
+      "dicom_series_name": null,
+      "name_match_rule": null,
       "max_corner_error_voxels": null,
+      "max_corner_error_mm": null,
+      "signed_permutation_and_extent_match": null,
       "tolerance_voxels": null,
       "mask_to_image_voxel_transform": null,
       "integer_reindex_transform": null,
@@ -65,6 +70,9 @@
       "sform_code": null,
       "mask_affine_ras_json": null,
       "target_voxels": null,
+      "target_voxels_inside_image_fov": null,
+      "target_max_reindex_error_mm": null,
+      "target_voxels_on_constant_slices": null,
       "target_voxels_inside_image": null
     },
     {
@@ -77,7 +85,12 @@
       "alignment_status": "no_contemporaneous_baseline_mask",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
+      "mask_series_name": null,
+      "dicom_series_name": null,
+      "name_match_rule": null,
       "max_corner_error_voxels": null,
+      "max_corner_error_mm": null,
+      "signed_permutation_and_extent_match": null,
       "tolerance_voxels": null,
       "mask_to_image_voxel_transform": null,
       "integer_reindex_transform": null,
@@ -91,6 +104,9 @@
       "sform_code": null,
       "mask_affine_ras_json": null,
       "target_voxels": null,
+      "target_voxels_inside_image_fov": null,
+      "target_max_reindex_error_mm": null,
+      "target_voxels_on_constant_slices": null,
       "target_voxels_inside_image": null
     },
     {
@@ -103,7 +119,12 @@
       "alignment_status": "no_contemporaneous_baseline_mask",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
+      "mask_series_name": null,
+      "dicom_series_name": null,
+      "name_match_rule": null,
       "max_corner_error_voxels": null,
+      "max_corner_error_mm": null,
+      "signed_permutation_and_extent_match": null,
       "tolerance_voxels": null,
       "mask_to_image_voxel_transform": null,
       "integer_reindex_transform": null,
@@ -117,6 +138,9 @@
       "sform_code": null,
       "mask_affine_ras_json": null,
       "target_voxels": null,
+      "target_voxels_inside_image_fov": null,
+      "target_max_reindex_error_mm": null,
+      "target_voxels_on_constant_slices": null,
       "target_voxels_inside_image": null
     },
     {
@@ -129,7 +153,12 @@
       "alignment_status": "no_contemporaneous_baseline_mask",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
+      "mask_series_name": null,
+      "dicom_series_name": null,
+      "name_match_rule": null,
       "max_corner_error_voxels": null,
+      "max_corner_error_mm": null,
+      "signed_permutation_and_extent_match": null,
       "tolerance_voxels": null,
       "mask_to_image_voxel_transform": null,
       "integer_reindex_transform": null,
@@ -143,6 +172,9 @@
       "sform_code": null,
       "mask_affine_ras_json": null,
       "target_voxels": null,
+      "target_voxels_inside_image_fov": null,
+      "target_max_reindex_error_mm": null,
+      "target_voxels_on_constant_slices": null,
       "target_voxels_inside_image": null
     },
     {
@@ -155,7 +187,12 @@
       "alignment_status": "no_contemporaneous_baseline_mask",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
+      "mask_series_name": null,
+      "dicom_series_name": null,
+      "name_match_rule": null,
       "max_corner_error_voxels": null,
+      "max_corner_error_mm": null,
+      "signed_permutation_and_extent_match": null,
       "tolerance_voxels": null,
       "mask_to_image_voxel_transform": null,
       "integer_reindex_transform": null,
@@ -169,6 +206,9 @@
       "sform_code": null,
       "mask_affine_ras_json": null,
       "target_voxels": null,
+      "target_voxels_inside_image_fov": null,
+      "target_max_reindex_error_mm": null,
+      "target_voxels_on_constant_slices": null,
       "target_voxels_inside_image": null
     },
     {
@@ -181,7 +221,12 @@
       "alignment_status": "no_contemporaneous_baseline_mask",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
+      "mask_series_name": null,
+      "dicom_series_name": null,
+      "name_match_rule": null,
       "max_corner_error_voxels": null,
+      "max_corner_error_mm": null,
+      "signed_permutation_and_extent_match": null,
       "tolerance_voxels": null,
       "mask_to_image_voxel_transform": null,
       "integer_reindex_transform": null,
@@ -195,6 +240,9 @@
       "sform_code": null,
       "mask_affine_ras_json": null,
       "target_voxels": null,
+      "target_voxels_inside_image_fov": null,
+      "target_max_reindex_error_mm": null,
+      "target_voxels_on_constant_slices": null,
       "target_voxels_inside_image": null
     },
     {
@@ -207,26 +255,31 @@
       "alignment_status": "grid_equivalent_no_interpolation",
       "anatomical_review_complete": 0,
       "use_for_model": 0,
-      "max_corner_error_voxels": 0.00011493374822736322,
+      "mask_series_name": "AX_T1_FL3D",
+      "dicom_series_name": "AX_T1_FL3D",
+      "name_match_rule": "exact",
+      "max_corner_error_voxels": 0.00011493374822726231,
+      "max_corner_error_mm": 0.000144310558673734,
+      "signed_permutation_and_extent_match": 1.0,
       "tolerance_voxels": 0.001,
       "mask_to_image_voxel_transform": [
         [
           -0.9999999913809033,
-          2.080084244807567e-12,
-          -5.260091077042922e-10,
+          2.0800842497206902e-12,
+          -5.164777437132879e-10,
           510.9999775384864
         ],
         [
-          2.028292418855403e-11,
+          2.0282924188600745e-11,
           -0.9999999630512197,
-          3.65312975421479e-08,
+          3.6528591193789843e-08,
           511.0000061645629
         ],
         [
-          -1.725933578975148e-11,
-          5.154701752645782e-10,
-          1.0000008954193498,
-          -0.00011492492870677466
+          -1.7259335789736325e-11,
+          5.154701752641255e-10,
+          1.0000008954184716,
+          -0.00011492492870667375
         ],
         [
           0.0,
@@ -271,6 +324,9 @@
       "sform_code": 1.0,
       "mask_affine_ras_json": "[[0.49999934434890747, 1.1187223369901744e-10, 0.002017644699662924, -127.38008117675781], [0.00037641526432707906, 0.4422856569290161, -0.5830059051513672, -58.6131591796875], [-0.0007138996152207255, 0.23320244252681732, 1.1057137250900269, -126.0948715209961], [0.0, 0.0, 0.0, 1.0]]",
       "target_voxels": 397.0,
+      "target_voxels_inside_image_fov": 397.0,
+      "target_max_reindex_error_mm": 4.411812816129493e-05,
+      "target_voxels_on_constant_slices": 0.0,
       "target_voxels_inside_image": 397.0
     }
   ],

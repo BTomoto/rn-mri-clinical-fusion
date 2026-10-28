@@ -20,8 +20,14 @@
       "code_cells": 5,
       "code_sha256": "9a4c20fc1733680c1d800c711caa48d56c2cfe34a4cc45cf8457455d0482bbbc",
       "errors": 0
+    },
+    {
+      "path": "notebooks/07_baseline_mask_series_qc.ipynb",
+      "code_cells": 5,
+      "code_sha256": "3b7b3b6d8e8f6dff05c52894b68fe1bd65f2273e4e0875f457575ca2ca3c3702",
+      "errors": 0
     }
   ],
   "success": true,
-  "checked_at_utc": "2026-10-28T15:15:17.005500+00:00"
+  "checked_at_utc": "2026-10-28T15:34:55.641479+00:00"
 }
