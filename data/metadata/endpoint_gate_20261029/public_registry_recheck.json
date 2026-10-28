@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-10-29",
+  "rn_d3_repository": "https://github.com/chamseddine-lab/rn-d3",
+  "tree_sha": "c4619bab9f27c102a25341ed838dea49fe9ac0c5",
+  "tracked_blob_count": 22,
+  "registry_files": [
+    {
+      "path": "examples/registry.json",
+      "sha": "f68060f86640c10056735d8ee90d1b9afb148a16"
+    }
+  ],
+  "example_registry_case_ids": [
+    "patient001_lesion1",
+    "patient002_lesion1"
+  ],
+  "actual_molab_lesion_registry_observed": false,
+  "interpretation": "Only synthetic example registry observed in the checked tree; not a global absence claim",
+  "supplement_status": "PMC DOCX link presented access verification; publisher page read but DOCX bytes not obtained; supplement not assessed",
+  "primary_sources": [
+    {
+      "url": "https://www.nature.com/articles/s41597-023-02123-0",
+      "finding": "Descriptor reports 39 RN lesions; this does not supply event-free follow-up for blank RN cells."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13490108/",
+      "finding": "Later RN-D3 article reports diagnostic RN-versus-BM evaluation; this is not a pretreatment cumulative-risk cohort."
+    }
+  ]
+}

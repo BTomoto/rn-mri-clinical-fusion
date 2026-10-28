@@ -1,0 +1,21 @@
+{
+  "mode": "in_process_ipykernel",
+  "separate_kernel_server_tested": false,
+  "browser_frontend_tested": false,
+  "versions": {
+    "ipykernel": "7.4.0",
+    "IPython": "9.17.1",
+    "nbformat": "5.11.1",
+    "jupyter-client": "8.10.0"
+  },
+  "notebooks": [
+    {
+      "path": "notebooks/09_registration_pilot_and_endpoint_gate.ipynb",
+      "code_cells": 5,
+      "code_sha256": "d2341c4d4b1a4f88036c1553f4fccd429e43f3c562f2696035fc1be6cd70c980",
+      "errors": 0
+    }
+  ],
+  "success": true,
+  "checked_at_utc": "2026-10-28T17:32:38.754619+00:00"
+}

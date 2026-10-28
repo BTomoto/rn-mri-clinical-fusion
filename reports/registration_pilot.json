@@ -1,0 +1,3688 @@
+{
+  "cases": [
+    {
+      "lesion_key": "10005_L1",
+      "selection_reason": "conventional_thick_slice_flair",
+      "metrics": {
+        "negative_mi_before": -0.4332518425089103,
+        "negative_mi_after": -0.07739312334765173,
+        "negative_mi_change": 0.35585871916125855,
+        "foreground_fov_overlap_before": 0.9558616512800366,
+        "foreground_fov_overlap_after": 0.23727329273882014,
+        "rotations_degrees": [
+          -10.547648324240193,
+          2.3445366588866823,
+          0.9965057295685378
+        ],
+        "translation_mm": [
+          -2.6518172066130674,
+          -124.39050441274885,
+          -32.85204115689482
+        ],
+        "optimizer_stop": "RegularStepGradientDescentOptimizerv4: Maximum number of iterations (200) exceeded.",
+        "metric_improved": false,
+        "anatomical_review_complete": false,
+        "clinical_alignment_accepted": 0,
+        "metric_screen_pass": 0,
+        "candidate_status": "rejected_metric_or_overlap",
+        "applied_to_analysis": 0,
+        "target_coordinate_fov_before": 1.0,
+        "target_coordinate_fov_after": 0.0,
+        "repeat_max_parameter_difference": 0.0
+      },
+      "iteration_trace": [
+        {
+          "level": 0,
+          "iteration": 0,
+          "negative_mi": -0.7601107811979876
+        },
+        {
+          "level": 0,
+          "iteration": 1,
+          "negative_mi": -0.7541172025519789
+        },
+        {
+          "level": 0,
+          "iteration": 2,
+          "negative_mi": -0.7629996443672162
+        },
+        {
+          "level": 0,
+          "iteration": 3,
+          "negative_mi": -0.7563438975142834
+        },
+        {
+          "level": 0,
+          "iteration": 4,
+          "negative_mi": -0.7523589900423101
+        },
+        {
+          "level": 0,
+          "iteration": 5,
+          "negative_mi": -0.7452135279790588
+        },
+        {
+          "level": 0,
+          "iteration": 6,
+          "negative_mi": -0.7424056794207307
+        },
+        {
+          "level": 0,
+          "iteration": 7,
+          "negative_mi": -0.7238882513910175
+        },
+        {
+          "level": 0,
+          "iteration": 8,
+          "negative_mi": -0.7394797702744623
+        },
+        {
+          "level": 0,
+          "iteration": 9,
+          "negative_mi": -0.7323313642374073
+        },
+        {
+          "level": 0,
+          "iteration": 10,
+          "negative_mi": -0.736322731945498
+        },
+        {
+          "level": 0,
+          "iteration": 11,
+          "negative_mi": -0.7379262130827011
+        },
+        {
+          "level": 0,
+          "iteration": 12,
+          "negative_mi": -0.7388375035259971
+        },
+        {
+          "level": 0,
+          "iteration": 13,
+          "negative_mi": -0.7385841430333425
+        },
+        {
+          "level": 0,
+          "iteration": 14,
+          "negative_mi": -0.7383925910673292
+        },
+        {
+          "level": 0,
+          "iteration": 15,
+          "negative_mi": -0.7384583359249498
+        },
+        {
+          "level": 0,
+          "iteration": 16,
+          "negative_mi": -0.738039438213604
+        },
+        {
+          "level": 0,
+          "iteration": 17,
+          "negative_mi": -0.7377324844532662
+        },
+        {
+          "level": 0,
+          "iteration": 18,
+          "negative_mi": -0.7370218361423645
+        },
+        {
+          "level": 0,
+          "iteration": 19,
+          "negative_mi": -0.7375579186352611
+        },
+        {
+          "level": 0,
+          "iteration": 20,
+          "negative_mi": -0.7365965114557571
+        },
+        {
+          "level": 0,
+          "iteration": 21,
+          "negative_mi": -0.736245984681927
+        },
+        {
+          "level": 0,
+          "iteration": 22,
+          "negative_mi": -0.7358847503119411
+        },
+        {
+          "level": 0,
+          "iteration": 23,
+          "negative_mi": -0.7355674942600905
+        },
+        {
+          "level": 0,
+          "iteration": 24,
+          "negative_mi": -0.7352889638230445
+        },
+        {
+          "level": 0,
+          "iteration": 25,
+          "negative_mi": -0.7350037638690393
+        },
+        {
+          "level": 0,
+          "iteration": 26,
+          "negative_mi": -0.7342694164814124
+        },
+        {
+          "level": 0,
+          "iteration": 27,
+          "negative_mi": -0.7340553262703908
+        },
+        {
+          "level": 0,
+          "iteration": 28,
+          "negative_mi": -0.7337823474468352
+        },
+        {
+          "level": 0,
+          "iteration": 29,
+          "negative_mi": -0.7335093177839184
+        },
+        {
+          "level": 0,
+          "iteration": 30,
+          "negative_mi": -0.7332439915399002
+        },
+        {
+          "level": 0,
+          "iteration": 31,
+          "negative_mi": -0.7329817062078425
+        },
+        {
+          "level": 0,
+          "iteration": 32,
+          "negative_mi": -0.7327193139904675
+        },
+        {
+          "level": 0,
+          "iteration": 33,
+          "negative_mi": -0.7324596155939002
+        },
+        {
+          "level": 0,
+          "iteration": 34,
+          "negative_mi": -0.7321975613680008
+        },
+        {
+          "level": 0,
+          "iteration": 35,
+          "negative_mi": -0.7319413743628546
+        },
+        {
+          "level": 0,
+          "iteration": 36,
+          "negative_mi": -0.7317029587159672
+        },
+        {
+          "level": 0,
+          "iteration": 37,
+          "negative_mi": -0.7314567567584831
+        },
+        {
+          "level": 0,
+          "iteration": 38,
+          "negative_mi": -0.7316853601197503
+        },
+        {
+          "level": 0,
+          "iteration": 39,
+          "negative_mi": -0.7314755852921199
+        },
+        {
+          "level": 0,
+          "iteration": 40,
+          "negative_mi": -0.7312119828267645
+        },
+        {
+          "level": 0,
+          "iteration": 41,
+          "negative_mi": -0.7309084752501845
+        },
+        {
+          "level": 0,
+          "iteration": 42,
+          "negative_mi": -0.7305337863888471
+        },
+        {
+          "level": 0,
+          "iteration": 43,
+          "negative_mi": -0.7301001825131385
+        },
+        {
+          "level": 0,
+          "iteration": 44,
+          "negative_mi": -0.7296127371084965
+        },
+        {
+          "level": 0,
+          "iteration": 45,
+          "negative_mi": -0.7290593754895012
+        },
+        {
+          "level": 0,
+          "iteration": 46,
+          "negative_mi": -0.7284427383300137
+        },
+        {
+          "level": 0,
+          "iteration": 47,
+          "negative_mi": -0.727738410337311
+        },
+        {
+          "level": 0,
+          "iteration": 48,
+          "negative_mi": -0.726938137375297
+        },
+        {
+          "level": 0,
+          "iteration": 49,
+          "negative_mi": -0.7260632724089398
+        },
+        {
+          "level": 0,
+          "iteration": 50,
+          "negative_mi": -0.7251280826025983
+        },
+        {
+          "level": 0,
+          "iteration": 51,
+          "negative_mi": -0.7241151394432094
+        },
+        {
+          "level": 0,
+          "iteration": 52,
+          "negative_mi": -0.7229389473154904
+        },
+        {
+          "level": 0,
+          "iteration": 53,
+          "negative_mi": -0.7216144115790248
+        },
+        {
+          "level": 0,
+          "iteration": 54,
+          "negative_mi": -0.7205704404980228
+        },
+        {
+          "level": 0,
+          "iteration": 55,
+          "negative_mi": -0.7194255320408917
+        },
+        {
+          "level": 0,
+          "iteration": 56,
+          "negative_mi": -0.7185074810607209
+        },
+        {
+          "level": 0,
+          "iteration": 57,
+          "negative_mi": -0.7176010649300759
+        },
+        {
+          "level": 0,
+          "iteration": 58,
+          "negative_mi": -0.7168153553171263
+        },
+        {
+          "level": 0,
+          "iteration": 59,
+          "negative_mi": -0.7160968301012323
+        },
+        {
+          "level": 0,
+          "iteration": 60,
+          "negative_mi": -0.7154224807935756
+        },
+        {
+          "level": 0,
+          "iteration": 61,
+          "negative_mi": -0.7147556761869118
+        },
+        {
+          "level": 0,
+          "iteration": 62,
+          "negative_mi": -0.7140567024956421
+        },
+        {
+          "level": 0,
+          "iteration": 63,
+          "negative_mi": -0.7133322963796721
+        },
+        {
+          "level": 0,
+          "iteration": 64,
+          "negative_mi": -0.7117448351652262
+        },
+        {
+          "level": 0,
+          "iteration": 65,
+          "negative_mi": -0.7110044574887836
+        },
+        {
+          "level": 0,
+          "iteration": 66,
+          "negative_mi": -0.7102220938097884
+        },
+        {
+          "level": 0,
+          "iteration": 67,
+          "negative_mi": -0.7094030134789361
+        },
+        {
+          "level": 0,
+          "iteration": 68,
+          "negative_mi": -0.7085289559582956
+        },
+        {
+          "level": 0,
+          "iteration": 69,
+          "negative_mi": -0.7076246028510528
+        },
+        {
+          "level": 0,
+          "iteration": 70,
+          "negative_mi": -0.7067059790086374
+        },
+        {
+          "level": 0,
+          "iteration": 71,
+          "negative_mi": -0.7058137542033939
+        },
+        {
+          "level": 0,
+          "iteration": 72,
+          "negative_mi": -0.7049682573331156
+        },
+        {
+          "level": 0,
+          "iteration": 73,
+          "negative_mi": -0.7025364572241142
+        },
+        {
+          "level": 0,
+          "iteration": 74,
+          "negative_mi": -0.7018973915921927
+        },
+        {
+          "level": 0,
+          "iteration": 75,
+          "negative_mi": -0.7013279402563266
+        },
+        {
+          "level": 0,
+          "iteration": 76,
+          "negative_mi": -0.7008239047255477
+        },
+        {
+          "level": 0,
+          "iteration": 77,
+          "negative_mi": -0.7003853363644291
+        },
+        {
+          "level": 0,
+          "iteration": 78,
+          "negative_mi": -0.7000007834408327
+        },
+        {
+          "level": 0,
+          "iteration": 79,
+          "negative_mi": -0.6996497749768964
+        },
+        {
+          "level": 0,
+          "iteration": 80,
+          "negative_mi": -0.699369656229048
+        },
+        {
+          "level": 0,
+          "iteration": 81,
+          "negative_mi": -0.6991277795153209
+        },
+        {
+          "level": 0,
+          "iteration": 82,
+          "negative_mi": -0.6989168697007305
+        },
+        {
+          "level": 0,
+          "iteration": 83,
+          "negative_mi": -0.6987362493295595
+        },
+        {
+          "level": 0,
+          "iteration": 84,
+          "negative_mi": -0.6985841547989139
+        },
+        {
+          "level": 0,
+          "iteration": 85,
+          "negative_mi": -0.6984560310571271
+        },
+        {
+          "level": 0,
+          "iteration": 86,
+          "negative_mi": -0.6992939291070792
+        },
+        {
+          "level": 0,
+          "iteration": 87,
+          "negative_mi": -0.6992243040207938
+        },
+        {
+          "level": 0,
+          "iteration": 88,
+          "negative_mi": -0.6991403092040515
+        },
+        {
+          "level": 0,
+          "iteration": 89,
+          "negative_mi": -0.6990410240086461
+        },
+        {
+          "level": 0,
+          "iteration": 90,
+          "negative_mi": -0.6989148164478631
+        },
+        {
+          "level": 0,
+          "iteration": 91,
+          "negative_mi": -0.6987538991138786
+        },
+        {
+          "level": 0,
+          "iteration": 92,
+          "negative_mi": -0.6985561209462197
+        },
+        {
+          "level": 0,
+          "iteration": 93,
+          "negative_mi": -0.6983352140217707
+        },
+        {
+          "level": 0,
+          "iteration": 94,
+          "negative_mi": -0.6980790110974002
+        },
+        {
+          "level": 0,
+          "iteration": 95,
+          "negative_mi": -0.6977716287242506
+        },
+        {
+          "level": 0,
+          "iteration": 96,
+          "negative_mi": -0.6974391623735182
+        },
+        {
+          "level": 0,
+          "iteration": 97,
+          "negative_mi": -0.6970845224115841
+        },
+        {
+          "level": 0,
+          "iteration": 98,
+          "negative_mi": -0.6967104766656147
+        },
+        {
+          "level": 0,
+          "iteration": 99,
+          "negative_mi": -0.6963464792915691
+        },
+        {
+          "level": 0,
+          "iteration": 100,
+          "negative_mi": -0.6959982312797163
+        },
+        {
+          "level": 0,
+          "iteration": 101,
+          "negative_mi": -0.6956597320069362
+        },
+        {
+          "level": 0,
+          "iteration": 102,
+          "negative_mi": -0.6953263698248896
+        },
+        {
+          "level": 0,
+          "iteration": 103,
+          "negative_mi": -0.6949610842715673
+        },
+        {
+          "level": 0,
+          "iteration": 104,
+          "negative_mi": -0.6945919367559684
+        },
+        {
+          "level": 0,
+          "iteration": 105,
+          "negative_mi": -0.6942055617026436
+        },
+        {
+          "level": 0,
+          "iteration": 106,
+          "negative_mi": -0.6937845569505766
+        },
+        {
+          "level": 0,
+          "iteration": 107,
+          "negative_mi": -0.6933445029230856
+        },
+        {
+          "level": 0,
+          "iteration": 108,
+          "negative_mi": -0.6928910314631178
+        },
+        {
+          "level": 0,
+          "iteration": 109,
+          "negative_mi": -0.6924237018014613
+        },
+        {
+          "level": 0,
+          "iteration": 110,
+          "negative_mi": -0.6919603393991494
+        },
+        {
+          "level": 0,
+          "iteration": 111,
+          "negative_mi": -0.6914967828575249
+        },
+        {
+          "level": 0,
+          "iteration": 112,
+          "negative_mi": -0.6909852245869103
+        },
+        {
+          "level": 0,
+          "iteration": 113,
+          "negative_mi": -0.6904802663238306
+        },
+        {
+          "level": 0,
+          "iteration": 114,
+          "negative_mi": -0.6899781441299231
+        },
+        {
+          "level": 0,
+          "iteration": 115,
+          "negative_mi": -0.6895416180362112
+        },
+        {
+          "level": 0,
+          "iteration": 116,
+          "negative_mi": -0.6891659603699598
+        },
+        {
+          "level": 0,
+          "iteration": 117,
+          "negative_mi": -0.6888441116550184
+        },
+        {
+          "level": 0,
+          "iteration": 118,
+          "negative_mi": -0.6885361905351366
+        },
+        {
+          "level": 0,
+          "iteration": 119,
+          "negative_mi": -0.6882594785187951
+        },
+        {
+          "level": 0,
+          "iteration": 120,
+          "negative_mi": -0.6880278019953181
+        },
+        {
+          "level": 0,
+          "iteration": 121,
+          "negative_mi": -0.6878405655680735
+        },
+        {
+          "level": 0,
+          "iteration": 122,
+          "negative_mi": -0.6876718146309918
+        },
+        {
+          "level": 0,
+          "iteration": 123,
+          "negative_mi": -0.6874936787940199
+        },
+        {
+          "level": 0,
+          "iteration": 124,
+          "negative_mi": -0.6872856370765584
+        },
+        {
+          "level": 0,
+          "iteration": 125,
+          "negative_mi": -0.6870428185378613
+        },
+        {
+          "level": 0,
+          "iteration": 126,
+          "negative_mi": -0.6867572042859497
+        },
+        {
+          "level": 0,
+          "iteration": 127,
+          "negative_mi": -0.6863299498330719
+        },
+        {
+          "level": 0,
+          "iteration": 128,
+          "negative_mi": -0.6859974504886842
+        },
+        {
+          "level": 0,
+          "iteration": 129,
+          "negative_mi": -0.6856897806202443
+        },
+        {
+          "level": 0,
+          "iteration": 130,
+          "negative_mi": -0.6853687034949001
+        },
+        {
+          "level": 0,
+          "iteration": 131,
+          "negative_mi": -0.6843466246708378
+        },
+        {
+          "level": 0,
+          "iteration": 132,
+          "negative_mi": -0.6839823844882306
+        },
+        {
+          "level": 0,
+          "iteration": 133,
+          "negative_mi": -0.6836344286015728
+        },
+        {
+          "level": 0,
+          "iteration": 134,
+          "negative_mi": -0.68331374631402
+        },
+        {
+          "level": 0,
+          "iteration": 135,
+          "negative_mi": -0.6830330913616744
+        },
+        {
+          "level": 0,
+          "iteration": 136,
+          "negative_mi": -0.6828001502963362
+        },
+        {
+          "level": 0,
+          "iteration": 137,
+          "negative_mi": -0.6826000269103345
+        },
+        {
+          "level": 0,
+          "iteration": 138,
+          "negative_mi": -0.6824641888174275
+        },
+        {
+          "level": 0,
+          "iteration": 139,
+          "negative_mi": -0.6823811604499459
+        },
+        {
+          "level": 0,
+          "iteration": 140,
+          "negative_mi": -0.6822859668783481
+        },
+        {
+          "level": 0,
+          "iteration": 141,
+          "negative_mi": -0.6822438197594772
+        },
+        {
+          "level": 0,
+          "iteration": 142,
+          "negative_mi": -0.6824583395842561
+        },
+        {
+          "level": 0,
+          "iteration": 143,
+          "negative_mi": -0.6825182563769474
+        },
+        {
+          "level": 0,
+          "iteration": 144,
+          "negative_mi": -0.6826080152104592
+        },
+        {
+          "level": 0,
+          "iteration": 145,
+          "negative_mi": -0.6815072514755456
+        },
+        {
+          "level": 0,
+          "iteration": 146,
+          "negative_mi": -0.6816689270464492
+        },
+        {
+          "level": 0,
+          "iteration": 147,
+          "negative_mi": -0.6818277462818793
+        },
+        {
+          "level": 0,
+          "iteration": 148,
+          "negative_mi": -0.6819647778934743
+        },
+        {
+          "level": 0,
+          "iteration": 149,
+          "negative_mi": -0.6844813381585264
+        },
+        {
+          "level": 0,
+          "iteration": 150,
+          "negative_mi": -0.6862709684100002
+        },
+        {
+          "level": 0,
+          "iteration": 151,
+          "negative_mi": -0.6863905876976802
+        },
+        {
+          "level": 0,
+          "iteration": 152,
+          "negative_mi": -0.686519314369161
+        },
+        {
+          "level": 0,
+          "iteration": 153,
+          "negative_mi": -0.6866624277083947
+        },
+        {
+          "level": 0,
+          "iteration": 154,
+          "negative_mi": -0.6868178971387296
+        },
+        {
+          "level": 0,
+          "iteration": 155,
+          "negative_mi": -0.6869838457231555
+        },
+        {
+          "level": 0,
+          "iteration": 156,
+          "negative_mi": -0.6871547678987104
+        },
+        {
+          "level": 0,
+          "iteration": 157,
+          "negative_mi": -0.6873277631711533
+        },
+        {
+          "level": 0,
+          "iteration": 158,
+          "negative_mi": -0.6874953119656938
+        },
+        {
+          "level": 0,
+          "iteration": 159,
+          "negative_mi": -0.6876535067047175
+        },
+        {
+          "level": 0,
+          "iteration": 160,
+          "negative_mi": -0.68778509368827
+        },
+        {
+          "level": 0,
+          "iteration": 161,
+          "negative_mi": -0.6879135320080648
+        },
+        {
+          "level": 0,
+          "iteration": 162,
+          "negative_mi": -0.6880752411778098
+        },
+        {
+          "level": 0,
+          "iteration": 163,
+          "negative_mi": -0.6883576294552287
+        },
+        {
+          "level": 0,
+          "iteration": 164,
+          "negative_mi": -0.6889562767177655
+        },
+        {
+          "level": 0,
+          "iteration": 165,
+          "negative_mi": -0.6900611214159363
+        },
+        {
+          "level": 0,
+          "iteration": 166,
+          "negative_mi": -0.6906635743676433
+        },
+        {
+          "level": 0,
+          "iteration": 167,
+          "negative_mi": -0.6914143267996483
+        },
+        {
+          "level": 0,
+          "iteration": 168,
+          "negative_mi": -0.6904032902675884
+        },
+        {
+          "level": 0,
+          "iteration": 169,
+          "negative_mi": -0.6910101740447089
+        },
+        {
+          "level": 0,
+          "iteration": 170,
+          "negative_mi": -0.6916273943513592
+        },
+        {
+          "level": 0,
+          "iteration": 171,
+          "negative_mi": -0.6922759124032689
+        },
+        {
+          "level": 0,
+          "iteration": 172,
+          "negative_mi": -0.6905975201834019
+        },
+        {
+          "level": 0,
+          "iteration": 173,
+          "negative_mi": -0.6912399088780651
+        },
+        {
+          "level": 0,
+          "iteration": 174,
+          "negative_mi": -0.6919200066133518
+        },
+        {
+          "level": 0,
+          "iteration": 175,
+          "negative_mi": -0.6926026957955272
+        },
+        {
+          "level": 0,
+          "iteration": 176,
+          "negative_mi": -0.6930297482197997
+        },
+        {
+          "level": 0,
+          "iteration": 177,
+          "negative_mi": -0.6939541488617579
+        },
+        {
+          "level": 0,
+          "iteration": 178,
+          "negative_mi": -0.6940347986507703
+        },
+        {
+          "level": 0,
+          "iteration": 179,
+          "negative_mi": -0.6941234156454247
+        },
+        {
+          "level": 0,
+          "iteration": 180,
+          "negative_mi": -0.6941498054845734
+        },
+        {
+          "level": 0,
+          "iteration": 181,
+          "negative_mi": -0.6941502518095956
+        },
+        {
+          "level": 0,
+          "iteration": 182,
+          "negative_mi": -0.6941198727381109
+        },
+        {
+          "level": 0,
+          "iteration": 183,
+          "negative_mi": -0.6944118587639724
+        },
+        {
+          "level": 0,
+          "iteration": 184,
+          "negative_mi": -0.6943630675036131
+        },
+        {
+          "level": 0,
+          "iteration": 185,
+          "negative_mi": -0.6942834799945142
+        },
+        {
+          "level": 0,
+          "iteration": 186,
+          "negative_mi": -0.6941790135417965
+        },
+        {
+          "level": 0,
+          "iteration": 187,
+          "negative_mi": -0.6940531028784227
+        },
+        {
+          "level": 0,
+          "iteration": 188,
+          "negative_mi": -0.6939161883857217
+        },
+        {
+          "level": 0,
+          "iteration": 189,
+          "negative_mi": -0.6937656410079646
+        },
+        {
+          "level": 0,
+          "iteration": 190,
+          "negative_mi": -0.6936068755944619
+        },
+        {
+          "level": 0,
+          "iteration": 191,
+          "negative_mi": -0.6934377806148435
+        },
+        {
+          "level": 0,
+          "iteration": 192,
+          "negative_mi": -0.6932629725114821
+        },
+        {
+          "level": 0,
+          "iteration": 193,
+          "negative_mi": -0.6930861777170548
+        },
+        {
+          "level": 0,
+          "iteration": 194,
+          "negative_mi": -0.6929042283676081
+        },
+        {
+          "level": 1,
+          "iteration": 0,
+          "negative_mi": -0.43972458185760593
+        },
+        {
+          "level": 1,
+          "iteration": 1,
+          "negative_mi": -0.43162897242004106
+        },
+        {
+          "level": 1,
+          "iteration": 2,
+          "negative_mi": -0.42205025390512574
+        },
+        {
+          "level": 1,
+          "iteration": 3,
+          "negative_mi": -0.4139847853429943
+        },
+        {
+          "level": 1,
+          "iteration": 4,
+          "negative_mi": -0.4064623353512217
+        },
+        {
+          "level": 1,
+          "iteration": 5,
+          "negative_mi": -0.3959036025055418
+        },
+        {
+          "level": 1,
+          "iteration": 6,
+          "negative_mi": -0.38553417720054145
+        },
+        {
+          "level": 1,
+          "iteration": 7,
+          "negative_mi": -0.37331223302342764
+        },
+        {
+          "level": 1,
+          "iteration": 8,
+          "negative_mi": -0.36329281942680924
+        },
+        {
+          "level": 1,
+          "iteration": 9,
+          "negative_mi": -0.3569216939034834
+        },
+        {
+          "level": 1,
+          "iteration": 10,
+          "negative_mi": -0.3514414718503942
+        },
+        {
+          "level": 1,
+          "iteration": 11,
+          "negative_mi": -0.34355109473083706
+        },
+        {
+          "level": 1,
+          "iteration": 12,
+          "negative_mi": -0.3355386829842321
+        },
+        {
+          "level": 1,
+          "iteration": 13,
+          "negative_mi": -0.33055847907345065
+        },
+        {
+          "level": 1,
+          "iteration": 14,
+          "negative_mi": -0.32250174752848354
+        },
+        {
+          "level": 1,
+          "iteration": 15,
+          "negative_mi": -0.31280744088827905
+        },
+        {
+          "level": 1,
+          "iteration": 16,
+          "negative_mi": -0.30474098982391545
+        },
+        {
+          "level": 1,
+          "iteration": 17,
+          "negative_mi": -0.2969417413742366
+        },
+        {
+          "level": 1,
+          "iteration": 18,
+          "negative_mi": -0.29114336021611065
+        },
+        {
+          "level": 1,
+          "iteration": 19,
+          "negative_mi": -0.2851612036657525
+        },
+        {
+          "level": 1,
+          "iteration": 20,
+          "negative_mi": -0.28113725296450587
+        },
+        {
+          "level": 1,
+          "iteration": 21,
+          "negative_mi": -0.2731003876495671
+        },
+        {
+          "level": 1,
+          "iteration": 22,
+          "negative_mi": -0.2689560394466738
+        },
+        {
+          "level": 1,
+          "iteration": 23,
+          "negative_mi": -0.2649848165788227
+        },
+        {
+          "level": 1,
+          "iteration": 24,
+          "negative_mi": -0.25911750698036906
+        },
+        {
+          "level": 1,
+          "iteration": 25,
+          "negative_mi": -0.25453435988182826
+        },
+        {
+          "level": 1,
+          "iteration": 26,
+          "negative_mi": -0.24857392890963337
+        },
+        {
+          "level": 1,
+          "iteration": 27,
+          "negative_mi": -0.24709765092858837
+        },
+        {
+          "level": 1,
+          "iteration": 28,
+          "negative_mi": -0.24415527771251894
+        },
+        {
+          "level": 1,
+          "iteration": 29,
+          "negative_mi": -0.23996351448488584
+        },
+        {
+          "level": 1,
+          "iteration": 30,
+          "negative_mi": -0.23527486564735653
+        },
+        {
+          "level": 1,
+          "iteration": 31,
+          "negative_mi": -0.23342888321493485
+        },
+        {
+          "level": 1,
+          "iteration": 32,
+          "negative_mi": -0.23170360680363436
+        },
+        {
+          "level": 1,
+          "iteration": 33,
+          "negative_mi": -0.2310695132696851
+        },
+        {
+          "level": 1,
+          "iteration": 34,
+          "negative_mi": -0.22865951904189727
+        },
+        {
+          "level": 1,
+          "iteration": 35,
+          "negative_mi": -0.22607920607424767
+        },
+        {
+          "level": 1,
+          "iteration": 36,
+          "negative_mi": -0.2226761417011334
+        },
+        {
+          "level": 1,
+          "iteration": 37,
+          "negative_mi": -0.21667938330027783
+        },
+        {
+          "level": 1,
+          "iteration": 38,
+          "negative_mi": -0.21260598565115005
+        },
+        {
+          "level": 1,
+          "iteration": 39,
+          "negative_mi": -0.21028005244538872
+        },
+        {
+          "level": 1,
+          "iteration": 40,
+          "negative_mi": -0.20957255222620777
+        },
+        {
+          "level": 1,
+          "iteration": 41,
+          "negative_mi": -0.20910241660054174
+        },
+        {
+          "level": 1,
+          "iteration": 42,
+          "negative_mi": -0.20933850361169082
+        },
+        {
+          "level": 1,
+          "iteration": 43,
+          "negative_mi": -0.20942507866344023
+        },
+        {
+          "level": 1,
+          "iteration": 44,
+          "negative_mi": -0.20479422209110187
+        },
+        {
+          "level": 1,
+          "iteration": 45,
+          "negative_mi": -0.20275583689586765
+        },
+        {
+          "level": 1,
+          "iteration": 46,
+          "negative_mi": -0.20334688828178124
+        },
+        {
+          "level": 1,
+          "iteration": 47,
+          "negative_mi": -0.20282528475291253
+        },
+        {
+          "level": 1,
+          "iteration": 48,
+          "negative_mi": -0.20064389867241994
+        },
+        {
+          "level": 1,
+          "iteration": 49,
+          "negative_mi": -0.19922754770618847
+        },
+        {
+          "level": 1,
+          "iteration": 50,
+          "negative_mi": -0.19615252930226593
+        },
+        {
+          "level": 1,
+          "iteration": 51,
+          "negative_mi": -0.19749712674111783
+        },
+        {
+          "level": 1,
+          "iteration": 52,
+          "negative_mi": -0.19741840904151325
+        },
+        {
+          "level": 1,
+          "iteration": 53,
+          "negative_mi": -0.19473389175732558
+        },
+        {
+          "level": 1,
+          "iteration": 54,
+          "negative_mi": -0.19296875677293682
+        },
+        {
+          "level": 1,
+          "iteration": 55,
+          "negative_mi": -0.1921434467957396
+        },
+        {
+          "level": 1,
+          "iteration": 56,
+          "negative_mi": -0.19321176789438538
+        },
+        {
+          "level": 1,
+          "iteration": 57,
+          "negative_mi": -0.19475882056408553
+        },
+        {
+          "level": 1,
+          "iteration": 58,
+          "negative_mi": -0.19318723788368003
+        },
+        {
+          "level": 1,
+          "iteration": 59,
+          "negative_mi": -0.1930863953194652
+        },
+        {
+          "level": 1,
+          "iteration": 60,
+          "negative_mi": -0.1918395297285089
+        },
+        {
+          "level": 1,
+          "iteration": 61,
+          "negative_mi": -0.191564057395267
+        },
+        {
+          "level": 1,
+          "iteration": 62,
+          "negative_mi": -0.19114804591878576
+        },
+        {
+          "level": 1,
+          "iteration": 63,
+          "negative_mi": -0.18989941658612305
+        },
+        {
+          "level": 1,
+          "iteration": 64,
+          "negative_mi": -0.1878884533235539
+        },
+        {
+          "level": 1,
+          "iteration": 65,
+          "negative_mi": -0.18893947821540255
+        },
+        {
+          "level": 1,
+          "iteration": 66,
+          "negative_mi": -0.18972651830744475
+        },
+        {
+          "level": 1,
+          "iteration": 67,
+          "negative_mi": -0.18927977169866705
+        },
+        {
+          "level": 1,
+          "iteration": 68,
+          "negative_mi": -0.1893993551818838
+        },
+        {
+          "level": 1,
+          "iteration": 69,
+          "negative_mi": -0.18954903489133734
+        },
+        {
+          "level": 1,
+          "iteration": 70,
+          "negative_mi": -0.1893842595958092
+        },
+        {
+          "level": 1,
+          "iteration": 71,
+          "negative_mi": -0.1899131765960323
+        },
+        {
+          "level": 1,
+          "iteration": 72,
+          "negative_mi": -0.18900075896492413
+        },
+        {
+          "level": 1,
+          "iteration": 73,
+          "negative_mi": -0.18781636961139717
+        },
+        {
+          "level": 1,
+          "iteration": 74,
+          "negative_mi": -0.18684826077548022
+        },
+        {
+          "level": 1,
+          "iteration": 75,
+          "negative_mi": -0.18549081104095644
+        },
+        {
+          "level": 1,
+          "iteration": 76,
+          "negative_mi": -0.1840480879786317
+        },
+        {
+          "level": 1,
+          "iteration": 77,
+          "negative_mi": -0.18413547950499998
+        },
+        {
+          "level": 1,
+          "iteration": 78,
+          "negative_mi": -0.18362932080496713
+        },
+        {
+          "level": 1,
+          "iteration": 79,
+          "negative_mi": -0.18386061190137845
+        },
+        {
+          "level": 1,
+          "iteration": 80,
+          "negative_mi": -0.1822348491756643
+        },
+        {
+          "level": 1,
+          "iteration": 81,
+          "negative_mi": -0.18157722781890218
+        },
+        {
+          "level": 1,
+          "iteration": 82,
+          "negative_mi": -0.17863649216133815
+        },
+        {
+          "level": 1,
+          "iteration": 83,
+          "negative_mi": -0.17659965526360202
+        },
+        {
+          "level": 1,
+          "iteration": 84,
+          "negative_mi": -0.17643430573723287
+        },
+        {
+          "level": 1,
+          "iteration": 85,
+          "negative_mi": -0.17535846155328044
+        },
+        {
+          "level": 1,
+          "iteration": 86,
+          "negative_mi": -0.17542824906064103
+        },
+        {
+          "level": 1,
+          "iteration": 87,
+          "negative_mi": -0.17532775613625357
+        },
+        {
+          "level": 1,
+          "iteration": 88,
+          "negative_mi": -0.17521307711257456
+        },
+        {
+          "level": 1,
+          "iteration": 89,
+          "negative_mi": -0.17498138508034636
+        },
+        {
+          "level": 1,
+          "iteration": 90,
+          "negative_mi": -0.17336172363875707
+        },
+        {
+          "level": 1,
+          "iteration": 91,
+          "negative_mi": -0.1697791194108573
+        },
+        {
+          "level": 1,
+          "iteration": 92,
+          "negative_mi": -0.17095577819099123
+        },
+        {
+          "level": 1,
+          "iteration": 93,
+          "negative_mi": -0.16957645190365497
+        },
+        {
+          "level": 1,
+          "iteration": 94,
+          "negative_mi": -0.1678388613387948
+        },
+        {
+          "level": 1,
+          "iteration": 95,
+          "negative_mi": -0.16671107606317534
+        },
+        {
+          "level": 1,
+          "iteration": 96,
+          "negative_mi": -0.16505530982705746
+        },
+        {
+          "level": 1,
+          "iteration": 97,
+          "negative_mi": -0.16419041006997645
+        },
+        {
+          "level": 1,
+          "iteration": 98,
+          "negative_mi": -0.16429628662978454
+        },
+        {
+          "level": 1,
+          "iteration": 99,
+          "negative_mi": -0.16559830880706294
+        },
+        {
+          "level": 1,
+          "iteration": 100,
+          "negative_mi": -0.16597147845244936
+        },
+        {
+          "level": 1,
+          "iteration": 101,
+          "negative_mi": -0.16685325811354051
+        },
+        {
+          "level": 1,
+          "iteration": 102,
+          "negative_mi": -0.1672631015586722
+        },
+        {
+          "level": 1,
+          "iteration": 103,
+          "negative_mi": -0.1676146082875391
+        },
+        {
+          "level": 1,
+          "iteration": 104,
+          "negative_mi": -0.16753469250943623
+        },
+        {
+          "level": 1,
+          "iteration": 105,
+          "negative_mi": -0.16623649729994994
+        },
+        {
+          "level": 1,
+          "iteration": 106,
+          "negative_mi": -0.16825339538866196
+        },
+        {
+          "level": 1,
+          "iteration": 107,
+          "negative_mi": -0.1639955045363933
+        },
+        {
+          "level": 1,
+          "iteration": 108,
+          "negative_mi": -0.16244602135609812
+        },
+        {
+          "level": 1,
+          "iteration": 109,
+          "negative_mi": -0.16358875530851966
+        },
+        {
+          "level": 1,
+          "iteration": 110,
+          "negative_mi": -0.16433444698604188
+        },
+        {
+          "level": 1,
+          "iteration": 111,
+          "negative_mi": -0.16532220601980238
+        },
+        {
+          "level": 1,
+          "iteration": 112,
+          "negative_mi": -0.16623116625471931
+        },
+        {
+          "level": 1,
+          "iteration": 113,
+          "negative_mi": -0.16626427470278216
+        },
+        {
+          "level": 1,
+          "iteration": 114,
+          "negative_mi": -0.16516944019553856
+        },
+        {
+          "level": 1,
+          "iteration": 115,
+          "negative_mi": -0.16633845053111732
+        },
+        {
+          "level": 1,
+          "iteration": 116,
+          "negative_mi": -0.1667716977397371
+        },
+        {
+          "level": 1,
+          "iteration": 117,
+          "negative_mi": -0.1653768837465306
+        },
+        {
+          "level": 1,
+          "iteration": 118,
+          "negative_mi": -0.16484721103542108
+        },
+        {
+          "level": 1,
+          "iteration": 119,
+          "negative_mi": -0.16526982607107107
+        },
+        {
+          "level": 1,
+          "iteration": 120,
+          "negative_mi": -0.1648765426100903
+        },
+        {
+          "level": 1,
+          "iteration": 121,
+          "negative_mi": -0.16409555128853187
+        },
+        {
+          "level": 1,
+          "iteration": 122,
+          "negative_mi": -0.16336589944375546
+        },
+        {
+          "level": 1,
+          "iteration": 123,
+          "negative_mi": -0.16280101811964356
+        },
+        {
+          "level": 1,
+          "iteration": 124,
+          "negative_mi": -0.16206511628102602
+        },
+        {
+          "level": 1,
+          "iteration": 125,
+          "negative_mi": -0.16167820625818027
+        },
+        {
+          "level": 1,
+          "iteration": 126,
+          "negative_mi": -0.16156679045246866
+        },
+        {
+          "level": 1,
+          "iteration": 127,
+          "negative_mi": -0.160957304520344
+        },
+        {
+          "level": 1,
+          "iteration": 128,
+          "negative_mi": -0.1606536194541712
+        },
+        {
+          "level": 1,
+          "iteration": 129,
+          "negative_mi": -0.1607373015261181
+        },
+        {
+          "level": 1,
+          "iteration": 130,
+          "negative_mi": -0.16031004578268576
+        },
+        {
+          "level": 1,
+          "iteration": 131,
+          "negative_mi": -0.1600264943152753
+        },
+        {
+          "level": 1,
+          "iteration": 132,
+          "negative_mi": -0.16028279081343522
+        },
+        {
+          "level": 1,
+          "iteration": 133,
+          "negative_mi": -0.16051776966415396
+        },
+        {
+          "level": 1,
+          "iteration": 134,
+          "negative_mi": -0.1600127234987393
+        },
+        {
+          "level": 1,
+          "iteration": 135,
+          "negative_mi": -0.1608266768802516
+        },
+        {
+          "level": 1,
+          "iteration": 136,
+          "negative_mi": -0.15972363647824186
+        },
+        {
+          "level": 1,
+          "iteration": 137,
+          "negative_mi": -0.15975282419452982
+        },
+        {
+          "level": 1,
+          "iteration": 138,
+          "negative_mi": -0.1595884424733953
+        },
+        {
+          "level": 1,
+          "iteration": 139,
+          "negative_mi": -0.1594663464218538
+        },
+        {
+          "level": 1,
+          "iteration": 140,
+          "negative_mi": -0.15959767525899318
+        },
+        {
+          "level": 1,
+          "iteration": 141,
+          "negative_mi": -0.1597102128895034
+        },
+        {
+          "level": 1,
+          "iteration": 142,
+          "negative_mi": -0.15958858181916516
+        },
+        {
+          "level": 1,
+          "iteration": 143,
+          "negative_mi": -0.15973311865300854
+        },
+        {
+          "level": 1,
+          "iteration": 144,
+          "negative_mi": -0.15983514670342777
+        },
+        {
+          "level": 1,
+          "iteration": 145,
+          "negative_mi": -0.15989593721940198
+        },
+        {
+          "level": 1,
+          "iteration": 146,
+          "negative_mi": -0.1600449055520538
+        },
+        {
+          "level": 1,
+          "iteration": 147,
+          "negative_mi": -0.16020936622227774
+        },
+        {
+          "level": 1,
+          "iteration": 148,
+          "negative_mi": -0.16035565109253055
+        },
+        {
+          "level": 1,
+          "iteration": 149,
+          "negative_mi": -0.16046143926466933
+        },
+        {
+          "level": 1,
+          "iteration": 150,
+          "negative_mi": -0.16059199246409378
+        },
+        {
+          "level": 1,
+          "iteration": 151,
+          "negative_mi": -0.16071780438091124
+        },
+        {
+          "level": 1,
+          "iteration": 152,
+          "negative_mi": -0.16085260034946117
+        },
+        {
+          "level": 1,
+          "iteration": 153,
+          "negative_mi": -0.16095681086853272
+        },
+        {
+          "level": 1,
+          "iteration": 154,
+          "negative_mi": -0.16107629404806006
+        },
+        {
+          "level": 1,
+          "iteration": 155,
+          "negative_mi": -0.16108126801977807
+        },
+        {
+          "level": 1,
+          "iteration": 156,
+          "negative_mi": -0.1613808726436145
+        },
+        {
+          "level": 1,
+          "iteration": 157,
+          "negative_mi": -0.16148311060735954
+        },
+        {
+          "level": 1,
+          "iteration": 158,
+          "negative_mi": -0.16154897761423356
+        },
+        {
+          "level": 1,
+          "iteration": 159,
+          "negative_mi": -0.16168089814708564
+        },
+        {
+          "level": 1,
+          "iteration": 160,
+          "negative_mi": -0.16183297814356074
+        },
+        {
+          "level": 1,
+          "iteration": 161,
+          "negative_mi": -0.1618924425981367
+        },
+        {
+          "level": 1,
+          "iteration": 162,
+          "negative_mi": -0.16193048344400038
+        },
+        {
+          "level": 1,
+          "iteration": 163,
+          "negative_mi": -0.16194121064104372
+        },
+        {
+          "level": 1,
+          "iteration": 164,
+          "negative_mi": -0.16191324177654356
+        },
+        {
+          "level": 1,
+          "iteration": 165,
+          "negative_mi": -0.16178262883361713
+        },
+        {
+          "level": 1,
+          "iteration": 166,
+          "negative_mi": -0.16168505817274095
+        },
+        {
+          "level": 1,
+          "iteration": 167,
+          "negative_mi": -0.16167677808721062
+        },
+        {
+          "level": 1,
+          "iteration": 168,
+          "negative_mi": -0.16150641310706598
+        },
+        {
+          "level": 1,
+          "iteration": 169,
+          "negative_mi": -0.161281250879486
+        },
+        {
+          "level": 1,
+          "iteration": 170,
+          "negative_mi": -0.1610277865083051
+        },
+        {
+          "level": 1,
+          "iteration": 171,
+          "negative_mi": -0.16074845403427462
+        },
+        {
+          "level": 1,
+          "iteration": 172,
+          "negative_mi": -0.1604992749142554
+        },
+        {
+          "level": 1,
+          "iteration": 173,
+          "negative_mi": -0.16015001032974674
+        },
+        {
+          "level": 1,
+          "iteration": 174,
+          "negative_mi": -0.1597818685672364
+        },
+        {
+          "level": 1,
+          "iteration": 175,
+          "negative_mi": -0.15940617531497617
+        },
+        {
+          "level": 1,
+          "iteration": 176,
+          "negative_mi": -0.1592760407558737
+        },
+        {
+          "level": 1,
+          "iteration": 177,
+          "negative_mi": -0.15919360929906437
+        },
+        {
+          "level": 1,
+          "iteration": 178,
+          "negative_mi": -0.15910711513187434
+        },
+        {
+          "level": 1,
+          "iteration": 179,
+          "negative_mi": -0.15905993574703303
+        },
+        {
+          "level": 1,
+          "iteration": 180,
+          "negative_mi": -0.15902430046143887
+        },
+        {
+          "level": 1,
+          "iteration": 181,
+          "negative_mi": -0.15908876011485895
+        },
+        {
+          "level": 1,
+          "iteration": 182,
+          "negative_mi": -0.15920377632952756
+        },
+        {
+          "level": 1,
+          "iteration": 183,
+          "negative_mi": -0.15913017723123066
+        },
+        {
+          "level": 1,
+          "iteration": 184,
+          "negative_mi": -0.1591283368169523
+        },
+        {
+          "level": 1,
+          "iteration": 185,
+          "negative_mi": -0.1592710156759945
+        },
+        {
+          "level": 1,
+          "iteration": 186,
+          "negative_mi": -0.15918818220976458
+        },
+        {
+          "level": 1,
+          "iteration": 187,
+          "negative_mi": -0.15908560872153688
+        },
+        {
+          "level": 1,
+          "iteration": 188,
+          "negative_mi": -0.15904984311523052
+        },
+        {
+          "level": 1,
+          "iteration": 189,
+          "negative_mi": -0.15906861989361357
+        },
+        {
+          "level": 1,
+          "iteration": 190,
+          "negative_mi": -0.15904765985710528
+        },
+        {
+          "level": 1,
+          "iteration": 191,
+          "negative_mi": -0.15932930347738256
+        },
+        {
+          "level": 1,
+          "iteration": 192,
+          "negative_mi": -0.15937820618581047
+        },
+        {
+          "level": 1,
+          "iteration": 193,
+          "negative_mi": -0.15942972507762956
+        },
+        {
+          "level": 1,
+          "iteration": 194,
+          "negative_mi": -0.15947825120936263
+        },
+        {
+          "level": 1,
+          "iteration": 195,
+          "negative_mi": -0.1595706359573537
+        },
+        {
+          "level": 1,
+          "iteration": 196,
+          "negative_mi": -0.15961876142485404
+        },
+        {
+          "level": 1,
+          "iteration": 197,
+          "negative_mi": -0.15966881490287624
+        },
+        {
+          "level": 1,
+          "iteration": 198,
+          "negative_mi": -0.15972101869324398
+        },
+        {
+          "level": 1,
+          "iteration": 199,
+          "negative_mi": -0.15975458758103217
+        },
+        {
+          "level": 2,
+          "iteration": 0,
+          "negative_mi": -0.08877853954487128
+        },
+        {
+          "level": 2,
+          "iteration": 1,
+          "negative_mi": -0.08822475684298207
+        },
+        {
+          "level": 2,
+          "iteration": 2,
+          "negative_mi": -0.08812370424587918
+        },
+        {
+          "level": 2,
+          "iteration": 3,
+          "negative_mi": -0.0876805517528378
+        },
+        {
+          "level": 2,
+          "iteration": 4,
+          "negative_mi": -0.08728138652757281
+        },
+        {
+          "level": 2,
+          "iteration": 5,
+          "negative_mi": -0.0865578559130636
+        },
+        {
+          "level": 2,
+          "iteration": 6,
+          "negative_mi": -0.08617778708806517
+        },
+        {
+          "level": 2,
+          "iteration": 7,
+          "negative_mi": -0.08609665207258432
+        },
+        {
+          "level": 2,
+          "iteration": 8,
+          "negative_mi": -0.08573571822925372
+        },
+        {
+          "level": 2,
+          "iteration": 9,
+          "negative_mi": -0.08516054992054067
+        },
+        {
+          "level": 2,
+          "iteration": 10,
+          "negative_mi": -0.08477927858604667
+        },
+        {
+          "level": 2,
+          "iteration": 11,
+          "negative_mi": -0.08409018995539559
+        },
+        {
+          "level": 2,
+          "iteration": 12,
+          "negative_mi": -0.08319782803083198
+        },
+        {
+          "level": 2,
+          "iteration": 13,
+          "negative_mi": -0.08300306217862055
+        },
+        {
+          "level": 2,
+          "iteration": 14,
+          "negative_mi": -0.08319762559613357
+        },
+        {
+          "level": 2,
+          "iteration": 15,
+          "negative_mi": -0.08280602249089065
+        },
+        {
+          "level": 2,
+          "iteration": 16,
+          "negative_mi": -0.08237821475641209
+        },
+        {
+          "level": 2,
+          "iteration": 17,
+          "negative_mi": -0.08247162218734155
+        },
+        {
+          "level": 2,
+          "iteration": 18,
+          "negative_mi": -0.08245805129459399
+        },
+        {
+          "level": 2,
+          "iteration": 19,
+          "negative_mi": -0.08249988210573204
+        },
+        {
+          "level": 2,
+          "iteration": 20,
+          "negative_mi": -0.08244936597572669
+        },
+        {
+          "level": 2,
+          "iteration": 21,
+          "negative_mi": -0.08211438023191776
+        },
+        {
+          "level": 2,
+          "iteration": 22,
+          "negative_mi": -0.08247462245809609
+        },
+        {
+          "level": 2,
+          "iteration": 23,
+          "negative_mi": -0.08275609186380882
+        },
+        {
+          "level": 2,
+          "iteration": 24,
+          "negative_mi": -0.08181160201747778
+        },
+        {
+          "level": 2,
+          "iteration": 25,
+          "negative_mi": -0.08162411748715905
+        },
+        {
+          "level": 2,
+          "iteration": 26,
+          "negative_mi": -0.08125670228958519
+        },
+        {
+          "level": 2,
+          "iteration": 27,
+          "negative_mi": -0.08075273634102682
+        },
+        {
+          "level": 2,
+          "iteration": 28,
+          "negative_mi": -0.07977266625337734
+        },
+        {
+          "level": 2,
+          "iteration": 29,
+          "negative_mi": -0.0793170961870418
+        },
+        {
+          "level": 2,
+          "iteration": 30,
+          "negative_mi": -0.07933928756626302
+        },
+        {
+          "level": 2,
+          "iteration": 31,
+          "negative_mi": -0.07866214759334278
+        },
+        {
+          "level": 2,
+          "iteration": 32,
+          "negative_mi": -0.07816509894102552
+        },
+        {
+          "level": 2,
+          "iteration": 33,
+          "negative_mi": -0.07743291741429906
+        },
+        {
+          "level": 2,
+          "iteration": 34,
+          "negative_mi": -0.07684800673181455
+        },
+        {
+          "level": 2,
+          "iteration": 35,
+          "negative_mi": -0.075790101709666
+        },
+        {
+          "level": 2,
+          "iteration": 36,
+          "negative_mi": -0.07542863563474307
+        },
+        {
+          "level": 2,
+          "iteration": 37,
+          "negative_mi": -0.07483687219974536
+        },
+        {
+          "level": 2,
+          "iteration": 38,
+          "negative_mi": -0.0746998726300961
+        },
+        {
+          "level": 2,
+          "iteration": 39,
+          "negative_mi": -0.07475517160286503
+        },
+        {
+          "level": 2,
+          "iteration": 40,
+          "negative_mi": -0.07475837670577293
+        },
+        {
+          "level": 2,
+          "iteration": 41,
+          "negative_mi": -0.07450808169702675
+        },
+        {
+          "level": 2,
+          "iteration": 42,
+          "negative_mi": -0.07448161460182845
+        },
+        {
+          "level": 2,
+          "iteration": 43,
+          "negative_mi": -0.07481443837667896
+        },
+        {
+          "level": 2,
+          "iteration": 44,
+          "negative_mi": -0.07511252815907316
+        },
+        {
+          "level": 2,
+          "iteration": 45,
+          "negative_mi": -0.07496079992574756
+        },
+        {
+          "level": 2,
+          "iteration": 46,
+          "negative_mi": -0.07445504531080786
+        },
+        {
+          "level": 2,
+          "iteration": 47,
+          "negative_mi": -0.07430816806562847
+        },
+        {
+          "level": 2,
+          "iteration": 48,
+          "negative_mi": -0.07415249051401872
+        },
+        {
+          "level": 2,
+          "iteration": 49,
+          "negative_mi": -0.07343881597406159
+        },
+        {
+          "level": 2,
+          "iteration": 50,
+          "negative_mi": -0.07349423538944909
+        },
+        {
+          "level": 2,
+          "iteration": 51,
+          "negative_mi": -0.07296172456906305
+        },
+        {
+          "level": 2,
+          "iteration": 52,
+          "negative_mi": -0.07270036520580682
+        },
+        {
+          "level": 2,
+          "iteration": 53,
+          "negative_mi": -0.07245991587265023
+        },
+        {
+          "level": 2,
+          "iteration": 54,
+          "negative_mi": -0.07169109650693954
+        },
+        {
+          "level": 2,
+          "iteration": 55,
+          "negative_mi": -0.07118147477338856
+        },
+        {
+          "level": 2,
+          "iteration": 56,
+          "negative_mi": -0.07021016931577585
+        },
+        {
+          "level": 2,
+          "iteration": 57,
+          "negative_mi": -0.06950842724461384
+        },
+        {
+          "level": 2,
+          "iteration": 58,
+          "negative_mi": -0.06845807650347673
+        },
+        {
+          "level": 2,
+          "iteration": 59,
+          "negative_mi": -0.06788365177097876
+        },
+        {
+          "level": 2,
+          "iteration": 60,
+          "negative_mi": -0.06763358833819329
+        },
+        {
+          "level": 2,
+          "iteration": 61,
+          "negative_mi": -0.0678394005138234
+        },
+        {
+          "level": 2,
+          "iteration": 62,
+          "negative_mi": -0.06703103582780381
+        },
+        {
+          "level": 2,
+          "iteration": 63,
+          "negative_mi": -0.06742692602176548
+        },
+        {
+          "level": 2,
+          "iteration": 64,
+          "negative_mi": -0.0671705052673201
+        },
+        {
+          "level": 2,
+          "iteration": 65,
+          "negative_mi": -0.06714409783756183
+        },
+        {
+          "level": 2,
+          "iteration": 66,
+          "negative_mi": -0.06677005531054438
+        },
+        {
+          "level": 2,
+          "iteration": 67,
+          "negative_mi": -0.0665660819978849
+        },
+        {
+          "level": 2,
+          "iteration": 68,
+          "negative_mi": -0.06686448428751249
+        },
+        {
+          "level": 2,
+          "iteration": 69,
+          "negative_mi": -0.06683126280977408
+        },
+        {
+          "level": 2,
+          "iteration": 70,
+          "negative_mi": -0.06600820109264517
+        },
+        {
+          "level": 2,
+          "iteration": 71,
+          "negative_mi": -0.06606622189539677
+        },
+        {
+          "level": 2,
+          "iteration": 72,
+          "negative_mi": -0.06603257152531332
+        },
+        {
+          "level": 2,
+          "iteration": 73,
+          "negative_mi": -0.06607222067066496
+        },
+        {
+          "level": 2,
+          "iteration": 74,
+          "negative_mi": -0.06646940715278168
+        },
+        {
+          "level": 2,
+          "iteration": 75,
+          "negative_mi": -0.06687522602378092
+        },
+        {
+          "level": 2,
+          "iteration": 76,
+          "negative_mi": -0.06760275034556716
+        },
+        {
+          "level": 2,
+          "iteration": 77,
+          "negative_mi": -0.0681988340131596
+        },
+        {
+          "level": 2,
+          "iteration": 78,
+          "negative_mi": -0.0686876380890972
+        },
+        {
+          "level": 2,
+          "iteration": 79,
+          "negative_mi": -0.06857823783896203
+        },
+        {
+          "level": 2,
+          "iteration": 80,
+          "negative_mi": -0.06923312360468109
+        },
+        {
+          "level": 2,
+          "iteration": 81,
+          "negative_mi": -0.06943731330861835
+        },
+        {
+          "level": 2,
+          "iteration": 82,
+          "negative_mi": -0.06889526654523276
+        },
+        {
+          "level": 2,
+          "iteration": 83,
+          "negative_mi": -0.06960230796277639
+        },
+        {
+          "level": 2,
+          "iteration": 84,
+          "negative_mi": -0.07079411584318968
+        },
+        {
+          "level": 2,
+          "iteration": 85,
+          "negative_mi": -0.07111641839007234
+        },
+        {
+          "level": 2,
+          "iteration": 86,
+          "negative_mi": -0.07114519315775054
+        },
+        {
+          "level": 2,
+          "iteration": 87,
+          "negative_mi": -0.07104595449499491
+        },
+        {
+          "level": 2,
+          "iteration": 88,
+          "negative_mi": -0.07144676807588621
+        },
+        {
+          "level": 2,
+          "iteration": 89,
+          "negative_mi": -0.07228390284698634
+        },
+        {
+          "level": 2,
+          "iteration": 90,
+          "negative_mi": -0.07277665986136289
+        },
+        {
+          "level": 2,
+          "iteration": 91,
+          "negative_mi": -0.07311611652275048
+        },
+        {
+          "level": 2,
+          "iteration": 92,
+          "negative_mi": -0.07341746486212498
+        },
+        {
+          "level": 2,
+          "iteration": 93,
+          "negative_mi": -0.07323648015507885
+        },
+        {
+          "level": 2,
+          "iteration": 94,
+          "negative_mi": -0.07388836249390446
+        },
+        {
+          "level": 2,
+          "iteration": 95,
+          "negative_mi": -0.07504281731382491
+        },
+        {
+          "level": 2,
+          "iteration": 96,
+          "negative_mi": -0.07533618732863834
+        },
+        {
+          "level": 2,
+          "iteration": 97,
+          "negative_mi": -0.07580915531504684
+        },
+        {
+          "level": 2,
+          "iteration": 98,
+          "negative_mi": -0.0766645805537092
+        },
+        {
+          "level": 2,
+          "iteration": 99,
+          "negative_mi": -0.07759176220190699
+        },
+        {
+          "level": 2,
+          "iteration": 100,
+          "negative_mi": -0.0771609907583369
+        },
+        {
+          "level": 2,
+          "iteration": 101,
+          "negative_mi": -0.07706092444867434
+        },
+        {
+          "level": 2,
+          "iteration": 102,
+          "negative_mi": -0.07706567703335697
+        },
+        {
+          "level": 2,
+          "iteration": 103,
+          "negative_mi": -0.07761832447624945
+        },
+        {
+          "level": 2,
+          "iteration": 104,
+          "negative_mi": -0.07823769099252766
+        },
+        {
+          "level": 2,
+          "iteration": 105,
+          "negative_mi": -0.07830983958122868
+        },
+        {
+          "level": 2,
+          "iteration": 106,
+          "negative_mi": -0.07872380445176534
+        },
+        {
+          "level": 2,
+          "iteration": 107,
+          "negative_mi": -0.07927901343301981
+        },
+        {
+          "level": 2,
+          "iteration": 108,
+          "negative_mi": -0.07903536576058284
+        },
+        {
+          "level": 2,
+          "iteration": 109,
+          "negative_mi": -0.07999433139039394
+        },
+        {
+          "level": 2,
+          "iteration": 110,
+          "negative_mi": -0.0806720506402501
+        },
+        {
+          "level": 2,
+          "iteration": 111,
+          "negative_mi": -0.08024003778845434
+        },
+        {
+          "level": 2,
+          "iteration": 112,
+          "negative_mi": -0.08038762423580235
+        },
+        {
+          "level": 2,
+          "iteration": 113,
+          "negative_mi": -0.08157967075866696
+        },
+        {
+          "level": 2,
+          "iteration": 114,
+          "negative_mi": -0.08236812262999267
+        },
+        {
+          "level": 2,
+          "iteration": 115,
+          "negative_mi": -0.08300340616577774
+        },
+        {
+          "level": 2,
+          "iteration": 116,
+          "negative_mi": -0.08324496285319524
+        },
+        {
+          "level": 2,
+          "iteration": 117,
+          "negative_mi": -0.08347844715806388
+        },
+        {
+          "level": 2,
+          "iteration": 118,
+          "negative_mi": -0.08401092851983641
+        },
+        {
+          "level": 2,
+          "iteration": 119,
+          "negative_mi": -0.084472881607182
+        },
+        {
+          "level": 2,
+          "iteration": 120,
+          "negative_mi": -0.08495100109398379
+        },
+        {
+          "level": 2,
+          "iteration": 121,
+          "negative_mi": -0.08627079272951901
+        },
+        {
+          "level": 2,
+          "iteration": 122,
+          "negative_mi": -0.08644692684735192
+        },
+        {
+          "level": 2,
+          "iteration": 123,
+          "negative_mi": -0.08591308783686101
+        },
+        {
+          "level": 2,
+          "iteration": 124,
+          "negative_mi": -0.08641348836203339
+        },
+        {
+          "level": 2,
+          "iteration": 125,
+          "negative_mi": -0.08696849152981907
+        },
+        {
+          "level": 2,
+          "iteration": 126,
+          "negative_mi": -0.0869708121188891
+        },
+        {
+          "level": 2,
+          "iteration": 127,
+          "negative_mi": -0.08754701170239734
+        },
+        {
+          "level": 2,
+          "iteration": 128,
+          "negative_mi": -0.08732533899334245
+        },
+        {
+          "level": 2,
+          "iteration": 129,
+          "negative_mi": -0.08773916109961925
+        },
+        {
+          "level": 2,
+          "iteration": 130,
+          "negative_mi": -0.08772721991960446
+        },
+        {
+          "level": 2,
+          "iteration": 131,
+          "negative_mi": -0.08811919819863101
+        },
+        {
+          "level": 2,
+          "iteration": 132,
+          "negative_mi": -0.08754413158786777
+        },
+        {
+          "level": 2,
+          "iteration": 133,
+          "negative_mi": -0.08770134563591718
+        },
+        {
+          "level": 2,
+          "iteration": 134,
+          "negative_mi": -0.08927357695324666
+        },
+        {
+          "level": 2,
+          "iteration": 135,
+          "negative_mi": -0.08836022375327311
+        },
+        {
+          "level": 2,
+          "iteration": 136,
+          "negative_mi": -0.08734651359865364
+        },
+        {
+          "level": 2,
+          "iteration": 137,
+          "negative_mi": -0.0872550551781616
+        },
+        {
+          "level": 2,
+          "iteration": 138,
+          "negative_mi": -0.08571383255347573
+        },
+        {
+          "level": 2,
+          "iteration": 139,
+          "negative_mi": -0.08613157344485808
+        },
+        {
+          "level": 2,
+          "iteration": 140,
+          "negative_mi": -0.08616876957107852
+        },
+        {
+          "level": 2,
+          "iteration": 141,
+          "negative_mi": -0.08634652611023327
+        },
+        {
+          "level": 2,
+          "iteration": 142,
+          "negative_mi": -0.0869555718291356
+        },
+        {
+          "level": 2,
+          "iteration": 143,
+          "negative_mi": -0.08722131200406895
+        },
+        {
+          "level": 2,
+          "iteration": 144,
+          "negative_mi": -0.08696932051325121
+        },
+        {
+          "level": 2,
+          "iteration": 145,
+          "negative_mi": -0.08687105892210235
+        },
+        {
+          "level": 2,
+          "iteration": 146,
+          "negative_mi": -0.08599607498660947
+        },
+        {
+          "level": 2,
+          "iteration": 147,
+          "negative_mi": -0.0856005957998232
+        },
+        {
+          "level": 2,
+          "iteration": 148,
+          "negative_mi": -0.08502998477158348
+        },
+        {
+          "level": 2,
+          "iteration": 149,
+          "negative_mi": -0.08404540653270157
+        },
+        {
+          "level": 2,
+          "iteration": 150,
+          "negative_mi": -0.08603834579796249
+        },
+        {
+          "level": 2,
+          "iteration": 151,
+          "negative_mi": -0.08655153962959387
+        },
+        {
+          "level": 2,
+          "iteration": 152,
+          "negative_mi": -0.08563141949099218
+        },
+        {
+          "level": 2,
+          "iteration": 153,
+          "negative_mi": -0.08624845344754563
+        },
+        {
+          "level": 2,
+          "iteration": 154,
+          "negative_mi": -0.08508325730014851
+        },
+        {
+          "level": 2,
+          "iteration": 155,
+          "negative_mi": -0.08605095650616656
+        },
+        {
+          "level": 2,
+          "iteration": 156,
+          "negative_mi": -0.08587899060565382
+        },
+        {
+          "level": 2,
+          "iteration": 157,
+          "negative_mi": -0.08596843488914381
+        },
+        {
+          "level": 2,
+          "iteration": 158,
+          "negative_mi": -0.08663342791362637
+        },
+        {
+          "level": 2,
+          "iteration": 159,
+          "negative_mi": -0.08632168444477761
+        },
+        {
+          "level": 2,
+          "iteration": 160,
+          "negative_mi": -0.08637200285919087
+        },
+        {
+          "level": 2,
+          "iteration": 161,
+          "negative_mi": -0.08575598311286635
+        },
+        {
+          "level": 2,
+          "iteration": 162,
+          "negative_mi": -0.0870734825426502
+        },
+        {
+          "level": 2,
+          "iteration": 163,
+          "negative_mi": -0.08756492403050821
+        },
+        {
+          "level": 2,
+          "iteration": 164,
+          "negative_mi": -0.08713518216699669
+        },
+        {
+          "level": 2,
+          "iteration": 165,
+          "negative_mi": -0.08834531948359718
+        },
+        {
+          "level": 2,
+          "iteration": 166,
+          "negative_mi": -0.08836683203408491
+        },
+        {
+          "level": 2,
+          "iteration": 167,
+          "negative_mi": -0.0877719419067178
+        },
+        {
+          "level": 2,
+          "iteration": 168,
+          "negative_mi": -0.08703256336581956
+        },
+        {
+          "level": 2,
+          "iteration": 169,
+          "negative_mi": -0.08653839446151312
+        },
+        {
+          "level": 2,
+          "iteration": 170,
+          "negative_mi": -0.08729626726208789
+        },
+        {
+          "level": 2,
+          "iteration": 171,
+          "negative_mi": -0.08880235604752189
+        },
+        {
+          "level": 2,
+          "iteration": 172,
+          "negative_mi": -0.08920509584413877
+        },
+        {
+          "level": 2,
+          "iteration": 173,
+          "negative_mi": -0.09160937900356877
+        },
+        {
+          "level": 2,
+          "iteration": 174,
+          "negative_mi": -0.09062414726621218
+        },
+        {
+          "level": 2,
+          "iteration": 175,
+          "negative_mi": -0.09124376499137449
+        },
+        {
+          "level": 2,
+          "iteration": 176,
+          "negative_mi": -0.09142673856695845
+        },
+        {
+          "level": 2,
+          "iteration": 177,
+          "negative_mi": -0.09115761885925665
+        },
+        {
+          "level": 2,
+          "iteration": 178,
+          "negative_mi": -0.0925268448385683
+        },
+        {
+          "level": 2,
+          "iteration": 179,
+          "negative_mi": -0.09224464224449688
+        },
+        {
+          "level": 2,
+          "iteration": 180,
+          "negative_mi": -0.09064180312565154
+        },
+        {
+          "level": 2,
+          "iteration": 181,
+          "negative_mi": -0.0908558991403944
+        },
+        {
+          "level": 2,
+          "iteration": 182,
+          "negative_mi": -0.09118943018406986
+        },
+        {
+          "level": 2,
+          "iteration": 183,
+          "negative_mi": -0.09186256535986655
+        },
+        {
+          "level": 2,
+          "iteration": 184,
+          "negative_mi": -0.09245717032557539
+        },
+        {
+          "level": 2,
+          "iteration": 185,
+          "negative_mi": -0.09223229070988297
+        },
+        {
+          "level": 2,
+          "iteration": 186,
+          "negative_mi": -0.09074762376462867
+        },
+        {
+          "level": 2,
+          "iteration": 187,
+          "negative_mi": -0.09168968484565514
+        },
+        {
+          "level": 2,
+          "iteration": 188,
+          "negative_mi": -0.092470132773545
+        },
+        {
+          "level": 2,
+          "iteration": 189,
+          "negative_mi": -0.09280818891104001
+        },
+        {
+          "level": 2,
+          "iteration": 190,
+          "negative_mi": -0.09205450744766197
+        },
+        {
+          "level": 2,
+          "iteration": 191,
+          "negative_mi": -0.09250208697688177
+        },
+        {
+          "level": 2,
+          "iteration": 192,
+          "negative_mi": -0.0924492367126467
+        },
+        {
+          "level": 2,
+          "iteration": 193,
+          "negative_mi": -0.09246252442866706
+        },
+        {
+          "level": 2,
+          "iteration": 194,
+          "negative_mi": -0.09236320360247005
+        },
+        {
+          "level": 2,
+          "iteration": 195,
+          "negative_mi": -0.0923617557063976
+        },
+        {
+          "level": 2,
+          "iteration": 196,
+          "negative_mi": -0.09236512517976787
+        },
+        {
+          "level": 2,
+          "iteration": 197,
+          "negative_mi": -0.09234398834747092
+        },
+        {
+          "level": 2,
+          "iteration": 198,
+          "negative_mi": -0.09238050690086637
+        },
+        {
+          "level": 2,
+          "iteration": 199,
+          "negative_mi": -0.09241069651722443
+        }
+      ],
+      "transform_direction": "fixed T1 LPS physical point to moving FLAIR LPS physical point"
+    },
+    {
+      "lesion_key": "10029_L2",
+      "selection_reason": "three_dimensional_flair",
+      "metrics": {
+        "negative_mi_before": -0.30325329445742494,
+        "negative_mi_after": -0.31602038197183935,
+        "negative_mi_change": -0.01276708751441441,
+        "foreground_fov_overlap_before": 0.9430318823106167,
+        "foreground_fov_overlap_after": 0.9369743405252462,
+        "rotations_degrees": [
+          -0.4369859808185521,
+          -0.017081457157299085,
+          0.28905621377512425
+        ],
+        "translation_mm": [
+          0.28159245447389414,
+          0.2333463245165111,
+          0.06409079472728774
+        ],
+        "optimizer_stop": "RegularStepGradientDescentOptimizerv4: Step too small after 8 iterations. Current step (0.00390625) is less than minimum step (0.005).",
+        "metric_improved": true,
+        "anatomical_review_complete": false,
+        "clinical_alignment_accepted": 0,
+        "metric_screen_pass": 1,
+        "candidate_status": "metric_screen_only_needs_anatomical_review",
+        "applied_to_analysis": 0,
+        "target_coordinate_fov_before": 1.0,
+        "target_coordinate_fov_after": 1.0
+      },
+      "iteration_trace": [
+        {
+          "level": 0,
+          "iteration": 0,
+          "negative_mi": -0.4648808996404978
+        },
+        {
+          "level": 0,
+          "iteration": 1,
+          "negative_mi": -0.4783761620515146
+        },
+        {
+          "level": 0,
+          "iteration": 2,
+          "negative_mi": -0.4855180434602249
+        },
+        {
+          "level": 0,
+          "iteration": 3,
+          "negative_mi": -0.4841721898947983
+        },
+        {
+          "level": 0,
+          "iteration": 4,
+          "negative_mi": -0.48630605663846954
+        },
+        {
+          "level": 0,
+          "iteration": 5,
+          "negative_mi": -0.48761922844414546
+        },
+        {
+          "level": 0,
+          "iteration": 6,
+          "negative_mi": -0.48848955058861737
+        },
+        {
+          "level": 0,
+          "iteration": 7,
+          "negative_mi": -0.4890637456136199
+        },
+        {
+          "level": 0,
+          "iteration": 8,
+          "negative_mi": -0.48935130502138335
+        },
+        {
+          "level": 0,
+          "iteration": 9,
+          "negative_mi": -0.48989108051076846
+        },
+        {
+          "level": 0,
+          "iteration": 10,
+          "negative_mi": -0.49014358557378607
+        },
+        {
+          "level": 0,
+          "iteration": 11,
+          "negative_mi": -0.4905685347083997
+        },
+        {
+          "level": 0,
+          "iteration": 12,
+          "negative_mi": -0.49106067313766016
+        },
+        {
+          "level": 0,
+          "iteration": 13,
+          "negative_mi": -0.49143563872765234
+        },
+        {
+          "level": 0,
+          "iteration": 14,
+          "negative_mi": -0.4918555237248368
+        },
+        {
+          "level": 0,
+          "iteration": 15,
+          "negative_mi": -0.49218968642072575
+        },
+        {
+          "level": 0,
+          "iteration": 16,
+          "negative_mi": -0.49259472428576884
+        },
+        {
+          "level": 0,
+          "iteration": 17,
+          "negative_mi": -0.4929969323505691
+        },
+        {
+          "level": 0,
+          "iteration": 18,
+          "negative_mi": -0.4935043173523974
+        },
+        {
+          "level": 0,
+          "iteration": 19,
+          "negative_mi": -0.4939895610911412
+        },
+        {
+          "level": 0,
+          "iteration": 20,
+          "negative_mi": -0.4945847757475494
+        },
+        {
+          "level": 0,
+          "iteration": 21,
+          "negative_mi": -0.49504631017762757
+        },
+        {
+          "level": 0,
+          "iteration": 22,
+          "negative_mi": -0.49669532207127476
+        },
+        {
+          "level": 0,
+          "iteration": 23,
+          "negative_mi": -0.4968320779603488
+        },
+        {
+          "level": 0,
+          "iteration": 24,
+          "negative_mi": -0.4974290106834141
+        },
+        {
+          "level": 0,
+          "iteration": 25,
+          "negative_mi": -0.4975279583593191
+        },
+        {
+          "level": 1,
+          "iteration": 0,
+          "negative_mi": -0.33078772612642526
+        },
+        {
+          "level": 1,
+          "iteration": 1,
+          "negative_mi": -0.35090800694188
+        },
+        {
+          "level": 1,
+          "iteration": 2,
+          "negative_mi": -0.3698758715175602
+        },
+        {
+          "level": 1,
+          "iteration": 3,
+          "negative_mi": -0.3786713573737239
+        },
+        {
+          "level": 1,
+          "iteration": 4,
+          "negative_mi": -0.3705710662372657
+        },
+        {
+          "level": 1,
+          "iteration": 5,
+          "negative_mi": -0.3777218886559381
+        },
+        {
+          "level": 1,
+          "iteration": 6,
+          "negative_mi": -0.37886592645643885
+        },
+        {
+          "level": 1,
+          "iteration": 7,
+          "negative_mi": -0.3791437044944705
+        },
+        {
+          "level": 1,
+          "iteration": 8,
+          "negative_mi": -0.3792965936919697
+        },
+        {
+          "level": 1,
+          "iteration": 9,
+          "negative_mi": -0.379270181762547
+        },
+        {
+          "level": 1,
+          "iteration": 10,
+          "negative_mi": -0.3792309529909701
+        },
+        {
+          "level": 1,
+          "iteration": 11,
+          "negative_mi": -0.37926469678722896
+        },
+        {
+          "level": 1,
+          "iteration": 12,
+          "negative_mi": -0.3793237736095245
+        },
+        {
+          "level": 2,
+          "iteration": 0,
+          "negative_mi": -0.31748992522532754
+        },
+        {
+          "level": 2,
+          "iteration": 1,
+          "negative_mi": -0.3111127193090674
+        },
+        {
+          "level": 2,
+          "iteration": 2,
+          "negative_mi": -0.31773764099455387
+        },
+        {
+          "level": 2,
+          "iteration": 3,
+          "negative_mi": -0.31744345119393147
+        },
+        {
+          "level": 2,
+          "iteration": 4,
+          "negative_mi": -0.3187618054537737
+        },
+        {
+          "level": 2,
+          "iteration": 5,
+          "negative_mi": -0.3180601891677374
+        },
+        {
+          "level": 2,
+          "iteration": 6,
+          "negative_mi": -0.3183193845119197
+        },
+        {
+          "level": 2,
+          "iteration": 7,
+          "negative_mi": -0.3183449969140552
+        }
+      ],
+      "transform_direction": "fixed T1 LPS physical point to moving FLAIR LPS physical point"
+    },
+    {
+      "lesion_key": "40158_L1",
+      "selection_reason": "known_coordinate_fov_boundary",
+      "metrics": {
+        "negative_mi_before": -0.20329232517185097,
+        "negative_mi_after": -0.20045683676189877,
+        "negative_mi_change": 0.002835488409952208,
+        "foreground_fov_overlap_before": 0.8876333370401102,
+        "foreground_fov_overlap_after": 0.8944851714669427,
+        "rotations_degrees": [
+          0.9525548887475725,
+          0.1354684946274879,
+          0.3273816182748643
+        ],
+        "translation_mm": [
+          0.22489402843155662,
+          -0.7657640472896675,
+          1.9248324311686527
+        ],
+        "optimizer_stop": "RegularStepGradientDescentOptimizerv4: Step too small after 13 iterations. Current step (0.00390625) is less than minimum step (0.005).",
+        "metric_improved": false,
+        "anatomical_review_complete": false,
+        "clinical_alignment_accepted": 0,
+        "metric_screen_pass": 0,
+        "candidate_status": "rejected_metric_or_overlap",
+        "applied_to_analysis": 0,
+        "target_coordinate_fov_before": 0.9830002297266253,
+        "target_coordinate_fov_after": 1.0
+      },
+      "iteration_trace": [
+        {
+          "level": 0,
+          "iteration": 0,
+          "negative_mi": -0.497700621317232
+        },
+        {
+          "level": 0,
+          "iteration": 1,
+          "negative_mi": -0.5046448023888471
+        },
+        {
+          "level": 0,
+          "iteration": 2,
+          "negative_mi": -0.5088223722476787
+        },
+        {
+          "level": 0,
+          "iteration": 3,
+          "negative_mi": -0.514751669045731
+        },
+        {
+          "level": 0,
+          "iteration": 4,
+          "negative_mi": -0.5136507488077474
+        },
+        {
+          "level": 0,
+          "iteration": 5,
+          "negative_mi": -0.5152547169681518
+        },
+        {
+          "level": 0,
+          "iteration": 6,
+          "negative_mi": -0.5153070603805044
+        },
+        {
+          "level": 0,
+          "iteration": 7,
+          "negative_mi": -0.516724568691568
+        },
+        {
+          "level": 0,
+          "iteration": 8,
+          "negative_mi": -0.5166733435090287
+        },
+        {
+          "level": 0,
+          "iteration": 9,
+          "negative_mi": -0.5177648722540664
+        },
+        {
+          "level": 0,
+          "iteration": 10,
+          "negative_mi": -0.5204132362319825
+        },
+        {
+          "level": 0,
+          "iteration": 11,
+          "negative_mi": -0.5204431637117695
+        },
+        {
+          "level": 0,
+          "iteration": 12,
+          "negative_mi": -0.5208779258295796
+        },
+        {
+          "level": 0,
+          "iteration": 13,
+          "negative_mi": -0.5202768302543885
+        },
+        {
+          "level": 0,
+          "iteration": 14,
+          "negative_mi": -0.5200148833348042
+        },
+        {
+          "level": 0,
+          "iteration": 15,
+          "negative_mi": -0.5184230232454458
+        },
+        {
+          "level": 0,
+          "iteration": 16,
+          "negative_mi": -0.5194795687125608
+        },
+        {
+          "level": 0,
+          "iteration": 17,
+          "negative_mi": -0.5200578335986189
+        },
+        {
+          "level": 0,
+          "iteration": 18,
+          "negative_mi": -0.5198521929282205
+        },
+        {
+          "level": 0,
+          "iteration": 19,
+          "negative_mi": -0.5195149278049764
+        },
+        {
+          "level": 0,
+          "iteration": 20,
+          "negative_mi": -0.5197251660669053
+        },
+        {
+          "level": 1,
+          "iteration": 0,
+          "negative_mi": -0.2797091180239538
+        },
+        {
+          "level": 1,
+          "iteration": 1,
+          "negative_mi": -0.29590721273066445
+        },
+        {
+          "level": 1,
+          "iteration": 2,
+          "negative_mi": -0.29697508927966715
+        },
+        {
+          "level": 1,
+          "iteration": 3,
+          "negative_mi": -0.2981358022676472
+        },
+        {
+          "level": 1,
+          "iteration": 4,
+          "negative_mi": -0.2981570094318577
+        },
+        {
+          "level": 1,
+          "iteration": 5,
+          "negative_mi": -0.29722135126755794
+        },
+        {
+          "level": 1,
+          "iteration": 6,
+          "negative_mi": -0.2982023072837289
+        },
+        {
+          "level": 1,
+          "iteration": 7,
+          "negative_mi": -0.298732850263956
+        },
+        {
+          "level": 1,
+          "iteration": 8,
+          "negative_mi": -0.2989857330796229
+        },
+        {
+          "level": 1,
+          "iteration": 9,
+          "negative_mi": -0.2992624550508307
+        },
+        {
+          "level": 1,
+          "iteration": 10,
+          "negative_mi": -0.2994421562314228
+        },
+        {
+          "level": 1,
+          "iteration": 11,
+          "negative_mi": -0.29970236164605274
+        },
+        {
+          "level": 1,
+          "iteration": 12,
+          "negative_mi": -0.29985139824163554
+        },
+        {
+          "level": 1,
+          "iteration": 13,
+          "negative_mi": -0.3000338925386751
+        },
+        {
+          "level": 1,
+          "iteration": 14,
+          "negative_mi": -0.30015391987016377
+        },
+        {
+          "level": 1,
+          "iteration": 15,
+          "negative_mi": -0.30026695872469017
+        },
+        {
+          "level": 1,
+          "iteration": 16,
+          "negative_mi": -0.3003778774396773
+        },
+        {
+          "level": 1,
+          "iteration": 17,
+          "negative_mi": -0.30048503976682883
+        },
+        {
+          "level": 1,
+          "iteration": 18,
+          "negative_mi": -0.30073578417157354
+        },
+        {
+          "level": 1,
+          "iteration": 19,
+          "negative_mi": -0.3009305274005843
+        },
+        {
+          "level": 1,
+          "iteration": 20,
+          "negative_mi": -0.30104725093106693
+        },
+        {
+          "level": 1,
+          "iteration": 21,
+          "negative_mi": -0.3011712874037941
+        },
+        {
+          "level": 1,
+          "iteration": 22,
+          "negative_mi": -0.301065625577564
+        },
+        {
+          "level": 1,
+          "iteration": 23,
+          "negative_mi": -0.30091039893634697
+        },
+        {
+          "level": 1,
+          "iteration": 24,
+          "negative_mi": -0.30099177865019017
+        },
+        {
+          "level": 1,
+          "iteration": 25,
+          "negative_mi": -0.3010804241632807
+        },
+        {
+          "level": 1,
+          "iteration": 26,
+          "negative_mi": -0.30105331833427235
+        },
+        {
+          "level": 1,
+          "iteration": 27,
+          "negative_mi": -0.3013327931201739
+        },
+        {
+          "level": 1,
+          "iteration": 28,
+          "negative_mi": -0.3013152732563496
+        },
+        {
+          "level": 1,
+          "iteration": 29,
+          "negative_mi": -0.3013810324293748
+        },
+        {
+          "level": 1,
+          "iteration": 30,
+          "negative_mi": -0.30143165717329784
+        },
+        {
+          "level": 2,
+          "iteration": 0,
+          "negative_mi": -0.21610507840085466
+        },
+        {
+          "level": 2,
+          "iteration": 1,
+          "negative_mi": -0.219247690743061
+        },
+        {
+          "level": 2,
+          "iteration": 2,
+          "negative_mi": -0.21461339999000625
+        },
+        {
+          "level": 2,
+          "iteration": 3,
+          "negative_mi": -0.21330992302987759
+        },
+        {
+          "level": 2,
+          "iteration": 4,
+          "negative_mi": -0.2133599259839144
+        },
+        {
+          "level": 2,
+          "iteration": 5,
+          "negative_mi": -0.21042804362847675
+        },
+        {
+          "level": 2,
+          "iteration": 6,
+          "negative_mi": -0.2117225303327491
+        },
+        {
+          "level": 2,
+          "iteration": 7,
+          "negative_mi": -0.21271677901877734
+        },
+        {
+          "level": 2,
+          "iteration": 8,
+          "negative_mi": -0.21233101576104074
+        },
+        {
+          "level": 2,
+          "iteration": 9,
+          "negative_mi": -0.21208510682758694
+        },
+        {
+          "level": 2,
+          "iteration": 10,
+          "negative_mi": -0.21249244422851152
+        },
+        {
+          "level": 2,
+          "iteration": 11,
+          "negative_mi": -0.2124148127807433
+        },
+        {
+          "level": 2,
+          "iteration": 12,
+          "negative_mi": -0.21260551280188703
+        }
+      ],
+      "transform_direction": "fixed T1 LPS physical point to moving FLAIR LPS physical point"
+    }
+  ],
+  "case_count": 3,
+  "verified_source_files": 793,
+  "verified_source_bytes": 260023270,
+  "restored_archive_parts": [
+    {
+      "filename": "RN_MRI_part_01_of_16.zip",
+      "sha256": "8caf5f3fcb240bf81c0f50a72458ef771a47036f694d4c692535a99560a8d226"
+    },
+    {
+      "filename": "RN_MRI_part_15_of_16.zip",
+      "sha256": "e794a3576a98d7f62f5c01a57058b144a3146caed30224cfbbf513e9cbc592d9"
+    }
+  ],
+  "method": {
+    "library": "SimpleITK",
+    "version": "2.5.6",
+    "transform": "Euler3D rigid",
+    "initialization": "identity parameters; rotation center fixed-image physical center",
+    "histogram_bins": 50,
+    "sampling": "random 20 percent, seed 20261029",
+    "threads": 1,
+    "registration_grid_mm": 2.0,
+    "evaluation_grid_mm": 3.0,
+    "pyramid_shrink": [
+      4,
+      2,
+      1
+    ],
+    "pyramid_smoothing_mm": [
+      2,
+      1,
+      0
+    ],
+    "iteration_limit_per_level": 200,
+    "optimizer": "RegularStepGradientDescent",
+    "learning_rate": 0.5,
+    "min_step": 0.005,
+    "relaxation_factor": 0.5,
+    "foreground": "normalized fixed intensity >0.05; not a validated brain mask",
+    "interpolator": "linear",
+    "engineering_screen": "negative MI improves and foreground overlap loss <=0.02; not clinical validation",
+    "objective": "negative Mattes mutual information; lower is better"
+  },
+  "clinical_alignment_accepted": 0,
+  "source_images_or_masks_overwritten": false,
+  "prediction_model_fitted": false,
+  "derived_resampling_performed": true,
+  "scope": "three method trials only; not all 46 paired lesions",
+  "metrics_are_not_clinical_validation": true
+}

@@ -1,0 +1,624 @@
+{
+  "cases": [
+    {
+      "lesion_key": "10005_L1",
+      "selection_reason": "conventional_thick_slice_flair",
+      "metrics": {
+        "negative_mi_before": -0.4332518425089103,
+        "negative_mi_after": -0.07067337417745682,
+        "negative_mi_change": 0.36257846833145346,
+        "foreground_fov_overlap_before": 0.9558616512800366,
+        "foreground_fov_overlap_after": 0.2718113664636941,
+        "rotations_degrees": [
+          -14.57878053267589,
+          1.2015559107147014,
+          -0.7239597281316301
+        ],
+        "translation_mm": [
+          -0.0600320845830169,
+          -117.78794719594563,
+          -25.938738470116927
+        ],
+        "optimizer_stop": "GradientDescentOptimizerv4Template: Convergence checker passed at iteration 9.",
+        "metric_improved": false,
+        "anatomical_review_complete": false,
+        "clinical_alignment_accepted": false,
+        "target_coordinate_fov_before": 1.0,
+        "target_coordinate_fov_after": 0.0,
+        "repeat_max_parameter_difference": 0.0
+      },
+      "iteration_trace": [
+        {
+          "level": 0,
+          "iteration": 0,
+          "negative_mi": -0.7601107811979876
+        },
+        {
+          "level": 0,
+          "iteration": 1,
+          "negative_mi": -0.6324689486706893
+        },
+        {
+          "level": 0,
+          "iteration": 2,
+          "negative_mi": -0.527284466941254
+        },
+        {
+          "level": 0,
+          "iteration": 3,
+          "negative_mi": -0.5888372446797285
+        },
+        {
+          "level": 0,
+          "iteration": 4,
+          "negative_mi": -0.5160051409084923
+        },
+        {
+          "level": 0,
+          "iteration": 5,
+          "negative_mi": -0.5004295771785656
+        },
+        {
+          "level": 0,
+          "iteration": 6,
+          "negative_mi": -0.4909243598676622
+        },
+        {
+          "level": 0,
+          "iteration": 7,
+          "negative_mi": -0.4727939879075255
+        },
+        {
+          "level": 0,
+          "iteration": 8,
+          "negative_mi": -0.4673638403976714
+        },
+        {
+          "level": 1,
+          "iteration": 0,
+          "negative_mi": -0.18789497706255825
+        },
+        {
+          "level": 1,
+          "iteration": 1,
+          "negative_mi": -0.17628645155810058
+        },
+        {
+          "level": 1,
+          "iteration": 2,
+          "negative_mi": -0.15722019346242866
+        },
+        {
+          "level": 1,
+          "iteration": 3,
+          "negative_mi": -0.16184106894478587
+        },
+        {
+          "level": 1,
+          "iteration": 4,
+          "negative_mi": -0.16773792153924805
+        },
+        {
+          "level": 1,
+          "iteration": 5,
+          "negative_mi": -0.16559198842912232
+        },
+        {
+          "level": 1,
+          "iteration": 6,
+          "negative_mi": -0.15851056942803837
+        },
+        {
+          "level": 1,
+          "iteration": 7,
+          "negative_mi": -0.16653010322614797
+        },
+        {
+          "level": 1,
+          "iteration": 8,
+          "negative_mi": -0.14397438518440395
+        },
+        {
+          "level": 2,
+          "iteration": 0,
+          "negative_mi": -0.09336585596599241
+        },
+        {
+          "level": 2,
+          "iteration": 1,
+          "negative_mi": -0.08494118579246755
+        },
+        {
+          "level": 2,
+          "iteration": 2,
+          "negative_mi": -0.0835560432923137
+        },
+        {
+          "level": 2,
+          "iteration": 3,
+          "negative_mi": -0.07839270910979511
+        },
+        {
+          "level": 2,
+          "iteration": 4,
+          "negative_mi": -0.06835005799075977
+        },
+        {
+          "level": 2,
+          "iteration": 5,
+          "negative_mi": -0.0706116819193848
+        },
+        {
+          "level": 2,
+          "iteration": 6,
+          "negative_mi": -0.0783661367480387
+        },
+        {
+          "level": 2,
+          "iteration": 7,
+          "negative_mi": -0.08481973988957206
+        },
+        {
+          "level": 2,
+          "iteration": 8,
+          "negative_mi": -0.0850719269343958
+        }
+      ],
+      "transform_direction": "fixed T1 LPS physical point to moving FLAIR LPS physical point"
+    },
+    {
+      "lesion_key": "10029_L2",
+      "selection_reason": "three_dimensional_flair",
+      "metrics": {
+        "negative_mi_before": -0.30325329445742494,
+        "negative_mi_after": -0.06298650701391124,
+        "negative_mi_change": 0.2402667874435137,
+        "foreground_fov_overlap_before": 0.9430318823106167,
+        "foreground_fov_overlap_after": 0.9912102443435394,
+        "rotations_degrees": [
+          1.4569600067241135,
+          -0.7675062112278254,
+          -0.8069541271970937
+        ],
+        "translation_mm": [
+          11.373579091223728,
+          -13.288615573789986,
+          10.315416346400387
+        ],
+        "optimizer_stop": "GradientDescentOptimizerv4Template: Convergence checker passed at iteration 12.",
+        "metric_improved": false,
+        "anatomical_review_complete": false,
+        "clinical_alignment_accepted": false,
+        "target_coordinate_fov_before": 1.0,
+        "target_coordinate_fov_after": 1.0
+      },
+      "iteration_trace": [
+        {
+          "level": 0,
+          "iteration": 0,
+          "negative_mi": -0.4648808996404978
+        },
+        {
+          "level": 0,
+          "iteration": 1,
+          "negative_mi": -0.4188438211436055
+        },
+        {
+          "level": 0,
+          "iteration": 2,
+          "negative_mi": -0.3929203689424354
+        },
+        {
+          "level": 0,
+          "iteration": 3,
+          "negative_mi": -0.4414030294054562
+        },
+        {
+          "level": 0,
+          "iteration": 4,
+          "negative_mi": -0.43786029487728484
+        },
+        {
+          "level": 0,
+          "iteration": 5,
+          "negative_mi": -0.4801875378322875
+        },
+        {
+          "level": 0,
+          "iteration": 6,
+          "negative_mi": -0.4411771377710076
+        },
+        {
+          "level": 0,
+          "iteration": 7,
+          "negative_mi": -0.4402028947184749
+        },
+        {
+          "level": 0,
+          "iteration": 8,
+          "negative_mi": -0.41011051398430554
+        },
+        {
+          "level": 1,
+          "iteration": 0,
+          "negative_mi": -0.20474623742516088
+        },
+        {
+          "level": 1,
+          "iteration": 1,
+          "negative_mi": -0.29109282771412215
+        },
+        {
+          "level": 1,
+          "iteration": 2,
+          "negative_mi": -0.09763728953524564
+        },
+        {
+          "level": 1,
+          "iteration": 3,
+          "negative_mi": -0.09814306460235304
+        },
+        {
+          "level": 1,
+          "iteration": 4,
+          "negative_mi": -0.09363658681527588
+        },
+        {
+          "level": 1,
+          "iteration": 5,
+          "negative_mi": -0.09904906655091415
+        },
+        {
+          "level": 1,
+          "iteration": 6,
+          "negative_mi": -0.09172852507788481
+        },
+        {
+          "level": 1,
+          "iteration": 7,
+          "negative_mi": -0.0991969001172479
+        },
+        {
+          "level": 1,
+          "iteration": 8,
+          "negative_mi": -0.10400129214658446
+        },
+        {
+          "level": 2,
+          "iteration": 0,
+          "negative_mi": -0.050097249337564057
+        },
+        {
+          "level": 2,
+          "iteration": 1,
+          "negative_mi": -0.06032182828800113
+        },
+        {
+          "level": 2,
+          "iteration": 2,
+          "negative_mi": -0.07174752595741543
+        },
+        {
+          "level": 2,
+          "iteration": 3,
+          "negative_mi": -0.08821786028671152
+        },
+        {
+          "level": 2,
+          "iteration": 4,
+          "negative_mi": -0.1299140653384291
+        },
+        {
+          "level": 2,
+          "iteration": 5,
+          "negative_mi": -0.1487797267509039
+        },
+        {
+          "level": 2,
+          "iteration": 6,
+          "negative_mi": -0.12045428993550472
+        },
+        {
+          "level": 2,
+          "iteration": 7,
+          "negative_mi": -0.11303921383034708
+        },
+        {
+          "level": 2,
+          "iteration": 8,
+          "negative_mi": -0.164562486313909
+        },
+        {
+          "level": 2,
+          "iteration": 9,
+          "negative_mi": -0.0956233844768616
+        },
+        {
+          "level": 2,
+          "iteration": 10,
+          "negative_mi": -0.17194114343110103
+        },
+        {
+          "level": 2,
+          "iteration": 11,
+          "negative_mi": -0.04664089146571911
+        }
+      ],
+      "transform_direction": "fixed T1 LPS physical point to moving FLAIR LPS physical point"
+    },
+    {
+      "lesion_key": "40158_L1",
+      "selection_reason": "known_coordinate_fov_boundary",
+      "metrics": {
+        "negative_mi_before": -0.20329232517185097,
+        "negative_mi_after": -0.09629859449480037,
+        "negative_mi_change": 0.1069937306770506,
+        "foreground_fov_overlap_before": 0.8876333370401102,
+        "foreground_fov_overlap_after": 0.8675397551816463,
+        "rotations_degrees": [
+          10.846356880189692,
+          0.1286074890171239,
+          0.5407498600593446
+        ],
+        "translation_mm": [
+          5.4631335268070185,
+          -7.666987322745746,
+          -8.792146151408792
+        ],
+        "optimizer_stop": "GradientDescentOptimizerv4Template: Convergence checker passed at iteration 9.",
+        "metric_improved": false,
+        "anatomical_review_complete": false,
+        "clinical_alignment_accepted": false,
+        "target_coordinate_fov_before": 0.9830002297266253,
+        "target_coordinate_fov_after": 0.9967838272455778
+      },
+      "iteration_trace": [
+        {
+          "level": 0,
+          "iteration": 0,
+          "negative_mi": -0.497700621317232
+        },
+        {
+          "level": 0,
+          "iteration": 1,
+          "negative_mi": -0.4687960199585668
+        },
+        {
+          "level": 0,
+          "iteration": 2,
+          "negative_mi": -0.4569703101561568
+        },
+        {
+          "level": 0,
+          "iteration": 3,
+          "negative_mi": -0.46198533241575407
+        },
+        {
+          "level": 0,
+          "iteration": 4,
+          "negative_mi": -0.41547108531769533
+        },
+        {
+          "level": 0,
+          "iteration": 5,
+          "negative_mi": -0.4541474935789517
+        },
+        {
+          "level": 0,
+          "iteration": 6,
+          "negative_mi": -0.43769967011954
+        },
+        {
+          "level": 0,
+          "iteration": 7,
+          "negative_mi": -0.47366474655860474
+        },
+        {
+          "level": 0,
+          "iteration": 8,
+          "negative_mi": -0.43127726311724823
+        },
+        {
+          "level": 1,
+          "iteration": 0,
+          "negative_mi": -0.14354426220313732
+        },
+        {
+          "level": 1,
+          "iteration": 1,
+          "negative_mi": -0.1967574940213488
+        },
+        {
+          "level": 1,
+          "iteration": 2,
+          "negative_mi": -0.20351406968242847
+        },
+        {
+          "level": 1,
+          "iteration": 3,
+          "negative_mi": -0.1739012594221857
+        },
+        {
+          "level": 1,
+          "iteration": 4,
+          "negative_mi": -0.19522998047680057
+        },
+        {
+          "level": 1,
+          "iteration": 5,
+          "negative_mi": -0.19152226292589175
+        },
+        {
+          "level": 1,
+          "iteration": 6,
+          "negative_mi": -0.20250154464172215
+        },
+        {
+          "level": 1,
+          "iteration": 7,
+          "negative_mi": -0.18558731004305873
+        },
+        {
+          "level": 1,
+          "iteration": 8,
+          "negative_mi": -0.19810462091941125
+        },
+        {
+          "level": 1,
+          "iteration": 9,
+          "negative_mi": -0.1874751487816715
+        },
+        {
+          "level": 1,
+          "iteration": 10,
+          "negative_mi": -0.21757544097634307
+        },
+        {
+          "level": 1,
+          "iteration": 11,
+          "negative_mi": -0.19172235299874446
+        },
+        {
+          "level": 1,
+          "iteration": 12,
+          "negative_mi": -0.18429988980576686
+        },
+        {
+          "level": 1,
+          "iteration": 13,
+          "negative_mi": -0.2017576147530844
+        },
+        {
+          "level": 1,
+          "iteration": 14,
+          "negative_mi": -0.21896748422581505
+        },
+        {
+          "level": 1,
+          "iteration": 15,
+          "negative_mi": -0.22582890939192551
+        },
+        {
+          "level": 1,
+          "iteration": 16,
+          "negative_mi": -0.22632167309145798
+        },
+        {
+          "level": 1,
+          "iteration": 17,
+          "negative_mi": -0.21034344084272155
+        },
+        {
+          "level": 1,
+          "iteration": 18,
+          "negative_mi": -0.19514668167197669
+        },
+        {
+          "level": 1,
+          "iteration": 19,
+          "negative_mi": -0.20859371803586813
+        },
+        {
+          "level": 1,
+          "iteration": 20,
+          "negative_mi": -0.19686720953297912
+        },
+        {
+          "level": 2,
+          "iteration": 0,
+          "negative_mi": -0.12238199607038357
+        },
+        {
+          "level": 2,
+          "iteration": 1,
+          "negative_mi": -0.10145947618978128
+        },
+        {
+          "level": 2,
+          "iteration": 2,
+          "negative_mi": -0.10632893820768252
+        },
+        {
+          "level": 2,
+          "iteration": 3,
+          "negative_mi": -0.09339131042197389
+        },
+        {
+          "level": 2,
+          "iteration": 4,
+          "negative_mi": -0.10811818230618835
+        },
+        {
+          "level": 2,
+          "iteration": 5,
+          "negative_mi": -0.10422986873300065
+        },
+        {
+          "level": 2,
+          "iteration": 6,
+          "negative_mi": -0.10919125402715403
+        },
+        {
+          "level": 2,
+          "iteration": 7,
+          "negative_mi": -0.09543479079579206
+        },
+        {
+          "level": 2,
+          "iteration": 8,
+          "negative_mi": -0.11148783086564007
+        }
+      ],
+      "transform_direction": "fixed T1 LPS physical point to moving FLAIR LPS physical point"
+    }
+  ],
+  "case_count": 3,
+  "verified_source_files": 793,
+  "verified_source_bytes": 260023270,
+  "restored_archive_parts": [
+    {
+      "filename": "RN_MRI_part_01_of_16.zip",
+      "sha256": "8caf5f3fcb240bf81c0f50a72458ef771a47036f694d4c692535a99560a8d226"
+    },
+    {
+      "filename": "RN_MRI_part_15_of_16.zip",
+      "sha256": "e794a3576a98d7f62f5c01a57058b144a3146caed30224cfbbf513e9cbc592d9"
+    }
+  ],
+  "method": {
+    "library": "SimpleITK",
+    "version": "2.5.6",
+    "transform": "Euler3D rigid",
+    "initialization": "identity parameters; rotation center fixed-image physical center",
+    "histogram_bins": 50,
+    "sampling": "random 20 percent, seed 20261029",
+    "threads": 1,
+    "registration_grid_mm": 2.0,
+    "evaluation_grid_mm": 3.0,
+    "pyramid_shrink": [
+      4,
+      2,
+      1
+    ],
+    "pyramid_smoothing_mm": [
+      2,
+      1,
+      0
+    ],
+    "iteration_limit_per_level": 100,
+    "foreground": "normalized fixed intensity >0.05; not a validated brain mask",
+    "interpolator": "linear",
+    "objective": "negative Mattes mutual information; lower is better",
+    "optimizer": "GradientDescent",
+    "learning_rate": 1.0,
+    "convergence_minimum_value": 1e-06,
+    "convergence_window_size": 10
+  },
+  "clinical_alignment_accepted": 0,
+  "source_images_or_masks_overwritten": false,
+  "prediction_model_fitted": false,
+  "derived_resampling_performed": true,
+  "scope": "three method trials only; not all 46 paired lesions",
+  "metrics_are_not_clinical_validation": true,
+  "candidate_status": "all_three_rejected_by_full_grid_metric"
+}

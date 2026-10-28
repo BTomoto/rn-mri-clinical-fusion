@@ -4,7 +4,9 @@
 
 **当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
 
-本轮已恢复并逐文件检查40个基线FLAIR名称候选序列（1,391张），可关联46个病灶，8个未找到同期FLAIR名称候选。40158_L1约98.30%的目标体素中心在FLAIR坐标视野内，148个超出切片轴下界。12个网格差异继续保留，其中20034_L1、L2仅在qform敏感性检查中达到容差，没有据此替换仿射。见[本轮报告](reports/grid_precision_flair_20261028.md)、[Excel](outputs/flair-grid-qc-20261028/RN_FLAIR_Grid_Review.xlsx)、[Notebook08](notebooks/08_grid_precision_and_flair_pairs.ipynb)。尚未实施跨序列配准。
+**2026-10-29决定：暂不扩大全队列自动配准；原定风险模型不训练。** 三例刚性配准试验及一次步长受控重试已完成，仅10029_L2满足数值工程筛查，另外两例候选拒绝，临床接受及应用于分析均为0。公开临床文件重新获取后SHA256未变，125条未知结局及0条已核实阴性仍是原问题的关键限制。下一步优先核查完整公开终点来源，而不继续批量处理影像。见[报告](reports/registration_pilot_and_gate_20261029.md)、[Excel](outputs/registration-pilot-20261029/RN_Registration_Pilot_and_Model_Gate.xlsx)、[Notebook09](notebooks/09_registration_pilot_and_endpoint_gate.ipynb)。
+
+2026-10-28阶段已恢复并逐文件检查40个基线FLAIR名称候选序列（1,391张），可关联46个病灶，8个未找到同期FLAIR名称候选。40158_L1约98.30%的目标体素中心在FLAIR坐标视野内，148个超出切片轴下界。12个网格差异继续保留，其中20034_L1、L2仅在qform敏感性检查中达到容差，没有据此替换仿射。见[该轮报告](reports/grid_precision_flair_20261028.md)、[Excel](outputs/flair-grid-qc-20261028/RN_FLAIR_Grid_Review.xlsx)、[Notebook08](notebooks/08_grid_precision_and_flair_pairs.ipynb)。该阶段未做跨序列配准，后续三例试验见09。
 
 当前进一步核查54个基线分割候选的48个对应MRI序列，共6,936张切片，均可读取且通过几何连续性检查。42个病灶满足0.001体素网格容差，12个待复核；最大角点差异约0.104 mm。另记录26个层间距标签差异及3张常量切片。见[本轮报告](reports/baseline_mask_series_qc_20261028.md)、[当前质控Excel](outputs/baseline-qc-20261028/RN_Baseline_Mask_Series_QC.xlsx)、[Notebook07](notebooks/07_baseline_mask_series_qc.ipynb)。这不是全部MRI或FLAIR的完整临床质量核查，42个也不是最终纳入数。
 
@@ -75,8 +77,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 7. `06_additional_baseline_imaging_qc.ipynb`：新增4组基线检查的全部切片、空间连续性及既有掩膜网格匹配。
 8. `07_baseline_mask_series_qc.ipynb`：54个当前基线掩膜候选的完整对应序列，逐文件检查及网格误差明细。
 9. `08_grid_precision_and_flair_pairs.ipynb`：12个坐标差异、FLAIR恢复及配对坐标视野核查。
+10. `09_registration_pilot_and_endpoint_gate.ipynb`：三例刚性配准试验、失败保留、工程拒绝规则及公开终点条件核查。
 
-00—04保留普通Python顺序执行器验证的输出。05—08已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08独立保存为 `reports/kernel_execution_08.json`。没有生成模型AUC、校准或临床验证结果。
+00—04保留普通Python顺序执行器验证的输出。05—09已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08、09分别独立保存为 `reports/kernel_execution_08.json`、`reports/kernel_execution_09.json`。没有生成模型AUC、校准或临床验证结果。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 
@@ -126,6 +129,14 @@ python scripts/run_notebooks_kernel.py --report reports/kernel_execution_08.json
 ```
 
 08需要先恢复对应基线T1序列。FLAIR名称筛选、相同FrameOfReferenceUID、坐标视野比例均不等于已完成解剖对齐或临床质量核查。38个FLAIR候选存在规则采集层间隙。当前未改变源仿射、分割或最终纳入标记；qform结果仅作敏感性诊断。
+
+三例方法试验使用SimpleITK2.5.6（已固定到requirements），需恢复归档第01/15分卷中的所需793张切片。09可重跑试验，并单独保存执行回执：
+
+```bash
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_09.json notebooks/09_registration_pilot_and_endpoint_gate.ipynb
+```
+
+候选变换均未用于正式分析。2mm线性插值仅用于方法试验与派生审阅图，不恢复FLAIR层间隙或视野外组织。首轮失败及当前结果分别保留；不把优化器收敛、较好的坐标覆盖或数值筛查当作临床对齐通过。
 
 ## 后续影像与模型分析
 

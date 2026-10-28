@@ -1,0 +1,22 @@
+{
+  "checked_date": "2026-10-29",
+  "current_clinical_source_unchanged": true,
+  "clinical_lesions": 160,
+  "recorded_rn_times": 35,
+  "unknown_rn": 125,
+  "verified_non_events": 0,
+  "verified_event_free_followup_records": 0,
+  "baseline_mask_candidates": 54,
+  "baseline_candidates_enabled_for_model": 0,
+  "original_risk_prediction_model_ready": false,
+  "prediction_model_fitted": false,
+  "decision": "do_not_train_original_risk_model_with_current_verified_public_endpoints",
+  "scope_limit": "Current verified source set; not proof that no additional public labels exist anywhere",
+  "blockers": [
+    "Blank RN does not establish an event-free outcome or censoring date",
+    "Published diagnostic specificity cohorts do not provide verified pretreatment event-free follow-up for this cohort",
+    "Public lesion-level reference-standard mapping remains incomplete"
+  ],
+  "next_action": "Prioritize public endpoint provenance or a fully labeled public cohort before expanding cohort-wide image processing",
+  "clinical_source_sha256": "00a5c7ad0b78361e694310b125b0023e294f21ab2d46a495c0a9f00552a970bd"
+}

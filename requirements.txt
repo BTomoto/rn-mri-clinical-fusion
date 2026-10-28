@@ -10,3 +10,4 @@ nbclient>=0.10,<1
 ipykernel==7.4.0
 pydicom==3.0.2
 nibabel==5.4.2
+SimpleITK==2.5.6
