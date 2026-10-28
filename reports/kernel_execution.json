@@ -14,8 +14,14 @@
       "code_cells": 5,
       "code_sha256": "14ae0de9da7d0660f7ce769cc65468070749a0ecc2e1aba4c67f895862558857",
       "errors": 0
+    },
+    {
+      "path": "notebooks/06_additional_baseline_imaging_qc.ipynb",
+      "code_cells": 5,
+      "code_sha256": "9a4c20fc1733680c1d800c711caa48d56c2cfe34a4cc45cf8457455d0482bbbc",
+      "errors": 0
     }
   ],
   "success": true,
-  "checked_at_utc": "2026-10-28T14:54:19.541079+00:00"
+  "checked_at_utc": "2026-10-28T15:15:17.005500+00:00"
 }

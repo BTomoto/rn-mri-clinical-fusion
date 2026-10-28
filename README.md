@@ -4,6 +4,8 @@
 
 **当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
 
+最新一轮完成4组新增基线检查的逐文件技术质控：1,584张像素均可读取、28个规则堆栈通过技术检查；发现3个层间距标签与位置坐标不一致。40093_L3分割经两轴翻转与MRI网格匹配，无需插值。其余原归档影像仍未完成逐文件检查，跨序列配准和临床质量审阅仍待完成。见[本轮报告](reports/additional_imaging_qc_20261028.md)、[质控Excel](outputs/imaging-qc-20261028/RN_Additional_Imaging_QC.xlsx)、[Notebook 06](notebooks/06_additional_baseline_imaging_qc.ipynb)。
+
 最新临床核查已改用原作者网站当前提供的Nov2023临床表：75名患者、160个病灶、35个数值型坏死时间、125个结局未知，首次SRS时间115条。按新治疗时间匹配有97个基线目录候选，其中54个病灶（41名患者）有实际基线掩膜，18个填写坏死时间。原Figshare临床表及先前结果保留为历史快照，不能与新版本混读。
 
 最新文件：[临床版本与随访报告](reports/endpoint_followup_20261028.md)、[更新Excel](outputs/endpoint-followup-20261028/RN_Endpoint_Followup.xlsx)、[Notebook 05](notebooks/05_endpoint_versions_and_followup.ipynb)。仍未取得可确认空白RN为阴性的公开说明，未拟合风险模型。
@@ -66,10 +68,11 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 4. `03_model_readiness_and_analysis_plan.ipynb`：数据准备状态及M0—M2比较设计。
 5. `04_readiness_audit.ipynb`：逐例时间冲突、实际掩膜覆盖、体积核对及DICOM抽样。
 6. `05_endpoint_versions_and_followup.ipynb`：原作者临床版本、逐项差异及180/365日资料覆盖；使用当前临床表。
+7. `06_additional_baseline_imaging_qc.ipynb`：新增4组基线检查的全部切片、空间连续性及既有掩膜网格匹配。
 
-00—04保留普通Python顺序执行器验证的输出。05已进一步使用进程内Jupyter/ipykernel执行，5个代码单元均成功，标准输出、标准错误及结果写回Notebook。执行回执见 `reports/kernel_execution.json`。没有生成模型AUC、校准或临床验证结果。
+00—04保留普通Python顺序执行器验证的输出。05、06已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。执行回执见 `reports/kernel_execution.json`。没有生成模型AUC、校准或临床验证结果。
 
-当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。重新运行影像核查需额外安装 `pydicom>=3,<4` 和 `nibabel>=5,<6`。完整核查可依次运行：
+当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 
 ```bash
 python scripts/audit_dicom_samples.py
@@ -90,6 +93,15 @@ python scripts/run_notebooks_kernel.py
 该下载器核验当前记录的SHA256；若作者更新了源文件会停止，避免覆盖已记录版本。作者整套Excel包的Sept2023临床表与直接按钮的Nov2023临床表共同临床字段一致，但二进制不同。作者网站499条Total影像组学记录与Figshare的591条不能直接互换；当前候选特征保留Figshare版本标识。完整建模前仍需结局核实及影像质控。
 
 进程内执行器默认只运行05，也可传入明确的Notebook路径。02的完整逐文件检查需要先恢复大型MRI文件；仅有Git仓库中的下载索引不能代替这些本地文件。
+
+本轮新增影像技术质控可重现为：
+
+```bash
+python scripts/download_current_baselines.py
+python scripts/run_notebooks_kernel.py notebooks/05_endpoint_versions_and_followup.ipynb notebooks/06_additional_baseline_imaging_qc.ipynb
+```
+
+若已恢复追加归档，可以跳过下载。脚本支持`data/imaging/current_baseline_addition/`暂存目录与归档中的`data/imaging/dicom/`路径。分割来源仍是原Figshare掩膜，标签不编码RN；技术质控不补足结局证据。
 
 ## 后续影像与模型分析
 
