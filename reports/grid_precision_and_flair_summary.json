@@ -1,0 +1,33 @@
+{
+  "grid_review_lesions": 12,
+  "grid_review_unique_masks": 10,
+  "qform_alone_resolves_grid_discrepancy": 2,
+  "max_qform_sform_corner_difference_mm": 0.013295671168264528,
+  "max_sform_dicom_corner_difference_mm": 0.104119129855043,
+  "closer_last_plane": 9,
+  "closer_first_plane": 3,
+  "resolved_grid_reviews": 0,
+  "unchanged_strict_grid_equivalent_lesions": 42,
+  "baseline_lesions": 54,
+  "baseline_studies": 48,
+  "lesions_with_named_flair": 46,
+  "lesions_without_named_flair": 8,
+  "flair_series": 40,
+  "flair_files": 1391,
+  "studies_with_named_flair": 40,
+  "paired_all_target_centers_inside_coordinate_fov": 45,
+  "paired_partial_coordinate_fov": 1,
+  "frame_uid_comparison_counts": {
+    "identical_single_uid": 46
+  },
+  "fov_interpretation": "coordinate extent only; not anatomical alignment, slice-gap coverage or validated registration",
+  "registration_performed": false,
+  "source_headers_changed": false,
+  "labels_changed": false,
+  "models_fitted": false,
+  "input_sha256": {
+    "data/processed/cohort_baseline_mask_alignment.csv": "4c9eb771c9688e8d698a050d5ece005ba78ef158f841585c2c95b369ed7c489b",
+    "data/processed/flair_dicom_series_qc.csv": "1495460310ce1ab7480107e7404fae68c98fe0e3ca80c2428265ae96c39e8970",
+    "data/metadata/baseline_qc/flair_series_members.jsonl.gz": "00271c63c4843b34912953ea1483e7e2916a13c77ffff4bc941a00e60589c2a8"
+  }
+}

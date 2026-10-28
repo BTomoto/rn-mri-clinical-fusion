@@ -1,0 +1,62 @@
+{
+  "dicom_files": 1391,
+  "series_directories": 40,
+  "studies_with_named_flair": 40,
+  "studies_without_named_flair": 8,
+  "source_bytes": 478581234,
+  "manifest_sha256": "b078376f9c79cba263897587acf60ecf26e97d86fcb6a2b42500033e6c307190",
+  "all_selected_sha256_match": true,
+  "verified_archive_parts": [
+    "RN_MRI_part_01_of_16.zip",
+    "RN_MRI_part_02_of_16.zip",
+    "RN_MRI_part_03_of_16.zip",
+    "RN_MRI_part_04_of_16.zip",
+    "RN_MRI_part_05_of_16.zip",
+    "RN_MRI_part_06_of_16.zip",
+    "RN_MRI_part_07_of_16.zip",
+    "RN_MRI_part_08_of_16.zip",
+    "RN_MRI_part_09_of_16.zip",
+    "RN_MRI_part_10_of_16.zip",
+    "RN_MRI_part_11_of_16.zip",
+    "RN_MRI_part_12_of_16.zip",
+    "RN_MRI_part_13_of_16.zip",
+    "RN_MRI_part_14_of_16.zip",
+    "RN_MRI_part_15_of_16.zip",
+    "RN_MRI_part_16_of_16.zip"
+  ],
+  "missing_studies": [
+    {
+      "patient_id": "10046",
+      "study_date_code": "19000618"
+    },
+    {
+      "patient_id": "40007",
+      "study_date_code": "19000101"
+    },
+    {
+      "patient_id": "40037",
+      "study_date_code": "19000101"
+    },
+    {
+      "patient_id": "40038",
+      "study_date_code": "19000101"
+    },
+    {
+      "patient_id": "40065",
+      "study_date_code": "19000101"
+    },
+    {
+      "patient_id": "40073",
+      "study_date_code": "19000101"
+    },
+    {
+      "patient_id": "40086",
+      "study_date_code": "19000115"
+    },
+    {
+      "patient_id": "40173",
+      "study_date_code": "19000101"
+    }
+  ],
+  "selection": "All directory names containing FLAIR but not T1 in the 48 baseline mask studies; sequence type not clinically adjudicated"
+}

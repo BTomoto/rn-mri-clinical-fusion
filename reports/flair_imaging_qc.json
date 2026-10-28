@@ -1,0 +1,52 @@
+{
+  "scope": "all named non-T1 FLAIR candidates in 48 baseline mask studies",
+  "studies": 40,
+  "dicom_files": 1391,
+  "series_uid_groups": 40,
+  "series_directories": 40,
+  "integrity_verified_files": 1391,
+  "pixel_decodable_files": 1391,
+  "nonfinite_pixel_arrays": 0,
+  "constant_pixel_arrays": 0,
+  "date_mismatch_files": 0,
+  "duplicate_sop_files": 0,
+  "regular_geometry_stacks": 40,
+  "technical_pass_stacks": 40,
+  "t2_flair_metadata_candidates": 40,
+  "t1_flair_names_not_t2_flair": 0,
+  "derived_or_projection_groups": 0,
+  "spacing_tag_position_mismatch_groups": 0,
+  "t2_flair_candidates_with_interslice_gap": 38,
+  "contrast_bolus_tag_populated_files": 0,
+  "engineering_tolerances": {
+    "direction_or_spacing_abs": 0.0001,
+    "duplicate_plane_mm": 0.001,
+    "plane_step_abs_mm": 0.05,
+    "plane_step_relative": 0.01,
+    "affine_residual_mm": 0.1,
+    "grid_corner_voxels": 0.001
+  },
+  "manifest_sha256": "b078376f9c79cba263897587acf60ecf26e97d86fcb6a2b42500033e6c307190",
+  "input_sha256": {
+    "data/processed/followup_availability_current.csv": "6d4e97a75ccb141789dc39e01cda3cf9b6174899989c70765264eca4c56ed066",
+    "data/processed/mask_file_audit.csv": "612486b729778c3c3fe9f604cf7ca32384f7a30b34ec99c7fab8509846def806",
+    "data/raw/openbtai/NIFTIs_Masks.zip": "4b35f39225eb453a4a5fe8fb5e7fb8a40ec425b00b06dc1dd3d013610a3bb92d"
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "pydicom": "3.0.2",
+    "nibabel": "5.4.2"
+  },
+  "masks": [],
+  "full_selected_mri_qc_complete": false,
+  "clinical_image_review_complete": false,
+  "contrast_administration_verified": false,
+  "registration_performed": false,
+  "models_fitted": false,
+  "next_steps": [
+    "Extend all-file QC to previously archived baseline studies",
+    "Verify contrast timing and T2-FLAIR selection before registration",
+    "Resolve lesion-level RN and event-free surveillance evidence before prediction"
+  ],
+  "mask_audit_performed": false
+}

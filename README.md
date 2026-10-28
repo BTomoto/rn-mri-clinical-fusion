@@ -4,6 +4,8 @@
 
 **当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
 
+本轮已恢复并逐文件检查40个基线FLAIR名称候选序列（1,391张），可关联46个病灶，8个未找到同期FLAIR名称候选。40158_L1约98.30%的目标体素中心在FLAIR坐标视野内，148个超出切片轴下界。12个网格差异继续保留，其中20034_L1、L2仅在qform敏感性检查中达到容差，没有据此替换仿射。见[本轮报告](reports/grid_precision_flair_20261028.md)、[Excel](outputs/flair-grid-qc-20261028/RN_FLAIR_Grid_Review.xlsx)、[Notebook08](notebooks/08_grid_precision_and_flair_pairs.ipynb)。尚未实施跨序列配准。
+
 当前进一步核查54个基线分割候选的48个对应MRI序列，共6,936张切片，均可读取且通过几何连续性检查。42个病灶满足0.001体素网格容差，12个待复核；最大角点差异约0.104 mm。另记录26个层间距标签差异及3张常量切片。见[本轮报告](reports/baseline_mask_series_qc_20261028.md)、[当前质控Excel](outputs/baseline-qc-20261028/RN_Baseline_Mask_Series_QC.xlsx)、[Notebook07](notebooks/07_baseline_mask_series_qc.ipynb)。这不是全部MRI或FLAIR的完整临床质量核查，42个也不是最终纳入数。
 
 最新一轮完成4组新增基线检查的逐文件技术质控：1,584张像素均可读取、28个规则堆栈通过技术检查；发现3个层间距标签与位置坐标不一致。40093_L3分割经两轴翻转与MRI网格匹配，无需插值。其余原归档影像仍未完成逐文件检查，跨序列配准和临床质量审阅仍待完成。见[本轮报告](reports/additional_imaging_qc_20261028.md)、[质控Excel](outputs/imaging-qc-20261028/RN_Additional_Imaging_QC.xlsx)、[Notebook 06](notebooks/06_additional_baseline_imaging_qc.ipynb)。
@@ -72,8 +74,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 6. `05_endpoint_versions_and_followup.ipynb`：原作者临床版本、逐项差异及180/365日资料覆盖；使用当前临床表。
 7. `06_additional_baseline_imaging_qc.ipynb`：新增4组基线检查的全部切片、空间连续性及既有掩膜网格匹配。
 8. `07_baseline_mask_series_qc.ipynb`：54个当前基线掩膜候选的完整对应序列，逐文件检查及网格误差明细。
+9. `08_grid_precision_and_flair_pairs.ipynb`：12个坐标差异、FLAIR恢复及配对坐标视野核查。
 
-00—04保留普通Python顺序执行器验证的输出。05—07已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。执行回执见 `reports/kernel_execution.json`。没有生成模型AUC、校准或临床验证结果。
+00—04保留普通Python顺序执行器验证的输出。05—08已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08独立保存为 `reports/kernel_execution_08.json`。没有生成模型AUC、校准或临床验证结果。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 
@@ -114,6 +117,15 @@ python scripts/run_notebooks_kernel.py notebooks/05_endpoint_versions_and_follow
 ```
 
 若已有16个归档分卷可放在`dist/restored_mri/`，不加下载参数即可按哈希恢复所需成员。名称仅允许精确或唯一标点/大小写变体对应，并独立验证坐标。多切片仿射现用首末位置差构造第三轴，避免相邻位移中位数舍入误差累计；仍检查每层残差。逐切片CSV及成员清单用gzip无损保存，pandas可直接读取；解压副本可由脚本重建。本轮Excel为当前54个候选的结果，上一轮Excel保留为历史快照。
+
+FLAIR与坐标差异复核：
+
+```bash
+python scripts/restore_baseline_flair.py --download-missing
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_08.json notebooks/08_grid_precision_and_flair_pairs.ipynb
+```
+
+08需要先恢复对应基线T1序列。FLAIR名称筛选、相同FrameOfReferenceUID、坐标视野比例均不等于已完成解剖对齐或临床质量核查。38个FLAIR候选存在规则采集层间隙。当前未改变源仿射、分割或最终纳入标记；qform结果仅作敏感性诊断。
 
 ## 后续影像与模型分析
 

@@ -38,7 +38,7 @@ def vector(d,tag,n):
 def run(manifest_relative='data/metadata/endpoint_followup/additional_baseline_imaging.jsonl',
         prefix='additional', output_subdir='imaging-qc-20261028',
         scope='all files in four added baseline studies only',
-        mask_candidates_only=False, write_overlays=True):
+        mask_candidates_only=False, write_overlays=True, include_mask_audit=True):
     manifest=ROOT/manifest_relative
     manifest_bytes=manifest.read_bytes() if manifest.is_file() else gzip.decompress(Path(str(manifest)+'.gz').read_bytes())
     entries=[json.loads(line) for line in manifest_bytes.decode().splitlines()]
@@ -128,6 +128,7 @@ def run(manifest_relative='data/metadata/endpoint_followup/additional_baseline_i
         a['baseline_study_date_code']=a.baseline_mask_date_code
     studies={(e['patient_id'],e['study_date_code']) for e in entries}
     candidates=a[[ (r.patient_id,r.baseline_study_date_code) in studies for r in a.itertuples() ]]
+    if not include_mask_audit:candidates=a.iloc[:0]
     mask_records=[]
     output=ROOT/'outputs'/output_subdir;output.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(ROOT/'data/raw/openbtai/NIFTIs_Masks.zip') as z:
@@ -189,7 +190,7 @@ def run(manifest_relative='data/metadata/endpoint_followup/additional_baseline_i
                         fig.suptitle('Native DICOM grid; supplied mask outline; technical review only',fontsize=10)
                         fig.tight_layout();fig.savefig(output/f'{c.lesion_key}_mask_overlay.png',dpi=150);plt.close(fig)
             mask_records.append(r)
-    m=pd.DataFrame(mask_records)
+    m=pd.DataFrame(mask_records) if mask_records else pd.DataFrame(columns=['baseline_mask_available','grid_equivalent'])
     file_csv=f.to_csv(index=False).encode()
     (ROOT/f'data/processed/{prefix}_dicom_file_qc.csv').write_bytes(file_csv)
     if prefix!='additional':
@@ -233,6 +234,10 @@ def run(manifest_relative='data/metadata/endpoint_followup/additional_baseline_i
         summary['next_steps']=['Investigate mask-grid discrepancies without changing source labels',
                               'Restore and audit corresponding FLAIR series before registration',
                               'Resolve lesion-level RN and event-free surveillance evidence before prediction']
+    summary['mask_audit_performed']=include_mask_audit
+    if not include_mask_audit:
+        for key in ['baseline_lesion_candidates_in_added_studies','baseline_mask_candidates','grid_equivalent_masks']:
+            summary.pop(key,None)
     # pandas object NaNs in absent columns must be valid JSON nulls.
     def json_safe(v):
         if isinstance(v,dict):return {k:json_safe(x) for k,x in v.items()}

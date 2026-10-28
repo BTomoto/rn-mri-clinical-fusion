@@ -16,10 +16,12 @@ from rn_public.notebook_kernel import execute_notebook
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('notebooks',nargs='*')
+    parser.add_argument('--report',default='reports/kernel_execution.json',help='Execution receipt path relative to project root')
     args=parser.parse_args()
     paths=[ROOT/p for p in args.notebooks] if args.notebooks else [ROOT/'notebooks/05_endpoint_versions_and_followup.ipynb']
     records=[]
-    report=ROOT/'reports/kernel_execution.json'
+    report=ROOT/args.report
+    report.parent.mkdir(parents=True,exist_ok=True)
     status=dict(mode='in_process_ipykernel',separate_kernel_server_tested=False,browser_frontend_tested=False,
         versions={p:importlib.metadata.version(p) for p in ['ipykernel','IPython','nbformat','jupyter-client']},
         notebooks=records,success=False)

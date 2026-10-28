@@ -1,0 +1,21 @@
+{
+  "mode": "in_process_ipykernel",
+  "separate_kernel_server_tested": false,
+  "browser_frontend_tested": false,
+  "versions": {
+    "ipykernel": "7.4.0",
+    "IPython": "9.17.1",
+    "nbformat": "5.11.1",
+    "jupyter-client": "8.10.0"
+  },
+  "notebooks": [
+    {
+      "path": "notebooks/08_grid_precision_and_flair_pairs.ipynb",
+      "code_cells": 5,
+      "code_sha256": "7ceeb1bf04800806e8eb13a724e15da01471d145601f06a0ec533d126cf22a40",
+      "errors": 0
+    }
+  ],
+  "success": true,
+  "checked_at_utc": "2026-10-28T16:04:15.205041+00:00"
+}

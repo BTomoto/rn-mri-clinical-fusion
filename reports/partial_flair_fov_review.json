@@ -1,0 +1,28 @@
+[
+  {
+    "lesion_key": "40158_L1",
+    "target_voxels": 8706,
+    "coordinate_inside_voxels": 8558,
+    "outside_columns": 0,
+    "outside_rows": 0,
+    "outside_slices": 148,
+    "target_min_flair_voxel_index": [
+      162.46422747395832,
+      301.14874426986194,
+      -0.6575963094620318
+    ],
+    "target_max_flair_voxel_index": [
+      207.96418474934896,
+      339.3911811562464,
+      1.5570912239478452
+    ],
+    "flair_shape": [
+      512,
+      512,
+      20
+    ],
+    "interpretation": "coordinate slice-axis boundary finding; anatomical cause unverified",
+    "registration_performed": false,
+    "image_resampling_performed": false
+  }
+]
