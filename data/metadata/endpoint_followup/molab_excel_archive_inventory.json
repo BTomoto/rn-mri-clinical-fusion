@@ -1,0 +1,22 @@
+{
+  "url": "https://dw.molab.es/conjuntos/bm1/ExcelFiles.zip",
+  "size_bytes": 21510681,
+  "sha256": "5f9dcc384ca8c311e1c66f260e4c5c028740556a3d33c9d95842cefa2d1c7740",
+  "files": [
+    {
+      "name": "EXCEL FILES/OpenBTAI_MORPHOLOGICAL_MEASUREMENTS.xlsx",
+      "size": 90401,
+      "sha256": "9b4cd530a982f275185752a71eed3bf398be55ff14df97d96cdc10815e6e7607"
+    },
+    {
+      "name": "EXCEL FILES/OpenBTAI_RADIOMICS.xlsx",
+      "size": 20963224,
+      "sha256": "9e917c5e72ef1074e6093e33510a448fd99c01044c7204f6a838af2d68a4c199"
+    },
+    {
+      "name": "OpenBTAI_METS_ClinicalData_Sept2023.xlsx",
+      "size": 974079,
+      "sha256": "8b2bc50f449915777ec3ca693c1fcf27406a97c94ff9c3507222c2de39786488"
+    }
+  ]
+}

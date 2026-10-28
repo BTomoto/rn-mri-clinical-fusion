@@ -1,0 +1,70 @@
+{
+  "audit_date": "2026-10-28",
+  "current_clinical_source": "author-hosted file named Nov2023",
+  "patients": 75,
+  "lesions": 160,
+  "original_rn_times": 32,
+  "current_rn_times": 35,
+  "current_rn_patients": 29,
+  "current_unknown_rn": 125,
+  "added_rn_times": 3,
+  "changed_existing_rn_times": 3,
+  "original_srs_records": 107,
+  "current_srs_records": 115,
+  "current_rn_timing_classes": {
+    "unknown": 125,
+    "recorded_rn_after_index_srs": 32,
+    "rn_at_or_before_index_srs": 2,
+    "recorded_rn_after_death": 1
+  },
+  "baseline_directory_candidates": 97,
+  "baseline_mask_candidates": 54,
+  "baseline_mask_patients": 41,
+  "baseline_mask_recorded_rn_times": 18,
+  "new_baseline_studies_outside_previous_archive": 4,
+  "verified_non_events": 0,
+  "published39_vs_current35": "unresolved_4_lesion_difference",
+  "modeling_status": "blocked_no_confirmed_non_events_or_lesion_level_reference_standard",
+  "models_fitted": false,
+  "sept_nov_shared_field_differences": 0,
+  "horizon_availability_all_valid_srs": [
+    {
+      "horizon_days": 180,
+      "recorded_rn_time_within_horizon": 6,
+      "death_recorded_by_horizon": 7,
+      "source_scan_on_or_after_horizon_before_death": 95,
+      "directory_scan_on_or_after_horizon_before_death": 95,
+      "lesion_mask_on_or_after_horizon_before_death": 83,
+      "lesion_records": 113
+    },
+    {
+      "horizon_days": 365,
+      "recorded_rn_time_within_horizon": 16,
+      "death_recorded_by_horizon": 25,
+      "source_scan_on_or_after_horizon_before_death": 73,
+      "directory_scan_on_or_after_horizon_before_death": 73,
+      "lesion_mask_on_or_after_horizon_before_death": 58,
+      "lesion_records": 113
+    }
+  ],
+  "horizon_availability_baseline_mask_cohort": [
+    {
+      "horizon_days": 180,
+      "recorded_rn_time_within_horizon": 5,
+      "death_recorded_by_horizon": 5,
+      "source_scan_on_or_after_horizon_before_death": 40,
+      "directory_scan_on_or_after_horizon_before_death": 40,
+      "lesion_mask_on_or_after_horizon_before_death": 32,
+      "lesion_records": 54
+    },
+    {
+      "horizon_days": 365,
+      "recorded_rn_time_within_horizon": 11,
+      "death_recorded_by_horizon": 18,
+      "source_scan_on_or_after_horizon_before_death": 31,
+      "directory_scan_on_or_after_horizon_before_death": 31,
+      "lesion_mask_on_or_after_horizon_before_death": 20,
+      "lesion_records": 54
+    }
+  ]
+}

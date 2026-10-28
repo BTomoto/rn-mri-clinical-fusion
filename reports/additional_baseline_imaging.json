@@ -1,0 +1,28 @@
+{
+  "archive_name": "RN_MRI_Baseline_Addition_20261028.zip",
+  "archive_size_bytes": 237926519,
+  "archive_sha256": "9e3c18464001ddf8f84404e96c3957a2c00359e47ed953a974c6af9563f10244",
+  "studies": 4,
+  "dicom_files": 1584,
+  "uncompressed_bytes": 684705856,
+  "source_studies": [
+    {
+      "patient_id": "20001",
+      "study_date_code": "19000810"
+    },
+    {
+      "patient_id": "20013",
+      "study_date_code": "19000130"
+    },
+    {
+      "patient_id": "20020",
+      "study_date_code": "19000216"
+    },
+    {
+      "patient_id": "40093",
+      "study_date_code": "19010113"
+    }
+  ],
+  "integrity": "ZIP member size and CRC32 verified; per-file SHA256 recorded",
+  "full_image_qc_complete": false
+}

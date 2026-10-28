@@ -1,0 +1,26 @@
+[
+  {
+    "source_url": "https://dw.molab.es/indices/bm1/OpenBTAI_MORPHOLOGICAL_MEASUREMENTS.xlsx",
+    "resolved_url": "https://dw.molab.es/indices/bm1/OpenBTAI_MORPHOLOGICAL_MEASUREMENTS.xlsx",
+    "local_path": "data/raw/openbtai_molab_current/OpenBTAI_MORPHOLOGICAL_MEASUREMENTS.xlsx",
+    "size_bytes": 90401,
+    "sha256": "9b4cd530a982f275185752a71eed3bf398be55ff14df97d96cdc10815e6e7607",
+    "md5": "cfec0f8297cbfabd028c26eac5e3b41f",
+    "last_modified": null,
+    "checked_date": "2026-10-28",
+    "discovery_url": "https://molab.es/wp-json/sy_datasets/v1/get_partes_fichero/metasrd_excel_clinical_data",
+    "license_note": "Source website requires citation of Oca\u00f1a-Tienda et al. Scientific Data 2023; no separate file-level license observed."
+  },
+  {
+    "source_url": "https://dw.molab.es/indices/bm1/OpenBTAI_METS_ClinicalData_Nov2023.xlsx",
+    "resolved_url": "https://dw.molab.es/indices/bm1/OpenBTAI_METS_ClinicalData_Nov2023.xlsx",
+    "local_path": "data/raw/openbtai_molab_current/OpenBTAI_METS_ClinicalData_Nov2023.xlsx",
+    "size_bytes": 971605,
+    "sha256": "00a5c7ad0b78361e694310b125b0023e294f21ab2d46a495c0a9f00552a970bd",
+    "md5": "a3c06d1d461f3a40e26fdd61fc091a66",
+    "last_modified": null,
+    "checked_date": "2026-10-28",
+    "discovery_url": "https://molab.es/wp-json/sy_datasets/v1/get_partes_fichero/metasrd_excel_clinical_data",
+    "license_note": "Source website requires citation of Oca\u00f1a-Tienda et al. Scientific Data 2023; no separate file-level license observed."
+  }
+]

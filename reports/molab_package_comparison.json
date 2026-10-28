@@ -1,0 +1,30 @@
+{
+  "author_archive_url": "https://dw.molab.es/conjuntos/bm1/ExcelFiles.zip",
+  "author_archive_sha256": "5f9dcc384ca8c311e1c66f260e4c5c028740556a3d33c9d95842cefa2d1c7740",
+  "author_radiomics_rows": 1276,
+  "author_radiomics_columns": 1159,
+  "author_radiomics_segment_counts": {
+    "Contrast-enhancing": 499,
+    "Total": 499,
+    "Necrosis": 278
+  },
+  "author_radiomics_patients": 75,
+  "author_total_unique_lesions": 154,
+  "author_morphology_rows": 499,
+  "author_morphology_year_counts": {
+    "1900": 205,
+    "1901": 211,
+    "1902": 57,
+    "1903": 15,
+    "1904": 2,
+    "1905": 4,
+    "1906": 2,
+    "1907": 3
+  },
+  "figshare_total_records": 591,
+  "author_total_records": 499,
+  "shared_patient_date_lesion_keys": 495,
+  "figshare_only_keys": 96,
+  "author_only_keys": 4,
+  "action": "retain_verified_figshare_features_with_explicit_version; do_not_silently_replace"
+}

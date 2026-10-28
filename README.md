@@ -4,13 +4,17 @@
 
 **当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
 
+最新临床核查已改用原作者网站当前提供的Nov2023临床表：75名患者、160个病灶、35个数值型坏死时间、125个结局未知，首次SRS时间115条。按新治疗时间匹配有97个基线目录候选，其中54个病灶（41名患者）有实际基线掩膜，18个填写坏死时间。原Figshare临床表及先前结果保留为历史快照，不能与新版本混读。
+
+最新文件：[临床版本与随访报告](reports/endpoint_followup_20261028.md)、[更新Excel](outputs/endpoint-followup-20261028/RN_Endpoint_Followup.xlsx)、[Notebook 05](notebooks/05_endpoint_versions_and_followup.ipynb)。仍未取得可确认空白RN为阴性的公开说明，未拟合风险模型。
+
 2026-10-28进一步核查：直接读取373份NIfTI掩膜，得到591条病灶—时间记录；按掩膜日期与影像组学表交叉匹配，首次记录SRS前30天内有53个候选病灶（40名患者），其中17个填写坏死时间。早期仅按形态学表得到的21个匹配不能代表全部分割覆盖，因为该表97条日期使用了不同的年份编码。本项目未擅自改写这些日期。
 
 新增 [核查报告](reports/readiness_audit_20261028.md)、[审阅Excel](outputs/readiness-20261028/RN_Readiness_Audit.xlsx) 和 [04核查Notebook](notebooks/04_readiness_audit.ipynb)。当前仍缺少逐病灶可追溯的阴性结局和诊断依据，未拟合预测模型。
 
 本项目仅分析既有公开去标识数据，不新增招募或实施动物、细胞实验。数据原始来源为既往患者影像和临床记录；保留原始研究出处、许可及使用说明。
 
-## 当前数据
+## 已保存的Figshare数据快照
 
 - OpenBTAI原始临床表、形态学表、完整原始影像组学表和分割压缩包。
 - 75名患者、160条临床病灶记录；32条脑坏死时间记录，128条状态未知。
@@ -61,6 +65,7 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 3. `02_imaging_download_integrity.ipynb`：下载清单与文件完整性。
 4. `03_model_readiness_and_analysis_plan.ipynb`：数据准备状态及M0—M2比较设计。
 5. `04_readiness_audit.ipynb`：逐例时间冲突、实际掩膜覆盖、体积核对及DICOM抽样。
+6. `05_endpoint_versions_and_followup.ipynb`：原作者临床版本、逐项差异及180/365日资料覆盖；使用当前临床表。
 
 已执行Notebook输出由普通Python顺序执行器生成，未使用Jupyter内核。所有代码单元均为普通Python，可在JupyterLab重新运行。未生成或宣称任何模型AUC、校准或临床验证结果。
 
@@ -74,6 +79,16 @@ python scripts/run_notebooks.py notebooks/04_readiness_audit.ipynb
 
 DICOM脚本仅抽取每个选定目录按ZIP顺序排列的首尾文件，核验CRC和SHA256并读取头信息；不是全部切片的像素、空间连续性或临床质量核查。掩膜标签的组织成分不作为RN诊断标签。
 
+当前临床表的重现命令：
+
+```bash
+python scripts/download_molab_tables.py
+python scripts/audit_endpoint_followup.py
+python scripts/run_notebooks.py notebooks/05_endpoint_versions_and_followup.ipynb
+```
+
+该下载器核验当前记录的SHA256；若作者更新了源文件会停止，避免覆盖已记录版本。作者整套Excel包的Sept2023临床表与直接按钮的Nov2023临床表共同临床字段一致，但二进制不同。作者网站499条Total影像组学记录与Figshare的591条不能直接互换；当前候选特征保留Figshare版本标识。完整建模前仍需结局核实及影像质控。
+
 ## 后续影像与模型分析
 
 需要先核实DICOM序列、完成T1增强与FLAIR配准、定位并分割目标病灶、逐例核验脑坏死终点及无事件随访，再确定主要预测期限。
@@ -83,6 +98,10 @@ DICOM脚本仅抽取每个选定目录按ZIP顺序排列的首尾文件，核验
 UCSD、Yale和PROTEAS未提供本项目已核实可用的同终点外部验证队列；不可将它们的体积分割标签或零散神经症状文字替代放射性脑坏死诊断。
 
 ## GitHub与大型数据
+
+临床版本更新后，另补齐4组基线MRI，共1,584个DICOM文件，约684.7 MB解压数据，单独生成约238 MB追加包。原16个MRI分卷保留；累计所选影像为42,385个DICOM、111组患者—日期、63名患者。追加包索引和SHA256见 `data/metadata/endpoint_followup/additional_baseline_imaging.jsonl`、`reports/additional_baseline_imaging.json`。可用 `python scripts/download_current_baselines.py` 从官方Figshare原始ZIP重新取得。完成下载校验不等于完整影像质控。
+
+原作者整套Excel包的版本差异可运行 `python scripts/audit_molab_package.py` 重现；该命令会下载并核验已固定校验和的作者Excel包，报告499条与591条Total记录的覆盖差异，不替换现有分析特征。
 
 代码、Notebook、Excel、原始表格及CSV属于主仓库。原始MRI需要独立的Release附件或其他适合大型文件的存储，不能作为超过100 MiB的普通Git文件直接提交。
 保留下载URL和成员校验信息用于完整恢复。不要把“已有下载清单”表述为“所有MRI已上传GitHub”；以实际上传回执为准。

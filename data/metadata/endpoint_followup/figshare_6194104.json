@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "resource_id": "324657",
+  "resource_doi": "10.1038/s41597-023-02123-0",
+  "resource_title": "A comprehensive dataset of annotated brain metastasis images with clinical and radiomic data",
+  "resource_link": "",
+  "resource_version": 1,
+  "description": "Brain Metastasis MR images with segmentations, clinical data, morphological measurements and radiomic features.",
+  "categories": [
+    {
+      "id": 320,
+      "title": "Radiology and Organ Imaging",
+      "parent_id": 142,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1038/s41597-023-02123-0"
+  ],
+  "tags": [
+    "Mathematical Oncology",
+    "Brain metastasis",
+    "Artificial Intelligence in medicine",
+    "Neuro-Oncology",
+    "Longitudinal cancer dataset"
+  ],
+  "keywords": [
+    "Mathematical Oncology",
+    "Brain metastasis",
+    "Artificial Intelligence in medicine",
+    "Neuro-Oncology",
+    "Longitudinal cancer dataset"
+  ],
+  "authors": [
+    {
+      "id": 13780048,
+      "full_name": "Beatriz Oca\u00f1a Tienda",
+      "first_name": "Beatriz Oca\u00f1a",
+      "last_name": "Tienda",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 3074100,
+      "full_name": "Juli\u00e1n P\u00e9rez-Beteta",
+      "first_name": "Juli\u00e1n",
+      "last_name": "P\u00e9rez-Beteta",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780051,
+      "full_name": "Jos\u00e9 Romero-Rosales",
+      "first_name": "Jos\u00e9",
+      "last_name": "Romero-Rosales",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 10125746,
+      "full_name": "David Molina-Garc\u00eda",
+      "first_name": "David",
+      "last_name": "Molina-Garc\u00eda",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 8685744,
+      "full_name": "Yannick Suter",
+      "first_name": "Yannick",
+      "last_name": "Suter",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780054,
+      "full_name": "Beatriz Asenjo",
+      "first_name": "Beatriz",
+      "last_name": "Asenjo",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780057,
+      "full_name": "David Albillo",
+      "first_name": "David",
+      "last_name": "Albillo",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780060,
+      "full_name": "Ana Ortiz de Mendivil",
+      "first_name": "Ana Ortiz",
+      "last_name": "de Mendivil",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780063,
+      "full_name": "Lu\u00eds P\u00e9rez-Romasanta",
+      "first_name": "Lu\u00eds",
+      "last_name": "P\u00e9rez-Romasanta",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780066,
+      "full_name": "Elisabeth Gonz\u00e1lez-del Portillo",
+      "first_name": "Elisabeth Gonz\u00e1lez-del",
+      "last_name": "Portillo",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780069,
+      "full_name": "Manuel Llorente",
+      "first_name": "Manuel",
+      "last_name": "Llorente",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780072,
+      "full_name": "Natalia Carballo",
+      "first_name": "Natalia",
+      "last_name": "Carballo",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780075,
+      "full_name": "F\u00e1tima Nagib-Raya",
+      "first_name": "F\u00e1tima",
+      "last_name": "Nagib-Raya",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780078,
+      "full_name": "Mar\u00eda Vidal-Denis",
+      "first_name": "Mar\u00eda",
+      "last_name": "Vidal-Denis",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780081,
+      "full_name": "Bel\u00e9n Luque",
+      "first_name": "Bel\u00e9n",
+      "last_name": "Luque",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 560728,
+      "full_name": "Mauricio Reyes",
+      "first_name": "Mauricio",
+      "last_name": "Reyes",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 4090384,
+      "full_name": "Estanislao Arana",
+      "first_name": "Estanislao",
+      "last_name": "Arana",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13780084,
+      "full_name": "Victor Perez-Garcia",
+      "first_name": "Victor",
+      "last_name": "Perez-Garcia",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "funding": [],
+  "institution_id": 81,
+  "group_id": 2826,
+  "group_resource_id": "129",
+  "articles_count": 11,
+  "public": true,
+  "custom_fields": [
+    {
+      "name": "Research Data Support",
+      "value": "",
+      "settings": {
+        "validations": {
+          "min_length": 1,
+          "max_length": 250
+        },
+        "placeholder": "Complete where RDS data are part of RDS submission"
+      },
+      "field_type": "text",
+      "order": null,
+      "is_mandatory": false
+    }
+  ],
+  "citation": "Tienda, Beatriz Oca\u00f1a; P\u00e9rez-Beteta, Juli\u00e1n; Romero-Rosales, Jos\u00e9; Molina-Garc\u00eda, David; Suter, Yannick; Asenjo, Beatriz; et al. (2023). A comprehensive dataset of annotated brain metastasis images with clinical and radiomic data. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.6194104.v1",
+  "created_date": "2023-04-11T09:03:52Z",
+  "modified_date": "2023-04-11T09:04:09Z",
+  "related_materials": [
+    {
+      "id": 223569598,
+      "identifier": "10.1038/s41597-023-02123-0",
+      "title": "A comprehensive dataset of annotated brain metastasis images with clinical and radiomic data",
+      "relation": "IsSupplementTo",
+      "identifier_type": "DOI",
+      "is_linkout": true,
+      "link": "https://doi.org/10.1038/s41597-023-02123-0"
+    }
+  ],
+  "id": 6194104,
+  "title": "A comprehensive dataset of annotated brain metastasis images with clinical and radiomic data",
+  "doi": "10.6084/m9.figshare.c.6194104.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/collections/6194104",
+  "published_date": "2023-04-11T09:03:52Z",
+  "timeline": {
+    "posted": "2023-04-11T09:03:52",
+    "revision": "2023-04-11T09:03:51",
+    "firstOnline": "2023-04-11"
+  }
+}
