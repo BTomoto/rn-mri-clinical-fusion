@@ -56,7 +56,7 @@ jupyter lab notebooks/
 
 下载器检查HTTP 206字节范围，并验证ZIP成员大小和CRC32。已下载文件通过CRC校验后可以跳过，不会把不完整文件当作完成。下载完后另外生成SHA256清单。
 
-GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存在 `data/packed/` 的2 MiB分段文件中，解决连接的单次传输限制。`restore_sources.py`会先验证每段及合并压缩包的SHA256，再恢复原始文件并逐一验证SHA256。各Notebook也会自动执行恢复。临床分析CSV、Excel工作簿及代码可直接浏览。该分段包包含原始表格和索引，原始MRI仍是单独的16个大文件分卷。
+GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存在 `data/packed/` 的2 MiB分段文件中，解决连接的单次传输限制。`restore_sources.py`会先验证每段及合并压缩包的SHA256，再恢复原始文件并逐一验证SHA256。各Notebook也会自动执行恢复。临床分析CSV、Excel工作簿及代码可直接浏览。该分段包包含原始表格和索引；原始MRI另存为原16个分卷和1个新增基线追加包。
 
 ## Notebook顺序
 
@@ -67,9 +67,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 5. `04_readiness_audit.ipynb`：逐例时间冲突、实际掩膜覆盖、体积核对及DICOM抽样。
 6. `05_endpoint_versions_and_followup.ipynb`：原作者临床版本、逐项差异及180/365日资料覆盖；使用当前临床表。
 
-已执行Notebook输出由普通Python顺序执行器生成，未使用Jupyter内核。所有代码单元均为普通Python，可在JupyterLab重新运行。未生成或宣称任何模型AUC、校准或临床验证结果。
+00—04保留普通Python顺序执行器验证的输出。05已进一步使用进程内Jupyter/ipykernel执行，5个代码单元均成功，标准输出、标准错误及结果写回Notebook。执行回执见 `reports/kernel_execution.json`。没有生成模型AUC、校准或临床验证结果。
 
-新增04也采用上述普通Python执行器验证。曾尝试nbclient启动Jupyter内核，但当前执行环境的网络接口/内核通信权限使内核启动失败，未宣称内核执行成功。Notebook可以在具备正常Jupyter环境的机器中重新运行。重新运行影像核查需额外安装 `pydicom>=3,<4` 和 `nibabel>=5,<6`。完整核查可依次运行：
+当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。重新运行影像核查需额外安装 `pydicom>=3,<4` 和 `nibabel>=5,<6`。完整核查可依次运行：
 
 ```bash
 python scripts/audit_dicom_samples.py
@@ -84,10 +84,12 @@ DICOM脚本仅抽取每个选定目录按ZIP顺序排列的首尾文件，核验
 ```bash
 python scripts/download_molab_tables.py
 python scripts/audit_endpoint_followup.py
-python scripts/run_notebooks.py notebooks/05_endpoint_versions_and_followup.ipynb
+python scripts/run_notebooks_kernel.py
 ```
 
 该下载器核验当前记录的SHA256；若作者更新了源文件会停止，避免覆盖已记录版本。作者整套Excel包的Sept2023临床表与直接按钮的Nov2023临床表共同临床字段一致，但二进制不同。作者网站499条Total影像组学记录与Figshare的591条不能直接互换；当前候选特征保留Figshare版本标识。完整建模前仍需结局核实及影像质控。
+
+进程内执行器默认只运行05，也可传入明确的Notebook路径。02的完整逐文件检查需要先恢复大型MRI文件；仅有Git仓库中的下载索引不能代替这些本地文件。
 
 ## 后续影像与模型分析
 

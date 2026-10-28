@@ -78,4 +78,4 @@
 
 需向数据来源核实的问题已整理在 `public_annotation_questions.md`，仅作为项目内的问题清单，尚未向任何人发送。如果严格公开资料无法解决这些问题，应重新选择有完整公开标签的研究问题，不能用模型输出或影像体积变化自造“真值”。
 
-新增Notebook 05、当前临床CSV、版本差异CSV、随访可用性CSV及Excel均可复现。Notebook代码通过普通Python执行器运行；沿用此前已说明的环境限制，没有宣称Jupyter内核已成功运行。本轮没有拟合模型或报告AUC。
+新增Notebook 05、当前临床CSV、版本差异CSV、随访可用性CSV及Excel均可复现。05最初通过普通Python执行器验证，后续续跑时又通过进程内Jupyter/ipykernel执行，5个代码单元成功；常规独立内核及浏览器前端仍未验证。续跑回执见 `kernel_execution.json` 和 `resume_completion_20261028.md`。本轮没有拟合模型或报告AUC。
