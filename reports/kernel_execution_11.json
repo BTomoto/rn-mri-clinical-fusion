@@ -1,0 +1,21 @@
+{
+  "mode": "in_process_ipykernel",
+  "separate_kernel_server_tested": false,
+  "browser_frontend_tested": false,
+  "versions": {
+    "ipykernel": "7.4.0",
+    "IPython": "9.17.1",
+    "nbformat": "5.11.1",
+    "jupyter-client": "8.10.0"
+  },
+  "notebooks": [
+    {
+      "path": "notebooks/11_ucsd_clinical_baseline.ipynb",
+      "code_cells": 5,
+      "code_sha256": "d822ce9055632dedfa9c3e29883eb7734cda63a71eae7d05be52a2512f5acb6e",
+      "errors": 0
+    }
+  ],
+  "success": true,
+  "checked_at_utc": "2026-10-28T18:04:42.069233+00:00"
+}

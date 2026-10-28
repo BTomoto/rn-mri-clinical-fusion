@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "excel_timepoints_verified": 243,
+  "excel_formula_errors": 0,
+  "excel_formula_input_change_check": true,
+  "rendered_views_reviewed": [
+    "Summary",
+    "Timepoints",
+    "Sources",
+    "Definitions",
+    "Folds",
+    "Parameters"
+  ],
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "source_fingerprints_verified": true,
+  "workbook_sha256": "0b96d5548f77b88d2d5bc06adb717e202d7baa4f70ff638cb1b6d1365f3acb32",
+  "OOF_csv_sha256": "bc16f7cab38f514428b5f5ba80f8f5525883e46ea83166b16581da358414638d",
+  "note": "Read-only saved-file checks; Excel formulas recalculated by artifact-tool, not native Excel"
+}

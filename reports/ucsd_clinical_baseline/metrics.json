@@ -1,0 +1,116 @@
+{
+  "question": "HGG post-treatment residual/recurrent tumor vs treatment-related change",
+  "user_approved_scope_change": true,
+  "original_OpenBTAI_model_ready": false,
+  "source_sha256": {
+    "ucsd_ptgbm_clinical_v3.xlsx": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+    "ucsd_ptgbm_negative_cases.xlsx": "6d99db8ac1feac569e50c18ed214a1a761858fb8bfa614a29ec5f036946b96e4"
+  },
+  "protocol_sha256": "c1117984c8235d8fd629e11fcb78eac31c3f28bc6f646c8d6e014f35fd009217",
+  "analysis_code_sha256": "28def6e181f9e7f8c273efa59aaa7af12299eb740d6d49530c0eeb8de29eea2a",
+  "seed": 20261029,
+  "folds": 5,
+  "predictors": [
+    "age_years",
+    "sex_male"
+  ],
+  "timepoints": 243,
+  "patients": 178,
+  "tumor_timepoints": 192,
+  "treatment_change_timepoints": 51,
+  "mixed_class_patients": 11,
+  "diagnosis_text_anomalies": 1,
+  "excluded_timepoints": 0,
+  "sex_counts_timepoints": {
+    "Male": 166,
+    "Female": 77
+  },
+  "age_min": 20.0,
+  "age_max": 88.0,
+  "tumor_prevalence": 0.7901234567901234,
+  "logistic_oof": {
+    "roc_auc": 0.5754697712418301,
+    "ap_tumor": 0.8334609207416787,
+    "ap_treatment_change": 0.2761602614946638,
+    "brier": 0.16490878057028302,
+    "sensitivity_tumor": 0.984375,
+    "specificity_treatment_change": 0.0,
+    "balanced_accuracy": 0.4921875,
+    "accuracy": 0.7777777777777778,
+    "tn": 0,
+    "fp": 51,
+    "fn": 3,
+    "tp": 189
+  },
+  "prevalence_only_oof": {
+    "roc_auc": 0.48805147058823517,
+    "ap_tumor": 0.7857120283666463,
+    "ap_treatment_change": 0.20576880363956707,
+    "brier": 0.16586540631878444,
+    "sensitivity_tumor": 1.0,
+    "specificity_treatment_change": 0.0,
+    "balanced_accuracy": 0.5,
+    "accuracy": 0.7901234567901234,
+    "tn": 0,
+    "fp": 51,
+    "fn": 0,
+    "tp": 192
+  },
+  "brier_difference_logistic_minus_prior": -0.0009566257485014162,
+  "patient_cluster_bootstrap_95ci": {
+    "roc_auc": {
+      "lower": 0.4671243084191006,
+      "upper": 0.6806964275294666
+    },
+    "ap_tumor": {
+      "lower": 0.7596248317349655,
+      "upper": 0.9026836514298524
+    },
+    "ap_treatment_change": {
+      "lower": 0.1830164929728619,
+      "upper": 0.44397806116289024
+    },
+    "brier": {
+      "lower": 0.13099527434658192,
+      "upper": 0.20108337003196491
+    },
+    "brier_difference_logistic_minus_prior": {
+      "lower": -0.011148936928350592,
+      "upper": 0.009350686482306962
+    }
+  },
+  "bootstrap_requested": 2000,
+  "bootstrap_valid": 2000,
+  "bootstrap_refits_models": false,
+  "bootstrap_limit": "Conditional on fixed OOF predictions; excludes full training/split variability",
+  "grouped_patient_overlap": 0,
+  "each_timepoint_predicted_once": true,
+  "threshold": 0.5,
+  "model_selection_performed": false,
+  "mri_features_used": false,
+  "external_validation": false,
+  "final_fit_parameters": {
+    "features": [
+      "age_years",
+      "sex_male"
+    ],
+    "age_mean": 55.51440329218107,
+    "age_sd": 13.644320723965167,
+    "intercept": 1.125509805984115,
+    "coefficients_standardized_age_and_male": [
+      0.4065759957010867,
+      0.3610974310143221
+    ],
+    "age_odds_ratio_per_10_years": 1.3471373396514705,
+    "male_vs_female_odds_ratio": 1.4349032581480459,
+    "note": "Full-cohort descriptive fit, not OOF performance or independent risk-factor inference"
+  },
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "next_step_requires_user_approval": true
+}

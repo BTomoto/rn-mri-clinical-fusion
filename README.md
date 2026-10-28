@@ -1,10 +1,25 @@
-# MRI–clinical fusion for radiation-necrosis research
+# 高级别胶质瘤治疗后肿瘤与治疗相关改变的探索性鉴别
 
-公开数据库二次分析项目：脑转移瘤放疗后放射性脑坏死的探索性风险预测。
+公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
-**当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
+**第11步已完成基础临床Logistic模型及患者分组内部验证，结果较弱。** 243次扫描、178名患者（192次肿瘤、51次治疗改变），仅用年龄和性别，固定5折、无调参。OOF AUC 0.5755（患者簇bootstrap 95%区间0.4671–0.6807），Brier 0.1649，对照0.1659；0.5阈值未识别任何治疗改变。不能据此声称模型有效或临床可用。标签由negative-case清单和官方完整分组推导，不等同逐例病理真值。
 
-**本步结束，等待批准下一步。** 按2026-10-29用户要求，后续每阶段均总结结果、失败/受限原因和下一步计划，经批准后再继续；不以高模型指标为目标。Notebook10已取得并核查RN-D3附录，未找到可连接原病灶的标签表。另下载UCSD-PTGBM当前临床与分类文件：243时间点、178患者，实际RN仅7时间点/4患者，与介绍的10不一致。较完整的广义分组是192个肿瘤候选与51个治疗相关改变；改为这一高级别胶质瘤鉴别问题需要用户明确批准，当前题目和建模启用标记均未改变。见[本步报告](reports/public_label_audit_step10_20261029.md)、[Excel](outputs/public-label-audit-20261029/RN_Public_Label_Feasibility.xlsx)、[Notebook10](notebooks/10_public_label_feasibility.ipynb)。
+**本步结束，等待批准下一步。** 见[本步报告](reports/ucsd_clinical_baseline_step11_20261029.md)、[固定方案](reports/ucsd_clinical_baseline_protocol.md)、[Excel](outputs/ucsd-clinical-baseline-20261029/UCSD_Clinical_Baseline.xlsx)、[Notebook11](notebooks/11_ucsd_clinical_baseline.ipynb)、[OOF逐例CSV](data/processed/ucsd_clinical_oof_predictions.csv)。下一步建议先做新队列MRI下载入口、代表性样本和不依赖标签定义的ROI可行性核查；本步尚未执行。后续每阶段均总结结果、失败/受限原因和下一步计划，经批准后再继续，不以高指标为目标。
+
+本步不需要恢复旧项目的大型MRI归档。在已安装`requirements.txt`的环境中运行：
+
+```bash
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_11.json notebooks/11_ucsd_clinical_baseline.ipynb
+python scripts/make_ucsd_baseline_deliverables.py
+python -m unittest discover -s tests -p 'test_ucsd_clinical_baseline.py' -v
+jupyter lab notebooks/11_ucsd_clinical_baseline.ipynb
+```
+
+Excel由`scripts/build_ucsd_baseline_workbook.mjs`使用`@oai/artifact-tool`构建；在装有该库的Node环境中设置`RN_PROJECT_ROOT`为项目绝对路径后执行。工作簿包含243条纳入数据和OOF预测，公式计算误差及汇总；修改Excel不会重新训练模型。Python是模型和指标的计算来源，完整环境版本见指标JSON。全队列系数只供重建和描述，不作独立危险因素结论。
+
+## 原项目历史与改题依据
+
+第10步RN-D3附录已取得并核查，未找到可连接原病灶的标签表。UCSD当前清单的RN仅7时间点/4患者，与官网介绍10不一致，所以未做RN单亚型模型。[第10步报告](reports/public_label_audit_step10_20261029.md)、[历史Excel](outputs/public-label-audit-20261029/RN_Public_Label_Feasibility.xlsx)和[Notebook10](notebooks/10_public_label_feasibility.ipynb)保留改题前状态。以下内容均指原OpenBTAI脑转移瘤项目。
 
 **2026-10-29决定：暂不扩大全队列自动配准；原定风险模型不训练。** 三例刚性配准试验及一次步长受控重试已完成，仅10029_L2满足数值工程筛查，另外两例候选拒绝，临床接受及应用于分析均为0。公开临床文件重新获取后SHA256未变，125条未知结局及0条已核实阴性仍是原问题的关键限制。下一步优先核查完整公开终点来源，而不继续批量处理影像。见[报告](reports/registration_pilot_and_gate_20261029.md)、[Excel](outputs/registration-pilot-20261029/RN_Registration_Pilot_and_Model_Gate.xlsx)、[Notebook09](notebooks/09_registration_pilot_and_endpoint_gate.ipynb)。
 
@@ -39,7 +54,7 @@
 
 ```text
 data/raw/openbtai/     原始公开工作簿与分割ZIP
-data/raw/reference/    其他候选数据库的临床资料，供可行性核验
+data/raw/reference/    UCSD-PTGBM原始临床与标签文件，及其他参考资料
 data/metadata/         来源、校验和、ZIP目录、选择清单及已下载影像索引
 data/processed/        患者、病灶、治疗、影像、特征和审核CSV
 data/imaging/dicom/    原始MRI切片（大型数据，独立归档）
@@ -81,8 +96,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 9. `08_grid_precision_and_flair_pairs.ipynb`：12个坐标差异、FLAIR恢复及配对坐标视野核查。
 10. `09_registration_pilot_and_endpoint_gate.ipynb`：三例刚性配准试验、失败保留、工程拒绝规则及公开终点条件核查。
 11. `10_public_label_feasibility.ipynb`：RN-D3附录、UCSD公开文件标签及候选研究问题的可行性核查；未建模，等待批准。
+12. `11_ucsd_clinical_baseline.ipynb`：改题获批后的UCSD队列、固定年龄/性别Logistic及患者分组OOF验证；本步完成，等待批准影像可行性核查。
 
-00—04保留普通Python顺序执行器验证的输出。05—10已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—10分别独立保存为对应的 `reports/kernel_execution_08.json`、`reports/kernel_execution_09.json`、`reports/kernel_execution_10.json`。没有生成模型AUC、校准或临床验证结果。
+00—04保留普通Python顺序执行器验证的输出。05—11已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—11分别独立保存对应的`reports/kernel_execution_08.json`至`reports/kernel_execution_11.json`。00—10未训练模型；11首次生成新问题的AUC、校准及内部验证结果。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 

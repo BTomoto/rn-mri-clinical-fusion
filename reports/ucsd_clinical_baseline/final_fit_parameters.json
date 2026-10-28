@@ -1,0 +1,16 @@
+{
+  "features": [
+    "age_years",
+    "sex_male"
+  ],
+  "age_mean": 55.51440329218107,
+  "age_sd": 13.644320723965167,
+  "intercept": 1.125509805984115,
+  "coefficients_standardized_age_and_male": [
+    0.4065759957010867,
+    0.3610974310143221
+  ],
+  "age_odds_ratio_per_10_years": 1.3471373396514705,
+  "male_vs_female_odds_ratio": 1.4349032581480459,
+  "note": "Full-cohort descriptive fit, not OOF performance or independent risk-factor inference"
+}

@@ -51,3 +51,6 @@ node_modules/
 /reports/label_audit_workbook_input.json
 /outputs/public-label-audit-20261029/preview_*.png
 /outputs/public-label-audit-20261029/*.inspect.ndjson
+/reports/ucsd_baseline_workbook_input.json
+/outputs/ucsd-clinical-baseline-20261029/preview_*.png
+/outputs/ucsd-clinical-baseline-20261029/*.inspect.ndjson
