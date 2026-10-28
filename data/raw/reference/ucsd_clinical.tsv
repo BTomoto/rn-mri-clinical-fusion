@@ -1,0 +1,471 @@
+Case ID	Sex at Birth	Ethnicity	Race	Diagnosis (primary malignancy)	Diagnosis (Biopsy/Resction/Imaging/CSF)	Age at Death	MRI without metastases	Age at imaging (MRI without metastases)	Resection 	Radiation before first MRI	Age at Imaging (first MRI after diagnosis)	Radiation treatment between first and second MRI	Age at Imaging (second MRI after diagnosis)	Radiation treatment between second and third MRI	Age at Imaging (third MRI after diagnosis)	Radiation treatment between third and fourth MRI	Age at Imaging (fourth MRI after diagnosis)
+BMETS0001	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	71.1	No		No	No	69.1	No	69.4	No	69.6	No	69.8
+BMETS0002	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Other	Imaging		No		No	No	26.8	Yes	27.0				
+BMETS0003	Male	"Other Hispanic, Latino(a) or Spanish origin "	White 	Gastrointestinal	Resection	58.7	No		Yes	No	58.2	No	58.3				
+BMETS0004	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Other	Imaging		No		No	No	72.8	Yes	73.0				
+BMETS0005	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	40.4	No		No	No	40.0	Yes	40.2	No	40.4		
+BMETS0006	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	62.1	No	62.1	Yes	62.3	No	62.6
+BMETS0007	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	39.2	No		No	No	38.7	Yes	38.9	No	39.1		
+BMETS0008	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging	77.9	Yes	76.7	No	No	77.4	Yes	77.6				
+BMETS0009	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	59.2	No		No	No	58.2	No	58.3	No	58.5	No	58.6
+BMETS0010	Female		White 	Other	Imaging	50.8	No		No	No	50.4	Yes	50.6				
+BMETS0011	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Prostate	Imaging	60.6	No		No	No	60.4	Yes	60.5				
+BMETS0012	Male	"Other Hispanic, Latino(a) or Spanish origin "	White 	Renal	Imaging		No		No	No	67.4	No	67.5	No	67.6	No	67.7
+BMETS0013	Male	"Other Hispanic, Latino(a) or Spanish origin "	"Other Race or Mixed Race, White "	Gastrointestinal	Imaging	65.1	No		No	No	64.5	No	65.0				
+BMETS0014	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	35.2	No		No	No	34.9	No	35.0	No	35.1		
+BMETS0015	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Resection	58.4	No		Yes	No	57.9	No	57.9	Yes	58.2		
+BMETS0016	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	63.9	No		No	No	63.5	Yes	63.7				
+BMETS0017	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Prostate	Resection		No		Yes	No	77.0	No	77.0	Yes	77.3	No	77.4
+BMETS0018	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection		No		Yes	No	65.7	No	65.8	Yes	65.9	No	66.3
+BMETS0019	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Other	Imaging		No		No	No	76.6	Yes	77.0	No	77.1	No	77.4
+BMETS0020	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection	66.7	No		Yes	No	65.3	No	65.4	Yes	65.5	Yes	65.5
+BMETS0021	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging	61.5	No		No	No	60.4	Yes	60.7	Yes	61.1	No	61.3
+BMETS0022	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	65.9	No	66.0	No	66.2	No	66.4
+BMETS0023	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	61.6	No	61.7	Yes	62.0	No	62.3
+BMETS0024	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	56.1	No		No	No	55.9	No	56.0	Yes	56.1		
+BMETS0025	Male	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Prostate	Imaging	61.5	No		No	No	61.0	No	61.5				
+BMETS0026	Male	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging		No		No	No	65.4	Yes	65.7	No	65.9	No	66.0
+BMETS0027	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	68.9	No	68.9	Yes	69.2	No	69.4
+BMETS0028	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	82.2	No		No	No	80.1	Yes	80.2	No	80.4	No	80.8
+BMETS0029	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection		No		Yes	No	74.3	No	74.4	Yes	74.5	No	74.7
+BMETS0030	Male	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Resection		No		Yes	No	61.5	No	61.5	Yes	61.8	No	62.0
+BMETS0031	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging	58.3	No		No	No	57.8	Yes	57.9	Yes	58.0	No	58.2
+BMETS0032	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Biopsy		No		No	No	68.2	No	68.3	Yes	68.5	No	68.6
+BMETS0033	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging		No		No	No	72.0	Yes	72.2	No	72.4	No	72.6
+BMETS0034	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging	79.1	No		No	No	77.4	No	77.5	Yes	77.7	No	77.8
+BMETS0035	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Gastrointestinal + Lung	Imaging		No		No	No	75.4	No	75.5	No	75.6	Yes	75.8
+BMETS0036	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	86.8	No		No	No	86.0	Yes	86.1	No	86.3	No	86.5
+BMETS0037	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Resection		No		Yes	No	61.9	No	62.1				
+BMETS0038	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	62.5	Yes	62.7	No	63.0	No	63.2
+BMETS0039	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Resection		No		Yes	No	68.6	No	68.6	Yes	68.7	No	68.8
+BMETS0040	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	85.0	No		No	No	84.0	No	84.1	Yes	84.1	No	84.3
+BMETS0041	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	70.3	No		No	No	70.2	No	70.3				
+BMETS0042	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Lung	Imaging	67.0	No		No	No	65.8	No	65.9	No	66.1	No	66.2
+BMETS0043	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	56.0	No		No	No	54.4	Yes	54.8	No	55.1	No	55.3
+BMETS0044	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	38.4	No		No	No	36.3	No	36.4	No	36.6	Yes	36.7
+BMETS0045	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Resection	52.2	No		Yes	No	51.8	Yes	52.0				
+BMETS0046	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Resection		No		Yes	No	76.0	No	76.3	No	76.3	No	76.5
+BMETS0047	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Resection		No		Yes	No	72.0	Yes	72.2	Yes	72.4	No	72.7
+BMETS0048	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	84.3	No		No	No	84.0	Yes	84.2	No	84.2		
+BMETS0049	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	56.8	Yes	57.2	No	57.4	No	57.6
+BMETS0050	Female		Asian 	Lung	Imaging	49.9	Yes	48.8	No	No	49.4	No	49.5	Yes	49.7		
+BMETS0051	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	38.2	No	38.3	No	38.5	No	38.6
+BMETS0052	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Lung	Imaging	65.0	No		No	No	63.2	Yes	63.4	Yes	63.6	Yes	63.8
+BMETS0053	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	48.0	No	48.1	Yes	48.2	No	48.4
+BMETS0054	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	53.0	Yes	53.2	No	53.5	No	53.7
+BMETS0055	Female	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	81.3	No		No	No	78.6	Yes	78.8	No	79.1	No	79.4
+BMETS0056	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	60.9	No	61.2	No	61.4	No	61.6
+BMETS0057	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Other	Imaging	77.6	No		No	No	77.5	No	77.6				
+BMETS0058	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	77.0	No		No	No	74.7	No	74.8	No	75.2	No	76.1
+BMETS0059	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging		No		No	No	60.8	No	60.9	Yes	61.1	No	61.3
+BMETS0060	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Renal	Resection	57.2	No		No	No	55.7	Yes	56.3	No	56.4	No	56.4
+BMETS0061	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	67.0	Yes	67.2	No	67.5	No	67.7
+BMETS0062	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging	66.7	No		No	No	66.4	Yes	66.5				
+BMETS0063	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Biopsy	66.2	No		No	No	65.7	No	65.8	Yes	65.9	Yes	66.0
+BMETS0064	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging		No		No	No	77.0	No	77.2				
+BMETS0065	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Resection	48.4	No		Yes	No	47.8	No	47.8	Yes	48.1		
+BMETS0066	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Resection 		No		Yes	No	56.0	No	56.1	Yes	56.2	No	56.5
+BMETS0067	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	70.3	No		No	No	69.4	No	69.6	No	70.0	No	70.1
+BMETS0068	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging	62.2	No		No	No	60.4	Yes	60.6	No	60.9	No	61.1
+BMETS0069	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	53.9	No	54.4				
+BMETS0070	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Prostate	Imaging	54.6	No		No	No	53.6	Yes	54.4				
+BMETS0071	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Gastrointestinal	Imaging	58.6	No		No	No	58.2	Yes	58.3				
+BMETS0072	Female	"Other Hispanic, Latino(a) or Spanish origin "	American Indian or Alaska Native 	Breast	Imaging	77.8	No		No	No	77.4	Yes	77.5	No	77.7		
+BMETS0073	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Resection	60.4	No		Yes	No	60.2	No	60.2	Yes	60.3		
+BMETS0074	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Melanoma	Imaging		No		No	No	51.7	No	51.8	No	52.1	No	52.3
+BMETS0075	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Renal	Imaging		No		No	No	82.8	Yes	82.9	No	83.1	No	83.4
+BMETS0076	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	60.1	No		No	No	59.6	No	59.7	Yes	59.8	Yes	60.0
+BMETS0077	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	58.9	No		No	No	57.1	No	57.2	Yes	57.4	No	57.7
+BMETS0078	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	44.1	No	44.1	Yes	44.2	No	44.4
+BMETS0079	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	83.0	No		No	No	81.6	Yes	81.7	No	81.9	No	82.0
+BMETS0080	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	70.7	No		No	No	69.9	No	70.1	No	70.2	Yes	70.3
+BMETS0081	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	"Imaging, CSF"		No		No	No	59.2	No	59.4	No	59.5	No	59.6
+BMETS0082	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	"Imaging, CSF"		No		No	No	57.2	No	57.3	No	57.5	No	57.6
+BMETS0083	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	71.8	No	72.0	No	72.2	No	72.4
+BMETS0084	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Resection	83.3	No		Yes	No	82.8	Yes	83.0				
+BMETS0085	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	68.3	No	68.3	No	68.3	Yes	68.5
+BMETS0086	Female	"Other Hispanic, Latino(a) or Spanish origin "	"Other Race or Mixed Race, White "	Lung	resection		No		Yes	No	65.7	No	65.9	Yes	66.1	No	66.1
+BMETS0087	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	73.0	No		No	No	69.2	Yes	69.4	No	69.7	No	69.9
+BMETS0088	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	73.9	No		No	No	72.5	No	72.5	Yes	72.7	No	72.8
+BMETS0089	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Renal	Resection 	64.2	No		Yes	No	63.8	Yes	63.9	No	64.1		
+BMETS0090	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Prostate	Imaging	60.9	No		No	No	59.0	No	60.3	Yes	60.6	No	60.7
+BMETS0091	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Breast	Imaging		No		No	No	53.0	No	53.1				
+BMETS0092	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Resection		No		Yes	No	38.4	No	38.4	Yes	38.6	No	38.7
+BMETS0093	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Other	Imaging		No		No	No	71.5	Yes	71.8	No	72.1		
+BMETS0094	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Resection		No		Yes	No	71.3	No	71.3	Yes	71.4	No	71.4
+BMETS0095	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging	74.7	No		No	No	73.4	No	73.6	No	73.7	No	73.9
+BMETS0096	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Resection	52.2	No		Yes	No	51.9	No	52.0	Yes	52.0	Yes	52.1
+BMETS0097	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	59.3	Yes	58.1	No	No	58.8	No	58.9	Yes	59.0		
+BMETS0098	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Gastrointestinal	Resection		No		Yes	No	58.0	No	58.1	Yes	58.2	No	58.4
+BMETS0099	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging		No		No	No	42.1	Yes	42.5	No	42.7	No	43.0
+BMETS0100	Female	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	56.3	No	56.3				
+BMETS0101	Female	"Not Hispanic, Latino(a), or Spanish origin "		Breast	Imaging	58.2	No		No	No	56.6	Yes	56.9	No	57.2	No	57.5
+BMETS0102	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	48.1	No	48.1	Yes	48.3	No	48.5
+BMETS0103	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Breast	Imaging	60.4	No		No	No	59.6	No	59.6	Yes	59.8	No	59.9
+BMETS0104	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	43.7	No		No	No	42.8	No	42.9	Yes	43.0	No	43.1
+BMETS0105	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	38.5	No		No	No	37.0	Yes	37.6	No	37.9	No	38.0
+BMETS0106	Female	"Not Hispanic, Latino(a), or Spanish origin "	American Indian or Alaska Native 	Gastrointestinal	Resection 	67.8	No		Yes	No	66.9	No	67.0	Yes	67.3	No	67.6
+BMETS0107	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Resection	50.0	No		Yes	No	49.4	No	49.4	Yes	49.6	No	49.8
+BMETS0108	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging	49.4	No		No	No	47.2	Yes	47.4	No	47.6	No	47.7
+BMETS0109	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Renal	Imaging	47.6	Yes	45.8	No	No	46.9	No	47.0				
+BMETS0110	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	66.8	No	66.9	Yes	67.0	No	67.2
+BMETS0111	Male	"Not Hispanic, Latino(a), or Spanish origin "	Native Hawaiian or Other Pacific Islander 	Lung	Imaging		No		No	No	53.3	No	53.3	No	53.4	Yes	53.5
+BMETS0112	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	61.3	No		No	No	60.6	Yes	60.8	Yes	61.0	No	61.3
+BMETS0113	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	70.7	No	70.8				
+BMETS0114	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	74.0	No		No	No	72.4	No	72.5	No	72.7	No	72.9
+BMETS0115	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging		No		No	No	53.0	Yes	53.3	No	53.6	No	53.9
+BMETS0116	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection		No		Yes	No	52.5	Yes	52.8	No	53.0	No	53.3
+BMETS0117	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	59.2	No	59.4	No	59.6		
+BMETS0118	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	63.4	No		No	No	62.6	Yes	62.8	Yes	63.0	No	63.1
+BMETS0119	Male		White 	Other	Resection		No		Yes	No	59.9	No	60.0	Yes	60.1	No	60.4
+BMETS0120	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	72.4	No	72.5	Yes	72.7	No	72.8
+BMETS0121	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Gastrointestinal	Resection	72.5	No		Yes	No	70.6	No	70.7	Yes	71.0	No	71.1
+BMETS0122	Male	"Not Hispanic, Latino(a), or Spanish origin "	"Other Race or Mixed Race, White "	Other	Imaging		No		No	No	82.2	No	82.3	Yes	82.5	No	82.7
+BMETS0123	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	75.3	No		No	No	75.0	No	75.1	Yes	75.2		
+BMETS0124	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Melanoma	Imaging		No		No	No	32.8	Yes	33.0	No	33.2	No	33.4
+BMETS0125	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	resection	64.9	No		Yes	No	64.7	No	64.7				
+BMETS0126	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	67.5	Yes	67.7	No	68.1	No	68.3
+BMETS0127	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	29.8	Yes	29.9	No	30.0	No	30.2
+BMETS0128	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 		Resection		No		Yes	No	65.6	No	65.7				
+BMETS0129	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Other	Imaging	51.6	No		No	No	51.5	No	51.6				
+BMETS0130	Male	"Other Hispanic, Latino(a) or Spanish origin "	White 	Gastrointestinal	Imaging	79.0	No		No	No	78.6	No	78.7	Yes	78.8		
+BMETS0131	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging	64.5	No		No	No	62.0	No	62.5	No	62.8	No	63.0
+BMETS0132	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection		No		Yes	No	52.0	No	52.1				
+BMETS0133	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	68.7	No	68.8				
+BMETS0134	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	72.6	No		No	No	71.0	No	71.2	No	71.4	No	71.6
+BMETS0135	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Resection 	86.6	No		Yes	No	85.6	Yes	85.8	No	86.0	No	86.5
+BMETS0136	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Breast	Imaging		No		No	No	68.7	Yes	69.0	No	69.0	Yes	69.2
+BMETS0137	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	40.1	No		No	No	39.1	Yes	39.3	No	39.4	No	39.5
+BMETS0138	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	75.6	No		No	No	75.1	Yes	75.3				
+BMETS0139	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging	66.6	No		No	No	66.0	Yes	66.2	No	66.3	No	66.3
+BMETS0140	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Resection		No		Yes	No	61.0	No	61.0	Yes	61.2	No	61.5
+BMETS0141	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Biopsy 	67.9	No		Yes	No	67.5	No	67.6	Yes	67.7		
+BMETS0142	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging		No		No	No	50.2	Yes	50.4	No	50.6	No	50.7
+BMETS0143	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	67.6	Yes	67.8	No	67.9	No	68.1
+BMETS0144	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 		No		No	No	54.5	No	54.6	No	54.9	No	55.2
+BMETS0145	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging 		No		No	No	62.1	No	62.4	No	62.6	No	62.9
+BMETS0146	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection		No		Yes	No	56.2	No	56.6				
+BMETS0147	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging 		No		No	No	30.5	No	30.6	Yes	30.7	No	31.0
+BMETS0148	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging		No		No	No	63.8	Yes	64.1	No	64.2	Yes	64.4
+BMETS0149	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	"Imaging, CSF"	65.4	No		No	No	65.0	No	65.0	No	65.1	Yes	65.1
+BMETS0150	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	65.9	No		No	No	64.2	No	64.4	No	64.4	No	64.5
+BMETS0151	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging 	62.5	No		No	No	61.9	Yes	62.0	No	62.2	No	62.2
+BMETS0152	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection 	90.0	No		Yes	No	86.0	Yes	86.3	No	86.6	No	86.8
+BMETS0153	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	79.8	No	80.1	No	80.2	No	80.5
+BMETS0154	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging		No		No	No	60.3	No	60.3	Yes	60.4		
+BMETS0155	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Gastrointestinal	Resection 	74.6	No		Yes	No	73.8	No	73.9	Yes	74.1	No	74.3
+BMETS0156	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Breast	Imaging	50.2	No		No	No	49.5	No	49.6	Yes	49.7	No	49.9
+BMETS0157	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	64.2	No	64.3	No	64.6	No	64.9
+BMETS0158	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging	77.5	No		No	No	76.5	No	76.5	Yes	76.7	No	76.9
+BMETS0159	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Resection 	73.5	No		Yes	No	73.3	No	73.4				
+BMETS0160	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	62.1	No		No	No	60.0	No	60.2	No	60.4	No	60.6
+BMETS0161	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	61.5	No	61.6	No	61.8	No	62.0
+BMETS0162	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging	40.8	Yes	37.9	No	No	40.5	No	40.6	Yes	40.7		
+BMETS0163	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	64.8	No		No	No	64.3	No	64.4	No	64.6	No	64.6
+BMETS0164	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Other	Biopsy	27.1	No		Yes	No	26.4	Yes	26.5	No	26.7	No	26.8
+BMETS0165	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	88.1	No	88.2	No	88.6	No	88.8
+BMETS0166	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging	70.4	No		No	No	67.8	No	67.9	Yes	68.0	No	68.3
+BMETS0167	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	73.7	No		No	No	71.2	No	71.3	No	71.6	No	71.7
+BMETS0168	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging		No		No	No	72.0	Yes	72.2	No	72.4	No	72.8
+BMETS0169	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging	39.1	No		No	No	37.5	Yes	37.7	No	37.8	No	37.9
+BMETS0170	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging		No		No	No	20.5	No	20.6	Yes	20.7	No	20.9
+BMETS0171	Female	"Not Hispanic, Latino(a), or Spanish origin "	"Asian, White  "	Breast	Imaging	44.1	No		No	No	42.3	Yes	42.5	No	42.6	No	42.8
+BMETS0172	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging		No		No	No	66.1	Yes	66.3	No	66.4	No 	66.4
+BMETS0173	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging	33.4	No		No	No	32.9	Yes	32.9	Yes	33.0	Yes	33.2
+BMETS0174	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging 	55.8	No		No	No	54.7	Yes	54.8	No	54.9	No	55.0
+BMETS0175	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	56.8	No		No	No	56.6	Yes	56.8				
+BMETS0176	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Breast	Imaging		No		No	No	27.8	Yes	28.2				
+BMETS0177	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging		No		No	No	47.7	Yes	47.8	No	48.0	No	48.2
+BMETS0178	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging	70.4	No		No	No	68.3	Yes	68.5	No	68.7	No	69.0
+BMETS0179	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		Yes	76.7	No	No	80.1	No	80.1				
+BMETS0180	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	45.1	No	45.3	No	45.4	No	45.7
+BMETS0181	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Prostate	Imaging	68.5	No		No	No	68.3	No	68.5				
+BMETS0182	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	53.7	No		No	No	53.0	Yes	53.0	No	53.1	No	53.2
+BMETS0183	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging		No		No	No	52.5	No	52.5	Yes	52.7	No	52.8
+BMETS0184	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		Yes	79.8	No	No	80.4	No	80.6				
+BMETS0185	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	78.8	No		No	No	78.2	No	78.3	Yes	78.6	No	78.8
+BMETS0186	Female	"Not Hispanic, Latino(a), or Spanish origin "	"American Indian or Alaska Native, White "	Lung	Imaging 		No		No	No	72.9	Yes	73.2	No	73.4	No	73.7
+BMETS0187	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 		No		No	No	57.9	No	58.0	No	58.2	No	58.4
+BMETS0188	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	71.2	No		No	No	70.0	Yes	70.1	No	70.2	No	70.3
+BMETS0189	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging 	79.9	No		No	No	78.2	No	78.3	No	78.4	No	78.7
+BMETS0190	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	74.7	No		No	No	73.5	Yes	74.1	No	74.3	No	74.4
+BMETS0191	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	66.8	No		No	No	66.1	Yes	66.4	No	66.5	Yes	66.6
+BMETS0192	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging 	66.1	No		No	No	66.0	No	66.1				
+BMETS0193	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection	59.1	No		Yes	No	58.1	Yes	58.2	No	58.3	Yes	58.4
+BMETS0194	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	55.8	No	56.0	No	56.3	No	56.6
+BMETS0195	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Resection		No		Yes	No	59.5	No	59.6	Yes	59.7	No	59.9
+BMETS0196	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging		No		No	No	64.4	Yes	64.6	No	64.7	No	64.9
+BMETS0197	Male	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging		No		No	No	76.9	Yes	77.1	No	77.4	No	77.7
+BMETS0198	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging 	50.3	No		No	No	49.4	Yes	49.6	No	50.0		
+BMETS0199	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Melanoma	Imaging 		Yes	64.5	No	No	66.0	Yes	66.1	No	66.3		
+BMETS0200	Female	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging 		No		No	No	87.6	No	87.7	Yes	87.8	No	87.8
+BMETS0201	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging 		No		No	No	63.6	Yes	63.7	No	63.9	No	64.0
+BMETS0202	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging 	50.4	Yes	50.0	No	No	50.3	No	50.3				
+BMETS0203	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 		No		No	No	68.0	No	68.1	Yes	68.3	No	68.5
+BMETS0204	Female	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging	67.6	No		No	No	67.4	No	67.6				
+BMETS0205	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging		No		No	No	61.1	Yes	61.4	No	61.7	No	61.8
+BMETS0206	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Gastrointestinal	Imaging		No		No	No	52.0	No	52.1	Yes	52.2		
+BMETS0207	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging		No		No	No	69.6	Yes	69.8				
+BMETS0208	Female	"Other Hispanic, Latino(a) or Spanish origin "	White 	Breast	Resection 		No		Yes	No	59.9	No	60.0	Yes	60.2	No	60.4
+BMETS0209	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Resection 		No		Yes	No	45.9	Yes	46.0	No	46.3	No	46.5
+BMETS0210	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	70.1	Yes	70.3	No	70.5	No	70.6
+BMETS0211	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Resection	56.5	No		Yes	No	56.1	No	56.2	Yes	56.3		
+BMETS0212	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Breast	Resection		No		Yes	No	58.6	Yes	58.7				
+BMETS0213	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Gastrointestinal	Resection		No		Yes	No	49.4	No	49.4	Yes	49.8	No	50.0
+BMETS0214	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging 		No		No	No	66.6	No	66.7	No	67.0	No	67.3
+BMETS0215	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	69.0	No		No	No	68.0	Yes	68.2	No	68.2	No	68.3
+BMETS0216	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	59.7	No		No	No	59.3	No	59.4	Yes	59.5	No	59.6
+BMETS0217	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 	72.5	No		No	No	71.7	Yes	71.9	No	72.1	Yes	72.2
+BMETS0218	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging 	75.7	Yes	73.8	No	No	75.5	No	75.5				
+BMETS0219	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging 		No		No	No	65.1	Yes	65.2	No	65.4	No	65.6
+BMETS0220	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging		No		No	No	75.4	Yes	75.6	No	75.9	No	76.3
+BMETS0221	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging		No		No	No	52.3	Yes	52.6				
+BMETS0222	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	78.8	No	78.9	No	79.1	No	79.3
+BMETS0223	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Other	Imaging	71.3	No		No	No	70.5	No	70.6	Yes	70.8	No	71.2
+BMETS0224	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	65.5	Yes	65.7	No	66.0	No	66.4
+BMETS0225	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	67.9	Yes	68.5				
+BMETS0226	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging	62.2	No		No	No	60.1	No	60.5	No	61.1	No	61.2
+BMETS0227	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	62.9	No		No	No	58.1	No	58.2	Yes	58.3	No	58.6
+BMETS0228	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	69.1	Yes	69.3	No	69.4	No	69.7
+BMETS0229	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Lung	CSF	77.9	No		No	No	76.0	Yes	76.0	No	76.2	No	76.3
+BMETS0230	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging 	76.1	No		No	No	75.8	Yes	75.9	No	76.0		
+BMETS0231	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	resection	57.1	No		Yes	No	55.2	No	55.3	Yes	55.4	Yes	55.5
+BMETS0232	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging 	88.8	No		No	No	86.0	Yes	86.3	Yes	86.5	No	86.8
+BMETS0233	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Other	resection		No		Yes	No	81.0	Yes	81.2	No	81.4	No	81.7
+BMETS0234	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging 	63.6	No		No	No	62.8	No	62.9	Yes	63.0	Yes	63.2
+BMETS0235	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging 		No		No	No	48.3	Yes	48.5	No	48.7	No	48.9
+BMETS0236	Male	"Not Hispanic, Latino(a), or Spanish origin "	"Other Race or Mixed Race, White "	Lung	Imaging 	59.6	No		No	No	59.1	No	59.4				
+BMETS0237	Male	"Not Hispanic, Latino(a), or Spanish origin "	"Asian, Other Race or Mixed Race "	Renal	Imaging	77.5	No		No	No	76.6	Yes	76.7	No	77.2	No	77.3
+BMETS0238	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Renal	Resection 	46.4	No		Yes	No	46.3	No	46.3				
+BMETS0239	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	51.4	No		No	No	50.7	Yes	50.8	Yes	50.9	Yes	50.9
+BMETS0240	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Resection	64.0	No		Yes	No	61.9	No	61.9	Yes	62.1	No	62.3
+BMETS0241	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Gastrointestinal	Imaging	44.2	No		No	No	43.6	No	43.7	Yes	43.8	No	43.9
+BMETS0242	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging	35.4	No		No	No	34.9	No	35.0	Yes	35.0	No	35.0
+BMETS0243	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	51.4	No	51.9	No	52.2		
+BMETS0244	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	51.0	Yes	50.0	No	No	50.2	Yes	50.5	No	50.8		
+BMETS0245	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	80.0	Yes	80.3	Yes	80.6	No	80.9
+BMETS0246	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	59.1	No		No	No	58.5	Yes	58.6	No	58.7	Yes	58.9
+BMETS0247	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging	65.7	No		No	No	64.0	Yes	64.2	No	64.2	No	64.5
+BMETS0248	Female	"Not Hispanic, Latino(a), or Spanish origin "	"White, Asian "	Lung	Imaging	49.7	No		No	No	48.1	No	48.2	No	48.4	Yes	48.6
+BMETS0249	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Other	Imaging	31.5	Yes	30.9	No	No	31.2	Yes	31.4				
+BMETS0250	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Other	Resection		No		Yes	No	41.1	Yes	41.4	No	41.6	No	41.7
+BMETS0251	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	44.6	No	44.7	Yes	44.9	No	45.2
+BMETS0252	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	75.5	No		No	No	74.5	Yes	74.6	No	74.7	No	74.9
+BMETS0253	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Renal	Imaging	66.0	No		No	No	65.9	No	66.0				
+BMETS0254	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	82.4	No	82.7	No	83.0	No	83.3
+BMETS0255	Male	"Other Hispanic, Latino(a) or Spanish origin "	"Other Race or Mixed Race, Asian  "	Prostate	Imaging		No		No	No	74.8	No	74.9	Yes	75.1	No	77.6
+BMETS0256	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	31.8	No		No	No	31.0	Yes	31.1	No	31.2	No	31.4
+BMETS0257	Female	"Not Hispanic, Latino(a), or Spanish origin "	"Asian, Black or African American "	Breast	Resection		No		Yes	No	28.6	No	28.6	Yes	28.8	No	29.1
+BMETS0258	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	58.7	No	58.9	No	59.0	No	59.2
+BMETS0259	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	67.6	Yes	67.8	No	68.0	No	68.3
+BMETS0260	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Breast	Imaging	54.5	No		No	No	54.3	No	54.4				
+BMETS0261	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Breast	Imaging	47.1	No		No	No	46.4	Yes	46.7	No	46.8	No	47.0
+BMETS0262	Male	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging	67.1	No		No	No	64.3	Yes	64.5	No	64.7	No	64.9
+BMETS0263	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		No		No	No	72.9	Yes	73.0	No	73.3	No	73.4
+BMETS0264	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	58.1	Yes	58.3	No	58.7		
+BMETS0265	Male	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Other	Resection		No		Yes	No	58.3	No	58.4	Yes	58.6	Yes	58.8
+BMETS0266	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging	79.1	Yes	76.1	No	No	78.6	Yes	78.9				
+BMETS0267	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging		No		No	No	65.0	Yes	65.2	No	65.5	No	65.6
+BMETS0268	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging		No		No	No	74.7	Yes	74.8	Yes	75.0	No	75.1
+BMETS0269	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging	50.2	No		No	No	50.0	Yes	50.1	No	50.2		
+BMETS0270	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Lung	Imaging		Yes	68.4	No	No	69.3	No	69.4	Yes	69.6		
+BMETS0271	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging 		No		No	No	78.5	No	78.6	No	78.8	No	79.0
+BMETS0272	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	58.8	Yes	57.6	No	No	58.5	No	58.6				
+BMETS0273	Male	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging		No		No	No	68.6	No	68.9				
+BMETS0274	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	69.1	Yes	69.3	No	69.5	No	69.9
+BMETS0275	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	68.6	No	68.8	No	68.8	No	69.0
+BMETS0276	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	54.9	No		No	No	54.4	Yes	54.5	No	54.7		
+BMETS0277	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Resection		No		Yes	Yes	61.8	No	62.0	No	62.1	Yes	62.3
+BMETS0278	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging	54.8	No		No	No	54.6	Yes	54.7				
+BMETS0279	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Breast	Resection	56.9	No		Yes	No	55.3	No	55.4	Yes	55.7	No	56.7
+BMETS0280	Male	"Not Hispanic, Latino(a), or Spanish origin "	White 	Renal	Imaging		No		No	No	73.3	No	73.4	Yes	73.6	No	73.7
+BMETS0281	Male	"Other Hispanic, Latino(a) or Spanish origin "	White 	Lung	Resection	54.2	No		Yes	No	54.1	No	54.1				
+BMETS0282	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Resection	50.2	No		Yes	No	49.8	No	50.0				
+BMETS0283	Male	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Lung	Imaging		Yes	52.4	No	No	53.2	No	53.3				
+BMETS0284	Female	"Not Hispanic, Latino(a), or Spanish origin "	Black or African American 	Breast	Resection		No		Yes	No	76.8	No	76.8	Yes	77.0	No	77.2
+BMETS0285	Male	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging	52.9	No		No	No	51.6	No	51.7	No	51.9	No	52.0
+BMETS0286	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	70.7	Yes	71.2	No	71.7		
+BMETS0287	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging		No		No	No	62.1	Yes	62.2	No	62.4	No	62.6
+BMETS0288	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Lung	Imaging		No		No	No	76.3	Yes	76.5	No	76.6	No	76.9
+BMETS0289	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		Yes	55.4	No	No	55.4	No	55.5				
+BMETS0290	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	64.7	No		No	No	63.4	No	63.5	Yes	63.6	No	63.7
+BMETS0291	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	59.9	No	60.3				
+BMETS0292	Female	"Not Hispanic, Latino(a), or Spanish origin "	Other Race or Mixed Race 	Lung	Imaging		No		No	No	52.0	No	52.1	Yes	52.2	No	52.2
+BMETS0293	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	38.3	No		No	No	37.4	No	37.5	Yes	37.7	No	37.8
+BMETS0294	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Resection		No		Yes	No	62.8	Yes	63.0	No	63.1	Yes	63.2
+BMETS0295	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Breast	Imaging	47.7	No		No	No	47.0	Yes	47.1	No	47.2	Yes	47.5
+BMETS0296	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Other	Imaging	67.6	No		No	No	67.2	Yes	67.5				
+BMETS0297	Female		White 	Breast	Resection		No		Yes	No	57.4	Yes	57.9	No	58.3		
+BMETS0298	Female	"Other Hispanic, Latino(a) or Spanish origin "	Other Race or Mixed Race 	Breast	Imaging		No		No	No	54.3	No	54.4	Yes	54.6	No	54.9
+BMETS0299	Female	"Not Hispanic, Latino(a), or Spanish origin "	White 	Melanoma	Imaging		No		No	No	75.7	No	75.8	No	75.9	No	76.0
+BMETS0300	Female	"Not Hispanic, Latino(a), or Spanish origin "	Asian 	Gastrointestinal	Imaging		No		No	No	53.4	No	53.5				
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	

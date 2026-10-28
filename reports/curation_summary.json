@@ -1,0 +1,17 @@
+{
+  "patients": 75,
+  "clinical_lesion_rows": 160,
+  "rn_time_records": 32,
+  "rn_time_patients": 27,
+  "unknown_rn_rows": 128,
+  "image_patient_dates": 635,
+  "image_series": 3111,
+  "baseline_directory_candidates": 90,
+  "baseline_candidate_patients": 59,
+  "baseline_candidate_rn_times": 26,
+  "selected_patient_dates": 107,
+  "selected_dicom_files": 40801,
+  "selected_compressed_bytes": 5997707470,
+  "final_eligible_lesions": 0,
+  "modeling_status": "blocked_pending_outcome_and_image_review"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-28",
+  "scope": "public data acquisition and curation",
+  "source_tables_verified": true,
+  "selected_mri_download_complete": true,
+  "downloaded_files": 40801,
+  "downloaded_uncompressed_bytes": 18208867252,
+  "patients_with_downloaded_mri": 59,
+  "patient_date_pairs_with_downloaded_mri": 107,
+  "notebooks_executed": 4,
+  "prediction_model_fitted": false,
+  "outcome_adjudication_complete": false,
+  "image_quality_and_lesion_segmentation_complete": false,
+  "github_owner": "BTomoto",
+  "github_repository_created": true,
+  "github_repository_url": "https://github.com/BTomoto/rn-mri-clinical-fusion",
+  "github_repository_visibility": "public",
+  "github_main_project_upload": "included_in_this_commit",
+  "github_mri_release_upload_complete": false,
+  "source_storage": "22 archive parts, with verified byte-identical restoration",
+  "github_main_project_file_count": 82
+}

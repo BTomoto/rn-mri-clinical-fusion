@@ -1,0 +1,62 @@
+[
+  {
+    "archive_id": "dicom1",
+    "article_id": 22270906,
+    "archive_name": "DICOMs_1.zip",
+    "archive_size": 4427620665,
+    "download_url": "https://ndownloader.figshare.com/files/39603262",
+    "source_url": "https://figshare.com/articles/dataset/22270906",
+    "license": "CC0",
+    "directory_path": "data/metadata/dicom1_directory.bin"
+  },
+  {
+    "archive_id": "dicom2",
+    "article_id": 22271017,
+    "archive_name": "DICOMs_2.zip",
+    "archive_size": 7917887555,
+    "download_url": "https://ndownloader.figshare.com/files/39603478",
+    "source_url": "https://figshare.com/articles/dataset/22271017",
+    "license": "CC0",
+    "directory_path": "data/metadata/dicom2_directory.bin"
+  },
+  {
+    "archive_id": "dicom3",
+    "article_id": 22270948,
+    "archive_name": "DICOMs_3.zip",
+    "archive_size": 6987829021,
+    "download_url": "https://ndownloader.figshare.com/files/39603337",
+    "source_url": "https://figshare.com/articles/dataset/22270948",
+    "license": "CC0",
+    "directory_path": "data/metadata/dicom3_directory.bin"
+  },
+  {
+    "archive_id": "dicom4",
+    "article_id": 22271233,
+    "archive_name": "DICOMs_4.zip",
+    "archive_size": 5958611517,
+    "download_url": "https://ndownloader.figshare.com/files/39604174",
+    "source_url": "https://figshare.com/articles/dataset/22271233",
+    "license": "CC0",
+    "directory_path": "data/metadata/dicom4_directory.bin"
+  },
+  {
+    "archive_id": "dicom5",
+    "article_id": 22272004,
+    "archive_name": "DICOMs_5.zip",
+    "archive_size": 7640221697,
+    "download_url": "https://ndownloader.figshare.com/files/39604666",
+    "source_url": "https://figshare.com/articles/dataset/22272004",
+    "license": "CC0",
+    "directory_path": "data/metadata/dicom5_directory.bin"
+  },
+  {
+    "archive_id": "dicom6",
+    "article_id": 22272061,
+    "archive_name": "DICOMs_6.zip",
+    "archive_size": 5265464865,
+    "download_url": "https://ndownloader.figshare.com/files/39604738",
+    "source_url": "https://figshare.com/articles/dataset/22272061",
+    "license": "CC0",
+    "directory_path": "data/metadata/dicom6_directory.bin"
+  }
+]

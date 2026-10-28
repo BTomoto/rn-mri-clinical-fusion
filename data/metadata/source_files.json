@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "OpenBTAI",
+    "filename": "OpenBTAI_METS_ClinicalData.xlsx",
+    "local_path": "data/raw/openbtai/OpenBTAI_METS_ClinicalData.xlsx",
+    "source_url": "https://springernature.figshare.com/articles/dataset/Clinical_data_of_annotated_brain_metastases/22270933",
+    "download_url": "https://ndownloader.figshare.com/files/39603295",
+    "size_bytes": 524828,
+    "md5": "026407ff4584cea1ae753fd2cc67156e",
+    "sha256": "710723edc8d2be94ecd5f72ec12a3ee320da8c809776b325940bb50cc080bc5f",
+    "license": "CC0",
+    "status": "downloaded_checksum_verified"
+  },
+  {
+    "dataset": "OpenBTAI",
+    "filename": "OpenBTAI_MORPHOLOGICAL_MEASUREMENTS.xlsx",
+    "local_path": "data/raw/openbtai/OpenBTAI_MORPHOLOGICAL_MEASUREMENTS.xlsx",
+    "source_url": "https://springernature.figshare.com/articles/dataset/Morphological_measurements_of_annotated_brain_metastases/22270930",
+    "download_url": "https://ndownloader.figshare.com/files/39603292",
+    "size_bytes": 104053,
+    "md5": "aeeca82b0f813955e58233d53aabbbcc",
+    "sha256": "b79680cf62506612fa3d564a32ae1ff7176c3686a1762305548fe7ca0b059758",
+    "license": "CC0",
+    "status": "downloaded_checksum_verified"
+  },
+  {
+    "dataset": "OpenBTAI",
+    "filename": "OpenBTAI_Radiomic.xlsx",
+    "local_path": "data/raw/openbtai/OpenBTAI_Radiomic.xlsx",
+    "source_url": "https://springernature.figshare.com/articles/dataset/Radiomic_data_of_annotated_brain_metastases/22277638",
+    "download_url": "https://ndownloader.figshare.com/files/39619678",
+    "size_bytes": 25055752,
+    "md5": "f7ce0eab3c17f9fe5672cb1adc0bfe16",
+    "sha256": "70ca9c3f1c7dfa0e29a0714c544b33d2cb13e4f7cbb76891c612eb1f27c3326b",
+    "license": "CC0",
+    "status": "downloaded_checksum_verified"
+  },
+  {
+    "dataset": "OpenBTAI",
+    "filename": "NIFTIs_Masks.zip",
+    "local_path": "data/raw/openbtai/NIFTIs_Masks.zip",
+    "source_url": "https://springernature.figshare.com/articles/dataset/Segmentation_masks/22271197",
+    "download_url": "https://ndownloader.figshare.com/files/39603652",
+    "size_bytes": 12394370,
+    "md5": "d37de50be4a2b7ce270ce1102ddceddd",
+    "sha256": "4b35f39225eb453a4a5fe8fb5e7fb8a40ec425b00b06dc1dd3d013610a3bb92d",
+    "license": "CC0",
+    "status": "downloaded_checksum_verified"
+  }
+]

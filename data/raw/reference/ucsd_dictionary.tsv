@@ -1,0 +1,30 @@
+Case ID	Unique patient identifier
+Sex at Birth	Biological sex assigned at birth
+Ethnicity	"Not Hispanic, Latino(a), or Spanish origin/Other Hispanic, Latino(a) or Spanish origin "
+Race	American Indian or Alaska Native/Asian/Native Hawaiian or Pacific Islander/Black or African American/White
+Diagnosis (primary malignancy)	"Type of inital malignancy grouped into breast, lung, melanoma, gastrointestinal, renal, prostate and other"
+Diagnosis (biopsy/resction/imaging/CSF)	How the diagnosis of intracranial metastases was established. Biopsy/Resction/Imaging/CSF
+Age at Death	"Patient age in years at time of death, empty if alive "
+MRI without metastases	If additional MRI was included before the diagnosis of intracranial metastases (normal MRI). Yes/No
+Age at imaging (MRI without metastases)	Patient age in years at MRI performed before diagnosis of intracranial metastases
+Resection 	Resection prior to the first MRI included in the dataset. Yes/No
+Radiation before first MRI	Radiation treatment (any type of cranial radiation) prior to the first MRI included in the dataset. Yes/No
+Age at Imaging (first MRI after diagnosis)	Patient age in years at MRI performed at the time of diagnosis of intracranial metastases
+Radiation treatment between first and second MRI	Radiation treatment between the MRI performed at the time of diagnosis of intracranial metastases and second MRI after diagnosis. Yes/No
+Age at Imaging (second MRI after diagnosis)	Patient age in years at second MRI after diagnosis of intracranial metastases
+Radiation treatment between second and third MRI	"Radiation treatment between the second MRI and third MRI after diagnosis. Yes/No, empty if no additional MRI"
+Age at Imaging (third MRI after diagnosis)	Patient age in years at third MRI after diagnosis of intracranial metastases
+Radiation treatment between third and fourth MRI	"Radiation treatment between the third MRI and fourth MRI after diagnosis. Yes/No, empty if no additional MRI"
+Age at Imaging (fourth MRI after diagnosis)	Patient age in years at fourth MRI after diagnosis of intracranial metastases
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

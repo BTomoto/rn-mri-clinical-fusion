@@ -1,0 +1,14 @@
+{
+  "sex_code": {"1": "Female", "2": "Male"},
+  "primary_tumor_code": {
+    "1": "Breast", "2": "NSCLC", "3": "SCLC", "4": "Melanoma",
+    "5": "Kidney", "6": "Colon", "7": "Bladder", "8": "Unknown",
+    "9": "Ovary", "10": "Pharynx", "11": "Bone sarcoma"
+  },
+  "gpa_raw": "The original spreadsheet legend codes this field 1=Yes and 0=No. Do not treat the field as a continuous GPA prognostic score.",
+  "surgery_type_raw": {"0": "No", "1": "Partial", "2": "Total", "3": "Unknown"},
+  "death_recorded": {"0": "No", "1": "Yes"},
+  "time_origin": "First BM imaging date is shifted to 1900-01-01; clinical event times are relative days, negative before first BM imaging.",
+  "rn_status": "Only a numeric RN timing field is recorded_event_time; blanks remain unknown, not event-free.",
+  "sequence_hints": "Name-based hints are candidate labels only; inspect DICOM acquisition metadata and images before feature extraction."
+}

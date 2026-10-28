@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "ucsd_clinical.tsv",
+    "download_url": "https://www.cancerimagingarchive.net/wp-content/uploads/UCSD-BMETS-Longitudinal_TCIA_Clinical_Data.tsv",
+    "local_path": "data/raw/reference/ucsd_clinical.tsv",
+    "sha256": "d701179cba86124d833de30bed496337c19f054c49e48d6ebc25137542daf0a2",
+    "role": "feasibility_reference_only",
+    "license": "CC BY 4.0"
+  },
+  {
+    "filename": "ucsd_dictionary.tsv",
+    "download_url": "https://www.cancerimagingarchive.net/wp-content/uploads/UCSD-BMETS-Longitudinal_TCIA_Clinical_Data_dictionary.tsv",
+    "local_path": "data/raw/reference/ucsd_dictionary.tsv",
+    "sha256": "77fd461369f8b0e1f9bc762e79d6346d0a0f733cc5e4923ddbe8de17b65cb3a1",
+    "role": "feasibility_reference_only",
+    "license": "CC BY 4.0"
+  },
+  {
+    "filename": "ucsd_mri.tsv",
+    "download_url": "https://www.cancerimagingarchive.net/wp-content/uploads/UCSD-BMETS-Longitudinal_TCIA_MRImetadata.tsv",
+    "local_path": "data/raw/reference/ucsd_mri.tsv",
+    "sha256": "53ac850fcd31094b2fc131cad08b23497b9539bbf75cf2b3679b7e7108fa41c7",
+    "role": "feasibility_reference_only",
+    "license": "CC BY 4.0"
+  },
+  {
+    "filename": "yale_clinical.xlsx",
+    "download_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Yale-Brain-Mets-Longitudinal_ClinicalData_20250605.xlsx",
+    "local_path": "data/raw/reference/yale_clinical.xlsx",
+    "sha256": "952aadf7f95ad03ad55ecfe352b62f8728a07c3351ee5bdf7d38b2591133d413",
+    "role": "feasibility_reference_only",
+    "license": "CC BY 4.0"
+  },
+  {
+    "filename": "proteas_clinical.xlsx",
+    "download_url": "https://zenodo.org/records/23171182/files/PROTEAS-Clinical_and_demographic_data.xlsx?download=1",
+    "local_path": "data/raw/reference/proteas_clinical.xlsx",
+    "sha256": "24bcef3cec078f5e9e4c11e7f3ac735bae06f56a24a776b8d7de4f5fba537fcd",
+    "role": "feasibility_reference_only",
+    "license": "CC BY 4.0"
+  }
+]

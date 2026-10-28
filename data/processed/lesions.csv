@@ -1,0 +1,161 @@
+patient_id,lesion_id,lesion_key,age_at_first_mri_years,sex_code,gpa_raw,primary_tumor_code,primary_subtype_code,egfr_raw,alk_raw,ros1_raw,tn_stage_raw,tumor_stage_raw,rn_time_day,rn_status,rn_reference_standard,first_srs_start_day,first_srs_end_day,first_srs_dose_per_fraction_gy,first_srs_fractions,death_day,death_recorded,surgery_type_raw,surgery_day_raw,rn_after_first_srs,outcome_adjudicated,image_qc_complete,final_eligible,eligibility_status,source_row_excel
+10005,1,10005_L1,40,1.0,1,1,1,,,,,,,unknown,not_provided_per_lesion,781.0,785.0,5.5,3,1084,1,,,,0,0,0,pending_outcome_and_image_review,16
+10005,3,10005_L3,40,1.0,1,1,1,,,,,,,unknown,not_provided_per_lesion,,,,,1084,1,,,,0,0,0,pending_outcome_and_image_review,17
+10020,1,10020_L1,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,,,,,1625,1,,,,0,0,0,pending_outcome_and_image_review,18
+10020,2,10020_L2,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,,,,,1625,1,,,,0,0,0,pending_outcome_and_image_review,19
+10020,3,10020_L3,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,,,,,1625,1,,,,0,0,0,pending_outcome_and_image_review,20
+10020,4,10020_L4,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,164.0,164.0,24.0,1,1625,1,,,,0,0,0,pending_outcome_and_image_review,21
+10020,5,10020_L5,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,,,,,1625,1,,,,0,0,0,pending_outcome_and_image_review,22
+10020,6,10020_L6,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,,,,,1625,1,,,,0,0,0,pending_outcome_and_image_review,23
+10020,7,10020_L7,44,1.0,0,1,4,,,,,,,unknown,not_provided_per_lesion,1004.0,1010.0,7.0,3,1625,1,,,,0,0,0,pending_outcome_and_image_review,24
+10024,1,10024_L1,67,2.0,1,2,1,neg,neg,unk.,,,265.0,recorded_event_time,not_provided_per_lesion,633.0,640.0,5.5,3,1169,1,,,0.0,0,0,0,pending_outcome_and_image_review,25
+10024,2,10024_L2,67,2.0,1,2,1,neg,neg,unk.,,,,unknown,not_provided_per_lesion,,,,,1169,1,,,,0,0,0,pending_outcome_and_image_review,26
+10029,1,10029_L1,65,1.0,1,1,4,,,,,,834.0,recorded_event_time,not_provided_per_lesion,261.0,261.0,24.0,1,1890,1,2.0,834,1.0,0,0,0,pending_outcome_and_image_review,27
+10029,2,10029_L2,65,1.0,1,1,4,,,,,,,unknown,not_provided_per_lesion,1269.0,1269.0,24.0,1,1890,1,,,,0,0,0,pending_outcome_and_image_review,28
+10030,1,10030_L1,63,1.0,unk.,1,4,,,,,,,unknown,not_provided_per_lesion,489.0,489.0,21.0,1,1003,1,1.0,-20,,0,0,0,pending_outcome_and_image_review,29
+10031,1,10031_L1,67,2.0,1,2,1,neg,unk.,unk.,,,,unknown,not_provided_per_lesion,361.0,365.0,5.5,3,777,1,,,,0,0,0,pending_outcome_and_image_review,30
+10033,1,10033_L1,56,1.0,1,1,1,,,,,,,unknown,not_provided_per_lesion,272.0,278.0,5.5,3,517,1,2.0,230,,0,0,0,pending_outcome_and_image_review,31
+10033,2,10033_L2,56,1.0,1,1,1,,,,,,,unknown,not_provided_per_lesion,273.0,273.0,24.0,1,517,1,,,,0,0,0,pending_outcome_and_image_review,32
+10035,1,10035_L1,64,2.0,1,2,1,neg,neg,unk.,,,521.0,recorded_event_time,not_provided_per_lesion,191.0,197.0,5.5,3,852,1,,,1.0,0,0,0,pending_outcome_and_image_review,33
+10035,2,10035_L2,64,2.0,1,2,1,neg,neg,unk.,,,,unknown,not_provided_per_lesion,196.0,200.0,5.5,3,852,1,,,,0,0,0,pending_outcome_and_image_review,34
+10035,3,10035_L3,64,2.0,1,2,1,neg,neg,unk.,,,,unknown,not_provided_per_lesion,,,,,852,1,,,,0,0,0,pending_outcome_and_image_review,35
+10035,4,10035_L4,64,2.0,1,2,1,neg,neg,unk.,,,,unknown,not_provided_per_lesion,,,,,852,1,,,,0,0,0,pending_outcome_and_image_review,36
+10036,1,10036_L1,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1095,1,,,,0,0,0,pending_outcome_and_image_review,37
+10036,2,10036_L2,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1095,1,,,,0,0,0,pending_outcome_and_image_review,38
+10036,3,10036_L3,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1095,1,,,,0,0,0,pending_outcome_and_image_review,39
+10036,4,10036_L4,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1095,1,,,,0,0,0,pending_outcome_and_image_review,40
+10036,5,10036_L5,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1095,1,,,,0,0,0,pending_outcome_and_image_review,41
+10036,6,10036_L6,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1095,1,,,,0,0,0,pending_outcome_and_image_review,42
+10036,7,10036_L7,63,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,433.0,433.0,21.0,1,1095,1,,,,0,0,0,pending_outcome_and_image_review,43
+10038,1,10038_L1,45,1.0,1,1,unk.,,,,,,,unknown,not_provided_per_lesion,294.0,298.0,5.5,3,709,1,,,,0,0,0,pending_outcome_and_image_review,44
+10046,1,10046_L1,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,181.0,187.0,5.5,3,1951,1,,,,0,0,0,pending_outcome_and_image_review,45
+10046,2,10046_L2,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1951,1,,,,0,0,0,pending_outcome_and_image_review,46
+10046,3,10046_L3,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1951,1,,,,0,0,0,pending_outcome_and_image_review,47
+10046,4,10046_L4,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1951,1,,,,0,0,0,pending_outcome_and_image_review,48
+10046,5,10046_L5,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1951,1,,,,0,0,0,pending_outcome_and_image_review,49
+10046,6,10046_L6,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1951,1,,,,0,0,0,pending_outcome_and_image_review,50
+10046,7,10046_L7,62,1.0,1,2,1,unk.,unk.,unk.,,,,unknown,not_provided_per_lesion,,,,,1951,1,,,,0,0,0,pending_outcome_and_image_review,51
+10056,1,10056_L1,61,1.0,0,2,1,neg,neg,unk.,,,,unknown,not_provided_per_lesion,17.0,27.0,6.0,5,391,1,,,,0,0,0,pending_outcome_and_image_review,52
+10061,1,10061_L1,63,1.0,1,útero,,,,,,,,unknown,not_provided_per_lesion,280.0,284.0,5.5,3,745,1,,,,0,0,0,pending_outcome_and_image_review,53
+10063,1,10063_L1,58,1.0,1,4,,,,,,,,unknown,not_provided_per_lesion,27.0,27.0,24.0,1,1654,1,,,,0,0,0,pending_outcome_and_image_review,54
+10064,1,10064_L1,59,1.0,unk.,1,unk.,,,,,,,unknown,not_provided_per_lesion,146.0,150.0,5.5,3,515,1,,,,0,0,0,pending_outcome_and_image_review,55
+10064,2,10064_L2,59,1.0,unk.,1,unk.,,,,,,,unknown,not_provided_per_lesion,147.0,154.0,5.5,3,515,1,,,,0,0,0,pending_outcome_and_image_review,56
+10067,1,10067_L1,59,1.0,1,4,,,,,,,,unknown,not_provided_per_lesion,,,,,1424,1,2.0,163,,0,0,0,pending_outcome_and_image_review,57
+10068,1,10068_L1,65,2.0,1,2,4,,,,,,,unknown,not_provided_per_lesion,28.0,28.0,18.0,1,551,1,,,,0,0,0,pending_outcome_and_image_review,58
+10068,2,10068_L2,65,2.0,1,2,4,,,,,,,unknown,not_provided_per_lesion,,,,,551,1,,,,0,0,0,pending_outcome_and_image_review,59
+10068,3,10068_L3,65,2.0,1,2,4,,,,,,,unknown,not_provided_per_lesion,,,,,551,1,,,,0,0,0,pending_outcome_and_image_review,60
+10068,4,10068_L4,65,2.0,1,2,4,,,,,,,unknown,not_provided_per_lesion,,,,,551,1,,,,0,0,0,pending_outcome_and_image_review,61
+10071,1,10071_L1,51,1.0,1,4,,,,,,,,unknown,not_provided_per_lesion,22.0,22.0,21.0,1,1010,1,,,,0,0,0,pending_outcome_and_image_review,62
+10071,3,10071_L3,51,1.0,1,4,,,,,,,,unknown,not_provided_per_lesion,,,,,1010,1,,,,0,0,0,pending_outcome_and_image_review,63
+10074,1,10074_L1,71,1.0,1,2,2,,,,,,523.0,recorded_event_time,not_provided_per_lesion,28.0,28.0,24.0,1,569,1,,,1.0,0,0,0,pending_outcome_and_image_review,64
+20001,1,20001_L1,64,2.0,,2,,,,,,,,unknown,not_provided_per_lesion,,239.0,24.0,1,405,1,,,,0,0,0,pending_outcome_and_image_review,65
+20013,1,20013_L1,38,1.0,,2,adenocarcinoma,,EGFR KRAS YALK (-),,,,,unknown,not_provided_per_lesion,,55.0,21.0,1,317,1,,,,0,0,0,pending_outcome_and_image_review,66
+20013,2,20013_L2,38,1.0,,2,,,,,,,,unknown,not_provided_per_lesion,,55.0,21.0,1,317,1,,,,0,0,0,pending_outcome_and_image_review,67
+20013,3,20013_L3,38,1.0,,2,,,,,,,,unknown,not_provided_per_lesion,,57.0,21.0,1,317,1,,,,0,0,0,pending_outcome_and_image_review,68
+20013,4,20013_L4,38,1.0,,2,,,,,,,,unknown,not_provided_per_lesion,,58.0,21.0,1,317,1,,,,0,0,0,pending_outcome_and_image_review,69
+20013,5,20013_L5,38,,,,,,,,,,,unknown,not_provided_per_lesion,,,,,317,1,,,,0,0,0,pending_outcome_and_image_review,70
+20020,1,20020_L1,70,2.0,2.5,2,,,,,,,,unknown,not_provided_per_lesion,,59.0,21.0,1,571,1,,,,0,0,0,pending_outcome_and_image_review,71
+20020,2,20020_L2,70,2.0,2.5,,,,,,,,,unknown,not_provided_per_lesion,,,,,571,1,3.0,367,,0,0,0,pending_outcome_and_image_review,72
+20033,8,20033_L8,40,1.0,2.5,2,8,,no ALK no EGFR,,,IV,,unknown,not_provided_per_lesion,,,,,212,1,,,,0,0,0,pending_outcome_and_image_review,73
+20033,9,20033_L9,40,1.0,2.5,2,8,,no ALK no EGFR,,,IV,,unknown,not_provided_per_lesion,,,,,212,1,,,,0,0,0,pending_outcome_and_image_review,74
+20034,1,20034_L1,69,2.0,1.5,2,9,,no mat suf para EGFR,,,IV,,unknown,not_provided_per_lesion,212.0,,24.0,1,388,1,,,,0,0,0,pending_outcome_and_image_review,75
+20034,2,20034_L2,69,2.0,1.5,2,9,,no mat suf para EGFR,,,IV,,unknown,not_provided_per_lesion,212.0,,24.0,1,388,1,,,,0,0,0,pending_outcome_and_image_review,76
+30031,1,30031_L1,64,2.0,,2,,,,,,,373.0,recorded_event_time,not_provided_per_lesion,16.0,,10.0,3,695,1,2.0,?,1.0,0,0,0,pending_outcome_and_image_review,77
+30031,5,30031_L5,64,2.0,,2,,,,,,,,unknown,not_provided_per_lesion,,,,,695,1,,,,0,0,0,pending_outcome_and_image_review,78
+30031,6,30031_L6,64,2.0,,2,,,,,,,,unknown,not_provided_per_lesion,,,,,695,1,,,,0,0,0,pending_outcome_and_image_review,79
+40001,1,40001_L1,43,1.0,3,2,1,,EFGR-,,,T4N3M0,,unknown,not_provided_per_lesion,8.0,,20.0,1,723,1,2.0,,,0,0,0,pending_outcome_and_image_review,80
+40001,2,40001_L2,43,1.0,3,2,1,,EFGR-,,,T4N3M0,168.0,recorded_event_time,not_provided_per_lesion,8.0,,20.0,1,723,1,2.0,,1.0,0,0,0,pending_outcome_and_image_review,81
+40001,3,40001_L3,43,1.0,3,2,1,,EFGR-,,,T4N3M0,,unknown,not_provided_per_lesion,8.0,,20.0,1,723,1,,,,0,0,0,pending_outcome_and_image_review,82
+40006,1,40006_L1,42,1.0,2.5,1,4,,ND,,,T3N2M1,,unknown,not_provided_per_lesion,315.0,,18.0,0,485,1,,,,0,0,0,pending_outcome_and_image_review,83
+40006,2,40006_L2,42,1.0,2.5,1,4,,ND,,,T3N2M1,,unknown,not_provided_per_lesion,,,,,485,1,,,,0,0,0,pending_outcome_and_image_review,84
+40006,3,40006_L3,42,1.0,2.5,1,4,,ND,,,T3N2M1,,unknown,not_provided_per_lesion,,,,,485,1,,,,0,0,0,pending_outcome_and_image_review,85
+40006,4,40006_L4,42,1.0,2.5,1,4,,ND,,,T3N2M1,,unknown,not_provided_per_lesion,,,,,485,1,,,,0,0,0,pending_outcome_and_image_review,86
+40006,5,40006_L5,42,1.0,2.5,1,4,,ND,,,T3N2M1,,unknown,not_provided_per_lesion,,,,,485,1,,,,0,0,0,pending_outcome_and_image_review,87
+40007,1,40007_L1,50,2.0,2.5,5,1,,ND,,,T3aN0M1,,unknown,not_provided_per_lesion,6.0,,19.0,1,494,1,,,,0,0,0,pending_outcome_and_image_review,88
+40011,1,40011_L1,52,1.0,2.5,1,4,,ND,,,T1N0M0,155.0,recorded_event_time,not_provided_per_lesion,7.0,,19.0,0,2520,1,,,1.0,0,0,0,pending_outcome_and_image_review,89
+40011,2,40011_L2,52,1.0,2.5,1,4,,ND,,,T1N0M0,,unknown,not_provided_per_lesion,1905.0,,,0,2520,1,,,,0,0,0,pending_outcome_and_image_review,90
+40014,1,40014_L1,67,2.0,3,2,1,,EGFR-,,,T2N2M0,,unknown,not_provided_per_lesion,3.0,,18.0,1,388,1,,,,0,0,0,pending_outcome_and_image_review,91
+40019,1,40019_L1,33,1.0,3,2,1,,"EFGR-, ALK-,ROS1-",,,T4N2M0,,unknown,not_provided_per_lesion,,,,,513,1,,,,0,0,0,pending_outcome_and_image_review,92
+40019,2,40019_L2,33,1.0,3,2,1,,"EFGR-, ALK-,ROS1-",,,T4N2M0,,unknown,not_provided_per_lesion,,,,,513,1,,,,0,0,0,pending_outcome_and_image_review,93
+40024,1,40024_L1,47,2.0,2.5,2,3,,ND,,,T4N0M0,366.0,recorded_event_time,not_provided_per_lesion,8.0,,18.0,1,449,1,,,1.0,0,0,0,pending_outcome_and_image_review,94
+40027,1,40027_L1,47,1.0,2,1,4,,ND,,,T3N1M0,1044.0,recorded_event_time,not_provided_per_lesion,8.0,,20.0,0,1337,1,,,1.0,0,0,0,pending_outcome_and_image_review,95
+40027,2,40027_L2,47,1.0,2,1,4,,ND,,,T3N1M0,,unknown,not_provided_per_lesion,768.0,770.0,2.5,3,1337,1,,,,0,0,0,pending_outcome_and_image_review,96
+40028,1,40028_L1,56,2.0,2.5,2,1,,EFGR-,,,T4N2M1c,374.0,recorded_event_time,not_provided_per_lesion,1.0,,18.0,1,998,1,,,1.0,0,0,0,pending_outcome_and_image_review,97
+40031,1,40031_L1,56,1.0,1.5,1,4,,ND,,,T2N0M0,,unknown,not_provided_per_lesion,26.0,,5.0,6,701,1,,,,0,0,0,pending_outcome_and_image_review,98
+40037,1,40037_L1,53,1.0,2.5,3,ND,,ND,,,T4N2M1c,,unknown,not_provided_per_lesion,3.0,,20.0,1,360,1,,,,0,0,0,pending_outcome_and_image_review,99
+40037,2,40037_L2,53,1.0,2.5,3,ND,,ND,,,T4N2M1c,,unknown,not_provided_per_lesion,,,20.0,1,360,1,,,,0,0,0,pending_outcome_and_image_review,100
+40037,3,40037_L3,53,1.0,2.5,3,ND,,ND,,,T4N2M1c,,unknown,not_provided_per_lesion,,,20.0,1,360,1,,,,0,0,0,pending_outcome_and_image_review,101
+40037,4,40037_L4,53,1.0,2.5,3,ND,,ND,,,T4N2M1c,,unknown,not_provided_per_lesion,,,20.0,1,360,1,,,,0,0,0,pending_outcome_and_image_review,102
+40038,1,40038_L1,55,1.0,3,2,2,,ND,,,T3N1M0,602.0,recorded_event_time,not_provided_per_lesion,9.0,,5.5,7,878,1,,,1.0,0,0,0,pending_outcome_and_image_review,103
+40038,2,40038_L2,57,1.0,3,2,2,,ND,,,T3N1M0,,unknown,not_provided_per_lesion,612.0,,18.0,0,878,1,,,,0,0,0,pending_outcome_and_image_review,104
+40042,1,40042_L1,59,1.0,2.5,2,1,,EFGR- ALK-,,,T3N2M1b,321.0,recorded_event_time,not_provided_per_lesion,8.0,,20.0,1,919,1,,,1.0,0,0,0,pending_outcome_and_image_review,105
+40058,2,40058_L2,71,1.0,1,9,1,,BRCA1+,,,T3cN1M0,,unknown,not_provided_per_lesion,2347.0,2370.0,3.7,5,2993,1,,,,0,0,0,pending_outcome_and_image_review,106
+40058,1,40058_L1,64,1.0,3,9,1,,BRCA1+,,,T3cN1M0,,unknown,not_provided_per_lesion,1.0,,17.0,0,2993,1,2.0,144,,0,0,0,pending_outcome_and_image_review,107
+40065,1,40065_L1,27,1.0,3,1,2,,ND,,,T4N3M0,699.0,recorded_event_time,not_provided_per_lesion,13.0,,16.0,0,901,1,,,1.0,0,0,0,pending_outcome_and_image_review,108
+40065,3,40065_L3,27,1.0,3,1,2,,ND,,,T4N3M0,699.0,recorded_event_time,not_provided_per_lesion,13.0,,20.0,0,901,1,,,1.0,0,0,0,pending_outcome_and_image_review,109
+40071,1,40071_L1,46,1.0,2,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,1.0,,19.8,0,429,1,,,,0,0,0,pending_outcome_and_image_review,110
+40071,2,40071_L2,46,1.0,2,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,267.0,,19.7,0,429,1,,,,0,0,0,pending_outcome_and_image_review,111
+40071,5,40071_L5,46,1.0,2,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,,,,0,429,1,,,,0,0,0,pending_outcome_and_image_review,112
+40071,8,40071_L8,46,1.0,2,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,,,,0,429,1,,,,0,0,0,pending_outcome_and_image_review,113
+40073,1,40073_L1,57,2.0,3,2,1,,ND,,,T3NxM1b,,unknown,not_provided_per_lesion,1.0,,20.0,0,1146,1,,,,0,0,0,pending_outcome_and_image_review,114
+40073,2,40073_L2,59,2.0,3,2,1,,ND,,,T3NxM1b,,unknown,not_provided_per_lesion,750.0,,18.0,0,1146,1,,,,0,0,0,pending_outcome_and_image_review,115
+40074,1,40074_L1,59,2.0,3,2,1,,"EFGR-, ALK-",,,T2N3M1b,,unknown,not_provided_per_lesion,29.0,51.0,3.7,10,509,1,,,,0,0,0,pending_outcome_and_image_review,116
+40074,2,40074_L2,59,2.0,3,2,1,,"EFGR-, ALK-",,,T2N3M1b,,unknown,not_provided_per_lesion,29.0,37.0,8.5,3,509,1,,,,0,0,0,pending_outcome_and_image_review,117
+40076,4,40076_L4,73,1.0,2,2,1,,EFGR+,,,T4N3M1a,,unknown,not_provided_per_lesion,148.0,,20.0,0,1619,1,,,,0,0,0,pending_outcome_and_image_review,118
+40078,1,40078_L1,51,2.0,3,3,ND,,ND,,,T3N1M0,446.0,recorded_event_time,not_provided_per_lesion,5.0,,18.5,0,1399,1,,,1.0,0,0,0,pending_outcome_and_image_review,119
+40084,1,40084_L1,62,1.0,2.5,2,1,,EFGR- ALK-Kras+,,,T4N2M1b,,unknown,not_provided_per_lesion,86.0,,20.0,0,295,1,,,,0,0,0,pending_outcome_and_image_review,120
+40084,2,40084_L2,62,1.0,2,2,1,,EFGR- ALK-Kras+,,,T4N2M1b,,unknown,not_provided_per_lesion,261.0,,20.0,0,295,1,,,,0,0,0,pending_outcome_and_image_review,121
+40086,1,40086_L1,51,1.0,2.5,1,4,,ND,,,T3N1M1,365.0,recorded_event_time,not_provided_per_lesion,20.0,,18.0,1,587,1,,,1.0,0,0,0,pending_outcome_and_image_review,122
+40093,2,40093_L2,52,2.0,3,4,ND,,BRAF+ NRAS-,,,T2aN0M0,215.0,recorded_event_time,not_provided_per_lesion,-31.0,-25.0,4.2,7 (Eb 16 Gy),613,1,,,1.0,0,0,0,pending_outcome_and_image_review,123
+40093,3,40093_L3,52,2.0,3,4,ND,,BRAF+ NRAS-,,,T2aN0M0,,unknown,not_provided_per_lesion,,,8.5,3 (EB 20Gy),613,1,,,,0,0,0,pending_outcome_and_image_review,124
+40094,1,40094_L1,58,1.0,3,2,1,,EFGR- ALK-,,,TxN3 M0,,unknown,not_provided_per_lesion,12.0,29.0,5.2,7,390,1,,,,0,0,0,pending_outcome_and_image_review,125
+40094,2,40094_L2,58,1.0,3,2,1,,EFGR- ALK-,,,TxN3 M0,,unknown,not_provided_per_lesion,12.0,29.0,5.2,7,390,1,,,,0,0,0,pending_outcome_and_image_review,126
+40100,1,40100_L1,58,2.0,3,2,2,,ND,,,T3N2M0,175.0,recorded_event_time,not_provided_per_lesion,12.0,,19.0,1,277,1,1.0,249,1.0,0,0,0,pending_outcome_and_image_review,127
+40102,1,40102_L1,73,2.0,1.5,2,1,,"EGFR -. ALK-,ROS1-",,,T2N2M1,,unknown,not_provided_per_lesion,8.0,28.0,3.7,10,923,1,,,,0,0,0,pending_outcome_and_image_review,128
+40102,2,40102_L2,73,2.0,1.5,2,1,,"EGFR -. ALK-,ROS1-",,,T2N2M1,294.0,recorded_event_time,not_provided_per_lesion,130.0,,20.0,0,923,1,,,1.0,0,0,0,pending_outcome_and_image_review,129
+40109,1,40109_L1,54,1.0,2,9,1,,"BRCA1+, RE+, RP+++",,,T3cN0M0,,unknown,not_provided_per_lesion,173.0,181.0,4.6,5,1047,1,,,,0,0,0,pending_outcome_and_image_review,130
+40109,2,40109_L2,54,1.0,2,9,1,,"BRCA1+, RE+, RP+++",,,T3cN0M0,,unknown,not_provided_per_lesion,173.0,181.0,3.8,5,1047,1,,,,0,0,0,pending_outcome_and_image_review,131
+40113,2,40113_L2,51,1.0,3.5,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,714.0,744.0,16.0,10,1701,1,,,,0,0,0,pending_outcome_and_image_review,132
+40113,3,40113_L3,51,1.0,3.5,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,714.0,744.0,16.0,10,1701,1,,,,0,0,0,pending_outcome_and_image_review,133
+40113,4,40113_L4,51,1.0,3.5,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,714.0,744.0,16.0,10,1701,1,,,,0,0,0,pending_outcome_and_image_review,134
+40113,8,40113_L8,51,1.0,3.5,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,714.0,744.0,16.0,10,1701,1,,,,0,0,0,pending_outcome_and_image_review,135
+40113,9,40113_L9,51,1.0,3.5,1,4,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,714.0,744.0,16.0,10,1701,1,,,,0,0,0,pending_outcome_and_image_review,136
+40114,1,40114_L1,34,1.0,2,4,ND,,"BRAF-, NRAS-, CKIT-",,,T2aN0M0,579.0,recorded_event_time,not_provided_per_lesion,138.0,153.0,5.0,5 (Eb 15 Gy),645,1,,,1.0,0,0,0,pending_outcome_and_image_review,137
+40114,3,40114_L3,34,1.0,2,4,ND,,"BRAF-, NRAS-, CKIT-",,,T2aN0M0,582.0,recorded_event_time,not_provided_per_lesion,3784.0,,18.0,0,645,1,,,0.0,0,0,0,pending_outcome_and_image_review,138
+40114,5,40114_L5,34,1.0,2,4,ND,,"BRAF-, NRAS-, CKIT-",,,T2aN0M0,,unknown,not_provided_per_lesion,3784.0,,18.0,0,645,1,,,,0,0,0,pending_outcome_and_image_review,139
+40116,1,40116_L1,36,2.0,4,2,2,,ND,,,T4N0M0,1685.0,recorded_event_time,not_provided_per_lesion,3.0,,20.0,1,1599,1,,,1.0,0,0,0,pending_outcome_and_image_review,140
+40120,1,40120_L1,62,1.0,2,3,ND,,ND,,,T4N2M1b,,unknown,not_provided_per_lesion,269.0,,18.0,1,450,1,,,,0,0,0,pending_outcome_and_image_review,141
+40120,2,40120_L2,62,1.0,2,3,ND,,ND,,,T4N2M1b,,unknown,not_provided_per_lesion,269.0,,17.0,1,450,1,,,,0,0,0,pending_outcome_and_image_review,142
+40121,1,40121_L1,44,1.0,2.5,1,2,,ND,,,T3N1cM0,,unknown,not_provided_per_lesion,18.0,35.0,4.0,10,839,1,,,,0,0,0,pending_outcome_and_image_review,143
+40121,2,40121_L2,44,1.0,2.5,1,2,,ND,,,T3N1cM0,,unknown,not_provided_per_lesion,18.0,35.0,9.0,3,839,1,,,,0,0,0,pending_outcome_and_image_review,144
+40121,4,40121_L4,44,1.0,2.5,1,2,,ND,,,T3N1cM0,,unknown,not_provided_per_lesion,,,20.0,0,839,1,,,,0,0,0,pending_outcome_and_image_review,145
+40127,1,40127_L1,71,2.0,2.5,2,1,,EFGR-ALK-,,,T3N1M0,657.0,recorded_event_time,not_provided_per_lesion,1.0,,20.0,1,1394,1,,,1.0,0,0,0,pending_outcome_and_image_review,146
+40127,2,40127_L2,71,2.0,2.5,2,1,,EFGR-ALK-,,,T3N1M0,,unknown,not_provided_per_lesion,98.0,,20.0,1,1394,1,,,,0,0,0,pending_outcome_and_image_review,147
+40127,3,40127_L3,71,2.0,2.5,2,1,,EFGR-ALK-,,,T3N1M0,611.0,recorded_event_time,not_provided_per_lesion,329.0,,19.0,1,1394,1,,,1.0,0,0,0,pending_outcome_and_image_review,148
+40127,4,40127_L4,72,2.0,2.5,2,1,,EFGR-ALK-,,,T3N1M0,,unknown,not_provided_per_lesion,440.0,,19.0,1,1394,1,,,,0,0,0,pending_outcome_and_image_review,149
+40127,6,40127_L6,72,2.0,2.5,2,1,,EFGR-ALK-,,,T3N1M0,,unknown,not_provided_per_lesion,,,19.0,1,1394,1,,,,0,0,0,pending_outcome_and_image_review,150
+40133,1,40133_L1,61,2.0,3,3,ND,,ND,,,T3N2M0,,unknown,not_provided_per_lesion,8.0,,17.5,1,289,1,,,,0,0,0,pending_outcome_and_image_review,151
+40135,1,40135_L1,47,2.0,2.5,4,ND,,ND,,,T3aN0M0,182.0,recorded_event_time,not_provided_per_lesion,29.0,,20.0,1,206,1,,,1.0,0,0,0,pending_outcome_and_image_review,152
+40135,2,40135_L2,47,2.0,2.5,4,ND,,ND,,,T3aN0M0,113.0,recorded_event_time,not_provided_per_lesion,25.0,35.0,18.0,1,206,1,,,1.0,0,0,0,pending_outcome_and_image_review,153
+40140,3,40140_L3,59,2.0,3,2,1,,"EGFR + Exon 19, ALK -",,,T2N1M1b,,unknown,not_provided_per_lesion,120.0,,13.5,1,1097,1,,,,0,0,0,pending_outcome_and_image_review,154
+40141,1,40141_L1,64,2.0,3,2,1,,EFGR- ALK-,,,T1bN0M1b,,unknown,not_provided_per_lesion,23.0,,20.0,0,1580,1,,,,0,0,0,pending_outcome_and_image_review,155
+40141,2,40141_L2,64,2.0,3,2,1,,EFGR- ALK-,,,T1bN0M1b,,unknown,not_provided_per_lesion,23.0,,20.0,0,1580,1,,,,0,0,0,pending_outcome_and_image_review,156
+40141,3,40141_L3,64,2.0,3,2,1,,EFGR- ALK-,,,T1bN0M1b,921.0,recorded_event_time,not_provided_per_lesion,23.0,,19.0,0,1580,1,,,1.0,0,0,0,pending_outcome_and_image_review,157
+40141,4,40141_L4,64,2.0,3,2,1,,EFGR- ALK-,,,T1bN0M1b,921.0,recorded_event_time,not_provided_per_lesion,23.0,,19.0,0,1580,1,,,1.0,0,0,0,pending_outcome_and_image_review,158
+40151,2,40151_L2,63,2.0,3,2,4,,"EFGR-, ALK-",,,TxN3M1b,,unknown,not_provided_per_lesion,246.0,,18.0,1,523,1,,,,0,0,0,pending_outcome_and_image_review,159
+40153,1,40153_L1,54,1.0,1.5,2,1,,EFGR- ALK- ROs1-. PDL1<1% (-),,,T4N3M1b,,unknown,not_provided_per_lesion,7.0,13.0,6.2,5,369,1,,,,0,0,0,pending_outcome_and_image_review,160
+40156,1,40156_L1,65,2.0,3,3,ND,,ND,,,T1bN2M0,401.0,recorded_event_time,not_provided_per_lesion,155.0,168.0,3.7,10,1188,1,,,1.0,0,0,0,pending_outcome_and_image_review,161
+40156,2,40156_L2,65,2.0,3,3,ND,,ND,,,T1bN2M0,,unknown,not_provided_per_lesion,721.0,722.0,20.0,1,1188,1,,,,0,0,0,pending_outcome_and_image_review,162
+40158,1,40158_L1,60,1.0,3,1,4,,ND,,,T1N3M0,324.0,recorded_event_time,not_provided_per_lesion,23.0,,18.0,0,777,1,,,1.0,0,0,0,pending_outcome_and_image_review,163
+40160,1,40160_L1,61,1.0,3,1,4,,ND,,,T2N2M1,,unknown,not_provided_per_lesion,1.0,,20.0,0,1397,1,,,,0,0,0,pending_outcome_and_image_review,164
+40161,1,40161_L1,45,1.0,3,2,1,,EFGR+,,,T1cN0M0,,unknown,not_provided_per_lesion,2.0,,20.0,0,1301,1,,-861,,0,0,0,pending_outcome_and_image_review,165
+40169,1,40169_L1,75,1.0,1,1,3,,ND,,,T3N3M0,,unknown,not_provided_per_lesion,31.0,40.0,4.5,7,608,1,,,,0,0,0,pending_outcome_and_image_review,166
+40173,1,40173_L1,54,2.0,3,2,1,,ND,,,T4N0M0,,unknown,not_provided_per_lesion,2.0,,20.0,1,2798,1,,,,0,0,0,pending_outcome_and_image_review,167
+40176,1,40176_L1,72,1.0,2,2,1,,EFGR-ALK-,,,T2N1M0,392.0,recorded_event_time,not_provided_per_lesion,17.0,,20.0,0,1239,1,,,1.0,0,0,0,pending_outcome_and_image_review,168
+40176,2,40176_L2,73,1.0,1,2,1,,EFGR-ALK-,,,T2N1M0,,unknown,not_provided_per_lesion,282.0,,21.0,0,1239,1,,,,0,0,0,pending_outcome_and_image_review,169
+40176,3,40176_L3,73,1.0,1,2,1,,EFGR-ALK-,,,T2N1M0,,unknown,not_provided_per_lesion,,,20.0,0,1239,1,,,,0,0,0,pending_outcome_and_image_review,170
+40179,1,40179_L1,77,2.0,2.5,2,1,,EFGR- ALK-,,,T3N0M1b,,unknown,not_provided_per_lesion,37.0,106.0,4.0,10,670,1,,,,0,0,0,pending_outcome_and_image_review,171
+40179,2,40179_L2,77,2.0,2.5,2,1,,EFGR- ALK-,,,T3N0M1b,,unknown,not_provided_per_lesion,37.0,106.0,4.0,10,670,1,,,,0,0,0,pending_outcome_and_image_review,172
+40183,1,40183_L1,65,1.0,2,1,4,,ND,,,T2N1M0,229.0,recorded_event_time,not_provided_per_lesion,7.0,,19.0,0,702,1,,,1.0,0,0,0,pending_outcome_and_image_review,173
+40184,1,40184_L1,59,1.0,2,1,2,,ND,,,T2N2M0,,unknown,not_provided_per_lesion,3.0,,20.0,0,523,1,,,,0,0,0,pending_outcome_and_image_review,174
+40185,1,40185_L1,67,1.0,2.5,1,2,,ND,,,T1N2M0,,unknown,not_provided_per_lesion,45.0,,19.0,0,652,1,,,,0,0,0,pending_outcome_and_image_review,175

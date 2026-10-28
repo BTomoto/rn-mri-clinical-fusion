@@ -1,0 +1,44 @@
+[
+  {
+    "downloaded_members": 8617,
+    "verified_existing": 0,
+    "transferred_bytes": 736326049,
+    "batches": 55,
+    "archive_id": "dicom1"
+  },
+  {
+    "downloaded_members": 7409,
+    "verified_existing": 0,
+    "transferred_bytes": 1204872230,
+    "batches": 83,
+    "archive_id": "dicom2"
+  },
+  {
+    "downloaded_members": 7083,
+    "verified_existing": 0,
+    "transferred_bytes": 1154117342,
+    "batches": 75,
+    "archive_id": "dicom3"
+  },
+  {
+    "downloaded_members": 6880,
+    "verified_existing": 0,
+    "transferred_bytes": 1084618255,
+    "batches": 69,
+    "archive_id": "dicom4"
+  },
+  {
+    "downloaded_members": 7524,
+    "verified_existing": 0,
+    "transferred_bytes": 1320175025,
+    "batches": 85,
+    "archive_id": "dicom5"
+  },
+  {
+    "downloaded_members": 3288,
+    "verified_existing": 0,
+    "transferred_bytes": 517411220,
+    "batches": 35,
+    "archive_id": "dicom6"
+  }
+]

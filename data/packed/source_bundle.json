@@ -1,0 +1,169 @@
+{
+  "format": "ordered_binary_segments_of_one_zip",
+  "archive_sha256": "1f595c69e1bf59c63ae3f3f93735898b703e7596088dedbdc7f9f987a0139c78",
+  "archive_size_bytes": 45424486,
+  "members": [
+    {
+      "path": "data/metadata/dicom1_directory.bin",
+      "size_bytes": 18740568,
+      "sha256": "2631c411fd73fe5394788e18720545ff159a76e8df186087c84b6381044e1be1"
+    },
+    {
+      "path": "data/metadata/dicom2_directory.bin",
+      "size_bytes": 19881603,
+      "sha256": "19f08b99eb9c9ae4eb1c14a2d6d5194e67dc658e8a4b44c726541690de278d13"
+    },
+    {
+      "path": "data/metadata/dicom3_directory.bin",
+      "size_bytes": 16403412,
+      "sha256": "655fdf3b0bbdd9442810170259e8769cec21697a3e7f2e66bd83b82fec6fe555"
+    },
+    {
+      "path": "data/metadata/dicom4_directory.bin",
+      "size_bytes": 13597762,
+      "sha256": "246cb5e899deac3978b4c5611fe1cf2caf3507b27c9a87861562c85fae36cf40"
+    },
+    {
+      "path": "data/metadata/dicom5_directory.bin",
+      "size_bytes": 18352757,
+      "sha256": "58931d990b409c82e0cd8074dc63bf40cd59a80176d047f8a0e5658aae878e4c"
+    },
+    {
+      "path": "data/metadata/dicom6_directory.bin",
+      "size_bytes": 13025668,
+      "sha256": "3d1c0db5903a3ce488435c20e55f05a5fa1f523da3f81649760b172bfa5121f1"
+    },
+    {
+      "path": "data/metadata/downloaded_imaging.jsonl",
+      "size_bytes": 13799609,
+      "sha256": "b07b27222e777668606ad1816468bddea84ca8d170b58ddd76674350a7c61561"
+    },
+    {
+      "path": "data/metadata/selected_dicom_members.jsonl",
+      "size_bytes": 15261421,
+      "sha256": "4cde4f9fb2dd381b10482f0dd6214c08df1e984fb120a3f8244d218033a83bd8"
+    },
+    {
+      "path": "data/raw/openbtai/NIFTIs_Masks.zip",
+      "size_bytes": 12394370,
+      "sha256": "4b35f39225eb453a4a5fe8fb5e7fb8a40ec425b00b06dc1dd3d013610a3bb92d"
+    },
+    {
+      "path": "data/raw/openbtai/OpenBTAI_Radiomic.xlsx",
+      "size_bytes": 25055752,
+      "sha256": "70ca9c3f1c7dfa0e29a0714c544b33d2cb13e4f7cbb76891c612eb1f27c3326b"
+    }
+  ],
+  "parts": [
+    {
+      "path": "data/packed/research_sources.zip.part-0001",
+      "size_bytes": 2097152,
+      "sha256": "5cec9ce1e531bb5963b7180916dc47aa1f7f7172702d1dd0a82dc5e1242bd9fb"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0002",
+      "size_bytes": 2097152,
+      "sha256": "181f53b7fb9dc492ec46736258a2d27c557c9e31391e6121b520fcb401b6a5dd"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0003",
+      "size_bytes": 2097152,
+      "sha256": "b06623ed43615397cdf6982861fbcb36715dff2565ef08fd9fd08716767463a9"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0004",
+      "size_bytes": 2097152,
+      "sha256": "e8da19851fe52b6e38b63225f2419b6d3e1ad910a9fb980eb9efb3f614bdf369"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0005",
+      "size_bytes": 2097152,
+      "sha256": "bacf53a2d903384e2654d87fd9f66175153a5577f698ed6f02cd42fc7c35e4e0"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0006",
+      "size_bytes": 2097152,
+      "sha256": "8931bc15a697ab20a3e1a1a5ce539ced9b73a891739c8fd1af401243e694a973"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0007",
+      "size_bytes": 2097152,
+      "sha256": "a2c8f60116c119ba9df54c751ce10bd2034312390e9a10598bd33cc4d66dd76b"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0008",
+      "size_bytes": 2097152,
+      "sha256": "081970466d62c09e025dbe53c570baa5845ebe29d6f543c5324c201a11a8df00"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0009",
+      "size_bytes": 2097152,
+      "sha256": "99c0620a68f5e834703182cdf4fd62a0cac9ca7868383101add8f664da6e4f15"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0010",
+      "size_bytes": 2097152,
+      "sha256": "5c06ce1733e2b639a34d0cb6af2a9f859c99ec80e7c68cc7d139718fee3b61ed"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0011",
+      "size_bytes": 2097152,
+      "sha256": "71bf92e60ba6a0217f008c0effdab566cc4f6e9acadb10231f33144e3de37081"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0012",
+      "size_bytes": 2097152,
+      "sha256": "a4220ab7dd037c1a46b925fed9ab68bcb1fa3f37bdddbc9b825309fb641878a5"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0013",
+      "size_bytes": 2097152,
+      "sha256": "417e8a209910b10128db2d5eba09869bc71491d9cdfd3971689b556fb200fa41"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0014",
+      "size_bytes": 2097152,
+      "sha256": "74976d2e14411760cb3d73f735724953c096c829415051811ef7b544b30b7ebf"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0015",
+      "size_bytes": 2097152,
+      "sha256": "24b1c957628004e26bfe84e008963b7dffc08e226a59126d45d9fe94fa1e87c3"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0016",
+      "size_bytes": 2097152,
+      "sha256": "77b814f083db01baf6bed5838430add8be610c94f1a5bcbfc965ca258b36b49f"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0017",
+      "size_bytes": 2097152,
+      "sha256": "cb7200e5929595dd0efb0f8fbea5ab43892b1df072a908e8ad450ea48032a9b8"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0018",
+      "size_bytes": 2097152,
+      "sha256": "0f0d657052f4a02c18be83187bcf5904f1e2364916b3c91b550d149f1b4e16a9"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0019",
+      "size_bytes": 2097152,
+      "sha256": "1ec23c9cc1db9ae0cc35af058fbb405d40e26242d49508aed1479a9226633d9f"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0020",
+      "size_bytes": 2097152,
+      "sha256": "614c818aacaccc21a265f000244c3205392cba61994d10bcd743cd071ed0081a"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0021",
+      "size_bytes": 2097152,
+      "sha256": "d1656d770bbda3be06755a12930aefa8c2b59c9c660c2ae83ed835a5b36898e1"
+    },
+    {
+      "path": "data/packed/research_sources.zip.part-0022",
+      "size_bytes": 1384294,
+      "sha256": "ef18f52f31dcdc731e17978851c2f2208b50114624cac56606c7d20c8a918151"
+    }
+  ]
+}

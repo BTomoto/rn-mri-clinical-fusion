@@ -1,0 +1,130 @@
+[
+  {
+    "filename": "RN_MRI_part_01_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_01_of_16.zip",
+    "size_bytes": 378670710,
+    "sha256": "8caf5f3fcb240bf81c0f50a72458ef771a47036f694d4c692535a99560a8d226",
+    "dicom_files": 4391,
+    "uncompressed_bytes": 1295657466
+  },
+  {
+    "filename": "RN_MRI_part_02_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_02_of_16.zip",
+    "size_bytes": 378806480,
+    "sha256": "324baeb1217b068acc2cb5c3bce22b2f96b0a0ca7a60f683a5cab0d0272ea964",
+    "dicom_files": 4327,
+    "uncompressed_bytes": 1236173194
+  },
+  {
+    "filename": "RN_MRI_part_03_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_03_of_16.zip",
+    "size_bytes": 378072214,
+    "sha256": "71c01698fe125c52ce2d56a671ba8dc1232355d5be700a7c933ce2f7ba451a4e",
+    "dicom_files": 2322,
+    "uncompressed_bytes": 1180507210
+  },
+  {
+    "filename": "RN_MRI_part_04_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_04_of_16.zip",
+    "size_bytes": 378154539,
+    "sha256": "4584336706741e92abc899883b922f5d79229bca65dca5eeab8dc238d63aa716",
+    "dicom_files": 2279,
+    "uncompressed_bytes": 1155962520
+  },
+  {
+    "filename": "RN_MRI_part_05_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_05_of_16.zip",
+    "size_bytes": 378188296,
+    "sha256": "9b041981c1e18a8f0981fdad960f36bdc1438fdc7243b0ba38188b404f07b7c6",
+    "dicom_files": 2379,
+    "uncompressed_bytes": 1158760110
+  },
+  {
+    "filename": "RN_MRI_part_06_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_06_of_16.zip",
+    "size_bytes": 378010072,
+    "sha256": "77bb0d9322ca927deb930d2662e9c21f2c608f96f58674324e011779e53a164f",
+    "dicom_files": 2052,
+    "uncompressed_bytes": 1036837190
+  },
+  {
+    "filename": "RN_MRI_part_07_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_07_of_16.zip",
+    "size_bytes": 378000623,
+    "sha256": "09444cdd57c71608b832e2069a5f0284262c677c0064ce5145c8a9173e4008c1",
+    "dicom_files": 2319,
+    "uncompressed_bytes": 1186383676
+  },
+  {
+    "filename": "RN_MRI_part_08_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_08_of_16.zip",
+    "size_bytes": 378305381,
+    "sha256": "9fac0bbccac0d1f6c5e7e00883ea461927c8ad41a18c5c3fbb27b1e5b9353ebd",
+    "dicom_files": 2570,
+    "uncompressed_bytes": 1261884982
+  },
+  {
+    "filename": "RN_MRI_part_09_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_09_of_16.zip",
+    "size_bytes": 378448955,
+    "sha256": "58dac12b71d75cfc2196dd72bb7877b876f6ffe5aa6925fc2291a460ba6350bb",
+    "dicom_files": 2916,
+    "uncompressed_bytes": 1165970600
+  },
+  {
+    "filename": "RN_MRI_part_10_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_10_of_16.zip",
+    "size_bytes": 378044708,
+    "sha256": "046f4212f0d9122d0466d1508e0313e73cbcec7d561e4a550a57f716a456f6e1",
+    "dicom_files": 2043,
+    "uncompressed_bytes": 1056469192
+  },
+  {
+    "filename": "RN_MRI_part_11_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_11_of_16.zip",
+    "size_bytes": 378215402,
+    "sha256": "364102b580f5a9a6828e6da5d7507017c9e1b636b83c271439d6706dc7192858",
+    "dicom_files": 2309,
+    "uncompressed_bytes": 1212458746
+  },
+  {
+    "filename": "RN_MRI_part_12_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_12_of_16.zip",
+    "size_bytes": 378189702,
+    "sha256": "5282713faa6894818ae9ee4c6500df93b41db7231f05f12a7188e6e895002e30",
+    "dicom_files": 2325,
+    "uncompressed_bytes": 1026813348
+  },
+  {
+    "filename": "RN_MRI_part_13_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_13_of_16.zip",
+    "size_bytes": 378191936,
+    "sha256": "11696577abca535eae753fc572c70ebeb80265c9c3450e436b156c1719ce7356",
+    "dicom_files": 2197,
+    "uncompressed_bytes": 1008304968
+  },
+  {
+    "filename": "RN_MRI_part_14_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_14_of_16.zip",
+    "size_bytes": 378113398,
+    "sha256": "5d64cade96e95e00c98da7cbb200744a1e4c3def3d107ffa1aab031da5fbd48f",
+    "dicom_files": 2013,
+    "uncompressed_bytes": 1059534942
+  },
+  {
+    "filename": "RN_MRI_part_15_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_15_of_16.zip",
+    "size_bytes": 378035908,
+    "sha256": "e794a3576a98d7f62f5c01a57058b144a3146caed30224cfbbf513e9cbc592d9",
+    "dicom_files": 2201,
+    "uncompressed_bytes": 1126501250
+  },
+  {
+    "filename": "RN_MRI_part_16_of_16.zip",
+    "relative_path": "dist/RN_MRI_part_16_of_16.zip",
+    "size_bytes": 337354784,
+    "sha256": "c93d27af27ce21da1708fc59067897da855141b39cb4eca7d642246855ad807d",
+    "dicom_files": 2158,
+    "uncompressed_bytes": 1040647858
+  }
+]

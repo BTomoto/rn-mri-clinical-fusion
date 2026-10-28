@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+*.partial
+data/imaging/
+dist/
+outputs/research-data/preview_*.png
+outputs/research-data/*.inspect.ndjson
+node_modules/
+
+# Restored byte-identical sources; compact archive parts are tracked instead.
+/data/metadata/dicom1_directory.bin
+/data/metadata/dicom2_directory.bin
+/data/metadata/dicom3_directory.bin
+/data/metadata/dicom4_directory.bin
+/data/metadata/dicom5_directory.bin
+/data/metadata/dicom6_directory.bin
+/data/metadata/downloaded_imaging.jsonl
+/data/metadata/selected_dicom_members.jsonl
+/data/raw/openbtai/NIFTIs_Masks.zip
+/data/raw/openbtai/OpenBTAI_Radiomic.xlsx
+
+/data/packed/research_sources.zip
+*.restore-partial
