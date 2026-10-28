@@ -25,3 +25,6 @@ node_modules/
 
 /data/packed/research_sources.zip
 *.restore-partial
+/reports/readiness_workbook_input.json
+/outputs/readiness-20261028/preview_*.png
+/outputs/readiness-20261028/*.inspect.ndjson

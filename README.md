@@ -4,6 +4,10 @@
 
 **当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
 
+2026-10-28进一步核查：直接读取373份NIfTI掩膜，得到591条病灶—时间记录；按掩膜日期与影像组学表交叉匹配，首次记录SRS前30天内有53个候选病灶（40名患者），其中17个填写坏死时间。早期仅按形态学表得到的21个匹配不能代表全部分割覆盖，因为该表97条日期使用了不同的年份编码。本项目未擅自改写这些日期。
+
+新增 [核查报告](reports/readiness_audit_20261028.md)、[审阅Excel](outputs/readiness-20261028/RN_Readiness_Audit.xlsx) 和 [04核查Notebook](notebooks/04_readiness_audit.ipynb)。当前仍缺少逐病灶可追溯的阴性结局和诊断依据，未拟合预测模型。
+
 本项目仅分析既有公开去标识数据，不新增招募或实施动物、细胞实验。数据原始来源为既往患者影像和临床记录；保留原始研究出处、许可及使用说明。
 
 ## 当前数据
@@ -56,8 +60,19 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 2. `01_cohort_curation_and_audit.ipynb`：队列整理、时间窗口与未知结局。
 3. `02_imaging_download_integrity.ipynb`：下载清单与文件完整性。
 4. `03_model_readiness_and_analysis_plan.ipynb`：数据准备状态及M0—M2比较设计。
+5. `04_readiness_audit.ipynb`：逐例时间冲突、实际掩膜覆盖、体积核对及DICOM抽样。
 
 已执行Notebook输出由普通Python顺序执行器生成，未使用Jupyter内核。所有代码单元均为普通Python，可在JupyterLab重新运行。未生成或宣称任何模型AUC、校准或临床验证结果。
+
+新增04也采用上述普通Python执行器验证。曾尝试nbclient启动Jupyter内核，但当前执行环境的网络接口/内核通信权限使内核启动失败，未宣称内核执行成功。Notebook可以在具备正常Jupyter环境的机器中重新运行。重新运行影像核查需额外安装 `pydicom>=3,<4` 和 `nibabel>=5,<6`。完整核查可依次运行：
+
+```bash
+python scripts/audit_dicom_samples.py
+python scripts/audit_readiness.py
+python scripts/run_notebooks.py notebooks/04_readiness_audit.ipynb
+```
+
+DICOM脚本仅抽取每个选定目录按ZIP顺序排列的首尾文件，核验CRC和SHA256并读取头信息；不是全部切片的像素、空间连续性或临床质量核查。掩膜标签的组织成分不作为RN诊断标签。
 
 ## 后续影像与模型分析
 

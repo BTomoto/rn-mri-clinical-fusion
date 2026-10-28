@@ -1,13 +1,13 @@
 {
   "date": "2026-10-28",
-  "scope": "public data acquisition and curation",
+  "scope": "public data curation, outcome/timing audit and structural imaging audit",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 40801,
   "downloaded_uncompressed_bytes": 18208867252,
   "patients_with_downloaded_mri": 59,
   "patient_date_pairs_with_downloaded_mri": 107,
-  "notebooks_executed": 4,
+  "notebooks_executed": 5,
   "prediction_model_fitted": false,
   "outcome_adjudication_complete": false,
   "image_quality_and_lesion_segmentation_complete": false,
@@ -18,5 +18,15 @@
   "github_main_project_upload": "included_in_this_commit",
   "github_mri_release_upload_complete": false,
   "source_storage": "22 archive parts, with verified byte-identical restoration",
-  "github_main_project_file_count": 82
+  "readiness_audit_date": "2026-10-28",
+  "readiness_audit_completed": true,
+  "baseline_actual_mask_candidates": 53,
+  "baseline_mask_candidate_recorded_rn_times": 17,
+  "dicom_sample_directories": 469,
+  "dicom_sample_files": 938,
+  "complete_image_qc": false,
+  "verified_non_events": 0,
+  "models_fitted": false,
+  "notebook_execution_method": "ordinary Python executor; Jupyter kernel launch blocked by runtime communication permissions",
+  "github_main_project_file_count_previous_commit": 82
 }

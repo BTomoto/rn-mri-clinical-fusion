@@ -7,12 +7,17 @@ import contextlib
 import io
 import json
 import os
+import argparse
 from pathlib import Path
 import traceback
 
 root = Path(__file__).resolve().parents[1]
 os.chdir(root)
-for path in sorted((root / 'notebooks').glob('*.ipynb')):
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('notebooks',nargs='*',help='Optional notebook paths; default runs all.')
+args=parser.parse_args()
+paths=[(root/p).resolve() for p in args.notebooks] if args.notebooks else sorted((root/'notebooks').glob('*.ipynb'))
+for path in paths:
     notebook = json.loads(path.read_text())
     namespace = {'__name__': '__main__'}
     number = 0

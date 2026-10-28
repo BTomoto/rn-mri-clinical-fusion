@@ -1,0 +1,53 @@
+{
+  "audit_date": "2026-10-28",
+  "outcomes": {
+    "clinical_lesions": 160,
+    "patients": 75,
+    "recorded_rn_times": 32,
+    "unknown_rn": 128,
+    "recorded_rn_after_index_srs": 30,
+    "rn_at_or_before_index_srs": 2,
+    "recorded_rn_no_index_srs": 0,
+    "rn_after_death": 1,
+    "index_srs_after_death": 2,
+    "baseline_directory_candidates": 90,
+    "strictly_pre_srs_directory_candidates": 90,
+    "same_day_directory_candidates": 0,
+    "baseline_existing_morphology_lesions": 21,
+    "baseline_existing_morphology_rn_times": 1,
+    "baseline_actual_mask_lesions": 53,
+    "baseline_actual_mask_patients": 40,
+    "baseline_actual_mask_rn_times": 17,
+    "strict_baseline_existing_morphology_lesions": 21,
+    "landmark90_directory_candidates": 41,
+    "verified_non_events": 0,
+    "final_eligible": 0
+  },
+  "masks": {
+    "mask_files": 373,
+    "readable_mask_files": 373,
+    "mask_lesion_time_records": 591,
+    "mask_unique_lesions": 160,
+    "morphology_unique_join_records": 495,
+    "morphology_volume_agrees_1e_5_cm3": 336,
+    "radiomics_unique_join_records": 591,
+    "radiomics_volume_agrees_0_01_mm3": 512,
+    "radiomics_volume_agrees_relative_0_1_percent": 591,
+    "morphology_volume_agrees_relative_0_1_percent": 466,
+    "morphology_year_code_2000_or_later": 97
+  },
+  "modeling_status": "not_ready_unresolved_outcome_labels_and_baseline_segmentation",
+  "source_rn_blanks_treated_as_negative": false,
+  "published39_vs_release32": "unresolved_no_lesion_level_crosswalk_found",
+  "dicom_scope": "two_archive_order_samples_per_selected_directory_when_available",
+  "models_fitted": false,
+  "dicom_samples": {
+    "directories": 469,
+    "sampled_files": 938,
+    "readable_headers": 469,
+    "directories_with_mixed_sample_series_uid": 1,
+    "directories_with_differing_sample_geometry": 33,
+    "directories_matching_original_sample_sha256": 469,
+    "full_series_qc_complete": false
+  }
+}
