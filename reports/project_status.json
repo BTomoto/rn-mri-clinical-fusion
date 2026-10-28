@@ -7,7 +7,7 @@
   "downloaded_uncompressed_bytes": 18893573108,
   "patients_with_downloaded_mri": 63,
   "patient_date_pairs_with_downloaded_mri": 111,
-  "notebooks_executed": 10,
+  "notebooks_executed": 11,
   "prediction_model_fitted": false,
   "outcome_adjudication_complete": false,
   "image_quality_and_lesion_segmentation_complete": false,
@@ -27,7 +27,7 @@
   "complete_image_qc": false,
   "verified_non_events": 0,
   "models_fitted": false,
-  "notebook_execution_method": "00-04 ordinary Python executor; 05-09 in-process ipykernel via Jupyter client",
+  "notebook_execution_method": "00-04 ordinary Python executor; 05-10 in-process ipykernel via Jupyter client",
   "github_main_project_file_count_previous_commit": 82,
   "previous_figshare_snapshot": {
     "recorded_rn_times": 32,
@@ -55,7 +55,8 @@
     "notebooks/06_additional_baseline_imaging_qc.ipynb",
     "notebooks/07_baseline_mask_series_qc.ipynb",
     "notebooks/08_grid_precision_and_flair_pairs.ipynb",
-    "notebooks/09_registration_pilot_and_endpoint_gate.ipynb"
+    "notebooks/09_registration_pilot_and_endpoint_gate.ipynb",
+    "notebooks/10_public_label_feasibility.ipynb"
   ],
   "notebook_kernel_execution_report": "reports/kernel_execution.json",
   "separate_kernel_server_tested": false,
@@ -67,7 +68,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Prioritize public lesion-level RN/negative follow-up provenance or a fully labeled public cohort; do not batch apply pilot transforms",
+  "next_work_item": "Await approval to change to high-grade-glioma tumor-versus-treatment-change diagnosis, then verify grouped eligibility and run a prespecified simple clinical logistic baseline",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -79,7 +80,8 @@
   "notebook_kernel_execution_reports": [
     "reports/kernel_execution.json",
     "reports/kernel_execution_08.json",
-    "reports/kernel_execution_09.json"
+    "reports/kernel_execution_09.json",
+    "reports/kernel_execution_10.json"
   ],
   "baseline_flair_files": 1391,
   "baseline_flair_series": 40,
@@ -103,5 +105,22 @@
   "original_risk_modeling_paused_for_endpoint_evidence": true,
   "clinical_source_rechecked_date": "2026-10-29",
   "clinical_source_rechecked_unchanged": true,
-  "pilot_registration_report": "reports/registration_pilot_and_gate_20261029.md"
+  "pilot_registration_report": "reports/registration_pilot_and_gate_20261029.md",
+  "workflow_mode": "stepwise_user_approval",
+  "last_user_authorized_step": "public_label_feasibility_audit",
+  "current_step_complete": true,
+  "next_step_requires_user_approval": true,
+  "next_step_approved": false,
+  "analysis_question_changed": false,
+  "alternative_cohort_merged_into_OpenBTAI": false,
+  "rnd3_supplement_review_complete": true,
+  "rnd3_supplement_joinable_labels_found": false,
+  "ucsd_reference_timepoints": 243,
+  "ucsd_reference_patients": 178,
+  "ucsd_explicit_rn_timepoints": 7,
+  "ucsd_explicit_rn_patients": 4,
+  "ucsd_broad_tumor_candidate_timepoints": 192,
+  "ucsd_treatment_change_timepoints": 51,
+  "ucsd_subtype_count_discrepancy": true,
+  "public_label_audit_report": "reports/public_label_audit_step10_20261029.md"
 }

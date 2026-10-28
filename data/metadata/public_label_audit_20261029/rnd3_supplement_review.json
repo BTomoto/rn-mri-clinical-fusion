@@ -1,0 +1,25 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13490108/supplementaryFiles?includeInlineImage=false",
+  "bundle_sha256": "b69dc975548e3bf52c886aea0b9a9a57b78404720808c98571d2572ac7e94ed4",
+  "docx_sha256": "db668b653fa5c1d69dad31c20839cc3985b45bd0ef28a1984e5654eab901717f",
+  "docx_bytes": 720410,
+  "table_count": 3,
+  "embedded_image_count": 2,
+  "text_molab_id_pattern_hits": [],
+  "manually_reviewed_table_roles": [
+    "aggregate_cohort_characteristics",
+    "model_architecture",
+    "hyperparameters"
+  ],
+  "manually_reviewed_figure_roles": [
+    "training_curves",
+    "classifier_ROC_curves"
+  ],
+  "embedded_image_sha256": {
+    "word/media/image1.png": "a9f9dbda43e259a7f0f6a76170f1dfc542da775a8be09a8575da2bb01a09e4ab",
+    "word/media/image2.png": "7e1e5429805d354a0b028bbd104f3babd015a54655b01b74d60a3bcddc532842"
+  },
+  "lesion_level_joinable_label_table_observed": false,
+  "previous_access_gap_closed": true,
+  "interpretation": "No usable per-lesion registry in this reviewed supplement; not a universal absence claim"
+}

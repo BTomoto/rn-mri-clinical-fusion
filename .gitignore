@@ -47,3 +47,7 @@ node_modules/
 /reports/pilot_workbook_input.json
 /outputs/registration-pilot-20261029/preview_*.png
 /outputs/registration-pilot-20261029/*.inspect.ndjson
+/data/raw/reference/_label_audit_cache/
+/reports/label_audit_workbook_input.json
+/outputs/public-label-audit-20261029/preview_*.png
+/outputs/public-label-audit-20261029/*.inspect.ndjson

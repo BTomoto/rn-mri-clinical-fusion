@@ -4,6 +4,8 @@
 
 **当前版本完成数据获取、结构化整理和可行性核验；尚未完成临床预测模型。**
 
+**本步结束，等待批准下一步。** 按2026-10-29用户要求，后续每阶段均总结结果、失败/受限原因和下一步计划，经批准后再继续；不以高模型指标为目标。Notebook10已取得并核查RN-D3附录，未找到可连接原病灶的标签表。另下载UCSD-PTGBM当前临床与分类文件：243时间点、178患者，实际RN仅7时间点/4患者，与介绍的10不一致。较完整的广义分组是192个肿瘤候选与51个治疗相关改变；改为这一高级别胶质瘤鉴别问题需要用户明确批准，当前题目和建模启用标记均未改变。见[本步报告](reports/public_label_audit_step10_20261029.md)、[Excel](outputs/public-label-audit-20261029/RN_Public_Label_Feasibility.xlsx)、[Notebook10](notebooks/10_public_label_feasibility.ipynb)。
+
 **2026-10-29决定：暂不扩大全队列自动配准；原定风险模型不训练。** 三例刚性配准试验及一次步长受控重试已完成，仅10029_L2满足数值工程筛查，另外两例候选拒绝，临床接受及应用于分析均为0。公开临床文件重新获取后SHA256未变，125条未知结局及0条已核实阴性仍是原问题的关键限制。下一步优先核查完整公开终点来源，而不继续批量处理影像。见[报告](reports/registration_pilot_and_gate_20261029.md)、[Excel](outputs/registration-pilot-20261029/RN_Registration_Pilot_and_Model_Gate.xlsx)、[Notebook09](notebooks/09_registration_pilot_and_endpoint_gate.ipynb)。
 
 2026-10-28阶段已恢复并逐文件检查40个基线FLAIR名称候选序列（1,391张），可关联46个病灶，8个未找到同期FLAIR名称候选。40158_L1约98.30%的目标体素中心在FLAIR坐标视野内，148个超出切片轴下界。12个网格差异继续保留，其中20034_L1、L2仅在qform敏感性检查中达到容差，没有据此替换仿射。见[该轮报告](reports/grid_precision_flair_20261028.md)、[Excel](outputs/flair-grid-qc-20261028/RN_FLAIR_Grid_Review.xlsx)、[Notebook08](notebooks/08_grid_precision_and_flair_pairs.ipynb)。该阶段未做跨序列配准，后续三例试验见09。
@@ -78,8 +80,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 8. `07_baseline_mask_series_qc.ipynb`：54个当前基线掩膜候选的完整对应序列，逐文件检查及网格误差明细。
 9. `08_grid_precision_and_flair_pairs.ipynb`：12个坐标差异、FLAIR恢复及配对坐标视野核查。
 10. `09_registration_pilot_and_endpoint_gate.ipynb`：三例刚性配准试验、失败保留、工程拒绝规则及公开终点条件核查。
+11. `10_public_label_feasibility.ipynb`：RN-D3附录、UCSD公开文件标签及候选研究问题的可行性核查；未建模，等待批准。
 
-00—04保留普通Python顺序执行器验证的输出。05—09已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08、09分别独立保存为 `reports/kernel_execution_08.json`、`reports/kernel_execution_09.json`。没有生成模型AUC、校准或临床验证结果。
+00—04保留普通Python顺序执行器验证的输出。05—10已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—10分别独立保存为对应的 `reports/kernel_execution_08.json`、`reports/kernel_execution_09.json`、`reports/kernel_execution_10.json`。没有生成模型AUC、校准或临床验证结果。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 

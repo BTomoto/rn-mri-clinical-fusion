@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "ucsd_ptgbm_clinical_v3.xlsx",
+    "url": "https://www.cancerimagingarchive.net/wp-content/uploads/UCSD_PTGBM-clinical-information_v3_2026-12-Mar.xlsx",
+    "sha256": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+    "local_path": "data/raw/reference/ucsd_ptgbm_clinical_v3.xlsx",
+    "size_bytes": 93648,
+    "checked_date": "2026-10-29",
+    "role": "feasibility_only_not_merged_into_OpenBTAI",
+    "license": "CC BY 4.0 per TCIA collection"
+  },
+  {
+    "filename": "ucsd_ptgbm_negative_cases.xlsx",
+    "url": "https://www.cancerimagingarchive.net/wp-content/uploads/details_of_negative_cases_TCIA.xlsx",
+    "sha256": "6d99db8ac1feac569e50c18ed214a1a761858fb8bfa614a29ec5f036946b96e4",
+    "local_path": "data/raw/reference/ucsd_ptgbm_negative_cases.xlsx",
+    "size_bytes": 9890,
+    "checked_date": "2026-10-29",
+    "role": "feasibility_only_not_merged_into_OpenBTAI",
+    "license": "CC BY 4.0 per TCIA collection"
+  }
+]

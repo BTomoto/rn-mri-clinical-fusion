@@ -1,0 +1,39 @@
+{
+  "step": "public_label_feasibility_only",
+  "date": "2026-10-29",
+  "rnd3_supplement_access_gap_closed": true,
+  "rnd3_joinable_label_table_found": false,
+  "original_OpenBTAI_model_ready": false,
+  "ucsd_timepoints": 243,
+  "ucsd_patients": 178,
+  "explicit_rn_timepoints": 7,
+  "explicit_rn_patients": 4,
+  "downloaded_subtype_counts": {
+    "NS": 29,
+    "PsP (clinically confirmed)": 9,
+    "Radiation necrosis": 7,
+    "PsP (bx proven)": 6
+  },
+  "published_subtype_counts": {
+    "NS": 28,
+    "PsP (clinically confirmed)": 9,
+    "PsP (bx proven)": 4,
+    "Radiation necrosis": 10
+  },
+  "subtype_count_discrepancy": true,
+  "all_negative_list_ids_match_current_clinical": true,
+  "tumor_candidate_timepoints": 192,
+  "tumor_candidate_patients": 150,
+  "treatment_change_timepoints": 51,
+  "treatment_change_patients": 39,
+  "patients_with_both_timepoint_classes": 11,
+  "broad_label_limit": "Tumor labels are a documented-partition derivation, not individual pathology adjudication; confirm protocol before use",
+  "rn_only_model_recommended": false,
+  "broad_diagnostic_question_is_a_candidate": true,
+  "scope_change_approved": false,
+  "models_fitted": false,
+  "mri_downloaded_for_new_cohort": false,
+  "next_step_requires_user_approval": true,
+  "proposed_next_step": "If approved, change to high-grade-glioma post-treatment tumor-versus-treatment-change diagnosis; verify patient-grouped eligibility and run a prespecified simple clinical logistic baseline, stopping if label checks fail",
+  "new_question_is_not_brain_metastasis_future_RN_risk": true
+}
