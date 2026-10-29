@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "stage": 29,
+  "date": "2026-10-29",
+  "subsection": "2.7 Performance metrics and conditional uncertainty",
+  "paragraph_ids": [
+    "M14",
+    "M15"
+  ],
+  "english_word_count": 299,
+  "paragraph_word_counts": {
+    "M14": 140,
+    "M15": 159
+  },
+  "matched_chinese_paragraphs": 2,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 1,
+  "equation_numbers": [
+    8
+  ],
+  "equation_images": 0,
+  "prior_files_unchanged": 82,
+  "main_metric_values_checked": 60,
+  "bootstrap_attempts_checked": 2000,
+  "paired_difference_values_checked": 40000,
+  "percentile_endpoints_checked": 88,
+  "sampled_draw_metric_values_checked": 72,
+  "conditional_uncertainty_disclosed": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "next_section": "Calibration assessment (M16)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step29-20261029/UCSD_Manuscript_Methods_2_7_EN_ZH.docx": "68084ef5142bcdf6048a87e311c13dc5123fb0aa91fb6226fd23e3b523ef5797",
+    "outputs/ucsd-manuscript-step29-20261029/UCSD_Manuscript_Methods_2_7_EN.txt": "b8d3cfaa7c877be70d54c45b39cc045a3ba67a0652c69dd0c094e38170eb7d9f"
+  }
+}
