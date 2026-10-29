@@ -1,0 +1,92 @@
+{
+  "success": true,
+  "stage": 54,
+  "date": "2026-10-30",
+  "subsection": "1 Introduction",
+  "paragraph_ids": [
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6"
+  ],
+  "english_word_count": 1054,
+  "matched_chinese_paragraphs": 6,
+  "word_pages": 8,
+  "visual_review_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 242,
+  "prior_files_unchanged": 241,
+  "new_full_texts_checked_for_current_claims": [
+    "S05",
+    "S04",
+    "S20",
+    "S36",
+    "S38",
+    "S34",
+    "S23",
+    "S24"
+  ],
+  "all_six_intro_paragraphs_complete": true,
+  "no_actual_intro_subheadings": true,
+  "citation_numbers_match_paragraph_source_ids": true,
+  "cited_reference_recency": {
+    "unique_sources": 25,
+    "english_recent_2022_2026": 23,
+    "proportion_recent_5yr": 0.92,
+    "english_recent_2024_2026": 17,
+    "proportion_recent_3yr": 0.68,
+    "all_english": true,
+    "final_assembled_bibliography_recheck_required": true
+  },
+  "current_section_references": 16,
+  "global_numbering_pending_full_manuscript_assembly": true,
+  "clinical_endpoint_distinctions_preserved": true,
+  "no_current_study_performance_results_in_introduction": true,
+  "fixed_model_input_dimensions_checked": {
+    "M0": 2,
+    "M1": 5,
+    "MRI": 8,
+    "Fusion": 13
+  },
+  "abstract_deferred_to_next_round": true,
+  "post_conclusion_declarations_deferred_by_user": true,
+  "new_manuscript_references": 8,
+  "provisional_citation_mapping": {
+    "1": "S01",
+    "2": "S02",
+    "4": "S32",
+    "6": "S06",
+    "7": "S12",
+    "9": "S13",
+    "10": "S14",
+    "14": "S27",
+    "18": "S05",
+    "19": "S04",
+    "20": "S20",
+    "21": "S36",
+    "22": "S38",
+    "23": "S34",
+    "24": "S23",
+    "25": "S24"
+  },
+  "cumulative_unique_cited_sources": 25,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Abstract (A1-A4) next round; declarations and acknowledgments deferred by user",
+  "sha256": {
+    "outputs/ucsd-manuscript-step54-20261030/UCSD_Manuscript_Introduction_EN_ZH.docx": "5d522ba5840eab8f913c35f126dc8cb3dd666b8082682cf0ed2d9786db117773",
+    "outputs/ucsd-manuscript-step54-20261030/UCSD_Manuscript_Introduction_EN.txt": "1b9fdf402c1298207321f63822e3fb94abad00cdb5a956ae8a253136f2dd88fb"
+  }
+}

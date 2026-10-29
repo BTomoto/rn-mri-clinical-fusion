@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第54步已补全Introduction（I1–I6）。** [中英对照Word](outputs/ucsd-manuscript-step54-20261030/UCSD_Manuscript_Introduction_EN_ZH.docx)包含1054个英文词、六组对应中译及本节16篇英文参考文献，共8页。按临床场景、诊断定义、影像计算、融合证据、透明评价缺口和研究目标连续展开，无实际前言小标题，也未提前呈现本研究结果。
+
+见[第54步报告](reports/ucsd_manuscript_step54_20261030.md)、[文献证据与适用边界](reports/ucsd_manuscript_step54/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step54/introduction_section54.json)及[核查回执](reports/ucsd_manuscript_step54/artifact_verification.json)。241份此前文件未变，8篇新增来源相关全文已核对，无重训或新分析。当前主文47段共8200英文词、47组中译，实际引用25篇，其中近五年英文23篇（92%）、近三年英文17篇（68%）。编号仍为片段暂定号，整稿合并时统一首引编号；摘要留至下一轮，数据公开声明、致谢等仍暂缓。
+
 **第53步已完成Conclusion（C1）。** [中英对照Word](outputs/ucsd-manuscript-step53-20261030/UCSD_Manuscript_Conclusion_EN_ZH.docx)包含145个英文词及一组中译，共1页。总结主内部比较的MRI增量信号、重复分折方向一致及单扫描不确定性，并保留少数类识别、概率误差、沿用诊断和派生影像的限制，不宣称临床获益。
 
 见[第53步报告](reports/ucsd_manuscript_step53_20261030.md)、[结论来源映射](reports/ucsd_manuscript_step53/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step53/conclusion_section53.json)及[核查回执](reports/ucsd_manuscript_step53/artifact_verification.json)。237份此前文件未变，主AUC/增量区间、20套重复方向及单扫描跨零区间核对一致，无重训或新增分析。当前英文叙述7146词、41组中译、17篇实际引用来源。用户明确暂不撰写数据公开声明、致谢等结论后内容；后续补全摘要和前言，下一阶段为Abstract（A1–A4）。全文仍未完成。

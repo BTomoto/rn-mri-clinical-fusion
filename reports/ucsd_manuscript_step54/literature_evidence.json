@@ -1,0 +1,206 @@
+{
+  "stage": 54,
+  "date": "2026-10-30",
+  "scope": "Complete Introduction I1-I6, no abstract or declarations this round",
+  "studies": [
+    {
+      "reference_id": "S05",
+      "provisional_citation_number": 18,
+      "doi": "10.1093/neuonc/noaf177",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12908567/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary PMC full text HTML",
+      "source_snapshot_sha256": "ea0fd762657a5c25ebeed2f4203c3fc2adcd58ef163e8f778f91e606108d605b",
+      "source_locators": [
+        "Current management",
+        "Treatment-Related Changes (Pseudoprogression)"
+      ],
+      "permitted_claim": "Glioblastoma management context; treatment-related enhancement may stabilize without new treatment and pathology can remain difficult",
+      "limits": "No fixed pseudoprogression incidence, survival estimate, universal treatment recommendation or inference that all HGG meet current IDH-wildtype glioblastoma criteria"
+    },
+    {
+      "reference_id": "S04",
+      "provisional_citation_number": 19,
+      "doi": "10.1200/JCO.23.01059",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10860967/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary PMC full text HTML",
+      "source_snapshot_sha256": "18c96067c208e258c8bb8a3169ead2ad179f60cece4c6154961d9731bf1c42a9",
+      "source_locators": [
+        "RANO 2.0 response assessment",
+        "Baseline MRI",
+        "Confirmation of progression"
+      ],
+      "permitted_claim": "Standardized trial response assessment and confirmation in relevant early post-radiotherapy settings",
+      "limits": "Trial guidance is clinical context; our public labels were not readjudicated as RANO2.0-compliant and no new clinical response assessment was performed"
+    },
+    {
+      "reference_id": "S20",
+      "provisional_citation_number": 20,
+      "doi": "10.3390/biomedicines13071778",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12292999/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary JATS XML",
+      "source_snapshot_sha256": "19d0ef70a87d89a234b148057d90c59d926333f95e6eac2460939630c5141539",
+      "source_locators": [
+        "Introduction",
+        "Identifying Pseudoprogression and True Progression",
+        "Radiation necrosis"
+      ],
+      "permitted_claim": "Distinguish pseudoprogression, radiation necrosis and broad treatment effects; radiomics explores progression-versus-treatment-effect tasks",
+      "limits": "Narrative review used for terminology and research context, not primary proof of diagnostic efficacy or pooled diagnostic accuracy"
+    },
+    {
+      "reference_id": "S36",
+      "provisional_citation_number": 21,
+      "doi": "10.3174/ajnr.A8396",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11630866/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary PMC full text HTML",
+      "source_snapshot_sha256": "1cd22e5f3be4aa8ae3f4cda965b0f9412ba3363491ce724c50ff8476baff4de1",
+      "source_locators": [
+        "RANO2.0 imaging presentations",
+        "Confirmation scans"
+      ],
+      "permitted_claim": "Enhancing, nonenhancing and mixed imaging presentations and circumstances for confirmation scans",
+      "limits": "Do not equate its mixed imaging presentation with de Godoy mixed tumor/treatment histology; no operational RANO reclassification of our cases"
+    },
+    {
+      "reference_id": "S38",
+      "provisional_citation_number": 22,
+      "doi": "10.1007/s00330-023-10034-2",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10957611/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary JATS XML",
+      "source_snapshot_sha256": "809e19d674d634f1be43a41ab11034389e370e658068575b0adba475b21dc330",
+      "source_locators": [
+        "Introduction",
+        "Methods",
+        "Discussion"
+      ],
+      "permitted_claim": "MRI normalization affected external performance in molecular subtype classification",
+      "limits": "Endpoint is preoperative molecular classification, not post-treatment status; no optimal normalization or validation of our transform inferred"
+    },
+    {
+      "reference_id": "S34",
+      "provisional_citation_number": 23,
+      "doi": "10.1186/s13244-023-01415-8",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160267/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary JATS XML",
+      "source_snapshot_sha256": "4d60e0af1752cbe8267f69f4034e7adbc40852e9e802e079bae90750a1533e26",
+      "source_locators": [
+        "Items16,19 and feature/model evaluation reporting"
+      ],
+      "permitted_claim": "Report acquisition, segmentation, feature extraction and model evaluation sufficiently for appraisal and reproduction",
+      "limits": "No CLEAR score, formal completed checklist or complete compliance claimed"
+    },
+    {
+      "reference_id": "S23",
+      "provisional_citation_number": 24,
+      "doi": "10.1136/bmj-2024-082505",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11931409/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary JATS XML",
+      "source_snapshot_sha256": "69f1f7f327b46ee945d7ba08b70326199153a48ea6a0823298aa7baa8638715d",
+      "source_locators": [
+        "PROBAST+AI tool",
+        "Quality, bias and applicability domains"
+      ],
+      "permitted_claim": "Evaluate participants/data sources, predictors, outcomes and analysis separately from reporting completeness",
+      "limits": "No formal risk-of-bias rating or assertion of low risk assigned to our model"
+    },
+    {
+      "reference_id": "S24",
+      "provisional_citation_number": 25,
+      "doi": "10.1136/bmj-2023-074819",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10772854/",
+      "read_level_this_stage": "Primary full text reviewed for relevant claims",
+      "source_snapshot_format": "Primary JATS XML",
+      "source_snapshot_sha256": "73658181ff9a96401818c66a04a89ca856d82f29c8212a40dce1f72984c91397",
+      "source_locators": [
+        "Evaluation at model development: internal validation approaches",
+        "Evaluation using new data: external validation"
+      ],
+      "permitted_claim": "Distinguish evaluation within the development data source from evaluation using independent data",
+      "limits": "Our fixed-OOF bootstrap is not the refitting/optimism-correction bootstrap described in general guidance; no external cohort claimed"
+    }
+  ],
+  "reused_source_claims": {
+    "S01": "Source collection includes broad tumor and treatment-change examination labels; no new diagnostic adjudication",
+    "S32": "Official IBSI feature definitions; no new full-paper review or certification",
+    "S06": "Internal fusion study including clinical/molecular and advanced MRI inputs; not baseline-equivalent to our study",
+    "S12": "Selected histopathology cohort; combined model improves classification accuracy, not a claimed significant AUC increase",
+    "S13": "No reliable added value demonstrated in that study, not universal harm from radiomics",
+    "S14": "New cohort used changed groupings, not unchanged-endpoint external confirmation of our model",
+    "S27": "Connectome experiments duplicate scans; not a longitudinal glioma experiment and no quantified leakage bias in our project",
+    "S02": "Transparent reporting facilitates appraisal, not validation or certification"
+  },
+  "metadata_corrections_for_current_reference_copies": {
+    "S05": {
+      "from": "2751",
+      "to": "2751-2788"
+    },
+    "S04": {
+      "from": "5187",
+      "to": "5187-5199"
+    },
+    "S36": {
+      "from": "1846",
+      "to": "1846-1856"
+    },
+    "S38": {
+      "from": "2782",
+      "to": "2782-2790"
+    },
+    "S32": {
+      "from": "328",
+      "to": "328-338",
+      "basis": "Previously verified Stage27 record"
+    }
+  },
+  "own_study_claims": [
+    "Current question: examination-assigned residual/recurrent tumor versus broad treatment-related change",
+    "Eight fixed MRI descriptors plus5 clinical inputs, four fixed model comparisons",
+    "Same cases and patient-grouped folds; primary paired Fusion-minus-M1 AUC comparison",
+    "Boundary erosion, repeated grouped partitions and one-available-scan selection are distinct internal sensitivity analyses",
+    "No current-study numerical result or clinical efficacy claim introduced in Introduction"
+  ],
+  "access_notes": [
+    "JATS requests for S04,S05,S36 returned HTTP500; primary PMC full-text HTML was successfully acquired and relevant body paragraphs read. Remaining five new sources were read as primary JATS XML. Publisher or PMC browser responses were intermittently unavailable; successful saved primary snapshots were used."
+  ],
+  "new_unique_manuscript_references": 8,
+  "new_reference_mapping": {
+    "18": "S05",
+    "19": "S04",
+    "20": "S20",
+    "21": "S36",
+    "22": "S38",
+    "23": "S34",
+    "24": "S23",
+    "25": "S24"
+  },
+  "new_full_texts_checked_for_current_claims": [
+    "S05",
+    "S04",
+    "S20",
+    "S36",
+    "S38",
+    "S34",
+    "S23",
+    "S24"
+  ],
+  "new_full_text_review_count": 8,
+  "fulltexts_reviewed_for_relevant_claims_after_stage": 21,
+  "official_full_checklists_reviewed": 1,
+  "cumulative_unique_cited_sources_after_section": 25,
+  "original_candidate_library_modified": false,
+  "global_numbering_deferred_until_full_manuscript_assembly": true,
+  "user_scope_update": {
+    "this_stage": "Complete Introduction I1-I6",
+    "next_stage": "Abstract A1-A4, explicitly next round",
+    "data_availability_acknowledgments_and_other_declarations": "Deferred by user"
+  },
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0
+}

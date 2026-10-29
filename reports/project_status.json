@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "scope": "Stage53 Conclusion C1 drafted; primary incremental signal and single-scan uncertainty retained; user defers declarations and requests Abstract then Introduction",
+  "scope": "Stage54 complete Introduction I1-I6 drafted with8 new primary full-text sources; main narrative8200 words and25 actual citations; Abstract explicitly next round",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await next stage instruction for Abstract (A1-A4), followed by Introduction; no post-conclusion declarations or acknowledgments now",
+  "next_work_item": "Await next round for Abstract A1-A4; Introduction complete; post-conclusion statements and acknowledgments deferred",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -123,7 +123,7 @@
   "clinical_source_rechecked_unchanged": true,
   "pilot_registration_report": "reports/registration_pilot_and_gate_20261029.md",
   "workflow_mode": "stepwise_user_approval",
-  "last_user_authorized_step": "Conclusion C1; Abstract and Introduction requested as subsequent writing; post-conclusion declarations and acknowledgments deferred",
+  "last_user_authorized_step": "Complete Introduction now; write Abstract next round; keep declarations deferred",
   "current_step_complete": true,
   "next_step_requires_user_approval": true,
   "next_step_approved": false,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 53,
-    "subsection": "5 Conclusion",
+    "stage": 54,
+    "subsection": "1 Introduction",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -450,16 +450,22 @@
       "D10",
       "D11",
       "D12",
-      "C1"
+      "C1",
+      "I1",
+      "I2",
+      "I3",
+      "I4",
+      "I5",
+      "I6"
     ],
-    "english_word_count": 7146,
-    "chinese_paragraphs": 41,
-    "current_section_citations": 0,
+    "english_word_count": 8200,
+    "chinese_paragraphs": 47,
+    "current_section_citations": 16,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
     "candidate_library_is_final_citation_list": false,
-    "fulltexts_reviewed_for_relevant_claims": 13,
+    "fulltexts_reviewed_for_relevant_claims": 21,
     "official_full_checklists_reviewed": 1,
     "manuscript_complete": false,
     "model_refits": 0,
@@ -496,29 +502,51 @@
       "4.10 Sampling and model uncertainty",
       "4.11 Clinical interpretation",
       "4.12 Priorities for further evaluation",
-      "5 Conclusion"
+      "5 Conclusion",
+      "1 Introduction"
     ],
-    "latest_section_english_word_count": 145,
-    "latest_section_word_pages": 1,
-    "unique_citations_in_drafted_sections": 17,
+    "latest_section_english_word_count": 1054,
+    "latest_section_word_pages": 8,
+    "unique_citations_in_drafted_sections": 25,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 237,
-      "frozen_files_unchanged": 238,
-      "primary_AUC_and_paired_interval_checked": true,
-      "positive_repeated_AUC_increments_checked": 20,
-      "single_scan_uncertainty_preserved": true,
-      "probability_error_and_minority_recognition_limits_preserved": true,
-      "no_external_validation_or_clinical_utility_claimed": true,
-      "new_bootstrap_draws": 0,
-      "conclusion_v2_paragraph_complete": true,
-      "declarations_and_acknowledgments_deferred_by_user": true,
-      "remaining_user_requested_writing": [
-        "Abstract",
-        "Introduction"
+      "prior_files_unchanged": 241,
+      "frozen_files_unchanged": 242,
+      "new_full_texts_checked_for_current_claims": [
+        "S05",
+        "S04",
+        "S20",
+        "S36",
+        "S38",
+        "S34",
+        "S23",
+        "S24"
       ],
-      "new_manuscript_references": 0,
+      "all_six_intro_paragraphs_complete": true,
+      "no_actual_intro_subheadings": true,
+      "citation_numbers_match_paragraph_source_ids": true,
+      "cited_reference_recency": {
+        "unique_sources": 25,
+        "english_recent_2022_2026": 23,
+        "proportion_recent_5yr": 0.92,
+        "english_recent_2024_2026": 17,
+        "proportion_recent_3yr": 0.68,
+        "all_english": true,
+        "final_assembled_bibliography_recheck_required": true
+      },
+      "global_numbering_pending_full_manuscript_assembly": true,
+      "clinical_endpoint_distinctions_preserved": true,
+      "no_current_study_performance_results_in_introduction": true,
+      "fixed_model_input_dimensions_checked": {
+        "M0": 2,
+        "M1": 5,
+        "MRI": 8,
+        "Fusion": 13
+      },
+      "abstract_deferred_to_next_round": true,
+      "post_conclusion_declarations_deferred_by_user": true,
+      "new_manuscript_references": 8,
       "models_refitted": 0
     },
     "methods_v2_paragraphs_complete": true,
@@ -543,11 +571,24 @@
     "conclusion_english_word_count": 145,
     "conclusion_v2_paragraph_complete": true,
     "remaining_user_requested_writing": [
-      "Abstract",
-      "Introduction"
+      "Abstract"
     ],
     "declarations_and_acknowledgments_deferred_by_user": true,
-    "post_conclusion_statements_drafted": false
+    "post_conclusion_statements_drafted": false,
+    "introduction_english_word_count": 1054,
+    "introduction_v2_paragraphs_complete": true,
+    "main_text_v2_paragraphs_complete": true,
+    "abstract_deferred_to_next_round": true,
+    "current_actual_citation_recency": {
+      "unique_sources": 25,
+      "english_recent_2022_2026": 23,
+      "proportion_recent_5yr": 0.92,
+      "english_recent_2024_2026": 17,
+      "proportion_recent_3yr": 0.68,
+      "all_english": true,
+      "final_assembled_bibliography_recheck_required": true
+    },
+    "global_numbering_pending_full_manuscript_assembly": true
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
   "ucsd_manuscript_step25_report": "reports/ucsd_manuscript_step25_20261029.md",
@@ -578,5 +619,6 @@
   "ucsd_manuscript_step50_report": "reports/ucsd_manuscript_step50_20261030.md",
   "ucsd_manuscript_step51_report": "reports/ucsd_manuscript_step51_20261030.md",
   "ucsd_manuscript_step52_report": "reports/ucsd_manuscript_step52_20261030.md",
-  "ucsd_manuscript_step53_report": "reports/ucsd_manuscript_step53_20261030.md"
+  "ucsd_manuscript_step53_report": "reports/ucsd_manuscript_step53_20261030.md",
+  "ucsd_manuscript_step54_report": "reports/ucsd_manuscript_step54_20261030.md"
 }
