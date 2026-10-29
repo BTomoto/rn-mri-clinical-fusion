@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "stage": 35,
+  "date": "2026-10-29",
+  "subsection": "3.3 Four-model discrimination",
+  "paragraph_ids": [
+    "R3"
+  ],
+  "english_word_count": 197,
+  "paragraph_word_counts": {
+    "R3": 197
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 3,
+  "visual_review_pages": [
+    1,
+    2,
+    3
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 155,
+  "original_table_numeric_values_checked": 28,
+  "point_or_count_values_reconstructed": 20,
+  "bootstrap_auc_interval_endpoints_checked": 8,
+  "editable_english_tables": 1,
+  "table_numeric_values_changed": 0,
+  "figure_legend_values_checked": 8,
+  "unchanged_figure_embedded": true,
+  "figure_page_landscape": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.4 Paired incremental comparison (R4)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step35-20261029/Table2_EN.csv": "e44b1fc4fe4252515fe1366cdb06157901b674472ac7711ab6343bd1287acd00",
+    "outputs/ucsd-manuscript-step35-20261029/UCSD_Manuscript_Results_3_3_EN.txt": "05cb3c5b19761d2986e1a612b4fb10a020f33f2dce696f3bc13f956e865e4775",
+    "outputs/ucsd-manuscript-step35-20261029/UCSD_Manuscript_Results_3_3_EN_ZH.docx": "06debd5e0a3e41ea5e4c9a277dcf9945efc1a3568881283050b3096e0fd6b59c"
+  }
+}

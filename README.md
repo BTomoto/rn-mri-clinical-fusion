@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第35步已完成Results 3.3四模型鉴别表现（R3）。** [中英对照Word](outputs/ucsd-manuscript-step35-20261029/UCSD_Manuscript_Results_3_3_EN_ZH.docx)包含197个英文词、一组中译、可编辑英文Table 2及未改绘Figure 2，共3页；图页横向。按M0/M1/MRI/Fusion报告AUC 0.526/0.672/0.762/0.782及既有条件区间，保留AP、Brier和治疗改变识别计数。
+
+见[第35步报告](reports/ucsd_manuscript_step35_20261029.md)、[段落和全精度表格映射](reports/ucsd_manuscript_step35/results_section33.json)及[核对回执](reports/ucsd_manuscript_step35/artifact_verification.json)。原表28个数值、8个AUC区间端点和8个图例值核对一致，155份既有文件未变；没有重训或改变阈值。本节不将点估计排序视为配对显著差异。已写M1–M20及R1–R3，共3702个英文词，下一节为3.4配对增量比较（R4），等待用户批准。
+
 **第34步已完成Results 3.2临床特征（R2）。** [中英对照Word](outputs/ucsd-manuscript-step34-20261029/UCSD_Manuscript_Results_3_2_EN_ZH.docx)包含170个英文词、一组中译及可编辑的英文Table 1和Table S1，共3页。保留扫描口径、已知间隔分布及36条缺失，说明患者交叉、各列分母及镜像覆盖定义。
 
 见[第34步报告](reports/ucsd_manuscript_step34_20261029.md)、[段落与英文表格映射](reports/ucsd_manuscript_step34/results_section32.json)和[核对回执](reports/ucsd_manuscript_step34/artifact_verification.json)。两表60个数值单元与原表和保存统计明细一致，原数值未改，149份既有文件未变；没有重训或增加组间检验。已写M1–M20及R1–R2，共3505个英文词。下一节为3.3四模型鉴别表现（R3），等待用户批准。

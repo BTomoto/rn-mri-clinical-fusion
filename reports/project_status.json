@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage34 Results 3.2 clinical characteristics drafted; two editable English tables preserve all 60 original numeric cells and scan-based summaries",
+  "scope": "Stage35 Results 3.3 four-model discrimination drafted; fixed OOF metrics and AUC interval endpoints verified, editable Table 2 and unchanged Figure 2 attached",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Results 3.3 four-model discrimination (R3)",
+  "next_work_item": "Await user approval for Results 3.4 paired incremental comparison (R4)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 34,
-    "subsection": "3.2 Clinical characteristics",
+    "stage": 35,
+    "subsection": "3.3 Four-model discrimination",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -431,10 +431,11 @@
       "M19",
       "M20",
       "R1",
-      "R2"
+      "R2",
+      "R3"
     ],
-    "english_word_count": 3505,
-    "chinese_paragraphs": 22,
+    "english_word_count": 3702,
+    "chinese_paragraphs": 23,
     "current_section_citations": 0,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
@@ -458,28 +459,33 @@
       "2.9 Sensitivity analyses",
       "2.10 Reproducibility and software",
       "3.1 Cohort flow",
-      "3.2 Clinical characteristics"
+      "3.2 Clinical characteristics",
+      "3.3 Four-model discrimination"
     ],
-    "latest_section_english_word_count": 170,
+    "latest_section_english_word_count": 197,
     "latest_section_word_pages": 3,
     "unique_citations_in_drafted_sections": 5,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 149,
-      "original_table_numeric_cells_checked": 60,
-      "saved_numeric_detail_rows_checked": 60,
-      "editable_english_tables": 2,
+      "prior_files_unchanged": 155,
+      "original_table_numeric_values_checked": 28,
+      "point_or_count_values_reconstructed": 20,
+      "bootstrap_auc_interval_endpoints_checked": 8,
+      "editable_english_tables": 1,
       "table_numeric_values_changed": 0,
-      "models_fitted": 0,
-      "new_hypothesis_tests": 0
+      "figure_legend_values_checked": 8,
+      "unchanged_figure_embedded": true,
+      "figure_page_landscape": true,
+      "models_fitted": 0
     },
     "methods_v2_paragraphs_complete": true,
     "methods_english_word_count": 3131,
-    "results_english_word_count": 374,
+    "results_english_word_count": 571,
     "editable_english_tables_completed": [
       "Table 1",
-      "Table S1"
+      "Table S1",
+      "Table 2"
     ]
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
@@ -492,5 +498,6 @@
   "ucsd_manuscript_step31_report": "reports/ucsd_manuscript_step31_20261029.md",
   "ucsd_manuscript_step32_report": "reports/ucsd_manuscript_step32_20261029.md",
   "ucsd_manuscript_step33_report": "reports/ucsd_manuscript_step33_20261029.md",
-  "ucsd_manuscript_step34_report": "reports/ucsd_manuscript_step34_20261029.md"
+  "ucsd_manuscript_step34_report": "reports/ucsd_manuscript_step34_20261029.md",
+  "ucsd_manuscript_step35_report": "reports/ucsd_manuscript_step35_20261029.md"
 }
