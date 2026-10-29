@@ -2,11 +2,28 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
-**第12步已完成完整临床变量与MRI可行性核查，等待批准下一步。** 36个临床字段均有完整性、时间及使用角色审阅；发现2个源患者5次扫描的临床/BraTS交叉映射，同一BraTS患者前缀跨上轮第4、5折。**第11步指标现为待重新验证的历史结果，不作为最终性能。** 源患者仍记178名，177个双ID连通组只是保守分组，不是真实身份修订。
+**第13步已完成ID隔离后的临床重验与扩展，等待批准下一步。** 隔离5条双ID冲突扫描后，保留238次扫描、176名源患者。临床及BraTS患者ID均不跨验证折；相同病例/折上的M0（年龄＋性别）AUC=0.6124，M1（另加初始事件间隔与其他扫描前治疗）AUC=0.6790，Brier分别0.1640和0.1547。AUC成对差值0.0666的95%区间为−0.0499至0.1702，尚未确证增益。固定0.5阈值仅识别51次治疗改变中的5次，不声称临床可用。
+
+本步在首次拟合前固定方案，无调参或阈值优化；46条间隔缺失只在训练折内填补，并加入缺失标记。唯一完整间隔资料敏感性分析为192次扫描/142名源患者，M0/M1 AUC为0.5211/0.6226，不能与主队列跨人群比较。见[第13步报告](reports/ucsd_clinical_revalidation_step13_20261029.md)、[固定方案](reports/ucsd_clinical_revalidation_protocol.md)、[Excel](outputs/ucsd-clinical-revalidation-20261029/UCSD_Clinical_Revalidation.xlsx)、[Notebook13](notebooks/13_ucsd_clinical_revalidation.ipynb)和[逐例OOF预测](data/processed/ucsd_clinical_revalidated_oof.csv)。
+
+MRI已重试两份指定FLAIR参数（HTTP 201），但执行环境连接公布的FASP端口返回网络不可达，且无Aspera客户端/HTTP网关，实际传输未启动。像素/ROI检查仍为0，未训练MRI模型。下一步优先取得两例真实文件再做技术核查，具体见[本地获取说明](reports/ucsd_clinical_revalidation/MRI_SAMPLE_DOWNLOAD_CN.md)。将来MRI增量比较仍需在共同病例上重跑临床对照；当前临床结果不是与尚未取得的MRI模型比较。
+
+```bash
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_13.json notebooks/13_ucsd_clinical_revalidation.ipynb
+python scripts/make_ucsd_revalidation_deliverables.py
+python scripts/probe_ucsd_mri_sample_transfer.py
+python -m unittest discover -s tests -p 'test_ucsd_clinical_revalidation.py' -v
+```
+
+第13步Excel由`scripts/build_ucsd_revalidation_workbook.mjs`通过artifact-tool生成，设置`RN_PROJECT_ROOT`为项目绝对路径；修改Excel不会重新训练Python模型。Notebook和五页Excel已执行/核对，47项测试通过。后续阶段仍经用户批准后继续。
+
+## 第12步审计记录
+
+第12步完成36个临床字段、时间和使用角色审阅，发现2个源患者5次扫描的临床/BraTS交叉映射，同一BraTS患者前缀跨第11步第4、5折。第11步指标保留为历史，不作为最终性能。原始源患者仍记178名，177个双ID连通组只是保守分组，不是真实身份修订；第13步采用隔离5条的方案重验。
 
 本轮实际取得测试包59个病例目录并匹配临床ID，另取得一例治疗改变、一例肿瘤各23个文件名条目。46条均为符号链接，未解析目标或下载NIfTI，不能声称已完成像素、配准或ROI质控。两个公开下载包的授权和下载参数可取得，但无HTTP网关、本环境无Aspera客户端；主包目录请求超时。详见[第12步报告](reports/ucsd_clinical_mri_feasibility_step12_20261029.md)、[Excel](outputs/ucsd-feature-audit-20261029/UCSD_Clinical_MRI_Feasibility.xlsx)、[Notebook12](notebooks/12_ucsd_clinical_and_mri_feasibility.ipynb)与[技术样本清单](reports/ucsd_feature_audit/mri_sample_request.csv)。
 
-下一步建议先隔离5条ID冲突记录、冻结临床变量及缺失规则，再重新验证基础/扩展临床模型；MRI优先通过官方Aspera取得0001_01和0003_01的少量实际文件，检查链接、几何与统一ROI。本步未训练新模型；后续每阶段均总结结果、受限原因及下一步计划，经批准后继续。
+第12步提出的ID隔离、临床变量/缺失规则冻结及重新验证，现已在第13步完成。第12步本身没有训练模型；其字段、访问收据及候选表保留以便追溯。
 
 ```bash
 python scripts/audit_ucsd_clinical_features.py
@@ -115,8 +132,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 11. `10_public_label_feasibility.ipynb`：RN-D3附录、UCSD公开文件标签及候选研究问题的可行性核查；未建模，等待批准。
 12. `11_ucsd_clinical_baseline.ipynb`：改题获批后的UCSD队列、固定年龄/性别Logistic及患者分组OOF验证；本步完成，等待批准影像可行性核查。
 13. `12_ucsd_clinical_and_mri_feasibility.ipynb`：完整36字段、未来信息隔离、双ID交叉、MRI公开目录和ROI方案核查；无新模型或像素质控。
+14. `13_ucsd_clinical_revalidation.ipynb`：隔离5条后的M0/M1临床比较、患者簇成对区间、完整间隔资料敏感性分析和两例MRI传输重试记录。
 
-00—04保留普通Python顺序执行器验证的输出。05—12已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—12分别独立保存对应的执行JSON。00—10未训练模型；11生成新问题的历史性能，12核查后将该性能列为待重验。
+00—04保留普通Python顺序执行器验证的输出。05—13已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—13分别独立保存对应的执行JSON。00—10未训练模型；11生成历史性能，12发现双ID问题，13完成隔离后的重新验证和扩展临床比较。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 

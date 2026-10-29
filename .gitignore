@@ -57,3 +57,6 @@ node_modules/
 /reports/ucsd_feature_workbook_input.json
 /outputs/ucsd-feature-audit-20261029/preview_*.png
 /outputs/ucsd-feature-audit-20261029/*.inspect.ndjson
+/reports/ucsd_revalidation_workbook_input.json
+/outputs/ucsd-clinical-revalidation-20261029/preview_*.png
+/outputs/ucsd-clinical-revalidation-20261029/*.inspect.ndjson

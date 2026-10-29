@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-29",
+  "checked_at_utc": "2026-10-29T04:09:53.097660+00:00",
+  "purpose": "Two selected FLAIR files only; not a whole-package transfer",
+  "source_NIfTI_files_downloaded": 0,
+  "source_NIfTI_bytes_downloaded": 0,
+  "pixel_QC_complete": false,
+  "symlink_targets_resolved": false,
+  "local_ascp_available": false,
+  "public_link_authorization_http_status": 201,
+  "http_gateway_url": null,
+  "requested_files": [
+    "/UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-0001_01/UCSD-PTGBM-0001_01_FLAIR.nii.gz",
+    "/UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-0003_01/UCSD-PTGBM-0003_01_FLAIR.nii.gz"
+  ],
+  "download_parameter_http_status": 201,
+  "transfer_parameter_paths": [
+    "/UCSD-PTGBM-BraTS-2024-test-set - 416ac7dc-014a-4d67-9646-c5e6dee6db47.aspera-package/PKG - UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-0001_01/UCSD-PTGBM-0001_01_FLAIR.nii.gz",
+    "/UCSD-PTGBM-BraTS-2024-test-set - 416ac7dc-014a-4d67-9646-c5e6dee6db47.aspera-package/PKG - UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-0003_01/UCSD-PTGBM-0003_01_FLAIR.nii.gz"
+  ],
+  "advertised_endpoint_connection": {
+    "host": "144.30.235.113",
+    "port": 33001,
+    "elapsed_seconds": 0.0,
+    "success": false,
+    "error": "OSError",
+    "errno": 101,
+    "description": "Advertised Aspera endpoint unreachable from this execution environment; cause not further adjudicated"
+  },
+  "actual_data_transfer_started": false,
+  "conclusion": "Specific-file transfer parameters obtained; actual transfer not started because this environment lacks the Aspera client / usable transfer route. No image bytes or symlink targets verified."
+}

@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "main_OOF_records_verified": 238,
+  "secondary_OOF_records_verified": 192,
+  "identity_exclusions_verified": 5,
+  "excel_formula_errors": 0,
+  "formula_input_change_check": true,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "figure_attachment_verified": true,
+  "workbook_sha256": "3c0cc52cb6d703e25681e19f255ea858f894d62603bf1f450bd3f048db32f478",
+  "protocol_sha256": "7604aaa63d8007dd5562c3b8ee5b9fc5188b7313e395ab13e64b2e13fbee5554",
+  "analysis_code_sha256": "050a4aaf0e9602b7c9d79e0132301e415b5390a02a9151e084a416ace6db0413",
+  "note": "Formulas recalculated by artifact-tool, not native Excel; no MRI pixel QC claimed"
+}

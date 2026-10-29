@@ -1,0 +1,248 @@
+{
+  "step": 13,
+  "date": "2026-10-29",
+  "timepoints": 238,
+  "source_patients": 176,
+  "tumor_timepoints": 187,
+  "treatment_change_timepoints": 51,
+  "tumor_prevalence": 0.7857142857142857,
+  "excluded_timepoints": 5,
+  "input_features": {
+    "M0": [
+      "age_years",
+      "sex_male"
+    ],
+    "M1": [
+      "age_years",
+      "sex_male",
+      "days_since_initial_event",
+      "other_treatment_prior"
+    ]
+  },
+  "transformed_feature_order": {
+    "M0": [
+      "age_years",
+      "sex_male"
+    ],
+    "M1": [
+      "age_years",
+      "log_initial_event_days",
+      "sex_male",
+      "other_treatment_prior",
+      "initial_event_missing"
+    ]
+  },
+  "missing_interval_timepoints": 46,
+  "metrics": {
+    "M0": {
+      "roc_auc": 0.6123518926287093,
+      "ap_tumor": 0.8442315549809001,
+      "ap_treatment_change": 0.31037883815354655,
+      "brier": 0.16397461818424036,
+      "sensitivity_tumor": 1.0,
+      "specificity_treatment_change": 0.0,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.7857142857142857,
+      "tn": 0,
+      "fp": 51,
+      "fn": 0,
+      "tp": 187
+    },
+    "M1": {
+      "roc_auc": 0.6789871028625355,
+      "ap_tumor": 0.8602528703268691,
+      "ap_treatment_change": 0.406353119146628,
+      "brier": 0.15468129302620456,
+      "sensitivity_tumor": 0.9786096256684492,
+      "specificity_treatment_change": 0.09803921568627451,
+      "balanced_accuracy": 0.5383244206773619,
+      "accuracy": 0.7899159663865546,
+      "tn": 5,
+      "fp": 46,
+      "fn": 4,
+      "tp": 183
+    },
+    "prior": {
+      "roc_auc": 0.49218831917793854,
+      "ap_tumor": 0.782748123172714,
+      "ap_treatment_change": 0.2115624027388733,
+      "brier": 0.16838472620071776,
+      "sensitivity_tumor": 1.0,
+      "specificity_treatment_change": 0.0,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.7857142857142857,
+      "tn": 0,
+      "fp": 51,
+      "fn": 0,
+      "tp": 187
+    }
+  },
+  "patient_cluster_bootstrap_95ci": {
+    "M0": {
+      "roc_auc": {
+        "lower": 0.512186967855178,
+        "upper": 0.7147247959877592
+      },
+      "ap_tumor": {
+        "lower": 0.7793503199877028,
+        "upper": 0.9087843658678272
+      },
+      "ap_treatment_change": {
+        "lower": 0.21140761361674598,
+        "upper": 0.47213926986268645
+      },
+      "brier": {
+        "lower": 0.1291507688904672,
+        "upper": 0.1989034403143975
+      }
+    },
+    "M1": {
+      "roc_auc": {
+        "lower": 0.5726532718684241,
+        "upper": 0.7749659010903029
+      },
+      "ap_tumor": {
+        "lower": 0.7964962052939404,
+        "upper": 0.9207172666082172
+      },
+      "ap_treatment_change": {
+        "lower": 0.26558037576447796,
+        "upper": 0.5804192437479795
+      },
+      "brier": {
+        "lower": 0.12250917048588618,
+        "upper": 0.18679318637372416
+      }
+    },
+    "M1_minus_M0": {
+      "roc_auc": {
+        "lower": -0.04988594782321421,
+        "upper": 0.17022191032641829
+      },
+      "brier": {
+        "lower": -0.023804082971552416,
+        "upper": 0.004927597315638962
+      }
+    }
+  },
+  "paired_differences_M1_minus_M0": {
+    "roc_auc": 0.06663521023382624,
+    "brier": -0.009293325158035798
+  },
+  "bootstrap_valid": 2000,
+  "bootstrap_models_refitted": false,
+  "bootstrap_limit": "Conditional on fixed OOF predictions; does not include all training/split variability",
+  "secondary_complete_interval": {
+    "timepoints": 192,
+    "source_patients": 142,
+    "tumor_timepoints": 145,
+    "treatment_change_timepoints": 47,
+    "metrics": {
+      "M0": {
+        "roc_auc": 0.521129860601614,
+        "ap_tumor": 0.7780976308817679,
+        "ap_treatment_change": 0.30013946200225994,
+        "brier": 0.18476593978107744,
+        "sensitivity_tumor": 1.0,
+        "specificity_treatment_change": 0.0,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.7552083333333334,
+        "tn": 0,
+        "fp": 47,
+        "fn": 0,
+        "tp": 145
+      },
+      "M1": {
+        "roc_auc": 0.6225972120322817,
+        "ap_tumor": 0.8002055483329484,
+        "ap_treatment_change": 0.38892466583517604,
+        "brier": 0.17851220674160095,
+        "sensitivity_tumor": 0.9655172413793104,
+        "specificity_treatment_change": 0.0851063829787234,
+        "balanced_accuracy": 0.5253118121790169,
+        "accuracy": 0.75,
+        "tn": 4,
+        "fp": 43,
+        "fn": 5,
+        "tp": 140
+      },
+      "prior": {
+        "roc_auc": 0.48041085840058695,
+        "ap_tumor": 0.7468193406714279,
+        "ap_treatment_change": 0.23654050428449133,
+        "brier": 0.18496763945997383,
+        "sensitivity_tumor": 1.0,
+        "specificity_treatment_change": 0.0,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.7552083333333334,
+        "tn": 0,
+        "fp": 47,
+        "fn": 0,
+        "tp": 145
+      }
+    }
+  },
+  "seed": 20261029,
+  "n_splits": 5,
+  "threshold": 0.5,
+  "class_weight": null,
+  "C": 1,
+  "hyperparameter_search": false,
+  "same_cases_and_folds_for_models": true,
+  "clinical_ID_patient_overlap": 0,
+  "BraTS_ID_patient_overlap": 0,
+  "MRI_used": false,
+  "molecular_features_used": false,
+  "external_validation": false,
+  "final_full_cohort_parameters": {
+    "M0": {
+      "feature_order": [
+        "age_years",
+        "sex_male"
+      ],
+      "intercept": 1.0417622512767237,
+      "coefficients": [
+        0.40391157005120587,
+        0.43726618252343824
+      ],
+      "age_mean": 55.42016806722689,
+      "age_sd": 13.75291920016893
+    },
+    "M1": {
+      "feature_order": [
+        "age_years",
+        "log_initial_event_days",
+        "sex_male",
+        "other_treatment_prior",
+        "initial_event_missing"
+      ],
+      "intercept": 0.9865237225275673,
+      "coefficients": [
+        0.2368991351593043,
+        -0.5677500436490616,
+        0.24148816462621114,
+        0.6554254693092543,
+        0.9356288931672583
+      ],
+      "age_mean": 55.42016806722689,
+      "age_sd": 13.75291920016893,
+      "log_interval_impute_median": 5.040063163097292,
+      "log_interval_mean_after_imputation": 4.925384597735111,
+      "log_interval_sd_after_imputation": 1.186788818805036
+    }
+  },
+  "source_sha256": {
+    "ucsd_ptgbm_clinical_v3.xlsx": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+    "ucsd_ptgbm_negative_cases.xlsx": "6d99db8ac1feac569e50c18ed214a1a761858fb8bfa614a29ec5f036946b96e4"
+  },
+  "protocol_sha256": "7604aaa63d8007dd5562c3b8ee5b9fc5188b7313e395ab13e64b2e13fbee5554",
+  "analysis_code_sha256": "050a4aaf0e9602b7c9d79e0132301e415b5390a02a9151e084a416ace6db0413",
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "next_step_requires_user_approval": true
+}
