@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第31步已完成Methods 2.9敏感性分析（M17–M19）。** [中英对照Word](outputs/ucsd-manuscript-step31-20261029/UCSD_Manuscript_Methods_2_9_EN_ZH.docx)包含472个英文词及三组中译，共3页。说明原网格六邻域一次腐蚀、20套预定患者分组五折及最小可用会话的每患者单扫描方案；保留条件区间、重复不独立和跨队列不可直接归因的限制。
+
+见[第31步报告](reports/ucsd_manuscript_step31_20261029.md)、[段落及核查依据](reports/ucsd_manuscript_step31/methods_section29.json)和[核对回执](reports/ucsd_manuscript_step31/artifact_verification.json)。123份既有文件、105折及420个保存模型记录核验；80个重复AUC、80个配对差值、36行描述汇总、135条单扫描选择及40个单扫描区间端点一致。本轮没有重训或修改原结果。已写M1–M19共2950个英文词，下一节为复现与软件（M20），等待用户批准。
+
 **第30步已完成Methods 2.8校准评估（M16）。** [中英对照Word](outputs/ucsd-manuscript-step30-20261029/UCSD_Manuscript_Methods_2_8_EN_ZH.docx)包含167个英文词、一组中译和原生可编辑Equation 9–10，共1页。区分固定斜率1的offset截距与自由截距/斜率联合诊断，说明概率分位分组、失败处理以及不据此重新校准。
 
 见[第30步报告](reports/ucsd_manuscript_step30_20261029.md)、[段落与核查依据](reports/ucsd_manuscript_step30/methods_section28.json)和[核对回执](reports/ucsd_manuscript_step30/artifact_verification.json)。六组保存参数的得分残差/曲率、30行分组记录及Table S3的8个校准值核对一致；未重拟合预测模型或校准诊断，未改变OOF概率或阈值。已写M1至M16共2478个英文词，下一节为敏感性分析方法（M17–M19），等待用户批准。

@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "stage": 31,
+  "date": "2026-10-29",
+  "subsection": "2.9 Sensitivity analyses",
+  "paragraph_ids": [
+    "M17",
+    "M18",
+    "M19"
+  ],
+  "english_word_count": 472,
+  "paragraph_word_counts": {
+    "M17": 152,
+    "M18": 158,
+    "M19": 162
+  },
+  "matched_chinese_paragraphs": 3,
+  "word_pages": 3,
+  "visual_review_pages": [
+    1,
+    2,
+    3
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 123,
+  "boundary_cases_checked": 182,
+  "repeated_manifest_rows_checked": 3640,
+  "folds_checked": 105,
+  "saved_successful_fold_model_records_checked": 420,
+  "repeated_auc_values_checked": 80,
+  "repeated_paired_differences_checked": 80,
+  "descriptive_summary_rows_checked": 36,
+  "single_scan_ledger_rows_checked": 182,
+  "single_scan_selected": 135,
+  "single_bootstrap_paired_values_checked": 8000,
+  "single_bootstrap_interval_endpoints_checked": 40,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "next_section": "Reproducibility and software (M20)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step31-20261029/UCSD_Manuscript_Methods_2_9_EN.txt": "3011559a00383037a769edc2f0be53c5083070a41c80f6c5a9ad1da135926c15",
+    "outputs/ucsd-manuscript-step31-20261029/UCSD_Manuscript_Methods_2_9_EN_ZH.docx": "e7c2a020b9cf3922c5a76f16e251a546ab52a5937d8cdefeca466670fe660e77"
+  }
+}
