@@ -1,0 +1,1111 @@
+TY  - JOUR
+ID  - S01
+TI  - The University of California San Diego Post-Treatment Glioblastoma (UCSD-PTGBM) annotated multimodal MRI Dataset
+JO  - Sci Data
+PY  - 2026
+AU  - Gagnon L
+AU  - Gupta D
+AU  - Nguyen U
+AU  - Correia de Verdier M
+AU  - Saluja R
+AU  - Mastorakos G
+AU  - White N
+AU  - Goodwill V
+AU  - McDonald CR
+AU  - Beaumont T
+AU  - Conlin C
+AU  - Seibert TM
+AU  - Hattangadi-Gluth J
+AU  - Kesari S
+AU  - Schulte JD
+AU  - Piccioni D
+AU  - Schmainda KM
+AU  - Farid N
+AU  - Dale AM
+AU  - Rudie JD
+DO  - 10.1038/s41597-025-06499-z
+UR  - https://pubmed.ncbi.nlm.nih.gov/41495087/
+N1  - S01; eligibility year 2026; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S02
+TI  - TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods
+JO  - BMJ
+PY  - 2024
+AU  - Collins GS
+AU  - Moons KGM
+AU  - Dhiman P
+AU  - Riley RD
+AU  - Beam AL
+AU  - Van Calster B
+AU  - Ghassemi M
+AU  - Liu X
+AU  - Reitsma JB
+AU  - van Smeden M
+AU  - Boulesteix AL
+AU  - Camaradou JC
+AU  - Celi LA
+AU  - Denaxas S
+AU  - Denniston AK
+AU  - Glocker B
+AU  - Golub RM
+AU  - Harvey H
+AU  - Heinze G
+AU  - Hoffman MM
+AU  - Kengne AP
+AU  - Lam E
+AU  - Lee N
+AU  - Loder EW
+AU  - Maier-Hein L
+AU  - Mateen BA
+AU  - McCradden MD
+AU  - Oakden-Rayner L
+AU  - Ordish J
+AU  - Parnell R
+AU  - Rose S
+AU  - Singh K
+AU  - Wynants L
+AU  - Logullo P
+DO  - 10.1136/bmj-2023-078378
+UR  - https://pubmed.ncbi.nlm.nih.gov/38626948/
+N1  - S02; eligibility year 2024; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S03
+TI  - Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update
+JO  - Radiol Artif Intell
+PY  - 2024
+AU  - Tejani AS
+AU  - Klontzas ME
+AU  - Gatti AA
+AU  - Mongan JT
+AU  - Moy L
+AU  - Park SH
+AU  - Kahn CE
+DO  - 10.1148/ryai.240300
+UR  - https://pubmed.ncbi.nlm.nih.gov/38809149/
+N1  - S03; eligibility year 2024; Official full checklist reviewed
+ER  -
+
+TY  - JOUR
+ID  - S04
+TI  - RANO 2.0: Update to the Response Assessment in Neuro-Oncology Criteria for High- and Low-Grade Gliomas in Adults
+JO  - J Clin Oncol
+PY  - 2023
+AU  - Wen PY
+AU  - van den Bent M
+AU  - Youssef G
+AU  - Cloughesy TF
+AU  - Ellingson BM
+AU  - Weller M
+AU  - Galanis E
+AU  - Barboriak DP
+AU  - de Groot J
+AU  - Gilbert MR
+AU  - Huang R
+AU  - Lassman AB
+AU  - Mehta M
+AU  - Molinaro AM
+AU  - Preusser M
+AU  - Rahman R
+AU  - Shankar LK
+AU  - Stupp R
+AU  - Villanueva-Meyer JE
+AU  - Wick W
+AU  - Macdonald DR
+AU  - Reardon DA
+AU  - Vogelbaum MA
+AU  - Chang SM
+DO  - 10.1200/JCO.23.01059
+UR  - https://pubmed.ncbi.nlm.nih.gov/37774317/
+N1  - S04; eligibility year 2023; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S05
+TI  - Glioblastoma in adults: A Society for Neuro-Oncology (SNO) and European Society of Neuro-Oncology (EANO) consensus review on current management and future directions
+JO  - Neuro Oncol
+PY  - 2025
+AU  - Wen PY
+AU  - Weller M
+AU  - Lee EQ
+AU  - Touat M
+AU  - Khasraw M
+AU  - Rahman R
+AU  - Platten M
+AU  - Lim M
+AU  - Winkler F
+AU  - Horbinski C
+AU  - Verhaak RGW
+AU  - Huang RY
+AU  - Ahluwalia MS
+AU  - Albert NL
+AU  - Tonn JC
+AU  - Schiff D
+AU  - Barnholtz-Sloan JS
+AU  - Ostrom Q
+AU  - Aldape KD
+AU  - Batchelor TT
+AU  - Bindra RS
+AU  - Chiocca EA
+AU  - Cloughesy TF
+AU  - DeGroot JF
+AU  - French P
+AU  - Galanis E
+AU  - Galldiks N
+AU  - Gilbert MR
+AU  - Hegi ME
+AU  - Lassman AB
+AU  - Le Rhun E
+AU  - Mehta MP
+AU  - Mellinghoff IK
+AU  - Minniti G
+AU  - Roth P
+AU  - Sanson M
+AU  - Taphoorn Andreas MJB
+AU  - Weiss VDT
+AU  - Wick W
+AU  - Zadeh G
+AU  - Reardon DA
+AU  - Chang SM
+AU  - Short SC
+AU  - van den Bent MJ
+AU  - Preusser M
+DO  - 10.1093/neuonc/noaf177
+UR  - https://pubmed.ncbi.nlm.nih.gov/40827022/
+N1  - S05; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S06
+TI  - Radiomics and clinical data predict pseudoprogression after radiotherapy in high-grade glioma
+JO  - Front Oncol
+PY  - 2026
+AU  - Zhou J
+AU  - Danmeng Z
+AU  - Hui Y
+AU  - Zhuohua X
+AU  - Mingjing W
+AU  - Ying L
+DO  - 10.3389/fonc.2026.1892760
+UR  - https://pubmed.ncbi.nlm.nih.gov/42548620/
+N1  - S06; eligibility year 2026; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S07
+TI  - Voxel-Wise Radiomics Habitat Analysis of Posttreatment Gliomas for Noninvasive Differentiation of True Progression and Pseudoprogression
+JO  - J Magn Reson Imaging
+PY  - 2026
+AU  - Yang L
+AU  - Liu D
+AU  - Zhang D
+AU  - Du J
+AU  - Shi Q
+AU  - Zheng T
+DO  - 10.1002/jmri.70419
+UR  - https://pubmed.ncbi.nlm.nih.gov/42332872/
+N1  - S07; eligibility year 2026; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S08
+TI  - Integrating ConvNeXt tiny and radiomics in a nomogram to differentiate true progression from pseudoprogression in glioma
+JO  - Neuroradiology
+PY  - 2026
+AU  - Zheng T
+AU  - Yang L
+AU  - Zhang D
+AU  - Du J
+AU  - Liang X
+AU  - Wu S
+AU  - Wang X
+AU  - Shi Q
+AU  - Liu D
+DO  - 10.1007/s00234-026-04024-6
+UR  - https://pubmed.ncbi.nlm.nih.gov/42105112/
+N1  - S08; eligibility year 2026; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S09
+TI  - Multi-Sequence MRI radiomics model for discrimination of recurrence and pseudoprogression in gliomas
+JO  - Eur J Radiol
+PY  - 2026
+AU  - Li J
+AU  - Xu Q
+AU  - Fan X
+AU  - Cheng X
+AU  - Tao J
+AU  - Lu H
+AU  - Lin Q
+AU  - Zhang J
+AU  - Qian J
+DO  - 10.1016/j.ejrad.2025.112508
+UR  - https://pubmed.ncbi.nlm.nih.gov/41237487/
+N1  - S09; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S10
+TI  - A deep learning model for distinguishing pseudoprogression and tumor progression in glioblastoma based on pre- and post-operative contrast-enhanced T1 imaging
+JO  - Radiother Oncol
+PY  - 2025
+AU  - Li J
+AU  - Liu R
+AU  - Xing Y
+AU  - Yin Q
+AU  - Su Q
+DO  - 10.1016/j.radonc.2025.111111
+UR  - https://pubmed.ncbi.nlm.nih.gov/40854380/
+N1  - S10; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S11
+TI  - Radiomic features on multiparametric MRI for differentiating pseudoprogression from recurrence in high-grade gliomas
+JO  - Acta Radiol
+PY  - 2024
+AU  - Lin J
+AU  - Su CQ
+AU  - Tang WT
+AU  - Xia ZW
+AU  - Lu SS
+AU  - Hong XN
+DO  - 10.1177/02841851241283781
+UR  - https://pubmed.ncbi.nlm.nih.gov/39380365/
+N1  - S11; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S12
+TI  - Radiomic Analysis to Predict Histopathologically Confirmed Pseudoprogression in Glioblastoma Patients
+JO  - Adv Radiat Oncol
+PY  - 2023
+AU  - McKenney AS
+AU  - Weg E
+AU  - Bale TA
+AU  - Wild AT
+AU  - Um H
+AU  - Fox MJ
+AU  - Lin A
+AU  - Yang JT
+AU  - Yao P
+AU  - Birger ML
+AU  - Tixier F
+AU  - Sellitti M
+AU  - Moss NS
+AU  - Young RJ
+AU  - Veeraraghavan H
+DO  - 10.1016/j.adro.2022.100916
+UR  - https://pubmed.ncbi.nlm.nih.gov/36711062/
+N1  - S12; eligibility year 2022; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S13
+TI  - Assessing the added value of apparent diffusion coefficient, cerebral blood volume, and radiomic magnetic resonance features for differentiation of pseudoprogression versus true tumor progression in patients with glioblastoma
+JO  - Neurooncol Adv
+PY  - 2023
+AU  - Leone R
+AU  - Meredig H
+AU  - Foltyn-Dumitru M
+AU  - Sahm F
+AU  - Hamelmann S
+AU  - Kurz F
+AU  - Kessler T
+AU  - Bonekamp D
+AU  - Schlemmer HP
+AU  - Bo Hansen M
+AU  - Wick W
+AU  - Bendszus M
+AU  - Vollmuth P
+AU  - Brugnara G
+DO  - 10.1093/noajnl/vdad016
+UR  - https://pubmed.ncbi.nlm.nih.gov/36968291/
+N1  - S13; eligibility year 2023; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S14
+TI  - Validation of multiparametric MRI based prediction model in identification of pseudoprogression in glioblastomas
+JO  - J Transl Med
+PY  - 2023
+AU  - de Godoy LL
+AU  - Mohan S
+AU  - Wang S
+AU  - Nasrallah MP
+AU  - Sakai Y
+AU  - O'Rourke DM
+AU  - Bagley S
+AU  - Desai A
+AU  - Loevner LA
+AU  - Poptani H
+AU  - Chawla S
+DO  - 10.1186/s12967-023-03941-x
+UR  - https://pubmed.ncbi.nlm.nih.gov/37118754/
+N1  - S14; eligibility year 2023; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S15
+TI  - Differentiation of Pseudoprogression from True Progression in Glioblastoma Patients after Standard Treatment: A Machine Learning Strategy Combined with Radiomics Features from T1-weighted Contrast-enhanced Imaging
+JO  - BMC Med Imaging
+PY  - 2021
+AU  - Sun YZ
+AU  - Yan LF
+AU  - Han Y
+AU  - Nan HY
+AU  - Xiao G
+AU  - Tian Q
+AU  - Pu WH
+AU  - Li ZY
+AU  - Wei XC
+AU  - Wang W
+AU  - Cui GB
+DO  - 10.1186/s12880-020-00545-5
+UR  - https://pubmed.ncbi.nlm.nih.gov/33535988/
+N1  - S15; eligibility year 2021; Full text reviewed for relevant claims
+ER  -
+
+TY  - JOUR
+ID  - S16
+TI  - MRI-Based Machine Learning to Differentiate True Progression from Pseudoprogression in Glioblastoma: An Updated Systematic Review and Meta-Analysis
+JO  - Neuro Oncol
+PY  - 2026
+AU  - Zhang X
+AU  - Guo X
+AU  - Wang Y
+AU  - Wagstyl K
+AU  - Booth TC
+DO  - 10.1093/neuonc/noag259
+UR  - https://pubmed.ncbi.nlm.nih.gov/42898007/
+N1  - S16; eligibility year 2026; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S17
+TI  - Artificial intelligence algorithms for differentiating pseudoprogression from true progression in high-grade gliomas: A systematic review and meta-analysis
+JO  - Neurosurg Rev
+PY  - 2025
+AU  - Palavani LB
+AU  - Nogueira BV
+AU  - Mitre LP
+AU  - Chen HC
+AU  - Müller GC
+AU  - Vilardo M
+AU  - Pereira VG
+AU  - Paleare LFF
+AU  - Ribeiro FV
+AU  - Araujo AAS
+AU  - Ferreira MY
+AU  - Varre H
+AU  - Ferreira C
+AU  - Paiva WS
+AU  - Bertani R
+AU  - D Amico RS
+AU  - Neville IS
+DO  - 10.1007/s10143-025-03718-4
+UR  - https://pubmed.ncbi.nlm.nih.gov/40768078/
+N1  - S17; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S18
+TI  - Distinguishing true progression from treatment effects in glioblastoma: a practical, evidence-graded imaging framework for the multidisciplinary team
+JO  - J Neurooncol
+PY  - 2026
+AU  - Patel CB
+AU  - Robinson TJ
+AU  - Kurz SC
+AU  - Ginat DT
+AU  - Moliterno J
+AU  - Johnson JM
+DO  - 10.1007/s11060-026-05743-9
+UR  - https://pubmed.ncbi.nlm.nih.gov/42565942/
+N1  - S18; eligibility year 2026; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S19
+TI  - A Comparison of Radio-Pathomic, Diffusion, and Perfusion Imaging Features for Identifying Pseudoprogression in Glioblastoma
+JO  - AJNR Am J Neuroradiol
+PY  - 2026
+AU  - Reecher HM
+AU  - Duenweg SR
+AU  - Lowman AK
+AU  - Winiarz A
+AU  - Nath B
+AU  - Chao B
+AU  - Kim D
+AU  - Barrett MJ
+AU  - Kyereme F
+AU  - Connelly J
+AU  - Tanhehco E
+AU  - Krucoff MO
+AU  - Desai R
+AU  - Agarwal M
+AU  - Jacobsohn J
+AU  - Tuscher J
+AU  - LaViolette PS
+AU  - Bobholz SA
+DO  - 10.3174/ajnr.A9574
+UR  - https://pubmed.ncbi.nlm.nih.gov/42567711/
+N1  - S19; eligibility year 2026; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S20
+TI  - Radiomics and Radiogenomics in Differentiating Progression, Pseudoprogression, and Radiation Necrosis in Gliomas
+JO  - Biomedicines
+PY  - 2025
+AU  - Reddy S
+AU  - Lung T
+AU  - Muniyappa S
+AU  - Hadley C
+AU  - Templeton B
+AU  - Fritz J
+AU  - Boulter D
+AU  - Shah K
+AU  - Singh R
+AU  - Zhu S
+AU  - Matsui JK
+AU  - Palmer JD
+DO  - 10.3390/biomedicines13071778
+UR  - https://pubmed.ncbi.nlm.nih.gov/40722849/
+N1  - S20; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S21
+TI  - Radiomics in glioblastoma recurrence: advances in prediction, localization, and differentiation from treatment-related effects
+JO  - J Transl Med
+PY  - 2026
+AU  - Zhang T
+AU  - Zhu H
+AU  - Sun H
+AU  - Chen Y
+AU  - Sun X
+AU  - Wu Y
+AU  - Wang B
+AU  - Zhu Y
+AU  - Zhang A
+AU  - Wang K
+AU  - Pan Y
+DO  - 10.1186/s12967-026-07971-z
+UR  - https://pubmed.ncbi.nlm.nih.gov/41803972/
+N1  - S21; eligibility year 2026; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S22
+TI  - The Image Biomarker Standardization Initiative: Standardized Convolutional Filters for Reproducible Radiomics and Enhanced Clinical Insights
+JO  - Radiology
+PY  - 2024
+AU  - Whybra P
+AU  - Zwanenburg A
+AU  - Andrearczyk V
+AU  - Schaer R
+AU  - Apte AP
+AU  - Ayotte A
+AU  - Baheti B
+AU  - Bakas S
+AU  - Bettinelli A
+AU  - Boellaard R
+AU  - Boldrini L
+AU  - Buvat I
+AU  - Cook GJR
+AU  - Dietsche F
+AU  - Dinapoli N
+AU  - Gabryś HS
+AU  - Goh V
+AU  - Guckenberger M
+AU  - Hatt M
+AU  - Hosseinzadeh M
+AU  - Iyer A
+AU  - Lenkowicz J
+AU  - Loutfi MAL
+AU  - Löck S
+AU  - Marturano F
+AU  - Morin O
+AU  - Nioche C
+AU  - Orlhac F
+AU  - Pati S
+AU  - Rahmim A
+AU  - Rezaeijo SM
+AU  - Rookyard CG
+AU  - Salmanpour MR
+AU  - Schindele A
+AU  - Shiri I
+AU  - Spezi E
+AU  - Tanadini-Lang S
+AU  - Tixier F
+AU  - Upadhaya T
+AU  - Valentini V
+AU  - van Griethuysen JJM
+AU  - Yousefirizi F
+AU  - Zaidi H
+AU  - Müller H
+AU  - Vallières M
+AU  - Depeursinge A
+DO  - 10.1148/radiol.231319
+UR  - https://pubmed.ncbi.nlm.nih.gov/38319168/
+N1  - S22; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S23
+TI  - PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods
+JO  - BMJ
+PY  - 2025
+AU  - Moons KGM
+AU  - Damen JAA
+AU  - Kaul T
+AU  - Hooft L
+AU  - Andaur Navarro C
+AU  - Dhiman P
+AU  - Beam AL
+AU  - Van Calster B
+AU  - Celi LA
+AU  - Denaxas S
+AU  - Denniston AK
+AU  - Ghassemi M
+AU  - Heinze G
+AU  - Kengne AP
+AU  - Maier-Hein L
+AU  - Liu X
+AU  - Logullo P
+AU  - McCradden MD
+AU  - Liu N
+AU  - Oakden-Rayner L
+AU  - Singh K
+AU  - Ting DS
+AU  - Wynants L
+AU  - Yang B
+AU  - Reitsma JB
+AU  - Riley RD
+AU  - Collins GS
+AU  - van Smeden M
+DO  - 10.1136/bmj-2024-082505
+UR  - https://pubmed.ncbi.nlm.nih.gov/40127903/
+N1  - S23; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S24
+TI  - Evaluation of clinical prediction models (part 1): from development to external validation
+JO  - BMJ
+PY  - 2024
+AU  - Collins GS
+AU  - Dhiman P
+AU  - Ma J
+AU  - Schlussel MM
+AU  - Archer L
+AU  - Van Calster B
+AU  - Harrell FE
+AU  - Martin GP
+AU  - Moons KGM
+AU  - van Smeden M
+AU  - Sperrin M
+AU  - Bullock GS
+AU  - Riley RD
+DO  - 10.1136/bmj-2023-074819
+UR  - https://pubmed.ncbi.nlm.nih.gov/38191193/
+N1  - S24; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S25
+TI  - Evaluation of clinical prediction models (part 2): how to undertake an external validation study
+JO  - BMJ
+PY  - 2024
+AU  - Riley RD
+AU  - Archer L
+AU  - Snell KIE
+AU  - Ensor J
+AU  - Dhiman P
+AU  - Martin GP
+AU  - Bonnett LJ
+AU  - Collins GS
+DO  - 10.1136/bmj-2023-074820
+UR  - https://pubmed.ncbi.nlm.nih.gov/38224968/
+N1  - S25; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S26
+TI  - Evaluation of clinical prediction models (part 3): calculating the sample size required for an external validation study
+JO  - BMJ
+PY  - 2024
+AU  - Riley RD
+AU  - Snell KIE
+AU  - Archer L
+AU  - Ensor J
+AU  - Debray TPA
+AU  - van Calster B
+AU  - van Smeden M
+AU  - Collins GS
+DO  - 10.1136/bmj-2023-074821
+UR  - https://pubmed.ncbi.nlm.nih.gov/38253388/
+N1  - S26; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S27
+TI  - Data leakage inflates prediction performance in connectome-based machine learning models
+JO  - Nat Commun
+PY  - 2024
+AU  - Rosenblatt M
+AU  - Tejavibulya L
+AU  - Jiang R
+AU  - Noble S
+AU  - Scheinost D
+DO  - 10.1038/s41467-024-46150-w
+UR  - https://pubmed.ncbi.nlm.nih.gov/38418819/
+N1  - S27; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S28
+TI  - Don't be misled: 3 misconceptions about external validation of clinical prediction models
+JO  - J Clin Epidemiol
+PY  - 2024
+AU  - la Roi-Teeuw HM
+AU  - van Royen FS
+AU  - de Hond A
+AU  - Zahra A
+AU  - de Vries S
+AU  - Bartels R
+AU  - Carriero AJ
+AU  - van Doorn S
+AU  - Dunias ZS
+AU  - Kant I
+AU  - Leeuwenberg T
+AU  - Peters R
+AU  - Veerhoek L
+AU  - van Smeden M
+AU  - Luijken K
+DO  - 10.1016/j.jclinepi.2024.111387
+UR  - https://pubmed.ncbi.nlm.nih.gov/38729274/
+N1  - S28; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S29
+TI  - Impact of intensity standardisation and ComBat batch size on clinical-radiomic prognostic models performance in a multi-centre study of patients with glioblastoma
+JO  - Eur Radiol
+PY  - 2025
+AU  - Fatania K
+AU  - Frood R
+AU  - Mistry H
+AU  - Short SC
+AU  - O'Connor J
+AU  - Scarsbrook AF
+AU  - Currie S
+DO  - 10.1007/s00330-024-11168-7
+UR  - https://pubmed.ncbi.nlm.nih.gov/39607450/
+N1  - S29; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S30
+TI  - Repeatability of diffusion and perfusion MRI derived radiomic features in glioblastoma: a test-retest study
+JO  - Phys Eng Sci Med
+PY  - 2025
+AU  - Martin P
+AU  - Holloway L
+AU  - Metcalfe P
+AU  - Koh ES
+AU  - Aly F
+AU  - Chan E
+AU  - Brighi C
+DO  - 10.1007/s13246-025-01613-2
+UR  - https://pubmed.ncbi.nlm.nih.gov/40982167/
+N1  - S30; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S31
+TI  - Advancing noninvasive glioma classification with diffusion radiomics: Exploring the impact of signal intensity normalization
+JO  - Neurooncol Adv
+PY  - 2024
+AU  - Foltyn-Dumitru M
+AU  - Schell M
+AU  - Sahm F
+AU  - Kessler T
+AU  - Wick W
+AU  - Bendszus M
+AU  - Rastogi A
+AU  - Brugnara G
+AU  - Vollmuth P
+DO  - 10.1093/noajnl/vdae043
+UR  - https://pubmed.ncbi.nlm.nih.gov/38596719/
+N1  - S31; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S32
+TI  - The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping
+JO  - Radiology
+PY  - 2020
+AU  - Zwanenburg A
+AU  - Vallières M
+AU  - Abdalah MA
+AU  - Aerts HJWL
+AU  - Andrearczyk V
+AU  - Apte A
+AU  - Ashrafinia S
+AU  - Bakas S
+AU  - Beukinga RJ
+AU  - Boellaard R
+AU  - Bogowicz M
+AU  - Boldrini L
+AU  - Buvat I
+AU  - Cook GJR
+AU  - Davatzikos C
+AU  - Depeursinge A
+AU  - Desseroit MC
+AU  - Dinapoli N
+AU  - Dinh CV
+AU  - Echegaray S
+AU  - El Naqa I
+AU  - Fedorov AY
+AU  - Gatta R
+AU  - Gillies RJ
+AU  - Goh V
+AU  - Götz M
+AU  - Guckenberger M
+AU  - Ha SM
+AU  - Hatt M
+AU  - Isensee F
+AU  - Lambin P
+AU  - Leger S
+AU  - Leijenaar RTH
+AU  - Lenkowicz J
+AU  - Lippert F
+AU  - Losnegård A
+AU  - Maier-Hein KH
+AU  - Morin O
+AU  - Müller H
+AU  - Napel S
+AU  - Nioche C
+AU  - Orlhac F
+AU  - Pati S
+AU  - Pfaehler EAG
+AU  - Rahmim A
+AU  - Rao AUK
+AU  - Scherer J
+AU  - Siddique MM
+AU  - Sijtsema NM
+AU  - Socarras Fernandez J
+AU  - Spezi E
+AU  - Steenbakkers RJHM
+AU  - Tanadini-Lang S
+AU  - Thorwarth D
+AU  - Troost EGC
+AU  - Upadhaya T
+AU  - Valentini V
+AU  - van Dijk LV
+AU  - van Griethuysen J
+AU  - van Velden FHP
+AU  - Whybra P
+AU  - Richter C
+AU  - Löck S
+DO  - 10.1148/radiol.2020191145
+UR  - https://pubmed.ncbi.nlm.nih.gov/32154773/
+N1  - S32; eligibility year 2020; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S33
+TI  - METhodological RadiomICs Score (METRICS): a quality scoring tool for radiomics research endorsed by EuSoMII
+JO  - Insights Imaging
+PY  - 2024
+AU  - Kocak B
+AU  - Akinci D'Antonoli T
+AU  - Mercaldo N
+AU  - Alberich-Bayarri A
+AU  - Baessler B
+AU  - Ambrosini I
+AU  - Andreychenko AE
+AU  - Bakas S
+AU  - Beets-Tan RGH
+AU  - Bressem K
+AU  - Buvat I
+AU  - Cannella R
+AU  - Cappellini LA
+AU  - Cavallo AU
+AU  - Chepelev LL
+AU  - Chu LCH
+AU  - Demircioglu A
+AU  - deSouza NM
+AU  - Dietzel M
+AU  - Fanni SC
+AU  - Fedorov A
+AU  - Fournier LS
+AU  - Giannini V
+AU  - Girometti R
+AU  - Groot Lipman KBW
+AU  - Kalarakis G
+AU  - Kelly BS
+AU  - Klontzas ME
+AU  - Koh DM
+AU  - Kotter E
+AU  - Lee HY
+AU  - Maas M
+AU  - Marti-Bonmati L
+AU  - Müller H
+AU  - Obuchowski N
+AU  - Orlhac F
+AU  - Papanikolaou N
+AU  - Petrash E
+AU  - Pfaehler E
+AU  - Pinto Dos Santos D
+AU  - Ponsiglione A
+AU  - Sabater S
+AU  - Sardanelli F
+AU  - Seeböck P
+AU  - Sijtsema NM
+AU  - Stanzione A
+AU  - Traverso A
+AU  - Ugga L
+AU  - Vallières M
+AU  - van Dijk LV
+AU  - van Griethuysen JJM
+AU  - van Hamersvelt RW
+AU  - van Ooijen P
+AU  - Vernuccio F
+AU  - Wang A
+AU  - Williams S
+AU  - Witowski J
+AU  - Zhang Z
+AU  - Zwanenburg A
+AU  - Cuocolo R
+DO  - 10.1186/s13244-023-01572-w
+UR  - https://pubmed.ncbi.nlm.nih.gov/38228979/
+N1  - S33; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S34
+TI  - CheckList for EvaluAtion of Radiomics research (CLEAR): a step-by-step reporting guideline for authors and reviewers endorsed by ESR and EuSoMII
+JO  - Insights Imaging
+PY  - 2023
+AU  - Kocak B
+AU  - Baessler B
+AU  - Bakas S
+AU  - Cuocolo R
+AU  - Fedorov A
+AU  - Maier-Hein L
+AU  - Mercaldo N
+AU  - Müller H
+AU  - Orlhac F
+AU  - Pinto Dos Santos D
+AU  - Stanzione A
+AU  - Ugga L
+AU  - Zwanenburg A
+DO  - 10.1186/s13244-023-01415-8
+UR  - https://pubmed.ncbi.nlm.nih.gov/37142815/
+N1  - S34; eligibility year 2023; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S35
+TI  - Guiding questions to avoid data leakage in biological machine learning applications
+JO  - Nat Methods
+PY  - 2024
+AU  - Bernett J
+AU  - Blumenthal DB
+AU  - Grimm DG
+AU  - Haselbeck F
+AU  - Joeres R
+AU  - Kalinina OV
+AU  - List M
+DO  - 10.1038/s41592-024-02362-y
+UR  - https://pubmed.ncbi.nlm.nih.gov/39122953/
+N1  - S35; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S36
+TI  - A Neuroradiologist's Guide to Operationalizing the Response Assessment in Neuro-Oncology (RANO) Criteria Version 2.0 for Gliomas in Adults
+JO  - AJNR Am J Neuroradiol
+PY  - 2024
+AU  - Ellingson BM
+AU  - Sanvito F
+AU  - Cloughesy TF
+AU  - Huang RY
+AU  - Villanueva-Meyer JE
+AU  - Pope WB
+AU  - Barboriak DP
+AU  - Shankar LK
+AU  - Smits M
+AU  - Kaufmann TJ
+AU  - Boxerman JL
+AU  - Weller M
+AU  - Galanis E
+AU  - Groot J
+AU  - Gilbert MR
+AU  - Lassman AB
+AU  - Shiroishi MS
+AU  - Nabavizadeh A
+AU  - Mehta M
+AU  - Stupp R
+AU  - Wick W
+AU  - Reardon DA
+AU  - Vogelbaum MA
+AU  - van den Bent M
+AU  - Chang SM
+AU  - Wen PY
+DO  - 10.3174/ajnr.A8396
+UR  - https://pubmed.ncbi.nlm.nih.gov/38926092/
+N1  - S36; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S37
+TI  - Metrics reloaded: recommendations for image analysis validation
+JO  - Nat Methods
+PY  - 2024
+AU  - Maier-Hein L
+AU  - Reinke A
+AU  - Godau P
+AU  - Tizabi MD
+AU  - Buettner F
+AU  - Christodoulou E
+AU  - Glocker B
+AU  - Isensee F
+AU  - Kleesiek J
+AU  - Kozubek M
+AU  - Reyes M
+AU  - Riegler MA
+AU  - Wiesenfarth M
+AU  - Kavur AE
+AU  - Sudre CH
+AU  - Baumgartner M
+AU  - Eisenmann M
+AU  - Heckmann-Nötzel D
+AU  - Rädsch T
+AU  - Acion L
+AU  - Antonelli M
+AU  - Arbel T
+AU  - Bakas S
+AU  - Benis A
+AU  - Blaschko MB
+AU  - Cardoso MJ
+AU  - Cheplygina V
+AU  - Cimini BA
+AU  - Collins GS
+AU  - Farahani K
+AU  - Ferrer L
+AU  - Galdran A
+AU  - van Ginneken B
+AU  - Haase R
+AU  - Hashimoto DA
+AU  - Hoffman MM
+AU  - Huisman M
+AU  - Jannin P
+AU  - Kahn CE
+AU  - Kainmueller D
+AU  - Kainz B
+AU  - Karargyris A
+AU  - Karthikesalingam A
+AU  - Kofler F
+AU  - Kopp-Schneider A
+AU  - Kreshuk A
+AU  - Kurc T
+AU  - Landman BA
+AU  - Litjens G
+AU  - Madani A
+AU  - Maier-Hein K
+AU  - Martel AL
+AU  - Mattson P
+AU  - Meijering E
+AU  - Menze B
+AU  - Moons KGM
+AU  - Müller H
+AU  - Nichyporuk B
+AU  - Nickel F
+AU  - Petersen J
+AU  - Rajpoot N
+AU  - Rieke N
+AU  - Saez-Rodriguez J
+AU  - Sánchez CI
+AU  - Shetty S
+AU  - van Smeden M
+AU  - Summers RM
+AU  - Taha AA
+AU  - Tiulpin A
+AU  - Tsaftaris SA
+AU  - Van Calster B
+AU  - Varoquaux G
+AU  - Jäger PF
+DO  - 10.1038/s41592-023-02151-z
+UR  - https://pubmed.ncbi.nlm.nih.gov/38347141/
+N1  - S37; eligibility year 2024; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S38
+TI  - Impact of signal intensity normalization of MRI on the generalizability of radiomic-based prediction of molecular glioma subtypes
+JO  - Eur Radiol
+PY  - 2024
+AU  - Foltyn-Dumitru M
+AU  - Schell M
+AU  - Rastogi A
+AU  - Sahm F
+AU  - Kessler T
+AU  - Wick W
+AU  - Bendszus M
+AU  - Brugnara G
+AU  - Vollmuth P
+DO  - 10.1007/s00330-023-10034-2
+UR  - https://pubmed.ncbi.nlm.nih.gov/37672053/
+N1  - S38; eligibility year 2023; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S39
+TI  - Comparison of intensity normalization methods in prostate, brain, and breast cancer multi-parametric magnetic resonance imaging
+JO  - Front Oncol
+PY  - 2025
+AU  - Duenweg SR
+AU  - Bobholz SA
+AU  - Lowman AK
+AU  - Winiarz A
+AU  - Nath B
+AU  - Barrett MJ
+AU  - Kyereme F
+AU  - Vincent-Sheldon S
+AU  - LaViolette P
+DO  - 10.3389/fonc.2025.1433444
+UR  - https://pubmed.ncbi.nlm.nih.gov/39990680/
+N1  - S39; eligibility year 2025; Abstract screened; full text needed before detailed comparison
+ER  -
+
+TY  - JOUR
+ID  - S40
+TI  - Scikit-learn: Machine Learning in Python
+JO  - J Mach Learn Res
+PY  - 2011
+AU  - Pedregosa F
+AU  - Varoquaux G
+AU  - Gramfort A
+AU  - Michel V
+AU  - Thirion B
+AU  - Grisel O
+AU  - Blondel M
+AU  - Prettenhofer P
+AU  - Weiss R
+AU  - Dubourg V
+AU  - Vanderplas J
+AU  - Passos A
+AU  - Cournapeau D
+AU  - Brucher M
+AU  - Perrot M
+AU  - Duchesnay E
+UR  - https://www.jmlr.org/papers/v12/pedregosa11a.html
+N1  - S40; eligibility year 2011; Publisher metadata and abstract reviewed
+ER  -

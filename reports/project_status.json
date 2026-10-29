@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage22 collaborator requirements understood and V2 outline prepared; English main-text target 8000 words; reference expansion and manuscript body pending",
+  "scope": "Stage23 writing started: Methods 2.1 drafted in English with paragraph-matched Chinese; 40-source candidate evidence library verified; next section pending user instruction",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await approval for batch limited exploratory image-feature extraction using fixed annotation union, unclipped per-image scaling and FBN32; preserve common-case clinical comparator",
+  "next_work_item": "Await user approval for Methods 2.2 Reference standard (M4), then clinical predictor definitions (M5-M6)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -403,5 +403,30 @@
     "awaiting_user_template": false,
     "awaiting_user_next_stage_instruction": true,
     "word_count_scope_assumption": "English main text; abstract, captions, bibliography, declarations, supplements and Chinese translation excluded"
+  },
+  "manuscript_body_drafted": true,
+  "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
+  "ucsd_manuscript_writing": {
+    "stage": 23,
+    "subsection": "2.1 Study design and data sources",
+    "v2_paragraph_ids": [
+      "M1",
+      "M2",
+      "M3"
+    ],
+    "english_word_count": 449,
+    "word_pages": 4,
+    "chinese_paragraphs": 3,
+    "current_section_citations": 3,
+    "candidate_references": 40,
+    "candidate_recent_5yr_english": 37,
+    "candidate_recent_3yr_english": 31,
+    "candidate_library_is_final_citation_list": false,
+    "fulltexts_reviewed_for_relevant_claims": 7,
+    "official_full_checklists_reviewed": 1,
+    "manuscript_complete": false,
+    "model_refits": 0,
+    "target_journal_selected": false,
+    "awaiting_user_next_stage_instruction": true
   }
 }

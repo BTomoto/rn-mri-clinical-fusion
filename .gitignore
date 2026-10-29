@@ -87,3 +87,7 @@ node_modules/
 /outputs/ucsd-writing-preparation-20261029/docx_render*/
 
 /outputs/ucsd-writing-outline-v2-20261029/docx_render*/
+
+/outputs/ucsd-manuscript-step23-20261029/docx_render*/
+/outputs/ucsd-manuscript-step23-20261029/preview_*.png
+/outputs/ucsd-manuscript-step23-20261029/*.inspect.ndjson

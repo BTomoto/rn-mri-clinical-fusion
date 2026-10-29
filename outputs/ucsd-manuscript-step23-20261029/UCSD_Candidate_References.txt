@@ -1,0 +1,79 @@
+[S01] Gagnon L, Gupta D, Nguyen U, Correia de Verdier M, Saluja R, Mastorakos G, et al. The University of California San Diego Post-Treatment Glioblastoma (UCSD-PTGBM) annotated multimodal MRI Dataset. Sci Data. 2026;13(1):183. doi: 10.1038/s41597-025-06499-z.
+
+[S02] Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi: 10.1136/bmj-2023-078378.
+
+[S03] Tejani AS, Klontzas ME, Gatti AA, Mongan JT, Moy L, Park SH, et al. Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update. Radiol Artif Intell. 2024;6(4):e240300. doi: 10.1148/ryai.240300.
+
+[S04] Wen PY, van den Bent M, Youssef G, Cloughesy TF, Ellingson BM, Weller M, et al. RANO 2.0: Update to the Response Assessment in Neuro-Oncology Criteria for High- and Low-Grade Gliomas in Adults. J Clin Oncol. 2023;41(33):5187. doi: 10.1200/JCO.23.01059.
+
+[S05] Wen PY, Weller M, Lee EQ, Touat M, Khasraw M, Rahman R, et al. Glioblastoma in adults: A Society for Neuro-Oncology (SNO) and European Society of Neuro-Oncology (EANO) consensus review on current management and future directions. Neuro Oncol. 2025;27(11):2751. doi: 10.1093/neuonc/noaf177.
+
+[S06] Zhou J, Danmeng Z, Hui Y, Zhuohua X, Mingjing W, Ying L. Radiomics and clinical data predict pseudoprogression after radiotherapy in high-grade glioma. Front Oncol. 2026;16:1892760. doi: 10.3389/fonc.2026.1892760.
+
+[S07] Yang L, Liu D, Zhang D, Du J, Shi Q, Zheng T. Voxel-Wise Radiomics Habitat Analysis of Posttreatment Gliomas for Noninvasive Differentiation of True Progression and Pseudoprogression. J Magn Reson Imaging. 2026;64(5):1266. doi: 10.1002/jmri.70419.
+
+[S08] Zheng T, Yang L, Zhang D, Du J, Liang X, Wu S, et al. Integrating ConvNeXt tiny and radiomics in a nomogram to differentiate true progression from pseudoprogression in glioma. Neuroradiology. 2026;68(7):1979. doi: 10.1007/s00234-026-04024-6.
+
+[S09] Li J, Xu Q, Fan X, Cheng X, Tao J, Lu H, et al. Multi-Sequence MRI radiomics model for discrimination of recurrence and pseudoprogression in gliomas. Eur J Radiol. 2026;194:112508. doi: 10.1016/j.ejrad.2025.112508.
+
+[S10] Li J, Liu R, Xing Y, Yin Q, Su Q. A deep learning model for distinguishing pseudoprogression and tumor progression in glioblastoma based on pre- and post-operative contrast-enhanced T1 imaging. Radiother Oncol. 2025;212:111111. doi: 10.1016/j.radonc.2025.111111.
+
+[S11] Lin J, Su CQ, Tang WT, Xia ZW, Lu SS, Hong XN. Radiomic features on multiparametric MRI for differentiating pseudoprogression from recurrence in high-grade gliomas. Acta Radiol. 2024;65(11):1390. doi: 10.1177/02841851241283781.
+
+[S12] McKenney AS, Weg E, Bale TA, Wild AT, Um H, Fox MJ, et al. Radiomic Analysis to Predict Histopathologically Confirmed Pseudoprogression in Glioblastoma Patients. Adv Radiat Oncol. 2023;8(1):100916. doi: 10.1016/j.adro.2022.100916.
+
+[S13] Leone R, Meredig H, Foltyn-Dumitru M, Sahm F, Hamelmann S, Kurz F, et al. Assessing the added value of apparent diffusion coefficient, cerebral blood volume, and radiomic magnetic resonance features for differentiation of pseudoprogression versus true tumor progression in patients with glioblastoma. Neurooncol Adv. 2023;5(1):vdad016. doi: 10.1093/noajnl/vdad016.
+
+[S14] de Godoy LL, Mohan S, Wang S, Nasrallah MP, Sakai Y, O'Rourke DM, et al. Validation of multiparametric MRI based prediction model in identification of pseudoprogression in glioblastomas. J Transl Med. 2023;21(1):287. doi: 10.1186/s12967-023-03941-x.
+
+[S15] Sun YZ, Yan LF, Han Y, Nan HY, Xiao G, Tian Q, et al. Differentiation of Pseudoprogression from True Progression in Glioblastoma Patients after Standard Treatment: A Machine Learning Strategy Combined with Radiomics Features from T1-weighted Contrast-enhanced Imaging. BMC Med Imaging. 2021;21(1):17. doi: 10.1186/s12880-020-00545-5.
+
+[S16] Zhang X, Guo X, Wang Y, Wagstyl K, Booth TC. MRI-Based Machine Learning to Differentiate True Progression from Pseudoprogression in Glioblastoma: An Updated Systematic Review and Meta-Analysis. Neuro Oncol. 2026. doi: 10.1093/neuonc/noag259.
+
+[S17] Palavani LB, Nogueira BV, Mitre LP, Chen HC, Müller GC, Vilardo M, et al. Artificial intelligence algorithms for differentiating pseudoprogression from true progression in high-grade gliomas: A systematic review and meta-analysis. Neurosurg Rev. 2025;48(1):591. doi: 10.1007/s10143-025-03718-4.
+
+[S18] Patel CB, Robinson TJ, Kurz SC, Ginat DT, Moliterno J, Johnson JM. Distinguishing true progression from treatment effects in glioblastoma: a practical, evidence-graded imaging framework for the multidisciplinary team. J Neurooncol. 2026;179(1):34. doi: 10.1007/s11060-026-05743-9.
+
+[S19] Reecher HM, Duenweg SR, Lowman AK, Winiarz A, Nath B, Chao B, et al. A Comparison of Radio-Pathomic, Diffusion, and Perfusion Imaging Features for Identifying Pseudoprogression in Glioblastoma. AJNR Am J Neuroradiol. 2026. doi: 10.3174/ajnr.A9574.
+
+[S20] Reddy S, Lung T, Muniyappa S, Hadley C, Templeton B, Fritz J, et al. Radiomics and Radiogenomics in Differentiating Progression, Pseudoprogression, and Radiation Necrosis in Gliomas. Biomedicines. 2025;13(7):1778. doi: 10.3390/biomedicines13071778.
+
+[S21] Zhang T, Zhu H, Sun H, Chen Y, Sun X, Wu Y, et al. Radiomics in glioblastoma recurrence: advances in prediction, localization, and differentiation from treatment-related effects. J Transl Med. 2026;24(1):516. doi: 10.1186/s12967-026-07971-z.
+
+[S22] Whybra P, Zwanenburg A, Andrearczyk V, Schaer R, Apte AP, Ayotte A, et al. The Image Biomarker Standardization Initiative: Standardized Convolutional Filters for Reproducible Radiomics and Enhanced Clinical Insights. Radiology. 2024;310(2):e231319. doi: 10.1148/radiol.231319.
+
+[S23] Moons KGM, Damen JAA, Kaul T, Hooft L, Andaur Navarro C, Dhiman P, et al. PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods. BMJ. 2025;388:e082505. doi: 10.1136/bmj-2024-082505.
+
+[S24] Collins GS, Dhiman P, Ma J, Schlussel MM, Archer L, Van Calster B, et al. Evaluation of clinical prediction models (part 1): from development to external validation. BMJ. 2024;384:e074819. doi: 10.1136/bmj-2023-074819.
+
+[S25] Riley RD, Archer L, Snell KIE, Ensor J, Dhiman P, Martin GP, et al. Evaluation of clinical prediction models (part 2): how to undertake an external validation study. BMJ. 2024;384:e074820. doi: 10.1136/bmj-2023-074820.
+
+[S26] Riley RD, Snell KIE, Archer L, Ensor J, Debray TPA, van Calster B, et al. Evaluation of clinical prediction models (part 3): calculating the sample size required for an external validation study. BMJ. 2024;384:e074821. doi: 10.1136/bmj-2023-074821.
+
+[S27] Rosenblatt M, Tejavibulya L, Jiang R, Noble S, Scheinost D. Data leakage inflates prediction performance in connectome-based machine learning models. Nat Commun. 2024;15(1):1829. doi: 10.1038/s41467-024-46150-w.
+
+[S28] la Roi-Teeuw HM, van Royen FS, de Hond A, Zahra A, de Vries S, Bartels R, et al. Don't be misled: 3 misconceptions about external validation of clinical prediction models. J Clin Epidemiol. 2024;172:111387. doi: 10.1016/j.jclinepi.2024.111387.
+
+[S29] Fatania K, Frood R, Mistry H, Short SC, O'Connor J, Scarsbrook AF, et al. Impact of intensity standardisation and ComBat batch size on clinical-radiomic prognostic models performance in a multi-centre study of patients with glioblastoma. Eur Radiol. 2025;35(6):3354. doi: 10.1007/s00330-024-11168-7.
+
+[S30] Martin P, Holloway L, Metcalfe P, Koh ES, Aly F, Chan E, et al. Repeatability of diffusion and perfusion MRI derived radiomic features in glioblastoma: a test-retest study. Phys Eng Sci Med. 2025;48(4):1691. doi: 10.1007/s13246-025-01613-2.
+
+[S31] Foltyn-Dumitru M, Schell M, Sahm F, Kessler T, Wick W, Bendszus M, et al. Advancing noninvasive glioma classification with diffusion radiomics: Exploring the impact of signal intensity normalization. Neurooncol Adv. 2024;6(1):vdae043. doi: 10.1093/noajnl/vdae043.
+
+[S32] Zwanenburg A, Vallières M, Abdalah MA, Aerts HJWL, Andrearczyk V, Apte A, et al. The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping. Radiology. 2020;295(2):328. doi: 10.1148/radiol.2020191145.
+
+[S33] Kocak B, Akinci D'Antonoli T, Mercaldo N, Alberich-Bayarri A, Baessler B, Ambrosini I, et al. METhodological RadiomICs Score (METRICS): a quality scoring tool for radiomics research endorsed by EuSoMII. Insights Imaging. 2024;15(1):8. doi: 10.1186/s13244-023-01572-w.
+
+[S34] Kocak B, Baessler B, Bakas S, Cuocolo R, Fedorov A, Maier-Hein L, et al. CheckList for EvaluAtion of Radiomics research (CLEAR): a step-by-step reporting guideline for authors and reviewers endorsed by ESR and EuSoMII. Insights Imaging. 2023;14(1):75. doi: 10.1186/s13244-023-01415-8.
+
+[S35] Bernett J, Blumenthal DB, Grimm DG, Haselbeck F, Joeres R, Kalinina OV, et al. Guiding questions to avoid data leakage in biological machine learning applications. Nat Methods. 2024;21(8):1444. doi: 10.1038/s41592-024-02362-y.
+
+[S36] Ellingson BM, Sanvito F, Cloughesy TF, Huang RY, Villanueva-Meyer JE, Pope WB, et al. A Neuroradiologist's Guide to Operationalizing the Response Assessment in Neuro-Oncology (RANO) Criteria Version 2.0 for Gliomas in Adults. AJNR Am J Neuroradiol. 2024;45(12):1846. doi: 10.3174/ajnr.A8396.
+
+[S37] Maier-Hein L, Reinke A, Godau P, Tizabi MD, Buettner F, Christodoulou E, et al. Metrics reloaded: recommendations for image analysis validation. Nat Methods. 2024;21(2):195. doi: 10.1038/s41592-023-02151-z.
+
+[S38] Foltyn-Dumitru M, Schell M, Rastogi A, Sahm F, Kessler T, Wick W, et al. Impact of signal intensity normalization of MRI on the generalizability of radiomic-based prediction of molecular glioma subtypes. Eur Radiol. 2024;34(4):2782. doi: 10.1007/s00330-023-10034-2.
+
+[S39] Duenweg SR, Bobholz SA, Lowman AK, Winiarz A, Nath B, Barrett MJ, et al. Comparison of intensity normalization methods in prostate, brain, and breast cancer multi-parametric magnetic resonance imaging. Front Oncol. 2025;15:1433444. doi: 10.3389/fonc.2025.1433444.
+
+[S40] Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et al. Scikit-learn: Machine Learning in Python. J Mach Learn Res. 2011;12:2825-2830. Available from: https://www.jmlr.org/papers/v12/pedregosa11a.html

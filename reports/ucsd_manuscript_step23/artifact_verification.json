@@ -1,0 +1,78 @@
+{
+  "success": true,
+  "stage": 23,
+  "date": "2026-10-29",
+  "subsection": "2.1 Study design and data sources",
+  "english_paragraphs": 3,
+  "matched_chinese_paragraphs": 3,
+  "english_word_count": 449,
+  "word_pages": 4,
+  "current_section_references": 3,
+  "candidate_reference_counts": {
+    "candidate_references": 40,
+    "english": 40,
+    "recent_5yr": 37,
+    "recent_3yr": 31,
+    "pubmed_records_verified": 39,
+    "doi_metadata_verified": 39,
+    "crossref_secondary_verified": 30,
+    "current_section_cited": 3,
+    "final_manuscript_citation_list_complete": false
+  },
+  "spreadsheet_sheets": 3,
+  "spreadsheet_metadata_rows_checked": 40,
+  "spreadsheet_evidence_rows_checked": 40,
+  "spreadsheet_formula_perturbation_verified": true,
+  "prior_study_files_hash_checked": 41,
+  "prior_study_inputs_and_outputs_unchanged": true,
+  "figure_reused_unchanged": true,
+  "v2_outline_unchanged": true,
+  "docx_visual_review_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "spreadsheet_visual_review": [
+    "Summary",
+    "References",
+    "References eligibility columns",
+    "Evidence",
+    "Evidence S18-S21"
+  ],
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "cohort": {
+    "clinical": {
+      "examinations": 238,
+      "patients": 176,
+      "labels": {
+        "0": 51,
+        "1": 187
+      }
+    },
+    "imaging": {
+      "examinations": 182,
+      "patients": 135,
+      "labels": {
+        "0": 41,
+        "1": 141
+      }
+    }
+  },
+  "reference_review_scope": {
+    "Full text reviewed for relevant claims": 7,
+    "Official full checklist reviewed": 1,
+    "Abstract screened; full text needed before detailed comparison": 31,
+    "Publisher metadata and abstract reviewed": 1
+  },
+  "citation_numbering": "Local subsection numbering; regenerate globally when Introduction is assembled",
+  "next_stage": "2.2 Reference standard (M4), followed by clinical predictor definitions (M5-M6), pending user instruction",
+  "sha256": {
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Candidate_References.ris": "c880ba8adb208a120fab1565f7d846e79aea863c86517841d6af5c707a4a1ab1",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Candidate_References.txt": "4f116bbae286b57c70e770d4e52f06b0bf08f66305a7b6a992ae2aac986bee35",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN.txt": "251b66876fcb2d626eed4a7a93b7ab83c60585a54a6a97b6a6fd461deba90d4a",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN_ZH.docx": "fd1666efde9eec2f2ea8efe43e244187101cf8dd26d723e5346c8c5653d29db8",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Reference_Evidence_Library.xlsx": "35a7e23aef16ec1161d484ec04bf82b38f5b191c905e1c22b8f86a38797e6235"
+  }
+}
