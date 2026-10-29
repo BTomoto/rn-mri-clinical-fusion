@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "stage": 41,
+  "date": "2026-10-29",
+  "subsection": "4.1 Principal findings",
+  "paragraph_ids": [
+    "D1"
+  ],
+  "english_word_count": 209,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "prior_files_unchanged": 175,
+  "saved_numeric_claim_values_checked": 8,
+  "model_input_counts_checked": 3,
+  "recognition_counts_checked": 4,
+  "positive_repeated_AUC_increments_checked": 20,
+  "conditional_interval_limit_disclosed": true,
+  "clinical_usefulness_not_established": true,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.2 Comparison with fusion studies (D2)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step41-20261029/UCSD_Manuscript_Discussion_4_1_EN_ZH.docx": "60a7c09cf33605b980f1523570f4bcf92f8226bff222a8e53f9d0169005d5185",
+    "outputs/ucsd-manuscript-step41-20261029/UCSD_Manuscript_Discussion_4_1_EN.txt": "8b22f5e6e1f97363347f0b31bc299225baf0c60d6411e4b5178816450dbe1c62"
+  }
+}
