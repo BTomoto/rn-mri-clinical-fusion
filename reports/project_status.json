@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage37 Results 3.5 calibration and errors drafted; saved diagnostic residuals, classification counts and always-tumor reference checked, editable English Table S3 attached",
+  "scope": "Stage38 Results 3.6 boundary sensitivity drafted; fixed-OOF metrics, saved erosion completeness and paired intervals verified, editable Table S4 and unchanged Figure S1 attached",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Results 3.6 boundary sensitivity (R6)",
+  "next_work_item": "Await user approval for Results 3.7 split stability (R7)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 37,
-    "subsection": "3.5 Calibration and errors",
+    "stage": 38,
+    "subsection": "3.6 Boundary sensitivity",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -434,10 +434,11 @@
       "R2",
       "R3",
       "R4",
-      "R5"
+      "R5",
+      "R6"
     ],
-    "english_word_count": 4061,
-    "chinese_paragraphs": 25,
+    "english_word_count": 4221,
+    "chinese_paragraphs": 26,
     "current_section_citations": 0,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
@@ -464,34 +465,38 @@
       "3.2 Clinical characteristics",
       "3.3 Four-model discrimination",
       "3.4 Paired incremental comparison",
-      "3.5 Calibration and errors"
+      "3.5 Calibration and errors",
+      "3.6 Boundary sensitivity"
     ],
-    "latest_section_english_word_count": 157,
-    "latest_section_word_pages": 2,
+    "latest_section_english_word_count": 160,
+    "latest_section_word_pages": 3,
     "unique_citations_in_drafted_sections": 5,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 161,
+      "prior_files_unchanged": 164,
       "original_table_numeric_values_checked": 28,
-      "classification_count_and_metric_values_reconstructed": 32,
-      "saved_calibration_variants_checked": 4,
-      "calibration_bin_rows_checked": 20,
+      "fixed_oof_metric_values_reconstructed": 20,
+      "model_auc_interval_endpoints_checked": 8,
+      "eroded_complete_cases_checked": 182,
+      "saved_fold_case_sets_checked": 5,
+      "paired_metric_differences_checked": 4,
+      "bootstrap_paired_difference_values_checked": 8000,
+      "paired_interval_endpoints_checked": 8,
       "editable_english_tables": 1,
-      "table_numeric_values_changed": 0,
-      "always_tumor_reference_disclosed": true,
-      "calibration_diagnostics_refitted": 0,
+      "unchanged_figure_embedded": true,
       "models_fitted": 0
     },
     "methods_v2_paragraphs_complete": true,
     "methods_english_word_count": 3131,
-    "results_english_word_count": 930,
+    "results_english_word_count": 1090,
     "editable_english_tables_completed": [
       "Table 1",
       "Table S1",
       "Table 2",
       "Table 3",
-      "Table S3"
+      "Table S3",
+      "Table S4"
     ]
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
@@ -507,5 +512,6 @@
   "ucsd_manuscript_step34_report": "reports/ucsd_manuscript_step34_20261029.md",
   "ucsd_manuscript_step35_report": "reports/ucsd_manuscript_step35_20261029.md",
   "ucsd_manuscript_step36_report": "reports/ucsd_manuscript_step36_20261029.md",
-  "ucsd_manuscript_step37_report": "reports/ucsd_manuscript_step37_20261029.md"
+  "ucsd_manuscript_step37_report": "reports/ucsd_manuscript_step37_20261029.md",
+  "ucsd_manuscript_step38_report": "reports/ucsd_manuscript_step38_20261029.md"
 }

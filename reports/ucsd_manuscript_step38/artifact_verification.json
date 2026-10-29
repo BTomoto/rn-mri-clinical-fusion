@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "stage": 38,
+  "date": "2026-10-29",
+  "subsection": "3.6 Boundary sensitivity",
+  "paragraph_ids": [
+    "R6"
+  ],
+  "english_word_count": 160,
+  "paragraph_word_counts": {
+    "R6": 160
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 3,
+  "visual_review_pages": [
+    1,
+    2,
+    3
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 164,
+  "original_table_numeric_values_checked": 28,
+  "fixed_oof_metric_values_reconstructed": 20,
+  "model_auc_interval_endpoints_checked": 8,
+  "eroded_complete_cases_checked": 182,
+  "saved_fold_case_sets_checked": 5,
+  "paired_metric_differences_checked": 4,
+  "bootstrap_paired_difference_values_checked": 8000,
+  "paired_interval_endpoints_checked": 8,
+  "editable_english_tables": 1,
+  "table_numeric_values_changed": 0,
+  "paired_intervals_include_zero_disclosed": true,
+  "unchanged_figure_embedded": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.7 Split stability (R7)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step38-20261029/UCSD_Manuscript_Results_3_6_EN.txt": "7fbbea3568d3d36a069d1165dbbe512fffd3b8b492aa34150bb1cd69dfa42929",
+    "outputs/ucsd-manuscript-step38-20261029/TableS4_EN.csv": "2cdfc06496bbf66f5aa38f85386638b1110f6c09e6b28e859f73835394d961ab",
+    "outputs/ucsd-manuscript-step38-20261029/UCSD_Manuscript_Results_3_6_EN_ZH.docx": "cdfbd52cfca761624077cabb8340b5b6fe28c0027077c246e0a0b9e75ddd2049"
+  }
+}
