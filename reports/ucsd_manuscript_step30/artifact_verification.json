@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "stage": 30,
+  "date": "2026-10-29",
+  "subsection": "2.8 Calibration assessment",
+  "paragraph_ids": [
+    "M16"
+  ],
+  "english_word_count": 167,
+  "paragraph_word_counts": {
+    "M16": 167
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 2,
+  "equation_numbers": [
+    9,
+    10
+  ],
+  "equation_images": 0,
+  "prior_files_unchanged": 84,
+  "calibration_variants_checked": 6,
+  "calibration_bin_rows_checked": 30,
+  "bin_summary_numeric_fields_checked": 150,
+  "table_s3_calibration_values_checked": 8,
+  "calibration_diagnostics_refitted": 0,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "next_section": "Sensitivity analyses (M17-M19)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step30-20261029/UCSD_Manuscript_Methods_2_8_EN_ZH.docx": "f5ec3f6e499c86a2a3815bb440321b69757b423c0f267e5619c65fedf97702be",
+    "outputs/ucsd-manuscript-step30-20261029/UCSD_Manuscript_Methods_2_8_EN.txt": "daedd2652b0a4f7e617d42f392eedcc5ae2ef37babff30ab35d8b32fba5035c8"
+  }
+}

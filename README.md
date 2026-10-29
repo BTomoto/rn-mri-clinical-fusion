@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第30步已完成Methods 2.8校准评估（M16）。** [中英对照Word](outputs/ucsd-manuscript-step30-20261029/UCSD_Manuscript_Methods_2_8_EN_ZH.docx)包含167个英文词、一组中译和原生可编辑Equation 9–10，共1页。区分固定斜率1的offset截距与自由截距/斜率联合诊断，说明概率分位分组、失败处理以及不据此重新校准。
+
+见[第30步报告](reports/ucsd_manuscript_step30_20261029.md)、[段落与核查依据](reports/ucsd_manuscript_step30/methods_section28.json)和[核对回执](reports/ucsd_manuscript_step30/artifact_verification.json)。六组保存参数的得分残差/曲率、30行分组记录及Table S3的8个校准值核对一致；未重拟合预测模型或校准诊断，未改变OOF概率或阈值。已写M1至M16共2478个英文词，下一节为敏感性分析方法（M17–M19），等待用户批准。
+
 **第29步已完成Methods 2.7性能指标与条件不确定性（M14–M15）。** [中英对照Word](outputs/ucsd-manuscript-step29-20261029/UCSD_Manuscript_Methods_2_7_EN_ZH.docx)包含299个英文词、两组中译及原生可编辑Equation 8，共2页。说明主要Fusion−M1 AUC差、两类AP/概率误差/固定阈值指标，以及2000次患者整组配对bootstrap；明确区间条件于固定OOF预测，不覆盖完整训练和分折变异。
 
 见[第29步报告](reports/ucsd_manuscript_step29_20261029.md)、[段落与核查依据](reports/ucsd_manuscript_step29/methods_section27.json)及[核对回执](reports/ucsd_manuscript_step29/artifact_verification.json)。60个主模型指标、2000次抽样计数、40000个配对差值和88个区间端点一致；没有重训或改动原结果。区间范围限定为AUC、治疗改变AP、Brier/log loss及差值，未声称所有阈值指标都有区间。已写M1至M15共2311个英文词，下一节为校准评估（M16），等待用户批准。

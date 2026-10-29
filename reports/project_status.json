@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage29 Methods 2.7 performance metrics and conditional bootstrap uncertainty drafted; saved metrics, paired draws and interval endpoints verified without fitting",
+  "scope": "Stage30 Methods 2.8 calibration assessment drafted; saved diagnostic score residuals, bins and Table S3 verified without fitting",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for calibration assessment (M16)",
+  "next_work_item": "Await user approval for sensitivity analysis methods (M17-M19)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 29,
-    "subsection": "2.7 Performance metrics and conditional uncertainty",
+    "stage": 30,
+    "subsection": "2.8 Calibration assessment",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -424,10 +424,11 @@
       "M12",
       "M13",
       "M14",
-      "M15"
+      "M15",
+      "M16"
     ],
-    "english_word_count": 2311,
-    "chinese_paragraphs": 15,
+    "english_word_count": 2478,
+    "chinese_paragraphs": 16,
     "current_section_citations": 0,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
@@ -446,21 +447,22 @@
       "2.4 MRI inputs and annotation region",
       "2.5 Intensity normalization and feature definitions",
       "2.6 Model specification and grouped training",
-      "2.7 Performance metrics and conditional uncertainty"
+      "2.7 Performance metrics and conditional uncertainty",
+      "2.8 Calibration assessment"
     ],
-    "latest_section_english_word_count": 299,
-    "latest_section_word_pages": 2,
+    "latest_section_english_word_count": 167,
+    "latest_section_word_pages": 1,
     "unique_citations_in_drafted_sections": 4,
     "label_checks_are_independent_samples": false,
-    "native_equation_groups": 8,
+    "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 82,
-      "main_metric_values_checked": 60,
-      "bootstrap_attempts_checked": 2000,
-      "paired_difference_values_checked": 40000,
-      "percentile_endpoints_checked": 88,
-      "sampled_draw_metric_values_checked": 72,
-      "models_fitted": 0
+      "prior_files_unchanged": 84,
+      "calibration_variants_checked": 6,
+      "calibration_bin_rows_checked": 30,
+      "bin_summary_numeric_fields_checked": 150,
+      "table_s3_calibration_values_checked": 8,
+      "prediction_models_fitted": 0,
+      "calibration_diagnostics_fitted": 0
     }
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
@@ -468,5 +470,6 @@
   "ucsd_manuscript_step26_report": "reports/ucsd_manuscript_step26_20261029.md",
   "ucsd_manuscript_step27_report": "reports/ucsd_manuscript_step27_20261029.md",
   "ucsd_manuscript_step28_report": "reports/ucsd_manuscript_step28_20261029.md",
-  "ucsd_manuscript_step29_report": "reports/ucsd_manuscript_step29_20261029.md"
+  "ucsd_manuscript_step29_report": "reports/ucsd_manuscript_step29_20261029.md",
+  "ucsd_manuscript_step30_report": "reports/ucsd_manuscript_step30_20261029.md"
 }
