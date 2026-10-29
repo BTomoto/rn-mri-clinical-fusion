@@ -1,0 +1,78 @@
+{
+  "stage": 50,
+  "date": "2026-10-30",
+  "scope": "D10 availability sampling, examination weighting, fixed inputs, missing interval and conditional bootstrap uncertainty",
+  "studies": [],
+  "own_study_claims": [
+    {
+      "claim": "The imaged subset comprises 182 of 238 eligible clinical examinations, 135 patients, 141 tumor and 41 treatment-change examinations; 56 examinations remain outside the paired comparison",
+      "sources": [
+        "data/processed/ucsd_clinical_revalidated_cohort.csv",
+        "data/processed/ucsd_clinical_image_features.csv",
+        "reports/ucsd_fusion/metrics.json"
+      ]
+    },
+    {
+      "claim": "Patients contribute 1 to 4 examinations; 99 contribute one, 27 two, 7 three and 2 four",
+      "sources": [
+        "data/processed/ucsd_clinical_image_features.csv"
+      ]
+    },
+    {
+      "claim": "Production fitting and pooled metrics weight examinations equally, without inverse-frequency patient weights; grouped folds have zero patient overlap",
+      "sources": [
+        "src/rn_public/ucsd_fusion.py / fit, grouped_oof, evaluate",
+        "reports/ucsd_fusion/fold_audit.json",
+        "reports/ucsd_manuscript_step29/methods_section27.json"
+      ]
+    },
+    {
+      "claim": "Fusion uses 13 fixed input coefficients plus an intercept, fixed L2 C=1, and no tuning or feature selection",
+      "sources": [
+        "reports/ucsd_fusion/analysis_lock.json",
+        "reports/ucsd_fusion/metrics.json",
+        "reports/ucsd_fusion/fold_audit.json"
+      ]
+    },
+    {
+      "claim": "Initial-event interval is missing for 36 examinations and combines initial surgery, other initial treatment or diagnosis; median imputation is within training fold, with a missingness indicator",
+      "sources": [
+        "data/processed/ucsd_clinical_image_features.csv",
+        "reports/ucsd_manuscript_step25/methods_section23.json",
+        "src/rn_public/ucsd_fusion.py / make_model"
+      ]
+    },
+    {
+      "claim": "Patient-cluster bootstrap resamples fixed OOF predictions, not development pipelines; 2000 saved valid draws, no model refits",
+      "sources": [
+        "reports/ucsd_fusion/paired_patient_bootstrap.csv",
+        "reports/ucsd_fusion/metrics.json",
+        "reports/ucsd_manuscript_step29/methods_section27.json",
+        "src/rn_public/ucsd_fusion.py / paired_bootstrap"
+      ]
+    },
+    {
+      "claim": "Repeated grouped splits use the same underlying cohort and do not provide an independent external evaluation",
+      "sources": [
+        "reports/ucsd_stability/metrics.json",
+        "reports/ucsd_stability/analysis_lock.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    "Availability selection may affect representativeness; no measured direction or magnitude of selection bias claimed",
+    "Repeat examinations do not increase the number of independent patients and examination weighting differs from equal patient weighting",
+    "A fixed penalized 13-input model does not by itself establish adequate estimation stability; no events-per-variable adequacy rule or retrospective power calculation applied",
+    "Median imputation and a missingness indicator do not recover unavailable timing history or establish an ignorable missingness mechanism; no claim that missingness is proven nonignorable",
+    "Fixed-OOF percentile intervals exclude full retraining and fold-partition uncertainty; repeated splits explore another conditional aspect, not external confirmation"
+  ],
+  "new_unique_manuscript_references": 0,
+  "cumulative_unique_cited_sources_after_section": 16,
+  "new_full_text_review_count": 0,
+  "current_section_external_citations_required": false,
+  "citation_rationale": "This paragraph interprets the project own saved design, sampling and uncertainty records; no external empirical or methodological guideline claim introduced",
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_bootstrap_draws": 0
+}

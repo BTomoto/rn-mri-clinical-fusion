@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第50步已完成Discussion 4.10抽样与模型不确定性（D10）。** [中英对照Word](outputs/ucsd-manuscript-step50-20261030/UCSD_Manuscript_Discussion_4_10_EN_ZH.docx)包含196个英文词和一组中译，共1页。说明可用影像子集、按检查计权、13项输入估计、时间变量缺失，以及固定OOF患者聚类bootstrap不能覆盖全部开发变异的限制。本节依据本项目既有设计和计算记录，不增加外部引文。
+
+见[第50步报告](reports/ucsd_manuscript_step50_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step50/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step50/discussion_section50.json)及[核查回执](reports/ucsd_manuscript_step50/artifact_verification.json)。212份此前文件未变，238/182/56次检查划分、135名患者的检查次数、36条间隔缺失、5折系数维度及2000条既有bootstrap记录一致，无重训或新重采样。当前英文叙述6691词、38组中译、16篇实际引用来源。下一节为Discussion 4.11临床解释（D11），等待用户批准。
+
 **第49步已完成Discussion 4.9影像处理的局限（D9）。** [中英对照Word](outputs/ucsd-manuscript-step49-20261030/UCSD_Manuscript_Discussion_4_9_EN_ZH.docx)包含206个英文词、一组中译及1篇沿用参考文献，共2页。说明uint8派生强度、未知空间尺度、区域并集、技术诊断后归一化修订及未评价定量ADC/灌注的边界；网格检查不替代解剖配准验证，也不将处理修订称为已证实最优。
 
 见[第49步报告](reports/ucsd_manuscript_step49_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step49/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step49/discussion_section49.json)及[核查回执](reports/ucsd_manuscript_step49/artifact_verification.json)。207份此前文件未变，546条既有文件质控、364条强度诊断和8项特征定义核对一致，无重提特征或重训。当前英文叙述6495词、37组中译、16篇实际引用来源。下一节为Discussion 4.10抽样与模型不确定性（D10），等待用户批准。

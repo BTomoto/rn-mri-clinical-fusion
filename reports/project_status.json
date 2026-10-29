@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "scope": "Stage49 Discussion 4.9 image-processing limitations drafted; derived intensities, unknown scale, pooled ROI and normalization amendment verified",
+  "scope": "Stage50 Discussion 4.10 sampling and model uncertainty drafted; availability subset, examination weighting, missing interval and fixed-OOF uncertainty verified",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Discussion 4.10 sampling and model uncertainty (D10)",
+  "next_work_item": "Await user approval for Discussion 4.11 clinical interpretation (D11)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 49,
-    "subsection": "4.9 Image-processing limitations",
+    "stage": 50,
+    "subsection": "4.10 Sampling and model uncertainty",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -446,11 +446,12 @@
       "D6",
       "D7",
       "D8",
-      "D9"
+      "D9",
+      "D10"
     ],
-    "english_word_count": 6495,
-    "chinese_paragraphs": 37,
-    "current_section_citations": 1,
+    "english_word_count": 6691,
+    "chinese_paragraphs": 38,
+    "current_section_citations": 0,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
@@ -488,33 +489,42 @@
       "4.6 Boundary and split robustness",
       "4.7 Meaning of the single-scan result",
       "4.8 Reference-standard limitations",
-      "4.9 Image-processing limitations"
+      "4.9 Image-processing limitations",
+      "4.10 Sampling and model uncertainty"
     ],
-    "latest_section_english_word_count": 206,
-    "latest_section_word_pages": 2,
+    "latest_section_english_word_count": 196,
+    "latest_section_word_pages": 1,
     "unique_citations_in_drafted_sections": 16,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 207,
-      "frozen_files_unchanged": 208,
-      "saved_file_QC_rows_checked": 546,
-      "structural_image_rows_checked": 364,
-      "saved_intensity_diagnostic_rows_checked": 364,
-      "eight_feature_definitions_checked": true,
-      "uint8_and_unknown_spatial_units_confirmed": true,
-      "relative_grid_checks_not_anatomical_validation": true,
-      "normalization_revision_after_diagnostics_disclosed": true,
-      "model_performance_used_for_normalization_selection": false,
-      "normalization_preregistered_or_independently_optimal_claimed": false,
-      "physical_volume_or_quantitative_ADC_included": false,
-      "all_features_claimed_sensitive_to_every_affine_transform": false,
-      "new_manuscript_references": 0,
-      "provisional_citation_mapping": {
-        "12": "S39"
+      "prior_files_unchanged": 212,
+      "frozen_files_unchanged": 213,
+      "clinical_examinations": 238,
+      "imaged_examinations": 182,
+      "unavailable_examinations": 56,
+      "imaged_patients": 135,
+      "treatment_change_examinations": 41,
+      "patient_examination_frequency": {
+        "1": 99,
+        "2": 27,
+        "3": 7,
+        "4": 2
       },
-      "models_refitted": 0,
-      "features_reextracted": 0
+      "interval_missing_examinations": 36,
+      "fusion_input_coefficients_per_saved_fold": 13,
+      "saved_folds_checked": 5,
+      "examination_weighting_verified_by_source_code_review": true,
+      "saved_bootstrap_draws_checked": 2000,
+      "bootstrap_models_refitted": false,
+      "bootstrap_excludes_full_development_variation_disclosed": true,
+      "missingness_mechanism_claimed_established": false,
+      "sample_size_adequacy_claimed_established": false,
+      "retrospective_power_calculated": false,
+      "external_validation_claimed": false,
+      "new_bootstrap_draws": 0,
+      "new_manuscript_references": 0,
+      "models_refitted": 0
     },
     "methods_v2_paragraphs_complete": true,
     "methods_english_word_count": 3131,
@@ -532,7 +542,7 @@
       "Table S7"
     ],
     "results_v2_paragraphs_complete": true,
-    "discussion_english_word_count": 1918,
+    "discussion_english_word_count": 2114,
     "discussion_v2_paragraphs_complete": false,
     "latest_stage_date": "2026-10-30"
   },
@@ -561,5 +571,6 @@
   "ucsd_manuscript_step46_report": "reports/ucsd_manuscript_step46_20261030.md",
   "ucsd_manuscript_step47_report": "reports/ucsd_manuscript_step47_20261030.md",
   "ucsd_manuscript_step48_report": "reports/ucsd_manuscript_step48_20261030.md",
-  "ucsd_manuscript_step49_report": "reports/ucsd_manuscript_step49_20261030.md"
+  "ucsd_manuscript_step49_report": "reports/ucsd_manuscript_step49_20261030.md",
+  "ucsd_manuscript_step50_report": "reports/ucsd_manuscript_step50_20261030.md"
 }

@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "stage": 50,
+  "date": "2026-10-30",
+  "subsection": "4.10 Sampling and model uncertainty",
+  "paragraph_ids": [
+    "D10"
+  ],
+  "english_word_count": 196,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 213,
+  "prior_files_unchanged": 212,
+  "new_full_texts_checked_for_current_claims": [],
+  "clinical_examinations": 238,
+  "imaged_examinations": 182,
+  "unavailable_examinations": 56,
+  "imaged_patients": 135,
+  "treatment_change_examinations": 41,
+  "patient_examination_frequency": {
+    "1": 99,
+    "2": 27,
+    "3": 7,
+    "4": 2
+  },
+  "interval_missing_examinations": 36,
+  "fusion_input_coefficients_per_saved_fold": 13,
+  "saved_folds_checked": 5,
+  "examination_weighting_verified_by_source_code_review": true,
+  "saved_bootstrap_draws_checked": 2000,
+  "bootstrap_models_refitted": false,
+  "bootstrap_excludes_full_development_variation_disclosed": true,
+  "missingness_mechanism_claimed_established": false,
+  "sample_size_adequacy_claimed_established": false,
+  "retrospective_power_calculated": false,
+  "external_validation_claimed": false,
+  "new_bootstrap_draws": 0,
+  "new_manuscript_references": 0,
+  "provisional_citation_mapping": {},
+  "cumulative_unique_cited_sources": 16,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.11 Clinical interpretation (D11)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step50-20261030/UCSD_Manuscript_Discussion_4_10_EN_ZH.docx": "511cc1de3bbd066fc0016c7e6ff6f87c0f0908559d797e158b116747556404d1",
+    "outputs/ucsd-manuscript-step50-20261030/UCSD_Manuscript_Discussion_4_10_EN.txt": "09d24f6289a7d4a9c6c0317d020deaaea468ee72affc19dcc345d010686fc48a"
+  }
+}
