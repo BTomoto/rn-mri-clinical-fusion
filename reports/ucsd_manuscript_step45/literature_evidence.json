@@ -1,0 +1,64 @@
+{
+  "stage": 45,
+  "date": "2026-10-30",
+  "scope": "D5 interpretation of image features, without biological or causal attribution",
+  "studies": [
+    {
+      "reference_id": "S32",
+      "provisional_citation_number": 4,
+      "doi": "10.1148/radiol.2020191145",
+      "source_url": "https://ibsi.readthedocs.io/en/latest/03_Image_features.html",
+      "read_level_this_stage": "Official IBSI feature specification reviewed for the cited definitions; existing paper citation reused, without claiming a new full-paper review",
+      "source_snapshot_sha256": "5263658a4768abd5149db81e0d63bfe0a364dbc16f20227f34e1608c01714028",
+      "source_snapshot_format": "Official specification HTML",
+      "source_locators": ["Intensity-based statistical features", "Discretised intensity entropy, TLU2", "Grey level co-occurrence based features", "GLCM Contrast, ACUI"],
+      "facts": {
+        "mean": "Arithmetic mean of the included intensity values",
+        "standard_deviation": "Spread of the included intensity values around their mean",
+        "histogram_entropy": "Shannon entropy computed from probabilities of discretized intensity bins; no voxel-location term",
+        "GLCM_contrast": "Probability-weighted squared differences between neighboring discretized gray levels",
+        "GLCM_aggregation": "Direction aggregation and spatial distance are part of the feature definition"
+      },
+      "permitted_claim": "Distinguish distributional descriptors from a spatial co-occurrence descriptor",
+      "limits": "No complete IBSI benchmark validation or certification is claimed. Our histogram entropy is not GLCM joint entropy, and our contrast is not neighboring-gray-tone contrast. Reuse the complete pagination 328-338 already verified in Stage27 rather than the truncated historical candidate entry."
+    },
+    {
+      "reference_id": "S39",
+      "provisional_citation_number": 12,
+      "doi": "10.3389/fonc.2025.1433444",
+      "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1433444/full",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11842255/fullTextXML",
+      "read_level_this_stage": "Full text reviewed for relevant claims",
+      "source_snapshot_sha256": "6f81af34558a6effeb8c366423123948b491f10311f7d387ba84b84c2659ba61",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": ["2.2 Glioblastoma cohort", "2.4 Image normalization", "2.5 Radiomic feature calculation", "2.6 Statistical analysis", "3.2 Glioblastoma cohort", "3.4 Radiomic feature analysis and Figure 10", "4.1 Limitations"],
+      "facts": {
+        "publication_year": 2025,
+        "scope": "MRI intensity normalization and feature comparability across prostate, brain and breast imaging datasets",
+        "brain_sequences": ["T1", "postcontrast T1", "FLAIR", "ADC"],
+        "comparison_factors": ["site", "scanner vendor", "magnetic field strength"],
+        "radiomic_evaluation": "Compared radiomic feature equivalence across acquisition settings after different normalization methods",
+        "finding_used": "Radiomic comparability varied with normalization choices and acquisition context"
+      },
+      "permitted_claim": "Normalization choices affected radiomic comparability across acquisition settings, including brain imaging",
+      "limits": "Different images, software and feature definitions; not validation of our percentile transform or eight-feature panel. Do not infer that every feature changes under every normalization, that affine scaling necessarily changes our ROI-range fixed-bin-number texture values, or that the study establishes a cellular mechanism or tumor-change diagnostic performance. No inconsistent aggregate sample or feature counts from the article are reused."
+    }
+  ],
+  "own_study_claims": [
+    {"claim": "Eight fixed descriptors use mean, population standard deviation, 32-bin histogram entropy and 3D merged symmetric GLCM contrast for two sequences", "sources": ["src/rn_public/ucsd_batch_features.py", "reports/ucsd_manuscript_step27/methods_section25.json"]},
+    {"claim": "ROI is the union of all positive supplied annotation labels, not a mapped histological compartment", "sources": ["src/rn_public/ucsd_roi_pilot.py", "reports/ucsd_manuscript_step26/methods_section24.json"]},
+    {"claim": "Mean and standard deviation use image-specific unclipped percentile-scaled values; histogram and GLCM use ROI-range discretization", "sources": ["src/rn_public/ucsd_intensity_followup.py", "src/rn_public/ucsd_roi_pilot.py", "src/rn_public/ucsd_batch_features.py"]},
+    {"claim": "Spatial units of supplied files are unknown and the texture offsets are defined on the supplied voxel grid", "sources": ["reports/ucsd_batch_features/actual_file_QC.csv", "reports/ucsd_manuscript_step26/methods_section24.json"]},
+    {"claim": "Coefficients belong to a penalized multivariable diagnostic model; the analysis does not establish independent risk factors, causation or a specific cellular mechanism", "sources": ["src/rn_public/ucsd_fusion.py", "reports/ucsd_fusion/metrics.json"]}
+  ],
+  "interpretation": "The favorable primary paired comparison supports a collective predictive signal within this dataset; it does not identify the biological meaning or independent contribution of each feature",
+  "new_unique_manuscript_references": 1,
+  "reused_manuscript_references": [4],
+  "cumulative_unique_cited_sources": 12,
+  "candidate_library_unchanged": true,
+  "reading_level_update": {"reference_id": "S39", "historical_library_level": "Abstract screened; full text needed before detailed comparison", "current_level": "Full text reviewed for relevant claims"},
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "features_reextracted": 0,
+  "new_hypothesis_tests": 0
+}

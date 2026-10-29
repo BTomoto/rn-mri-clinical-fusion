@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "stage": 45,
+  "date": "2026-10-30",
+  "subsection": "4.5 Interpretation of image features",
+  "paragraph_ids": [
+    "D5"
+  ],
+  "english_word_count": 198,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 189,
+  "prior_files_unchanged": 188,
+  "new_full_texts_checked_for_current_claims": [
+    "S39"
+  ],
+  "official_IBSI_definitions_checked": true,
+  "feature_definition_checks": 4,
+  "MRI_feature_names_checked": 8,
+  "new_manuscript_references": 1,
+  "provisional_citation_mapping": {
+    "4": "S32",
+    "12": "S39"
+  },
+  "cumulative_unique_cited_sources": 12,
+  "biological_or_causal_attribution_claimed": false,
+  "unknown_spatial_units_retained": true,
+  "models_refitted": 0,
+  "features_reextracted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.6 Boundary and split robustness (D6)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step45-20261030/UCSD_Manuscript_Discussion_4_5_EN_ZH.docx": "0d9fb190622468651123c10451449358ab129e95409d425db36a5ed6ae4e34e1",
+    "outputs/ucsd-manuscript-step45-20261030/UCSD_Manuscript_Discussion_4_5_EN.txt": "2f3ddf32ac95cf47e1edb1483a9218a8245c8807bfa6859e3388786cf7349d23"
+  }
+}

@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第45步已完成Discussion 4.5影像特征的解释（D5）。** [中英对照Word](outputs/ucsd-manuscript-step45-20261030/UCSD_Manuscript_Discussion_4_5_EN_ZH.docx)包含198个英文词、一组中译和2篇本节参考文献，共2页。区分均值/标准差、无位置信息的直方图熵及局部空间GLCM对比度，保留ROI、派生强度和未知空间单位的解释边界；系数不作为独立危险因素或细胞机制的证明。
+
+见[第45步报告](reports/ucsd_manuscript_step45_20261030.md)、[来源与定义映射](reports/ucsd_manuscript_step45/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step45/discussion_section45.json)及[核查回执](reports/ucsd_manuscript_step45/artifact_verification.json)。188份此前文件未变，无重提特征或重训。当前英文叙述5662词、33组中译、12篇实际引用来源。下一节为Discussion 4.6边界与分折稳健性（D6），等待用户批准。
+
 **第44步已完成Discussion 4.4计算方法贡献（D4）。** [中英对照Word](outputs/ucsd-manuscript-step44-20261030/UCSD_Manuscript_Discussion_4_4_EN_ZH.docx)包含197个英文词、一组中译及1篇参考文献，共1页。说明8项MRI与5项临床输入的特征级融合、同病例同折比较及公开计算记录的价值，定位为医学图像计算的应用评价，保留影像访问和外部验证限制。
 
 见[第44步报告](reports/ucsd_manuscript_step44_20261030.md)、[来源与贡献映射](reports/ucsd_manuscript_step44/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step44/discussion_section44.json)及[核查回执](reports/ucsd_manuscript_step44/artifact_verification.json)。183份此前文件未变；130个训练预处理摘要与364个OOF概率重构一致，无重训。当前英文叙述5464词、32组中译、11篇实际引用来源。下一节为Discussion 4.5影像特征的解释（D5），等待用户批准。
