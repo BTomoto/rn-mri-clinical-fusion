@@ -1,0 +1,100 @@
+{
+  "stage": 48,
+  "date": "2026-10-30",
+  "scope": "D8 inherited outcome labels, heterogeneous reference standards and uncertain annotation blinding",
+  "studies": [
+    {
+      "reference_id": "S01",
+      "provisional_citation_number": 1,
+      "doi": "10.1038/s41597-025-06499-z",
+      "source_url": "https://www.nature.com/articles/s41597-025-06499-z",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12886825/fullTextXML",
+      "read_level_this_stage": "Previously reviewed full text revisited for reference standard and distinct segmentation procedures",
+      "source_snapshot_sha256": "06d4c40f9d1b134a60b8f4e35e507315304361dd13997319482d767df18322ac",
+      "source_locators": [
+        "Methods / first data-collection paragraph",
+        "Methods / Tumor segmentation / Standard BraTS segmentation",
+        "Methods / Tumor segmentation / Cellular tumor segmentation"
+      ],
+      "facts": {
+        "source_examinations": 243,
+        "tumor_examinations": 192,
+        "pathology_proven_tumor_examinations": 45,
+        "treatment_change_examinations": 51,
+        "published_subtypes": {
+          "NS": 28,
+          "PsP (clinically confirmed)": 9,
+          "Radiation necrosis": 10,
+          "PsP (bx proven)": 4
+        },
+        "standard_BraTS": "OnQ automated segmentation, radiologist correction and neuroradiologist approval",
+        "cellular_tumor_masks": "Explicitly used clinical, pathological and imaging history including prior and subsequent MRI"
+      },
+      "limits": "The cellular-tumor annotation procedure cannot be assigned to the supplied BraTS masks. Blinding of correction for the supplied BraTS mask is unconfirmed. Aggregate pathology counts do not establish pathology-confirmed counts in the 182-examination subset. No independent diagnostic readjudication performed."
+    },
+    {
+      "reference_id": "S03",
+      "provisional_citation_number": 3,
+      "doi": "10.1148/ryai.240300",
+      "source_url": "https://pubs.rsna.org/doi/10.1148/ryai.240300",
+      "official_checklist_url": "https://rsna.github.io/claim/checklist.html",
+      "read_level_this_stage": "Previously reviewed official full checklist revisited for reference-standard items 14-16",
+      "source_snapshot_sha256": "4899547e2fe4a68be9416bd66648a0e7f16c00531d3974a1cfa5a484827398b0",
+      "source_locators": [
+        "Reference Standard / Item 14",
+        "Reference Standard / Item 15",
+        "Reference Standard / Item 16"
+      ],
+      "facts": {
+        "item14": "Definition of methods used to obtain reference standard",
+        "item15": "Rationale for choosing the reference standard",
+        "item16": "Source of reference standard annotations"
+      },
+      "limits": "Checklist supports transparent reporting, not evidence that our labels are correct, that leakage occurred, or a calculated quality score."
+    }
+  ],
+  "own_study_claims": [
+    {
+      "claim": "Tumor labels equal complement of the 51-case negative list in all three existing cohort tables",
+      "sources": [
+        "data/raw/reference/ucsd_ptgbm_negative_cases.xlsx",
+        "data/processed/ucsd_clinical_baseline_cohort.csv",
+        "data/processed/ucsd_clinical_revalidated_cohort.csv",
+        "data/processed/ucsd_clinical_image_features.csv"
+      ]
+    },
+    {
+      "claim": "Workbook subtypes differ from the published source while broad binary counts agree",
+      "sources": [
+        "reports/ucsd_manuscript_step24/methods_section22.json",
+        "data/processed/ucsd_ptgbm_subtype_count_comparison.csv"
+      ]
+    },
+    {
+      "claim": "Production features use union of positive standard BraTS labels, not cellular-tumor masks",
+      "sources": [
+        "reports/ucsd_manuscript_step26/methods_section24.json",
+        "src/rn_public/ucsd_batch_features.py",
+        "src/rn_public/ucsd_roi_pilot.py"
+      ]
+    },
+    {
+      "claim": "Patient grouping excludes cross-fold patient overlap, not upstream reference or annotation bias",
+      "sources": [
+        "reports/ucsd_fusion/fold_audit.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    "Clinical and imaging assessment in the reference standard creates possible reference/index-data dependence; direction and magnitude not measured",
+    "Subtype discrepancies remain unresolved; broad labels do not support subtype-specific diagnostic claims",
+    "Unknown blinding is a potential bias concern, not proof of leakage",
+    "Independent adjudication and documented annotation are recommendations, not completed work"
+  ],
+  "access_notes": [
+    "Current web opens to PMC and Nature did not return article text; primary full text already cached was directly parsed and read. Current primary search also confirmed the published partition. No new source acquisition or new full-text-review count."
+  ],
+  "new_unique_manuscript_references": 0,
+  "cumulative_unique_cited_sources_after_section": 16,
+  "final_reference_count_and_recency_compliance_checked": false
+}

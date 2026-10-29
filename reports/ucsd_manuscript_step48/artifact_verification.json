@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "stage": 48,
+  "date": "2026-10-30",
+  "subsection": "4.8 Reference-standard limitations",
+  "paragraph_ids": [
+    "D8"
+  ],
+  "english_word_count": 242,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 205,
+  "prior_files_unchanged": 204,
+  "new_full_texts_checked_for_current_claims": [],
+  "label_rows_checked": 663,
+  "all_labels_reconstructed_and_matched": true,
+  "subtype_discrepancy_resolved": false,
+  "pathology_count_extrapolated_to_imaging_subset": false,
+  "distinct_BraTS_and_cellular_annotation_procedures_preserved": true,
+  "supplied_BraTS_annotation_blinding_confirmed": false,
+  "information_leakage_claimed_proven": false,
+  "independent_diagnostic_readjudication_performed": false,
+  "five_saved_folds_checked_for_no_patient_overlap": true,
+  "new_manuscript_references": 0,
+  "provisional_citation_mapping": {
+    "1": "S01",
+    "3": "S03"
+  },
+  "cumulative_unique_cited_sources": 16,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.9 Image-processing limitations (D9)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step48-20261030/UCSD_Manuscript_Discussion_4_8_EN_ZH.docx": "e1fcb4c41c99992f5a8459d7938e9d3e18f28958cd721d97a9e268bcf6c9b344",
+    "outputs/ucsd-manuscript-step48-20261030/UCSD_Manuscript_Discussion_4_8_EN.txt": "7ac513c3bf4143f1a1382fea9bcbc43293c492326d1a78e01613cc240f27b7e0"
+  }
+}

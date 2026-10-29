@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第48步已完成Discussion 4.8参考标准的局限（D8）。** [中英对照Word](outputs/ucsd-manuscript-step48-20261030/UCSD_Manuscript_Discussion_4_8_EN_ZH.docx)包含242个英文词、一组中译及2篇沿用参考文献，共2页。解释补集标签、混合参考标准和治疗改变异质性；区分标准BraTS与细胞肿瘤标注流程，将未知盲法作为潜在偏倚而非已证实泄漏。
+
+见[第48步报告](reports/ucsd_manuscript_step48_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step48/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step48/discussion_section48.json)及[核查回执](reports/ucsd_manuscript_step48/artifact_verification.json)。204份此前文件未变，663条既有标签与源清单一致，亚型差异仍未解决；未独立裁定诊断或重训。当前英文叙述6289词、36组中译、16篇实际引用来源。下一节为Discussion 4.9影像处理的局限（D9），等待用户批准。
+
 **第47步已完成Discussion 4.7单扫描结果的含义（D7）。** [中英对照Word](outputs/ucsd-manuscript-step47-20261030/UCSD_Manuscript_Discussion_4_7_EN_ZH.docx)包含192个英文词、一组中译及2篇参考文献，共2页。解释增量区间跨零、治疗改变仅识别2/22及同一135名患者的选中分析；扫描构成、类别和训练划分同时变化，不能将跨分析差异仅归因于重复扫描。
 
 见[第47步报告](reports/ucsd_manuscript_step47_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step47/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step47/discussion_section47.json)及[核查回执](reports/ucsd_manuscript_step47/artifact_verification.json)。198份此前文件未变，ID选择、患者集合、逐检查标签、分折变化及固定阈值计数核对一致，无重训。当前英文叙述6047词、35组中译、16篇实际引用来源。下一节为Discussion 4.8参考标准的局限（D8），等待用户批准。
