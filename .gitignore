@@ -71,3 +71,7 @@ node_modules/
 /outputs/ucsd-batch-features-20261029/preview_*.png
 /outputs/ucsd-batch-features-20261029/*.inspect.ndjson
 /reports/ucsd_batch_features/*progress.json
+
+/reports/ucsd_fusion_workbook_input.json
+/outputs/ucsd-fusion-20261029/preview_*.png
+/outputs/ucsd-fusion-20261029/*.inspect.ndjson

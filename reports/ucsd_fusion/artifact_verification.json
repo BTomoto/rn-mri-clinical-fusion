@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "source_input_hashes_verified": 4,
+  "scans": 182,
+  "patients": 135,
+  "folds": 5,
+  "patient_overlap": 0,
+  "BraTS_patient_overlap": 0,
+  "OOF_model_probabilities_independently_reconstructed": 1092,
+  "bootstrap_draws_checked": 2000,
+  "workbook_data_rows_checked": 661,
+  "workbook_error_cells": 0,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "notebook_embedded_figures_byte_identical": 2,
+  "prior_stage_artifacts_preserved": true,
+  "external_Excel_application_tested": false
+}

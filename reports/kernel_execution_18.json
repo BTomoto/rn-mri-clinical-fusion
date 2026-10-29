@@ -1,0 +1,21 @@
+{
+  "mode": "in_process_ipykernel",
+  "separate_kernel_server_tested": false,
+  "browser_frontend_tested": false,
+  "versions": {
+    "ipykernel": "7.4.0",
+    "IPython": "9.17.1",
+    "nbformat": "5.10.4",
+    "jupyter-client": "8.10.0"
+  },
+  "notebooks": [
+    {
+      "path": "notebooks/18_ucsd_clinical_mri_fusion.ipynb",
+      "code_cells": 5,
+      "code_sha256": "74eb1c04e963f962f2ee939d74cd02ab7ebf8ba380417696c3166a78104225df",
+      "errors": 0
+    }
+  ],
+  "success": true,
+  "checked_at_utc": "2026-10-29T08:21:30.947098+00:00"
+}

@@ -2,6 +2,17 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第18步已完成共同病例的临床、MRI与融合Logistic比较。** 同一182次扫描/135名患者、固定患者分组5折，M0/M1/MRI/Fusion的OOF AUC分别0.5255/0.6721/0.7625/0.7819。唯一主要比较Fusion−M1 AUC差为0.1098（患者聚类95%区间0.0214–0.2141），提示内部增量信号；Brier差区间跨0。固定0.5阈值只识别12/41次治疗改变，校准斜率0.6673，不能称临床可用。原ROI仍为主分析；腐蚀Fusion AUC=0.7881，相对原Fusion差值区间跨0，未改选较高版本。
+
+见[第18步报告](reports/ucsd_fusion_step18_20261029.md)、[拟合前固定协议](reports/ucsd_fusion_protocol.md)、[Notebook18](notebooks/18_ucsd_clinical_mri_fusion.ipynb)、[Excel](outputs/ucsd-fusion-20261029/UCSD_Clinical_MRI_Fusion.xlsx)、[逐例OOF预测](data/processed/ucsd_fusion_oof.csv)、[指标与完整折参数](reports/ucsd_fusion/)。2,000次患者配对抽样全部有效，但固定OOF概率，不覆盖全部训练/分折不确定性。全项目79项测试通过；Notebook实际执行5单元、0错误；独立重建1,092个模型OOF概率通过。没有调参、特征筛选或阈值优化。
+
+```bash
+python scripts/run_ucsd_fusion.py --freeze-only
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_18.json notebooks/18_ucsd_clinical_mri_fusion.ipynb
+```
+
+第17步特征CSV足以重跑本阶段，不需再次下载MRI。下一阶段建议固定模型稳定性复核（重复患者分组验证及每患者单扫描敏感性），随后整理论文材料，等待用户批准。没有外部验证，标注盲法、8位强度、unknown空间单位与公开分组标签限制保留。
+
 **第17步已完成批量有限影像特征与临床连接。** 实际取得并完整核验546份文件，共525.72 MB；182次扫描/135名源患者（141肿瘤、41治疗改变）全部提取8项固定特征，0次提取失败。另56次临床扫描未被当前镜像覆盖，仍保留在全238条状态表。182次腐蚀敏感性特征亦完整，FLAIR纹理对比度的绝对相对变化中位数15.29%、最大58.81%，提示边界依赖。没有训练MRI模型或计算AUC。
 
 见[第17步报告](reports/ucsd_batch_features_step17_20261029.md)、[固定协议](reports/ucsd_batch_features_protocol.md)、[临床与影像CSV](data/processed/ucsd_clinical_image_features.csv)、[Notebook17](notebooks/17_ucsd_batch_image_features.ipynb)、[Excel](outputs/ucsd-batch-features-20261029/UCSD_Clinical_Image_Features.xlsx)、[实际文件QC与特征字典](reports/ucsd_batch_features/)。Notebook实际执行5单元、0错误，全项目73项测试通过。所有空间单位仍unknown，uint8及标注盲法限制保留，只研究该公开派生版本。下一阶段拟在共同病例上进行患者分组的临床/MRI/融合Logistic比较，等待用户批准。

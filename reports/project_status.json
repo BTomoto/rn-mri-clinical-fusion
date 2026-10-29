@@ -1,13 +1,13 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage17 batch eight MRI features and clinical linkage completed; 182 scans / 135 source patients; 546 real files; no MRI model fitted",
+  "scope": "Stage18 same-case patient-grouped clinical, MRI and fusion Logistic comparison complete; exploratory OOF fusion AUC 0.7819; calibration and minority-class limitations retained",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
   "downloaded_uncompressed_bytes": 18893573108,
   "patients_with_downloaded_mri": 63,
   "patient_date_pairs_with_downloaded_mri": 111,
-  "notebooks_executed": 18,
+  "notebooks_executed": 19,
   "prediction_model_fitted": true,
   "outcome_adjudication_complete": false,
   "image_quality_and_lesion_segmentation_complete": false,
@@ -27,7 +27,7 @@
   "complete_image_qc": false,
   "verified_non_events": 0,
   "models_fitted": true,
-  "notebook_execution_method": "00-04 ordinary Python executor; 05-17 in-process ipykernel via Jupyter client",
+  "notebook_execution_method": "00-04 ordinary Python executor; 05-18 in-process ipykernel via Jupyter client",
   "github_main_project_file_count_previous_commit": 82,
   "previous_figshare_snapshot": {
     "recorded_rn_times": 32,
@@ -63,7 +63,8 @@
     "notebooks/14_ucsd_mri_intake_and_qc.ipynb",
     "notebooks/15_ucsd_mri_mirror_samples.ipynb",
     "notebooks/16_ucsd_roi_and_intensity_pilot.ipynb",
-    "notebooks/17_ucsd_batch_image_features.ipynb"
+    "notebooks/17_ucsd_batch_image_features.ipynb",
+    "notebooks/18_ucsd_clinical_mri_fusion.ipynb"
   ],
   "notebook_kernel_execution_report": "reports/kernel_execution.json",
   "separate_kernel_server_tested": false,
@@ -120,7 +121,7 @@
   "clinical_source_rechecked_unchanged": true,
   "pilot_registration_report": "reports/registration_pilot_and_gate_20261029.md",
   "workflow_mode": "stepwise_user_approval",
-  "last_user_authorized_step": "batch_limited_image_features_and_clinical_linkage",
+  "last_user_authorized_step": "same_case_patient_grouped_clinical_MRI_fusion_Logistic_comparison",
   "current_step_complete": true,
   "next_step_requires_user_approval": true,
   "next_step_approved": false,
@@ -162,10 +163,10 @@
     "report": "reports/ucsd_clinical_baseline_step11_20261029.md",
     "metrics_status": "historical_provisional; dual-ID overlap found in step12; requires revalidation"
   },
-  "automated_tests_passed": 73,
+  "automated_tests_passed": 79,
   "automated_tests_failed": 0,
   "legacy_status_note": "Imaging counts, outcome_adjudication_complete, current_clinical_source and source_storage describe historical OpenBTAI work. UCSD baseline status is recorded separately; no cohorts were merged. Stage15/16 sample-only fields describe their historical six-case pilot; Stage17 current batch figures are under ucsd_batch_features. The entire six-modality mirror has not been downloaded.",
-  "models_fitted_this_step": false,
+  "models_fitted_this_step": true,
   "prior_clinical_baseline_metrics_provisional": true,
   "ucsd_full_clinical_fields_audited": 36,
   "ucsd_dual_id_ambiguous_timepoints": 5,
@@ -199,7 +200,7 @@
   "ucsd_mri_intake_sample_count_is_not_model_validation": true,
   "ucsd_mri_intake_report": "reports/ucsd_mri_intake_step14_20261029.md",
   "ucsd_mri_intake_receipt": "reports/ucsd_mri_intake/intake_receipt.json",
-  "ucsd_MRI_model_fitted": false,
+  "ucsd_MRI_model_fitted": true,
   "ucsd_mri_transfer_retried_this_step": false,
   "ucsd_actual_MRI_sample_scans": 6,
   "ucsd_actual_MRI_sample_bytes": 43455955,
@@ -276,5 +277,36 @@
   "ucsd_batch_additional_source_files": 528,
   "ucsd_batch_raw_archive_bytes": 508299427,
   "ucsd_batch_raw_archive_in_Git": false,
-  "next_proposed_step": "same_case_patient_grouped_clinical_MRI_fusion_Logistic_comparison"
+  "next_proposed_step": "fixed_model_stability_checks_and_single_scan_per_patient_sensitivity_before_manuscript",
+  "ucsd_fusion_report": "reports/ucsd_fusion_step18_20261029.md",
+  "ucsd_fusion": {
+    "scans": 182,
+    "source_patients": 135,
+    "tumor_scans": 141,
+    "treatment_change_scans": 41,
+    "OOF_auc": {
+      "M0": 0.5255146168482961,
+      "M1": 0.6721155509427433,
+      "MRI": 0.7624978377443349,
+      "Fusion": 0.781871648503719
+    },
+    "primary_auc_difference_Fusion_minus_M1": {
+      "comparison": "Fusion_minus_M1",
+      "metric": "roc_auc",
+      "difference": 0.10975609756097571,
+      "lower": 0.02135192395183045,
+      "upper": 0.2141376244742501,
+      "primary_comparison": true
+    },
+    "fusion_treatment_change_correct": 12,
+    "fusion_treatment_change_total": 41,
+    "fusion_calibration_slope": 0.6673277705412995,
+    "bootstrap_valid": 2000,
+    "bootstrap_models_refitted": false,
+    "external_validation": false,
+    "hyperparameter_search": false,
+    "patient_overlap": 0,
+    "BraTS_patient_overlap": 0,
+    "clinical_use_established": false
+  }
 }
