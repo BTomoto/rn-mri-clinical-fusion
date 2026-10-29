@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "stage": 27,
+  "date": "2026-10-29",
+  "subsection": "2.5 Intensity normalization and feature definitions",
+  "paragraph_ids": [
+    "M9",
+    "M10",
+    "M11"
+  ],
+  "english_word_count": 454,
+  "paragraph_word_counts": {
+    "M9": 152,
+    "M10": 153,
+    "M11": 149
+  },
+  "matched_chinese_paragraphs": 3,
+  "word_pages": 3,
+  "visual_review_pages": [
+    1,
+    2,
+    3
+  ],
+  "native_editable_equations": 6,
+  "equation_images": 0,
+  "equation_structure_verified": true,
+  "prior_files_unchanged": 73,
+  "saved_feature_values_checked": 1456,
+  "sequence_diagnostic_records_checked": 364,
+  "formula_hand_array_checks_passed": true,
+  "models_refitted": 0,
+  "study_pixels_redecoded": 0,
+  "new_hypothesis_tests": 0,
+  "current_section_citations": 1,
+  "cumulative_unique_cited_sources": 4,
+  "citation_mapping": {
+    "4": "S32"
+  },
+  "next_section": "Fixed logistic models and patient-grouped training (M12-M13)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step27-20261029/UCSD_Manuscript_Methods_2_5_EN.txt": "acc6177bd92b60a42c1062175b174d6bf8d7301dbff0a80847b4be85f3ceff58",
+    "outputs/ucsd-manuscript-step27-20261029/UCSD_Manuscript_Methods_2_5_EN_ZH.docx": "510bfbff52f030bc5ac27255c3084c13f23b140867ee8c8de54913d5df1bbaa6"
+  }
+}

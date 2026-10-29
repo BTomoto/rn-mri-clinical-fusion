@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第27步已完成Methods 2.5强度归一化与固定特征（M9–M11）。** [中英对照Word](outputs/ucsd-manuscript-step27-20261029/UCSD_Manuscript_Methods_2_5_EN_ZH.docx)包含454个英文词、三组中译及6组可编辑OMML公式，共3页。明确逐图p1/p99不裁切缩放、均值/总体标准差、32箱熵和13方向对称计数先合并后计算GLCM对比度，保留观察后工程修订的事实。
+
+见[第27步报告](reports/ucsd_manuscript_step27_20261029.md)、[段落与核查依据](reports/ucsd_manuscript_step27/methods_section25.json)及[核对回执](reports/ucsd_manuscript_step27/artifact_verification.json)。1456个保存特征及364条处理诊断匹配；已知值小数组核对分箱端点和GLCM计算，未重新提取研究队列特征或拟合模型，未声称完整IBSI基准认证。新增S32为暂定引用4并补全页码328–338，旧候选库保留。已写M1至M11共1707个英文词，下一节为固定模型与患者分组训练（M12–M13），等待用户批准。
+
 **第26步已完成Methods 2.4 MRI输入及标注区域（M7–M8）。** [中英对照Word](outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN_ZH.docx)包含311个英文词、两组对应中译，共2页。说明546份FLAIR/增强T1/掩膜文件的技术QC、uint8及空间单位未知限制，以及已有标准BraTS全部正标签并集ROI，保留全部组件、不改画或新训练分割。
 
 见[第26步报告](reports/ucsd_manuscript_step26_20261029.md)、[段落及依据](reports/ucsd_manuscript_step26/methods_section24.json)和[核对回执](reports/ucsd_manuscript_step26/artifact_verification.json)。546条既有QC与源清单及182条ROI记录复核一致；未重新解码全部像素、提取特征或拟合模型。没有将数值网格一致写成独立解剖配准通过，也未宣称上游标注已设盲。已写M1至M8共1253个英文词，下一节为强度归一化和固定特征定义（M9–M11），等待用户批准。

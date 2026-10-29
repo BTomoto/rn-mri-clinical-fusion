@@ -1,0 +1,375 @@
+{
+  "stage": 27,
+  "date": "2026-10-29",
+  "subsection": "2.5 Intensity normalization and feature definitions",
+  "v2_paragraph_ids": [
+    "M9",
+    "M10",
+    "M11"
+  ],
+  "paragraphs": [
+    {
+      "id": "M9",
+      "citation_ids": [],
+      "english": "Before feature extraction, intensity processing was performed separately for each FLAIR and postcontrast T1-weighted image. We calculated the first and 99th percentiles from finite voxel values strictly greater than zero, using linear percentile interpolation. This support region was determined from the image rather than from the annotation mask. Equation 1 defines the scaled intensity u, with x denoting a supplied voxel value and the percentile symbols denoting the corresponding image-specific reference values. The transformation was applied to all ROI voxels, including voxels whose original intensity was zero. Values below zero or above one after scaling were retained. The unclipped transformation was adopted after a technical pilot showed that percentile clipping merged some higher ROI intensities; it was an engineering amendment made after observing processing diagnostics, without using classification performance to choose the method. Image-specific parameters were calculated without pooling information across patients or examinations. Degenerate percentile ranges were treated as processing failures.",
+      "chinese": "在特征提取之前，分别对每份FLAIR和增强T1加权图像进行强度处理。采用线性分位数插值，从有限且严格大于零的体素值计算第1和第99百分位数。该支持区域由图像本身确定，不由标注掩膜确定。Equation 1定义缩放后强度u，其中x表示所提供的体素值，分位数符号表示对应图像的参考值。变换应用于全部ROI体素，包括原始强度为零的体素。缩放后低于零或高于一的数值均保留。技术试验发现百分位裁切会合并部分较高ROI强度后，采用了不裁切变换；这是观察处理诊断后作出的工程修订，未依据分类性能选择方法。各图像独立计算参数，不跨患者或检查汇总信息。分位数范围退化时按处理失败记录。"
+    },
+    {
+      "id": "M10",
+      "citation_ids": [
+        "S32"
+      ],
+      "english": "Four features were calculated from each sequence, yielding eight MRI inputs: mean, population standard deviation, Shannon entropy and three-dimensional gray-level co-occurrence matrix contrast. Mean and standard deviation used the scaled ROI intensities directly, with the voxel count N as the denominator in Equation 2. Entropy and texture calculations used fixed-bin-number discretization following the Image Biomarker Standardization Initiative (IBSI) framework (4). For each sequence and examination, a and b denoted the minimum and maximum scaled intensities within the full ROI. Equation 3 assigned these values to 32 bins; the minimum entered bin 1 and the maximum entered bin 32. In Equation 4, each bin probability is the fraction of ROI voxels assigned to that bin, and bins with zero probability do not contribute. Entropy was expressed in bits using base-2 logarithms. Constant ROI intensities were treated as processing failures. The feature set and bin count were fixed before batch extraction, without outcome-based feature selection.",
+      "chinese": "每个序列计算四项特征，得到八个MRI输入：均值、总体标准差、Shannon熵和三维灰度共生矩阵对比度。均值和标准差直接由缩放后的ROI强度计算，Equation 2中的分母为体素数N。熵与纹理计算采用基于影像生物标志物标准化倡议（IBSI）框架的固定箱数离散化（4）。对于每个序列和每次检查，a和b分别表示完整ROI内缩放强度的最小值和最大值。Equation 3将这些数值分入32箱，最小值进入第1箱，最大值进入第32箱。Equation 4中的每个箱概率为分配至该箱的ROI体素比例，概率为零的箱不参与求和。熵使用以2为底的对数，以bit表示。ROI强度恒定时按处理失败记录。特征集合与箱数在批量提取前固定，未依据结局筛选特征。"
+    },
+    {
+      "id": "M11",
+      "citation_ids": [
+        "S32"
+      ],
+      "english": "The gray-level co-occurrence matrix (GLCM) was constructed from neighboring voxel pairs contained entirely within the ROI. We used 13 undirected offsets representing the 26 immediate neighbors at a Chebyshev grid distance of one supplied voxel. This distance referred to the file grid and was not interpreted as one millimeter. For each offset in the set D, the directional count matrix C recorded pairs with bin indices i and j. Equation 5 defines the pooled symmetric counts S and the normalized matrix P. Contrast was calculated from this single matrix as shown in Equation 6 (4). We combined counts before calculating the feature, without averaging separate directional contrast values or applying distance weights. Each sequence produced one contrast value. A region with no valid neighboring pairs was recorded as a processing failure. We checked the implementation with small arrays having known results; this did not establish complete IBSI benchmark validation.",
+      "chinese": "灰度共生矩阵（GLCM）由两端均位于ROI内的相邻体素对构建。采用13个无向偏移，代表所提供体素网格中Chebyshev距离为1的26个直接邻居。该距离指文件网格上的距离，不解释为1毫米。对于集合D中的每个偏移，方向计数矩阵C记录箱索引为i与j的体素对。Equation 5定义合并后的对称计数S及归一化矩阵P。对比度由这一矩阵按Equation 6计算（4）。我们先合并计数再计算特征，不对各方向分别计算的对比度求平均，也不使用距离权重。每个序列产生一个对比度值。没有有效相邻体素对的区域按处理失败记录。实现以具有已知结果的小数组进行核查；这不等于完成了全部IBSI基准验证。"
+    }
+  ],
+  "english_word_count": 454,
+  "paragraph_word_counts": {
+    "M9": 152,
+    "M10": 153,
+    "M11": 149
+  },
+  "word_count_scope": "English narrative including in-text citations; excludes equations, headings, reference entry and Chinese translation",
+  "v2_approximate_target_words": 450,
+  "equations": {
+    "count": 6,
+    "format": "native editable OMML",
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "meaning": {
+      "1": "Unclipped per-image scaling",
+      "2": "Mean and population SD",
+      "3": "32-bin discretization within ROI range",
+      "4": "Base-2 histogram entropy",
+      "5": "Symmetric direction-count pooling and normalization",
+      "6": "GLCM contrast"
+    }
+  },
+  "citation_mapping": {
+    "4": "S32"
+  },
+  "cumulative_provisional_citation_mapping": {
+    "1": "S01",
+    "2": "S02",
+    "3": "S03",
+    "4": "S32"
+  },
+  "reference_used": {
+    "id": "S32",
+    "pmid": "32154773",
+    "pmcid": "PMC7193906",
+    "doi": "10.1148/radiol.2020191145",
+    "title_raw": "The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping.",
+    "title": "The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping",
+    "authors": [
+      "Zwanenburg A",
+      "Vallières M",
+      "Abdalah MA",
+      "Aerts HJWL",
+      "Andrearczyk V",
+      "Apte A",
+      "Ashrafinia S",
+      "Bakas S",
+      "Beukinga RJ",
+      "Boellaard R",
+      "Bogowicz M",
+      "Boldrini L",
+      "Buvat I",
+      "Cook GJR",
+      "Davatzikos C",
+      "Depeursinge A",
+      "Desseroit MC",
+      "Dinapoli N",
+      "Dinh CV",
+      "Echegaray S",
+      "El Naqa I",
+      "Fedorov AY",
+      "Gatta R",
+      "Gillies RJ",
+      "Goh V",
+      "Götz M",
+      "Guckenberger M",
+      "Ha SM",
+      "Hatt M",
+      "Isensee F",
+      "Lambin P",
+      "Leger S",
+      "Leijenaar RTH",
+      "Lenkowicz J",
+      "Lippert F",
+      "Losnegård A",
+      "Maier-Hein KH",
+      "Morin O",
+      "Müller H",
+      "Napel S",
+      "Nioche C",
+      "Orlhac F",
+      "Pati S",
+      "Pfaehler EAG",
+      "Rahmim A",
+      "Rao AUK",
+      "Scherer J",
+      "Siddique MM",
+      "Sijtsema NM",
+      "Socarras Fernandez J",
+      "Spezi E",
+      "Steenbakkers RJHM",
+      "Tanadini-Lang S",
+      "Thorwarth D",
+      "Troost EGC",
+      "Upadhaya T",
+      "Valentini V",
+      "van Dijk LV",
+      "van Griethuysen J",
+      "van Velden FHP",
+      "Whybra P",
+      "Richter C",
+      "Löck S"
+    ],
+    "first_author": "Zwanenburg A",
+    "journal": "Radiology",
+    "publication_year": 2020,
+    "electronic_dates": [
+      "2020-03-10"
+    ],
+    "eligibility_year": 2020,
+    "volume": "295",
+    "issue": "2",
+    "pages_or_article": "328-338",
+    "language": "English",
+    "english_flag": 1,
+    "recent_5yr": 0,
+    "recent_3yr": 0,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/32154773/",
+    "doi_url": "https://doi.org/10.1148/radiol.2020191145",
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "support": "Provides standardized handcrafted feature definitions and benchmark values.",
+    "limitation": "Older methodological reference; our hand-checked calculations are not complete IBSI certification.",
+    "role": "Feature definitions",
+    "outline_locations": "M10-M11, D9",
+    "read_level": "Abstract screened; full text needed before detailed comparison",
+    "in_current_section": 0,
+    "pubmed_record_sha256": "890dfeb4327cd87eebdc389a5ee834dc72b544300d6821d14ca495d26c1fe912",
+    "doi_verification": "PubMed and Crossref",
+    "crossref_title_similarity": 1.0,
+    "citation": "Zwanenburg A, Vallières M, Abdalah MA, Aerts HJWL, Andrearczyk V, Apte A, et al. The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping. Radiology. 2020;295(2):328-338. doi: 10.1148/radiol.2020191145.",
+    "current_review_level": "Official IBSI processing and feature specification sections reviewed; primary publication metadata rechecked",
+    "metadata_correction": "Complete pagination 328-338 checked against PubMed; prior candidate pool retained unchanged",
+    "specification_sources": [
+      "https://ibsi.readthedocs.io/en/latest/02_Image_processing.html#fixed-bin-number",
+      "https://ibsi.readthedocs.io/en/latest/03_Image_features.html#grey-level-co-occurrence-matrix"
+    ]
+  },
+  "citation_numbering": "New source 4 follows existing 1-3; regenerate globally when Introduction is assembled",
+  "source_audit": {
+    "frozen_file_sha256": {
+      "data/processed/ucsd_clinical_revalidated_cohort.csv": "a57c9ee9c27cc261045a006675957482bd0bcfec9a9ce36735cd5abca5487006",
+      "data/processed/ucsd_clinical_image_features.csv": "d9e7041bc4d6d99fb53fd6057aae00ad958308968bf9ac38c0cb91995cb3b757",
+      "data/processed/ucsd_fusion_oof.csv": "a50d076eff8a49f1f97cbf2e32150a307757f1775bb9e3d99fcb7911b23a178d",
+      "reports/ucsd_fusion/metrics.json": "2cd0e75d4647644133827a4a521b8f286a994f8b6ddd7569aed8927db661d2ac",
+      "reports/ucsd_fusion/calibration_bins.csv": "bb339ad9b2597a1822cca67565133c08be5efd8f08e30bd493bc9bdc018e8a75",
+      "reports/ucsd_fusion/paired_comparisons.csv": "34426e0eea12e85559d69ad0d6ac97e77f8ab5db8206846e1fc42aa896126e8a",
+      "reports/ucsd_stability/metrics.json": "c536aa22d36fe2f658dde0ad5ad685a09411fe68c69953d9675fdb763f40f502",
+      "reports/ucsd_stability/repeated_metrics.csv": "22d5c081bc550e22baf903ab508b3bee0bf6f7fe392f0b040d591243c1d05ce5",
+      "reports/ucsd_stability/repeated_metric_distribution.csv": "e4937ad6202c69d9c7f342e7d710c39b3da89679e5a79e9406439e3dcad9a15b",
+      "reports/ucsd_stability/repeated_delta_distribution.csv": "73aeab62b42e76503cf578e862a5e3b592ed35e0c53d55065a0b2fc349b4ba91",
+      "reports/ucsd_stability/single_scan_metrics.csv": "dfacdf34d691a260b00c0fe4896ee2e6c921fa8acf953a3abf7b6e42f7e76357",
+      "reports/ucsd_batch_features/feature_dictionary.csv": "ed4f760acd7458e13362dbe8fd31d06c852d37db4708951d81e15b98b2429401",
+      "data/raw/reference/ucsd_ptgbm_clinical_v3.xlsx": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+      "reports/ucsd_clinical_revalidation/excluded_identity_conflicts.csv": "6eb454c93a4776ac334007bc4961bf46dc984148c935bc34569c1baa3b01f0ae",
+      "outputs/ucsd-paper-materials-20261029/tables/Table2.csv": "87b1c491f98965ea1049579f85afba1cba48e63912a0db503a4a9d37ab0ccaaa",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS2.csv": "c426fdaf40a6e1d6bc224d656461cf04d155608113926a5ee4c988468c7ce8b6",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS4.csv": "fe867cebfef2d7cf6eb26f7221f391a1e64672d13c60de375e1513b420e8c55d",
+      "outputs/ucsd-paper-materials-20261029/tables/Table1.csv": "8756d1457f4f2165cefeed9f3f5e861934b8b2e8ed8b8144810fe41ff01fb54f",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS6.csv": "149c088ea0a00911265c52b1f838045e3d326c661e1c022a9820923ea305ae0a",
+      "outputs/ucsd-paper-materials-20261029/tables/Table3.csv": "f27726581b9eb768203fd608d269943e8cd9f4bb4aff9da7b04f4d67a5aa0c1b",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS5B.csv": "ffe83df867f287aa7089ef0347aed452e5c3fa0abb0ddf016f115c26ab085a91",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS7.csv": "b0d90fa3635911584b38cad9aa9230fb23281441b9b9b934fbc34757e57f7bb0",
+      "outputs/ucsd-paper-materials-20261029/tables/baseline_numeric_details.csv": "438600e9adbc801c43cd4be883a719268b5816279db0049c74130c39ed6f6b46",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS5A.csv": "0ba5acec599be8ff2ad905340894643022a0cd1450fd5b359578a1a48ddfae01",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS1.csv": "a6f7a40398a160f53bc8ba55cb9b8a56e65140080c839b78e8020134902f2369",
+      "outputs/ucsd-paper-materials-20261029/tables/TableS3.csv": "09e739186144f5f1a44ca3a35a89603f5154837b2755ea2e19b31c3c3cf4faea",
+      "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.pdf": "8d194c10d9f06fcae135f237d19a7b6e299fafe3d1ccb43cb6a5c6f03b40fc1a",
+      "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.pdf": "f7f4d73ee0332a9726df3d1c5e2ee2098d5aa5328624bfdfbcb26d0f3853e822",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.png": "c0653b915db7ca522b15f94e920accca79d78b63841f6b84634b3d7170ea9c0d",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.pdf": "e4866c730bf0d130cd5a4e14d7b8c719697217a3d34bba05b4006b569ea3ec46",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.svg": "3450194852ffa1eb836ae02e840eb18588278f56e73c5d2aa289b494537dd442",
+      "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.png": "b0f191c7123c543e048b0202d94f32aa38cd59dc539aa536d0d5cd1db485416c",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.svg": "0376467c7559781b30f7df95dcca95a4058fba74f3f8c1892958e04352716abd",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.png": "defd01a050fa66a4490e23aa3dde3696f38caa46fff4056bd02ac1ca957bb5dd",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.pdf": "26477dfd9685a687a35c03ec2e609cec3e5bb591c8cb12e3943d2ab4a52c8c76",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.png": "f963c084ebc75d93d6cd09851f7b23943cb8e5f64f2a40d9518bf86a64a0c6fd",
+      "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.svg": "0c90290cc3bf9ed6474e2b370dd383545683fcbe6b68e0c05658a0c33885af36",
+      "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.png": "a6150303de742144942c485a5d1d4a820f3399ae17ee41a307150709937d081d",
+      "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.svg": "adaad873aa229c31f8300e50066b95ae8c1442e4efc6f25d77bfc84b5fb46772",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.pdf": "4019c556d58a12d772cd186eb236c1204e18b4296588a3fee33089a80b0507a1",
+      "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.svg": "1269f790be6bd9e5b5cfc4fe5ba9a95d18f74485d1356b1c12b12fd1364a34dc",
+      "outputs/ucsd-manuscript-step23-20261029/UCSD_Candidate_References.ris": "c880ba8adb208a120fab1565f7d846e79aea863c86517841d6af5c707a4a1ab1",
+      "outputs/ucsd-manuscript-step23-20261029/UCSD_Candidate_References.txt": "4f116bbae286b57c70e770d4e52f06b0bf08f66305a7b6a992ae2aac986bee35",
+      "outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN.txt": "251b66876fcb2d626eed4a7a93b7ab83c60585a54a6a97b6a6fd461deba90d4a",
+      "outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN_ZH.docx": "fd1666efde9eec2f2ea8efe43e244187101cf8dd26d723e5346c8c5653d29db8",
+      "outputs/ucsd-manuscript-step23-20261029/UCSD_Reference_Evidence_Library.xlsx": "35a7e23aef16ec1161d484ec04bf82b38f5b191c905e1c22b8f86a38797e6235",
+      "reports/ucsd_writing_requirements_v2/requirements_and_outline.json": "8055a718f327a3e18243f25d5d6c6a524c8d04b3ad533207d5531efba17d7071",
+      "reports/ucsd_manuscript_step23/reference_library.json": "fc83b8dab91de32e75374b378be3c606fd458209d64fdf28f7b82ff699dcbbf3",
+      "reports/ucsd_manuscript_step23/methods_section21.json": "734954ffe49046d4c367ec202eac2c26cf8622322aacbc3dab59893ff1464dde",
+      "outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN_ZH.docx": "2887f60c47245db525b886e899175a6132e4832292d08c73a317647baa89aa96",
+      "outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN.txt": "ac0e888408b9d74c21b01048870c8d1f6a7afed5e94be339b7b4e5b1aaa018d0",
+      "src/rn_public/ucsd_clinical_revalidation.py": "050a4aaf0e9602b7c9d79e0132301e415b5390a02a9151e084a416ace6db0413",
+      "src/rn_public/ucsd_fusion.py": "78f835bfe655d5445187f22bb606b477893c96444ad5eb2fbda1301b3afeef2a",
+      "reports/ucsd_fusion/fold_audit.json": "8e7893716ddb9fb840cfceadbe1c7d872bab1495e1a805102e8c7a3260f7cec4",
+      "reports/ucsd_fusion/cohort_and_fold_manifest.csv": "1614cb85aa55914a33a86fd28cdb5b9bab15e17b732ee1d1914917a87e061fcc",
+      "reports/ucsd_feature_audit/clinical_field_audit.csv": "d19c57a509f23fa94a2c9884372ab58291f26f07794520f6840973989f6d0a8d",
+      "reports/ucsd_clinical_revalidation_protocol.md": "7604aaa63d8007dd5562c3b8ee5b9fc5188b7313e395ab13e64b2e13fbee5554",
+      "outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN.txt": "2c1dec5430daeb1292ce3eb17f5674197bd510fac66ba808d8c94fcd79d1af94",
+      "outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN_ZH.docx": "1686763a05d0c06272a96117892a09ca5bfba21499a644c41e3ef7311f9bbd96",
+      "reports/ucsd_batch_features/batch_receipt.json": "03f46387ba452b283a093444c20c798864f2c67905d0fb6049e78f5020bf67fe",
+      "reports/ucsd_batch_features/actual_file_QC.csv": "f4c52701950886256d52d5d22db3a38c8855bc8b350fef8d0796566a575ef5ce",
+      "reports/ucsd_batch_features/source_manifest.csv": "ab5e39540e033b81c3e38c4e37ff6ff91efe0cbc7b27054f4081e9126b20908c",
+      "reports/ucsd_batch_features_protocol.md": "97295726f97902b3f21480d825534b0b224d2ef905f6cb0e5dfb283490919109",
+      "reports/ucsd_roi_pilot_protocol.md": "b76ff2ff93676d6ea80445068b127c1c2f4cce3e191d9dc4729ab373f531ec91",
+      "src/rn_public/ucsd_batch_features.py": "5bd243d1f22e7e555d9e3b3689729bd88c3da7d5d2a77f712dcf89238aa94a96",
+      "src/rn_public/ucsd_roi_pilot.py": "291268b9aa038b02912d199178bb06e24f105268db95a8850e011d01a43bd6f0",
+      "reports/ucsd_mri_mirror/observed_header_notes.md": "b69beffaf90798ad306f4c94163efe1694998215fc818dfd420ec776280ac943",
+      "outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN.txt": "f486cbd9b3ad68fd66a83d3c671d4a1880e72deb8181cbc07d0cc7742edf1864",
+      "outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN_ZH.docx": "2a1866a83ee9a69633cf1a20ccc689ef9104174c6012b5c82487bf3c8c3b2ce5",
+      "reports/ucsd_roi_pilot/normalization_choice.json": "ccd05f2434d6ecad762b579ba0adb735083d0efbd7bdd1a1ae8b5656e8e6d683",
+      "reports/ucsd_roi_pilot_intensity_amendment.md": "f6917cdfac7ab2bd50cbb0eb3fbe0c5bd096808f284595d0099a4f3503246a60",
+      "reports/ucsd_batch_features/normalization_and_texture_diagnostics.csv": "ac173a725a82f0dc840c5ff8003a91c379fa1fb8c0ca86b31ebb72fccd326e49",
+      "src/rn_public/ucsd_intensity_followup.py": "670290f35c2e5b79dc1de254b21fd0cc4a200b935ae0d2eb7779c3e3bf1b5774"
+    },
+    "saved_feature_values_checked": 1456,
+    "sequence_diagnostic_records_checked": 364,
+    "MRI_feature_names": [
+      "FLAIR_mean",
+      "FLAIR_std",
+      "FLAIR_entropy",
+      "FLAIR_glcm_contrast",
+      "T1post_mean",
+      "T1post_std",
+      "T1post_entropy",
+      "T1post_glcm_contrast"
+    ],
+    "post_observation_engineering_amendment_disclosed": true,
+    "offsets": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "hand_array_verification": {
+      "scaled_tail_values": [
+        -0.3333333333333333,
+        0.0,
+        1.0,
+        1.3333333333333333
+      ],
+      "bin_indices": [
+        1,
+        9,
+        17,
+        25,
+        32
+      ],
+      "checkerboard_features": {
+        "mean": 0.5,
+        "std": 0.5,
+        "entropy": 1.0,
+        "glcm_contrast": 549.1428571428571
+      },
+      "independent_expected": {
+        "mean": 0.5,
+        "std": 0.5,
+        "entropy": 1.0,
+        "glcm_contrast": 549.1428571428571
+      },
+      "symmetric_pair_count": 56
+    },
+    "full_IBSI_benchmark_validation_claimed": false,
+    "study_pixels_redecoded": 0,
+    "models_refitted": 0
+  },
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Fixed logistic models and patient-grouped training (M12-M13)",
+  "docx": "outputs/ucsd-manuscript-step27-20261029/UCSD_Manuscript_Methods_2_5_EN_ZH.docx",
+  "docx_sha256": "510bfbff52f030bc5ac27255c3084c13f23b140867ee8c8de54913d5df1bbaa6"
+}
