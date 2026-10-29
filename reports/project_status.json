@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage39 Results 3.7 split stability drafted; 20 fixed repetitions, saved folds, OOF metrics and descriptive summaries verified, editable Tables S5A/S5B and unchanged Figure 3 attached",
+  "scope": "Stage40 Results 3.8 single-scan sensitivity drafted; all R1-R8 complete, fixed selection/OOF metrics/paired intervals verified, editable Tables S6/S7 and unchanged Figure S2 attached",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Results 3.8 single-scan sensitivity (R8)",
+  "next_work_item": "Await user approval for Discussion 4.1 principal findings (D1)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 39,
-    "subsection": "3.7 Split stability",
+    "stage": 40,
+    "subsection": "3.8 Single-scan sensitivity",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -436,10 +436,11 @@
       "R4",
       "R5",
       "R6",
-      "R7"
+      "R7",
+      "R8"
     ],
-    "english_word_count": 4393,
-    "chinese_paragraphs": 27,
+    "english_word_count": 4577,
+    "chinese_paragraphs": 28,
     "current_section_citations": 0,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
@@ -468,24 +469,29 @@
       "3.4 Paired incremental comparison",
       "3.5 Calibration and errors",
       "3.6 Boundary sensitivity",
-      "3.7 Split stability"
+      "3.7 Split stability",
+      "3.8 Single-scan sensitivity"
     ],
-    "latest_section_english_word_count": 172,
+    "latest_section_english_word_count": 184,
     "latest_section_word_pages": 4,
     "unique_citations_in_drafted_sections": 5,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 167,
-      "repetitions_checked": 20,
-      "repeated_prediction_rows_checked": 3640,
-      "folds_checked": 100,
-      "saved_successful_fold_model_records_checked": 400,
-      "fixed_oof_metric_values_reconstructed": 320,
-      "within_repetition_metric_differences_checked": 80,
-      "table_s5a_numeric_values_checked": 24,
-      "table_s5b_numeric_values_checked": 28,
-      "first_repetition_main_oof_values_checked": 728,
+      "prior_files_unchanged": 171,
+      "selection_ledger_rows_checked": 182,
+      "selected_examinations_checked": 135,
+      "selected_patients": 135,
+      "tumor_examinations": 113,
+      "treatment_change_examinations": 22,
+      "folds_checked": 5,
+      "saved_successful_fold_model_records_checked": 20,
+      "fixed_oof_metric_and_count_values_reconstructed": 48,
+      "table_s6_numeric_values_checked": 28,
+      "table_s7_numeric_values_checked": 12,
+      "bootstrap_paired_difference_values_checked": 8000,
+      "bootstrap_interval_endpoints_checked": 40,
+      "calibration_diagnostics_refitted": 0,
       "editable_english_tables": 2,
       "unchanged_figure_embedded": true,
       "figure_page_landscape": true,
@@ -493,7 +499,7 @@
     },
     "methods_v2_paragraphs_complete": true,
     "methods_english_word_count": 3131,
-    "results_english_word_count": 1262,
+    "results_english_word_count": 1446,
     "editable_english_tables_completed": [
       "Table 1",
       "Table S1",
@@ -502,8 +508,11 @@
       "Table S3",
       "Table S4",
       "Table S5A",
-      "Table S5B"
-    ]
+      "Table S5B",
+      "Table S6",
+      "Table S7"
+    ],
+    "results_v2_paragraphs_complete": true
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
   "ucsd_manuscript_step25_report": "reports/ucsd_manuscript_step25_20261029.md",
@@ -520,5 +529,6 @@
   "ucsd_manuscript_step36_report": "reports/ucsd_manuscript_step36_20261029.md",
   "ucsd_manuscript_step37_report": "reports/ucsd_manuscript_step37_20261029.md",
   "ucsd_manuscript_step38_report": "reports/ucsd_manuscript_step38_20261029.md",
-  "ucsd_manuscript_step39_report": "reports/ucsd_manuscript_step39_20261029.md"
+  "ucsd_manuscript_step39_report": "reports/ucsd_manuscript_step39_20261029.md",
+  "ucsd_manuscript_step40_report": "reports/ucsd_manuscript_step40_20261029.md"
 }

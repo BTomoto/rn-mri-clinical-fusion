@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "stage": 40,
+  "date": "2026-10-29",
+  "subsection": "3.8 Single-scan sensitivity",
+  "paragraph_ids": [
+    "R8"
+  ],
+  "english_word_count": 184,
+  "paragraph_word_counts": {
+    "R8": 184
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 4,
+  "visual_review_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 171,
+  "selection_ledger_rows_checked": 182,
+  "selected_examinations_checked": 135,
+  "selected_patients": 135,
+  "tumor_examinations": 113,
+  "treatment_change_examinations": 22,
+  "folds_checked": 5,
+  "saved_successful_fold_model_records_checked": 20,
+  "fixed_oof_metric_and_count_values_reconstructed": 48,
+  "table_s6_numeric_values_checked": 28,
+  "table_s7_numeric_values_checked": 12,
+  "bootstrap_paired_difference_values_checked": 8000,
+  "bootstrap_interval_endpoints_checked": 40,
+  "calibration_diagnostics_refitted": 0,
+  "editable_english_tables": 2,
+  "table_numeric_values_changed": 0,
+  "paired_intervals_include_zero_disclosed": true,
+  "unchanged_figure_embedded": true,
+  "figure_page_landscape": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "results_v2_paragraphs_complete": true,
+  "completed_results_subsections": 8,
+  "completed_results_english_word_count": 1446,
+  "next_section": "Discussion 4.1 Principal findings (D1)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step40-20261029/TableS7_EN.csv": "6c1fa521147ea85ede6b6803ae69e7adcd4eb8d2285e31e26b9fe10d9c3e696b",
+    "outputs/ucsd-manuscript-step40-20261029/UCSD_Manuscript_Results_3_8_EN.txt": "87c0abcf929db99fd254133b922191135f06ea6371a8374eee900d86168aefc0",
+    "outputs/ucsd-manuscript-step40-20261029/TableS6_EN.csv": "27e609fc678b3d0df6230a4963a2c5bc83e0a2db2ee8da163605b926e5e77e13",
+    "outputs/ucsd-manuscript-step40-20261029/UCSD_Manuscript_Results_3_8_EN_ZH.docx": "27cdccd3bc589cc391ec0415ae4d5a4b2a8913584f6f90abad1fd27525e1fe5d"
+  }
+}

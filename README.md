@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第40步已完成Results 3.8每患者单扫描敏感性（R8），结果部分八段已写齐。** [中英对照Word](outputs/ucsd-manuscript-step40-20261029/UCSD_Manuscript_Results_3_8_EN_ZH.docx)包含184个英文词、一组中译、可编辑英文Tables S6/S7及未改绘Figure S2，共4页。135条检查中113肿瘤/22治疗改变；Fusion AUC 0.730，增量0.120［−0.015，0.252］跨零，治疗改变仅识别2/22。
+
+见[第40步报告](reports/ucsd_manuscript_step40_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step40/results_section38.json)及[核对回执](reports/ucsd_manuscript_step40/artifact_verification.json)。选择清单、5折/20个保存模型、48个固定OOF指标/计数、两表40值、8000个配对差及40个端点一致；171份既有文件未变，无重训。R1–R8共1446英文词，连同方法共4577词；全文尚未完成。下一节为Discussion 4.1主要发现（D1），等待用户批准。
+
 **第39步已完成Results 3.7分折稳定性（R7）。** [中英对照Word](outputs/ucsd-manuscript-step39-20261029/UCSD_Manuscript_Results_3_7_EN_ZH.docx)包含172个英文词、一组中译、可编辑英文Tables S5A/S5B及未改绘Figure 3，共4页。20套全部完整，Fusion AUC中位数0.784、范围0.759–0.809；套内Fusion−M1 AUC差中位数0.125，20套均为正。重复范围不是置信区间，原主AUC 0.782不变。
 
 见[第39步报告](reports/ucsd_manuscript_step39_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step39/results_section37.json)及[核对回执](reports/ucsd_manuscript_step39/artifact_verification.json)。100折/400个保存模型记录、320个固定OOF指标、80个套内差及两表52个数值一致，第一套728个预测与主分析相符；167份既有文件未变，无重训或择优。已写M1–M20及R1–R7，共4393个英文词，下一节为3.8单扫描敏感性（R8），等待用户批准。
