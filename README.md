@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第25步已完成Methods 2.3临床变量与缺失数据（M5–M6）。** [中英对照Word](outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN_ZH.docx)包含318个英文词及两组对应中译，共2页。交代年龄、出生性别、初始事件间隔及其他扫描前治疗，另设间隔缺失指示；严格负偏移转换、对数变换及训练折内中位数填补和标准化与冻结实现一致。
+
+见[第25步报告](reports/ucsd_manuscript_step25_20261029.md)、[段落及来源核查](reports/ucsd_manuscript_step25/methods_section23.json)和[核对回执](reports/ucsd_manuscript_step25/artifact_verification.json)。182条临床输入逐行比对原工作簿；36条间隔缺失（35条Unknown、1条零偏移），15个年龄缩放及10个间隔处理记录核验通过。没有重新训练模型或改动既有分析结果；已写M1至M6共942个英文词。下一节为MRI输入与标注区域（M7–M8），等待用户批准。
+
 **第24步已完成Methods 2.2诊断参考标准（M4）。** [中英对照Word](outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN_ZH.docx)包含175个英文词、对应中文译文及沿用编号1的参考文献，共1页。说明51条明确治疗改变标签、192条补集推导肿瘤标签、混合病理与临床参考，以及亚型计数的来源差异。
 
 见[第24步报告](reports/ucsd_manuscript_step24_20261029.md)、[段落与来源核查](reports/ucsd_manuscript_step24/methods_section22.json)及[核对回执](reports/ucsd_manuscript_step24/artifact_verification.json)。源243、临床238及影像182行共663条标签映射复核，49个此前文件校验值保持一致；663是三个嵌套表的检查记录数。未将源总体45次病理证实数量套用于影像子集，未重新判定标签或拟合模型。已写M1至M4共624个英文词，下一节为临床变量定义（M5–M6），等待用户批准。

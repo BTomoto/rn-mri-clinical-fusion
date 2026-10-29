@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "stage": 25,
+  "date": "2026-10-29",
+  "subsection": "2.3 Clinical predictors and missing data",
+  "paragraph_ids": [
+    "M5",
+    "M6"
+  ],
+  "english_word_count": 318,
+  "paragraph_word_counts": {
+    "M5": 153,
+    "M6": 165
+  },
+  "matched_chinese_paragraphs": 2,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "current_section_citations": 1,
+  "existing_citation_number_1_preserved": true,
+  "prior_files_unchanged": 57,
+  "clinical_records_checked": 182,
+  "missing_intervals_verified": 36,
+  "training_age_scalers_checked": 15,
+  "training_interval_pipelines_checked": 10,
+  "all_saved_preprocessing_parameters_match": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "MRI inputs and annotation region (M7-M8)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN.txt": "2c1dec5430daeb1292ce3eb17f5674197bd510fac66ba808d8c94fcd79d1af94",
+    "outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN_ZH.docx": "1686763a05d0c06272a96117892a09ca5bfba21499a644c41e3ef7311f9bbd96"
+  }
+}
