@@ -2,6 +2,14 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第20步已完成投稿表图资料，正文尚未开始。** [Word表格包](outputs/ucsd-paper-materials-20261029/UCSD_Paper_Tables.docx)共7页、11张可编辑表；[Excel数值表](outputs/ucsd-paper-materials-20261029/UCSD_Paper_Numeric_Tables.xlsx)共13页；[5幅图](outputs/ucsd-paper-materials-20261029/figures/)均提供600 dpi PNG和矢量PDF/SVG；[逐表CSV](outputs/ucsd-paper-materials-20261029/tables/)及[Notebook20](notebooks/20_ucsd_paper_tables_and_figures.ipynb)保留数值来源。没有重新拟合模型、增加检验、改变主结果或隐藏单扫描不利结果。
+
+见[第20步交付报告](reports/ucsd_paper_materials_step20_20261029.md)、[本轮范围](reports/ucsd_paper_materials_scope.md)及[核对回执](reports/ucsd_paper_materials/artifact_verification.json)。基线60行统计量及Excel125行数据通过核对，Word7页/Excel13页/5图视觉检查完成；Notebook执行5单元、0错误。下一步将进入论文正文写作，按用户要求等待新的写作指示，未自行决定期刊、语言或开始正文。
+
+```bash
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_20.json notebooks/20_ucsd_paper_tables_and_figures.ipynb
+```
+
 **第19步已完成20套固定患者分组验证及每患者单扫描敏感性。** 全部20套完整，420个折内模型无失败。182条人群中Fusion AUC中位数0.7840、范围0.7589–0.8092，相对M1的AUC差20套均为正（中位数0.1248）。这些是同一批患者的分折描述，不是独立研究或95%区间，不选择最高值替代第18步主AUC。
 
 每患者最小可用会话选出135条（113肿瘤、22治疗改变），Fusion AUC=0.7297（患者bootstrap 95%区间0.6060–0.8326），Fusion−M1 AUC差0.1203（−0.0151至0.2522）跨零；固定阈值仅识别2/22次治疗改变，单扫描增量仍不确定。该人群与182条主分析不同，不能将AUC差异直接归因于重复扫描。

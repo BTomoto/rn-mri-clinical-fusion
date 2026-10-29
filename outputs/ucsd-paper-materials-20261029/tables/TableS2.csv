@@ -1,0 +1,14 @@
+变量,含义,纳入模型,处理与单位
+age_years,年龄,M0 M1 Fusion,训练折标准化；岁
+sex_male,男性标记,M0 M1 Fusion,男性1，女性0；不缩放
+log_initial_event_days,初始事件间隔,M1 Fusion,log1p天数；折内中位数填补及标准化
+other_treatment_prior,扫描前其他治疗,M1 Fusion,是1，否0；不缩放
+initial_event_missing,间隔缺失标记,M1 Fusion,缺失1；不缩放
+FLAIR_mean,FLAIR 均值,MRI Fusion,无单位；训练折标准化
+FLAIR_std,FLAIR 标准差,MRI Fusion,无单位，ddof=0；训练折标准化
+FLAIR_entropy,FLAIR 熵,MRI Fusion,bit，固定32箱；训练折标准化
+FLAIR_glcm_contrast,FLAIR GLCM对比度,MRI Fusion,箱索引差平方，13方向对称合并；训练折标准化
+T1post_mean,T1post 均值,MRI Fusion,无单位；训练折标准化
+T1post_std,T1post 标准差,MRI Fusion,无单位，ddof=0；训练折标准化
+T1post_entropy,T1post 熵,MRI Fusion,bit，固定32箱；训练折标准化
+T1post_glcm_contrast,T1post GLCM对比度,MRI Fusion,箱索引差平方，13方向对称合并；训练折标准化

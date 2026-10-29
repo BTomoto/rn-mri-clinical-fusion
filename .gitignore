@@ -79,3 +79,7 @@ node_modules/
 /reports/ucsd_stability_workbook_input.json
 /outputs/ucsd-stability-20261029/preview_*.png
 /outputs/ucsd-stability-20261029/*.inspect.ndjson
+
+/outputs/ucsd-paper-materials-20261029/preview_*.png
+/outputs/ucsd-paper-materials-20261029/*.inspect.ndjson
+/outputs/ucsd-paper-materials-20261029/docx_render/

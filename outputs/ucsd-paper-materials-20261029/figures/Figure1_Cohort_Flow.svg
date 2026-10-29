@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="504pt" viewBox="0 0 576 504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-29T02:05:02.897091</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 504
+L 576 504
+L 576 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 156.816 117.52776
+L 433.584 117.52776
+Q 436.7088 117.52776 436.7088 114.8112
+L 436.7088 76.0032
+Q 436.7088 73.28664 433.584 73.28664
+L 156.816 73.28664
+Q 153.6912 73.28664 153.6912 76.0032
+L 153.6912 114.8112
+Q 153.6912 117.52776 156.816 117.52776
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 366.624 179.62056
+L 505.008 179.62056
+Q 508.1328 179.62056 508.1328 176.904
+L 508.1328 141.9768
+Q 508.1328 139.26024 505.008 139.26024
+L 366.624 139.26024
+Q 363.4992 139.26024 363.4992 141.9768
+L 363.4992 176.904
+Q 363.4992 179.62056 366.624 179.62056
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 319.453247 115.32271
+Q 368.855755 128.393935 417.285506 141.207782
+" clip-path="url(#p42fad34f2a)" style="fill: none; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 413.594603 137.955516
+L 417.285506 141.207782
+L 412.469152 142.209144
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #687b89; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 94.32 187.38216
+L 335.376 187.38216
+Q 338.5008 187.38216 338.5008 184.6656
+L 338.5008 141.9768
+Q 338.5008 139.26024 335.376 139.26024
+L 94.32 139.26024
+Q 91.1952 139.26024 91.1952 141.9768
+L 91.1952 184.6656
+Q 91.1952 187.38216 94.32 187.38216
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 231.607617 116.479205
+Q 223.77712 128.392296 216.499315 139.464537
+" clip-path="url(#p42fad34f2a)" style="fill: none; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 220.754524 136.996097
+L 216.499315 139.464537
+L 217.077689 134.579306
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #687b89; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 371.088 257.23656
+L 505.008 257.23656
+Q 508.1328 257.23656 508.1328 254.52
+L 508.1328 215.712
+Q 508.1328 212.99544 505.008 212.99544
+L 371.088 212.99544
+Q 367.9632 212.99544 367.9632 215.712
+L 367.9632 254.52
+Q 367.9632 257.23656 371.088 257.23656
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 288.221458 185.117539
+Q 353.234107 200.189288 417.266521 215.033792
+" clip-path="url(#p42fad34f2a)" style="fill: none; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 413.477041 211.89694
+L 417.266521 215.033792
+L 412.483351 216.183265
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #687b89; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 94.32 268.87896
+L 335.376 268.87896
+Q 338.5008 268.87896 338.5008 266.1624
+L 338.5008 215.712
+Q 338.5008 212.99544 335.376 212.99544
+L 94.32 212.99544
+Q 91.1952 212.99544 91.1952 215.712
+L 91.1952 266.1624
+Q 91.1952 268.87896 94.32 268.87896
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 214.848 186.662848
+Q 214.848 200.185668 214.848 212.702257
+" clip-path="url(#p42fad34f2a)" style="fill: none; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 217.048 208.302257
+L 214.848 212.702257
+L 212.648 208.302257
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #687b89; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 94.32 354.25656
+L 335.376 354.25656
+Q 338.5008 354.25656 338.5008 351.54
+L 338.5008 301.0896
+Q 338.5008 298.37304 335.376 298.37304
+L 94.32 298.37304
+Q 91.1952 298.37304 91.1952 301.0896
+L 91.1952 351.54
+Q 91.1952 354.25656 94.32 354.25656
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 214.848 268.162016
+Q 214.848 283.626967 214.848 298.085688
+" clip-path="url(#p42fad34f2a)" style="fill: none; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 217.048 293.685688
+L 214.848 298.085688
+L 212.648 293.685688
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #687b89; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 362.16 358.13736
+L 505.008 358.13736
+Q 508.1328 358.13736 508.1328 355.4208
+L 508.1328 297.2088
+Q 508.1328 294.49224 505.008 294.49224
+L 362.16 294.49224
+Q 359.0352 294.49224 359.0352 297.2088
+L 359.0352 355.4208
+Q 359.0352 358.13736 362.16 358.13736
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #f3f5f7; stroke: #687b89; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 337.183233 251.496178
+Q 384.478977 273.923515 430.865531 295.91972
+" clip-path="url(#p42fad34f2a)" style="fill: none; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 427.832485 292.046655
+L 430.865531 295.91972
+L 425.947252 296.022317
+z
+" clip-path="url(#p42fad34f2a)" style="fill: #687b89; stroke: #687b89; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(217.009375 92.553919)">Public UCSD-PTGBM clinical records</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(233.122656 102.919856)">243 scans / 178 source patients</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(381.38475 156.557119)">Dual-ID conflicts excluded</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(383.738656 166.983056)">5 scans / 2 source patients</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(160.96675 160.461356)">Revalidated clinical cohort</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(152.770656 170.840419)">238 scans / 176 source patients</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(393.198 232.223344)">Not covered by mirror</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(372.0855 242.658656)">56 scans retained in status ledger</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(158.326906 232.866263)">Complete three-file MRI set</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(152.770656 243.2922)">182 scans / 135 source patients</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(149.717531 253.658138)">141 tumor / 41 treatment change</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(129.723 318.273863)">Primary patient-grouped five-fold analysis</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(157.076906 328.649175)">182 scans; four fixed models</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(151.937062 339.015112)">20 prespecified split repetitions</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(388.443375 318.239175)">Single-scan sensitivity</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(385.807437 328.674488)">135 scans / 135 patients</text>
+    <text style="font-size: 10px; font-family: 'Nimbus Roman'" transform="translate(368.453531 339.040425)">113 tumor / 22 treatment change</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman'" transform="translate(170.208984 407.179828)">Single-scan rule: lowest numeric session in the available MRI subset.</text>
+    <text style="font-size: 9px; font-family: 'Nimbus Roman'" transform="translate(164.081953 416.517609)">This does not establish the true first clinical visit. No external validation.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p42fad34f2a">
+   <rect x="72" y="60.48" width="446.4" height="388.08"/>
+  </clipPath>
+ </defs>
+</svg>

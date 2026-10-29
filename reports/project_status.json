@@ -1,13 +1,13 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage19 fixed-model split stability and single-scan sensitivity complete; 20 repeats, 420 fold models; single-scan increment uncertain; prior primary analysis retained",
+  "scope": "Stage20 editable publication tables and figures prepared from frozen results; manuscript narrative not started and awaiting user writing instructions",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
   "downloaded_uncompressed_bytes": 18893573108,
   "patients_with_downloaded_mri": 63,
   "patient_date_pairs_with_downloaded_mri": 111,
-  "notebooks_executed": 20,
+  "notebooks_executed": 21,
   "prediction_model_fitted": true,
   "outcome_adjudication_complete": false,
   "image_quality_and_lesion_segmentation_complete": false,
@@ -27,7 +27,7 @@
   "complete_image_qc": false,
   "verified_non_events": 0,
   "models_fitted": true,
-  "notebook_execution_method": "00-04 ordinary Python executor; 05-19 in-process ipykernel via Jupyter client",
+  "notebook_execution_method": "00-04 ordinary Python executor; 05-20 in-process ipykernel via Jupyter client",
   "github_main_project_file_count_previous_commit": 82,
   "previous_figshare_snapshot": {
     "recorded_rn_times": 32,
@@ -65,7 +65,8 @@
     "notebooks/16_ucsd_roi_and_intensity_pilot.ipynb",
     "notebooks/17_ucsd_batch_image_features.ipynb",
     "notebooks/18_ucsd_clinical_mri_fusion.ipynb",
-    "notebooks/19_ucsd_model_stability.ipynb"
+    "notebooks/19_ucsd_model_stability.ipynb",
+    "notebooks/20_ucsd_paper_tables_and_figures.ipynb"
   ],
   "notebook_kernel_execution_report": "reports/kernel_execution.json",
   "separate_kernel_server_tested": false,
@@ -122,7 +123,7 @@
   "clinical_source_rechecked_unchanged": true,
   "pilot_registration_report": "reports/registration_pilot_and_gate_20261029.md",
   "workflow_mode": "stepwise_user_approval",
-  "last_user_authorized_step": "fixed_model_stability_checks_and_single_scan_per_patient_sensitivity",
+  "last_user_authorized_step": "publication_tables_figures_and_reproducibility_materials_before_manuscript_writing",
   "current_step_complete": true,
   "next_step_requires_user_approval": true,
   "next_step_approved": false,
@@ -167,7 +168,7 @@
   "automated_tests_passed": 85,
   "automated_tests_failed": 0,
   "legacy_status_note": "Imaging counts, outcome_adjudication_complete, current_clinical_source and source_storage describe historical OpenBTAI work. UCSD baseline status is recorded separately; no cohorts were merged. Stage15/16 sample-only fields describe their historical six-case pilot; Stage17 current batch figures are under ucsd_batch_features. The entire six-modality mirror has not been downloaded.",
-  "models_fitted_this_step": true,
+  "models_fitted_this_step": false,
   "prior_clinical_baseline_metrics_provisional": true,
   "ucsd_full_clinical_fields_audited": 36,
   "ucsd_dual_id_ambiguous_timepoints": 5,
@@ -278,7 +279,7 @@
   "ucsd_batch_additional_source_files": 528,
   "ucsd_batch_raw_archive_bytes": 508299427,
   "ucsd_batch_raw_archive_in_Git": false,
-  "next_proposed_step": "manuscript_tables_figures_methods_and_results_with_all_sensitivity_findings",
+  "next_proposed_step": "manuscript_body_writing_only_after_user_new_instructions",
   "ucsd_fusion_report": "reports/ucsd_fusion_step18_20261029.md",
   "ucsd_fusion": {
     "scans": 182,
@@ -345,5 +346,23 @@
     "hyperparameter_search": false,
     "repeated_ranges_are_confidence_intervals": false,
     "prior_primary_analysis_replaced": false
+  },
+  "ucsd_paper_materials_report": "reports/ucsd_paper_materials_step20_20261029.md",
+  "ucsd_paper_materials": {
+    "editable_word_tables": 11,
+    "word_pages": 7,
+    "excel_sheets": 13,
+    "figure_sets": 5,
+    "png_dpi": 600,
+    "vector_formats": [
+      "PDF",
+      "SVG"
+    ],
+    "baseline_numeric_rows_checked": 60,
+    "workbook_data_rows_checked": 125,
+    "models_refitted": 0,
+    "new_hypothesis_tests": 0,
+    "manuscript_body_drafted": false,
+    "awaiting_user_writing_instructions": true
   }
 }
