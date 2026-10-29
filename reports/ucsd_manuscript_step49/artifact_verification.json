@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "stage": 49,
+  "date": "2026-10-30",
+  "subsection": "4.9 Image-processing limitations",
+  "paragraph_ids": [
+    "D9"
+  ],
+  "english_word_count": 206,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 208,
+  "prior_files_unchanged": 207,
+  "new_full_texts_checked_for_current_claims": [],
+  "saved_file_QC_rows_checked": 546,
+  "structural_image_rows_checked": 364,
+  "saved_intensity_diagnostic_rows_checked": 364,
+  "eight_feature_definitions_checked": true,
+  "uint8_and_unknown_spatial_units_confirmed": true,
+  "relative_grid_checks_not_anatomical_validation": true,
+  "normalization_revision_after_diagnostics_disclosed": true,
+  "model_performance_used_for_normalization_selection": false,
+  "normalization_preregistered_or_independently_optimal_claimed": false,
+  "physical_volume_or_quantitative_ADC_included": false,
+  "features_reextracted": 0,
+  "all_features_claimed_sensitive_to_every_affine_transform": false,
+  "new_manuscript_references": 0,
+  "provisional_citation_mapping": {
+    "12": "S39"
+  },
+  "cumulative_unique_cited_sources": 16,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.10 Sampling and model uncertainty (D10)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step49-20261030/UCSD_Manuscript_Discussion_4_9_EN.txt": "f2e162eef2052a567ea85b3cd7be5c2c2cceb64e51e45aa890f0aad85f60603a",
+    "outputs/ucsd-manuscript-step49-20261030/UCSD_Manuscript_Discussion_4_9_EN_ZH.docx": "35972220b48af9b21019bb32fedac3f84959f9fcdd92bb2854ee83850af45bf5"
+  }
+}

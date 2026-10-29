@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "scope": "Stage48 Discussion 4.8 reference-standard limitations drafted; inherited labels, subtype discrepancy and distinct annotation procedures verified",
+  "scope": "Stage49 Discussion 4.9 image-processing limitations drafted; derived intensities, unknown scale, pooled ROI and normalization amendment verified",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Discussion 4.9 image-processing limitations (D9)",
+  "next_work_item": "Await user approval for Discussion 4.10 sampling and model uncertainty (D10)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 48,
-    "subsection": "4.8 Reference-standard limitations",
+    "stage": 49,
+    "subsection": "4.9 Image-processing limitations",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -445,11 +445,12 @@
       "D5",
       "D6",
       "D7",
-      "D8"
+      "D8",
+      "D9"
     ],
-    "english_word_count": 6289,
-    "chinese_paragraphs": 36,
-    "current_section_citations": 2,
+    "english_word_count": 6495,
+    "chinese_paragraphs": 37,
+    "current_section_citations": 1,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
@@ -486,31 +487,34 @@
       "4.5 Interpretation of image features",
       "4.6 Boundary and split robustness",
       "4.7 Meaning of the single-scan result",
-      "4.8 Reference-standard limitations"
+      "4.8 Reference-standard limitations",
+      "4.9 Image-processing limitations"
     ],
-    "latest_section_english_word_count": 242,
+    "latest_section_english_word_count": 206,
     "latest_section_word_pages": 2,
     "unique_citations_in_drafted_sections": 16,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 204,
-      "frozen_files_unchanged": 205,
-      "label_rows_checked": 663,
-      "all_labels_reconstructed_and_matched": true,
-      "subtype_discrepancy_resolved": false,
-      "pathology_count_extrapolated_to_imaging_subset": false,
-      "distinct_BraTS_and_cellular_annotation_procedures_preserved": true,
-      "supplied_BraTS_annotation_blinding_confirmed": false,
-      "information_leakage_claimed_proven": false,
-      "independent_diagnostic_readjudication_performed": false,
-      "five_saved_folds_checked_for_no_patient_overlap": true,
+      "prior_files_unchanged": 207,
+      "frozen_files_unchanged": 208,
+      "saved_file_QC_rows_checked": 546,
+      "structural_image_rows_checked": 364,
+      "saved_intensity_diagnostic_rows_checked": 364,
+      "eight_feature_definitions_checked": true,
+      "uint8_and_unknown_spatial_units_confirmed": true,
+      "relative_grid_checks_not_anatomical_validation": true,
+      "normalization_revision_after_diagnostics_disclosed": true,
+      "model_performance_used_for_normalization_selection": false,
+      "normalization_preregistered_or_independently_optimal_claimed": false,
+      "physical_volume_or_quantitative_ADC_included": false,
+      "all_features_claimed_sensitive_to_every_affine_transform": false,
       "new_manuscript_references": 0,
       "provisional_citation_mapping": {
-        "1": "S01",
-        "3": "S03"
+        "12": "S39"
       },
-      "models_refitted": 0
+      "models_refitted": 0,
+      "features_reextracted": 0
     },
     "methods_v2_paragraphs_complete": true,
     "methods_english_word_count": 3131,
@@ -528,7 +532,7 @@
       "Table S7"
     ],
     "results_v2_paragraphs_complete": true,
-    "discussion_english_word_count": 1712,
+    "discussion_english_word_count": 1918,
     "discussion_v2_paragraphs_complete": false,
     "latest_stage_date": "2026-10-30"
   },
@@ -556,5 +560,6 @@
   "ucsd_manuscript_step45_report": "reports/ucsd_manuscript_step45_20261030.md",
   "ucsd_manuscript_step46_report": "reports/ucsd_manuscript_step46_20261030.md",
   "ucsd_manuscript_step47_report": "reports/ucsd_manuscript_step47_20261030.md",
-  "ucsd_manuscript_step48_report": "reports/ucsd_manuscript_step48_20261030.md"
+  "ucsd_manuscript_step48_report": "reports/ucsd_manuscript_step48_20261030.md",
+  "ucsd_manuscript_step49_report": "reports/ucsd_manuscript_step49_20261030.md"
 }

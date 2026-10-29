@@ -1,0 +1,94 @@
+{
+  "stage": 49,
+  "date": "2026-10-30",
+  "scope": "D9 limits of derived image representation, spatial scale, ROI pooling and engineering normalization revision",
+  "studies": [
+    {
+      "reference_id": "S39",
+      "provisional_citation_number": 12,
+      "doi": "10.3389/fonc.2025.1433444",
+      "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1433444/full",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11842255/fullTextXML",
+      "read_level_this_stage": "Previously reviewed primary full text revisited for feature comparability and processing limitations",
+      "source_snapshot_sha256": "6f81af34558a6effeb8c366423123948b491f10311f7d387ba84b84c2659ba61",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": [
+        "2.2 Glioblastoma cohort",
+        "2.4 Image normalization",
+        "2.5 Radiomic feature calculation",
+        "2.6 Statistical analysis",
+        "3.2 Glioblastoma cohort",
+        "3.4 Radiomic feature analysis and Figure 10",
+        "4.1 Limitations"
+      ],
+      "facts": {
+        "publication_year": 2025,
+        "scope": "MRI intensity normalization and feature comparability across prostate, brain and breast imaging datasets",
+        "brain_sequences": [
+          "T1",
+          "postcontrast T1",
+          "FLAIR",
+          "ADC"
+        ],
+        "comparison_factors": [
+          "site",
+          "scanner vendor",
+          "magnetic field strength"
+        ],
+        "radiomic_evaluation": "Compared radiomic feature equivalence across acquisition settings after different normalization methods",
+        "finding_used": "Radiomic comparability varied with normalization choices and acquisition context"
+      },
+      "permitted_claim": "Normalization choices affected radiomic comparability across acquisition settings, including brain imaging",
+      "limits": "Different images, software and feature definitions; not validation of our percentile transform or eight-feature panel. Do not infer that every feature changes under every normalization, that affine scaling necessarily changes our ROI-range fixed-bin-number texture values, or that the study establishes a cellular mechanism or tumor-change diagnostic performance. No inconsistent aggregate sample or feature counts from the article are reused."
+    }
+  ],
+  "own_study_claims": [
+    {
+      "claim": "All 546 supplied files use uint8 storage, unknown spatial units and matching relative grids; this is a computational grid check without independent anatomical registration validation",
+      "sources": [
+        "reports/ucsd_batch_features/actual_file_QC.csv",
+        "reports/ucsd_manuscript_step26/methods_section24.json"
+      ]
+    },
+    {
+      "claim": "The positive-label ROI union pools supplied annotation regions without independently assigning tissue semantics to numerical codes",
+      "sources": [
+        "src/rn_public/ucsd_roi_pilot.py",
+        "reports/ucsd_batch_features/feature_dictionary.csv"
+      ]
+    },
+    {
+      "claim": "Unclipped scaling was an engineering amendment after clipping diagnostics, without diagnostic-label or model-performance selection and without preregistered or independent optimality validation",
+      "sources": [
+        "reports/ucsd_roi_pilot_intensity_amendment.md",
+        "reports/ucsd_roi_pilot/normalization_choice.json",
+        "src/rn_public/ucsd_intensity_followup.py",
+        "src/rn_public/ucsd_batch_features.py"
+      ]
+    },
+    {
+      "claim": "The model panel has eight FLAIR/T1post descriptors, no ADC, perfusion or physical-volume predictor",
+      "sources": [
+        "reports/ucsd_batch_features/feature_dictionary.csv",
+        "reports/ucsd_fusion/analysis_lock.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    "Subsequent scaling cannot recover distinctions absent from already-derived intensities; no original acquisition bit depth or exact upstream conversion is inferred",
+    "Unknown spatial units prevent confirmed physical volume or millimeter neighborhood interpretation",
+    "Pooled source regions do not establish compartment-specific diagnostic performance or biological mechanisms",
+    "ROI-range fixed-bin-number textures may be invariant under positive affine intensity transforms; this does not establish invariance to clipping, arbitrary normalization, rounding or acquisition changes",
+    "Other processing conditions require evaluation; the cited normalization study does not validate our transform or panel"
+  ],
+  "new_unique_manuscript_references": 0,
+  "reused_manuscript_references": [
+    12
+  ],
+  "cumulative_unique_cited_sources_after_section": 16,
+  "new_full_text_review_count": 0,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "features_reextracted": 0,
+  "new_hypothesis_tests": 0
+}
