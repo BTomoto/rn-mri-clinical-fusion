@@ -1,0 +1,10 @@
+field,numeric_timepoints,before_scan,same_day,after_scan,minimum,maximum
+"Days from Acquisition to Date of initial surgery, treatment or diagnosis",198,197,1,0,-2657.0,0.0
+Days from Acquisition to Date of last surgery prior to scan if different,55,54,0,1,-2393.0,35.0
+Days from Acquisition to Date of last follow-up,238,6,0,232,-103.0,3978.0
+Days from Acquisition to Date of death,200,0,0,200,31.0,2529.0
+Days from Acquistion to Date of first radiation,121,120,0,1,-2359.0,3697.0
+Days from Acquistion to Date of last radiation prior to scan,121,119,1,1,-2301.0,8.0
+Days from Acquisition to Date of 1st chemo start,122,122,0,0,-1874.0,-23.0
+Days from Acquisition to Date of last Avastin treatment prior to scan,22,13,5,4,-136.0,316.0
+Days from Acquisition to Other treatment dates,0,0,0,0,,

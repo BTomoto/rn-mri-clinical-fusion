@@ -1,0 +1,47 @@
+{
+  "scope": "Current-scan tumor-versus-treatment-change classification; ROI feasibility only",
+  "pixel_data_reviewed": false,
+  "roi_empirically_accepted": false,
+  "descriptor_url": "https://doi.org/10.1038/s41597-025-06499-z",
+  "published_geometry_not_locally_verified": "Images described as co-registered to a 256x256x256, 1mm isotropic MNI space",
+  "potential_sequences_not_case_level_verified": [
+    "T1 precontrast",
+    "T1 postcontrast",
+    "T2",
+    "FLAIR",
+    "ADC",
+    "ASL",
+    "DSC perfusion",
+    "RSI"
+  ],
+  "published_standard_mask_compartments": [
+    "enhancing component",
+    "nonenhancing/necrotic core",
+    "FLAIR hyperintensity",
+    "resection cavity"
+  ],
+  "voxel_label_codes_verified": false,
+  "cellular_mask_policy": "Exclude ground-truth TCT/ECT/NECT masks, their volume, emptiness and file existence from predictors and ROI construction. Descriptor states their creation used clinical/pathological history and prior/subsequent MRI.",
+  "standard_mask_policy": "Do not automatically treat existing standard masks as blinded to the diagnostic label. Check provenance and whether a comparable ROI exists in both classes; use only under a declared protocol, potentially as sensitivity analysis.",
+  "proposed_primary_roi": "Define a current-scan abnormal region from FLAIR and/or contrast-enhanced T1, using the same label-blinded procedure in both classes. Identify/exclude resection cavity. No outcome-specific manual selection or future-scan information.",
+  "no_roi_policy": "Retain and report no-ROI cases. Do not exclude treatment-change cases preferentially, or code absent/empty ROI quantitative features as zero.",
+  "automated_roi_model_policy": "Check training-cohort overlap for any pretrained segmenter. If trained using the target cohort, fitting must be confined to training folds. Do not assume an external model is independent merely because weights are public.",
+  "required_sample_checks": [
+    "clinical-ID/BraTS-ID/file matching",
+    "source label legend",
+    "nonempty comparable ROI in both classes",
+    "NIfTI header and affine",
+    "actual pixel readability",
+    "cross-sequence grid agreement",
+    "coverage and cavity handling",
+    "ADC/perfusion units and normalization"
+  ],
+  "sample_selection": "Six deterministic QC candidates spanning negative subtypes and tumor IDs; not a validation cohort",
+  "model_comparison_policy": "Clinical, MRI and fusion comparisons must use the same eligible cases and patient-group folds. Quantify selection bias when MRI is missing.",
+  "related_primary_study": {
+    "doi": "10.1093/noajnl/vdaf219",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41497450/",
+    "finding_for_design": "This data source already has a closely related perfusion/deep-learning recurrence-versus-change study. Clinical incremental value and a reproducible simpler pipeline remain questions to evaluate; algorithm count alone does not establish novelty."
+  },
+  "reference_standard_bias": "Some reference diagnoses incorporate imaging; excluding reference masks does not remove all incorporation bias. Initial surgery/biopsy fields do not establish an independent pathology reference for the current scan."
+}

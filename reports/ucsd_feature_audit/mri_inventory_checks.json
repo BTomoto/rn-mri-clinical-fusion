@@ -1,0 +1,13 @@
+{
+  "checked_folders": 59,
+  "source_patient_ids": 42,
+  "tumor_timepoints": 49,
+  "treatment_change_timepoints": 10,
+  "sample_case_file_entries": 46,
+  "sample_entries_symbolic_links": 46,
+  "sample_entries_known_byte_size": 0,
+  "symlink_targets_resolved": false,
+  "source_NIfTI_bytes_downloaded": 0,
+  "header_geometry_verified": false,
+  "pixel_quality_verified": false
+}

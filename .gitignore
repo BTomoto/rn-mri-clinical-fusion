@@ -54,3 +54,6 @@ node_modules/
 /reports/ucsd_baseline_workbook_input.json
 /outputs/ucsd-clinical-baseline-20261029/preview_*.png
 /outputs/ucsd-clinical-baseline-20261029/*.inspect.ndjson
+/reports/ucsd_feature_workbook_input.json
+/outputs/ucsd-feature-audit-20261029/preview_*.png
+/outputs/ucsd-feature-audit-20261029/*.inspect.ndjson

@@ -1,13 +1,13 @@
 {
   "date": "2026-10-29",
-  "scope": "Approved revised UCSD-PTGBM HGG diagnostic question: completed age/sex clinical baseline and grouped internal validation; original OpenBTAI RN risk work remains paused",
+  "scope": "Approved full clinical-field and MRI feasibility audit completed; prior UCSD baseline provisional due dual-ID conflict; no new fit or MRI pixel QC",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
   "downloaded_uncompressed_bytes": 18893573108,
   "patients_with_downloaded_mri": 63,
   "patient_date_pairs_with_downloaded_mri": 111,
-  "notebooks_executed": 12,
+  "notebooks_executed": 13,
   "prediction_model_fitted": true,
   "outcome_adjudication_complete": false,
   "image_quality_and_lesion_segmentation_complete": false,
@@ -27,7 +27,7 @@
   "complete_image_qc": false,
   "verified_non_events": 0,
   "models_fitted": true,
-  "notebook_execution_method": "00-04 ordinary Python executor; 05-11 in-process ipykernel via Jupyter client",
+  "notebook_execution_method": "00-04 ordinary Python executor; 05-12 in-process ipykernel via Jupyter client",
   "github_main_project_file_count_previous_commit": 82,
   "previous_figshare_snapshot": {
     "recorded_rn_times": 32,
@@ -57,7 +57,8 @@
     "notebooks/08_grid_precision_and_flair_pairs.ipynb",
     "notebooks/09_registration_pilot_and_endpoint_gate.ipynb",
     "notebooks/10_public_label_feasibility.ipynb",
-    "notebooks/11_ucsd_clinical_baseline.ipynb"
+    "notebooks/11_ucsd_clinical_baseline.ipynb",
+    "notebooks/12_ucsd_clinical_and_mri_feasibility.ipynb"
   ],
   "notebook_kernel_execution_report": "reports/kernel_execution.json",
   "separate_kernel_server_tested": false,
@@ -69,7 +70,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for UCSD MRI access, representative-sample QC and label-independent ROI feasibility audit",
+  "next_work_item": "Await approval to isolate 5 ambiguous-ID timepoints, lock clinical predictors/missingness rules and rerun grouped clinical models; acquire 2 actual MRI samples for pixel/ROI QC",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -83,7 +84,8 @@
     "reports/kernel_execution_08.json",
     "reports/kernel_execution_09.json",
     "reports/kernel_execution_10.json",
-    "reports/kernel_execution_11.json"
+    "reports/kernel_execution_11.json",
+    "reports/kernel_execution_12.json"
   ],
   "baseline_flair_files": 1391,
   "baseline_flair_series": 40,
@@ -109,7 +111,7 @@
   "clinical_source_rechecked_unchanged": true,
   "pilot_registration_report": "reports/registration_pilot_and_gate_20261029.md",
   "workflow_mode": "stepwise_user_approval",
-  "last_user_authorized_step": "approved_scope_change_and_fixed_clinical_logistic_baseline",
+  "last_user_authorized_step": "full_clinical_variables_and_MRI_feasibility_audit",
   "current_step_complete": true,
   "next_step_requires_user_approval": true,
   "next_step_approved": false,
@@ -148,9 +150,25 @@
     "specificity_at_0_5": 0,
     "external_validation": false,
     "mri_used": false,
-    "report": "reports/ucsd_clinical_baseline_step11_20261029.md"
+    "report": "reports/ucsd_clinical_baseline_step11_20261029.md",
+    "metrics_status": "historical_provisional; dual-ID overlap found in step12; requires revalidation"
   },
-  "automated_tests_passed": 36,
+  "automated_tests_passed": 41,
   "automated_tests_failed": 0,
-  "legacy_status_note": "Imaging counts, outcome_adjudication_complete, current_clinical_source and source_storage describe historical OpenBTAI work. UCSD baseline status is recorded separately; no cohorts were merged."
+  "legacy_status_note": "Imaging counts, outcome_adjudication_complete, current_clinical_source and source_storage describe historical OpenBTAI work. UCSD baseline status is recorded separately; no cohorts were merged.",
+  "models_fitted_this_step": false,
+  "prior_clinical_baseline_metrics_provisional": true,
+  "ucsd_full_clinical_fields_audited": 36,
+  "ucsd_dual_id_ambiguous_timepoints": 5,
+  "ucsd_dual_id_ambiguous_source_patients": 2,
+  "ucsd_conservative_connected_groups": 177,
+  "ucsd_conservative_group_count_is_not_adjudicated_patient_count": true,
+  "ucsd_prior_fold_shared_brats_patients": 1,
+  "ucsd_mri_folder_ids_listed_and_matched": 59,
+  "ucsd_mri_sample_filename_entries": 46,
+  "ucsd_mri_sample_entries_are_symlinks": true,
+  "ucsd_NIfTI_samples_downloaded": 0,
+  "ucsd_pixel_quality_review_complete": false,
+  "ucsd_ROI_empirically_verified": false,
+  "ucsd_clinical_mri_audit_report": "reports/ucsd_clinical_mri_feasibility_step12_20261029.md"
 }

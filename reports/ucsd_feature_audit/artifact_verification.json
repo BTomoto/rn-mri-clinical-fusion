@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "rows_verified": {
+    "Fields": 36,
+    "Clinical_raw": 243,
+    "Candidates": 243,
+    "Issues": 33
+  },
+  "excel_formula_errors": 0,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "workbook_sha256": "1f5dd3d458f0c0627a412628081ebb7db3df813a2a0a7f7546cf899ee651ed87",
+  "clinical_audit_code_sha256": "6ef434637ae15ec6f0c34a047413fa2ada292502bfd3ec50c1af31b1d3040506",
+  "MRI_download_or_pixel_QC_claimed": false,
+  "note": "Saved-file checks; formulas recalculated by artifact-tool, not native Excel"
+}

@@ -1,0 +1,90 @@
+{
+  "step": 12,
+  "date": "2026-10-29",
+  "clinical_fields": 36,
+  "timepoints": 243,
+  "source_patients": 178,
+  "source_sha256": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+  "clinical_patient_count": 178,
+  "brats_patient_count": 178,
+  "conservative_connected_groups": 177,
+  "conservative_groups_are_not_adjudicated_patient_count": true,
+  "ambiguous_mapping_timepoints": 5,
+  "ambiguous_mapping_patients": [
+    "UCSD-PTGBM-0036",
+    "UCSD-PTGBM-0038"
+  ],
+  "prior_validation_shared_brats_patients": 1,
+  "prior_baseline_metrics_status": "provisional_due_to_cross_namespace_identity_conflict; not_refitted_in_step12",
+  "role_counts": {
+    "conditional_treatment": 13,
+    "conditional_molecular": 4,
+    "cohort_definition_audit": 4,
+    "exclude_future_outcome": 4,
+    "acquisition_audit_only": 3,
+    "candidate": 3,
+    "identifier_only": 2,
+    "not_primary_candidate": 2,
+    "candidate_with_missingness": 1
+  },
+  "molecular_observed": {
+    "MGMT": 149,
+    "IDH": 168,
+    "1p19q": 112,
+    "ATRX": 114
+  },
+  "issue_counts": {
+    "same_day_order_unknown": 7,
+    "future_treatment_offset": 7,
+    "cross_namespace_identity_conflict": 5,
+    "within_patient_molecular_conflict": 5,
+    "lower_grade_in_source_collection": 3,
+    "surgery_extent_flag_conflict": 2,
+    "radiation_order_conflict": 2,
+    "nonstandard_category": 1,
+    "invalid_diagnosis_grade_text": 1
+  },
+  "complete_case_examples": {
+    "age_sex": {
+      "timepoints": 243,
+      "patients": 178,
+      "tumor": 192,
+      "treatment_change": 51
+    },
+    "age_sex_other_prior": {
+      "timepoints": 243,
+      "patients": 178,
+      "tumor": 192,
+      "treatment_change": 51
+    },
+    "plus_initial_event": {
+      "timepoints": 197,
+      "patients": 144,
+      "tumor": 150,
+      "treatment_change": 47
+    },
+    "plus_MGMT_IDH_raw": {
+      "timepoints": 135,
+      "patients": 100,
+      "tumor": 106,
+      "treatment_change": 29
+    },
+    "strict_last_radiation": {
+      "timepoints": 117,
+      "patients": 91,
+      "tumor": 88,
+      "treatment_change": 29
+    }
+  },
+  "issue_rows": 33,
+  "issues_not_necessarily_distinct_timepoints": true,
+  "future_fields_excluded": [
+    "Days from Acquisition to Date of last follow-up",
+    "Days from Acquisition to Date of death",
+    "Overall survival",
+    "Progression Free survival"
+  ],
+  "models_fitted_this_step": false,
+  "original_OpenBTAI_model_ready": false,
+  "next_step_requires_user_approval": true
+}

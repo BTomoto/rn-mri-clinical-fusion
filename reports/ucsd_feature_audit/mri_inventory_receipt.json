@@ -1,0 +1,31 @@
+{
+  "package_id": "1221",
+  "date": "2026-10-29",
+  "checked_at_utc": "2026-10-29T03:54:23.395669+00:00",
+  "endpoint": "https://faspex.cancerimagingarchive.net/aspera/faspex/api/v5/packages/1221/files/received?limit=1000",
+  "folders_http_status": 200,
+  "folders": 59,
+  "patients": 42,
+  "tumor_timepoints": 49,
+  "treatment_change_timepoints": 10,
+  "folder_clinical_ID_match": true,
+  "folder_name_matches_do_not_adjudicate_BraTS_conflict": true,
+  "imaging_files_downloaded": 0,
+  "pixel_quality_review_complete": false,
+  "samples": [
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "request_path": "/UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-0001_01",
+      "http_status": 200,
+      "success": true,
+      "listed_files": 23
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "request_path": "/UCSD-PTGBM-BraTS-2024-test-set/UCSD-PTGBM-0003_01",
+      "http_status": 200,
+      "success": true,
+      "listed_files": 23
+    }
+  ]
+}

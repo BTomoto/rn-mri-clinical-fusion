@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-29",
+  "checked_at_utc": "2026-10-29T03:50:17.854397+00:00",
+  "collection_url": "https://www.cancerimagingarchive.net/collection/ucsd-ptgbm/",
+  "collection_http_status": 200,
+  "collection_page_sha256": "aa66b0ffefa40d8d20413e727bc34c1934940947aa21550deedb6ae5698b6306",
+  "public_config_sha256": "0f9a5e1ce439f59dc79853b71f3ae0c273fe9da6078167885845ae74512c6508",
+  "api_reference": "https://faspex.cancerimagingarchive.net/aspera/faspex/api",
+  "authorization_method": "official_public_link_web_flow; no user account credentials",
+  "clinical_workbook_current_sha256": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+  "packages": [
+    {
+      "package_id": "1019",
+      "source": "public link on collection page",
+      "probes": [
+        {
+          "probe": "package_details",
+          "method": "GET",
+          "path": "/packages/1019?type=received",
+          "http_status": 200,
+          "success": true,
+          "response_bytes": 5561,
+          "metadata": {
+            "id": "1019",
+            "title": "UCSD-PTGBM-v1",
+            "total_files": 4047,
+            "message": "UCSD-PTGBM-v1 \"Version 1: Data are (.nii.gz, 33.1 GB) about 136 participants, 184 folders, 4047 files in NIfTI format. More imaging in this Collection may be available. For more details see DOI https://doi.org/10.7937/fwv2-dt74 .",
+            "files_on_server": "yes",
+            "prevent_http_download": false
+          },
+          "api_reported_total_bytes": 300201,
+          "elapsed_seconds": 3.22
+        },
+        {
+          "probe": "file_listing",
+          "method": "POST",
+          "path": "/packages/1019/files/received?limit=20",
+          "success": false,
+          "error": "TimeoutError",
+          "elapsed_seconds": 22.75
+        },
+        {
+          "probe": "connect_download_parameters",
+          "method": "POST",
+          "path": "/packages/1019/transfer_spec/download?type=received&transfer_type=connect",
+          "http_status": 201,
+          "success": true,
+          "response_bytes": 1380,
+          "transfer_configuration": {
+            "remote_host": "144.30.235.113",
+            "remote_user": "faspex",
+            "ssh_port": 33001,
+            "fasp_port": 33001,
+            "paths": [
+              {
+                "source": "/UCSD-PTGBM-v1 - 10c16143-a61f-4e22-8dda-5a85b9d8f8f0.aspera-package/PKG - UCSD-PTGBM-v1/"
+              }
+            ]
+          },
+          "sensitive_transfer_tokens_omitted": true,
+          "elapsed_seconds": 3.53
+        },
+        {
+          "probe": "http_gateway_download_parameters",
+          "method": "POST",
+          "path": "/packages/1019/transfer_spec/download?type=received&transfer_type=http_gateway",
+          "http_status": 201,
+          "success": true,
+          "response_bytes": 1446,
+          "transfer_configuration": {
+            "remote_host": "144.30.235.113",
+            "remote_user": "faspex",
+            "ssh_port": 33001,
+            "fasp_port": 33001,
+            "source_root": "/UCSD-PTGBM-v1 - 10c16143-a61f-4e22-8dda-5a85b9d8f8f0.aspera-package/PKG - UCSD-PTGBM-v1",
+            "paths": [
+              {
+                "source": "/"
+              }
+            ],
+            "zip_required": true
+          },
+          "sensitive_transfer_tokens_omitted": true,
+          "elapsed_seconds": 3.2
+        }
+      ],
+      "public_link_authorization_http_status": 201
+    },
+    {
+      "package_id": "1221",
+      "source": "public link on collection page",
+      "probes": [
+        {
+          "probe": "package_details",
+          "method": "GET",
+          "path": "/packages/1221?type=received",
+          "http_status": 200,
+          "success": true,
+          "response_bytes": 2711,
+          "metadata": {
+            "id": "1221",
+            "title": "UCSD-PTGBM-BraTS-2024-test-set",
+            "total_files": 1322,
+            "message": "UCSD-PTGBM-BraTS-2024-test-set\nVersion 1: Data are (.nii.gz, 11.88 GB) about 42 participants, 59 folders, 1322 files in NIfTI format. More imaging in this Collection is available. \nFor more details see DOI https://doi.org/10.7937/fwv2-dt74 .",
+            "files_on_server": "yes",
+            "prevent_http_download": false
+          },
+          "api_reported_total_bytes": 117669,
+          "elapsed_seconds": 3.26
+        },
+        {
+          "probe": "file_listing",
+          "method": "POST",
+          "path": "/packages/1221/files/received?limit=20",
+          "http_status": 200,
+          "success": true,
+          "response_bytes": 389,
+          "items": [
+            {
+              "path": "/UCSD-PTGBM-BraTS-2024-test-set",
+              "basename": "UCSD-PTGBM-BraTS-2024-test-set",
+              "type": "directory",
+              "size": 11883676648
+            }
+          ],
+          "total_count": 1,
+          "elapsed_seconds": 17.97
+        },
+        {
+          "probe": "connect_download_parameters",
+          "method": "POST",
+          "path": "/packages/1221/transfer_spec/download?type=received&transfer_type=connect",
+          "http_status": 201,
+          "success": true,
+          "response_bytes": 1476,
+          "transfer_configuration": {
+            "remote_host": "144.30.235.113",
+            "remote_user": "faspex",
+            "ssh_port": 33001,
+            "fasp_port": 33001,
+            "paths": [
+              {
+                "source": "/UCSD-PTGBM-BraTS-2024-test-set - 416ac7dc-014a-4d67-9646-c5e6dee6db47.aspera-package/PKG - UCSD-PTGBM-BraTS-2024-test-set/"
+              }
+            ]
+          },
+          "sensitive_transfer_tokens_omitted": true,
+          "elapsed_seconds": 2.94
+        },
+        {
+          "probe": "http_gateway_download_parameters",
+          "method": "POST",
+          "path": "/packages/1221/transfer_spec/download?type=received&transfer_type=http_gateway",
+          "http_status": 201,
+          "success": true,
+          "response_bytes": 1542,
+          "transfer_configuration": {
+            "remote_host": "144.30.235.113",
+            "remote_user": "faspex",
+            "ssh_port": 33001,
+            "fasp_port": 33001,
+            "source_root": "/UCSD-PTGBM-BraTS-2024-test-set - 416ac7dc-014a-4d67-9646-c5e6dee6db47.aspera-package/PKG - UCSD-PTGBM-BraTS-2024-test-set",
+            "paths": [
+              {
+                "source": "/"
+              }
+            ],
+            "zip_required": true
+          },
+          "sensitive_transfer_tokens_omitted": true,
+          "elapsed_seconds": 3.68
+        }
+      ],
+      "public_link_authorization_http_status": 201
+    }
+  ],
+  "http_gateway_url": null,
+  "local_ascp_available": false,
+  "source_files_downloaded": 0,
+  "pixel_quality_review_complete": false,
+  "case_level_MRI_join_verified": false,
+  "ROI_empirically_verified": false,
+  "configuration_request_success": true,
+  "conclusion": "Public metadata and transfer parameters accessible. Main-package listing timed out; test-package 59-case folder inventory and two 23-entry file lists obtained. File entries are symbolic links with unverified targets; no NIfTI downloaded, header/pixel/ROI quality not verified. HTTP gateway not configured.",
+  "fasp_tcp_reachability": {
+    "success": false,
+    "error": "OSError",
+    "description": "Single connection attempt to server-advertised Aspera endpoint; cause not adjudicated",
+    "host": "144.30.235.113",
+    "port": 33001,
+    "elapsed_seconds": 0.0
+  }
+}

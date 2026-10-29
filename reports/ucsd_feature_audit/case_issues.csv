@@ -1,0 +1,34 @@
+ID,patient_id,field,raw_value,kind,explanation,action
+UCSD-PTGBM-0036_01,UCSD-PTGBM-0036,BraTS ID,BraTS-GLI-02289-100,cross_namespace_identity_conflict,临床患者与BraTS患者不是一一对应；保守合并分组仅防泄漏，不解决真实身份/时间点连接,暂停这5条MRI连接；未来可先排除两个源患者作主分析，或经证据核实后更正
+UCSD-PTGBM-0036_02,UCSD-PTGBM-0036,BraTS ID,BraTS-GLI-02289-101,cross_namespace_identity_conflict,临床患者与BraTS患者不是一一对应；保守合并分组仅防泄漏，不解决真实身份/时间点连接,暂停这5条MRI连接；未来可先排除两个源患者作主分析，或经证据核实后更正
+UCSD-PTGBM-0038_01,UCSD-PTGBM-0038,BraTS ID,BraTS-GLI-02291-100,cross_namespace_identity_conflict,临床患者与BraTS患者不是一一对应；保守合并分组仅防泄漏，不解决真实身份/时间点连接,暂停这5条MRI连接；未来可先排除两个源患者作主分析，或经证据核实后更正
+UCSD-PTGBM-0038_02,UCSD-PTGBM-0038,BraTS ID,BraTS-GLI-02291-101,cross_namespace_identity_conflict,临床患者与BraTS患者不是一一对应；保守合并分组仅防泄漏，不解决真实身份/时间点连接,暂停这5条MRI连接；未来可先排除两个源患者作主分析，或经证据核实后更正
+UCSD-PTGBM-0038_03,UCSD-PTGBM-0038,BraTS ID,BraTS-GLI-02289-102,cross_namespace_identity_conflict,临床患者与BraTS患者不是一一对应；保守合并分组仅防泄漏，不解决真实身份/时间点连接,暂停这5条MRI连接；未来可先排除两个源患者作主分析，或经证据核实后更正
+UCSD-PTGBM-0075_01,UCSD-PTGBM-0075,"Days from Acquisition to Date of initial surgery, treatment or diagnosis",0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0126_01,UCSD-PTGBM-0126,Days from Acquisition to Date of last surgery prior to scan if different,35,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0123_03,UCSD-PTGBM-0123,Days from Acquistion to Date of first radiation,3697,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0145_01,UCSD-PTGBM-0145,Days from Acquistion to Date of last radiation prior to scan,8,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0008_02,UCSD-PTGBM-0008,Days from Acquistion to Date of last radiation prior to scan,0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0024_01,UCSD-PTGBM-0024,Days from Acquisition to Date of last Avastin treatment prior to scan,21,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0133_02,UCSD-PTGBM-0133,Days from Acquisition to Date of last Avastin treatment prior to scan,61,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0167_01,UCSD-PTGBM-0167,Days from Acquisition to Date of last Avastin treatment prior to scan,316,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0167_02,UCSD-PTGBM-0167,Days from Acquisition to Date of last Avastin treatment prior to scan,127,future_treatment_offset,正偏移表示事件晚于扫描，与扫描前预测输入不相容；未翻转符号或改写日期,排除该事件信息；保留原值及冲突标记
+UCSD-PTGBM-0046_01,UCSD-PTGBM-0046,Days from Acquisition to Date of last Avastin treatment prior to scan,0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0053_03,UCSD-PTGBM-0053,Days from Acquisition to Date of last Avastin treatment prior to scan,0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0120_02,UCSD-PTGBM-0120,Days from Acquisition to Date of last Avastin treatment prior to scan,0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0161_01,UCSD-PTGBM-0161,Days from Acquisition to Date of last Avastin treatment prior to scan,0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0178_02,UCSD-PTGBM-0178,Days from Acquisition to Date of last Avastin treatment prior to scan,0,same_day_order_unknown,日期相同，无法确认事件在扫描前后,严格扫描前分析中不认定已发生，可另作敏感性规则
+UCSD-PTGBM-0001_01,UCSD-PTGBM-0001,Days from Acquistion to Date of first radiation,-591,radiation_order_conflict,首次放疗偏移晚于最后放疗偏移，不能自行交换/更正,本条放疗间隔整体隔离
+UCSD-PTGBM-0123_03,UCSD-PTGBM-0123,Days from Acquistion to Date of first radiation,3697,radiation_order_conflict,首次放疗偏移晚于最后放疗偏移，不能自行交换/更正,本条放疗间隔整体隔离
+UCSD-PTGBM-0128_01,UCSD-PTGBM-0128,Avastin® (bevacizumab),N,nonstandard_category,N不是字典定义的Yes/No，本步不自动等同No,保留原文，清洗候选设未知
+UCSD-PTGBM-0038_01,UCSD-PTGBM-0038,MGMT,Unmethylated,within_patient_molecular_conflict,同一源患者不同扫描的已记录结果不一致；无标本日期说明,不跨时间点补值；该患者此分子变量隔离为未知，原值保留
+UCSD-PTGBM-0038_02,UCSD-PTGBM-0038,MGMT,Unmethylated,within_patient_molecular_conflict,同一源患者不同扫描的已记录结果不一致；无标本日期说明,不跨时间点补值；该患者此分子变量隔离为未知，原值保留
+UCSD-PTGBM-0038_03,UCSD-PTGBM-0038,MGMT,Methylated,within_patient_molecular_conflict,同一源患者不同扫描的已记录结果不一致；无标本日期说明,不跨时间点补值；该患者此分子变量隔离为未知，原值保留
+UCSD-PTGBM-0145_01,UCSD-PTGBM-0145,IDH,Wild type,within_patient_molecular_conflict,同一源患者不同扫描的已记录结果不一致；无标本日期说明,不跨时间点补值；该患者此分子变量隔离为未知，原值保留
+UCSD-PTGBM-0145_02,UCSD-PTGBM-0145,IDH,Mutant,within_patient_molecular_conflict,同一源患者不同扫描的已记录结果不一致；无标本日期说明,不跨时间点补值；该患者此分子变量隔离为未知，原值保留
+UCSD-PTGBM-0011_01,UCSD-PTGBM-0011,Grade,3,lower_grade_in_source_collection,源集合包含Grade 2/3，影响纯GBM/WHO分类的纳入定义,本步保留源集合，后续预先指定组织学敏感性分析
+UCSD-PTGBM-0035_01,UCSD-PTGBM-0035,Grade,2,lower_grade_in_source_collection,源集合包含Grade 2/3，影响纯GBM/WHO分类的纳入定义,本步保留源集合，后续预先指定组织学敏感性分析
+UCSD-PTGBM-0134_01,UCSD-PTGBM-0134,Grade,3,lower_grade_in_source_collection,源集合包含Grade 2/3，影响纯GBM/WHO分类的纳入定义,本步保留源集合，后续预先指定组织学敏感性分析
+UCSD-PTGBM-0043_01,UCSD-PTGBM-0043,Primary Diagnosis,"Astrocytoma, IDH-Mutant, Grade 5",invalid_diagnosis_grade_text,源诊断文本含Grade 5；未改写成Grade 4,保留异常标记，不将此文本作预测输入
+UCSD-PTGBM-0066_01,UCSD-PTGBM-0066,Surgery extend,GTR,surgery_extent_flag_conflict,Surgery=No却记录切除范围GTR/STR，字段含义/时点需澄清,切除范围暂不作为主模型输入
+UCSD-PTGBM-0137_01,UCSD-PTGBM-0137,Surgery extend,GTR,surgery_extent_flag_conflict,Surgery=No却记录切除范围GTR/STR，字段含义/时点需澄清,切除范围暂不作为主模型输入
