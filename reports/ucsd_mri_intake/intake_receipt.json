@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "checked_at_utc": "2026-10-29T04:37:15.554208+00:00",
+    "input_directory_exists": false,
+    "expected_files": 12,
+    "missing_expected_files": 12,
+    "uniquely_located_expected_files": 0,
+    "decoded_expected_files": 0,
+    "technical_pass_files": 0,
+    "minimal_FLAIR_batch_technical_pass": false,
+    "expanded_batch_grid_screen_pass": false,
+    "source_authenticity_verified": false,
+    "anatomical_alignment_verified": false,
+    "ROI_for_prediction_approved": false,
+    "MRI_features_extracted": false,
+    "MRI_model_fitted": false,
+    "clinical_models_refitted": false,
+    "nibabel_version": "5.4.2",
+    "numpy_version": "2.3.5",
+    "thresholds": {
+      "max_bytes": 536870912,
+      "max_voxels": 40000000,
+      "corner_delta_mm": 0.1
+    },
+    "scope": "Two selected technical cases only; no labels read by QC; no clinical or ROI acceptance",
+    "state": "blocked_missing_or_failed_sample_files",
+    "protocol_sha256": "177d8e86eaef28815e0309e325a5b55e89a6a56d2427430c17fc87a77f75e632",
+    "module_sha256": "b9da93e85b8cec68cf98317f254b5d6ede2c2067e054b6fa4a17c541950ebf39"
+  },
+  "files": [
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "sequence": "FLAIR",
+      "expected_filename": "UCSD-PTGBM-0001_01_FLAIR.nii.gz",
+      "minimal_batch": true,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "sequence": "T1pre",
+      "expected_filename": "UCSD-PTGBM-0001_01_T1pre.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "sequence": "T1post",
+      "expected_filename": "UCSD-PTGBM-0001_01_T1post.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "sequence": "T2",
+      "expected_filename": "UCSD-PTGBM-0001_01_T2.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "sequence": "ADC_vendor",
+      "expected_filename": "UCSD-PTGBM-0001_01_ADC_vendor.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0001_01",
+      "sequence": "BraTS_tumor_seg",
+      "expected_filename": "UCSD-PTGBM-0001_01_BraTS_tumor_seg.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "sequence": "FLAIR",
+      "expected_filename": "UCSD-PTGBM-0003_01_FLAIR.nii.gz",
+      "minimal_batch": true,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "sequence": "T1pre",
+      "expected_filename": "UCSD-PTGBM-0003_01_T1pre.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "sequence": "T1post",
+      "expected_filename": "UCSD-PTGBM-0003_01_T1post.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "sequence": "T2",
+      "expected_filename": "UCSD-PTGBM-0003_01_T2.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "sequence": "ADC_vendor",
+      "expected_filename": "UCSD-PTGBM-0003_01_ADC_vendor.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    },
+    {
+      "ID": "UCSD-PTGBM-0003_01",
+      "sequence": "BraTS_tumor_seg",
+      "expected_filename": "UCSD-PTGBM-0003_01_BraTS_tumor_seg.nii.gz",
+      "minimal_batch": false,
+      "matches": [],
+      "status": "missing",
+      "technical_pass": false,
+      "decoded": false,
+      "issues": [],
+      "grid_to_FLAIR": {
+        "status": "blocked_file_QC"
+      }
+    }
+  ],
+  "excluded_files": []
+}

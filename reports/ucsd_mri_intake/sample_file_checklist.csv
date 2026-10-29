@@ -1,0 +1,13 @@
+﻿ID,sequence,expected_filename,minimal_batch,status,technical_pass,decoded,matches,issues,sha256,bytes,shape,grid_status
+UCSD-PTGBM-0001_01,FLAIR,UCSD-PTGBM-0001_01_FLAIR.nii.gz,True,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0001_01,T1pre,UCSD-PTGBM-0001_01_T1pre.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0001_01,T1post,UCSD-PTGBM-0001_01_T1post.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0001_01,T2,UCSD-PTGBM-0001_01_T2.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0001_01,ADC_vendor,UCSD-PTGBM-0001_01_ADC_vendor.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0001_01,BraTS_tumor_seg,UCSD-PTGBM-0001_01_BraTS_tumor_seg.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0003_01,FLAIR,UCSD-PTGBM-0003_01_FLAIR.nii.gz,True,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0003_01,T1pre,UCSD-PTGBM-0003_01_T1pre.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0003_01,T1post,UCSD-PTGBM-0003_01_T1post.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0003_01,T2,UCSD-PTGBM-0003_01_T2.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0003_01,ADC_vendor,UCSD-PTGBM-0003_01_ADC_vendor.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC
+UCSD-PTGBM-0003_01,BraTS_tumor_seg,UCSD-PTGBM-0003_01_BraTS_tumor_seg.nii.gz,False,missing,False,False,[],[],,,null,blocked_file_QC

@@ -2,7 +2,9 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
-**第13步已完成ID隔离后的临床重验与扩展，等待批准下一步。** 隔离5条双ID冲突扫描后，保留238次扫描、176名源患者。临床及BraTS患者ID均不跨验证折；相同病例/折上的M0（年龄＋性别）AUC=0.6124，M1（另加初始事件间隔与其他扫描前治疗）AUC=0.6790，Brier分别0.1640和0.1547。AUC成对差值0.0666的95%区间为−0.0499至0.1702，尚未确证增益。固定0.5阈值仅识别51次治疗改变中的5次，不声称临床可用。
+**第14步已完成两例MRI接收与质控的程序准备，真实文件仍待获取。** [Notebook14](notebooks/14_ucsd_mri_intake_and_qc.ipynb)已实际执行，5个代码单元、0错误；全项目57项测试通过（新增10项临时数组故障测试，不是研究影像）。[12项文件清单](reports/ucsd_mri_intake/sample_file_checklist.csv)目前全部missing、实际解码0，未完成像素/ROI验证或MRI建模。见[第14步报告](reports/ucsd_mri_intake_step14_20261029.md)、[接收规则](reports/ucsd_mri_intake_protocol.md)及[文件获取说明](reports/ucsd_clinical_revalidation/MRI_SAMPLE_DOWNLOAD_CN.md)。下一阶段需要两份真实FLAIR到位及用户批准。
+
+当前临床结果仍为第13步ID隔离后的重验：隔离5条双ID冲突扫描后，保留238次扫描、176名源患者。临床及BraTS患者ID均不跨验证折；相同病例/折上的M0（年龄＋性别）AUC=0.6124，M1（另加初始事件间隔与其他扫描前治疗）AUC=0.6790，Brier分别0.1640和0.1547。AUC成对差值0.0666的95%区间为−0.0499至0.1702，尚未确证增益。固定0.5阈值仅识别51次治疗改变中的5次，不声称临床可用。第14步核验8份关键临床资料与第13步发布版本字节一致。
 
 本步在首次拟合前固定方案，无调参或阈值优化；46条间隔缺失只在训练折内填补，并加入缺失标记。唯一完整间隔资料敏感性分析为192次扫描/142名源患者，M0/M1 AUC为0.5211/0.6226，不能与主队列跨人群比较。见[第13步报告](reports/ucsd_clinical_revalidation_step13_20261029.md)、[固定方案](reports/ucsd_clinical_revalidation_protocol.md)、[Excel](outputs/ucsd-clinical-revalidation-20261029/UCSD_Clinical_Revalidation.xlsx)、[Notebook13](notebooks/13_ucsd_clinical_revalidation.ipynb)和[逐例OOF预测](data/processed/ucsd_clinical_revalidated_oof.csv)。
 
@@ -16,6 +18,14 @@ python -m unittest discover -s tests -p 'test_ucsd_clinical_revalidation.py' -v
 ```
 
 第13步Excel由`scripts/build_ucsd_revalidation_workbook.mjs`通过artifact-tool生成，设置`RN_PROJECT_ROOT`为项目绝对路径；修改Excel不会重新训练Python模型。Notebook和五页Excel已执行/核对，47项测试通过。后续阶段仍经用户批准后继续。
+
+两份真实样本接收后运行以下命令，或用`--input-root`指定解压后的原名文件目录。缺文件或需复核时命令返回码2并保存blocked回执；返回码0也仅表示最小FLAIR批次技术通过。SHA256只作本地指纹，技术网格检查不能代替人工解剖审阅，预测ROI始终须另行核实。
+
+```bash
+python scripts/audit_ucsd_mri_intake.py
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_14.json notebooks/14_ucsd_mri_intake_and_qc.ipynb
+python scripts/verify_ucsd_mri_intake_artifacts.py
+```
 
 ## 第12步审计记录
 
@@ -133,8 +143,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 12. `11_ucsd_clinical_baseline.ipynb`：改题获批后的UCSD队列、固定年龄/性别Logistic及患者分组OOF验证；本步完成，等待批准影像可行性核查。
 13. `12_ucsd_clinical_and_mri_feasibility.ipynb`：完整36字段、未来信息隔离、双ID交叉、MRI公开目录和ROI方案核查；无新模型或像素质控。
 14. `13_ucsd_clinical_revalidation.ipynb`：隔离5条后的M0/M1临床比较、患者簇成对区间、完整间隔资料敏感性分析和两例MRI传输重试记录。
+15. `14_ucsd_mri_intake_and_qc.ipynb`：两例MRI精确接收、完整体素/几何质控及ROI边界；当前缺实际文件，真实质控未完成。
 
-00—04保留普通Python顺序执行器验证的输出。05—13已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—13分别独立保存对应的执行JSON。00—10未训练模型；11生成历史性能，12发现双ID问题，13完成隔离后的重新验证和扩展临床比较。
+00—04保留普通Python顺序执行器验证的输出。05—14已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—14分别独立保存对应的执行JSON。00—10未训练模型；11生成历史性能，12发现双ID问题，13完成隔离后的重新验证和扩展临床比较，14未拟合模型。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 

@@ -16,4 +16,12 @@
 
 下载后本项目将检查文件头/像素可读性、维度/仿射、跨序列一致性及ROI两组适用性。细胞性肿瘤参考掩膜TCT/ECT/NECT不作为本鉴别任务的预测输入。
 
+第14步已完成接收与技术检查代码，实际文件仍未到位。若在本地运行项目，将解压后的原名文件放到`data/imaging/ucsd_samples/`（允许病例子目录），在项目根目录运行：
+
+```bash
+python scripts/audit_ucsd_mri_intake.py
+```
+
+也可用`--input-root /实际文件目录`指定位置。结果写入`reports/ucsd_mri_intake/`，不改动原文件；返回码2表示缺文件/需复核。保留下载时间与官方来源入口。把实际两份文件或两病例目录ZIP提供给本项目后即可开展真实像素检查；当前代码不会把下载网页、符号链接或测试数组当作研究影像。完整[接收规则](../ucsd_mri_intake_protocol.md)与[第14步报告](../ucsd_mri_intake_step14_20261029.md)供核对。
+
 如本地FASP也受限，IBM Connect有HTTP备用传输机制，但它需要服务端支持，不能由“网页无HTTP网关”推断其必定可用或不可用；本项目尚未验证这一备用路径。[IBM官方网络设置说明](https://www.ibm.com/docs/en/aspera-connect/4.2.x?topic=configuration-network)。未成功取得实际文件前，不把样本标记为下载或质控完成。

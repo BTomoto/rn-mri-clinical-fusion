@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-29T04:37:14.040888+00:00",
+  "command": "python -m unittest discover -s tests -v",
+  "tests_run": 57,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "elapsed_seconds": 4.154,
+  "new_MRI_intake_test_cases": 10,
+  "synthetic_arrays_are_software_fixtures_only": true,
+  "real_UCSD_images_validated_by_tests": 0
+}

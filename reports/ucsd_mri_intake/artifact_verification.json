@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "intake_protocol_sha256": "177d8e86eaef28815e0309e325a5b55e89a6a56d2427430c17fc87a77f75e632",
+  "intake_module_sha256": "b9da93e85b8cec68cf98317f254b5d6ede2c2067e054b6fa4a17c541950ebf39",
+  "notebook_code_sha256": "dded118ac8f5a6220fd478c2230c0fc7fb9a0d2366287808dac6af80c71e01cb",
+  "checklist_rows_verified": 12,
+  "real_image_files_decoded": 0,
+  "MRI_model_fitted": false,
+  "source_authenticity_verified": false,
+  "prior_clinical_reference_commit": "739eddb5d4a4f9e4bdb3cde316c0ccefbbbe5794",
+  "byte_identical_prior_clinical_artifacts": {
+    "data/raw/reference/ucsd_ptgbm_clinical_v3.xlsx": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+    "data/raw/reference/ucsd_ptgbm_negative_cases.xlsx": "6d99db8ac1feac569e50c18ed214a1a761858fb8bfa614a29ec5f036946b96e4",
+    "data/processed/ucsd_clinical_revalidated_cohort.csv": "a57c9ee9c27cc261045a006675957482bd0bcfec9a9ce36735cd5abca5487006",
+    "data/processed/ucsd_clinical_revalidated_oof.csv": "966b2d5ebaef86773f2f1be3712c83623c3123d0a89bdb05d67144f4ff57d3d2",
+    "reports/ucsd_clinical_revalidation/metrics.json": "d3eda0f6b1f674108c5ba4f76a37cb7ab7aeb9594640faabf339b03a944e42aa",
+    "outputs/ucsd-clinical-revalidation-20261029/UCSD_Clinical_Revalidation.xlsx": "3c0cc52cb6d703e25681e19f255ea858f894d62603bf1f450bd3f048db32f478",
+    "src/rn_public/ucsd_clinical_revalidation.py": "050a4aaf0e9602b7c9d79e0132301e415b5390a02a9151e084a416ace6db0413",
+    "notebooks/13_ucsd_clinical_revalidation.ipynb": "685072788bd3d4498d7ff327abb1821cbd4b2f87d7cb39bd2c58760f07fa9fa4"
+  }
+}
