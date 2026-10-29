@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "stage": 47,
+  "date": "2026-10-30",
+  "subsection": "4.7 Meaning of the single-scan result",
+  "paragraph_ids": [
+    "D7"
+  ],
+  "english_word_count": 192,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 199,
+  "prior_files_unchanged": 198,
+  "new_full_texts_checked_for_current_claims": [
+    "S25",
+    "S26"
+  ],
+  "same_patient_set_verified": true,
+  "selected_examinations_and_patients": 135,
+  "identifier_only_selection_reconstructed": true,
+  "per_examination_source_labels_unchanged": true,
+  "selected_partitions_differ_beyond_fold_numbering": true,
+  "fixed_threshold_recognition_checked": {
+    "treatment_change": [
+      2,
+      22
+    ],
+    "tumor": [
+      109,
+      113
+    ]
+  },
+  "new_manuscript_references": 2,
+  "provisional_citation_mapping": {
+    "15": "S25",
+    "16": "S26"
+  },
+  "cumulative_unique_cited_sources": 16,
+  "new_external_validation_claimed": false,
+  "retrospective_power_or_sample_size_calculated": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.8 Reference-standard limitations (D8)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step47-20261030/UCSD_Manuscript_Discussion_4_7_EN_ZH.docx": "38b4ddb05bd0f0c646efd4d138e743506cfeabe6677bf6b0a8ba05a039a94743",
+    "outputs/ucsd-manuscript-step47-20261030/UCSD_Manuscript_Discussion_4_7_EN.txt": "c9ab015c0f78937dad7c2143af32abda81815f57522d9e2c2cde27b79d0b5524"
+  }
+}

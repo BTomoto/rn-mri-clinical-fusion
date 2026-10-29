@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第47步已完成Discussion 4.7单扫描结果的含义（D7）。** [中英对照Word](outputs/ucsd-manuscript-step47-20261030/UCSD_Manuscript_Discussion_4_7_EN_ZH.docx)包含192个英文词、一组中译及2篇参考文献，共2页。解释增量区间跨零、治疗改变仅识别2/22及同一135名患者的选中分析；扫描构成、类别和训练划分同时变化，不能将跨分析差异仅归因于重复扫描。
+
+见[第47步报告](reports/ucsd_manuscript_step47_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step47/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step47/discussion_section47.json)及[核查回执](reports/ucsd_manuscript_step47/artifact_verification.json)。198份此前文件未变，ID选择、患者集合、逐检查标签、分折变化及固定阈值计数核对一致，无重训。当前英文叙述6047词、35组中译、16篇实际引用来源。下一节为Discussion 4.8参考标准的局限（D8），等待用户批准。
+
 **第46步已完成Discussion 4.6边界与分折稳健性（D6）。** [中英对照Word](outputs/ucsd-manuscript-step46-20261030/UCSD_Manuscript_Discussion_4_6_EN_ZH.docx)包含193个英文词、一组中译及2篇参考文献，共2页。区分特定边界腐蚀、重复分折与扫描—重扫描重复性，保留跨零不证明等价、重复不等于独立验证的边界；连接组扫描复制实验只作为依赖风险的方法学背景。
 
 见[第46步报告](reports/ucsd_manuscript_step46_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step46/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step46/discussion_section46.json)及[核查回执](reports/ucsd_manuscript_step46/artifact_verification.json)。194份此前文件未变，20个保存的增量方向一致，无重训或重提特征。当前英文叙述5855词、34组中译、14篇实际引用来源。下一节为Discussion 4.7单扫描结果的含义（D7），等待用户批准。

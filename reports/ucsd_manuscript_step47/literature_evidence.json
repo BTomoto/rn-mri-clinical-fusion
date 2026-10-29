@@ -1,0 +1,70 @@
+{
+  "stage": 47,
+  "date": "2026-10-30",
+  "scope": "D7 meaning of the single-scan sensitivity analysis and implications for further validation",
+  "studies": [
+    {
+      "reference_id": "S25",
+      "provisional_citation_number": 15,
+      "doi": "10.1136/bmj-2023-074820",
+      "source_url": "https://www.bmj.com/content/384/bmj-2023-074820",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10788734/fullTextXML",
+      "read_level_this_stage": "Full text reviewed for relevant claims",
+      "source_snapshot_sha256": "8cffd29cd68f851a8caf9896c13857c2666408fe779f01cacba9559c554ee861",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": ["What do we mean by external validation?", "Step 1: Obtaining a suitable dataset for external validation", "Step 3: Quantifying a model's predictive performance"],
+      "facts": {
+        "publication_year": 2024,
+        "external_validation": "Evaluation using a relevant dataset not used in model development",
+        "target_population": "The evaluation dataset should represent the intended population, setting and measurement process",
+        "performance_domains": ["overall fit", "calibration", "discrimination"]
+      },
+      "permitted_claim": "Further external evaluation should use data representative of the intended population and setting",
+      "limits": "This guidance does not make our selected same-patient sensitivity analysis external validation or independently validate its labels. The guidance is methodological, not evidence of our model's clinical usefulness."
+    },
+    {
+      "reference_id": "S26",
+      "provisional_citation_number": 16,
+      "doi": "10.1136/bmj-2023-074821",
+      "source_url": "https://www.bmj.com/content/384/bmj-2023-074821",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11778934/fullTextXML",
+      "read_level_this_stage": "Full text reviewed for relevant claims",
+      "source_snapshot_sha256": "9e128f498ce1bf01160fbc5fe47f5fb0aca5e75557b030c937114caee9480c5a",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": ["Rationale for sample size calculations in external validation studies", "Sample size for external validation of prediction models with a binary outcome"],
+      "facts": {
+        "publication_year": 2024,
+        "principle": "Plan sample size to achieve specified precision of performance estimates",
+        "relevant_inputs": ["outcome proportion", "anticipated model performance", "distribution of predicted values"],
+        "rules_of_thumb_limit": "Generic counts of events and non-events are not tailored to the model or setting"
+      },
+      "permitted_claim": "Further validation should plan sample size for precise performance estimation",
+      "limits": "No sample-size formula, minimum event rule, retrospective power calculation or prospective recruitment target is applied to the current availability-based internal analysis. Limited minority-class observations are not established as the sole cause of uncertainty or classification errors."
+    }
+  ],
+  "own_study_claims": [
+    {"claim": "Single-scan Fusion-minus-M1 AUC interval is -0.0151422971184197 to 0.25221780024757906, conditional on saved OOF predictions", "sources": ["reports/ucsd_stability/metrics.json", "reports/ucsd_manuscript_step40/results_section38.json"]},
+    {"claim": "The selected 135 examinations retain the same 135 source patients as the 182-examination primary imaging cohort", "sources": ["data/processed/ucsd_clinical_image_features.csv", "reports/ucsd_stability/single_scan_selection.csv", "data/processed/ucsd_stability_single_scan_oof.csv"]},
+    {"claim": "Treatment-related-change examinations decline from 41 to 22; selection changes examination composition, labels per selected patient, training data and grouped partitions", "sources": ["data/processed/ucsd_fusion_oof.csv", "data/processed/ucsd_stability_single_scan_oof.csv", "reports/ucsd_stability/single_scan_fold_manifest.csv"]},
+    {"claim": "Selection uses the smallest available numeric session, not a verified first clinical visit", "sources": ["src/rn_public/ucsd_stability.py", "reports/ucsd_stability/analysis_lock.json"]},
+    {"claim": "At the unchanged 0.5 threshold, single-scan Fusion recognizes 2/22 treatment-related-change and 109/113 tumor examinations", "sources": ["reports/ucsd_stability/metrics.json", "data/processed/ucsd_stability_single_scan_oof.csv"]}
+  ],
+  "interpretations": [
+    "The interval includes both a small negative increment and a larger positive increment, leaving the presence and magnitude of incremental discrimination uncertain",
+    "Changes between the primary and single-scan analyses cannot be attributed solely to removing repeat examinations",
+    "One examination per patient equalizes examination contributions in that selected analysis but does not supply an independent cohort or verify source diagnoses",
+    "The low treatment-change recognition applies to the fixed threshold and does not establish that no other threshold could recognize more treatment-change examinations",
+    "Further independent evaluation is a recommendation, not a claim that such evaluation has occurred"
+  ],
+  "access_notes": ["Direct BMJ opens returned HTTP 403; both relevant full texts were successfully acquired as primary JATS XML and used for review"],
+  "new_unique_manuscript_references": 2,
+  "cumulative_unique_cited_sources": 16,
+  "reading_level_updates": [
+    {"reference_id": "S25", "current_level": "Full text reviewed for relevant claims"},
+    {"reference_id": "S26", "current_level": "Full text reviewed for relevant claims"}
+  ],
+  "candidate_library_unchanged": true,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0
+}

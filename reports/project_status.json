@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "scope": "Stage46 Discussion 4.6 boundary and split robustness drafted; one boundary perturbation, repeated partitioning and acquisition repeatability distinguished with explicit interpretation limits",
+  "scope": "Stage47 Discussion 4.7 single-scan interpretation drafted; same-patient selection, conditional incremental uncertainty and class-specific recognition limits verified",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Discussion 4.7 meaning of the single-scan result (D7)",
+  "next_work_item": "Await user approval for Discussion 4.8 reference-standard limitations (D8)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 46,
-    "subsection": "4.6 Boundary and split robustness",
+    "stage": 47,
+    "subsection": "4.7 Meaning of the single-scan result",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -443,16 +443,17 @@
       "D3",
       "D4",
       "D5",
-      "D6"
+      "D6",
+      "D7"
     ],
-    "english_word_count": 5855,
-    "chinese_paragraphs": 34,
+    "english_word_count": 6047,
+    "chinese_paragraphs": 35,
     "current_section_citations": 2,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
     "candidate_library_is_final_citation_list": false,
-    "fulltexts_reviewed_for_relevant_claims": 10,
+    "fulltexts_reviewed_for_relevant_claims": 12,
     "official_full_checklists_reviewed": 1,
     "manuscript_complete": false,
     "model_refits": 0,
@@ -482,33 +483,43 @@
       "4.3 Conflicting evidence",
       "4.4 Computational contribution",
       "4.5 Interpretation of image features",
-      "4.6 Boundary and split robustness"
+      "4.6 Boundary and split robustness",
+      "4.7 Meaning of the single-scan result"
     ],
-    "latest_section_english_word_count": 193,
+    "latest_section_english_word_count": 192,
     "latest_section_word_pages": 2,
-    "unique_citations_in_drafted_sections": 14,
+    "unique_citations_in_drafted_sections": 16,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 194,
-      "frozen_files_including_new_evidence_record": 195,
-      "paired_boundary_AUC_record_checked": true,
-      "within_partition_AUC_differences_checked": 20,
-      "historical_grouped_fold_checks_confirmed": 100,
+      "prior_files_unchanged": 198,
+      "frozen_files_including_new_evidence_record": 199,
+      "same_patient_set_verified": true,
+      "selected_examinations_and_patients": 135,
+      "identifier_only_selection_reconstructed": true,
+      "per_examination_source_labels_unchanged": true,
+      "selected_partitions_differ_beyond_fold_numbering": true,
+      "fixed_threshold_recognition_checked": {
+        "treatment_change": [
+          2,
+          22
+        ],
+        "tumor": [
+          109,
+          113
+        ]
+      },
       "new_full_texts_checked_for_current_claims": [
-        "S27"
-      ],
-      "limited_abstract_claim_sources": [
-        "S30"
+        "S25",
+        "S26"
       ],
       "new_manuscript_references": 2,
       "provisional_citation_mapping": {
-        "13": "S30",
-        "14": "S27"
+        "15": "S25",
+        "16": "S26"
       },
-      "equivalence_or_segmentation_accuracy_claimed": false,
-      "repeated_partitions_claimed_independent": false,
-      "features_reextracted": 0,
+      "new_external_validation_claimed": false,
+      "retrospective_power_or_sample_size_calculated": false,
       "models_fitted": 0
     },
     "methods_v2_paragraphs_complete": true,
@@ -527,7 +538,7 @@
       "Table S7"
     ],
     "results_v2_paragraphs_complete": true,
-    "discussion_english_word_count": 1278,
+    "discussion_english_word_count": 1470,
     "discussion_v2_paragraphs_complete": false,
     "latest_stage_date": "2026-10-30"
   },
@@ -553,5 +564,6 @@
   "ucsd_manuscript_step43_report": "reports/ucsd_manuscript_step43_20261030.md",
   "ucsd_manuscript_step44_report": "reports/ucsd_manuscript_step44_20261030.md",
   "ucsd_manuscript_step45_report": "reports/ucsd_manuscript_step45_20261030.md",
-  "ucsd_manuscript_step46_report": "reports/ucsd_manuscript_step46_20261030.md"
+  "ucsd_manuscript_step46_report": "reports/ucsd_manuscript_step46_20261030.md",
+  "ucsd_manuscript_step47_report": "reports/ucsd_manuscript_step47_20261030.md"
 }
