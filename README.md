@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第46步已完成Discussion 4.6边界与分折稳健性（D6）。** [中英对照Word](outputs/ucsd-manuscript-step46-20261030/UCSD_Manuscript_Discussion_4_6_EN_ZH.docx)包含193个英文词、一组中译及2篇参考文献，共2页。区分特定边界腐蚀、重复分折与扫描—重扫描重复性，保留跨零不证明等价、重复不等于独立验证的边界；连接组扫描复制实验只作为依赖风险的方法学背景。
+
+见[第46步报告](reports/ucsd_manuscript_step46_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step46/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step46/discussion_section46.json)及[核查回执](reports/ucsd_manuscript_step46/artifact_verification.json)。194份此前文件未变，20个保存的增量方向一致，无重训或重提特征。当前英文叙述5855词、34组中译、14篇实际引用来源。下一节为Discussion 4.7单扫描结果的含义（D7），等待用户批准。
+
 **第45步已完成Discussion 4.5影像特征的解释（D5）。** [中英对照Word](outputs/ucsd-manuscript-step45-20261030/UCSD_Manuscript_Discussion_4_5_EN_ZH.docx)包含198个英文词、一组中译和2篇本节参考文献，共2页。区分均值/标准差、无位置信息的直方图熵及局部空间GLCM对比度，保留ROI、派生强度和未知空间单位的解释边界；系数不作为独立危险因素或细胞机制的证明。
 
 见[第45步报告](reports/ucsd_manuscript_step45_20261030.md)、[来源与定义映射](reports/ucsd_manuscript_step45/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step45/discussion_section45.json)及[核查回执](reports/ucsd_manuscript_step45/artifact_verification.json)。188份此前文件未变，无重提特征或重训。当前英文叙述5662词、33组中译、12篇实际引用来源。下一节为Discussion 4.6边界与分折稳健性（D6），等待用户批准。

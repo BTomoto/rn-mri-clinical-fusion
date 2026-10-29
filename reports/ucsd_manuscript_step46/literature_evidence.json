@@ -1,0 +1,67 @@
+{
+  "stage": 46,
+  "date": "2026-10-30",
+  "scope": "D6 boundary perturbation, partition sensitivity and their limits",
+  "studies": [
+    {
+      "reference_id": "S30",
+      "provisional_citation_number": 13,
+      "doi": "10.1007/s13246-025-01613-2",
+      "source_url": "https://link.springer.com/article/10.1007/s13246-025-01613-2",
+      "read_level_this_stage": "Primary publisher abstract and metadata only; full text remains subscription restricted",
+      "source_snapshot_sha256": "58cdeafe69e70f96e26ee29aa176f293c024cd4c104bdec6f92da08a1b9ac78b",
+      "source_snapshot_format": "Publisher HTML abstract preview",
+      "source_locators": ["Abstract", "Cite this article and publication metadata"],
+      "facts": {
+        "publication_year": 2025,
+        "full_pagination": "1691-1702",
+        "scope": "Scan-rescan repeatability of radiomic features from diffusion and perfusion MRI in glioblastoma"
+      },
+      "permitted_claim": "This study examined a scan-rescan measurement property distinct from perturbing a segmentation boundary or repeating validation partitions",
+      "limits": "No full-text review is claimed. D6 does not use feature-specific ICC results, thresholds, detailed acquisition or processing methods, or conclusions that our features are repeatable. Correct the truncated candidate pagination only in this stage's citation copy."
+    },
+    {
+      "reference_id": "S27",
+      "provisional_citation_number": 14,
+      "doi": "10.1038/s41467-024-46150-w",
+      "source_url": "https://www.nature.com/articles/s41467-024-46150-w",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10901797/fullTextXML",
+      "read_level_this_stage": "Full text reviewed for relevant claims, including results and methods on subject-level leakage",
+      "source_snapshot_sha256": "4bbb41b49a0580b21e1f04347a45a308262a6360415e6e9d24b9e1e9beafb8c6",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": ["Results: Subject-level leakage", "Methods: Subject-level leakage", "Discussion"],
+      "facts": {
+        "publication_year": 2024,
+        "scope": "Functional and structural connectome prediction tasks",
+        "subject_leakage_experiment": "Duplicated the exact same scans for a fraction of participants before partitioning",
+        "finding_used": "Allowing duplicates across training and test partitions inflated prediction performance",
+        "stated_design_limit": "The duplicated-scan experiment is not directly comparable to longitudinal or repeated-measurement studies"
+      },
+      "permitted_claim": "The experiment illustrates a dependence-related leakage risk relevant to keeping all scans from a patient together",
+      "limits": "Does not quantify bias in our diagnostic task, establish that all leakage was eliminated, or validate our source annotation process. Do not describe identical-scan duplication as a real longitudinal glioma validation experiment."
+    }
+  ],
+  "own_study_claims": [
+    {"claim": "One six-neighbor erosion on the supplied voxel grid retains the original image percentile and full-ROI discretization references", "sources": ["src/rn_public/ucsd_batch_features.py", "reports/ucsd_manuscript_step31/methods_section29.json"]},
+    {"claim": "Eroded-minus-original Fusion AUC difference is 0.0062272963155163286; its conditional paired interval includes zero", "sources": ["reports/ucsd_fusion/metrics.json", "reports/ucsd_manuscript_step38/results_section36.json"]},
+    {"claim": "All 20 within-partition Fusion-minus-M1 AUC differences are positive; the same cohort is reused", "sources": ["reports/ucsd_stability/metrics.json", "reports/ucsd_stability/repeated_paired_differences.csv", "reports/ucsd_manuscript_step39/results_section37.json"]},
+    {"claim": "Original ROI and primary partition remain primary; repeated distributions are descriptive and do not replace the primary uncertainty interval", "sources": ["reports/ucsd_fusion_protocol.md", "reports/ucsd_stability_protocol.md", "reports/ucsd_stability/metrics.json"]}
+  ],
+  "interpretations": [
+    "A small observed change under one erosion suggests limited sensitivity to that particular perturbation, without demonstrating equivalence, segmentation accuracy or general robustness to all boundary changes",
+    "Twenty positive increments support directional consistency under the observed partitions, not independent replication or external validation",
+    "Neither check establishes acquisition repeatability, source-label validity or performance at other institutions"
+  ],
+  "access_notes": [
+    "S30 publisher provides a subscription preview; the D6 claim is limited to the study scope explicitly stated in its primary abstract",
+    "S27 publisher open request encountered an authentication redirect; primary JATS full text was successfully acquired and used for relevant-claim review"
+  ],
+  "new_unique_manuscript_references": 2,
+  "cumulative_unique_cited_sources": 14,
+  "reading_level_updates": [{"reference_id": "S27", "historical_library_level": "Abstract screened; full text needed before detailed comparison", "current_level": "Full text reviewed for relevant claims"}],
+  "candidate_library_unchanged": true,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "features_reextracted": 0,
+  "new_hypothesis_tests": 0
+}

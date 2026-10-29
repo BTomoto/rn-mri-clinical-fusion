@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "stage": 46,
+  "date": "2026-10-30",
+  "subsection": "4.6 Boundary and split robustness",
+  "paragraph_ids": [
+    "D6"
+  ],
+  "english_word_count": 193,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 195,
+  "prior_files_unchanged": 194,
+  "new_full_texts_checked_for_current_claims": [
+    "S27"
+  ],
+  "limited_abstract_claim_sources": [
+    "S30"
+  ],
+  "paired_boundary_AUC_record_checked": true,
+  "within_partition_AUC_differences_checked": 20,
+  "historical_grouped_fold_checks_confirmed": 100,
+  "new_manuscript_references": 2,
+  "provisional_citation_mapping": {
+    "13": "S30",
+    "14": "S27"
+  },
+  "cumulative_unique_cited_sources": 14,
+  "equivalence_or_segmentation_accuracy_claimed": false,
+  "repeated_partitions_claimed_independent": false,
+  "models_refitted": 0,
+  "features_reextracted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.7 Meaning of the single-scan result (D7)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step46-20261030/UCSD_Manuscript_Discussion_4_6_EN_ZH.docx": "8adec4f70aab6263b7392c071106d9980fecb7dfb558136bb050951453ff1080",
+    "outputs/ucsd-manuscript-step46-20261030/UCSD_Manuscript_Discussion_4_6_EN.txt": "6aa90a82b9cff6ea6d1cdd241329ed353e8ba090d5fd857d37af8d181131f933"
+  }
+}
