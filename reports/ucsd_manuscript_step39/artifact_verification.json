@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "stage": 39,
+  "date": "2026-10-29",
+  "subsection": "3.7 Split stability",
+  "paragraph_ids": [
+    "R7"
+  ],
+  "english_word_count": 172,
+  "paragraph_word_counts": {
+    "R7": 172
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 4,
+  "visual_review_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 167,
+  "repetitions_checked": 20,
+  "repeated_prediction_rows_checked": 3640,
+  "folds_checked": 100,
+  "saved_successful_fold_model_records_checked": 400,
+  "fixed_oof_metric_values_reconstructed": 320,
+  "within_repetition_metric_differences_checked": 80,
+  "table_s5a_numeric_values_checked": 24,
+  "table_s5b_numeric_values_checked": 28,
+  "first_repetition_main_oof_values_checked": 728,
+  "editable_english_tables": 2,
+  "table_numeric_values_changed": 0,
+  "descriptive_distributions_not_intervals": true,
+  "unchanged_figure_embedded": true,
+  "figure_page_landscape": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.8 Single-scan sensitivity (R8)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step39-20261029/TableS5A_EN.csv": "cd882aea0445ffa565a066e9dd05400dace6469af90c92c89251b8f05720e759",
+    "outputs/ucsd-manuscript-step39-20261029/UCSD_Manuscript_Results_3_7_EN_ZH.docx": "8aee4b2cb9d32656b6c59a59e75f32332e871bef923cb331e3e4793178037c7a",
+    "outputs/ucsd-manuscript-step39-20261029/UCSD_Manuscript_Results_3_7_EN.txt": "78df3d92d21bcbe67302df904d7a987a007062104d63979073bbbd1953480a1c",
+    "outputs/ucsd-manuscript-step39-20261029/TableS5B_EN.csv": "42b32e9cae27de86812d9da50e50454a1fda1fe9e2a252e6b5167971b5dd4a62"
+  }
+}

@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第39步已完成Results 3.7分折稳定性（R7）。** [中英对照Word](outputs/ucsd-manuscript-step39-20261029/UCSD_Manuscript_Results_3_7_EN_ZH.docx)包含172个英文词、一组中译、可编辑英文Tables S5A/S5B及未改绘Figure 3，共4页。20套全部完整，Fusion AUC中位数0.784、范围0.759–0.809；套内Fusion−M1 AUC差中位数0.125，20套均为正。重复范围不是置信区间，原主AUC 0.782不变。
+
+见[第39步报告](reports/ucsd_manuscript_step39_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step39/results_section37.json)及[核对回执](reports/ucsd_manuscript_step39/artifact_verification.json)。100折/400个保存模型记录、320个固定OOF指标、80个套内差及两表52个数值一致，第一套728个预测与主分析相符；167份既有文件未变，无重训或择优。已写M1–M20及R1–R7，共4393个英文词，下一节为3.8单扫描敏感性（R8），等待用户批准。
+
 **第38步已完成Results 3.6边界敏感性（R6）。** [中英对照Word](outputs/ucsd-manuscript-step38-20261029/UCSD_Manuscript_Results_3_6_EN_ZH.docx)包含160个英文词、一组中译、可编辑英文Table S4与未改绘Figure S1，共3页。腐蚀Fusion AUC为0.788，相对原Fusion差0.0062［−0.0051，0.0183］跨零；原ROI仍为主分析，不据此宣称腐蚀更优或分割准确。
 
 见[第38步报告](reports/ucsd_manuscript_step38_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step38/results_section36.json)及[核对回执](reports/ucsd_manuscript_step38/artifact_verification.json)。182条腐蚀完整性、20个固定OOF指标、原表28个值、8000个配对差及区间一致，164份既有文件未变。未重训或重提特征。已写M1–M20及R1–R6，共4221个英文词，下一节为3.7分折稳定性（R7），等待用户批准。
