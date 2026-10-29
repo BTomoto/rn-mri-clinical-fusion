@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage23 writing started: Methods 2.1 drafted in English with paragraph-matched Chinese; 40-source candidate evidence library verified; next section pending user instruction",
+  "scope": "Stage24 Methods 2.2 Reference standard drafted and source labels rechecked; next clinical predictor definitions pending user instruction",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Methods 2.2 Reference standard (M4), then clinical predictor definitions (M5-M6)",
+  "next_work_item": "Await user approval for clinical predictor definitions (M5-M6)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,17 +407,17 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 23,
-    "subsection": "2.1 Study design and data sources",
+    "stage": 24,
+    "subsection": "2.2 Reference standard",
     "v2_paragraph_ids": [
       "M1",
       "M2",
-      "M3"
+      "M3",
+      "M4"
     ],
-    "english_word_count": 449,
-    "word_pages": 4,
-    "chinese_paragraphs": 3,
-    "current_section_citations": 3,
+    "english_word_count": 624,
+    "chinese_paragraphs": 4,
+    "current_section_citations": 1,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
@@ -427,6 +427,16 @@
     "manuscript_complete": false,
     "model_refits": 0,
     "target_journal_selected": false,
-    "awaiting_user_next_stage_instruction": true
-  }
+    "awaiting_user_next_stage_instruction": true,
+    "completed_subsections": [
+      "2.1 Study design and data sources",
+      "2.2 Reference standard"
+    ],
+    "latest_section_english_word_count": 175,
+    "latest_section_word_pages": 1,
+    "unique_citations_in_drafted_sections": 3,
+    "source_label_records_checked_this_stage": 663,
+    "label_checks_are_independent_samples": false
+  },
+  "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md"
 }

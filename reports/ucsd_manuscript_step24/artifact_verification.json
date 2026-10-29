@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "stage": 24,
+  "date": "2026-10-29",
+  "subsection": "2.2 Reference standard",
+  "paragraph_ids": [
+    "M4"
+  ],
+  "english_word_count": 175,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "current_section_citations": 1,
+  "existing_citation_number_1_preserved": true,
+  "english_cjk_check_passed": true,
+  "visual_review_pages": [
+    1
+  ],
+  "prior_files_unchanged": 49,
+  "label_records_checked": 663,
+  "all_labels_match_source_mapping": true,
+  "subtype_discrepancy_disclosed": true,
+  "pathology_count_not_extrapolated_to_imaging_subset": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Clinical predictor definitions (M5-M6)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN_ZH.docx": "2887f60c47245db525b886e899175a6132e4832292d08c73a317647baa89aa96",
+    "outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN.txt": "ac0e888408b9d74c21b01048870c8d1f6a7afed5e94be339b7b4e5b1aaa018d0"
+  }
+}

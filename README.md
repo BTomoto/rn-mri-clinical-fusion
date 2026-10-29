@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第24步已完成Methods 2.2诊断参考标准（M4）。** [中英对照Word](outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN_ZH.docx)包含175个英文词、对应中文译文及沿用编号1的参考文献，共1页。说明51条明确治疗改变标签、192条补集推导肿瘤标签、混合病理与临床参考，以及亚型计数的来源差异。
+
+见[第24步报告](reports/ucsd_manuscript_step24_20261029.md)、[段落与来源核查](reports/ucsd_manuscript_step24/methods_section22.json)及[核对回执](reports/ucsd_manuscript_step24/artifact_verification.json)。源243、临床238及影像182行共663条标签映射复核，49个此前文件校验值保持一致；663是三个嵌套表的检查记录数。未将源总体45次病理证实数量套用于影像子集，未重新判定标签或拟合模型。已写M1至M4共624个英文词，下一节为临床变量定义（M5–M6），等待用户批准。
+
 **第23步已开始正文写作。** [中英对照Word初稿](outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN_ZH.docx)完成Methods 2.1研究设计与数据来源（M1–M3），449个英文词、三组逐段中译，共4页，附3条当前引用及既有英文Figure 1。[参考文献证据Excel](outputs/ucsd-manuscript-step23-20261029/UCSD_Reference_Evidence_Library.xlsx)整理40篇英文候选文献，其中近五年37篇（92.5%）、近三年31篇（77.5%）；这是候选池，最终引用清单须重新核算。
 
 见[第23步报告](reports/ucsd_manuscript_step23_20261029.md)、[候选证据库](reports/ucsd_manuscript_step23/reference_library.json)及[核对回执](reports/ucsd_manuscript_step23/artifact_verification.json)。39条PubMed DOI元数据及1条JMLR出版社记录核验，30条另经Crossref匹配；各文献明确标注全文/摘要阅读层级。发现已有研究使用同一UCSD母队列，后文不宣称首次使用或将其当作外部验证。未改动数据、模型或冻结结果。下一节为2.2 Reference standard，等待用户批准。

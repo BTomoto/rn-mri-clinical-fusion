@@ -91,3 +91,5 @@ node_modules/
 /outputs/ucsd-manuscript-step23-20261029/docx_render*/
 /outputs/ucsd-manuscript-step23-20261029/preview_*.png
 /outputs/ucsd-manuscript-step23-20261029/*.inspect.ndjson
+
+/outputs/ucsd-manuscript-step24-20261029/docx_render*/
