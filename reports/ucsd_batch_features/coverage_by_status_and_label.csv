@@ -1,0 +1,5 @@
+status,tumor_label,scans,source_patients
+complete,0,41,29
+complete,1,141,114
+not_listed_in_current_mirror,0,10,10
+not_listed_in_current_mirror,1,46,34

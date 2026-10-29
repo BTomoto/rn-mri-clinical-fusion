@@ -1,0 +1,14 @@
+{
+  "filename": "UCSD_MRI_Batch_Additional_Sources_20261029.zip",
+  "archive_bytes": 508299427,
+  "archive_sha256": "dc975456c270964ecc093b6cf2c01f9229d643b10284d8a094933c8d5ed510ee",
+  "additional_source_files": 528,
+  "additional_source_bytes": 508068753,
+  "existing_Git_sample_files": 18,
+  "total_required_files": 546,
+  "format": "ZIP_STORED",
+  "source_manifest_sha256": "ab5e39540e033b81c3e38c4e37ff6ff91efe0cbc7b27054f4081e9126b20908c",
+  "source_images_modified": false,
+  "batch_source_archive_in_Git": false,
+  "repository_contains_features_code_and_manifests": true
+}

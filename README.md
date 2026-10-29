@@ -2,6 +2,18 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第17步已完成批量有限影像特征与临床连接。** 实际取得并完整核验546份文件，共525.72 MB；182次扫描/135名源患者（141肿瘤、41治疗改变）全部提取8项固定特征，0次提取失败。另56次临床扫描未被当前镜像覆盖，仍保留在全238条状态表。182次腐蚀敏感性特征亦完整，FLAIR纹理对比度的绝对相对变化中位数15.29%、最大58.81%，提示边界依赖。没有训练MRI模型或计算AUC。
+
+见[第17步报告](reports/ucsd_batch_features_step17_20261029.md)、[固定协议](reports/ucsd_batch_features_protocol.md)、[临床与影像CSV](data/processed/ucsd_clinical_image_features.csv)、[Notebook17](notebooks/17_ucsd_batch_image_features.ipynb)、[Excel](outputs/ucsd-batch-features-20261029/UCSD_Clinical_Image_Features.xlsx)、[实际文件QC与特征字典](reports/ucsd_batch_features/)。Notebook实际执行5单元、0错误，全项目73项测试通过。所有空间单位仍unknown，uint8及标注盲法限制保留，只研究该公开派生版本。下一阶段拟在共同病例上进行患者分组的临床/MRI/融合Logistic比较，等待用户批准。
+
+新增528份源影像已保存为508.30 MB独立归档，528/528恢复核验通过；其余18份所需输入已在Git样本中。追加原影像未作为普通Git文件提交。[源包下载](https://chatgpt.com/library?file_id=libfile_3a6f9ba00eb08191b30cd19c0b1f1ecc&account_id=personal)需文件持有者账户权限；[恢复信息与SHA256](reports/ucsd_batch_features/source_archive_receipt.json)。也可由公开清单HTTPS重新取得，用户无需手动下载即可继续当前环境分析。
+
+```bash
+python scripts/restore_ucsd_batch_sources.py /path/to/UCSD_MRI_Batch_Additional_Sources_20261029.zip
+python scripts/run_ucsd_batch_features.py
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_17.json notebooks/17_ucsd_batch_image_features.ipynb
+```
+
 **第16步已完成六例MRI技术扩展与统一ROI/强度处理试验。** 共6名不同源患者、两类各3例，36文件43.46 MB全部取得并解码；6例按普通BraTS全部正标签并集生成非空“源标注区域”，24份结构图像完成处理。原分位裁切会合并部分ROI高信号，最高26.33%；保留初始结果后追加不裁切线性缩放，24份成功，推荐下一阶段固定此方法。它是执行后工程修正，不是预注册或经独立样本证明最佳。尚未训练MRI模型或估计AUC。
 
 见[第16步报告](reports/ucsd_roi_pilot_step16_20261029.md)、[原固定协议](reports/ucsd_roi_pilot_protocol.md)、[明确追加的强度修正](reports/ucsd_roi_pilot_intensity_amendment.md)、[Notebook16](notebooks/16_ucsd_roi_and_intensity_pilot.ipynb)、[Excel](outputs/ucsd-roi-pilot-20261029/UCSD_ROI_Intensity_Pilot.xlsx)及[派生二值ROI](data/processed/ucsd_roi_pilot_masks/)。Notebook实际执行5个单元、0错误；全项目67项测试通过。36份空间单位仍为unknown，30份强度图均uint8；不计算mL体积、毫米形态或定量ADC。源标注区域不是纯肿瘤，标注盲法未确认，技术成功不等于临床有效性。下一阶段建议按固定方法批量提取有限探索性特征，等待用户批准。

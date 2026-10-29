@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "actual_source_files_rehashed": 546,
+  "feature_rows_checked": 182,
+  "clinical_status_rows_checked": 238,
+  "workbook_data_rows_checked": 1520,
+  "workbook_formula_caches_checked": 11,
+  "workbook_error_cells": 0,
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "notebook_embedded_figures_byte_identical": 2,
+  "previous_artifacts_preserved": true,
+  "archive_restore_verified_files": 528,
+  "archive_save_confirmed": true,
+  "model_fitted_this_step": false,
+  "external_Excel_application_tested": false
+}

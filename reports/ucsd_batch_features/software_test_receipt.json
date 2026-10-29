@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-29T07:49:24.080729+00:00",
+  "tests_run": 73,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "elapsed_seconds": 5.081,
+  "new_batch_feature_tests": 6,
+  "synthetic_arrays_are_software_tests_only": true
+}

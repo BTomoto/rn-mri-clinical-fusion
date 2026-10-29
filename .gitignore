@@ -66,3 +66,8 @@ node_modules/
 /reports/ucsd_roi_workbook_input.json
 /outputs/ucsd-roi-pilot-20261029/preview_*.png
 /outputs/ucsd-roi-pilot-20261029/*.inspect.ndjson
+
+/reports/ucsd_batch_workbook_input.json
+/outputs/ucsd-batch-features-20261029/preview_*.png
+/outputs/ucsd-batch-features-20261029/*.inspect.ndjson
+/reports/ucsd_batch_features/*progress.json
