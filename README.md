@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第52步已完成Discussion 4.12后续评价的优先事项（D12），讨论部分12段已写齐。** [中英对照Word](outputs/ucsd-manuscript-step52-20261030/UCSD_Manuscript_Discussion_4_12_EN_ZH.docx)包含101个英文词、一组中译及2篇沿用参考文献，共1页。依次提出独立诊断裁定与标注记录、元数据和尺度核实、锁定流程的独立队列评价及治疗改变识别/校准重点；均为后续建议，没有新增验证或临床效用结果。
+
+见[第52步报告](reports/ucsd_manuscript_step52_20261030.md)、[来源与建议映射](reports/ucsd_manuscript_step52/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step52/discussion_section52.json)及[核查回执](reports/ucsd_manuscript_step52/artifact_verification.json)。232份此前文件未变，11段前文与建议对应关系及锁定输入核对一致，无重训或新样本量计算。讨论D1–D12共2424词；当前英文叙述7001词、40组中译、17篇实际引用来源。全文尚未完成，下一节为Conclusion（C1），等待用户批准。
+
 **第51步已完成Discussion 4.11临床解释（D11）。** [中英对照Word](outputs/ucsd-manuscript-step51-20261030/UCSD_Manuscript_Discussion_4_11_EN_ZH.docx)包含209个英文词、一组中译及2篇参考文献，共2页。区分AUC排序、描述性校准、固定阈值错误与临床净获益；现有结果支持继续评价影像增量信号，不能证明模型指导诊疗改善结局。
 
 见[第51步报告](reports/ucsd_manuscript_step51_20261030.md)、[来源与解释映射](reports/ucsd_manuscript_step51/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step51/discussion_section51.json)及[核查回执](reports/ucsd_manuscript_step51/artifact_verification.json)。218份此前文件未变，分类130/141与12/41、校准斜率及概率误差增量区间一致，无重训、重新校准、阈值搜索或净获益计算。当前英文叙述6900词、39组中译、17篇实际引用来源。下一节为Discussion 4.12后续评价的优先事项（D12），等待用户批准。

@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "stage": 52,
+  "date": "2026-10-30",
+  "subsection": "4.12 Priorities for further evaluation",
+  "paragraph_ids": [
+    "D12"
+  ],
+  "english_word_count": 101,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 233,
+  "prior_files_unchanged": 232,
+  "new_full_texts_checked_for_current_claims": [],
+  "prior_discussion_paragraphs_checked": 11,
+  "recommendations_mapped_to_frozen_limitations": true,
+  "locked_model_inputs_unchanged": true,
+  "future_recommendations_not_completed_work": true,
+  "discussion_v2_paragraphs_complete": true,
+  "discussion_english_word_count": 2424,
+  "new_external_cohort_obtained": false,
+  "independent_diagnoses_or_annotation_blinding_newly_verified": false,
+  "physical_scale_newly_verified": false,
+  "new_sample_size_target_calculated": false,
+  "clinical_net_benefit_calculated": false,
+  "independent_probability_recalibration_performed": false,
+  "new_threshold_recommended": false,
+  "new_manuscript_references": 0,
+  "provisional_citation_mapping": {
+    "15": "S25",
+    "16": "S26"
+  },
+  "cumulative_unique_cited_sources": 17,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Conclusion (C1)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step52-20261030/UCSD_Manuscript_Discussion_4_12_EN_ZH.docx": "479e75ebb6f5704f36a66f8ce776043e2a81eaecb78d8ff6e38c3a33bfcffaea",
+    "outputs/ucsd-manuscript-step52-20261030/UCSD_Manuscript_Discussion_4_12_EN.txt": "bc07b380ae04916cd8248217540f1f1c53583ea4392e7e69117b89204f858430"
+  }
+}

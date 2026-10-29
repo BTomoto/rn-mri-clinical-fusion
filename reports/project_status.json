@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "scope": "Stage51 Discussion 4.11 clinical interpretation drafted; ranking, descriptive calibration, fixed-threshold errors and unevaluated clinical utility distinguished",
+  "scope": "Stage52 Discussion 4.12 future evaluation priorities drafted; all twelve Discussion paragraphs complete with recommendations mapped to documented limitations",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Discussion 4.12 priorities for further evaluation (D12)",
+  "next_work_item": "Await user approval for Conclusion (C1)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 51,
-    "subsection": "4.11 Clinical interpretation",
+    "stage": 52,
+    "subsection": "4.12 Priorities for further evaluation",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -448,10 +448,11 @@
       "D8",
       "D9",
       "D10",
-      "D11"
+      "D11",
+      "D12"
     ],
-    "english_word_count": 6900,
-    "chinese_paragraphs": 39,
+    "english_word_count": 7001,
+    "chinese_paragraphs": 40,
     "current_section_citations": 2,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
@@ -492,39 +493,34 @@
       "4.8 Reference-standard limitations",
       "4.9 Image-processing limitations",
       "4.10 Sampling and model uncertainty",
-      "4.11 Clinical interpretation"
+      "4.11 Clinical interpretation",
+      "4.12 Priorities for further evaluation"
     ],
-    "latest_section_english_word_count": 209,
-    "latest_section_word_pages": 2,
+    "latest_section_english_word_count": 101,
+    "latest_section_word_pages": 1,
     "unique_citations_in_drafted_sections": 17,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 218,
-      "frozen_files_unchanged": 219,
-      "new_full_texts_checked_for_current_claims": [
-        "S37"
-      ],
-      "classification_counts_checked": {
-        "tp": 130,
-        "tn": 12,
-        "fp": 29,
-        "fn": 11
-      },
-      "saved_AUC_and_descriptive_calibration_slope_checked": true,
-      "paired_probability_error_intervals_include_zero": true,
-      "clinical_actions_or_downstream_outcomes_evaluated": false,
+      "prior_files_unchanged": 232,
+      "frozen_files_unchanged": 233,
+      "prior_discussion_paragraphs_checked": 11,
+      "recommendations_mapped_to_frozen_limitations": true,
+      "locked_model_inputs_unchanged": true,
+      "future_recommendations_not_completed_work": true,
+      "discussion_v2_paragraphs_complete": true,
+      "discussion_english_word_count": 2424,
+      "new_external_cohort_obtained": false,
+      "independent_diagnoses_or_annotation_blinding_newly_verified": false,
+      "physical_scale_newly_verified": false,
+      "new_sample_size_target_calculated": false,
       "clinical_net_benefit_calculated": false,
       "independent_probability_recalibration_performed": false,
-      "clinician_comparison_performed": false,
-      "threshold_optimized": false,
       "new_threshold_recommended": false,
-      "clinical_benefit_claimed_established": false,
-      "complete_S37_pagination_used_without_modifying_candidate_library": true,
-      "new_manuscript_references": 1,
+      "new_manuscript_references": 0,
       "provisional_citation_mapping": {
         "15": "S25",
-        "17": "S37"
+        "16": "S26"
       },
       "models_refitted": 0
     },
@@ -544,8 +540,8 @@
       "Table S7"
     ],
     "results_v2_paragraphs_complete": true,
-    "discussion_english_word_count": 2323,
-    "discussion_v2_paragraphs_complete": false,
+    "discussion_english_word_count": 2424,
+    "discussion_v2_paragraphs_complete": true,
     "latest_stage_date": "2026-10-30"
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
@@ -575,5 +571,6 @@
   "ucsd_manuscript_step48_report": "reports/ucsd_manuscript_step48_20261030.md",
   "ucsd_manuscript_step49_report": "reports/ucsd_manuscript_step49_20261030.md",
   "ucsd_manuscript_step50_report": "reports/ucsd_manuscript_step50_20261030.md",
-  "ucsd_manuscript_step51_report": "reports/ucsd_manuscript_step51_20261030.md"
+  "ucsd_manuscript_step51_report": "reports/ucsd_manuscript_step51_20261030.md",
+  "ucsd_manuscript_step52_report": "reports/ucsd_manuscript_step52_20261030.md"
 }

@@ -1,0 +1,117 @@
+{
+  "stage": 52,
+  "date": "2026-10-30",
+  "scope": "D12 close Discussion by prioritizing further evaluation based on documented limitations",
+  "studies": [
+    {
+      "reference_id": "S25",
+      "provisional_citation_number": 15,
+      "doi": "10.1136/bmj-2023-074820",
+      "source_url": "https://www.bmj.com/content/384/bmj-2023-074820",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10788734/fullTextXML",
+      "read_level_this_stage": "Previously reviewed primary full text revisited for recommendations; no new full-text-review count",
+      "source_snapshot_sha256": "8cffd29cd68f851a8caf9896c13857c2666408fe779f01cacba9559c554ee861",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": [
+        "Step 1: Obtaining a suitable dataset for external validation",
+        "Step 3: Quantifying a model performance",
+        "Step 4: Evaluating clinical utility"
+      ],
+      "facts": {
+        "publication_year": 2024,
+        "external_validation": "Evaluation using a relevant dataset not used in model development",
+        "target_population": "The evaluation dataset should represent the intended population, setting and measurement process",
+        "performance_domains": [
+          "overall fit",
+          "calibration",
+          "discrimination"
+        ]
+      },
+      "permitted_claim": "Use an independent evaluation dataset appropriate to intended population, preserve model pipelines, and assess complementary performance dimensions; utility needs defined actions and justified thresholds",
+      "limits": "Future recommendations only: no new independent data, diagnoses, annotations, physical-scale verification, recalibration or clinical utility analysis completed"
+    },
+    {
+      "reference_id": "S26",
+      "provisional_citation_number": 16,
+      "doi": "10.1136/bmj-2023-074821",
+      "source_url": "https://www.bmj.com/content/384/bmj-2023-074821",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11778934/fullTextXML",
+      "read_level_this_stage": "Previously reviewed primary full text revisited for recommendations; no new full-text-review count",
+      "source_snapshot_sha256": "9e128f498ce1bf01160fbc5fe47f5fb0aca5e75557b030c937114caee9480c5a",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": [
+        "Rationale for sample size calculations in external validation studies",
+        "Sample size for external validation of prediction models with a binary outcome"
+      ],
+      "facts": {
+        "publication_year": 2024,
+        "principle": "Plan sample size to achieve specified precision of performance estimates",
+        "relevant_inputs": [
+          "outcome proportion",
+          "anticipated model performance",
+          "distribution of predicted values"
+        ],
+        "rules_of_thumb_limit": "Generic counts of events and non-events are not tailored to the model or setting"
+      },
+      "permitted_claim": "Further validation should plan sample size for precise performance estimation",
+      "limits": "No sample-size formula, minimum event rule, retrospective power calculation or prospective recruitment target is applied to the current availability-based internal analysis. Limited minority-class observations are not established as the sole cause of uncertainty or classification errors."
+    }
+  ],
+  "own_study_claims": [
+    {
+      "claim": "Unresolved diagnostic adjudication and annotation blinding justify prioritizing independent diagnoses and documented annotation procedures",
+      "sources": [
+        "reports/ucsd_manuscript_step48/discussion_section48.json"
+      ]
+    },
+    {
+      "claim": "Derived images with unknown spatial scales justify checking metadata and specifying processing before future evaluation",
+      "sources": [
+        "reports/ucsd_manuscript_step49/discussion_section49.json"
+      ]
+    },
+    {
+      "claim": "Availability sampling and conditional internal uncertainty require evaluation beyond current dataset",
+      "sources": [
+        "reports/ucsd_manuscript_step47/discussion_section47.json",
+        "reports/ucsd_manuscript_step50/discussion_section50.json"
+      ]
+    },
+    {
+      "claim": "Low fixed-threshold treatment-change recognition, descriptive calibration and unevaluated clinical utility motivate complementary assessment",
+      "sources": [
+        "reports/ucsd_manuscript_step51/discussion_section51.json"
+      ]
+    },
+    {
+      "claim": "Clinical and Fusion pipelines and their original input panel are locked and saved; no new model is selected in this section",
+      "sources": [
+        "reports/ucsd_fusion/analysis_lock.json",
+        "reports/ucsd_fusion/metrics.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    "Recommendations are future work, not further validation already completed",
+    "Independent evaluation should carry forward locked pipelines; model updating would require separately reported evaluation",
+    "Sample-size planning is prospective and tailored to precision; no recruitment number, retrospective power or generic event-count adequacy claim supplied",
+    "Recognition and calibration supplement discrimination and probability error, rather than being replaced by AUC",
+    "Clinical-utility study would need a defined action and justified thresholds; no treatment advice or threshold recommended"
+  ],
+  "access_notes": [
+    "Current direct BMJ opens returned403. Previously acquired primary JATS full texts were directly reread for the relevant recommendations. No new full-text source acquisition claimed."
+  ],
+  "new_unique_manuscript_references": 0,
+  "reused_manuscript_references": [
+    15,
+    16
+  ],
+  "cumulative_unique_cited_sources_after_section": 17,
+  "new_full_text_review_count": 0,
+  "fulltexts_reviewed_for_relevant_claims_after_stage": 13,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_external_data_obtained": false,
+  "additional_validation_completed": false
+}
