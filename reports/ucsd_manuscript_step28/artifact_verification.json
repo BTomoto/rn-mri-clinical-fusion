@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "stage": 28,
+  "date": "2026-10-29",
+  "subsection": "2.6 Model specification and grouped training",
+  "paragraph_ids": [
+    "M12",
+    "M13"
+  ],
+  "english_word_count": 305,
+  "paragraph_word_counts": {
+    "M12": 157,
+    "M13": 148
+  },
+  "matched_chinese_paragraphs": 2,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 1,
+  "equation_numbers": [
+    7
+  ],
+  "equation_images": 0,
+  "prior_files_unchanged": 78,
+  "model_sizes": {
+    "M0": 2,
+    "M1": 5,
+    "MRI": 8,
+    "Fusion": 13
+  },
+  "fold_assignments_checked": 182,
+  "saved_fold_models_checked": 20,
+  "OOF_probabilities_reconstructed": 728,
+  "maximum_absolute_probability_error": 3.3306690738754696e-16,
+  "all_patient_namespaces_disjoint": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "next_section": "Performance metrics and conditional uncertainty (M14-M15)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step28-20261029/UCSD_Manuscript_Methods_2_6_EN_ZH.docx": "7dadd42b5fe9a706560a75e4c566de64ac4fc775c21371cd9c55e76e00d89614",
+    "outputs/ucsd-manuscript-step28-20261029/UCSD_Manuscript_Methods_2_6_EN.txt": "1ce17fe0ccaed4541c02e7b04caf589245fcef1bcb808b9ced1ec743b60f5bee"
+  }
+}

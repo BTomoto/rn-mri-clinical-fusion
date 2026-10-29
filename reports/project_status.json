@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage27 Methods 2.5 intensity normalization and feature definitions drafted with six native editable Word equation groups; fixed saved features checked without refitting",
+  "scope": "Stage28 Methods 2.6 fixed models and grouped training drafted; saved model specifications, folds and OOF probabilities verified without fitting",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for fixed logistic models and patient-grouped training (M12-M13)",
+  "next_work_item": "Await user approval for performance metrics and conditional uncertainty (M14-M15)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 27,
-    "subsection": "2.5 Intensity normalization and feature definitions",
+    "stage": 28,
+    "subsection": "2.6 Model specification and grouped training",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -420,11 +420,13 @@
       "M8",
       "M9",
       "M10",
-      "M11"
+      "M11",
+      "M12",
+      "M13"
     ],
-    "english_word_count": 1707,
-    "chinese_paragraphs": 11,
-    "current_section_citations": 1,
+    "english_word_count": 2012,
+    "chinese_paragraphs": 13,
+    "current_section_citations": 0,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
@@ -440,26 +442,26 @@
       "2.2 Reference standard",
       "2.3 Clinical predictors and missing data",
       "2.4 MRI inputs and annotation region",
-      "2.5 Intensity normalization and feature definitions"
+      "2.5 Intensity normalization and feature definitions",
+      "2.6 Model specification and grouped training"
     ],
-    "latest_section_english_word_count": 454,
-    "latest_section_word_pages": 3,
+    "latest_section_english_word_count": 305,
+    "latest_section_word_pages": 2,
     "unique_citations_in_drafted_sections": 4,
-    "source_label_records_checked_this_stage": 663,
     "label_checks_are_independent_samples": false,
-    "clinical_records_checked_this_stage": 182,
-    "training_age_scalers_checked_this_stage": 15,
-    "training_interval_pipelines_checked_this_stage": 10,
-    "saved_QC_records_checked_this_stage": 546,
-    "ROI_records_checked_this_stage": 182,
-    "pixels_redecoded_this_stage": 0,
-    "native_equation_groups": 6,
-    "saved_feature_values_checked_this_stage": 1456,
-    "sequence_diagnostic_records_checked_this_stage": 364,
-    "study_pixels_redecoded_this_stage": 0
+    "native_equation_groups": 7,
+    "latest_stage_verification": {
+      "prior_files_unchanged": 78,
+      "saved_fold_models_checked": 20,
+      "fold_assignments_checked": 182,
+      "OOF_probabilities_reconstructed": 728,
+      "maximum_absolute_probability_error": 3.3306690738754696e-16,
+      "models_fitted": 0
+    }
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
   "ucsd_manuscript_step25_report": "reports/ucsd_manuscript_step25_20261029.md",
   "ucsd_manuscript_step26_report": "reports/ucsd_manuscript_step26_20261029.md",
-  "ucsd_manuscript_step27_report": "reports/ucsd_manuscript_step27_20261029.md"
+  "ucsd_manuscript_step27_report": "reports/ucsd_manuscript_step27_20261029.md",
+  "ucsd_manuscript_step28_report": "reports/ucsd_manuscript_step28_20261029.md"
 }
