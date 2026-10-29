@@ -1,0 +1,124 @@
+{
+  "stage": 51,
+  "date": "2026-10-30",
+  "scope": "D11 distinguish ranking, probability reliability, fixed-threshold errors and unevaluated clinical utility",
+  "studies": [
+    {
+      "reference_id": "S25",
+      "provisional_citation_number": 15,
+      "doi": "10.1136/bmj-2023-074820",
+      "source_url": "https://www.bmj.com/content/384/bmj-2023-074820",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10788734/fullTextXML",
+      "read_level_this_stage": "Previously reviewed primary full text revisited for calibration, discrimination and clinical utility",
+      "source_snapshot_sha256": "8cffd29cd68f851a8caf9896c13857c2666408fe779f01cacba9559c554ee861",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": [
+        "Step 3: Quantifying a model performance / Calibration and Discrimination",
+        "Step 4: Evaluating clinical utility"
+      ],
+      "facts": {
+        "publication_year": 2024,
+        "external_validation": "Evaluation using a relevant dataset not used in model development",
+        "target_population": "The evaluation dataset should represent the intended population, setting and measurement process",
+        "performance_domains": [
+          "overall fit",
+          "calibration",
+          "discrimination"
+        ],
+        "clinical_utility": "Net benefit weighs potential benefits and harms of a defined action at relevant probability thresholds; decision curves compare alternative strategies",
+        "threshold_selection": "Relevant thresholds should be chosen before utility analysis with clinical and patient input",
+        "calibration": "Slope is interpreted alongside other calibration measures and plots, not as proof of reliable individual probabilities"
+      },
+      "permitted_claim": "When predictions are intended to guide clinical actions, evaluate net benefit at relevant thresholds chosen before analysis",
+      "limits": "No net benefit calculation, threshold optimization, probability recalibration, prospective impact study or clinical action is performed here"
+    },
+    {
+      "reference_id": "S37",
+      "provisional_citation_number": 17,
+      "doi": "10.1038/s41592-023-02151-z",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11182665/",
+      "publisher_url": "https://www.nature.com/articles/s41592-023-02151-z",
+      "read_level_this_stage": "Primary author-manuscript full text reviewed for relevant claims via PMC; not limited to abstract",
+      "source_snapshot_format": "PMC web full text, relevant sections read; local JATS retrieval failed",
+      "source_locators": [
+        "Step 2 Metric Selection / Image-level Classification",
+        "Discussion / calibration metrics debate"
+      ],
+      "facts": {
+        "publication_year": 2024,
+        "volume": "21",
+        "issue": "2",
+        "pages": "195-212",
+        "metric_dimensions": "Fixed confusion-matrix counting measures, multi-threshold discrimination and calibration describe complementary aspects of classification",
+        "limits_of_calibration": "Calibration alone does not establish true individual posterior probabilities or clinical usefulness"
+      },
+      "permitted_claim": "Distinguish classification at a threshold, multi-threshold discrimination and calibration",
+      "limits": "No Metrics Reloaded score, formal full-framework compliance or clinical utility assessment performed; no image-segmentation metric is substituted for examination-level classification",
+      "metadata_correction_for_current_citation": {
+        "historical_candidate_pages": "195",
+        "verified_complete_pages": "195-212",
+        "original_candidate_library_modified": false,
+        "verification_sources": [
+          "PMC full text final-edited bibliographic header",
+          "PubMed PMID38347141"
+        ]
+      }
+    }
+  ],
+  "own_study_claims": [
+    {
+      "claim": "Fusion OOF AUC rounds to 0.782 and descriptive pooled calibration slope to 0.667; probabilities were not recalibrated",
+      "sources": [
+        "reports/ucsd_fusion/metrics.json",
+        "reports/ucsd_manuscript_step37/results_section35.json"
+      ]
+    },
+    {
+      "claim": "Fusion-minus-M1 paired Brier and logarithmic-loss conditional intervals include zero",
+      "sources": [
+        "reports/ucsd_fusion/metrics.json",
+        "reports/ucsd_manuscript_step36/results_section34.json"
+      ]
+    },
+    {
+      "claim": "At 0.5, 130/141 tumor and 12/41 treatment-change examinations correctly classified; 29 treatment-change classified tumor; accuracy142/182 versus141/182 always-tumor",
+      "sources": [
+        "data/processed/ucsd_fusion_oof.csv",
+        "reports/ucsd_fusion/metrics.json"
+      ]
+    },
+    {
+      "claim": "No action-specific net-benefit study, independent probability recalibration, clinician comparison or downstream clinical outcome evaluation was conducted",
+      "sources": [
+        "reports/ucsd_fusion_protocol.md",
+        "reports/ucsd_manuscript_step29/methods_section27.json",
+        "reports/ucsd_manuscript_step30/methods_section28.json",
+        "reports/ucsd_fusion/metrics.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    "Observed ranking does not establish reliable individual probabilities or clinical benefit",
+    "Fixed-threshold errors identify a limitation but do not show all thresholds would fail or quantify downstream harm",
+    "Cross-zero probability-error increments do not prove equivalence or no improvement",
+    "A clinically justified action and thresholds would be needed before a clinical utility study; no new threshold recommended",
+    "Current evidence supports further evaluation of an incremental imaging signal, not improved outcomes from model-guided care"
+  ],
+  "access_notes": [
+    "Europe PMC JATS requests for S37 returned HTTP500 twice; Nature redirected to an inaccessible identity page. PMC web full text was available and its relevant classification and discussion sections were read. Failed XML retrieval did not block primary full-text review."
+  ],
+  "new_unique_manuscript_references": 1,
+  "cumulative_unique_cited_sources_after_section": 17,
+  "new_full_text_review_count": 1,
+  "fulltexts_reviewed_for_relevant_claims_after_stage": 13,
+  "reading_level_update": {
+    "reference_id": "S37",
+    "previous": "Abstract screened; full text needed before detailed comparison",
+    "current": "Full text reviewed for relevant claims"
+  },
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "net_benefit_calculated": false,
+  "probabilities_recalibrated": false
+}

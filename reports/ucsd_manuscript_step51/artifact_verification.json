@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "stage": 51,
+  "date": "2026-10-30",
+  "subsection": "4.11 Clinical interpretation",
+  "paragraph_ids": [
+    "D11"
+  ],
+  "english_word_count": 209,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 219,
+  "prior_files_unchanged": 218,
+  "new_full_texts_checked_for_current_claims": [
+    "S37"
+  ],
+  "classification_counts_checked": {
+    "tp": 130,
+    "tn": 12,
+    "fp": 29,
+    "fn": 11
+  },
+  "saved_AUC_and_descriptive_calibration_slope_checked": true,
+  "paired_probability_error_intervals_include_zero": true,
+  "clinical_actions_or_downstream_outcomes_evaluated": false,
+  "clinical_net_benefit_calculated": false,
+  "independent_probability_recalibration_performed": false,
+  "clinician_comparison_performed": false,
+  "threshold_optimized": false,
+  "new_threshold_recommended": false,
+  "clinical_benefit_claimed_established": false,
+  "complete_S37_pagination_used_without_modifying_candidate_library": true,
+  "new_manuscript_references": 1,
+  "provisional_citation_mapping": {
+    "15": "S25",
+    "17": "S37"
+  },
+  "cumulative_unique_cited_sources": 17,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.12 Priorities for further evaluation (D12)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step51-20261030/UCSD_Manuscript_Discussion_4_11_EN.txt": "02bd83a516bbc0a97fbfbd5302d982bf7d01705692ab8b5a7874792ea17054e0",
+    "outputs/ucsd-manuscript-step51-20261030/UCSD_Manuscript_Discussion_4_11_EN_ZH.docx": "9d27f504d4efc23f47889b29cc10030441659ed0d2fe6afc80ac7494b6276f86"
+  }
+}
