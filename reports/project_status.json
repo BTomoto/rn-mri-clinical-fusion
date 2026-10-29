@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage21 literature learning and paragraph-level writing outline completed; manuscript body awaits user requirements template",
+  "scope": "Stage22 collaborator requirements understood and V2 outline prepared; English main-text target 8000 words; reference expansion and manuscript body pending",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -382,5 +382,26 @@
     "future_body_language": "English followed by paragraph-matched Chinese translation",
     "future_figures_tables_language": "English only",
     "model_refits": 0
+  },
+  "ucsd_writing_requirements_v2_report": "reports/ucsd_writing_requirements_v2_step22_20261029.md",
+  "ucsd_writing_requirements_v2": {
+    "stage": 22,
+    "word_pages": 13,
+    "source_pdf_pages": 3,
+    "source_template_pages": 4,
+    "main_word_target": 8000,
+    "soft_upper_bound": 10000,
+    "abstract_word_target": 250,
+    "main_paragraphs": 47,
+    "abstract_sections": 4,
+    "references_minimum": 25,
+    "references_planned": 40,
+    "planned_recent_5yr_english_minimum": 37,
+    "planned_recent_3yr_english_minimum": 25,
+    "bibliography_completed": false,
+    "manuscript_body_drafted": false,
+    "awaiting_user_template": false,
+    "awaiting_user_next_stage_instruction": true,
+    "word_count_scope_assumption": "English main text; abstract, captions, bibliography, declarations, supplements and Chinese translation excluded"
   }
 }

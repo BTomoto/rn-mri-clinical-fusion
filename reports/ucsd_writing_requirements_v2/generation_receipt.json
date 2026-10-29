@@ -1,0 +1,30 @@
+{
+  "stage": 22,
+  "version": "V2",
+  "deliverable": "outputs/ucsd-writing-outline-v2-20261029/UCSD_Writing_Requirements_and_Outline_V2.docx",
+  "sha256": "14c610b1a184be6498633286721c0c1f197bd960a71269f1ab228d3f887ef964",
+  "source_documents": [
+    {
+      "filename": "编辑部稿件要求【第一版】.pdf",
+      "bytes": 974333,
+      "sha256": "d072ba86315c28a86fa625ab0146a7186ddfde3920e8dea0602ca9ba08499211"
+    },
+    {
+      "filename": "SCI论文模板（Word）.docx",
+      "bytes": 49969,
+      "sha256": "f33f64e5c18c8b9c289206113fae7250fea03b1dc2c144a041c52ffc0fc7cc83"
+    }
+  ],
+  "main_word_target": 8000,
+  "soft_upper_bound": 10000,
+  "main_paragraphs": 47,
+  "abstract_sections": 4,
+  "pdf_rules": 8,
+  "template_rules": 7,
+  "reference_target": 40,
+  "reference_5yr_min": 37,
+  "reference_3yr_min": 25,
+  "bibliography_completed": false,
+  "manuscript_body_drafted": false,
+  "models_refitted": 0
+}

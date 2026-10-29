@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第22步已按合作者文件调整写作要求与V2大纲。** [13页Word](outputs/ucsd-writing-outline-v2-20261029/UCSD_Writing_Requirements_and_Outline_V2.docx)映射PDF全部8项要求与Word模板7组规则，英文正文目标8,000词、尽量不超过10,000词，摘要另列；正文47段及摘要4个逻辑单元。文献先规划40篇，其中至少37篇为2022至2026年英文文献、至少25篇为2024至2026年英文文献，文献扩展与核验尚未完成。英文正文口径为明示的可调整假定；对照审阅稿逐段附中译，投稿稿只英文，图表及注释仅英文。
+
+见[第22步报告](reports/ucsd_writing_requirements_v2_step22_20261029.md)、[逐条要求与大纲](reports/ucsd_writing_requirements_v2/requirements_and_outline.json)及[核对回执](reports/ucsd_writing_requirements_v2/artifact_verification.json)。未据通用模板选定期刊，未起草正文，未改动原大纲、数据或模型结果。下一阶段为参考文献扩展及证据表，等待用户继续指示。
+
 **第21步已完成文献学习与逐段写作大纲，正文尚未撰写。** [Word文献学习与写作大纲](outputs/ucsd-writing-preparation-20261029/UCSD_Literature_Learning_and_Writing_Outline.docx)共16页，学习5篇相关实证研究、1篇数据描述及2项报告规范，对4篇全文按统一规则统计各部分英文词数。大纲包含31个正文段落及4个摘要部分，逐段列明任务、依据、衔接及图表安排；英文正文规划约4,180词、摘要250词，均待用户模板调整。
 
 见[第21步报告](reports/ucsd_writing_preparation_step21_20261029.md)、[结构和词数](reports/ucsd_writing_preparation/literature_structure_counts.json)、[机器可读大纲](reports/ucsd_writing_preparation/writing_outline.json)及[核对回执](reports/ucsd_writing_preparation/artifact_verification.json)。用户要求先学习文献、再提供写作模板；后续英文段落附对应中文译文，图表及注释仅英文。未重拟合或改变任何既有研究结果，当前等待用户写作模板。

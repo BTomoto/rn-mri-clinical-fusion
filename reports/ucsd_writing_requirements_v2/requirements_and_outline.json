@@ -1,0 +1,514 @@
+{
+  "stage": 22,
+  "version": "V2",
+  "date": "2026-10-29",
+  "source_documents": [
+    {
+      "filename": "编辑部稿件要求【第一版】.pdf",
+      "bytes": 974333,
+      "sha256": "d072ba86315c28a86fa625ab0146a7186ddfde3920e8dea0602ca9ba08499211"
+    },
+    {
+      "filename": "SCI论文模板（Word）.docx",
+      "bytes": 49969,
+      "sha256": "f33f64e5c18c8b9c289206113fae7250fea03b1dc2c144a041c52ffc0fc7cc83"
+    }
+  ],
+  "count_scope": "main English narrative from Introduction through Conclusion, including in-text citations; excludes abstract, headings, captions, table contents, reference list, declarations, Chinese translation and supplement; assumption based on supplied template link, not author-confirmed custom counting rule",
+  "word_target": 8000,
+  "soft_upper_bound": 10000,
+  "section_targets": {
+    "abstract": 250,
+    "introduction": 1000,
+    "methods": 3000,
+    "results": 1400,
+    "discussion": 2450,
+    "conclusion": 150
+  },
+  "paragraphs": {
+    "abstract": [
+      [
+        "A1",
+        35,
+        "Background",
+        "临床鉴别问题及MRI对临床信息的增量目标。",
+        "不引用文献、图或表"
+      ],
+      [
+        "A2",
+        85,
+        "Methods",
+        "182扫描/135患者、固定特征及Logistic，患者分组验证和主要比较；简述敏感性。",
+        "与正式方法一致"
+      ],
+      [
+        "A3",
+        100,
+        "Results",
+        "主要AUC、增量及区间，加单扫描不确定与少数类识别不足。",
+        "不改用最佳重复结果"
+      ],
+      [
+        "A4",
+        30,
+        "Conclusions",
+        "内部增量信号及独立验证需求。",
+        "与结论一致"
+      ]
+    ],
+    "introduction": [
+      [
+        "I1",
+        160,
+        "Clinical setting",
+        "介绍胶质瘤治疗后复查场景与当前状态鉴别问题，迅速聚焦残余或复发肿瘤和治疗相关改变。",
+        "近期临床与影像研究"
+      ],
+      [
+        "I2",
+        170,
+        "Diagnostic uncertainty",
+        "解释两类MRI表现重叠、混合病理和临床判断困难，区分治疗相关改变、假性进展与放射性坏死。",
+        "近期终点及影像评估文献"
+      ],
+      [
+        "I3",
+        180,
+        "Quantitative imaging",
+        "介绍常规FLAIR、增强T1的强度和纹理计算为何可能补充视觉信息；明确本研究仅8项固定特征。",
+        "近期常规MRI及影像计算研究"
+      ],
+      [
+        "I4",
+        180,
+        "Clinical and imaging fusion",
+        "解释临床背景与MRI描述的互补性，综述融合获益与未获益证据，不能假定增加特征必然提高性能。",
+        "正向与无获益的融合研究"
+      ],
+      [
+        "I5",
+        180,
+        "Gap in reproducible evaluation",
+        "将缺口限定为公开派生影像中低维融合的增量与稳定性；说明同病例对照及患者隔离的重要性。",
+        "近期验证方法与复现研究"
+      ],
+      [
+        "I6",
+        130,
+        "Study objective",
+        "提出扫描级鉴别目标、四模型和Fusion-M1主要比较；简述边界、重复分组及单扫描复核。",
+        "第18至19步方案"
+      ]
+    ],
+    "methods": [
+      [
+        "M1",
+        150,
+        "Study design",
+        "界定公开去标识资料的回顾性二次计算研究，说明分析单位和内部验证目的，不写成新招募研究。",
+        "第18步方案与源数据论文"
+      ],
+      [
+        "M2",
+        150,
+        "Public sources",
+        "说明UCSD-PTGBM临床表、公开镜像、版本及来源分工；区分源采集流程与本研究实际取得的派生文件。",
+        "第14至17步来源清单"
+      ],
+      [
+        "M3",
+        150,
+        "Cohort linkage",
+        "写明243扫描/178患者、ID冲突隔离后238/176、影像队列182/135及未覆盖56扫描；区分患者与扫描。",
+        "Figure 1和Table S1"
+      ],
+      [
+        "M4",
+        150,
+        "Reference labels",
+        "定义1为肿瘤、0为治疗改变，说明公开阴性表与冻结总体分组补集，以及混合临床/病理参考标准。",
+        "标签审计与数据描述"
+      ],
+      [
+        "M5",
+        150,
+        "Clinical inputs",
+        "列明年龄、性别、初始事件对数间隔、扫描前其他治疗和间隔缺失标记；解释各输入在分析中的角色。",
+        "Table S2与变量字典"
+      ],
+      [
+        "M6",
+        150,
+        "Time and missingness",
+        "解释初始事件可能为手术/治疗/诊断；负偏移映射为正天数，其他异常按冻结规则缺失，36条间隔折内填补。",
+        "临床重验证及第18步代码"
+      ],
+      [
+        "M7",
+        150,
+        "MRI data quality checks",
+        "说明FLAIR、增强T1和现成标注的546文件检查、uint8派生强度、256立方数组与空间单位unknown。",
+        "第15至17步文件与数组QC"
+      ],
+      [
+        "M8",
+        150,
+        "Annotation region",
+        "ROI为普通BraTS全部正标签并集，保留各连通分量；说明现成标注来源及盲法未知，非本研究新训练分割。",
+        "既有ROI协议"
+      ],
+      [
+        "M9",
+        150,
+        "Normalization",
+        "介绍有限正值支持区域的p1/p99线性变换且不截断，ROI内0保留；交代不截断为观察后的工程修订。",
+        "第16步修订及第17步实现"
+      ],
+      [
+        "M10",
+        150,
+        "Feature definitions",
+        "定义两序列各自均值、标准差与32级直方图熵，说明ROI范围离散化及最大值分箱规则。",
+        "8项固定特征字典"
+      ],
+      [
+        "M11",
+        150,
+        "Three-dimensional texture",
+        "解释13个无向单原生体素偏移、对称计数汇总再归一化的GLCM对比度；公式用可编辑数学对象。",
+        "原GLCM代码与补充方法"
+      ],
+      [
+        "M12",
+        150,
+        "Fixed models and fusion",
+        "列出M0、M1、MRI、Fusion的2/5/8/13输入与特征级拼接，给出L2 Logistic核心参数及模型选择理由。",
+        "第18步固定模型工厂"
+      ],
+      [
+        "M13",
+        150,
+        "Training and partitions",
+        "交代同病例同五折、固定种子、源/BraTS患者隔离，训练折学习填补和标准化；没有调参、筛选或类别加权。",
+        "折清单与fold_audit"
+      ],
+      [
+        "M14",
+        150,
+        "Discrimination and errors",
+        "定义主比较AUC差及两类AP、Brier、log loss、固定0.5阈值混淆矩阵；治疗改变PR使用1-p。",
+        "第18步指标定义"
+      ],
+      [
+        "M15",
+        150,
+        "Conditional uncertainty",
+        "说明患者聚类配对bootstrap 2000次及百分位区间；固定OOF概率不重拟合，不能覆盖全部训练和分折变异。",
+        "bootstrap回执与抽样指标"
+      ],
+      [
+        "M16",
+        150,
+        "Calibration assessment",
+        "说明校准分组、斜率及offset截距的诊断定义；未据此重校准或更改阈值。",
+        "原校准协议和Table S3"
+      ],
+      [
+        "M17",
+        150,
+        "Boundary sensitivity",
+        "一次六邻域单原生体素腐蚀，保留主归一化和分箱边界，在同病例同折复核MRI及Fusion。",
+        "Table S4和Figure S1"
+      ],
+      [
+        "M18",
+        150,
+        "Repeated grouped validation",
+        "20套事先固定种子的患者分组五折，描述中位数、四分位和范围；不选最优重复或构建额外集成。",
+        "Tables S5A及S5B和Figure 3"
+      ],
+      [
+        "M19",
+        150,
+        "One scan per patient",
+        "按当前可用影像内最小数字会话选135扫描，独立重建验证与bootstrap；不是整个病程的真实首次就诊。",
+        "选择清单及Tables S6和S7"
+      ],
+      [
+        "M20",
+        150,
+        "Reproducibility",
+        "说明Python、Notebook、软件版本、逐例OOF、源文件哈希和归档恢复路径；交代样本量由可用数据决定。",
+        "项目仓库及复现材料"
+      ]
+    ],
+    "results": [
+      [
+        "R1",
+        200,
+        "Cohort flow",
+        "先写源队列、隔离与覆盖流程，分别报告扫描数、患者数和182扫描中141肿瘤/41治疗改变。",
+        "Figure 1和Table 1"
+      ],
+      [
+        "R2",
+        150,
+        "Clinical characteristics",
+        "报告扫描口径年龄等分布、36条时间缺失和影像覆盖情况；患者可在两标签间重叠，不作未经计算的组间检验。",
+        "Table 1和Table S1"
+      ],
+      [
+        "R3",
+        200,
+        "Four-model discrimination",
+        "按M0、M1、MRI、Fusion顺序呈现固定主五折；M1 0.672、MRI 0.762、Fusion 0.782，附准确区间。",
+        "Table 2和Figure 2"
+      ],
+      [
+        "R4",
+        200,
+        "Paired incremental comparison",
+        "Fusion-M1 AUC差0.110，区间0.021至0.214；Brier差-0.019且区间跨0，治疗改变AP按原结果报告。",
+        "Table 3"
+      ],
+      [
+        "R5",
+        150,
+        "Calibration and errors",
+        "写主Fusion斜率0.667，肿瘤正确130/141、治疗改变12/41；整体准确率78.0%与全判肿瘤77.5%参考并列。",
+        "Figure 2和Table S3"
+      ],
+      [
+        "R6",
+        150,
+        "Boundary sensitivity",
+        "报告腐蚀Fusion AUC 0.788及原/腐蚀差值区间跨0，不以较高版本替换主分析。",
+        "Table S4和Figure S1"
+      ],
+      [
+        "R7",
+        150,
+        "Split stability",
+        "20套完整，Fusion AUC中位数0.784、范围0.759至0.809；Fusion-M1差全部为正，范围不是置信区间。",
+        "Figure 3和Tables S5A及S5B"
+      ],
+      [
+        "R8",
+        200,
+        "Single-scan sensitivity",
+        "135扫描/135患者，113肿瘤/22治疗改变；Fusion AUC 0.730，增量区间-0.015至0.252跨0，只识别2/22治疗改变。",
+        "Tables S6和S7及Figure S2"
+      ]
+    ],
+    "discussion": [
+      [
+        "D1",
+        200,
+        "Principal findings",
+        "开头回答增量问题，同时交代主分析有利信号、分折方向一致与单扫描增量不确定。",
+        "对应R3至R8"
+      ],
+      [
+        "D2",
+        250,
+        "Comparison with fusion studies",
+        "比较近期融合研究的信息类型、样本、模型和内部验证设计；解释与本研究观察的联系，不按跨论文AUC排名。",
+        "近期融合原始研究"
+      ],
+      [
+        "D3",
+        250,
+        "Conflicting evidence",
+        "讨论未获益、较低性能及新队列验证研究，重点比较终点、参考标准、成像和抽样差异。",
+        "负向及独立验证研究"
+      ],
+      [
+        "D4",
+        200,
+        "Computational contribution",
+        "阐明固定MRI特征、特征级融合、同条件模型比较及公开复现的贡献，准确定位为应用验证。",
+        "本研究流程与近期复现文献"
+      ],
+      [
+        "D5",
+        200,
+        "Interpretation of image features",
+        "解释强度与空间灰度变化所描述的信息，区分统计关联与病理机制；不把系数写成独立危险因素。",
+        "特征定义和有依据的近期解释文献"
+      ],
+      [
+        "D6",
+        200,
+        "Boundary and split robustness",
+        "解释腐蚀和重复分折分别回答的问题，说明稳定性有利但不能验证源标签或外部推广。",
+        "M17至M18及对应结果"
+      ],
+      [
+        "D7",
+        200,
+        "Meaning of the single-scan result",
+        "讨论更少治疗改变样本下区间宽及识别不足，承认人群、类别组成和训练集不同，不能直接归因于重复扫描。",
+        "M19和R8"
+      ],
+      [
+        "D8",
+        250,
+        "Reference-standard limitations",
+        "优先讨论标签补集、混合参考、治疗改变异质性和现成标注盲法未确认；区分可能泄漏与已证实泄漏。",
+        "标签审计与源数据论文"
+      ],
+      [
+        "D9",
+        200,
+        "Image-processing limitations",
+        "讨论uint8、unknown空间单位、全正标签ROI及工程修订的适用范围；没有形状、定量ADC或独立重画实验。",
+        "原影像与特征QC"
+      ],
+      [
+        "D10",
+        200,
+        "Sampling and model uncertainty",
+        "说明覆盖选择、135患者、少数类有限、重复扫描及扫描权重、13输入和缺失时间变量，区间为条件bootstrap区间。",
+        "队列审计与近期验证文献"
+      ],
+      [
+        "D11",
+        200,
+        "Clinical interpretation",
+        "将AUC排序能力、校准和阈值识别分开，解释不能据内部AUC证明临床获益；没有外部验证或决策曲线结论。",
+        "R4至R5及近期临床转化研究"
+      ],
+      [
+        "D12",
+        100,
+        "Next validation priorities",
+        "按独立参考与标注、标准化影像、外部队列和少数类/校准评估的优先顺序提出后续方向。",
+        "从本研究局限推导"
+      ]
+    ],
+    "conclusion": [
+      [
+        "C1",
+        150,
+        "Conclusion",
+        "简洁回到研究目标，保留主内部验证增量信号与单扫描不确定性，并限定适用范围及独立验证需求。",
+        "对应I6和D1"
+      ]
+    ]
+  },
+  "pdf_requirements": [
+    [
+      "P1",
+      "PDF p1, item 1",
+      "使用通用模板并保持标题逻辑",
+      "使用Title和分级Heading样式；引言无小标题，方法/结果分组标题对应流程。"
+    ],
+    [
+      "P2",
+      "PDF p1, item 2",
+      "正文清楚引用每幅图和每张表",
+      "建立首次出现顺序清单，主文图表与补充图表分别编号并逐一对应。"
+    ],
+    [
+      "P3",
+      "PDF p1, item 3",
+      "英文稿中不出现中文字符",
+      "纯英文投稿版扫描汉字及中文标点；中文仅在对照审阅稿的译文区域保留。"
+    ],
+    [
+      "P4",
+      "PDF p2, item 4",
+      "英文标点及空格规范",
+      "常规逗号、句号等紧跟前词，后接一个空格；小数、缩写、DOI及数学运算按各自规则。"
+    ],
+    [
+      "P5",
+      "PDF p2, item 5",
+      "行内与独立公式规范",
+      "Word公式编辑器的可编辑对象；上下标、希腊符号、变量和公式编号统一，不能用普通文字拼装。"
+    ],
+    [
+      "P6",
+      "PDF p2-p3, item 6",
+      "翻译后核对语法",
+      "先按英文论文逻辑写作，再逐段忠实中译，核对术语、数值、否定和不确定性。"
+    ],
+    [
+      "P7",
+      "PDF p3, item 7",
+      "图片清晰可见",
+      "沿用真实数据图的600 dpi及矢量格式，并检查最终尺寸下文字可读；不以提高dpi掩盖模糊。"
+    ],
+    [
+      "P8",
+      "PDF p3, item 8",
+      "参考文献格式和顺序一致",
+      "按医学模板先采用Vancouver数字引文与出现顺序；目标期刊确定后统一具体标点。"
+    ]
+  ],
+  "template_requirements": [
+    [
+      "T1",
+      "Title and author block",
+      "题名、作者、单位、通讯信息按实际资料填写；示例作者和邮箱全部清理。"
+    ],
+    [
+      "T2",
+      "Abstract and keywords",
+      "摘要不引用文献；初稿规划250词、4个逻辑单元，最终是否显示标签以目标期刊为准；关键词5至8个。"
+    ],
+    [
+      "T3",
+      "Headings and style",
+      "实际投稿保留研究章节，不复制Article types等模板说明章节；英文正文Times New Roman 12 pt、单倍行距，设置页码和行号。"
+    ],
+    [
+      "T4",
+      "Figures and tables",
+      "主图单独供稿，图注及可编辑表置稿件末尾，均在正文按首次出现顺序引用；补充材料独立。"
+    ],
+    [
+      "T5",
+      "Reference system",
+      "本研究按医学领域采用Vancouver序号，先使用模板医学圆括号形式；若目标刊另有要求则整篇一致调整。"
+    ],
+    [
+      "T6",
+      "Declarations",
+      "纳入数据可用性、利益冲突、作者贡献、资助、致谢及适用伦理说明；根据真实信息填写，不能直接套用无冲突声明。"
+    ],
+    [
+      "T7",
+      "Template cleanup",
+      "删除指导语、占位文本和旧公式示例；修复示例中可见的域代码/编号残留，不将其复制进成稿。"
+    ]
+  ],
+  "bibliography": {
+    "minimum_total": 25,
+    "planned_total": 40,
+    "recent_5yr_english_min": 37,
+    "recent_3yr_english_min": 25,
+    "calendar_5yr": [
+      2022,
+      2026
+    ],
+    "calendar_3yr": [
+      2024,
+      2026
+    ],
+    "older_max_at_planned_total": 3,
+    "language_not_author_nationality": true,
+    "ratio_denominator": "all unique references",
+    "completed": false,
+    "next_task": "expand and verify reference evidence table before drafting"
+  },
+  "manuscript_body_drafted": false,
+  "models_refitted": 0,
+  "old_outline_replaced": false,
+  "official_guideline_url": "https://www.frontiersin.org/guidelines/author-guidelines",
+  "future_documents": [
+    "English paragraphs with matching Chinese translation for review",
+    "English-only submission manuscript"
+  ],
+  "next_stage": "reference evidence table and first authorized writing section"
+}

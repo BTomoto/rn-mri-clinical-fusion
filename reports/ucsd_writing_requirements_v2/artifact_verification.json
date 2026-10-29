@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "source_pdf_pages_reviewed": 3,
+  "source_template_pages_reviewed": 4,
+  "output_pages_reviewed": 13,
+  "pdf_rules_mapped": 8,
+  "template_rules_mapped": 7,
+  "paragraph_ids_checked": 51,
+  "main_paragraphs": 47,
+  "main_word_target": 8000,
+  "reference_target": 40,
+  "planned_5yr_english_share": 0.925,
+  "planned_3yr_english_share": 0.625,
+  "bibliography_completed": false,
+  "manuscript_body_drafted": false,
+  "model_refits": 0,
+  "source_documents_unchanged": true,
+  "prior_outline_and_result_hashes_preserved": true,
+  "docx_sha256": "14c610b1a184be6498633286721c0c1f197bd960a71269f1ab228d3f887ef964"
+}
