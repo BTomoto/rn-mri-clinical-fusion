@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage25 Methods 2.3 clinical predictors and missing data drafted; saved training-fold preprocessing parameters verified without refitting",
+  "scope": "Stage26 Methods 2.4 MRI inputs and annotation region drafted; saved QC and source-annotation records verified; next normalization and feature definitions pending user instruction",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for MRI inputs and annotation region (M7-M8)",
+  "next_work_item": "Await user approval for intensity normalization and fixed feature definitions (M9-M11)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,18 +407,20 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 25,
-    "subsection": "2.3 Clinical predictors and missing data",
+    "stage": 26,
+    "subsection": "2.4 MRI inputs and annotation region",
     "v2_paragraph_ids": [
       "M1",
       "M2",
       "M3",
       "M4",
       "M5",
-      "M6"
+      "M6",
+      "M7",
+      "M8"
     ],
-    "english_word_count": 942,
-    "chinese_paragraphs": 6,
+    "english_word_count": 1253,
+    "chinese_paragraphs": 8,
     "current_section_citations": 1,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
@@ -433,17 +435,22 @@
     "completed_subsections": [
       "2.1 Study design and data sources",
       "2.2 Reference standard",
-      "2.3 Clinical predictors and missing data"
+      "2.3 Clinical predictors and missing data",
+      "2.4 MRI inputs and annotation region"
     ],
-    "latest_section_english_word_count": 318,
+    "latest_section_english_word_count": 311,
     "latest_section_word_pages": 2,
     "unique_citations_in_drafted_sections": 3,
     "source_label_records_checked_this_stage": 663,
     "label_checks_are_independent_samples": false,
     "clinical_records_checked_this_stage": 182,
     "training_age_scalers_checked_this_stage": 15,
-    "training_interval_pipelines_checked_this_stage": 10
+    "training_interval_pipelines_checked_this_stage": 10,
+    "saved_QC_records_checked_this_stage": 546,
+    "ROI_records_checked_this_stage": 182,
+    "pixels_redecoded_this_stage": 0
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
-  "ucsd_manuscript_step25_report": "reports/ucsd_manuscript_step25_20261029.md"
+  "ucsd_manuscript_step25_report": "reports/ucsd_manuscript_step25_20261029.md",
+  "ucsd_manuscript_step26_report": "reports/ucsd_manuscript_step26_20261029.md"
 }

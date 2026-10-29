@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "stage": 26,
+  "date": "2026-10-29",
+  "subsection": "2.4 MRI inputs and annotation region",
+  "paragraph_ids": [
+    "M7",
+    "M8"
+  ],
+  "english_word_count": 311,
+  "paragraph_word_counts": {
+    "M7": 151,
+    "M8": 160
+  },
+  "matched_chinese_paragraphs": 2,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "current_section_citations": 1,
+  "existing_citation_number_1_preserved": true,
+  "prior_files_unchanged": 67,
+  "saved_QC_file_records_checked": 546,
+  "case_ROI_records_checked": 182,
+  "unknown_spatial_units_disclosed": true,
+  "upstream_annotation_blinding_not_claimed": true,
+  "no_independent_anatomical_alignment_claim": true,
+  "pixels_redecoded_this_stage": 0,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Intensity normalization and fixed feature definitions (M9-M11)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN.txt": "f486cbd9b3ad68fd66a83d3c671d4a1880e72deb8181cbc07d0cc7742edf1864",
+    "outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN_ZH.docx": "2a1866a83ee9a69633cf1a20ccc689ef9104174c6012b5c82487bf3c8c3b2ce5"
+  }
+}

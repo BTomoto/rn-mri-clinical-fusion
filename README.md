@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第26步已完成Methods 2.4 MRI输入及标注区域（M7–M8）。** [中英对照Word](outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN_ZH.docx)包含311个英文词、两组对应中译，共2页。说明546份FLAIR/增强T1/掩膜文件的技术QC、uint8及空间单位未知限制，以及已有标准BraTS全部正标签并集ROI，保留全部组件、不改画或新训练分割。
+
+见[第26步报告](reports/ucsd_manuscript_step26_20261029.md)、[段落及依据](reports/ucsd_manuscript_step26/methods_section24.json)和[核对回执](reports/ucsd_manuscript_step26/artifact_verification.json)。546条既有QC与源清单及182条ROI记录复核一致；未重新解码全部像素、提取特征或拟合模型。没有将数值网格一致写成独立解剖配准通过，也未宣称上游标注已设盲。已写M1至M8共1253个英文词，下一节为强度归一化和固定特征定义（M9–M11），等待用户批准。
+
 **第25步已完成Methods 2.3临床变量与缺失数据（M5–M6）。** [中英对照Word](outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN_ZH.docx)包含318个英文词及两组对应中译，共2页。交代年龄、出生性别、初始事件间隔及其他扫描前治疗，另设间隔缺失指示；严格负偏移转换、对数变换及训练折内中位数填补和标准化与冻结实现一致。
 
 见[第25步报告](reports/ucsd_manuscript_step25_20261029.md)、[段落及来源核查](reports/ucsd_manuscript_step25/methods_section23.json)和[核对回执](reports/ucsd_manuscript_step25/artifact_verification.json)。182条临床输入逐行比对原工作簿；36条间隔缺失（35条Unknown、1条零偏移），15个年龄缩放及10个间隔处理记录核验通过。没有重新训练模型或改动既有分析结果；已写M1至M6共942个英文词。下一节为MRI输入与标注区域（M7–M8），等待用户批准。
