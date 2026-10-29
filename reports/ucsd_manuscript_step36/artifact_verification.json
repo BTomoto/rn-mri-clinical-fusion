@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "stage": 36,
+  "date": "2026-10-29",
+  "subsection": "3.4 Paired incremental comparison",
+  "paragraph_ids": [
+    "R4"
+  ],
+  "english_word_count": 202,
+  "paragraph_word_counts": {
+    "R4": 202
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 158,
+  "original_table_numeric_values_checked": 12,
+  "individual_model_metric_values_reconstructed": 8,
+  "paired_point_differences_checked": 4,
+  "bootstrap_paired_difference_values_checked": 8000,
+  "paired_interval_endpoints_checked": 8,
+  "editable_english_tables": 1,
+  "table_numeric_values_changed": 0,
+  "probability_error_intervals_include_zero_disclosed": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.5 Calibration and errors (R5)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step36-20261029/UCSD_Manuscript_Results_3_4_EN_ZH.docx": "823ff7fb382d82426d88a5fd4454c71938864ade239d3694f3a309a94ec29797",
+    "outputs/ucsd-manuscript-step36-20261029/Table3_EN.csv": "48575a7e18dc8e6129236373626350b00deb9808293a64be5097085855989233",
+    "outputs/ucsd-manuscript-step36-20261029/UCSD_Manuscript_Results_3_4_EN.txt": "db3eea0ca03a790c0954cd80eb3fcf09132578c44853839de07e39e19e1614ea"
+  }
+}

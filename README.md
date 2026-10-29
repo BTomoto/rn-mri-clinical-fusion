@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第36步已完成Results 3.4配对增量比较（R4）。** [中英对照Word](outputs/ucsd-manuscript-step36-20261029/UCSD_Manuscript_Results_3_4_EN_ZH.docx)包含202个英文词、一组中译及可编辑英文Table 3，共2页。Fusion−M1 AUC差0.110［0.021，0.214］，辅助AP差0.152［0.026，0.268］；Brier及log loss差的区间均跨零，概率误差改善仍不确定。
+
+见[第36步报告](reports/ucsd_manuscript_step36_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step36/results_section34.json)及[核对回执](reports/ucsd_manuscript_step36/artifact_verification.json)。原表12个值、4个点差、8000个保存的bootstrap配对差和8个区间端点一致，158份既有文件未变。差值先用未舍入指标计算，不由显示值或单模型区间端点相减。未重训或增加检验。已写M1–M20及R1–R4，共3904个英文词，下一节为3.5校准与错误（R5），等待用户批准。
+
 **第35步已完成Results 3.3四模型鉴别表现（R3）。** [中英对照Word](outputs/ucsd-manuscript-step35-20261029/UCSD_Manuscript_Results_3_3_EN_ZH.docx)包含197个英文词、一组中译、可编辑英文Table 2及未改绘Figure 2，共3页；图页横向。按M0/M1/MRI/Fusion报告AUC 0.526/0.672/0.762/0.782及既有条件区间，保留AP、Brier和治疗改变识别计数。
 
 见[第35步报告](reports/ucsd_manuscript_step35_20261029.md)、[段落和全精度表格映射](reports/ucsd_manuscript_step35/results_section33.json)及[核对回执](reports/ucsd_manuscript_step35/artifact_verification.json)。原表28个数值、8个AUC区间端点和8个图例值核对一致，155份既有文件未变；没有重训或改变阈值。本节不将点估计排序视为配对显著差异。已写M1–M20及R1–R3，共3702个英文词，下一节为3.4配对增量比较（R4），等待用户批准。
