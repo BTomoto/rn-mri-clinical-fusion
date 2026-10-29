@@ -1,0 +1,83 @@
+{
+  "stage": 43,
+  "date": "2026-10-30",
+  "scope": "D3 conflicting evidence and new-cohort evaluation; focused primary-source reading, not a systematic review",
+  "method": "Paraphrases checked against previously acquired primary JATS full texts and current primary web sources; full articles are not redistributed",
+  "studies": [
+    {
+      "reference_id": "S13",
+      "provisional_citation_number": 9,
+      "doi": "10.1093/noajnl/vdad016",
+      "source_url": "https://academic.oup.com/noa/article/5/1/vdad016/7049398",
+      "alternative_primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034916/",
+      "read_level_this_stage": "Full text reviewed for relevant claims from previously acquired primary JATS XML, with current primary-source search verification",
+      "source_snapshot_sha256": "9e4c2558e28af3a5690414233c901f8b03e00a45d4bae513da5f55d73dfe82ca",
+      "source_locators": ["Material and Methods: Participants", "Outcomes", "Predictors: Demographic, Clinical Data, and MGMT Promoter Methylation Status", "Machine-Learning Model Building", "Results and Table 3", "Discussion"],
+      "facts": {
+        "patients_screened": 1178,
+        "patients_included": 105,
+        "progressive_disease_cases": 85,
+        "pseudoprogression_cases": 20,
+        "population": "Adults with IDH-wildtype glioblastoma and suspected progression within seven months after radiotherapy, subject to the study's other eligibility requirements",
+        "reference_standard": "Predominantly subsequent imaging evolution and clinical follow-up; repeat histology not routinely available",
+        "clinical_MGMT_inputs": ["age", "sex", "proton therapy", "extent of resection", "time from radiotherapy completion to suspicious lesion", "MGMT promoter methylation"],
+        "validation_repeats": 5,
+        "validation_folds": 5,
+        "clinical_MGMT_auc": 0.69,
+        "clinical_MGMT_plus_median_ADC_nrCBV_auc": 0.71,
+        "reported_AUC_comparison_p_value": 0.416,
+        "clinical_MGMT_maps_advanced_radiomics_auc": 0.52,
+        "clinical_MGMT_maps_all_radiomics_auc": 0.54,
+        "radiomics_model_vs_reference_reported_p_bound": 0.005,
+        "radiomics_models_reported_direction": "Lower AUCs than the clinical-MGMT reference"
+      },
+      "permitted_claim": "No statistically significant improvement after adding median ADC/nrCBV; lower AUCs for the reported radiomics combinations in this selected cohort",
+      "limits": "These findings do not prove that radiomics or higher complexity always harms performance. Baseline predictors, target endpoint, processing and sampling differ from ours; no causal attribution of performance differences is established. Avoid importing the article's percentage typo for 20 of 105 patients."
+    },
+    {
+      "reference_id": "S14",
+      "provisional_citation_number": 10,
+      "doi": "10.1186/s12967-023-03941-x",
+      "source_url": "https://link.springer.com/article/10.1186/s12967-023-03941-x",
+      "alternative_primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10142504/",
+      "read_level_this_stage": "Full text reviewed for relevant claims from primary JATS XML and current open publisher full text",
+      "source_snapshot_sha256": "28007768446310d57d45f3b0484eebcdd28b638bab1ee50980ee8bbbc8b4fe81",
+      "source_locators": ["Materials and methods: Patient population", "Validation of multiparametric MRI based prediction model", "Results", "Figure 7 caption", "Discussion"],
+      "facts": {
+        "new_cohort_patients": 56,
+        "pseudoprogression_cases": 19,
+        "progression_plus_mixed_tumor_cases": 37,
+        "histology_classified_patients": 50,
+        "follow_up_classified_patients": 6,
+        "model_inputs": ["fractional anisotropy", "coefficient of linear anisotropy", "maximum relative cerebral blood volume"],
+        "fixed_probability_threshold": 0.5,
+        "new_cohort_auc_figure7": 0.757,
+        "pseudoprogression_correct": 18,
+        "progression_plus_mixed_tumor_correct": 21,
+        "total_correct": 39,
+        "development_grouping": "True progression versus pseudoprogression plus mixed tumor",
+        "validation_grouping": "Pseudoprogression versus progression plus mixed tumor",
+        "mixed_tumor_malignant_features_range_percent": [25, 75],
+        "model_origin": "Previously developed diffusion-perfusion regression model applied to a new cohort; authors also report an additional leave-one-out analysis"
+      },
+      "permitted_claim": "New-cohort evaluation yielded AUC 0.757 and asymmetric class recognition, while the allocation of mixed tumors changed between development and evaluation",
+      "limits": "Use AUC 0.757 as specified in Figure 7, not 75.7% overall classification accuracy. Overall fixed-threshold correct classification was 39/56. Do not treat the changed task as a pure unchanged-endpoint test of transportability, or as validation of our model. Do not claim a lower AUC was caused solely by cohort transport or by label regrouping."
+    }
+  ],
+  "access_notes": [
+    {"reference_id": "S13", "observed": "Current publisher open request failed after redirection and the PMC page returned a verification screen", "action": "Used the previously acquired primary JATS full text with recorded SHA256; current publisher search output also supports the relevant Table 3 results. No new successful browser full-text access is claimed."},
+    {"reference_id": "S14", "observed": "Current open publisher full text available", "action": "Cross-checked model application, changed outcome grouping, exact correct/total counts and Figure 7 AUC against the primary JATS text"}
+  ],
+  "interpretations": [
+    {"claim": "These studies show heterogeneous results and classification tasks, not a uniform direction of fusion benefit", "type": "Comparison inference from source-specific results"},
+    {"claim": "The cited comparisons cannot isolate the causal effect of complexity or explain the differences in our results", "type": "Design limitation; predictor sets, reference standards and samples vary"},
+    {"claim": "Our single-scan incremental uncertainty and minority-class recognition remain material despite a favorable primary AUC difference", "type": "Interpretation of frozen own-study results"},
+    {"claim": "Further evaluation should preserve the intended reference categories and test a locked model in an independent cohort", "type": "Recommendation derived from observed task differences and lack of independent validation of our model"}
+  ],
+  "new_unique_manuscript_references": 2,
+  "cumulative_unique_cited_sources": 10,
+  "candidate_library_unchanged": true,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0
+}

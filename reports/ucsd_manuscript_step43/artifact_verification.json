@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "stage": 43,
+  "date": "2026-10-30",
+  "subsection": "4.3 Conflicting evidence",
+  "paragraph_ids": [
+    "D3"
+  ],
+  "english_word_count": 243,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 181,
+  "prior_files_unchanged": 180,
+  "full_texts_checked_for_current_claims": [
+    "S13",
+    "S14"
+  ],
+  "published_numeric_values_checked": 13,
+  "published_resampling_design_counts_checked": 2,
+  "new_manuscript_references": 2,
+  "provisional_citation_mapping": {
+    "9": "S13",
+    "10": "S14"
+  },
+  "cumulative_unique_cited_sources": 10,
+  "mixed_tumor_grouping_change_disclosed": true,
+  "new_cohort_AUC_not_misrepresented_as_classification_accuracy": true,
+  "cross_paper_AUC_ranking_performed": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.4 Computational contribution (D4)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step43-20261030/UCSD_Manuscript_Discussion_4_3_EN.txt": "60f4aba85682860c32d728a6a74efea1b22eaf45b26e644fb2dd69abccf99f32",
+    "outputs/ucsd-manuscript-step43-20261030/UCSD_Manuscript_Discussion_4_3_EN_ZH.docx": "3cc3117d2673212fa4c845fdcb6c9b09b703e9ca3fca7fbceffc5a4ff3f994ae"
+  }
+}
