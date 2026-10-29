@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "scope": "Stage43 Discussion 4.3 conflicting evidence drafted; negative incremental findings and changed mixed-tumor endpoint in new-cohort evaluation documented",
+  "scope": "Stage44 Discussion 4.4 computational contribution drafted; fixed feature-level fusion, matched comparison and inspectable computational records supported by saved-parameter checks",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Discussion 4.4 computational contribution (D4)",
+  "next_work_item": "Await user approval for Discussion 4.5 interpretation of image features (D5)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 43,
-    "subsection": "4.3 Conflicting evidence",
+    "stage": 44,
+    "subsection": "4.4 Computational contribution",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -440,16 +440,17 @@
       "R8",
       "D1",
       "D2",
-      "D3"
+      "D3",
+      "D4"
     ],
-    "english_word_count": 5267,
-    "chinese_paragraphs": 31,
-    "current_section_citations": 2,
+    "english_word_count": 5464,
+    "chinese_paragraphs": 32,
+    "current_section_citations": 1,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
     "candidate_library_is_final_citation_list": false,
-    "fulltexts_reviewed_for_relevant_claims": 7,
+    "fulltexts_reviewed_for_relevant_claims": 8,
     "official_full_checklists_reviewed": 1,
     "manuscript_complete": false,
     "model_refits": 0,
@@ -476,30 +477,34 @@
       "3.8 Single-scan sensitivity",
       "4.1 Principal findings",
       "4.2 Comparison with fusion studies",
-      "4.3 Conflicting evidence"
+      "4.3 Conflicting evidence",
+      "4.4 Computational contribution"
     ],
-    "latest_section_english_word_count": 243,
-    "latest_section_word_pages": 2,
-    "unique_citations_in_drafted_sections": 10,
+    "latest_section_english_word_count": 197,
+    "latest_section_word_pages": 1,
+    "unique_citations_in_drafted_sections": 11,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 180,
-      "frozen_files_including_new_evidence_record": 181,
-      "published_numeric_values_checked": 13,
-      "published_resampling_design_counts_checked": 2,
+      "prior_files_unchanged": 183,
+      "frozen_files_including_new_evidence_record": 184,
+      "model_input_counts_checked": 3,
+      "folds_checked": 5,
+      "saved_fold_model_records_checked": 10,
+      "training_preprocessing_values_checked": 130,
+      "fixed_oof_probabilities_reconstructed": 364,
+      "maximum_absolute_probability_difference": 3.3306690738754696e-16,
+      "analysis_locks_checked": 2,
+      "historical_notebook_execution_receipts_checked": 3,
       "full_texts_checked_for_current_claims": [
-        "S13",
-        "S14"
+        "S33"
       ],
-      "new_manuscript_references": 2,
+      "new_manuscript_references": 1,
       "provisional_citation_mapping": {
-        "9": "S13",
-        "10": "S14"
+        "11": "S33"
       },
-      "mixed_tumor_grouping_change_disclosed": true,
-      "new_cohort_AUC_not_misrepresented_as_classification_accuracy": true,
-      "cross_paper_AUC_ranking_performed": false,
+      "METRICS_topics_checked": 6,
+      "METRICS_score_calculated": false,
       "models_fitted": 0
     },
     "methods_v2_paragraphs_complete": true,
@@ -518,7 +523,7 @@
       "Table S7"
     ],
     "results_v2_paragraphs_complete": true,
-    "discussion_english_word_count": 690,
+    "discussion_english_word_count": 887,
     "discussion_v2_paragraphs_complete": false,
     "latest_stage_date": "2026-10-30"
   },
@@ -541,5 +546,6 @@
   "ucsd_manuscript_step40_report": "reports/ucsd_manuscript_step40_20261029.md",
   "ucsd_manuscript_step41_report": "reports/ucsd_manuscript_step41_20261029.md",
   "ucsd_manuscript_step42_report": "reports/ucsd_manuscript_step42_20261029.md",
-  "ucsd_manuscript_step43_report": "reports/ucsd_manuscript_step43_20261030.md"
+  "ucsd_manuscript_step43_report": "reports/ucsd_manuscript_step43_20261030.md",
+  "ucsd_manuscript_step44_report": "reports/ucsd_manuscript_step44_20261030.md"
 }

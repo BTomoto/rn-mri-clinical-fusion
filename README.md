@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第44步已完成Discussion 4.4计算方法贡献（D4）。** [中英对照Word](outputs/ucsd-manuscript-step44-20261030/UCSD_Manuscript_Discussion_4_4_EN_ZH.docx)包含197个英文词、一组中译及1篇参考文献，共1页。说明8项MRI与5项临床输入的特征级融合、同病例同折比较及公开计算记录的价值，定位为医学图像计算的应用评价，保留影像访问和外部验证限制。
+
+见[第44步报告](reports/ucsd_manuscript_step44_20261030.md)、[来源与贡献映射](reports/ucsd_manuscript_step44/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step44/discussion_section44.json)及[核查回执](reports/ucsd_manuscript_step44/artifact_verification.json)。183份此前文件未变；130个训练预处理摘要与364个OOF概率重构一致，无重训。当前英文叙述5464词、32组中译、11篇实际引用来源。下一节为Discussion 4.5影像特征的解释（D5），等待用户批准。
+
 **第43步已完成Discussion 4.3不同及负向证据（D3）。** [中英对照Word](outputs/ucsd-manuscript-step43-20261030/UCSD_Manuscript_Discussion_4_3_EN_ZH.docx)包含243个英文词、一组中译及2篇参考文献，共2页。核对Leone未显示可靠影像增益的结果，以及de Godoy新队列评价中的AUC、类别识别和混合肿瘤分组改变；不以跨研究比较确定失败原因，不将该研究视为本项目的独立验证。
 
 见[第43步报告](reports/ucsd_manuscript_step43_20261030.md)、[来源证据](reports/ucsd_manuscript_step43/literature_evidence.json)、[段落映射](reports/ucsd_manuscript_step43/discussion_section43.json)及[核查回执](reports/ucsd_manuscript_step43/artifact_verification.json)。180份此前文件未变，无重训。当前英文叙述5267词、31组中译、10篇实际引用来源；全文与最终引文核算未完成。下一节为Discussion 4.4计算方法贡献（D4），等待用户批准。

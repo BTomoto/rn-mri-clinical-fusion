@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "stage": 44,
+  "date": "2026-10-30",
+  "subsection": "4.4 Computational contribution",
+  "paragraph_ids": [
+    "D4"
+  ],
+  "english_word_count": 197,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 184,
+  "prior_files_unchanged": 183,
+  "full_texts_checked_for_current_claims": [
+    "S33"
+  ],
+  "new_manuscript_references": 1,
+  "provisional_citation_mapping": {
+    "11": "S33"
+  },
+  "cumulative_unique_cited_sources": 11,
+  "model_input_counts_checked": 3,
+  "folds_checked": 5,
+  "saved_fold_model_records_checked": 10,
+  "training_preprocessing_values_checked": 130,
+  "fixed_oof_probabilities_reconstructed": 364,
+  "maximum_absolute_probability_difference": 3.3306690738754696e-16,
+  "analysis_locks_checked": 2,
+  "historical_notebook_execution_receipts_checked": 3,
+  "METRICS_topics_checked": 6,
+  "METRICS_score_calculated": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.5 Interpretation of image features (D5)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step44-20261030/UCSD_Manuscript_Discussion_4_4_EN_ZH.docx": "e0fd08bf08c0c46c38d9145b9c2a615b4680f7b9dce670e38f9d573201695d7c",
+    "outputs/ucsd-manuscript-step44-20261030/UCSD_Manuscript_Discussion_4_4_EN.txt": "d3b51c05b03abf1d171490b6a6090291067fd30639522f851e16bfb2e827e73d"
+  }
+}

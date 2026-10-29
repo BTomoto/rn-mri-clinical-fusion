@@ -1,0 +1,53 @@
+{
+  "stage": 44,
+  "date": "2026-10-30",
+  "scope": "D4 computational contribution and methodological context",
+  "method": "Own-study contribution is grounded in frozen code, data and execution records; the methodological context is checked against the primary METRICS full text",
+  "studies": [
+    {
+      "reference_id": "S33",
+      "provisional_citation_number": 11,
+      "doi": "10.1186/s13244-023-01572-w",
+      "source_url": "https://link.springer.com/article/10.1186/s13244-023-01572-w",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10792137/fullTextXML",
+      "read_level_this_stage": "Full text reviewed for relevant claims, including Table 1 and the finalized-tool description",
+      "source_snapshot_sha256": "81be727beb32822ec76f7839c8317e644655219dd0433eecc1c4d265936a93ba",
+      "source_snapshot_format": "Primary article JATS XML",
+      "source_locators": ["Results: Finalized METRICS tool", "Table 1: METRICS tool", "Discussion"],
+      "facts": {
+        "publication_year": 2024,
+        "development": "International expert consensus using a modified Delphi process",
+        "relevant_items": [
+          {"number": 11, "paraphrase": "Describe preprocessing methods transparently and use them appropriately"},
+          {"number": 13, "paraphrase": "State the settings used to extract features"},
+          {"number": 18, "paraphrase": "Partition data appropriately"},
+          {"number": 24, "paraphrase": "Evaluate against an approach without radiomics or demonstrate added clinical value"},
+          {"number": 25, "paraphrase": "Include a simple statistical comparator"},
+          {"number": 29, "paraphrase": "Make code available"}
+        ]
+      },
+      "permitted_claim": "Attention to processing details, comparator models, partitioning and code availability is consistent with topics covered by METRICS",
+      "limits": "No METRICS score or quality category has been calculated for this project. Citing the framework does not establish compliance, clinical usefulness, standardized-software benchmarking, or independent reproducibility. DOI contains 2023 but publication year is 2024."
+    }
+  ],
+  "own_study_claims": [
+    {"claim": "Eight fixed MRI descriptors from FLAIR and postcontrast T1 are concatenated with five clinical inputs for a fixed L2-regularized logistic model", "sources": ["src/rn_public/ucsd_fusion.py", "reports/ucsd_fusion/analysis_lock.json", "reports/ucsd_fusion/metrics.json"]},
+    {"claim": "Models share examinations and patient-grouped folds; fitting preprocessing uses training-fold data", "sources": ["reports/ucsd_fusion/fold_audit.json", "reports/ucsd_fusion/cohort_and_fold_manifest.csv", "data/processed/ucsd_fusion_oof.csv"]},
+    {"claim": "Saved features, notebook code, OOF probabilities, folds and analysis locks support examination and rerunning of model evaluation", "sources": ["notebooks/17_ucsd_batch_image_features.ipynb", "notebooks/18_ucsd_clinical_mri_fusion.ipynb", "notebooks/19_ucsd_model_stability.ipynb", "reports/ucsd_manuscript_step32/artifact_verification.json"]},
+    {"claim": "Image-based feature re-extraction additionally needs image access; model reevaluation from the feature tables does not", "sources": ["reports/ucsd_manuscript_step32/methods_section210.json", "reports/ucsd_batch_features/source_manifest.csv", "scripts/restore_ucsd_batch_sources.py"]}
+  ],
+  "interpretation": "Applied evaluation in medical image computing: implementation and matched incremental assessment, without a claim of a new learning algorithm",
+  "access_and_reproducibility_limits": [
+    "Only 18 source images are in the repository; 528 additional images were archived separately, with holder-account access for the stored archive and public source URLs documented as an acquisition alternative",
+    "No claim that all source images are publicly hosted in the project repository or that future source availability is guaranteed",
+    "Historical notebooks executed through an in-process kernel; browser frontend and separate kernel server were not tested",
+    "Independent reproduction and external validation are not newly performed in this writing stage"
+  ],
+  "new_unique_manuscript_references": 1,
+  "cumulative_unique_cited_sources": 11,
+  "candidate_library_unchanged": true,
+  "reading_level_update": {"reference_id": "S33", "historical_library_level": "Abstract screened; full text needed before detailed comparison", "current_level": "Full text reviewed for relevant claims"},
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0
+}
