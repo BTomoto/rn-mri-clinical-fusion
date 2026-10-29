@@ -1,0 +1,9 @@
+Background: Distinguishing residual or recurrent tumor from treatment-related change after high-grade glioma treatment remains difficult. We evaluated whether fixed magnetic resonance imaging (MRI) descriptors provide incremental discrimination beyond available clinical inputs in public data.
+
+Methods: This secondary analysis of the public UCSD-PTGBM collection included 182 examinations from 135 patients. Four fixed L2-penalized logistic models used age and sex, five clinical inputs, eight MRI descriptors, or their fusion. MRI features summarized fluid-attenuated inversion recovery (FLAIR) and postcontrast T1 intensity and texture within supplied annotation regions. Five-fold patient-grouped validation generated out-of-fold predictions. The primary comparison was the Fusion-minus-expanded-clinical area under the receiver operating characteristic curve (AUC) difference. Intervals used 2000 patient-cluster bootstrap attempts conditional on fixed predictions. Sensitivity analyses examined annotation boundaries and examination selection.
+
+Results: Fusion achieved an AUC of 0.782 versus 0.672 for the expanded clinical model and 0.762 for MRI alone. The paired AUC increment was 0.110 (95% percentile interval, 0.021 to 0.214). Treatment-related-change average precision was 0.505 for Fusion and 0.354 for the clinical model. At the fixed 0.5 threshold, Fusion recognized 130/141 tumor examinations and 12/41 treatment-related-change examinations. Its descriptive calibration slope was 0.667. Brier-score and logarithmic-loss difference intervals included zero.
+
+Conclusions: Clinical-MRI feature fusion improved discrimination over the clinical model in this public cohort. The reproducible approach merits evaluation in independent cohorts, with attention to treatment-change recognition and calibration.
+
+Keywords: high-grade glioma; treatment-related change; magnetic resonance imaging; feature fusion; logistic regression; internal validation

@@ -1,0 +1,414 @@
+{
+  "nodes": [
+    {
+      "key": "source",
+      "center": [
+        0.6,
+        0.92
+      ],
+      "width": 0.52,
+      "height": 0.08,
+      "label": "Public UCSD-PTGBM collection\n243 examinations / 178 patients",
+      "text_bbox": [
+        0.4705592105263158,
+        0.9025911088423295,
+        0.7294407894736842,
+        0.9374088911576705
+      ]
+    },
+    {
+      "key": "clinical",
+      "center": [
+        0.6,
+        0.74
+      ],
+      "width": 0.52,
+      "height": 0.1,
+      "label": "Linked clinical cohort\n238 examinations / 176 patients",
+      "text_bbox": [
+        0.4782894736842106,
+        0.7222327584931344,
+        0.7217105263157895,
+        0.7577672415068655
+      ]
+    },
+    {
+      "key": "linkage_exclusions",
+      "center": [
+        0.16,
+        0.74
+      ],
+      "width": 0.26,
+      "height": 0.1,
+      "label": "Excluded at linkage\n5 examinations / 2 patients",
+      "text_bbox": [
+        0.06707236842105266,
+        0.7240430057410037,
+        0.2529276315789474,
+        0.7559569942589961
+      ]
+    },
+    {
+      "key": "imaging",
+      "center": [
+        0.6,
+        0.56
+      ],
+      "width": 0.52,
+      "height": 0.13,
+      "label": "Complete imaging cohort\n182 examinations / 135 patients\n141 tumor / 41 treatment-related change",
+      "text_bbox": [
+        0.4458881578947368,
+        0.5331167879971591,
+        0.7541118421052632,
+        0.5868832120028409
+      ]
+    },
+    {
+      "key": "other_clinical",
+      "center": [
+        0.16,
+        0.56
+      ],
+      "width": 0.26,
+      "height": 0.13,
+      "label": "Clinical records retained\n56 examinations / 41 patients\nCoverage summary (Table S1)",
+      "text_bbox": [
+        0.05473684210526318,
+        0.5357084702000473,
+        0.26526315789473687,
+        0.5842915297999527
+      ]
+    },
+    {
+      "key": "inputs",
+      "center": [
+        0.6,
+        0.4
+      ],
+      "width": 0.52,
+      "height": 0.1,
+      "label": "Clinical and MRI inputs\n5 clinical inputs + 8 MRI features",
+      "text_bbox": [
+        0.47006578947368416,
+        0.38259110884232955,
+        0.7299342105263158,
+        0.41740889115767044
+      ]
+    },
+    {
+      "key": "M0",
+      "center": [
+        0.14,
+        0.235
+      ],
+      "width": 0.2,
+      "height": 0.1,
+      "label": "M0\nAge and sex\n2 inputs",
+      "text_bbox": [
+        0.09485197368421053,
+        0.20811678799715908,
+        0.18514802631578947,
+        0.26188321200284087
+      ]
+    },
+    {
+      "key": "M1",
+      "center": [
+        0.38,
+        0.235
+      ],
+      "width": 0.2,
+      "height": 0.1,
+      "label": "M1\nExpanded clinical\n5 inputs",
+      "text_bbox": [
+        0.3140460526315789,
+        0.20811678799715908,
+        0.4459539473684211,
+        0.26188321200284087
+      ]
+    },
+    {
+      "key": "MRI",
+      "center": [
+        0.62,
+        0.235
+      ],
+      "width": 0.2,
+      "height": 0.1,
+      "label": "MRI\nImage features\n8 inputs",
+      "text_bbox": [
+        0.5660526315789474,
+        0.20811678799715908,
+        0.6739473684210527,
+        0.26188321200284087
+      ]
+    },
+    {
+      "key": "Fusion",
+      "center": [
+        0.86,
+        0.235
+      ],
+      "width": 0.2,
+      "height": 0.1,
+      "label": "Fusion\nClinical + MRI\n13 inputs",
+      "text_bbox": [
+        0.8037500000000001,
+        0.20811678799715908,
+        0.91625,
+        0.26188321200284087
+      ]
+    },
+    {
+      "key": "validation",
+      "center": [
+        0.5,
+        0.075
+      ],
+      "width": 0.9,
+      "height": 0.1,
+      "label": "Patient-grouped five-fold validation\nPaired comparison of Fusion versus the expanded clinical model",
+      "text_bbox": [
+        0.25189144736842106,
+        0.05759110884232954,
+        0.7481085526315789,
+        0.09240889115767044
+      ]
+    }
+  ],
+  "connectors": [
+    {
+      "points": [
+        [
+          0.6,
+          0.88
+        ],
+        [
+          0.6,
+          0.79
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.6,
+          0.835
+        ],
+        [
+          0.16,
+          0.835
+        ],
+        [
+          0.16,
+          0.79
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.6,
+          0.69
+        ],
+        [
+          0.6,
+          0.625
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.6,
+          0.66
+        ],
+        [
+          0.16,
+          0.66
+        ],
+        [
+          0.16,
+          0.625
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.6,
+          0.495
+        ],
+        [
+          0.6,
+          0.45
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.6,
+          0.35
+        ],
+        [
+          0.6,
+          0.32
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.14,
+          0.32
+        ],
+        [
+          0.86,
+          0.32
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.14,
+          0.32
+        ],
+        [
+          0.14,
+          0.285
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.14,
+          0.185
+        ],
+        [
+          0.14,
+          0.15
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.38,
+          0.32
+        ],
+        [
+          0.38,
+          0.285
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.38,
+          0.185
+        ],
+        [
+          0.38,
+          0.15
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.62,
+          0.32
+        ],
+        [
+          0.62,
+          0.285
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.62,
+          0.185
+        ],
+        [
+          0.62,
+          0.15
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.86,
+          0.32
+        ],
+        [
+          0.86,
+          0.285
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "points": [
+        [
+          0.86,
+          0.185
+        ],
+        [
+          0.86,
+          0.15
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.14,
+          0.15
+        ],
+        [
+          0.86,
+          0.15
+        ]
+      ],
+      "arrow": false
+    },
+    {
+      "points": [
+        [
+          0.5,
+          0.15
+        ],
+        [
+          0.5,
+          0.125
+        ]
+      ],
+      "arrow": true
+    }
+  ],
+  "all_text_inside_nodes": true,
+  "orthogonal_connectors": true,
+  "cohort_counts_unchanged": true
+}

@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "stage": 56,
+  "main_english_words": 4148,
+  "previous_main_english_words": 8200,
+  "abstract_english_words": 229,
+  "discussion_parts": 9,
+  "limitations_paragraphs": 1,
+  "limitations_items": 2,
+  "numeric_table_cells_unchanged": true,
+  "native_formulas_preserved": 10,
+  "references_all_retained": 25,
+  "citations_first_appearance_order": true,
+  "prior_files_unchanged": 263,
+  "source_data_and_OOF_results_unchanged": true,
+  "main_result_subsections_removed": [
+    "3.7",
+    "3.8"
+  ],
+  "sensitivity_details_retained_in_supplement": true,
+  "Figure3_moved_as_FigureS3": true,
+  "Figure1_alignment_verified": true,
+  "statistical_uncertainty_and_classification_results_retained": true,
+  "models_refitted": 0,
+  "new_bootstrap_draws": 0,
+  "documents": {
+    "Abstract_Revision1_EN_ZH.docx": {
+      "pages": 2,
+      "editable_tables": 0,
+      "native_equation_groups": 0,
+      "figures": 0
+    },
+    "Manuscript_Revision1_EN_ZH.docx": {
+      "pages": 25,
+      "editable_tables": 3,
+      "native_equation_groups": 10,
+      "figures": 2
+    },
+    "Manuscript_Revision1_EN.docx": {
+      "pages": 17,
+      "editable_tables": 3,
+      "native_equation_groups": 10,
+      "figures": 2
+    },
+    "Supplementary_Revision1_EN.docx": {
+      "pages": 12,
+      "editable_tables": 8,
+      "native_equation_groups": 0,
+      "figures": 3
+    }
+  },
+  "sha256": {
+    "outputs/ucsd-manuscript-revision1-20261030/Supplementary_Revision1_EN.docx": "c148fd365d01709380bc8630a765d2d3f7d38635205573cfb77decaa41a95b01",
+    "outputs/ucsd-manuscript-revision1-20261030/Abstract_Revision1_EN.txt": "c0dea2c84f9e30a060f6365f08e7eae866bc2c2271da2a2c09595582f6963e24",
+    "outputs/ucsd-manuscript-revision1-20261030/Manuscript_Revision1_EN_ZH.docx": "ae61d9c39d7f9b2e92aeda900a685538994d91b882dc2fc830a339caf40210cf",
+    "outputs/ucsd-manuscript-revision1-20261030/Abstract_Revision1_EN_ZH.docx": "dc9779353a03f0aefccb0e7b3d200b2b313713bcc633ddebda1e9c3234bdf2a5",
+    "outputs/ucsd-manuscript-revision1-20261030/Manuscript_Revision1_EN.docx": "dbb27418a890897995b54028d72278255307b1641a64bb57bb4d58fec7f1d3ab",
+    "outputs/ucsd-manuscript-revision1-20261030/figures/Figure1_Cohort_Flow.pdf": "bb499ca4484d387654a181d69a10f26cf1bd0211517d7283003315dd48df2f77",
+    "outputs/ucsd-manuscript-revision1-20261030/figures/Figure1_Cohort_Flow.png": "df03d874ba000436f8ea39eabfe5e83051cd36e132d95a347c916f9750734c18",
+    "outputs/ucsd-manuscript-revision1-20261030/figures/Figure1_Cohort_Flow.svg": "13f1a34e63442642d61b12367e9289b7cdf98e38bc7ccf583f3853d123fc7d87"
+  },
+  "declarations_still_deferred": true
+}

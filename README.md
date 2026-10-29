@@ -1,6 +1,13 @@
 # 高级别胶质瘤治疗后肿瘤与治疗相关改变的探索性鉴别
 
 
+**第56步完成第一轮精简修订与Figure 1重绘。** [中英对照稿（25页）](outputs/ucsd-manuscript-revision1-20261030/Manuscript_Revision1_EN_ZH.docx)、[英文稿（17页）](outputs/ucsd-manuscript-revision1-20261030/Manuscript_Revision1_EN.docx)、[英文补充材料（12页）](outputs/ucsd-manuscript-revision1-20261030/Supplementary_Revision1_EN.docx)及[摘要（2页）](outputs/ucsd-manuscript-revision1-20261030/Abstract_Revision1_EN_ZH.docx)已更新。正文4148英文词、摘要229词；按用户本轮要求明显压缩，讨论由12节改为9节，局限性集中为一段两项。2.3编码与时间偏移解释、处理失败清单及反复否定界定均已精简。
+
+正文3.7与3.8撤下，详细分析移至补充材料，原Figure 3改为Figure S3；关键单扫描不确定性在局限性中简要保留。[新Figure 1](outputs/ucsd-manuscript-revision1-20261030/figures/Figure1_Cohort_Flow.png)统一方框、文字居中及直角连接线，另有[SVG](outputs/ucsd-manuscript-revision1-20261030/figures/Figure1_Cohort_Flow.svg)和[PDF](outputs/ucsd-manuscript-revision1-20261030/figures/Figure1_Cohort_Flow.pdf)。25篇实际引用、11张表的全部数据单元格、10组原生公式与保存分析结果不变。
+
+见[修订说明](reports/ucsd_manuscript_step56_20261030.md)、[核对记录](reports/ucsd_manuscript_step56/artifact_verification.json)和[56页排版检查](reports/ucsd_manuscript_step56/visual_review.json)。未重新拟合模型或抽样，结论后声明继续暂缓；当前等待用户审阅本轮精简幅度与新流程图。
+
+
 **第55步已完成摘要和全文整合。** 英文摘要247词，正文8200词，合计8447词（图表、参考文献等不计入此数）。已保留47段既有正文，仅统一引文编号；新增4段摘要与对应中译。25篇实际引用按全文首次出现编号，其中23篇（92%）符合2022–2026近5年范围、17篇（68%）符合2024–2026近3年范围，均为英文文献。
 
 - [完整中英对照Word（42页）](outputs/ucsd-manuscript-step55-20261030/UCSD_Manuscript_Integrated_EN_ZH.docx)

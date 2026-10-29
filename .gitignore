@@ -156,3 +156,6 @@ node_modules/
 
 # Stage55 reproducible Word layout QA
 outputs/ucsd-manuscript-step55-20261030/*_render/
+
+# Revision1 reproducible Word render intermediates
+outputs/ucsd-manuscript-revision1-20261030/*_render/
