@@ -1,0 +1,91 @@
+{
+  "stage": 42,
+  "date": "2026-10-29",
+  "scope": "D2 comparison of fusion studies; focused reading, not a systematic review",
+  "method": "Author paraphrases checked against the primary full texts or the explicitly limited primary abstract; copyrighted full texts are not redistributed",
+  "studies": [
+    {
+      "reference_id": "S06",
+      "provisional_citation_number": 6,
+      "doi": "10.3389/fonc.2026.1892760",
+      "source_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1892760/full",
+      "read_level_this_stage": "Full text reviewed for relevant claims",
+      "source_snapshot_sha256": "4e5dc14d6986b088517aa567ae596b0b7704aaac1ca880b9197d5f06c696342c",
+      "source_snapshot_format": "Publisher HTML",
+      "source_locators": ["Materials and methods: Study design and participants", "Outcome definition", "Candidate predictors", "Model development and statistical analysis", "Results: Radiomic feature selection and RadScore performance", "Model performance and Table 2"],
+      "facts": {
+        "design": "Single-center retrospective complete-case cohort with WHO grade 3 or 4 glioma",
+        "patients": 222,
+        "pseudoprogression_cases": 60,
+        "endpoint": "Pseudoprogression after radiotherapy; multidisciplinary longitudinal adjudication, with 13 histologically confirmed PsP cases and at least six months of stable or improved imaging for non-histological cases",
+        "radiomics_score_features": 17,
+        "integrated_inputs": ["RadScore", "relative cerebral blood volume", "apparent diffusion coefficient", "neutrophil-to-lymphocyte ratio", "MGMT promoter methylation", "temozolomide treatment"],
+        "validation": "Stratified 7:3 internal split; 155 training patients and 67 validation patients; authors report training-only filtering, scaling, feature selection and model estimation",
+        "validation_integrated_auc": 0.811,
+        "validation_baseline_without_radscore_auc": 0.744,
+        "baseline_inputs": ["relative cerebral blood volume", "apparent diffusion coefficient", "neutrophil-to-lymphocyte ratio", "MGMT promoter methylation", "temozolomide treatment"]
+      },
+      "permitted_claim": "Reported radiomics increment beyond a clinical-imaging baseline already containing advanced imaging and molecular information",
+      "limits": "Internal validation only; different inputs, endpoint and sampling from the present study. Do not claim an independently reproduced effect, transfer model coefficients, rank across-paper AUCs, or adopt biological interpretations from this report as established mechanisms."
+    },
+    {
+      "reference_id": "S12",
+      "provisional_citation_number": 7,
+      "doi": "10.1016/j.adro.2022.100916",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873493/",
+      "read_level_this_stage": "Full text reviewed for relevant claims from previously acquired primary JATS XML",
+      "source_snapshot_sha256": "d92add2c6c7663bc9b3c2ee9a5fc57aa16893289f94f038e8c137335e5428911",
+      "source_snapshot_format": "Previously acquired primary article JATS XML; live PMC browser check returned a verification page, so it was not treated as new full-text access",
+      "source_locators": ["Methods and Materials: Patient cohort", "Lesion diagnosis at repeat surgery", "MRI scans", "Machine learning classification for distinguishing tumor versus pseudoprogression", "Results: Patients and lesion diagnosis", "RFE-RF classifier combining radiomics plus MGMT methylation to differentiate recurrent tumor versus pseudoprogression", "Table 1"],
+      "facts": {
+        "design": "Single-center retrospective surgical cohort",
+        "patients": 74,
+        "tumor_cases": 57,
+        "pseudoprogression_cases": 17,
+        "population": "Adults with primary IDH-wildtype glioblastoma and repeat resection for an indeterminate enhancing lesion within a year after chemoradiotherapy",
+        "endpoint": "Repeat-surgery histopathology; any tumor classified as tumor, complete absence of tumor classified as pseudoprogression",
+        "imaging_inputs": ["contrast-enhanced T1-weighted images", "DCE perfusion Ktrans maps", "DCE perfusion plasma-volume maps"],
+        "additional_input": "MGMT promoter methylation status",
+        "model": "Recursive-feature-elimination random forest",
+        "validation": "Authors report five repetitions of nested three-fold cross-validation for the radiomics classifiers; no separate validation cohort",
+        "reported_combined_vs_radiomics_accuracy_p_value": 0.03,
+        "reported_radiomics_auc": 0.81,
+        "reported_combined_auc": 0.89
+      },
+      "permitted_claim": "Reported higher cross-validation accuracy after adding MGMT to radiomics in a pathology-confirmed surgical cohort",
+      "limits": "The reported significant contrast concerns accuracy. Do not convert it into a proven significant AUC difference, claim uniform histology for our cohort, or call the published cross-validation an external validation. Do not assert all preprocessing was nested based only on the study's nested-validation label."
+    },
+    {
+      "reference_id": "S19",
+      "provisional_citation_number": 8,
+      "doi": "10.3174/ajnr.A9574",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42567711/",
+      "read_level_this_stage": "Primary indexed abstract and bibliographic record only",
+      "source_snapshot_sha256": "dc5241cfa19891db127b090b07669285a710fe3e75d6d5614fca7ef5cb634dbd",
+      "source_snapshot_format": "PubMed HTML",
+      "source_locators": ["Abstract: Materials and methods"],
+      "facts": {
+        "parent_dataset": "UCSD-PTGBM",
+        "reported_imaging_sessions": 171,
+        "reported_adult_patients": 130
+      },
+      "permitted_claim": "This related report uses the same named parent dataset, so it is not an independent confirmation of our findings",
+      "limits": "AJNR publisher full-text request returned HTTP 403. No full-text reading is claimed; do not infer exact participant overlap, detailed validation mechanics, or matched performance comparisons from the abstract."
+    }
+  ],
+  "access_limitations": [
+    {"reference_id": "S08", "url": "https://link.springer.com/article/10.1007/s00234-026-04024-6", "observed": "Publisher provided an abstract preview with institutional or paid access for full text", "action": "Not cited in D2; no unsupported detailed methods comparison. Publisher page confirms pages 1979-1991 for any future bibliography audit."},
+    {"reference_id": "S19", "url": "https://www.ajnr.org/content/early/2026/08/07/ajnr.A9574", "observed": "HTTP 403 on full-text retrieval", "action": "Restricted D2 claim to same-parent-dataset statement explicitly supported by primary abstract"}
+  ],
+  "interpretations": [
+    {"claim": "These reports motivate testing complementary information but do not demonstrate that our inputs measure the same signal", "type": "Interpretation from differences in recorded predictor sets"},
+    {"claim": "The present broad treatment-related-change outcome is not a uniform pseudoprogression endpoint", "type": "Comparison using the frozen reference-label protocol and the source studies' outcome definitions"},
+    {"claim": "Patient selection, reference standards, inputs and validation differences prevent a direct AUC ranking", "type": "Comparison-design inference; no statistical test or external performance inference"}
+  ],
+  "new_unique_manuscript_references": 3,
+  "cumulative_unique_cited_sources": 8,
+  "candidate_library_unchanged": true,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0
+}

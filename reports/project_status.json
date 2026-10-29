@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage41 Discussion 4.1 principal findings drafted; D1 summarizes the internal incremental signal and conditional, single-scan, calibration and minority-class limitations",
+  "scope": "Stage42 Discussion 4.2 comparison with fusion studies drafted; primary-source evidence and reading limits documented, with no cross-paper AUC ranking",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for Discussion 4.2 comparison with fusion studies (D2)",
+  "next_work_item": "Await user approval for Discussion 4.3 conflicting evidence (D3)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 41,
-    "subsection": "4.1 Principal findings",
+    "stage": 42,
+    "subsection": "4.2 Comparison with fusion studies",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -438,11 +438,12 @@
       "R6",
       "R7",
       "R8",
-      "D1"
+      "D1",
+      "D2"
     ],
-    "english_word_count": 4786,
-    "chinese_paragraphs": 29,
-    "current_section_citations": 0,
+    "english_word_count": 5024,
+    "chinese_paragraphs": 30,
+    "current_section_citations": 3,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
@@ -472,21 +473,32 @@
       "3.6 Boundary sensitivity",
       "3.7 Split stability",
       "3.8 Single-scan sensitivity",
-      "4.1 Principal findings"
+      "4.1 Principal findings",
+      "4.2 Comparison with fusion studies"
     ],
-    "latest_section_english_word_count": 209,
-    "latest_section_word_pages": 1,
-    "unique_citations_in_drafted_sections": 5,
+    "latest_section_english_word_count": 238,
+    "latest_section_word_pages": 2,
+    "unique_citations_in_drafted_sections": 8,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 175,
-      "saved_numeric_claim_values_checked": 8,
-      "model_input_counts_checked": 3,
-      "recognition_counts_checked": 4,
-      "positive_repeated_AUC_increments_checked": 20,
-      "conditional_interval_limit_disclosed": true,
-      "clinical_usefulness_not_established": true,
+      "prior_files_unchanged": 177,
+      "frozen_files_including_new_evidence_record": 178,
+      "published_numeric_values_checked": 5,
+      "full_texts_checked_for_current_claims": [
+        "S06",
+        "S12"
+      ],
+      "limited_abstract_claim_sources": [
+        "S19"
+      ],
+      "new_manuscript_references": 3,
+      "provisional_citation_mapping": {
+        "6": "S06",
+        "7": "S12",
+        "8": "S19"
+      },
+      "cross_paper_AUC_ranking_performed": false,
       "models_fitted": 0
     },
     "methods_v2_paragraphs_complete": true,
@@ -505,7 +517,7 @@
       "Table S7"
     ],
     "results_v2_paragraphs_complete": true,
-    "discussion_english_word_count": 209,
+    "discussion_english_word_count": 447,
     "discussion_v2_paragraphs_complete": false
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
@@ -525,5 +537,6 @@
   "ucsd_manuscript_step38_report": "reports/ucsd_manuscript_step38_20261029.md",
   "ucsd_manuscript_step39_report": "reports/ucsd_manuscript_step39_20261029.md",
   "ucsd_manuscript_step40_report": "reports/ucsd_manuscript_step40_20261029.md",
-  "ucsd_manuscript_step41_report": "reports/ucsd_manuscript_step41_20261029.md"
+  "ucsd_manuscript_step41_report": "reports/ucsd_manuscript_step41_20261029.md",
+  "ucsd_manuscript_step42_report": "reports/ucsd_manuscript_step42_20261029.md"
 }

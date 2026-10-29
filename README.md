@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第42步已完成Discussion 4.2融合研究比较（D2）。** [中英对照Word](outputs/ucsd-manuscript-step42-20261029/UCSD_Manuscript_Discussion_4_2_EN_ZH.docx)包含238个英文词、一组中译及3篇参考文献，共2页。核对Zhou与McKenney研究的相关全文，比较输入、病例、终点和内部验证；Reecher研究仅依据原始摘要说明同一UCSD母数据集关系，未当作独立确认或跨论文排名。
+
+见[第42步报告](reports/ucsd_manuscript_step42_20261029.md)、[来源证据与阅读范围](reports/ucsd_manuscript_step42/literature_evidence.json)、[段落映射](reports/ucsd_manuscript_step42/discussion_section42.json)及[核查回执](reports/ucsd_manuscript_step42/artifact_verification.json)。177份此前文件未变，无重训；当前英文叙述5024词、30组中译、8篇实际引用来源。全文与最终引文合规核算尚未完成。下一节为Discussion 4.3不同及负向证据（D3），等待用户批准。
+
 **第41步已完成Discussion 4.1主要发现（D1）。** [中英对照Word](outputs/ucsd-manuscript-step41-20261029/UCSD_Manuscript_Discussion_4_1_EN_ZH.docx)包含209个英文词和一组中译，共1页。主分析AUC增量0.110［0.021，0.214］及20套分折增量同向，支持本数据集内的MRI增量信号；同时保留单扫描增量不确定、治疗改变识别不足及校准/概率误差限制，不据此宣称临床实用性。
 
 见[第41步报告](reports/ucsd_manuscript_step41_20261029.md)、[段落与指标映射](reports/ucsd_manuscript_step41/discussion_section41.json)及[核查回执](reports/ucsd_manuscript_step41/artifact_verification.json)。175份既有文件未变，保存数值及解释边界核对一致，未重训。当前M1–M20、R1–R8、D1共4786个英文叙述词、29组中译；全文及最终引文核算尚未完成。下一节为Discussion 4.2近期融合研究比较（D2），等待用户批准。

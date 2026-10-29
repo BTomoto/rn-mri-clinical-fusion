@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "stage": 42,
+  "date": "2026-10-29",
+  "subsection": "4.2 Comparison with fusion studies",
+  "paragraph_ids": [
+    "D2"
+  ],
+  "english_word_count": 238,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 178,
+  "prior_files_unchanged": 177,
+  "full_texts_checked_for_current_claims": [
+    "S06",
+    "S12"
+  ],
+  "limited_abstract_claim_sources": [
+    "S19"
+  ],
+  "published_numeric_values_checked": 5,
+  "new_manuscript_references": 3,
+  "provisional_citation_mapping": {
+    "6": "S06",
+    "7": "S12",
+    "8": "S19"
+  },
+  "cumulative_unique_cited_sources": 8,
+  "cross_paper_AUC_ranking_performed": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Discussion 4.3 Conflicting evidence (D3)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step42-20261029/UCSD_Manuscript_Discussion_4_2_EN_ZH.docx": "46acc49e2921bf833488d13751a880301217707dd5d53312357778f12ae242c1",
+    "outputs/ucsd-manuscript-step42-20261029/UCSD_Manuscript_Discussion_4_2_EN.txt": "ffb6ac56df35f18f2fac65884aeb15497354ea9a2a335785eae9d68bdc522518"
+  }
+}
