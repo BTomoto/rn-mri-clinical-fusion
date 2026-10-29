@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage20 editable publication tables and figures prepared from frozen results; manuscript narrative not started and awaiting user writing instructions",
+  "scope": "Stage21 literature learning and paragraph-level writing outline completed; manuscript body awaits user requirements template",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -364,5 +364,23 @@
     "new_hypothesis_tests": 0,
     "manuscript_body_drafted": false,
     "awaiting_user_writing_instructions": true
+  },
+  "ucsd_writing_preparation_report": "reports/ucsd_writing_preparation_step21_20261029.md",
+  "ucsd_writing_preparation": {
+    "stage": 21,
+    "word_pages": 16,
+    "empirical_papers": 5,
+    "dataset_paper": 1,
+    "reporting_guidelines": 2,
+    "core_fulltexts_with_word_counts": 4,
+    "main_paragraphs": 31,
+    "abstract_sections": 4,
+    "main_word_target": 4180,
+    "abstract_word_target": 250,
+    "manuscript_body_drafted": false,
+    "awaiting_user_template": true,
+    "future_body_language": "English followed by paragraph-matched Chinese translation",
+    "future_figures_tables_language": "English only",
+    "model_refits": 0
   }
 }

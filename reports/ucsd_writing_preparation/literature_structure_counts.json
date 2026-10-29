@@ -1,0 +1,298 @@
+{
+  "study_type": "focused narrative literature preparation; not a systematic review",
+  "count_definition": "ASCII letters/numerals with internal apostrophe, slash or hyphen as a token; prose p nodes only; remove headings, numeric/cross-reference xrefs, captions, table cells, formulae, supplementary/back matter, references. Sun: Methods plus Radiomics Strategy. Leone: four unheaded body paragraphs are Introduction. Embedded conclusions remain in Discussion. Abstract labels/keywords excluded. No publisher word-count claim.",
+  "papers": [
+    {
+      "key": "L1",
+      "pmcid": "PMC9873493",
+      "author": "McKenney et al.",
+      "year": "2023 (online 2022)",
+      "title": "Radiomic Analysis to Predict Histopathologically Confirmed Pseudoprogression in Glioblastoma Patients",
+      "doi": "10.1016/j.adro.2022.100916",
+      "journal": "Advances in Radiation Oncology",
+      "url": "https://doi.org/10.1016/j.adro.2022.100916",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9873493/fullTextXML",
+      "retrieved_date": "2026-10-29",
+      "source_bytes": 90380,
+      "source_sha256": "d92add2c6c7663bc9b3c2ee9a5fc57aa16893289f94f038e8c137335e5428911",
+      "abstract_words": 189,
+      "section_words": {
+        "Introduction": 419,
+        "Methods": 1250,
+        "Results": 808,
+        "Discussion": 1434,
+        "Conclusion": 102
+      },
+      "section_paragraphs": {
+        "Introduction": 2,
+        "Methods": 10,
+        "Results": 8,
+        "Discussion": 7,
+        "Conclusion": 1
+      },
+      "main_prose_words": 4013,
+      "abstract_plus_main_words": 4202,
+      "sections": [
+        {
+          "heading": "Introduction",
+          "group": "Introduction",
+          "words": 419,
+          "subheadings": []
+        },
+        {
+          "heading": "Methods and Materials",
+          "group": "Methods",
+          "words": 1250,
+          "subheadings": [
+            "Patient cohort",
+            "Lesion diagnosis at repeat surgery",
+            "MRI scans",
+            "Radiomic feature extraction",
+            "Machine learning classification for distinguishing tumor versus pseudoprogression",
+            "Feature selection",
+            "Recursive feature elimination random forest (RFE-RF) classifier without and with MGMT status",
+            "Statistical analysis"
+          ]
+        },
+        {
+          "heading": "Results",
+          "group": "Results",
+          "words": 808,
+          "subheadings": [
+            "Patients and lesion diagnosis",
+            "RFE-RF classifier combining radiomics plus MGMT methylation to differentiate recurrent tumor versus pseudoprogression",
+            "Utility of feature preselection",
+            "Classification accuracy of known clinical predictors"
+          ]
+        },
+        {
+          "heading": "Discussion",
+          "group": "Discussion",
+          "words": 1434,
+          "subheadings": []
+        },
+        {
+          "heading": "Conclusion",
+          "group": "Conclusion",
+          "words": 102,
+          "subheadings": []
+        }
+      ]
+    },
+    {
+      "key": "L2",
+      "pmcid": "PMC10034916",
+      "author": "Leone et al.",
+      "year": "2023",
+      "title": "Assessing the added value of apparent diffusion coefficient, cerebral blood volume, and radiomic magnetic resonance features for differentiation of pseudoprogression versus true tumor progression in patients with glioblastoma",
+      "doi": "10.1093/noajnl/vdad016",
+      "journal": "Neuro-Oncology Advances",
+      "url": "https://doi.org/10.1093/noajnl/vdad016",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10034916/fullTextXML",
+      "retrieved_date": "2026-10-29",
+      "source_bytes": 111341,
+      "source_sha256": "9e4c2558e28af3a5690414233c901f8b03e00a45d4bae513da5f55d73dfe82ca",
+      "abstract_words": 285,
+      "section_words": {
+        "Introduction": 676,
+        "Methods": 1904,
+        "Results": 477,
+        "Discussion": 1757,
+        "Conclusion": 0
+      },
+      "section_paragraphs": {
+        "Introduction": 4,
+        "Methods": 22,
+        "Results": 5,
+        "Discussion": 7,
+        "Conclusion": 0
+      },
+      "main_prose_words": 4814,
+      "abstract_plus_main_words": 5099,
+      "sections": [
+        {
+          "heading": "Material and Methods",
+          "group": "Methods",
+          "words": 1904,
+          "subheadings": [
+            "Participants",
+            "Outcomes",
+            "Predictors: Demographic, Clinical Data, and MGMT Promoter Methylation Status",
+            "Image Acquisition",
+            "Postprocessing: Anatomical Sequences and ADC",
+            "Postprocessing: rCBV Maps",
+            "Radiomics Features Extraction",
+            "Statistical Analysis and Machine-Learning Models",
+            "Radiomics Features Harmonization",
+            "Machine-Learning Model Building",
+            "Deep-Learning Models"
+          ]
+        },
+        {
+          "heading": "Results",
+          "group": "Results",
+          "words": 477,
+          "subheadings": []
+        },
+        {
+          "heading": "Discussion",
+          "group": "Discussion",
+          "words": 1757,
+          "subheadings": []
+        }
+      ]
+    },
+    {
+      "key": "L3",
+      "pmcid": "PMC7860032",
+      "author": "Sun et al.",
+      "year": "2021",
+      "title": "Differentiation of Pseudoprogression from True Progressionin Glioblastoma Patients after Standard Treatment: A Machine Learning Strategy Combinedwith Radiomics Features from T1-weighted Contrast-enhanced Imaging",
+      "doi": "10.1186/s12880-020-00545-5",
+      "journal": "BMC Medical Imaging",
+      "url": "https://doi.org/10.1186/s12880-020-00545-5",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7860032/fullTextXML",
+      "retrieved_date": "2026-10-29",
+      "source_bytes": 117168,
+      "source_sha256": "0df29883a4a0622300c9f823aecdc4bcfce1ae124d3f2b205db81b3439ee9ea4",
+      "abstract_words": 313,
+      "section_words": {
+        "Introduction": 582,
+        "Methods": 1253,
+        "Results": 643,
+        "Discussion": 792,
+        "Conclusion": 61
+      },
+      "section_paragraphs": {
+        "Introduction": 5,
+        "Methods": 15,
+        "Results": 8,
+        "Discussion": 7,
+        "Conclusion": 1
+      },
+      "main_prose_words": 3331,
+      "abstract_plus_main_words": 3644,
+      "sections": [
+        {
+          "heading": "Background",
+          "group": "Introduction",
+          "words": 582,
+          "subheadings": []
+        },
+        {
+          "heading": "Methods",
+          "group": "Methods",
+          "words": 675,
+          "subheadings": [
+            "Patient population",
+            "Image Acquisition",
+            "Segmentation of the volume of interest(VOI)"
+          ]
+        },
+        {
+          "heading": "Radiomics Strategy",
+          "group": "Methods",
+          "words": 578,
+          "subheadings": [
+            "Feature Extraction",
+            "Feature Selection",
+            "Radiomics Model Building",
+            "Radiologists’assessment",
+            "Statistics"
+          ]
+        },
+        {
+          "heading": "Results",
+          "group": "Results",
+          "words": 643,
+          "subheadings": [
+            "Patient Characteristics and Qualitative MR Assessment",
+            "Quantitative MR Texture Analysis",
+            "Comparison of the diagnostic performance between theradiomicsmodeland the radiologists’ assessment"
+          ]
+        },
+        {
+          "heading": "Discussion",
+          "group": "Discussion",
+          "words": 792,
+          "subheadings": [
+            "Study limitations"
+          ]
+        },
+        {
+          "heading": "Conclusion",
+          "group": "Conclusion",
+          "words": 61,
+          "subheadings": []
+        }
+      ]
+    },
+    {
+      "key": "L4",
+      "pmcid": "PMC10142504",
+      "author": "de Godoy et al.",
+      "year": "2023",
+      "title": "Validation of multiparametric MRI based prediction model in identification of pseudoprogression in glioblastomas",
+      "doi": "10.1186/s12967-023-03941-x",
+      "journal": "Journal of Translational Medicine",
+      "url": "https://doi.org/10.1186/s12967-023-03941-x",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10142504/fullTextXML",
+      "retrieved_date": "2026-10-29",
+      "source_bytes": 96286,
+      "source_sha256": "28007768446310d57d45f3b0484eebcdd28b638bab1ee50980ee8bbbc8b4fe81",
+      "abstract_words": 363,
+      "section_words": {
+        "Introduction": 461,
+        "Methods": 1384,
+        "Results": 262,
+        "Discussion": 724,
+        "Conclusion": 0
+      },
+      "section_paragraphs": {
+        "Introduction": 4,
+        "Methods": 13,
+        "Results": 3,
+        "Discussion": 6,
+        "Conclusion": 0
+      },
+      "main_prose_words": 2831,
+      "abstract_plus_main_words": 3194,
+      "sections": [
+        {
+          "heading": "Background",
+          "group": "Introduction",
+          "words": 461,
+          "subheadings": []
+        },
+        {
+          "heading": "Materials and methods",
+          "group": "Methods",
+          "words": 1384,
+          "subheadings": [
+            "Patient population",
+            "Data acquisition",
+            "Diffusion tensor imaging",
+            "Dynamic susceptibility contrast-perfusion weighted imaging",
+            "Image processing and data analysis",
+            "Radiographic response assessment using mRANO criteria",
+            "Response assessment using histological/immunohistochemical analysis",
+            "Validation of multiparametric MRI based prediction model",
+            "Statistical analysis"
+          ]
+        },
+        {
+          "heading": "Results",
+          "group": "Results",
+          "words": 262,
+          "subheadings": []
+        },
+        {
+          "heading": "Discussion",
+          "group": "Discussion",
+          "words": 724,
+          "subheadings": []
+        }
+      ]
+    }
+  ]
+}

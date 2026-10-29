@@ -2,6 +2,15 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第21步已完成文献学习与逐段写作大纲，正文尚未撰写。** [Word文献学习与写作大纲](outputs/ucsd-writing-preparation-20261029/UCSD_Literature_Learning_and_Writing_Outline.docx)共16页，学习5篇相关实证研究、1篇数据描述及2项报告规范，对4篇全文按统一规则统计各部分英文词数。大纲包含31个正文段落及4个摘要部分，逐段列明任务、依据、衔接及图表安排；英文正文规划约4,180词、摘要250词，均待用户模板调整。
+
+见[第21步报告](reports/ucsd_writing_preparation_step21_20261029.md)、[结构和词数](reports/ucsd_writing_preparation/literature_structure_counts.json)、[机器可读大纲](reports/ucsd_writing_preparation/writing_outline.json)及[核对回执](reports/ucsd_writing_preparation/artifact_verification.json)。用户要求先学习文献、再提供写作模板；后续英文段落附对应中文译文，图表及注释仅英文。未重拟合或改变任何既有研究结果，当前等待用户写作模板。
+
+```bash
+python scripts/analyze_ucsd_writing_literature.py --cache /path/to/literature_cache
+python scripts/build_ucsd_writing_outline.py
+```
+
 **第20步已完成投稿表图资料，正文尚未开始。** [Word表格包](outputs/ucsd-paper-materials-20261029/UCSD_Paper_Tables.docx)共7页、11张可编辑表；[Excel数值表](outputs/ucsd-paper-materials-20261029/UCSD_Paper_Numeric_Tables.xlsx)共13页；[5幅图](outputs/ucsd-paper-materials-20261029/figures/)均提供600 dpi PNG和矢量PDF/SVG；[逐表CSV](outputs/ucsd-paper-materials-20261029/tables/)及[Notebook20](notebooks/20_ucsd_paper_tables_and_figures.ipynb)保留数值来源。没有重新拟合模型、增加检验、改变主结果或隐藏单扫描不利结果。
 
 见[第20步交付报告](reports/ucsd_paper_materials_step20_20261029.md)、[本轮范围](reports/ucsd_paper_materials_scope.md)及[核对回执](reports/ucsd_paper_materials/artifact_verification.json)。基线60行统计量及Excel125行数据通过核对，Word7页/Excel13页/5图视觉检查完成；Notebook执行5单元、0错误。下一步将进入论文正文写作，按用户要求等待新的写作指示，未自行决定期刊、语言或开始正文。

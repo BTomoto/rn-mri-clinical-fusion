@@ -83,3 +83,5 @@ node_modules/
 /outputs/ucsd-paper-materials-20261029/preview_*.png
 /outputs/ucsd-paper-materials-20261029/*.inspect.ndjson
 /outputs/ucsd-paper-materials-20261029/docx_render/
+
+/outputs/ucsd-writing-preparation-20261029/docx_render*/

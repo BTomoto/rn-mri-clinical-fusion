@@ -1,0 +1,17 @@
+{
+  "stage": 21,
+  "date": "2026-10-29",
+  "deliverable": "outputs/ucsd-writing-preparation-20261029/UCSD_Literature_Learning_and_Writing_Outline.docx",
+  "sha256": "b7374a4b5b41c450b48328d8862db19eeea9f589637216db37887a880e0f257f",
+  "paragraph_ids": 35,
+  "main_word_target": 4180,
+  "abstract_word_target": 250,
+  "core_fulltext_word_counts": 4,
+  "empirical_papers_reviewed": 5,
+  "dataset_papers_reviewed": 1,
+  "reporting_guidelines": 2,
+  "manuscript_body_drafted": false,
+  "awaiting_user_template": true,
+  "models_refitted": 0,
+  "prior_results_replaced": false
+}

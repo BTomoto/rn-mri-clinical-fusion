@@ -1,0 +1,30 @@
+{
+  "additional_sources": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12886825/fullTextXML",
+      "bytes": 62601,
+      "sha256": "06d4c40f9d1b134a60b8f4e35e507315304361dd13997319482d767df18322ac",
+      "retrieved_date": "2026-10-29"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11019967/fullTextXML",
+      "bytes": 221676,
+      "sha256": "48f1f82c4f9f74d9a72a580690634651e095161c9bf8a0a1078afc691d54705a",
+      "retrieved_date": "2026-10-29"
+    },
+    {
+      "url": "https://rsna.github.io/claim/checklist.html",
+      "bytes": 54379,
+      "sha256": "4899547e2fe4a68be9416bd66648a0e7f16c00531d3974a1cfa5a484827398b0",
+      "retrieved_date": "2026-10-29"
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1892760/full",
+      "access": "publisher full text via web retrieval",
+      "retrieved_date": "2026-10-29",
+      "uniform_xml_word_count": false
+    }
+  ],
+  "core_source_access": "see literature_structure_counts.json",
+  "access_note": "Some PMC web pages returned browser checks; core full texts obtained through Europe PMC JATS API. CLAIM XML returned HTTP 500; complete official 44-item checklist used instead. No source full texts republished."
+}
