@@ -1,0 +1,82 @@
+{
+  "stage": 53,
+  "date": "2026-10-30",
+  "scope": "C1 conclusion synthesized from locked methods, primary paired results and sensitivity analyses; no new external scientific claims",
+  "studies": [],
+  "own_study_claims": [
+    {
+      "claim": "Primary imaging cohort has182 examinations from135 patients; Fusion AUC0.781871648503719 and Fusion-minus-M1 AUC difference0.10975609756097571, conditional paired interval0.02135192395183045 to0.2141376244742501",
+      "sources": [
+        "reports/ucsd_fusion/metrics.json",
+        "reports/ucsd_manuscript_step36/results_section34.json"
+      ]
+    },
+    {
+      "claim": "The AUC increment is positive across all20 saved repeated grouped partitions of the same cohort, not20 independent validations",
+      "sources": [
+        "reports/ucsd_stability/repeated_paired_differences.csv",
+        "reports/ucsd_stability/metrics.json"
+      ]
+    },
+    {
+      "claim": "Single-scan increment remains uncertain: conditional interval includes zero",
+      "sources": [
+        "reports/ucsd_stability/metrics.json",
+        "reports/ucsd_manuscript_step40/results_section38.json"
+      ]
+    },
+    {
+      "claim": "At0.5 primary Fusion recognizes12/41 treatment-change examinations; Brier and log-loss difference intervals cross zero",
+      "sources": [
+        "reports/ucsd_fusion/metrics.json",
+        "reports/ucsd_manuscript_step37/results_section35.json"
+      ]
+    },
+    {
+      "claim": "Feature-level fusion uses5 clinical inputs plus8 FLAIR/T1post descriptors, fixed penalized logistic regression and patient-grouped validation",
+      "sources": [
+        "reports/ucsd_fusion/analysis_lock.json",
+        "reports/ucsd_fusion_protocol.md"
+      ]
+    },
+    {
+      "claim": "Reference labels are inherited and the derived images have unverified spatial scale; clinical utility and independent validation are unresolved",
+      "sources": [
+        "reports/ucsd_manuscript_step48/discussion_section48.json",
+        "reports/ucsd_manuscript_step49/discussion_section49.json",
+        "reports/ucsd_manuscript_step51/discussion_section51.json"
+      ]
+    },
+    {
+      "claim": "Computational workflow and notebooks were saved with execution records; no newly completed independent verification claimed",
+      "sources": [
+        "reports/ucsd_manuscript_step32/methods_section210.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    "Conclude an internal incremental imaging signal, not a prospective radiation-necrosis risk model",
+    "A conditional percentile interval is not full development uncertainty; repeated grouped splits are not independent validation",
+    "Single-scan uncertainty and minority recognition limit interpretation; no proof of no increment or equivalence",
+    "Future diagnostic evaluation and decision evaluation are needed; no clinical benefit or readiness established"
+  ],
+  "new_unique_manuscript_references": 0,
+  "cumulative_unique_cited_sources_after_section": 17,
+  "new_full_text_review_count": 0,
+  "final_reference_count_and_recency_compliance_checked": false,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "user_scope_update": {
+    "this_stage": "Conclusion C1 only",
+    "after_conclusion": [
+      "Abstract",
+      "Introduction"
+    ],
+    "deferred_by_user": [
+      "Data availability statement",
+      "Acknowledgments",
+      "Other post-conclusion declarations"
+    ],
+    "no_deferred_declarations_drafted": true
+  }
+}

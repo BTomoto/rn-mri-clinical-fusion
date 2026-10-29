@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "stage": 53,
+  "date": "2026-10-30",
+  "subsection": "5 Conclusion",
+  "paragraph_ids": [
+    "C1"
+  ],
+  "english_word_count": 145,
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 0,
+  "equation_images": 0,
+  "frozen_files_unchanged": 238,
+  "prior_files_unchanged": 237,
+  "new_full_texts_checked_for_current_claims": [],
+  "primary_AUC_and_paired_interval_checked": true,
+  "positive_repeated_AUC_increments_checked": 20,
+  "single_scan_uncertainty_preserved": true,
+  "probability_error_and_minority_recognition_limits_preserved": true,
+  "no_external_validation_or_clinical_utility_claimed": true,
+  "new_bootstrap_draws": 0,
+  "conclusion_v2_paragraph_complete": true,
+  "declarations_and_acknowledgments_deferred_by_user": true,
+  "remaining_user_requested_writing": [
+    "Abstract",
+    "Introduction"
+  ],
+  "new_manuscript_references": 0,
+  "provisional_citation_mapping": {},
+  "cumulative_unique_cited_sources": 17,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "next_section": "Abstract (A1-A4); Introduction to follow; declarations deferred by user",
+  "sha256": {
+    "outputs/ucsd-manuscript-step53-20261030/UCSD_Manuscript_Conclusion_EN_ZH.docx": "d7004db7054a5953e572816b3876bc7689c8c2cd738926a92cc17e71f8973e47",
+    "outputs/ucsd-manuscript-step53-20261030/UCSD_Manuscript_Conclusion_EN.txt": "99fa08d7d8b49db606d34727caf98ffe87aaceec73c0592c488ddbb33362dcf2"
+  }
+}

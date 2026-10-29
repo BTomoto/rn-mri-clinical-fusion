@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第53步已完成Conclusion（C1）。** [中英对照Word](outputs/ucsd-manuscript-step53-20261030/UCSD_Manuscript_Conclusion_EN_ZH.docx)包含145个英文词及一组中译，共1页。总结主内部比较的MRI增量信号、重复分折方向一致及单扫描不确定性，并保留少数类识别、概率误差、沿用诊断和派生影像的限制，不宣称临床获益。
+
+见[第53步报告](reports/ucsd_manuscript_step53_20261030.md)、[结论来源映射](reports/ucsd_manuscript_step53/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step53/conclusion_section53.json)及[核查回执](reports/ucsd_manuscript_step53/artifact_verification.json)。237份此前文件未变，主AUC/增量区间、20套重复方向及单扫描跨零区间核对一致，无重训或新增分析。当前英文叙述7146词、41组中译、17篇实际引用来源。用户明确暂不撰写数据公开声明、致谢等结论后内容；后续补全摘要和前言，下一阶段为Abstract（A1–A4）。全文仍未完成。
+
 **第52步已完成Discussion 4.12后续评价的优先事项（D12），讨论部分12段已写齐。** [中英对照Word](outputs/ucsd-manuscript-step52-20261030/UCSD_Manuscript_Discussion_4_12_EN_ZH.docx)包含101个英文词、一组中译及2篇沿用参考文献，共1页。依次提出独立诊断裁定与标注记录、元数据和尺度核实、锁定流程的独立队列评价及治疗改变识别/校准重点；均为后续建议，没有新增验证或临床效用结果。
 
 见[第52步报告](reports/ucsd_manuscript_step52_20261030.md)、[来源与建议映射](reports/ucsd_manuscript_step52/literature_evidence.json)、[段落审计](reports/ucsd_manuscript_step52/discussion_section52.json)及[核查回执](reports/ucsd_manuscript_step52/artifact_verification.json)。232份此前文件未变，11段前文与建议对应关系及锁定输入核对一致，无重训或新样本量计算。讨论D1–D12共2424词；当前英文叙述7001词、40组中译、17篇实际引用来源。全文尚未完成，下一节为Conclusion（C1），等待用户批准。
