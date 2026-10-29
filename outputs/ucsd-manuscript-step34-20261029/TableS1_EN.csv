@@ -1,0 +1,11 @@
+Characteristic,Retained clinical cohort,Imaging coverage,No imaging coverage
+"Examinations, n",238,182,56
+"Unique source patients, n",176,135,41
+"Age, years","56.0 [47.0, 64.8]","56.5 [49.0, 66.0]","53.5 [45.0, 62.0]"
+Male sex at birth,166/238 (69.7%),132/182 (72.5%),34/56 (60.7%)
+Tumor-labeled examinations,187/238 (78.6%),141/182 (77.5%),46/56 (82.1%)
+Treatment-related-change examinations,51/238 (21.4%),41/182 (22.5%),10/56 (17.9%)
+Days since initial event (known only),"153.5 [37.0, 364.2]","154.0 [40.5, 359.5]","153.0 [33.5, 439.2]"
+Known interval,192/238 (80.7%),146/182 (80.2%),46/56 (82.1%)
+Missing interval,46/238 (19.3%),36/182 (19.8%),10/56 (17.9%)
+Other treatment before imaging,38/238 (16.0%),25/182 (13.7%),13/56 (23.2%)

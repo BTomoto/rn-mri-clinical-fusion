@@ -1,0 +1,11 @@
+Characteristic,All imaging examinations,Tumor examinations,Treatment-related change
+"Examinations, n",182,141,41
+"Unique source patients, n",135,114,29
+"Age, years","56.5 [49.0, 66.0]","58.0 [50.0, 67.0]","54.0 [48.0, 62.0]"
+Male sex at birth,132/182 (72.5%),105/141 (74.5%),27/41 (65.9%)
+Tumor-labeled examinations,141/182 (77.5%),141/141 (100.0%),0/41 (0.0%)
+Treatment-related-change examinations,41/182 (22.5%),0/141 (0.0%),41/41 (100.0%)
+Days since initial event (known only),"154.0 [40.5, 359.5]","96.0 [36.0, 261.8]","346.0 [140.5, 563.2]"
+Known interval,146/182 (80.2%),108/141 (76.6%),38/41 (92.7%)
+Missing interval,36/182 (19.8%),33/141 (23.4%),3/41 (7.3%)
+Other treatment before imaging,25/182 (13.7%),20/141 (14.2%),5/41 (12.2%)

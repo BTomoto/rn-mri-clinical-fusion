@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "stage": 34,
+  "date": "2026-10-29",
+  "subsection": "3.2 Clinical characteristics",
+  "paragraph_ids": [
+    "R2"
+  ],
+  "english_word_count": 170,
+  "paragraph_word_counts": {
+    "R2": 170
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 3,
+  "visual_review_pages": [
+    1,
+    2,
+    3
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 149,
+  "original_table_numeric_cells_checked": 60,
+  "saved_numeric_detail_rows_checked": 60,
+  "editable_english_tables": 2,
+  "table_numeric_values_changed": 0,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.3 Four-model discrimination (R3)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step34-20261029/TableS1_EN.csv": "bafe89d08f6bc62e454d9fb3bbefbf8fef38362eb88c430941733be4c6df492e",
+    "outputs/ucsd-manuscript-step34-20261029/UCSD_Manuscript_Results_3_2_EN_ZH.docx": "c295afe3ba2b94fecbcc33783af7aacc702ab3e3fc551970a7960466c529bcbd",
+    "outputs/ucsd-manuscript-step34-20261029/UCSD_Manuscript_Results_3_2_EN.txt": "def505ac4f09d9313215b5146739466bc031e97a9efe234a711f01c13b417566",
+    "outputs/ucsd-manuscript-step34-20261029/Table1_EN.csv": "95eb1851463def98c16bc4c841e0d33450cea4c3c6d3b82fb5e304067026e58b"
+  }
+}
