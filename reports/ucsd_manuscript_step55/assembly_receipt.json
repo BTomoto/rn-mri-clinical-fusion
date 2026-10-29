@@ -1,0 +1,1596 @@
+{
+  "stage": 55,
+  "date": "2026-10-30",
+  "title": "Clinical-MRI Feature Fusion for Distinguishing Residual or Recurrent Tumor from Treatment-Related Changes after Glioma Treatment: A Public-Data Internal Validation Study",
+  "abstract_paragraphs": [
+    {
+      "id": "A1",
+      "label": "Background",
+      "english": "Distinguishing residual or recurrent tumor from treatment-related change after high-grade glioma treatment remains difficult. We evaluated whether fixed magnetic resonance imaging (MRI) descriptors provide incremental discrimination beyond available clinical inputs in public data.",
+      "chinese": "高级别胶质瘤治疗后，残余或复发肿瘤与治疗相关改变的鉴别仍然困难。我们利用公开数据，评价固定磁共振成像（MRI）描述量能否在现有临床输入之外提供增量鉴别信息。",
+      "citation_ids": []
+    },
+    {
+      "id": "A2",
+      "label": "Methods",
+      "english": "This secondary analysis of the public UCSD-PTGBM collection included 182 examinations from 135 patients. Four fixed L2-penalized logistic models used age and sex, five clinical inputs, eight MRI descriptors, or their fusion. MRI features summarized fluid-attenuated inversion recovery (FLAIR) and postcontrast T1 intensity and texture within supplied annotation regions. Five-fold patient-grouped validation generated out-of-fold predictions. The primary comparison was the Fusion-minus-expanded-clinical area under the receiver operating characteristic curve (AUC) difference. 2000 patient-cluster bootstrap attempts provided intervals conditional on fixed predictions; boundary, repeated-split and single-scan analyses assessed sensitivity.",
+      "chinese": "本项基于公开UCSD-PTGBM数据集的二次分析纳入135名患者的182次检查。四个固定的L2惩罚Logistic模型分别使用年龄与性别、五项临床输入、八项MRI描述量，或二者的融合。MRI特征汇总所提供标注区域内液体衰减反转恢复（FLAIR）与增强T1的强度及纹理。采用五折患者分组验证生成折外预测，主要比较为Fusion减去扩展临床模型的受试者工作特征曲线下面积（AUC）差值。2000次患者聚类bootstrap尝试提供条件于固定预测的区间；通过边界、重复分折及单扫描分析评价敏感性。",
+      "citation_ids": []
+    },
+    {
+      "id": "A3",
+      "label": "Results",
+      "english": "Fusion achieved an AUC of 0.782 versus 0.672 for the expanded clinical model and 0.762 for MRI alone. The paired increment was 0.110 (95% percentile interval, 0.021 to 0.214) and remained positive across 20 repeated partitions. In the single-scan analysis, Fusion AUC was 0.730 and its increment was uncertain (0.120; interval, -0.015 to 0.252). At the fixed 0.5 threshold, primary Fusion recognized 130/141 tumor examinations but only 12/41 treatment-change examinations. Its descriptive calibration slope was 0.667; probability-error difference intervals included zero.",
+      "chinese": "Fusion的AUC为0.782，扩展临床模型为0.672，仅MRI模型为0.762。配对增量为0.110（95%百分位区间：0.021至0.214），在20套重复分折中均保持为正。单扫描分析中，Fusion的AUC为0.730，其增量仍不确定（0.120；区间：−0.015至0.252）。在固定0.5阈值下，主Fusion模型识别出130/141次肿瘤检查，但仅识别出12/41次治疗改变检查。其描述性校准斜率为0.667，概率误差差值的区间包含零。",
+      "citation_ids": []
+    },
+    {
+      "id": "A4",
+      "label": "Conclusions",
+      "english": "Clinical-MRI fusion showed an internal incremental signal, with uncertain single-scan benefit and limited treatment-change recognition. Independent evaluation is needed before inferring clinical usefulness. The model has not undergone external validation or clinical utility evaluation.",
+      "chinese": "临床–MRI融合显示了内部增量信号，但单扫描获益仍不确定，治疗改变识别也有限。推断临床实用性之前，仍需独立评价。该模型尚未接受外部验证或临床效用评价。",
+      "citation_ids": []
+    }
+  ],
+  "abstract_english_words": 247,
+  "keywords": [
+    "high-grade glioma",
+    "treatment-related change",
+    "magnetic resonance imaging",
+    "feature fusion",
+    "logistic regression",
+    "internal validation"
+  ],
+  "main_paragraphs": [
+    {
+      "id": "I1",
+      "english": "Treatment follow-up in high-grade glioma requires clinicians to interpret magnetic resonance imaging (MRI) abnormalities in the context of previous therapy. For glioblastoma, contemporary management combines surgery, radiotherapy and systemic treatment, while subsequent imaging contributes to assessment of disease status and further management (1). New or increasing contrast enhancement after treatment may indicate tumor activity, but can also reflect treatment effects. An apparent increase in lesion burden therefore does not, by itself, resolve the underlying diagnosis. Response Assessment in Neuro-Oncology (RANO) 2.0 addresses this problem through standardized response assessment and, in relevant early post-radiotherapy settings, confirmation of progression by repeat imaging or unequivocal histopathological evidence (2). Such requirements emphasize the importance of temporal and clinical context when interpreting a suspicious examination. They also motivate methods that can summarize information already present in the scan and assess whether it adds to available clinical information. The immediate research question is whether that combination improves discrimination of the status assigned to an examination, providing evidence for subsequent evaluation rather than replacing the broader diagnostic process.",
+      "chinese": "高级别胶质瘤治疗后的随访要求临床医师结合既往治疗解读磁共振成像（MRI）异常。对于胶质母细胞瘤，当前治疗综合使用手术、放疗及系统性治疗，后续影像参与疾病状态及进一步管理的评估（1）。治疗后新出现或增大的对比增强可能提示肿瘤活动，也可能反映治疗效应，因此，病灶负荷表面增加本身并不能确定实际诊断。神经肿瘤疗效评估（RANO）2.0通过标准化疗效评估应对这一问题，并在适用的放疗后早期场景中，要求通过重复影像或明确的组织病理证据确认进展（2）。这些要求强调了解读可疑检查时，时间与临床背景的重要性，也促使研究者考虑能否汇总扫描中已有的信息，并评估其对现有临床信息的增量。本研究直接关注的是，这种结合能否改善对每次检查所赋状态的鉴别，为后续评价提供依据，而不替代整体诊断。",
+      "citation_ids": [
+        "S05",
+        "S04"
+      ]
+    },
+    {
+      "id": "I2",
+      "english": "The difficulty is partly one of outcome definition. Pseudoprogression commonly refers to an apparent radiological worsening related to treatment that subsequently stabilizes or regresses without a new antitumor treatment. Radiation necrosis represents a different form of treatment injury, often discussed as a later complication; these terms should not be treated as interchangeable with every nonspecific post-treatment abnormality (1,3). RANO 2.0 implementation guidance further distinguishes enhancing, nonenhancing and mixed imaging presentations and the circumstances requiring confirmation scans (4). These distinctions matter when comparing diagnostic studies, because a model trained to identify pseudoprogression may address a narrower target than a model separating tumor from a broad treatment-change category. Reference diagnoses also vary: pathological assessment, clinical evolution and serial imaging provide different forms of evidence, and even pathological differentiation can remain difficult (1). The public UCSD-PTGBM collection includes residual or recurrent tumor and several treatment-related-change categories with mixed diagnostic support (5). It therefore permits investigation of a broad examination-level distinction, while retaining uncertainty about individual source diagnoses and the interpretation of treatment-change subtypes.",
+      "chinese": "这一困难部分来自结局定义。假性进展通常指与治疗有关的影像表观恶化，其后在未开始新的抗肿瘤治疗时趋于稳定或消退。放射性坏死属于另一种治疗损伤形式，常作为较晚期并发症讨论；这些术语不能与所有非特异性治疗后异常互换使用（1,3）。RANO 2.0的实施指南还区分增强、非增强及混合影像表现，以及需要确认扫描的具体情形（4）。比较诊断研究时，这些区别十分重要，因为识别假性进展的模型所针对的目标，可能比区分肿瘤与广义治疗改变类别的模型更窄。参考诊断也并不相同：病理评估、临床演变和连续影像提供不同形式的证据，即使在病理层面，鉴别仍可能困难（1）。公开UCSD-PTGBM数据集包含残余或复发肿瘤及多种治疗相关改变类别，其诊断依据并不统一（5）。因此，该数据集允许研究检查层面的广义鉴别，同时仍需保留对个体源诊断及治疗改变亚型解释的不确定性。",
+      "citation_ids": [
+        "S36",
+        "S20",
+        "S05",
+        "S01"
+      ]
+    },
+    {
+      "id": "I3",
+      "english": "Quantitative image analysis offers a way to describe these examinations through explicit computations. Intensity statistics summarize the distribution of values within a region, whereas texture descriptors characterize aspects of gray-level organization that are not captured by a mean alone. Radiomics research has explored such information for differentiating progression and treatment effects in glioma, although the interpretation depends on the images, segmentation and feature definitions used (3). The Image Biomarker Standardization Initiative provides common definitions that help make feature calculations comparable (6). Standard definitions do not remove acquisition and preprocessing differences. In a separate task involving molecular glioma subtype classification, Foltyn-Dumitru and colleagues showed that intensity normalization affected external generalization, illustrating the importance of examining the processing pipeline rather than assuming portability from internal performance (7). That result does not establish the best transformation for post-treatment diagnosis. For the present question, a small, fixed set of fluid-attenuated inversion recovery (FLAIR) and postcontrast T1 descriptors provides a tractable computational representation. Its value lies in testing additional information under defined conditions; the descriptors are not direct measurements of viable tumor, microscopic tissue composition or a specific treatment-injury mechanism.",
+      "chinese": "定量影像分析为通过明确计算描述这些检查提供了一种途径。强度统计概括区域内数值的分布，而纹理描述量刻画仅靠均值无法涵盖的灰度组织特征。影像组学研究已探索利用这些信息区分胶质瘤进展与治疗效应，但其解释依赖所用影像、分割及特征定义（3）。影像生物标志物标准化倡议提供了共同定义，有助于提高特征计算的可比性（6）。然而，标准定义并不能消除采集与预处理差异。在另一项胶质瘤分子亚型分类任务中，Foltyn-Dumitru等发现，强度归一化影响外部推广表现，说明需要审视处理流程，不能仅依据内部性能假定可迁移性（7）。该结果并未确定治疗后诊断的最佳变换方案。对于当前问题，小规模且固定的液体衰减反转恢复（FLAIR）与增强T1描述量集合能够形成便于分析的计算表达，其价值在于检验明确条件下的额外信息；这些描述量并非对活性肿瘤、微观组织构成或特定治疗损伤机制的直接测量。",
+      "citation_ids": [
+        "S20",
+        "S32",
+        "S38"
+      ]
+    },
+    {
+      "id": "I4",
+      "english": "Clinical and imaging information may contribute different, partly overlapping signals. Age, treatment history and the interval from an initial clinical event describe the examination context, while MRI descriptors summarize the supplied image region. Combining them at the feature level can test whether imaging improves on an explicit clinical comparator. Existing studies support investigating this possibility without guaranteeing an increment. Zhou and colleagues reported favorable results from a model combining radiomics with clinical, molecular and advanced MRI information (8). McKenney and colleagues also reported better classification accuracy for a model combining imaging information with O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status in a selected cohort with histopathological confirmation (9). Conversely, Leone and colleagues did not demonstrate a reliable improvement from adding diffusion, perfusion and radiomic information to their reference clinical model (10). The new-cohort evaluation by de Godoy and colleagues further illustrates why outcome grouping and reference definitions must be examined when interpreting model performance (11). These studies differ in patient selection, available sequences and diagnostic targets, so their areas under the receiver operating characteristic curve (AUCs) cannot serve as a ranking of interchangeable methods. For a public-data analysis with a restricted input panel, the relevant question is the paired gain over its own clinical baseline.",
+      "chinese": "临床与影像信息可能提供不同但部分重叠的信号。年龄、治疗史及初始临床事件至检查的间隔描述检查背景，MRI描述量则汇总所提供影像区域的信息。将二者在特征层面结合，可以检验影像是否优于明确的临床对照。现有研究支持探索这一可能性，但不能保证必然产生增量。Zhou等报告，将影像组学与临床、分子及高级MRI信息结合的模型表现较为有利（8）。McKenney等也在经组织病理确认的选定队列中，报告结合影像信息与O6-甲基鸟嘌呤-DNA甲基转移酶（MGMT）启动子甲基化状态的模型具有更好的分类准确率（9）。相反，Leone等未能证明在参考临床模型中加入弥散、灌注及影像组学信息可以带来可靠改善（10）。de Godoy等的新队列评价进一步说明，解释模型性能时需要审视结局分组与参考定义（11）。这些研究的患者选择、可用序列和诊断目标均不同，因此不能根据其AUC对可互换的方法进行排名。对于输入面板受限的公开数据分析，相关问题是相较其自身临床基线所获得的配对增益。",
+      "citation_ids": [
+        "S06",
+        "S12",
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "id": "I5",
+      "english": "A useful contribution in this setting is a transparent assessment of incremental information and its dependence on analytical choices. CLEAR emphasizes reporting acquisition, segmentation, feature extraction and model evaluation in enough detail for appraisal and reproduction (12). PROBAST+AI separately draws attention to data sources, predictors, outcomes and analysis when judging model quality, bias and applicability (13). These concerns apply to penalized regression as well as more complex learning algorithms. Evaluation guidance distinguishes performance estimated within the development data source from evaluation in independent data (14). Where patients contribute repeated examinations, this distinction also requires attention to dependence between observations: separating scans alone does not ensure that patients are separated between training and testing. Experiments with duplicated scans in connectome-based prediction demonstrate one way that leakage can inflate performance, although that task and duplication mechanism differ from longitudinal glioma imaging (15). A focused analysis should therefore compare models on the same examinations and patient-grouped folds, retain unfavorable sensitivity results, and report the scope of uncertainty. Transparent reporting, as encouraged by TRIPOD+AI, allows readers to judge what such internal evidence can support (16).",
+      "chinese": "在这一场景中，有价值的贡献是透明地评价增量信息及其对分析选择的依赖。CLEAR强调，应充分报告采集、分割、特征提取及模型评价细节，以便审查和复现（12）。PROBAST+AI则在判断模型质量、偏倚及适用性时，分别关注数据来源、预测变量、结局与分析（13）。这些问题同样适用于惩罚回归和更复杂的学习算法。评价指南区分了在开发数据来源内部估计的性能与在独立数据中的评价（14）。当患者贡献重复检查时，还需要关注观测间依赖：仅将扫描分开，并不能确保患者在训练与测试之间分离。在基于脑连接组的预测中，重复复制扫描的实验展示了信息泄漏使性能偏高的一种方式，但该任务及复制机制均不同于胶质瘤纵向影像（15）。因此，聚焦的分析应在相同检查及患者分组分折上比较模型，保留不利的敏感性结果，并报告不确定性范围。TRIPOD+AI所倡导的透明报告，有助于读者判断这类内部证据能够支持哪些结论（16）。",
+      "citation_ids": [
+        "S34",
+        "S23",
+        "S24",
+        "S27",
+        "S02"
+      ]
+    },
+    {
+      "id": "I6",
+      "english": "We therefore evaluated whether eight fixed MRI descriptors add discriminatory information to clinical inputs in a secondary analysis of public UCSD-PTGBM data (5). The target was residual or recurrent tumor versus broad treatment-related change at the examination level. We compared an age-and-sex model, an expanded clinical model, an MRI-only model and their feature-level fusion using the same available imaging cohort and patient-grouped validation. The primary comparison was the paired AUC difference between Fusion and the expanded clinical model. Probability error, calibration and class-specific classification were evaluated alongside discrimination. Boundary erosion, repeated grouped partitions and selection of one available examination per patient examined distinct aspects of sensitivity. By preserving the fixed feature panel and documenting processing and evaluation, the study aimed to characterize MRI's incremental contribution and its sensitivity to these analytical choices as a basis for independent assessment.",
+      "chinese": "因此，我们对公开UCSD-PTGBM数据开展二次分析，评价八项固定MRI描述量能否为临床输入增加鉴别信息（5）。目标是在检查层面区分残余或复发肿瘤与广义治疗相关改变。我们在相同的可用影像队列及患者分组验证中，比较年龄与性别模型、扩展临床模型、仅MRI模型，以及二者在特征层面的融合模型。主要比较为Fusion与扩展临床模型之间的配对AUC差值，同时评价鉴别能力、概率误差、校准及各类别分类表现。边界腐蚀、重复分组分折及每位患者选择一次可用检查，分别考察不同方面的敏感性。通过保留固定特征面板并记录处理及评价流程，本研究旨在刻画MRI的增量贡献及其对这些分析选择的敏感性，为后续独立评估提供基础。",
+      "citation_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "M1",
+      "english": "We performed a retrospective secondary analysis to evaluate whether quantitative magnetic resonance imaging (MRI) features added discriminatory information to clinical variables for distinguishing residual or recurrent tumor from treatment-related change on post-treatment glioma examinations. The target was the diagnostic status assigned to each MRI examination. Clinical, MRI, and combined models were evaluated in a common cohort using cross-validation with patients kept separate between training and validation folds. The examination was the unit of prediction, and all examinations used for modeling from a given patient were assigned to the same fold. The analysis used publicly available, de-identified records and images, without participant recruitment, patient contact, additional imaging, or specimen collection. The dataset authors reported institutional review board approval and a waiver of informed consent for the original data collection (5). Reporting was organized with reference to TRIPOD+AI guidance for prediction models and the Checklist for Artificial Intelligence in Medical Imaging (CLAIM) (16,17).",
+      "chinese": "本研究对公开资料进行回顾性二次分析，评估定量磁共振成像（MRI）特征能否在临床变量基础上，增加对胶质瘤治疗后残余或复发肿瘤与治疗相关改变的鉴别信息。目标为每次MRI检查所对应的诊断状态。临床模型、MRI模型与融合模型在同一队列中接受交叉验证，训练折与验证折之间保持患者隔离。预测单位为单次检查，同一患者用于建模的全部检查均分配至同一折。分析使用公开、去标识的记录与影像，没有新增受试者招募、患者接触、影像检查或标本采集。数据集作者报告，原始资料收集已获机构伦理审查批准并豁免知情同意（5）。论文报告参照预测模型TRIPOD+AI指南及医学影像人工智能报告清单CLAIM组织（16,17）。",
+      "citation_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ]
+    },
+    {
+      "id": "M2",
+      "english": "The source collection was the University of California San Diego Post-Treatment Glioblastoma (UCSD-PTGBM) dataset, distributed through The Cancer Imaging Archive under a Creative Commons Attribution 4.0 license (5). We used the public version 3 clinical workbook and the accompanying list of examinations with treatment-related changes. Imaging inputs were obtained from the publicly accessible data-nih/tcia release mirror on GitHub and comprised derived fluid-attenuated inversion recovery (FLAIR) volumes, postcontrast T1-weighted volumes, and existing BraTS annotation masks in Neuroimaging Informatics Technology Initiative format. Source clinical identifiers, BraTS identifiers, mirror filenames, and the correspondence between them were retained in the linkage records. The mirror files were treated as a specific derived input release. Their observed intensity representation and header metadata determined the processing rules used in this analysis. Download addresses, file sizes, and SHA256 checksums were retained to identify the exact files used and support restoration of the analysis inputs.",
+      "chinese": "资料来源为加州大学圣迭戈分校治疗后胶质母细胞瘤数据集（UCSD-PTGBM），该数据集通过癌症影像档案库发布，采用知识共享署名4.0许可（5）。本研究使用公开的第3版临床工作簿及其配套的治疗相关改变检查名单。影像输入来自GitHub上公开可访问的data-nih/tcia发布镜像，包括派生的液体衰减反转恢复（FLAIR）图像、增强T1加权图像及现成的BraTS标注掩膜，文件格式为NIfTI。连接记录保留临床源标识、BraTS标识、镜像文件名及其对应关系。镜像文件作为特定的派生输入版本处理，本分析的影像处理规则依据其实际观察到的强度表示和头信息确定。下载地址、文件大小及SHA256校验值均予保留，以准确识别所用文件并支持恢复分析输入。",
+      "citation_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "M3",
+      "english": "The published source collection contained 243 examinations from 178 patients (5). An identifier audit identified discordant relationships between the clinical and BraTS patient identifiers in five examinations from two source patients. These examinations were quarantined before clinical-model revalidation, leaving 238 examinations from 176 patients in the clinical cohort. Of these, 182 examinations from 135 patients had corresponding FLAIR images, postcontrast T1-weighted images, and annotation masks in the mirror and yielded the complete eight-feature MRI matrix. The remaining 56 clinical examinations were retained in the coverage records but did not enter the imaging-model comparison because the required mirror inputs were unavailable. The final imaging cohort comprised 141 examinations labeled as residual or recurrent tumor and 41 labeled as treatment-related change. Cohort assembly is summarized in Figure 1, and clinical characteristics by imaging coverage are provided in Supplementary Table S1. All four primary models were evaluated on this same imaging cohort.",
+      "chinese": "已发表的源数据集包含178名患者的243次检查（5）。标识核查发现，2名源患者的5次检查存在临床与BraTS患者标识对应关系冲突。这些检查在临床模型重验证之前即被隔离，临床队列因此保留176名患者的238次检查。其中，135名患者的182次检查在镜像中具有对应的FLAIR图像、增强T1加权图像及标注掩膜，并形成完整的8项MRI特征矩阵。其余56次临床检查保留在覆盖记录中，但因缺少所需镜像输入，未进入影像模型比较。最终影像队列包括141次标记为残余或复发肿瘤的检查，以及41次标记为治疗相关改变的检查。队列构建流程见Figure 1，按影像覆盖情况汇总的临床特征见Supplementary Table S1。四个主要模型均在同一影像队列中接受评价。",
+      "citation_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "M4",
+      "english": "The examination-level outcome was coded as 1 for residual or recurrent tumor and 0 for treatment-related change. We matched the 51 entries in the public negative-case workbook to the clinical records by examination identifier and assigned them to class 0. Class 1 comprised the remaining 192 examinations, using the published partition of the full 243-examination collection (5). These class assignments were retained after identifier quarantine and restriction to examinations with available MRI inputs. The source reference standard combined pathological evidence with clinical and imaging assessment; the dataset authors reported pathological confirmation for 45 of the 192 tumor examinations in the full collection (5). Treatment-related change encompassed pseudoprogression, radiation necrosis and nonspecific post-treatment changes. Subtype counts in the frozen workbook differed from the published summary, although the overall binary counts agreed. We therefore retained the original subtype entries for audit and modeled the broad binary outcome. We carried forward the source classifications without independent diagnostic adjudication. This outcome represented the status assigned to the examination and did not define subsequent recurrence or a future radiation-necrosis event.",
+      "chinese": "检查层面的结局编码为1表示残余或复发肿瘤，编码为0表示治疗相关改变。我们依据检查标识，将公开negative-case工作簿中的51条记录与临床记录匹配，并将其赋为0类。依据已发表的完整243次检查的分组，其余192次检查归为1类（5）。在隔离标识冲突记录、并限定为具有可用MRI输入的检查后，仍沿用这些类别赋值。源数据的参考标准结合了病理证据、临床及影像评估；数据集作者报告，完整数据集中192次肿瘤检查有45次获得病理证实（5）。治疗相关改变涵盖假性进展、放射性坏死和非特异性治疗后改变。冻结工作簿的亚型数量与已发表汇总不同，但二分类总数一致。因此，我们保留原始亚型条目供核查，并针对广义二分类结局建模。本研究沿用源数据分类，未开展独立诊断裁定。该结局表示每次检查被赋予的状态，不用于界定后续复发或未来放射性坏死事件。",
+      "citation_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "M5",
+      "english": "We used four clinical variables from the public clinical workbook: age, sex at birth, the interval from the initial clinical event to the examination, and other treatment before the scan (5). Age was entered as a continuous variable in years at the time of scanning. Sex was encoded as 1 for male and 0 for female. The other-treatment field was encoded as 1 for Yes and 0 for No, retaining its broad source definition without assigning a specific treatment modality or drug. An additional binary indicator identified a missing initial-event interval, with 1 denoting missing and 0 denoting observed. These encodings provided two inputs for the age-and-sex model and five clinical inputs for both the expanded clinical model and the fusion model. The same variable definitions were used throughout the comparisons. Follow-up, survival outcomes and diagnostic category fields were excluded from the clinical inputs. Clinical input definitions are summarized in Supplementary Table S2.",
+      "chinese": "我们使用公开临床工作簿中的四项临床变量：年龄、出生性别、初始临床事件至检查的间隔，以及扫描前其他治疗（5）。年龄采用扫描时的岁数，作为连续变量输入。性别编码为男性1、女性0。其他治疗字段编码为Yes对应1、No对应0，保留其宽泛的源定义，不将其指定为某种治疗方式或药物。另设一个二分类指示变量识别初始事件间隔缺失，缺失为1、已观测为0。这些编码为年龄与性别模型提供两个输入，并为扩展临床模型和融合模型各提供五个临床输入。各项比较始终使用相同的变量定义。随访、生存结局及诊断类别字段不纳入临床输入。临床输入定义汇总于Supplementary Table S2。",
+      "citation_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "M6",
+      "english": "The source time field expressed the initial-event date as a signed day offset relative to MRI acquisition. We accepted only strictly negative numeric offsets, reversed their signs to obtain positive elapsed days, and applied the natural logarithm of one plus the interval. The reference event could be initial surgery, another initial treatment, or diagnosis in an untreated patient, so the resulting variable did not represent a uniform interval since radiotherapy or surgery. Nonnumeric entries, blank values and nonnegative offsets were treated as missing; a zero offset did not establish that the event preceded the examination. In the 182-examination imaging cohort, 36 intervals were missing under this rule. Within each training fold, missing transformed intervals were replaced with the median observed transformed interval, followed by standardization. Age was also standardized within the training fold. Learned medians and scaling parameters were applied unchanged to the corresponding validation fold. Binary inputs were passed through without scaling. Age, sex and the other-treatment indicator were complete in the imaging cohort.",
+      "chinese": "源时间字段以相对于MRI采集日期的有符号天数偏移表示初始事件日期。我们仅接受严格为负的数值型偏移，将其取负号得到正的经过天数，再对间隔加1后取自然对数。参考事件可能是首次手术、其他初始治疗，或未接受治疗患者的诊断，因此所得变量不表示统一的放疗后或手术后间隔。非数值条目、空白及非负偏移均按缺失处理；零偏移不能确认事件发生在检查之前。按照这一规则，182次检查的影像队列中有36条间隔缺失。在每个训练折内，使用该训练折已观测到的变换后间隔中位数填补缺失，随后进行标准化。年龄也在训练折内标准化。所得中位数和缩放参数不作变更，直接用于对应验证折。二分类输入保留原编码，不进行缩放。影像队列的年龄、性别及其他治疗指示变量均无缺失。",
+      "citation_ids": []
+    },
+    {
+      "id": "M7",
+      "english": "For each of the 182 included examinations, we used a FLAIR volume, a postcontrast T1-weighted volume and the accompanying standard BraTS mask, giving 546 compressed NIfTI files. File checks covered recorded byte counts and SHA256 digests, gzip integrity, three-dimensional array decoding, finite voxel values and valid header affines. Within each examination, the images and mask were required to have matching dimensions, spatial-unit fields and coded coordinate forms. Affine corner coordinates were compared using a tolerance of 0.000001 in the supplied coordinates. This established voxel-grid consistency for computation, without independently validating anatomical alignment. All files contained 256 by 256 by 256 arrays stored as unsigned 8-bit integers, and their spatial-unit fields were unknown. We analyzed the supplied derived voxel grids without additional registration or resampling and did not infer millimeter dimensions or physical volumes from their headers. Structural MRI intensities were treated as derived values. Quantitative diffusion measurements were not included.",
+      "chinese": "对于纳入的182次检查，每次使用一份FLAIR图像、一份增强T1加权图像及其配套的标准BraTS掩膜，共546份压缩NIfTI文件。文件检查包括所记录的字节数与SHA256校验值、gzip完整性、三维数组解码、体素值有限性及头信息仿射矩阵有效性。同一次检查的图像和掩膜须具有一致的维度、空间单位字段及有编码的坐标形式。仿射矩阵所确定的角点坐标按所提供坐标数值0.000001的容差比较。这一检查用于确认计算所需的体素网格一致性，并未独立验证解剖对齐准确性。全部文件均包含256×256×256的数组，以无符号8位整数存储，空间单位字段均为未知。我们在所提供的派生体素网格上分析，没有追加配准或重采样，也未依据这些头信息推断毫米尺寸或物理体积。结构MRI强度按派生数值处理，未纳入定量弥散测量。",
+      "citation_ids": []
+    },
+    {
+      "id": "M8",
+      "english": "The dataset authors describe standard BraTS annotations generated by automated segmentation, followed by radiologist correction and approval (5). Our analysis used the existing masks supplied with the mirror. For each examination, the region of interest (ROI) was the union of all strictly positive integer labels in its standard BraTS mask. The same rule was applied to both diagnostic classes and retained every connected component, without selecting the largest region, filling holes or expanding boundaries. Masks containing negative, noninteger or nonfinite values, empty unions and masks covering the entire array were ineligible. All 182 included examinations yielded valid nonempty unions. The ROI was treated as the source annotation region, without assigning tissue-specific interpretations to individual numeric codes. The separate cellular tumor reference masks were not used. We did not train a segmentation model or revise the supplied contours. Our union operation did not read the diagnostic label; blinding of the upstream annotation process to reference diagnostic information could not be verified.",
+      "chinese": "数据集作者介绍，标准BraTS标注由自动分割生成，再由放射科医师修正并审核（5）。本研究使用镜像中已有的掩膜。对于每次检查，感兴趣区域（ROI）定义为其标准BraTS掩膜中全部严格正整数标签的并集。两类诊断均采用同一规则，保留全部连通分量，不选择最大区域、不填洞，也不扩展边界。含负值、非整数或非有限值的掩膜、空并集及覆盖整个数组的掩膜不符合纳入条件。纳入的182次检查均得到有效的非空并集。ROI按源标注区域解释，不为各个数字代码指定特定组织含义。独立提供的细胞性肿瘤参考掩膜未被使用。本研究未训练分割模型，也未修订已有轮廓。并集运算不读取诊断标签；对于上游标注过程是否对参考诊断信息设盲，尚无法确认。",
+      "citation_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "M9",
+      "english": "Before feature extraction, intensity processing was performed separately for each FLAIR and postcontrast T1-weighted image. We calculated the first and 99th percentiles from finite voxel values strictly greater than zero, using linear percentile interpolation. This support region was determined from the image rather than from the annotation mask. Equation 1 defines the scaled intensity u, with x denoting a supplied voxel value and the percentile symbols denoting the corresponding image-specific reference values. The transformation was applied to all ROI voxels, including voxels whose original intensity was zero. Values below zero or above one after scaling were retained. The unclipped transformation was adopted after a technical pilot showed that percentile clipping merged some higher ROI intensities; it was an engineering amendment made after observing processing diagnostics, without using classification performance to choose the method. Image-specific parameters were calculated without pooling information across patients or examinations. Degenerate percentile ranges were treated as processing failures.",
+      "chinese": "在特征提取之前，分别对每份FLAIR和增强T1加权图像进行强度处理。采用线性分位数插值，从有限且严格大于零的体素值计算第1和第99百分位数。该支持区域由图像本身确定，不由标注掩膜确定。Equation 1定义缩放后强度u，其中x表示所提供的体素值，分位数符号表示对应图像的参考值。变换应用于全部ROI体素，包括原始强度为零的体素。缩放后低于零或高于一的数值均保留。技术试验发现百分位裁切会合并部分较高ROI强度后，采用了不裁切变换；这是观察处理诊断后作出的工程修订，未依据分类性能选择方法。各图像独立计算参数，不跨患者或检查汇总信息。分位数范围退化时按处理失败记录。",
+      "citation_ids": []
+    },
+    {
+      "id": "M10",
+      "english": "Four features were calculated from each sequence, yielding eight MRI inputs: mean, population standard deviation, Shannon entropy and three-dimensional gray-level co-occurrence matrix contrast. Mean and standard deviation used the scaled ROI intensities directly, with the voxel count N as the denominator in Equation 2. Entropy and texture calculations used fixed-bin-number discretization following the Image Biomarker Standardization Initiative (IBSI) framework (6). For each sequence and examination, a and b denoted the minimum and maximum scaled intensities within the full ROI. Equation 3 assigned these values to 32 bins; the minimum entered bin 1 and the maximum entered bin 32. In Equation 4, each bin probability is the fraction of ROI voxels assigned to that bin, and bins with zero probability do not contribute. Entropy was expressed in bits using base-2 logarithms. Constant ROI intensities were treated as processing failures. The feature set and bin count were fixed before batch extraction, without outcome-based feature selection.",
+      "chinese": "每个序列计算四项特征，得到八个MRI输入：均值、总体标准差、Shannon熵和三维灰度共生矩阵对比度。均值和标准差直接由缩放后的ROI强度计算，Equation 2中的分母为体素数N。熵与纹理计算采用基于影像生物标志物标准化倡议（IBSI）框架的固定箱数离散化（6）。对于每个序列和每次检查，a和b分别表示完整ROI内缩放强度的最小值和最大值。Equation 3将这些数值分入32箱，最小值进入第1箱，最大值进入第32箱。Equation 4中的每个箱概率为分配至该箱的ROI体素比例，概率为零的箱不参与求和。熵使用以2为底的对数，以bit表示。ROI强度恒定时按处理失败记录。特征集合与箱数在批量提取前固定，未依据结局筛选特征。",
+      "citation_ids": [
+        "S32"
+      ]
+    },
+    {
+      "id": "M11",
+      "english": "The gray-level co-occurrence matrix (GLCM) was constructed from neighboring voxel pairs contained entirely within the ROI. We used 13 undirected offsets representing the 26 immediate neighbors at a Chebyshev grid distance of one supplied voxel. This distance referred to the file grid and was not interpreted as one millimeter. For each offset in the set D, the directional count matrix C recorded pairs with bin indices i and j. Equation 5 defines the pooled symmetric counts S and the normalized matrix P. Contrast was calculated from this single matrix as shown in Equation 6 (6). We combined counts before calculating the feature, without averaging separate directional contrast values or applying distance weights. Each sequence produced one contrast value. A region with no valid neighboring pairs was recorded as a processing failure. We checked the implementation with small arrays having known results; this did not establish complete IBSI benchmark validation.",
+      "chinese": "灰度共生矩阵（GLCM）由两端均位于ROI内的相邻体素对构建。采用13个无向偏移，代表所提供体素网格中Chebyshev距离为1的26个直接邻居。该距离指文件网格上的距离，不解释为1毫米。对于集合D中的每个偏移，方向计数矩阵C记录箱索引为i与j的体素对。Equation 5定义合并后的对称计数S及归一化矩阵P。对比度由这一矩阵按Equation 6计算（6）。我们先合并计数再计算特征，不对各方向分别计算的对比度求平均，也不使用距离权重。每个序列产生一个对比度值。没有有效相邻体素对的区域按处理失败记录。实现以具有已知结果的小数组进行核查；这不等于完成了全部IBSI基准验证。",
+      "citation_ids": [
+        "S32"
+      ]
+    },
+    {
+      "id": "M12",
+      "english": "We fitted four binary logistic regression models with an intercept. M0 included age and sex; M1 included the five clinical inputs defined above and served as the principal clinical comparator. The MRI model used the eight fixed imaging features, and Fusion concatenated the five clinical inputs and eight MRI features into one 13-variable predictor vector. This was feature-level fusion within a single model. Equation 7 gives the tumor probability for the processed feature vector z, where m denotes the input count and the beta terms denote the intercept and coefficients. The four models contained 2, 5, 8 and 13 nonintercept terms, respectively. All used L2 regularization with inverse regularization strength C set to 1, the lbfgs optimizer, a maximum of 2000 iterations and convergence tolerance 0.0001. No class weighting was applied. A common regression framework provided a consistent comparison of the fixed input sets. Coefficients were used for prediction and were not interpreted as causal effects.",
+      "chinese": "我们拟合了四个含截距的二分类Logistic回归模型。M0纳入年龄与性别；M1纳入前述五个临床输入，作为主要临床对照。MRI模型使用八项固定影像特征；Fusion将五个临床输入与八项MRI特征拼接为一个含13项变量的预测向量。这属于单一模型内的特征级融合。Equation 7给出处理后特征向量z对应的肿瘤概率，其中m表示输入数量，beta项表示截距与系数。四个模型分别含2、5、8和13个非截距项。全部采用L2正则化，逆正则化强度C设为1，优化器为lbfgs，最大迭代次数2000，收敛容差0.0001。不使用类别加权。共同的回归框架用于一致地比较固定输入集合。系数用于预测，不解释为因果效应。",
+      "citation_ids": []
+    },
+    {
+      "id": "M13",
+      "english": "All four models were evaluated in the same 182-examination cohort using the same five patient-grouped folds. We used StratifiedGroupKFold with shuffling enabled and random seed 20261029, grouping examinations by the audited patient-group identifier. All examinations from a given patient were kept in one fold, and separation was checked using both the source clinical and BraTS patient identifiers. The case-to-fold manifest was fixed before model fitting and was not reselected after viewing performance. Age, the transformed interval and MRI features were standardized within training folds wherever included; interval imputation followed Section 2.3. Binary inputs were not scaled. Fitted preprocessing and regression parameters were applied to the held-out fold without using its outcomes to train or select the model. Each examination received one out-of-fold (OOF) tumor probability per model. There was no hyperparameter search, feature selection, dimensionality reduction, oversampling or interaction-term expansion. Validation was internal to the public collection.",
+      "chinese": "四个模型均在同一包含182次检查的队列中，使用相同的五个患者分组折进行评价。采用StratifiedGroupKFold，启用随机打乱，随机种子为20261029，按已核查的患者分组标识划分检查。同一患者的全部检查保持在同一折，并分别使用临床源患者标识和BraTS患者标识检查训练与验证的隔离。病例与折的对应清单在模型拟合前固定，未根据观察到的性能重新选择。年龄、变换后的间隔和MRI特征在各自被纳入时，均仅在训练折内进行标准化；间隔填补按照Section 2.3执行。二分类输入不缩放。已拟合的预处理和回归参数用于留出的验证折，不使用该折结局训练或选择模型。每次检查在每个模型中获得一个折外（OOF）肿瘤概率。未进行超参数搜索、特征筛选、降维、过采样或交互项扩展。验证范围限于该公开数据集内部。",
+      "citation_ids": []
+    },
+    {
+      "id": "M14",
+      "english": "Performance was calculated at the examination level by pooling OOF probabilities from all five folds. The primary incremental comparison was the Fusion-minus-M1 difference in area under the receiver operating characteristic curve (ROC AUC), evaluated on the same examinations (Equation 8). We also reported ROC AUC for each model, average precision (AP) for each diagnostic class, Brier score and logarithmic loss. Treatment-related-change AP used treatment-related change as the positive class and one minus the tumor probability as its score. AP was computed from precision weighted by increments in recall. Brier score and logarithmic loss summarized probability error, with lower values indicating better performance. At the fixed threshold of 0.5, probabilities at least 0.5 were classified as tumor. Confusion counts, tumor sensitivity, recognition of treatment-related change, precision for each class, balanced accuracy and overall accuracy were calculated without threshold optimization.",
+      "chinese": "将五折的OOF概率汇总，在检查层面计算性能。主要增量比较为同一批检查中Fusion减去M1的受试者工作特征曲线下面积（ROC AUC）差值（Equation 8）。同时报告每个模型的ROC AUC、两类诊断各自的平均精确率（AP）、Brier评分及对数损失。治疗相关改变的AP以治疗相关改变为正类，以1减去肿瘤概率作为评分。AP由按召回率增量加权的精确率计算。Brier评分与对数损失概括概率误差，数值越低表示表现越好。在固定的0.5阈值下，大于或等于0.5的概率归为肿瘤。计算混淆计数、肿瘤敏感度、治疗相关改变识别率、各类精确率、平衡准确率及总体准确率，不进行阈值优化。",
+      "citation_ids": []
+    },
+    {
+      "id": "M15",
+      "english": "Uncertainty was summarized using 2000 patient-cluster bootstrap attempts with random seed 20261030. Each attempt sampled 135 patient groups with replacement and retained all available examinations for each selected group, including repeated copies when a group was sampled more than once. All models used identical resampled examination indices, enabling paired metric differences. The saved OOF probabilities remained fixed; prediction models and their preprocessing were not refitted within resampling. Attempts containing only one diagnostic class were ineligible and were not replaced by additional draws. For ROC AUC, treatment-related-change AP, Brier score and logarithmic loss, and their paired differences, 95% percentile intervals were defined by the 2.5th and 97.5th percentiles of eligible bootstrap values. These intervals represented patient-sampling uncertainty conditional on the saved OOF predictions. They did not capture the full variability of retraining the models or choosing another fold partition. Metric differences were retained in their stated directions, so a negative Brier-score difference favored Fusion in the Fusion-minus-M1 comparison.",
+      "chinese": "采用2000次患者聚类bootstrap抽样尝试概括不确定性，随机种子为20261030。每次有放回地抽取135个患者组，并保留每个抽中组的全部可用检查；同一组被多次抽中时，其检查也重复计入。所有模型使用完全相同的重采样检查索引，以计算配对指标差值。已保存的OOF概率保持固定，抽样过程中不重新拟合预测模型或其预处理。仅包含一种诊断类别的抽样不符合条件，且不追加抽样替代。针对ROC AUC、治疗相关改变AP、Brier评分及对数损失，以及这些指标的配对差值，取符合条件bootstrap值的第2.5和第97.5百分位数，得到95%百分位区间。这些区间表示条件于已保存OOF预测的患者抽样不确定性，不涵盖重新训练模型或选择其他分折的全部变异。指标差值保留既定相减方向，因此在Fusion减去M1的比较中，Brier评分差值为负有利于Fusion。",
+      "citation_ids": []
+    },
+    {
+      "id": "M16",
+      "english": "Calibration was assessed descriptively using the pooled OOF tumor probabilities. For each model, we requested five probability quantile groups, dropping duplicate boundaries and retaining the actual nonempty groups. Each group was summarized by its examination count, mean predicted probability, observed tumor proportion and tumor count. Calibration-in-the-large was estimated as an intercept with the coefficient of the predicted log odds fixed at one (Equation 9). A separate unpenalized logistic diagnostic regression estimated a free intercept and calibration slope jointly (Equation 10). Here, p denotes the saved OOF probability and q the fitted diagnostic probability. For logit calculations only, p was clipped to machine epsilon and one minus machine epsilon. The offset intercept was distinguished from the joint intercept accompanying the slope. Failed or separated fits were retained as missing estimates with their recorded errors. These diagnostics used the same OOF predictions being evaluated and did not constitute independent validation. We did not use them to recalibrate predictions, alter the fixed classification threshold or replace any evaluated OOF probabilities.",
+      "chinese": "使用汇总的OOF肿瘤概率进行描述性校准评估。对每个模型，设定五个概率分位组，删除重复边界并保留实际非空组。每组汇总检查数、平均预测概率、实际肿瘤比例和肿瘤数。总体校准偏差通过固定预测对数优势系数为1的截距估计（Equation 9）。另以未惩罚的Logistic诊断回归联合估计自由截距与校准斜率（Equation 10）。其中，p表示已保存的OOF概率，q表示诊断拟合概率。仅在计算logit时，将p限制在机器精度epsilon与1减epsilon之间。固定offset的截距与伴随斜率联合估计的截距分别记录。拟合失败或发生分离时，估计值保留为缺失，并记录错误原因。这些诊断使用正在评价的同一批OOF预测，不构成独立验证。我们未据此重新校准预测、改变固定分类阈值或替换任何被评价的OOF概率。",
+      "citation_ids": []
+    },
+    {
+      "id": "M17",
+      "english": "Sensitivity to the annotation boundary was examined by eroding the full ROI once using a three-dimensional six-neighbor structuring element. Erosion operated on the supplied voxel grid and did not represent a fixed distance in millimeters. We recalculated the same eight MRI features within the eroded region, retaining the original image-specific percentile normalization parameters and the discretization boundaries derived from the full ROI. This kept the intensity and binning reference consistent when changing the region. Eroded MRI and Fusion models used the original examination set, patient groups and five-fold assignments, with their preprocessing and regression fitted within each training fold under the same fixed settings. The clinical inputs were unchanged. Comparisons included eroded Fusion versus M1 and eroded versus original Fusion, using paired patient-cluster bootstrap intervals conditional on the saved OOF predictions. This perturbation assessed dependence on the supplied boundary; it did not establish segmentation accuracy. The original ROI remained the primary analysis.",
+      "chinese": "采用三维六邻域结构元素，对完整ROI执行一次腐蚀，以检查对标注边界的敏感性。腐蚀在所提供的体素网格上进行，不代表以毫米表示的固定距离。在腐蚀后区域内重新计算相同的八项MRI特征，保留原图像特异的百分位归一化参数，以及由完整ROI确定的离散化边界。这样，在改变区域时保持强度与分箱的参考一致。腐蚀后MRI与Fusion模型使用原有检查集合、患者分组及五折划分，并在相同固定设置下于各训练折内拟合预处理和回归。临床输入保持不变。比较包括腐蚀后Fusion与M1，以及腐蚀后Fusion与原始Fusion；采用条件于已保存OOF预测的配对患者聚类bootstrap区间。该扰动用于评估结果对所提供边界的依赖，不用于证明分割准确性。完整ROI分析仍为主分析。",
+      "citation_ids": []
+    },
+    {
+      "id": "M18",
+      "english": "To examine sensitivity to fold assignment, we repeated stratified five-fold validation by patient group on the full imaging cohort using 20 seeds fixed as the consecutive integers 20261029 through 20261048. The first partition reproduced the primary analysis. Within each repetition, M0, M1, MRI and Fusion shared the same examinations and folds, and preprocessing and regression were fitted separately within each training fold. Each examination received one OOF prediction per model per repetition. We summarized performance and the Fusion-minus-M1 differences using the median, quartiles and observed minimum and maximum, and counted repetitions with positive differences. The protocol required recording any failed repetitions without replacing their seeds. Because all repetitions reused the same patients, their distributions described sensitivity to partitioning and were not confidence intervals or independent replications. We did not pool repeated predictions as independent observations, average them into an ensemble or choose the highest-performing repetition to replace the primary estimate. Model settings and the classification threshold remained fixed.",
+      "chinese": "为检查分折敏感性，在完整影像队列上按患者组重复进行分层五折验证，采用预先固定的20个连续整数种子20261029至20261048。第一套划分复现主分析。每次重复中，M0、M1、MRI与Fusion共用相同检查及分折，各训练折内分别拟合预处理和回归。每次检查在每个模型、每次重复中获得一次OOF预测。使用中位数、四分位数、实际最小值和最大值概括性能及Fusion减去M1的差值，并统计差值为正的重复次数。方案要求在重复失败时保留记录，不更换种子。由于全部重复使用同一批患者，其分布描述对划分的敏感性，不是置信区间或独立重复研究。不将重复预测合并为独立观测，不取平均构建集成模型，也不选择表现最好的重复替代主估计。模型设置与分类阈值保持固定。",
+      "citation_ids": []
+    },
+    {
+      "id": "M19",
+      "english": "A separate sensitivity analysis retained one examination per patient, selecting the smallest numeric session suffix available in the imaging subset, with the complete examination identifier resolving ties. Selection used neither diagnostic labels nor model predictions. This rule identified the earliest numbered available session, without establishing the first clinical visit or the earliest MRI in the source database. We rebuilt patient-grouped five-fold partitions with seed 20261029 and refitted the four fixed models within these training folds. Patient bootstrap sampling used 2000 attempts with seed 20261101 and fixed OOF probabilities. Percentile intervals for ROC AUC, treatment-related-change AP, Brier score, logarithmic loss and their Fusion-minus-M1 differences followed the conditional interpretation above. Draws containing only one diagnostic class were ineligible and would not be replaced. The selected cohort differed from the primary cohort in examination composition, class distribution and training data. Accordingly, differences between their performance estimates could not be attributed solely to removing repeated scans, and the single-examination analysis did not replace the primary comparison.",
+      "chinese": "另开展每患者仅保留一次检查的敏感性分析：选择影像子集中可用的最小数字会话后缀；如有并列，按完整检查标识符排序决定。选择不使用诊断标签或模型预测。该规则确定的是可用会话中编号最早的一次，不能据此认定为首次临床就诊或源数据库中的最早MRI。采用种子20261029重建患者分组五折，并在这些训练折内重新拟合四个固定模型。患者bootstrap使用种子20261101进行2000次抽样尝试，OOF概率保持固定。ROC AUC、治疗相关改变AP、Brier评分、对数损失及其Fusion减去M1差值的百分位区间，沿用前述条件性解释。仅含一种诊断类别的抽样不符合条件，且不追加抽样替代。所选队列与主队列在检查构成、类别分布及训练数据方面不同。因此，两者性能估计的差异不能仅归因于去除重复扫描，单次检查分析也不替代主要比较。",
+      "citation_ids": []
+    },
+    {
+      "id": "M20",
+      "english": "Analyses were implemented in Python 3 using scikit-learn 1.8.0 (18), NumPy 2.3.5, pandas 2.2.3, SciPy 1.17.0 and Matplotlib 3.10.8. Jupyter notebooks for feature extraction, model evaluation and sensitivity analyses were executed through an in-process ipykernel 7.4.0 kernel, with code hashes and execution receipts retained. The public project repository (https://github.com/BTomoto/rn-mri-clinical-fusion) contains code, derived data, OOF probabilities, fold assignments and analysis locks linking inputs, protocols and code by SHA256 checksums. Model analyses can be rerun from the saved feature tables without downloading images again. Re-extracting features requires the image files: 18 inputs are included as repository samples, whereas 528 additional inputs were archived separately. Source manifests provide acquisition URLs and checksums, and an archive restoration script verifies the archive and its extracted members. The saved restoration receipt records successful verification of all 528 additional files; access to the stored archive requires its holder’s account, with public acquisition URLs providing an alternative route. Sample size was determined by eligible linked examinations with available inputs, without a prospective sample-size calculation.",
+      "chinese": "分析采用Python 3，使用scikit-learn 1.8.0（18）、NumPy 2.3.5、pandas 2.2.3、SciPy 1.17.0和Matplotlib 3.10.8。特征提取、模型评价和敏感性分析的Jupyter Notebook通过进程内ipykernel 7.4.0内核执行，保留代码哈希及执行回执。公开项目仓库（https://github.com/BTomoto/rn-mri-clinical-fusion）包含代码、派生数据、OOF概率、分折划分，以及通过SHA256校验值关联输入、方案与代码的分析锁。模型分析可直接使用已保存的特征表重新运行，无需再次下载图像。重新提取特征则需要影像文件：其中18份输入作为仓库样本保存，另外528份输入单独归档。源清单提供获取URL与校验值，归档恢复脚本会核验压缩包及解出的成员。既有恢复回执记录528份追加文件均核验成功；获取所存归档需要持有者的账户权限，也可通过公开获取URL重新取得。样本规模由具备可用输入且符合条件的关联检查决定，未进行前瞻性样本量计算。",
+      "citation_ids": [
+        "S40"
+      ]
+    },
+    {
+      "id": "R1",
+      "english": "The source cohort contained 243 examinations from 178 patients, including 192 examinations labeled as tumor and 51 labeled as treatment-related change (Figure 1). Identifier quarantine removed five examinations from two patients, leaving 238 examinations from 176 patients in the clinical cohort. The retained cohort contained 187 tumor and 51 treatment-related-change examinations. Complete FLAIR, postcontrast T1-weighted and annotation-mask inputs were available for 182 examinations from 135 patients, representing 76.5% of the retained clinical examinations. All 182 yielded the eight MRI features and entered the common comparison of M0, M1, MRI and Fusion. The remaining 56 examinations from 41 patients were not covered by the accessed mirror and comprised 46 tumor and 10 treatment-related-change examinations. These records remained in the coverage ledger and did not enter the imaging comparison. The imaging cohort included 141 tumor examinations (77.5%) and 41 treatment-related-change examinations (22.5%). At the patient level, 114 patients contributed tumor examinations and 29 contributed treatment-related-change examinations; eight patients contributed examinations in both categories. These category-specific patient counts therefore overlapped. Table 1 summarizes the imaging cohort, and Supplementary Table S1 describes the retained clinical cohort according to imaging coverage. The same 182 examinations were retained for the primary comparison and the erosion sensitivity analysis.",
+      "chinese": "源队列包含178名患者的243次检查，其中192次标记为肿瘤，51次标记为治疗相关改变（Figure 1）。标识隔离排除了2名患者的5次检查，临床队列保留176名患者的238次检查，包括187次肿瘤检查和51次治疗相关改变检查。其中，135名患者的182次检查具有完整的FLAIR、增强T1加权图像及标注掩膜输入，占保留临床检查的76.5%。全部182次检查均获得八项MRI特征，并进入M0、M1、MRI与Fusion的共同比较。其余41名患者的56次检查未被所访问的镜像覆盖，包括46次肿瘤检查和10次治疗相关改变检查。这些记录保留在覆盖清单中，未进入影像比较。影像队列包含141次肿瘤检查（77.5%）和41次治疗相关改变检查（22.5%）。按患者统计，114名患者贡献过肿瘤检查，29名贡献过治疗相关改变检查，其中8名患者在两类中均有检查。因此，两类患者人数存在重叠。Table 1汇总影像队列特征，Supplementary Table S1按影像覆盖情况描述保留的临床队列。主比较与腐蚀敏感性分析均保留相同的182次检查。",
+      "citation_ids": []
+    },
+    {
+      "id": "R2",
+      "english": "At the examination level, median age in the imaging cohort was 56.5 years [49.0, 66.0], and male patients contributed 132 examinations (72.5%; Table 1). Age, sex and other treatment before imaging were complete. Among 146 examinations with a known interval since the initial event, the median was 154.0 days [40.5, 359.5]. The corresponding medians were 96.0 days for tumor examinations and 346.0 days for treatment-related-change examinations. Intervals were missing for 36 examinations (19.8%), comprising 33 tumor and three treatment-related-change examinations. Other treatment before imaging was recorded for 25 examinations (13.7%). In the group without imaging coverage, median age was 53.5 years [45.0, 62.0], 60.7% of examinations were from male patients and 82.1% carried tumor labels, compared with 77.5% in the imaging cohort (Supplementary Table S1). These summaries used examination records, with interval distributions restricted to observed values before imputation. Bracketed values indicate the first and third quartiles. No between-group significance tests were performed.",
+      "chinese": "按检查记录统计，影像队列年龄中位数为56.5岁［49.0，66.0］，男性患者贡献132次检查（72.5%；Table 1）。年龄、性别和扫描前其他治疗信息均完整。在距初始事件间隔已知的146次检查中，间隔中位数为154.0天［40.5，359.5］；肿瘤检查和治疗相关改变检查的相应中位数分别为96.0天和346.0天。36次检查的间隔缺失（19.8%），其中33次为肿瘤检查、3次为治疗相关改变检查。25次检查记录了扫描前其他治疗（13.7%）。在没有影像覆盖的组中，年龄中位数为53.5岁［45.0，62.0］，男性患者贡献的检查占60.7%，肿瘤标签占82.1%，影像队列中的肿瘤标签占比为77.5%（Supplementary Table S1）。上述汇总以检查记录为单位，间隔分布仅使用填补前的已知值。方括号内为第一和第三四分位数。未进行组间显著性检验。",
+      "citation_ids": []
+    },
+    {
+      "id": "R3",
+      "english": "Each of the four fixed models provided an OOF probability for all 182 examinations under the same patient-grouped five-fold partition. The pooled ROC AUC was 0.526 for M0 (95% patient-bootstrap percentile interval, 0.404 to 0.644), 0.672 for M1 (0.553 to 0.778), 0.762 for MRI (0.683 to 0.838) and 0.782 for Fusion (0.698 to 0.859; Table 2 and Figure 2A). Treatment-related-change AP was 0.261, 0.354, 0.444 and 0.505 for M0, M1, MRI and Fusion, respectively, against a treatment-related-change prevalence of 0.225 in this cohort (Figure 2B). The corresponding Brier scores were 0.177, 0.163, 0.151 and 0.144. Fusion had the largest AUC and treatment-related-change AP point estimates and the lowest Brier score among the four models in this partition. The intervals summarized patient-sampling uncertainty conditional on the saved OOF probabilities; they did not include the full variability of model retraining or alternative fold assignments. These results represent internal validation in the same imaging cohort. The prespecified paired Fusion-minus-M1 comparison is reported separately, because the ordering of model-specific point estimates alone does not quantify the uncertainty in their difference.",
+      "chinese": "四个固定模型均在相同的患者分组五折划分下，为全部182次检查提供OOF概率。汇总ROC AUC分别为M0的0.526（95%患者bootstrap百分位区间0.404至0.644）、M1的0.672（0.553至0.778）、MRI的0.762（0.683至0.838）及Fusion的0.782（0.698至0.859；Table 2和Figure 2A）。M0、M1、MRI与Fusion的治疗相关改变AP分别为0.261、0.354、0.444和0.505，该队列治疗相关改变的比例为0.225（Figure 2B）。相应Brier评分分别为0.177、0.163、0.151和0.144。在本次划分中，Fusion在四模型中具有最大的AUC与治疗相关改变AP点估计，以及最低的Brier评分。这些区间概括条件于已保存OOF概率的患者抽样不确定性，不涵盖模型重新训练或其他分折的全部变异。上述结果属于同一影像队列中的内部验证。预设的Fusion减去M1配对比较另节报告，因为仅凭各模型点估计排序，无法量化模型差值的不确定性。",
+      "citation_ids": []
+    },
+    {
+      "id": "R4",
+      "english": "For the prespecified primary comparison, the Fusion-minus-M1 ROC AUC difference was 0.110 (95% paired patient-bootstrap percentile interval, 0.021 to 0.214; Table 3). The treatment-related-change AP difference was 0.152 (0.026 to 0.268). Both intervals lay above zero under the conditional bootstrap analysis. Probability-error differences also favored Fusion in their point estimates: the Brier-score difference was -0.019 (-0.040 to 0.002), and the logarithmic-loss difference was -0.037 (-0.107 to 0.039). However, both probability-error intervals included zero, leaving these improvements uncertain. ROC AUC was the sole primary incremental metric; AP, Brier score and logarithmic loss were auxiliary summaries. Differences were calculated from the unrounded model metrics, rather than from the displayed three-decimal values. All contrasts used the same 182 examinations, and each bootstrap attempt applied the same resampled patient groups to both models. The resulting intervals described uncertainty in the paired differences conditional on the saved OOF predictions. They were not obtained by subtracting separate model interval bounds and did not include full retraining or partition variability. The primary result supported an AUC increment from adding the eight MRI features to the fixed clinical model within this cohort, while the probability-error contrasts remained uncertain.",
+      "chinese": "在预设主要比较中，Fusion减去M1的ROC AUC差值为0.110（95%配对患者bootstrap百分位区间0.021至0.214；Table 3）。治疗相关改变AP差值为0.152（0.026至0.268）。在该条件bootstrap分析中，两项区间均位于零以上。概率误差差值的点估计也有利于Fusion：Brier评分差值为−0.019（−0.040至0.002），对数损失差值为−0.037（−0.107至0.039）。但两项概率误差区间均包含零，因此这些改善仍存在不确定性。ROC AUC是唯一主要增量指标，AP、Brier评分和对数损失为辅助汇总。差值由未四舍五入的模型指标计算，而非由显示为三位小数的数值相减。全部比较使用相同的182次检查，每次bootstrap对两个模型采用相同的重采样患者组。所得区间表示条件于已保存OOF预测的配对差值不确定性，不是通过两个模型各自的区间端点相减得到，也不包含完整重训或分折变异。主要结果支持在本队列内向固定临床模型加入八项MRI特征后获得AUC增量，而概率误差方面的差异仍不确定。",
+      "citation_ids": []
+    },
+    {
+      "id": "R5",
+      "english": "Fusion had an offset calibration intercept of -0.121 and a calibration slope of 0.667 in the pooled OOF predictions (Figure 2C; Supplementary Table S3). These were descriptive calibration diagnostics and were not applied to modify the evaluated probabilities. At the fixed tumor-probability threshold of 0.5, Fusion correctly classified 130 of 141 tumor examinations (92.2%) and 12 of 41 treatment-related-change examinations (29.3%). Eleven tumor examinations were classified as treatment-related change, whereas 29 treatment-related-change examinations were classified as tumor. Overall accuracy was 142/182 (78.0%), compared with 141/182 (77.5%) for a reference rule assigning every examination to tumor. Balanced accuracy was 0.607. M1 correctly recognized two treatment-related-change examinations, while MRI and Fusion each recognized 12. The same MRI and Fusion models correctly classified 128 and 130 tumor examinations, respectively. Thus, the higher discrimination estimates coexisted with limited treatment-related-change recognition at the unchanged threshold, and overall accuracy remained close to the always-tumor reference.",
+      "chinese": "在汇总的OOF预测中，Fusion固定offset的校准截距为−0.121，校准斜率为0.667（Figure 2C；Supplementary Table S3）。这些为描述性校准诊断，未用于修改被评价的概率。在固定的0.5肿瘤概率阈值下，Fusion正确分类141次肿瘤检查中的130次（92.2%），以及41次治疗相关改变检查中的12次（29.3%）。11次肿瘤检查被分为治疗相关改变，29次治疗相关改变检查被分为肿瘤。总体准确率为142/182（78.0%），将每次检查都分为肿瘤的参考规则准确率为141/182（77.5%）。平衡准确率为0.607。M1正确识别2次治疗相关改变检查，MRI和Fusion各正确识别12次；这两个MRI与Fusion模型分别正确分类128次和130次肿瘤检查。因此，较高的鉴别指标与固定阈值下有限的治疗相关改变识别能力同时存在，总体准确率仍接近全判肿瘤的参考规则。",
+      "citation_ids": []
+    },
+    {
+      "id": "R6",
+      "english": "All 182 examinations retained complete MRI features after the prespecified erosion, allowing comparison on the original case set and fold assignments. The eroded MRI model had an OOF AUC of 0.765, compared with 0.762 for the original MRI model (Supplementary Table S4; Figure S1). Eroded Fusion had an AUC of 0.788 (95% patient-bootstrap percentile interval, 0.706 to 0.867), compared with 0.782 for original Fusion. The paired eroded-minus-original Fusion AUC difference was 0.0062, with an interval of -0.0051 to 0.0183 that included zero. Eroded Fusion had a Brier score of 0.141 and treatment-related-change AP of 0.529, and correctly recognized 14 of 41 treatment-related-change examinations at the fixed threshold. The corresponding original Fusion values were 0.144, 0.505 and 12 of 41. These findings described sensitivity to one boundary perturbation under fixed processing and did not establish superiority of erosion or segmentation accuracy. The original ROI remained the primary analysis.",
+      "chinese": "预设腐蚀后，全部182次检查仍具备完整MRI特征，因此可以在原有病例集合与分折划分上进行比较。腐蚀后MRI模型的OOF AUC为0.765，原MRI模型为0.762（Supplementary Table S4；Figure S1）。腐蚀后Fusion的AUC为0.788（95%患者bootstrap百分位区间0.706至0.867），原Fusion为0.782。腐蚀后减去原Fusion的配对AUC差值为0.0062，区间为−0.0051至0.0183，包含零。腐蚀后Fusion的Brier评分为0.141，治疗相关改变AP为0.529，在固定阈值下正确识别41次治疗相关改变检查中的14次；原Fusion的相应数值为0.144、0.505和12/41。上述结果描述固定处理规则下对单次边界扰动的敏感性，不能据此认定腐蚀更优或证明分割准确性。原ROI分析仍保留为主分析。",
+      "citation_ids": []
+    },
+    {
+      "id": "R7",
+      "english": "All 20 prespecified repetitions completed the patient-grouped five-fold validation without failed fold-model fits. Across repetitions, median AUCs were 0.556 for M0, 0.667 for M1, 0.775 for MRI and 0.784 for Fusion (Supplementary Table S5A; Figure 3A). Fusion had first and third AUC quartiles of 0.775 and 0.795, with an observed range of 0.759 to 0.809. The median within-repetition Fusion-minus-M1 AUC difference was 0.125, with a range of 0.103 to 0.150; all 20 differences were positive (Supplementary Table S5B; Figure 3B). AP, Brier-score and logarithmic-loss differences also favored Fusion in all 20 repetitions. These sign counts described the observed partitions and did not replace the primary paired bootstrap intervals. Because the same patients were reused, the repetitions were not independent validation cohorts. Medians, quartiles and ranges summarized sensitivity to partitioning and were not confidence intervals. The first repetition reproduced the original partition and predictions, and its Fusion AUC of 0.782 remained the primary estimate rather than the maximum observed across repetitions.",
+      "chinese": "20套预定重复均完成患者分组五折验证，没有折内模型拟合失败。跨重复的AUC中位数分别为M0的0.556、M1的0.667、MRI的0.775和Fusion的0.784（Supplementary Table S5A；Figure 3A）。Fusion AUC的第一和第三四分位数为0.775及0.795，实际范围为0.759至0.809。每套重复内部Fusion减去M1的AUC差值中位数为0.125，范围为0.103至0.150，20个差值均为正（Supplementary Table S5B；Figure 3B）。AP、Brier评分和对数损失差值也在全部20套重复中有利于Fusion。这些方向计数描述所观察的划分，不替代主要配对bootstrap区间。由于重复使用同一批患者，20套重复不是独立验证队列。中位数、四分位数及范围概括对划分的敏感性，不是置信区间。第一套重复复现原划分及预测，其Fusion AUC为0.782，仍作为主估计，不以全部重复中的最高值替代。",
+      "citation_ids": []
+    },
+    {
+      "id": "R8",
+      "english": "Selecting the smallest available numeric session per patient retained 135 examinations from 135 patients, including 113 tumor and 22 treatment-related-change examinations. This selection did not establish the true first clinical visit. OOF AUCs were 0.501 for M0, 0.609 for M1, 0.729 for MRI and 0.730 for Fusion (95% patient-bootstrap percentile interval for Fusion, 0.606 to 0.833; Supplementary Table S6 and Figure S2A). The Fusion-minus-M1 AUC difference was 0.120, with a paired interval of -0.015 to 0.252 that included zero (Supplementary Table S7). The auxiliary AP, Brier-score and logarithmic-loss difference intervals also included zero. At the fixed threshold, Fusion recognized 109/113 tumor examinations (96.5%) and 2/22 treatment-related-change examinations (9.1%; Figure S2B). Its descriptive calibration slope was 0.539, without subsequent recalibration. The selected analysis differed from the primary 182-examination analysis in examination composition, class distribution and training data. Consequently, the difference between their AUC estimates could not be attributed solely to removing repeated scans. Incremental discrimination remained uncertain in the single-scan analysis, which was retained as a sensitivity analysis without replacing the primary comparison.",
+      "chinese": "按每位患者最小可用数字会话编号选择后，保留135名患者的135次检查，包括113次肿瘤检查和22次治疗相关改变检查。该选择不能确定真实首次临床就诊。OOF AUC分别为M0的0.501、M1的0.609、MRI的0.729和Fusion的0.730；Fusion的95%患者bootstrap百分位区间为0.606至0.833（Supplementary Table S6和Figure S2A）。Fusion减去M1的AUC差值为0.120，配对区间为−0.015至0.252，包含零（Supplementary Table S7）。辅助AP、Brier评分与对数损失差值区间也均包含零。在固定阈值下，Fusion正确识别109/113次肿瘤检查（96.5%）和2/22次治疗相关改变检查（9.1%；Figure S2B）。其描述性校准斜率为0.539，未据此重新校准。所选分析与182次检查的主分析在检查构成、类别分布和训练数据方面不同。因此，两者AUC估计的差异不能仅归因于去除重复扫描。单扫描分析中的增量鉴别仍存在不确定性，该分析保留为敏感性分析，不替代主要比较。",
+      "citation_ids": []
+    },
+    {
+      "id": "D1",
+      "english": "In this secondary analysis of public data, adding eight fixed MRI descriptors to five clinical inputs improved internal discrimination between residual or recurrent tumor and treatment-related change after treatment for high-grade glioma. Fusion achieved an OOF AUC of 0.782, compared with 0.672 for M1, with a paired difference of 0.110 (95% patient-bootstrap percentile interval, 0.021 to 0.214). This comparison used the same examinations and patient-grouped folds, limiting differences attributable to case selection or partition assignment. The AUC increment remained positive across all 20 repeated partitions, although these repetitions reused the same cohort and provided descriptive evidence of split stability. Incremental discrimination was less certain when one available examination per patient was retained: the AUC-difference interval extended from -0.015 to 0.252. These intervals were conditional on fixed OOF predictions and did not capture full retraining variability. Moreover, Fusion recognized only 12/41 treatment-related-change examinations in the primary analysis and 2/22 in the single-scan analysis at the fixed threshold. Its primary calibration slope of 0.667, together with intervals crossing zero for the Brier-score and logarithmic-loss differences, also limited claims about probability accuracy. The findings therefore support an incremental MRI signal within this dataset, while leaving its clinical usefulness and performance in independent cohorts unresolved.",
+      "chinese": "在这项基于公开数据的二次分析中，将8项固定MRI描述特征加入5项临床输入，提高了对高级别胶质瘤治疗后残余或复发肿瘤与治疗相关改变的内部鉴别能力。Fusion的OOF AUC为0.782，M1为0.672，配对差值为0.110（95%患者bootstrap百分位区间为0.021至0.214）。该比较使用相同检查和相同的患者分组折，从而减少了病例选择或分折分配差异的影响。全部20套重复分折的AUC增量均为正，但这些重复使用了同一队列，提供的是分折稳定性的描述性证据。在每位患者仅保留一次可用检查时，增量鉴别更不确定，AUC差值区间为−0.015至0.252。这些区间以固定OOF预测为条件，未涵盖完整的重新训练变异。此外，在固定阈值下，Fusion在主分析中仅正确识别12/41次治疗相关改变检查，在单扫描分析中仅正确识别2/22次。其主分析校准斜率为0.667，且Brier评分和对数损失差值的区间均跨零，这也限制了对概率准确性作出结论。因此，研究结果支持该数据集内存在MRI增量信号，但其临床实用性和独立队列中的表现仍有待确定。",
+      "citation_ids": []
+    },
+    {
+      "id": "D2",
+      "english": "The observed increment has parallels in studies combining quantitative MRI with non-imaging information, although their predictor sets differ substantially from ours. In a single-center cohort of 222 patients with grade 3 or 4 glioma, Zhou et al. integrated a 17-feature radiomics score with relative cerebral blood volume, apparent diffusion coefficient, neutrophil-to-lymphocyte ratio, MGMT promoter methylation and temozolomide treatment (8). Their stratified 7:3 internal split yielded validation AUCs of 0.811 for the integrated model and 0.744 for the model excluding the radiomics score. That comparison therefore assessed radiomics beyond a baseline already containing advanced imaging and molecular information. McKenney et al. studied 74 patients with IDH-wildtype glioblastoma who underwent repeat surgery, using contrast-enhanced T1 and dynamic contrast-enhanced perfusion radiomics with MGMT status (9). Their repeated nested cross-validation showed higher accuracy for the combined classifier than for radiomics alone, with lesion labels determined by histopathology. These reports motivate evaluating complementary information but do not establish that our limited clinical inputs or eight MRI descriptors capture the same signal. Our outcome also encompasses broader treatment-related change, limiting alignment with their pseudoprogression endpoints. Related work by Reecher et al. used UCSD-PTGBM itself (19); its shared parent dataset precludes treating it as independent confirmation. Our study provides a paired assessment of fixed, low-dimensional clinical-MRI fusion on matched examinations. Differences in patient selection, reference standards, input availability and validation designs prevent direct ranking of our model against these reports by AUC.",
+      "chinese": "本研究观察到的增量，与将定量MRI和非影像信息相结合的研究存在相似之处，但其预测变量组合与我们的研究有明显差异。在纳入222名3级或4级胶质瘤患者的单中心队列中，Zhou等将17项特征构成的影像组学评分与相对脑血容量、表观扩散系数、中性粒细胞与淋巴细胞比值、MGMT启动子甲基化及替莫唑胺治疗相整合（8）。其分层7∶3内部划分中，整合模型的验证AUC为0.811，不含影像组学评分的模型为0.744。因此，该比较评估的是影像组学在已经包含高级影像和分子信息的基线模型之上的价值。McKenney等研究了74名接受再次手术的IDH野生型胶质母细胞瘤患者，将增强T1及动态对比增强灌注影像组学与MGMT状态结合（9）。其重复嵌套交叉验证显示，组合分类器的准确率高于单独影像组学分类器，病灶标签由组织病理学确定。这些研究支持评估信息互补性的研究思路，但不能证明我们有限的临床输入或8项MRI描述特征捕获了相同信号。我们的结局还涵盖更广泛的治疗相关改变，因此与这些研究的假性进展终点并不完全一致。Reecher等的相关工作也使用了UCSD-PTGBM（19）；由于共享同一母数据集，不能将其视为独立确认。我们的研究在匹配检查上，对固定低维临床-MRI融合进行了配对评估。患者选择、参考标准、可用输入和验证设计的差异，使得无法依据AUC将我们的模型与这些研究直接排名比较。",
+      "citation_ids": [
+        "S06",
+        "S12",
+        "S19"
+      ]
+    },
+    {
+      "id": "D3",
+      "english": "Published evidence does not show a uniform benefit from adding imaging information. Leone et al. evaluated 105 patients with IDH-wildtype glioblastoma, including 20 with pseudoprogression, using five repetitions of five-fold cross-validation (10). A clinical-MGMT reference model achieved an AUC of 0.69; adding median diffusion and perfusion measures produced 0.71 without a statistically significant improvement. Models incorporating radiomic features yielded AUCs of 0.52 and 0.54. Their baseline included MGMT status and extent of resection, which were absent from our M1, and outcomes largely relied on subsequent imaging and clinical evolution. Consequently, the differing results do not isolate an effect of model complexity or establish why fusion did or did not help. A separate study by de Godoy et al. applied a previously developed diffusion-perfusion model to 56 new patients and reported an AUC of 0.757 (11). At their 0.5 probability threshold, it correctly identified 18/19 pseudoprogression cases and 21/37 cases in the progression-plus-mixed-tumor group. However, mixed tumors were grouped with pseudoprogression during development and with progression during validation, changing the classification task. This was evaluation in a new cohort, but it did not test our features or model. These studies show why discrimination, class-specific recognition and endpoint alignment require separate scrutiny. For our analysis, the uncertain single-scan increment and limited treatment-change recognition remain material findings, despite the favorable primary AUC difference. Further evaluation should preserve the intended reference categories and assess a locked model in an independent cohort.",
+      "chinese": "已发表证据并未显示加入影像信息能够一致带来获益。Leone等采用5次重复的5折交叉验证，评估了105名IDH野生型胶质母细胞瘤患者，其中20名为假性进展（10）。临床-MGMT参考模型的AUC为0.69；加入扩散和灌注指标的中位数后为0.71，但改善未达到统计学显著性。纳入影像组学特征的模型AUC为0.52和0.54。其基线模型包含我们的M1未纳入的MGMT状态和切除范围，结局判断主要依赖后续影像及临床演变。因此，这些不同结果不能单独识别模型复杂度的影响，也不能确定融合产生或未产生获益的原因。另一项由de Godoy等开展的研究将既有扩散-灌注模型应用于56名新患者，报告AUC为0.757（11）。在其0.5概率阈值下，模型正确识别18/19例假性进展，以及进展及混合肿瘤组中的21/37例。然而，混合肿瘤在开发阶段归入假性进展组，在验证阶段归入进展组，因而分类任务发生了变化。这是在新队列中的评价，但并未检验我们的特征或模型。这些研究说明，鉴别能力、各类别的正确识别及终点一致性需要分别审视。对于本研究，尽管主要AUC差值有利，单扫描增量的不确定性和治疗相关改变识别不足仍是重要发现。后续评价应保持预期参考类别的一致，并在独立队列中评估锁定的模型。",
+      "citation_ids": [
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "id": "D4",
+      "english": "The computational contribution of this study is an auditable evaluation of low-dimensional feature-level fusion using public clinical and MRI data. Eight explicitly defined descriptors from FLAIR and postcontrast T1 images were concatenated with five clinical inputs and fitted with a fixed L2-regularized logistic model. This design makes the imaging contribution traceable to specified intensity and texture calculations and anchors the comparison to the same clinical input set. Evaluating all models on matched examinations with shared patient-grouped folds reduces the influence of case composition and partition differences on the incremental comparison. Training-fold preprocessing and retained OOF probabilities also make the relationship between inputs, fitted models and evaluation outputs inspectable. The public repository provides notebooks, derived feature tables, fold assignments and analysis locks, allowing model evaluation to be rerun from the saved features. Re-extracting features additionally requires the image files and their documented acquisition or restoration routes. This emphasis on processing details, comparator models, partitioning and code availability is consistent with methodological priorities described in METRICS (20). These contributions position the work as an application and evaluation study in medical image computing. They facilitate scrutiny of the reported increment, while the reference-standard and external-validation limitations still constrain its interpretation.",
+      "chinese": "本研究在计算方法方面的贡献，是利用公开临床与MRI数据，对低维特征级融合开展可核查的评价。将来自FLAIR和增强T1图像的8项明确定义的描述特征与5项临床输入拼接，采用固定的L2正则化Logistic模型拟合。这一设计使影像信息的贡献能够追溯至具体的强度和纹理计算，并使比较基于相同的临床输入集合。所有模型在匹配检查和共同的患者分组折上评价，减少了病例构成及分折差异对增量比较的影响。训练折内预处理和保留的OOF概率，也使输入、拟合模型与评价输出之间的关系可以检查。公开仓库提供Notebook、派生特征表、分折分配及分析锁，可利用保存的特征重新运行模型评价。重新提取特征则还需要影像文件，并使用已记录的获取或恢复途径。这种对处理细节、比较模型、数据划分和代码可用性的重视，与METRICS所描述的方法学关注点一致（20）。这些贡献将本研究定位为医学图像计算中的应用与评价研究。它们有助于审视所报告的增量，但参考标准和缺乏外部验证等局限仍限制了对该增量的解释。",
+      "citation_ids": [
+        "S33"
+      ]
+    },
+    {
+      "id": "D5",
+      "english": "The eight MRI inputs summarize different statistical aspects of the supplied annotation region. Mean intensity describes its average percentile-scaled signal, and standard deviation describes the spread of those values. Histogram entropy summarizes uncertainty in the discretized gray-level distribution without retaining voxel positions. GLCM contrast weights squared gray-level differences between neighboring voxels and therefore incorporates local spatial variation (6). These descriptors capture aspects of regional image appearance, with their interpretation depending on the supplied images and extraction rules. The union of all positive annotation labels does not isolate a histologically verified viable-tumor compartment. Duenweg et al. showed that normalization choices affected radiomic comparability across acquisition settings, including in brain imaging (21). Their findings do not establish an optimal transformation for our derived images. Here, percentile scaling and ROI-based discretization define the numerical context of the features; unknown spatial units further limit interpretation of texture at a physical distance. The fitted coefficients describe conditional associations within a penalized model, with their interpretation depending on feature scaling and the other included inputs. They do not establish independent risk factors or causal effects. Accordingly, the observed incremental discrimination supports a collective predictive signal within this dataset, without identifying a specific cellular mechanism.",
+      "chinese": "8项MRI输入概括了现成标注区域的不同统计特征。平均强度描述该区域经百分位缩放后的平均信号，标准差描述这些数值的离散程度。直方图熵概括离散化灰度分布的不确定性，不保留体素的位置。GLCM对比度对相邻体素间灰度差的平方进行加权，因此纳入了局部空间变化（6）。这些描述指标反映区域影像外观的某些方面，其解释取决于所提供的图像和提取规则。全部正值标注标签的并集，并不单独对应经组织学验证的存活肿瘤区室。Duenweg等发现，归一化选择会影响不同采集条件间的影像组学可比性，其中包括脑部影像（21）。其结果并不能确定我们这些派生图像的最优变换。在本研究中，百分位缩放和基于ROI的离散化界定了特征的数值含义；空间单位未知进一步限制了在物理距离上解释纹理的能力。拟合系数描述正则化模型内的条件关联，其解释取决于特征缩放和其他纳入的输入，并不能确立独立危险因素或因果效应。因此，所观察到的增量鉴别能力支持该数据集内存在整体预测信号，但不能据此确定某种具体的细胞机制。",
+      "citation_ids": [
+        "S32",
+        "S39"
+      ]
+    },
+    {
+      "id": "D6",
+      "english": "Boundary perturbation and repeated partitioning probe different sources of sensitivity. For Fusion, the eroded-minus-original AUC difference was 0.0062, with a conditional paired interval spanning zero. Preserving the original normalization and binning references while eroding the ROI suggests limited sensitivity to that specific boundary change under the fixed workflow. The result does not demonstrate equivalence or segmentation accuracy. Martin et al. examined scan-rescan repeatability of diffusion and perfusion radiomics (22), a measurement property that our erosion analysis does not test. Repeated patient-grouped validation instead examined sensitivity to the allocation of patients across training folds. The Fusion-minus-M1 AUC difference remained positive in all 20 partitions, supporting directional consistency within the available cohort. Because the same patients and labels were reused, the repetitions were neither independent replications nor external validation. Patient grouping addresses the dependence risk illustrated by Rosenblatt et al. using duplicated scans in connectome prediction (15), although that experiment does not quantify bias in our diagnostic task. Together, the analyses strengthen the internal sensitivity assessment while leaving uncertainty about source annotations, reference diagnoses and performance at other institutions unresolved. The original ROI and prespecified primary partition remain the basis of the main comparison.",
+      "chinese": "边界扰动和重复分折考察的是不同的敏感性来源。对于Fusion，腐蚀后减去原始ROI的AUC差值为0.0062，其条件性配对区间跨零。在保留原归一化及分箱参考的同时腐蚀ROI，提示在固定流程下，结果对这一特定边界变化的敏感性有限；该结果不能证明等价性或分割准确性。Martin等考察了扩散和灌注影像组学的扫描—重扫描可重复性（22），这是我们的腐蚀分析未检验的一种测量属性。重复患者分组验证则考察患者在训练折间分配所带来的敏感性。全部20套分折的Fusion减去M1的AUC差值均为正，支持现有队列内增量方向的一致性。由于重复使用了相同患者和标签，这些重复并非独立重复研究或外部验证。患者分组有助于应对Rosenblatt等通过连接组预测中的扫描复制实验所展示的依赖性风险（15），但该实验不能量化我们诊断任务中的偏倚。综合来看，这些分析加强了内部敏感性评价，但源标注、参考诊断以及其他机构中的表现仍存在未解决的不确定性。主要比较仍以原始ROI和预先指定的主分折为依据。",
+      "citation_ids": [
+        "S30",
+        "S27"
+      ]
+    },
+    {
+      "id": "D7",
+      "english": "The single-scan analysis leaves Fusion's incremental discrimination uncertain under the selected sampling scheme. Its conditional paired AUC-difference interval ranged from -0.015 to 0.252, accommodating a small disadvantage as well as a larger gain. Selection retained the same 135 patients but reduced treatment-related-change examinations from 41 to 22 and changed the label distribution, training samples and fold assignments. These concurrent changes prevent attributing the difference from the primary analysis solely to repeated scans. The smallest available numeric session also did not establish the first clinical visit. At the fixed threshold, Fusion correctly recognized only 2/22 treatment-related-change examinations, despite identifying most tumor examinations. This class-specific limitation remains relevant even when ranking performance is summarized by AUC. Equalizing contributions to one examination per patient does not create a cohort independent of the primary analysis or verify the source diagnoses. Guidance for external validation emphasizes a dataset representative of the target population and sample-size planning for precise performance estimates (23,24). Accordingly, the selected analysis is best interpreted as an internal sensitivity check. Confirmation of the increment requires independent data with adequate representation of both outcomes and evaluation of discrimination, calibration and class-specific performance.",
+      "chinese": "单扫描分析中，Fusion在所选抽样方案下的增量鉴别仍不确定。其条件性配对AUC差值区间为−0.015至0.252，既容许小幅劣势，也容许较大的增益。选择后仍为同一批135名患者，但治疗相关改变检查由41次减少至22次，标签分布、训练样本及分折分配也发生了变化。这些同时发生的变化，使我们不能将相较主分析的差异仅归因于重复扫描。最小可用数字会话编号也不能确定首次临床就诊。在固定阈值下，Fusion仅正确识别2/22次治疗相关改变检查，尽管识别出了大多数肿瘤检查。即使采用AUC概括排序能力，这一类别特异性的不足仍然重要。将贡献统一为每位患者一次检查，并不会形成独立于主分析的队列，也不能核实源诊断。外部验证指南强调，数据集应代表目标人群，并应为精确估计性能而规划样本量（23,24）。因此，所选分析更适合解释为内部敏感性检查。确认增量需要独立数据，充分覆盖两种结局，并评价鉴别能力、校准及各类别的表现。",
+      "citation_ids": [
+        "S25",
+        "S26"
+      ]
+    },
+    {
+      "id": "D8",
+      "english": "The principal limitation is that discrimination was evaluated against inherited examination labels rather than independently readjudicated diagnoses. We assigned tumor status to the complement of the 51-case negative list, following the published binary partition. This reproduces the source grouping but cannot resolve individual diagnostic uncertainty. The dataset authors reported pathological confirmation for 45 of 192 tumor examinations in the full collection; this aggregate cannot establish the pathology-confirmed fraction of our imaging subset (5). Other source classifications incorporated clinical and imaging assessment. The target may therefore partly reflect the imaging appearances from which predictors were derived, creating possible dependence between the reference standard and the index data. Its direction and magnitude were not measured. Treatment-related change also combined pseudoprogression, radiation necrosis and nonspecific changes. Disagreement between workbook and published subtype counts remained unresolved despite agreement in the binary total, limiting subtype-specific interpretation. Annotation introduces a separate uncertainty. The source paper describes automated BraTS segmentation followed by radiologist correction and approval, whereas its cellular-tumor masks used clinical, pathological and longitudinal imaging information (5). We used the BraTS-region union, not those cellular-tumor masks; the information available during correction of the supplied BraTS masks could not be confirmed. Unverified blinding remains a potential bias concern rather than evidence that leakage occurred. Reporting guidance calls for documenting reference-standard methods and annotation sources (17). Patient grouping prevents cross-fold patient overlap but cannot repair these upstream uncertainties, which warrant independent diagnostic adjudication and documented annotation procedures in subsequent evaluation.",
+      "chinese": "本研究的主要局限在于，鉴别能力是对照沿用的检查标签进行评价，而非对照独立重新裁定的诊断。我们依据已发表的二分类划分，将51例阴性清单之外的检查赋为肿瘤类。这能够重现源分组，但无法解决个体诊断的不确定性。数据集作者报告，完整数据集中192次肿瘤检查有45次获得病理证实；这一汇总不能确定本研究影像子集中病理证实检查的比例（5）。其他源分类纳入了临床与影像评估。因此，目标标签可能部分反映了用于提取预测变量的影像表现，使参考标准与受评价的影像数据之间存在潜在依赖，其方向和程度尚未测量。治疗相关改变还合并了假性进展、放射性坏死及非特异性改变。尽管二分类总数一致，工作簿与已发表亚型数量的差异仍未解决，限制了亚型特异性的解释。标注还带来另一项不确定性。源论文描述了BraTS自动分割后由放射科医师修正与审核的流程，而其细胞肿瘤掩膜使用了临床、病理及纵向影像信息（5）。本研究使用的是BraTS区域并集，而非这些细胞肿瘤掩膜；无法确认所用BraTS掩膜在修正过程中可获得哪些信息。盲法未经确认属于潜在偏倚问题，并非已经发生信息泄漏的证据。报告指南要求记录参考标准的获取方法及标注来源（17）。患者分组能够防止患者跨折重叠，但不能弥补这些上游不确定性，因此后续评价需要独立诊断裁定及有记录的标注流程。",
+      "citation_ids": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "D9",
+      "english": "Image processing limits the portability and biological interpretation of the observed signal. The supplied structural volumes were stored as unsigned 8-bit integers, so subsequent scaling could not recover distinctions absent from those derived values. Unknown spatial units also prevented physical-volume interpretation and defining texture neighborhoods in verified millimeters. Matching image and mask grids supported computation at corresponding voxel indices, but did not independently establish anatomical registration. Our positive-label union pooled the supplied annotation compartments, potentially combining different tissue and treatment effects within a single summary. No compartment-specific diagnostic claim follows from its predictive performance. We replaced percentile clipping with unclipped affine scaling after technical diagnostics revealed additional tail collapse. This documented engineering revision avoided further clipping, but was neither preregistered nor independently shown to be optimal. Evidence that normalization choices influence MRI feature comparability across acquisition settings reinforces the need for evaluation under other processing conditions (21). It does not validate our transform, and ROI-range fixed-bin-number texture features need not change under every positive affine transformation. Finally, the eight descriptors used only FLAIR and postcontrast T1 images. Quantitative ADC and perfusion information were not evaluated. The findings therefore concern this particular derived-image representation; confirmation with preserved acquisition metadata, verified spatial scales and standardized processing remains necessary.",
+      "chinese": "影像处理限制了所观察信号的可迁移性及生物学解释。所用结构影像以无符号8位整数存储，后续缩放无法恢复这些派生数值中已经不存在的差别。空间单位未知，也使我们无法按物理体积解释结果，或以经核实的毫米距离定义纹理邻域。图像与掩膜网格一致，支持在对应体素索引处计算，但并未独立证实解剖配准准确。我们将全部正标签取并集，合并了所提供的标注区域，可能在同一汇总中混合不同组织及治疗效应；其预测表现不能支持区域成分特异性的诊断结论。在技术诊断发现额外的尾部灰度合并后，我们将百分位裁切改为不裁切的仿射缩放。这项有记录的工程修订避免了进一步裁切，但并非预先注册，也未被独立证明为最优方案。有研究发现，强度归一化的选择会影响不同采集条件下MRI特征的可比性，因此有必要在其他处理条件下进行评价（21）。这一证据并未验证本研究的变换，而且按ROI范围进行固定箱数离散化的纹理特征，不一定随每一种正仿射变换而变化。最后，八项描述量仅使用FLAIR及增强T1图像，未评价定量ADC或灌注信息。因此，当前发现对应这一特定的派生影像表达；仍需在保留采集元数据、核实空间尺度并采用标准化处理的条件下进一步确认。",
+      "citation_ids": [
+        "S39"
+      ]
+    },
+    {
+      "id": "D10",
+      "english": "Availability-based sampling restricts the population represented by this analysis. MRI inputs were available for 182 of 238 eligible clinical examinations, leaving 56 examinations outside the paired model comparison. The included 135 patients and 41 treatment-related-change examinations provide limited coverage of the diagnostic spectrum; performance may differ in unavailable cases or other clinical settings. Repeated examinations increased observations without creating independent patients. Because fitting and pooled performance gave each examination equal weight, patients with more examinations contributed more than patients with a single scan, even though grouping prevented patient overlap between folds. Fusion also estimated 13 input coefficients from a modest cohort. Fixed regularization and the absence of tuning reduced analytical flexibility but did not establish that estimation was sufficiently stable. The initial-event interval was missing for 36 examinations and referred to heterogeneous starting events. Training-fold median imputation and a missingness indicator could not recover that history or establish an ignorable missingness mechanism. Finally, the patient-cluster bootstrap resampled fixed out-of-fold predictions without refitting. Its intervals therefore describe patient-sampling uncertainty conditional on those predictions, excluding variation from repeating model development. Repeated grouped splits assessed another aspect of instability within the same data; neither procedure substitutes for independent evaluation.",
+      "chinese": "基于可获得性的抽样限制了本分析所代表的人群。238次符合条件的临床检查中，182次具有可用MRI输入，其余56次未进入配对模型比较。纳入的135名患者及41次治疗相关改变检查，对诊断谱的覆盖有限；未能纳入的病例或其他临床场景中的表现可能不同。重复检查增加了观测次数，但没有增加独立患者数。模型拟合及汇总性能对每次检查赋予相同权重，因此，检查次数更多的患者比仅有一次扫描的患者贡献更大，尽管分组避免了患者在不同折之间重叠。Fusion还在规模有限的队列中估计了13项输入的系数。固定正则化且不进行调参减少了分析灵活性，但不能证明估计已足够稳定。36次检查的初始事件间隔缺失，且该间隔对应不同类型的起始事件。训练折内中位数填补及缺失指示变量无法恢复这些既往信息，也不能确认缺失机制可被忽略。最后，患者聚类bootstrap对固定的折外预测进行重采样，没有重新拟合。因此，其区间描述的是条件于这些预测的患者抽样不确定性，不包含重复模型开发产生的变异。重复分组分折在同一数据内评估了不稳定性的另一个方面；两种程序均不能替代独立评价。",
+      "citation_ids": []
+    },
+    {
+      "id": "D11",
+      "english": "Fusion's AUC of 0.782 indicates discrimination within this dataset, but does not establish reliable individual probabilities or a decision rule. Metrics Reloaded distinguishes classification at a threshold, discrimination across thresholds and calibration as complementary dimensions of evaluation (25). Here, the descriptive calibration slope of 0.667 raises concern about the spread of predicted probabilities, while the paired Brier-score and logarithmic-loss difference intervals included zero. At the unchanged threshold of 0.5, Fusion identified 130/141 tumor examinations but only 12/41 treatment-related-change examinations. For a task intended to distinguish treatment effects from tumor, the 29 treatment-change examinations classified as tumor remain a relevant limitation. These counts do not quantify the consequences of using the model, because no treatment decisions or downstream outcomes were evaluated. Nor does the small accuracy advantage over assigning all examinations to tumor establish clinical value. A clinically defensible threshold would require a defined action and consideration of the consequences of each type of error. Guidance recommends assessing net benefit across relevant, prespecified thresholds when predictions are intended to direct care (23). We did not perform that evaluation, recalibrate on independent data or compare the model with clinician decisions. The present evidence supports further evaluation of an incremental imaging signal, without establishing that model-guided care improves outcomes.",
+      "chinese": "Fusion的AUC为0.782，表明其在本数据集内具有鉴别能力，但不能据此确认个体概率可靠或确立决策规则。Metrics Reloaded将固定阈值分类、跨阈值鉴别及校准区分为相互补充的评价维度（25）。本研究描述性的校准斜率为0.667，提示预测概率的离散程度值得关注；同时，配对Brier评分及对数损失差值的区间均包含零。在保持不变的0.5阈值下，Fusion识别出130/141次肿瘤检查，但仅识别出12/41次治疗相关改变检查。对于旨在区分治疗效应与肿瘤的任务，29次治疗相关改变检查被判为肿瘤仍是重要局限。由于未评价任何治疗决策或后续结局，这些计数不能量化使用模型的后果。相较将所有检查均判为肿瘤的规则，准确率的小幅优势也不能确立临床价值。具有临床依据的阈值需要明确相应处置，并考虑每类错误的后果。指南建议，在预测用于指导诊疗时，应在相关且预先指定的阈值范围内评价净获益（23）。本研究未进行该项评价，未在独立数据上重新校准，也未与临床医师决策比较。现有证据支持进一步评价影像的增量信号，但不能证明模型指导诊疗能够改善结局。",
+      "citation_ids": [
+        "S37",
+        "S25"
+      ]
+    },
+    {
+      "id": "D12",
+      "english": "Further work should prioritize independently adjudicated examination diagnoses and documented annotation procedures, including the information available to annotators. Acquisition metadata and spatial scales should be verified, with preprocessing specified before evaluation. The locked clinical and fusion pipelines should be evaluated in an independent cohort representing the intended population, with sample size planned for precise performance estimation (23,24). Assessment should give particular attention to treatment-related-change recognition and calibration, alongside discrimination and probability error. Any clinical-utility study would additionally require a defined action and justified thresholds. These studies would provide evidence on whether the observed imaging increment persists beyond the present dataset.",
+      "chinese": "后续工作应优先取得经过独立裁定的检查诊断，并记录标注流程，包括标注者能够获得的信息。应核实采集元数据及空间尺度，并在评价前确定预处理流程。应在代表目标人群的独立队列中评价已锁定的临床与融合流程，并以精确估计性能为目标规划样本量（23,24）。除鉴别能力及概率误差外，评价尤其应关注治疗相关改变的识别与校准。任何临床效用研究还需要明确相应处置，并为阈值提供依据。这些研究将为所观察到的影像增量能否延续至当前数据集之外提供证据。",
+      "citation_ids": [
+        "S25",
+        "S26"
+      ]
+    },
+    {
+      "id": "C1",
+      "english": "This secondary analysis of public UCSD-PTGBM data supports an incremental MRI signal for distinguishing residual or recurrent tumor from treatment-related change after treatment for high-grade glioma. In 182 examinations from 135 patients, the fixed clinical-MRI fusion model achieved an out-of-fold AUC of 0.782, exceeding the expanded clinical model by 0.110, with a conditional paired 95% percentile interval of 0.021 to 0.214. The increment remained positive across 20 repeated patient-grouped partitions, while its presence and magnitude were uncertain in the single-scan analysis. Limited recognition of treatment-related change at the fixed threshold and unresolved improvements in probability error constrain clinical interpretation. The reproducible workflow provides a computational basis for evaluating low-dimensional fusion, subject to inherited diagnoses and the supplied derived images. Independent diagnostic evaluation and assessment of clinically justified decisions remain necessary to determine whether the observed increment generalizes and can support care.",
+      "chinese": "本项基于公开UCSD-PTGBM数据的二次分析支持存在MRI增量信号，用于鉴别高级别胶质瘤治疗后的残余或复发肿瘤与治疗相关改变。在135名患者的182次检查中，固定的临床–MRI融合模型获得0.782的折外AUC，较扩展临床模型提高0.110，条件性配对95%百分位区间为0.021至0.214。在20套重复患者分组分折中，增量均保持为正；但在单扫描分析中，增量是否存在及其大小仍不确定。固定阈值下对治疗相关改变的识别有限，且概率误差改善仍未确定，限制了临床解释。可复现的工作流程为低维融合评价提供了计算基础，其结论受沿用诊断及所用派生影像的约束。仍需独立诊断评价，并对具有临床依据的决策进行评估，才能判断所观察到的增量能否推广并支持诊疗。",
+      "citation_ids": []
+    }
+  ],
+  "main_english_words": 8200,
+  "total_english_narrative_including_abstract": 8447,
+  "reference_numbering": {
+    "S05": 1,
+    "S04": 2,
+    "S20": 3,
+    "S36": 4,
+    "S01": 5,
+    "S32": 6,
+    "S38": 7,
+    "S06": 8,
+    "S12": 9,
+    "S13": 10,
+    "S14": 11,
+    "S34": 12,
+    "S23": 13,
+    "S24": 14,
+    "S27": 15,
+    "S02": 16,
+    "S03": 17,
+    "S40": 18,
+    "S19": 19,
+    "S33": 20,
+    "S39": 21,
+    "S30": 22,
+    "S25": 23,
+    "S26": 24,
+    "S37": 25
+  },
+  "citation_crosswalk": [
+    {
+      "old": "1",
+      "new": 5,
+      "reference_id": "S01"
+    },
+    {
+      "old": "2",
+      "new": 16,
+      "reference_id": "S02"
+    },
+    {
+      "old": "3",
+      "new": 17,
+      "reference_id": "S03"
+    },
+    {
+      "old": "4",
+      "new": 6,
+      "reference_id": "S32"
+    },
+    {
+      "old": "5",
+      "new": 18,
+      "reference_id": "S40"
+    },
+    {
+      "old": "6",
+      "new": 8,
+      "reference_id": "S06"
+    },
+    {
+      "old": "7",
+      "new": 9,
+      "reference_id": "S12"
+    },
+    {
+      "old": "8",
+      "new": 19,
+      "reference_id": "S19"
+    },
+    {
+      "old": "9",
+      "new": 10,
+      "reference_id": "S13"
+    },
+    {
+      "old": "10",
+      "new": 11,
+      "reference_id": "S14"
+    },
+    {
+      "old": "11",
+      "new": 20,
+      "reference_id": "S33"
+    },
+    {
+      "old": "12",
+      "new": 21,
+      "reference_id": "S39"
+    },
+    {
+      "old": "13",
+      "new": 22,
+      "reference_id": "S30"
+    },
+    {
+      "old": "14",
+      "new": 15,
+      "reference_id": "S27"
+    },
+    {
+      "old": "15",
+      "new": 23,
+      "reference_id": "S25"
+    },
+    {
+      "old": "16",
+      "new": 24,
+      "reference_id": "S26"
+    },
+    {
+      "old": "17",
+      "new": 25,
+      "reference_id": "S37"
+    },
+    {
+      "old": "18",
+      "new": 1,
+      "reference_id": "S05"
+    },
+    {
+      "old": "19",
+      "new": 2,
+      "reference_id": "S04"
+    },
+    {
+      "old": "20",
+      "new": 3,
+      "reference_id": "S20"
+    },
+    {
+      "old": "21",
+      "new": 4,
+      "reference_id": "S36"
+    },
+    {
+      "old": "22",
+      "new": 7,
+      "reference_id": "S38"
+    },
+    {
+      "old": "23",
+      "new": 12,
+      "reference_id": "S34"
+    },
+    {
+      "old": "24",
+      "new": 13,
+      "reference_id": "S23"
+    },
+    {
+      "old": "25",
+      "new": 14,
+      "reference_id": "S24"
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "id": "S05",
+      "citation": "Wen PY, Weller M, Lee EQ, Touat M, Khasraw M, Rahman R, et al. Glioblastoma in adults: A Society for Neuro-Oncology (SNO) and European Society of Neuro-Oncology (EANO) consensus review on current management and future directions. Neuro Oncol. 2025;27(11):2751-2788. doi: 10.1093/neuonc/noaf177."
+    },
+    {
+      "number": 2,
+      "id": "S04",
+      "citation": "Wen PY, van den Bent M, Youssef G, Cloughesy TF, Ellingson BM, Weller M, et al. RANO 2.0: Update to the Response Assessment in Neuro-Oncology Criteria for High- and Low-Grade Gliomas in Adults. J Clin Oncol. 2023;41(33):5187-5199. doi: 10.1200/JCO.23.01059."
+    },
+    {
+      "number": 3,
+      "id": "S20",
+      "citation": "Reddy S, Lung T, Muniyappa S, Hadley C, Templeton B, Fritz J, et al. Radiomics and Radiogenomics in Differentiating Progression, Pseudoprogression, and Radiation Necrosis in Gliomas. Biomedicines. 2025;13(7):1778. doi: 10.3390/biomedicines13071778."
+    },
+    {
+      "number": 4,
+      "id": "S36",
+      "citation": "Ellingson BM, Sanvito F, Cloughesy TF, Huang RY, Villanueva-Meyer JE, Pope WB, et al. A Neuroradiologist's Guide to Operationalizing the Response Assessment in Neuro-Oncology (RANO) Criteria Version 2.0 for Gliomas in Adults. AJNR Am J Neuroradiol. 2024;45(12):1846-1856. doi: 10.3174/ajnr.A8396."
+    },
+    {
+      "number": 5,
+      "id": "S01",
+      "citation": "Gagnon L, Gupta D, Nguyen U, Correia de Verdier M, Saluja R, Mastorakos G, et al. The University of California San Diego Post-Treatment Glioblastoma (UCSD-PTGBM) annotated multimodal MRI Dataset. Sci Data. 2026;13(1):183. doi: 10.1038/s41597-025-06499-z."
+    },
+    {
+      "number": 6,
+      "id": "S32",
+      "citation": "Zwanenburg A, Vallières M, Abdalah MA, Aerts HJWL, Andrearczyk V, Apte A, et al. The Image Biomarker Standardization Initiative: Standardized Quantitative Radiomics for High-Throughput Image-based Phenotyping. Radiology. 2020;295(2):328-338. doi: 10.1148/radiol.2020191145."
+    },
+    {
+      "number": 7,
+      "id": "S38",
+      "citation": "Foltyn-Dumitru M, Schell M, Rastogi A, Sahm F, Kessler T, Wick W, et al. Impact of signal intensity normalization of MRI on the generalizability of radiomic-based prediction of molecular glioma subtypes. Eur Radiol. 2024;34(4):2782-2790. doi: 10.1007/s00330-023-10034-2."
+    },
+    {
+      "number": 8,
+      "id": "S06",
+      "citation": "Zhou J, Danmeng Z, Hui Y, Zhuohua X, Mingjing W, Ying L. Radiomics and clinical data predict pseudoprogression after radiotherapy in high-grade glioma. Front Oncol. 2026;16:1892760. doi: 10.3389/fonc.2026.1892760."
+    },
+    {
+      "number": 9,
+      "id": "S12",
+      "citation": "McKenney AS, Weg E, Bale TA, Wild AT, Um H, Fox MJ, et al. Radiomic Analysis to Predict Histopathologically Confirmed Pseudoprogression in Glioblastoma Patients. Adv Radiat Oncol. 2023;8(1):100916. doi: 10.1016/j.adro.2022.100916."
+    },
+    {
+      "number": 10,
+      "id": "S13",
+      "citation": "Leone R, Meredig H, Foltyn-Dumitru M, Sahm F, Hamelmann S, Kurz F, et al. Assessing the added value of apparent diffusion coefficient, cerebral blood volume, and radiomic magnetic resonance features for differentiation of pseudoprogression versus true tumor progression in patients with glioblastoma. Neurooncol Adv. 2023;5(1):vdad016. doi: 10.1093/noajnl/vdad016."
+    },
+    {
+      "number": 11,
+      "id": "S14",
+      "citation": "de Godoy LL, Mohan S, Wang S, Nasrallah MP, Sakai Y, O'Rourke DM, et al. Validation of multiparametric MRI based prediction model in identification of pseudoprogression in glioblastomas. J Transl Med. 2023;21(1):287. doi: 10.1186/s12967-023-03941-x."
+    },
+    {
+      "number": 12,
+      "id": "S34",
+      "citation": "Kocak B, Baessler B, Bakas S, Cuocolo R, Fedorov A, Maier-Hein L, et al. CheckList for EvaluAtion of Radiomics research (CLEAR): a step-by-step reporting guideline for authors and reviewers endorsed by ESR and EuSoMII. Insights Imaging. 2023;14(1):75. doi: 10.1186/s13244-023-01415-8."
+    },
+    {
+      "number": 13,
+      "id": "S23",
+      "citation": "Moons KGM, Damen JAA, Kaul T, Hooft L, Andaur Navarro C, Dhiman P, et al. PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods. BMJ. 2025;388:e082505. doi: 10.1136/bmj-2024-082505."
+    },
+    {
+      "number": 14,
+      "id": "S24",
+      "citation": "Collins GS, Dhiman P, Ma J, Schlussel MM, Archer L, Van Calster B, et al. Evaluation of clinical prediction models (part 1): from development to external validation. BMJ. 2024;384:e074819. doi: 10.1136/bmj-2023-074819."
+    },
+    {
+      "number": 15,
+      "id": "S27",
+      "citation": "Rosenblatt M, Tejavibulya L, Jiang R, Noble S, Scheinost D. Data leakage inflates prediction performance in connectome-based machine learning models. Nat Commun. 2024;15(1):1829. doi: 10.1038/s41467-024-46150-w."
+    },
+    {
+      "number": 16,
+      "id": "S02",
+      "citation": "Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi: 10.1136/bmj-2023-078378."
+    },
+    {
+      "number": 17,
+      "id": "S03",
+      "citation": "Tejani AS, Klontzas ME, Gatti AA, Mongan JT, Moy L, Park SH, et al. Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update. Radiol Artif Intell. 2024;6(4):e240300. doi: 10.1148/ryai.240300."
+    },
+    {
+      "number": 18,
+      "id": "S40",
+      "citation": "Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et al. Scikit-learn: Machine Learning in Python. J Mach Learn Res. 2011;12:2825-2830. Available from: https://www.jmlr.org/papers/v12/pedregosa11a.html"
+    },
+    {
+      "number": 19,
+      "id": "S19",
+      "citation": "Reecher HM, Duenweg SR, Lowman AK, Winiarz A, Nath B, Chao B, et al. A Comparison of Radio-Pathomic, Diffusion, and Perfusion Imaging Features for Identifying Pseudoprogression in Glioblastoma. AJNR Am J Neuroradiol. 2026. doi: 10.3174/ajnr.A9574."
+    },
+    {
+      "number": 20,
+      "id": "S33",
+      "citation": "Kocak B, Akinci D'Antonoli T, Mercaldo N, Alberich-Bayarri A, Baessler B, Ambrosini I, et al. METhodological RadiomICs Score (METRICS): a quality scoring tool for radiomics research endorsed by EuSoMII. Insights Imaging. 2024;15(1):8. doi: 10.1186/s13244-023-01572-w."
+    },
+    {
+      "number": 21,
+      "id": "S39",
+      "citation": "Duenweg SR, Bobholz SA, Lowman AK, Winiarz A, Nath B, Barrett MJ, et al. Comparison of intensity normalization methods in prostate, brain, and breast cancer multi-parametric magnetic resonance imaging. Front Oncol. 2025;15:1433444. doi: 10.3389/fonc.2025.1433444."
+    },
+    {
+      "number": 22,
+      "id": "S30",
+      "citation": "Martin P, Holloway L, Metcalfe P, Koh ES, Aly F, Chan E, et al. Repeatability of diffusion and perfusion MRI derived radiomic features in glioblastoma: a test-retest study. Phys Eng Sci Med. 2025;48(4):1691-1702. doi: 10.1007/s13246-025-01613-2."
+    },
+    {
+      "number": 23,
+      "id": "S25",
+      "citation": "Riley RD, Archer L, Snell KIE, Ensor J, Dhiman P, Martin GP, et al. Evaluation of clinical prediction models (part 2): how to undertake an external validation study. BMJ. 2024;384:e074820. doi: 10.1136/bmj-2023-074820."
+    },
+    {
+      "number": 24,
+      "id": "S26",
+      "citation": "Riley RD, Snell KIE, Archer L, Ensor J, Debray TPA, van Calster B, et al. Evaluation of clinical prediction models (part 3): calculating the sample size required for an external validation study. BMJ. 2024;384:e074821. doi: 10.1136/bmj-2023-074821."
+    },
+    {
+      "number": 25,
+      "id": "S37",
+      "citation": "Maier-Hein L, Reinke A, Godau P, Tizabi MD, Buettner F, Christodoulou E, et al. Metrics reloaded: recommendations for image analysis validation. Nat Methods. 2024;21(2):195-212. doi: 10.1038/s41592-023-02151-z."
+    }
+  ],
+  "tables": {
+    "Table1": {
+      "key": "Table1",
+      "title": "Table 1. Clinical characteristics of the imaging cohort",
+      "headers": [
+        "Characteristic",
+        "All imaging examinations",
+        "Tumor examinations",
+        "Treatment-related change"
+      ],
+      "notes": [
+        "Values are counts or n/N (%), except continuous variables, which are median [Q1, Q3]. Percentages use the examination count in each column. Q1 and Q3 denote the first and third quartiles.",
+        "Source-patient counts are deduplicated within each column; eight patients contributed examinations to both diagnostic categories. The initial event denotes the recorded initial surgery, treatment or diagnosis, not a uniform radiotherapy date. Interval summaries use known values without imputation."
+      ],
+      "rows": [
+        [
+          "Examinations, n",
+          "182",
+          "141",
+          "41"
+        ],
+        [
+          "Unique source patients, n",
+          "135",
+          "114",
+          "29"
+        ],
+        [
+          "Age, years",
+          "56.5 [49.0, 66.0]",
+          "58.0 [50.0, 67.0]",
+          "54.0 [48.0, 62.0]"
+        ],
+        [
+          "Male sex at birth",
+          "132/182 (72.5%)",
+          "105/141 (74.5%)",
+          "27/41 (65.9%)"
+        ],
+        [
+          "Tumor-labeled examinations",
+          "141/182 (77.5%)",
+          "141/141 (100.0%)",
+          "0/41 (0.0%)"
+        ],
+        [
+          "Treatment-related-change examinations",
+          "41/182 (22.5%)",
+          "0/141 (0.0%)",
+          "41/41 (100.0%)"
+        ],
+        [
+          "Days since initial event (known only)",
+          "154.0 [40.5, 359.5]",
+          "96.0 [36.0, 261.8]",
+          "346.0 [140.5, 563.2]"
+        ],
+        [
+          "Known interval",
+          "146/182 (80.2%)",
+          "108/141 (76.6%)",
+          "38/41 (92.7%)"
+        ],
+        [
+          "Missing interval",
+          "36/182 (19.8%)",
+          "33/141 (23.4%)",
+          "3/41 (7.3%)"
+        ],
+        [
+          "Other treatment before imaging",
+          "25/182 (13.7%)",
+          "20/141 (14.2%)",
+          "5/41 (12.2%)"
+        ]
+      ]
+    },
+    "TableS1": {
+      "key": "TableS1",
+      "title": "Table S1. Clinical characteristics by imaging coverage",
+      "headers": [
+        "Characteristic",
+        "Retained clinical cohort",
+        "Imaging coverage",
+        "No imaging coverage"
+      ],
+      "notes": [
+        "Values are counts or n/N (%), except continuous variables, which are median [Q1, Q3]. Percentages use the examination count in each column. Q1 and Q3 denote the first and third quartiles.",
+        "Coverage refers to the accessed image mirror. The 135 patients with coverage and 41 without coverage do not overlap in this cohort. The initial event denotes recorded surgery, treatment or diagnosis; interval summaries use known values without imputation. No between-group significance tests were performed."
+      ],
+      "rows": [
+        [
+          "Examinations, n",
+          "238",
+          "182",
+          "56"
+        ],
+        [
+          "Unique source patients, n",
+          "176",
+          "135",
+          "41"
+        ],
+        [
+          "Age, years",
+          "56.0 [47.0, 64.8]",
+          "56.5 [49.0, 66.0]",
+          "53.5 [45.0, 62.0]"
+        ],
+        [
+          "Male sex at birth",
+          "166/238 (69.7%)",
+          "132/182 (72.5%)",
+          "34/56 (60.7%)"
+        ],
+        [
+          "Tumor-labeled examinations",
+          "187/238 (78.6%)",
+          "141/182 (77.5%)",
+          "46/56 (82.1%)"
+        ],
+        [
+          "Treatment-related-change examinations",
+          "51/238 (21.4%)",
+          "41/182 (22.5%)",
+          "10/56 (17.9%)"
+        ],
+        [
+          "Days since initial event (known only)",
+          "153.5 [37.0, 364.2]",
+          "154.0 [40.5, 359.5]",
+          "153.0 [33.5, 439.2]"
+        ],
+        [
+          "Known interval",
+          "192/238 (80.7%)",
+          "146/182 (80.2%)",
+          "46/56 (82.1%)"
+        ],
+        [
+          "Missing interval",
+          "46/238 (19.3%)",
+          "36/182 (19.8%)",
+          "10/56 (17.9%)"
+        ],
+        [
+          "Other treatment before imaging",
+          "38/238 (16.0%)",
+          "25/182 (13.7%)",
+          "13/56 (23.2%)"
+        ]
+      ]
+    },
+    "Table2": {
+      "key": "Table2",
+      "title": "Table 2. Performance of the four fixed models",
+      "headers": [
+        "Model",
+        "ROC AUC (95% interval)",
+        "Brier score",
+        "AP for treatment change",
+        "Treatment change correct, n/N"
+      ],
+      "notes": [
+        "M0: age and sex; M1: expanded clinical inputs; MRI: eight MRI features; Fusion: clinical and MRI inputs. All models used the same 182 examinations and patient-grouped five-fold partition.",
+        "AUC intervals are the 2.5th and 97.5th percentiles of 2000 paired patient-cluster bootstrap attempts using fixed OOF probabilities without refitting. They do not capture full retraining or partition variability.",
+        "AP is average precision for treatment-related change, scored by one minus the tumor probability; its prevalence is 41/182 (0.225). Lower Brier scores indicate smaller probability error. Correct treatment-change counts use tumor probability below 0.5. Displayed metrics are rounded to three decimals; the accompanying CSV retains the original precision."
+      ],
+      "rows": [
+        [
+          "M0",
+          "0.526 [0.404, 0.644]",
+          "0.177",
+          "0.261",
+          "0/41"
+        ],
+        [
+          "M1",
+          "0.672 [0.553, 0.778]",
+          "0.163",
+          "0.354",
+          "2/41"
+        ],
+        [
+          "MRI",
+          "0.762 [0.683, 0.838]",
+          "0.151",
+          "0.444",
+          "12/41"
+        ],
+        [
+          "Fusion",
+          "0.782 [0.698, 0.859]",
+          "0.144",
+          "0.505",
+          "12/41"
+        ]
+      ]
+    },
+    "Table3": {
+      "key": "Table3",
+      "title": "Table 3. Paired incremental performance of Fusion versus M1",
+      "headers": [
+        "Metric",
+        "Fusion minus M1",
+        "95% paired interval",
+        "Role"
+      ],
+      "notes": [
+        "All differences are Fusion minus M1 on the same 182 examinations from 135 patients. Positive AUC or AP differences favor Fusion; negative Brier-score or logarithmic-loss differences favor Fusion.",
+        "Intervals are the 2.5th and 97.5th percentiles of 2000 paired patient-cluster bootstrap attempts. Both models use identical resampled groups and fixed OOF probabilities without refitting. The intervals do not include full retraining or partition variability.",
+        "ROC AUC is the sole primary incremental metric; other metrics are auxiliary summaries. AP denotes average precision for treatment-related change. Differences are calculated from unrounded metrics and displayed to three decimals."
+      ],
+      "rows": [
+        [
+          "ROC AUC",
+          "+0.110",
+          "[0.021, 0.214]",
+          "Primary"
+        ],
+        [
+          "Treatment-related-change AP",
+          "+0.152",
+          "[0.026, 0.268]",
+          "Auxiliary"
+        ],
+        [
+          "Brier score",
+          "-0.019",
+          "[-0.040, 0.002]",
+          "Auxiliary"
+        ],
+        [
+          "Logarithmic loss",
+          "-0.037",
+          "[-0.107, 0.039]",
+          "Auxiliary"
+        ]
+      ]
+    },
+    "TableS3": {
+      "key": "TableS3",
+      "title": "Table S3. Fixed-threshold classification and calibration diagnostics",
+      "headers": [
+        "Model",
+        "Treatment change correct, n/N",
+        "Tumor correct, n/N",
+        "Balanced accuracy",
+        "Calibration offset intercept",
+        "Calibration slope"
+      ],
+      "notes": [
+        "All counts refer to the same 182 examinations from 135 patients. Tumor probability at least 0.5 is classified as tumor; a lower probability is classified as treatment-related change. Balanced accuracy is the mean of tumor sensitivity and treatment-change recognition.",
+        "The calibration offset intercept is estimated with the predicted log odds as a fixed offset and slope set to one. The calibration slope is estimated jointly with a free intercept in a separate unpenalized logistic diagnostic regression. These two intercept definitions are distinct; the joint intercept is not shown here.",
+        "Calibration uses the pooled OOF predictions without subsequent recalibration or threshold changes. Values are descriptive estimates without calibration confidence intervals. Metrics are displayed to three decimals; class counts retain their exact denominators."
+      ],
+      "rows": [
+        [
+          "M0",
+          "0/41",
+          "140/141",
+          "0.496",
+          "-0.023",
+          "0.311"
+        ],
+        [
+          "M1",
+          "2/41",
+          "134/141",
+          "0.500",
+          "-0.023",
+          "0.761"
+        ],
+        [
+          "MRI",
+          "12/41",
+          "128/141",
+          "0.600",
+          "-0.058",
+          "0.678"
+        ],
+        [
+          "Fusion",
+          "12/41",
+          "130/141",
+          "0.607",
+          "-0.121",
+          "0.667"
+        ]
+      ]
+    },
+    "TableS4": {
+      "key": "TableS4",
+      "title": "Table S4. Original ROI and eroded-boundary sensitivity",
+      "headers": [
+        "Model",
+        "ROC AUC (95% interval)",
+        "Brier score",
+        "AP for treatment change",
+        "Treatment change correct, n/N"
+      ],
+      "notes": [
+        "All models used the same 182 examinations, patient groups, folds and fixed model settings. Eroded models replaced the eight MRI features while retaining the image-specific normalization parameters and full-ROI discretization boundaries.",
+        "The paired eroded-minus-original Fusion AUC difference was 0.0062 (95% interval, -0.0051 to 0.0183). Intervals use 2000 patient-cluster bootstrap attempts with fixed OOF probabilities and no refitting; they do not include full retraining or partition variability.",
+        "AP denotes average precision for treatment-related change, using one minus the tumor probability. Lower Brier scores indicate smaller probability error. Treatment-change correct counts use tumor probability below 0.5. The original ROI remained primary. Performance values are displayed to three decimals; the small paired AUC difference and its interval are shown to four decimals."
+      ],
+      "rows": [
+        [
+          "Original MRI",
+          "0.762 [0.683, 0.838]",
+          "0.151",
+          "0.444",
+          "12/41"
+        ],
+        [
+          "Original Fusion",
+          "0.782 [0.698, 0.859]",
+          "0.144",
+          "0.505",
+          "12/41"
+        ],
+        [
+          "Eroded MRI",
+          "0.765 [0.684, 0.844]",
+          "0.149",
+          "0.458",
+          "11/41"
+        ],
+        [
+          "Eroded Fusion",
+          "0.788 [0.706, 0.867]",
+          "0.141",
+          "0.529",
+          "14/41"
+        ]
+      ]
+    },
+    "TableS5A": {
+      "key": "TableS5A",
+      "title": "Table S5A. Performance across 20 fixed patient-grouped partitions",
+      "headers": [
+        "Model",
+        "Median ROC AUC [Q1, Q3]",
+        "ROC AUC range",
+        "Median Brier score"
+      ],
+      "notes": [
+        "All 20 repetitions were complete. Each repetition evaluated the same 182 examinations from 135 patients, using patient-grouped five-fold validation and the same fixed settings for M0, M1, MRI and Fusion.",
+        "Q1 and Q3 are the first and third quartiles across the 20 repetition-level estimates. Ranges are observed minima and maxima, not 95% confidence intervals. Repetitions reuse the same patients and are not independent studies. The primary Fusion AUC remains 0.782 from repetition 1."
+      ],
+      "rows": [
+        [
+          "M0",
+          "0.556 [0.528, 0.567]",
+          "[0.489, 0.594]",
+          "0.174"
+        ],
+        [
+          "M1",
+          "0.667 [0.650, 0.670]",
+          "[0.620, 0.685]",
+          "0.163"
+        ],
+        [
+          "MRI",
+          "0.775 [0.768, 0.783]",
+          "[0.759, 0.792]",
+          "0.148"
+        ],
+        [
+          "Fusion",
+          "0.784 [0.775, 0.795]",
+          "[0.759, 0.809]",
+          "0.143"
+        ]
+      ]
+    },
+    "TableS5B": {
+      "key": "TableS5B",
+      "title": "Table S5B. Fusion-minus-M1 differences across the 20 partitions",
+      "headers": [
+        "Metric",
+        "Median difference [Q1, Q3]",
+        "Difference range",
+        "Favorable repetitions, n/N"
+      ],
+      "notes": [
+        "Differences are calculated as Fusion minus M1 within each repetition, then summarized across repetitions. The median paired difference is not obtained by subtracting the two models’ separate medians.",
+        "Positive AUC or treatment-change AP differences and negative Brier-score or logarithmic-loss differences favor Fusion. AP denotes average precision for treatment-related change. Q1 and Q3 are quartiles, and ranges are observed minima and maxima.",
+        "Sign counts, including 20/20, are descriptive summaries of reused patients across fixed partitions. They are not independent replications or hypothesis tests and do not replace the primary paired patient-bootstrap intervals. Values are displayed to three decimals."
+      ],
+      "rows": [
+        [
+          "ROC AUC",
+          "+0.125 [0.118, 0.135]",
+          "[0.103, 0.150]",
+          "20/20"
+        ],
+        [
+          "Treatment-related-change AP",
+          "+0.125 [0.108, 0.139]",
+          "[0.068, 0.176]",
+          "20/20"
+        ],
+        [
+          "Brier score",
+          "-0.019 [-0.023, -0.018]",
+          "[-0.027, -0.014]",
+          "20/20"
+        ],
+        [
+          "Logarithmic loss",
+          "-0.047 [-0.058, -0.038]",
+          "[-0.071, -0.022]",
+          "20/20"
+        ]
+      ]
+    },
+    "TableS6": {
+      "key": "TableS6",
+      "title": "Table S6. Performance in the one-examination-per-patient analysis",
+      "headers": [
+        "Model",
+        "ROC AUC (95% interval)",
+        "Brier score",
+        "AP for treatment change",
+        "Treatment change correct, n/N"
+      ],
+      "notes": [
+        "The selected cohort contains 135 examinations from 135 patients, including 113 tumor and 22 treatment-related-change examinations. Each patient contributes the smallest available numeric session in the imaging subset; this is not necessarily the first clinical examination.",
+        "Four models share the rebuilt patient-grouped five-fold partition. Intervals use 2000 patient-bootstrap attempts with fixed OOF probabilities and no model refitting. They do not capture full retraining or partition variability.",
+        "AP denotes average precision for treatment-related change, scored by one minus the tumor probability. Correct treatment-change counts use tumor probability below 0.5. Values are displayed to three decimals. The cohort has different examination composition, class distribution and training data from the primary analysis."
+      ],
+      "rows": [
+        [
+          "M0",
+          "0.501 [0.364, 0.639]",
+          "0.137",
+          "0.205",
+          "0/22"
+        ],
+        [
+          "M1",
+          "0.609 [0.438, 0.776]",
+          "0.132",
+          "0.283",
+          "0/22"
+        ],
+        [
+          "MRI",
+          "0.729 [0.609, 0.837]",
+          "0.130",
+          "0.316",
+          "2/22"
+        ],
+        [
+          "Fusion",
+          "0.730 [0.606, 0.833]",
+          "0.133",
+          "0.322",
+          "2/22"
+        ]
+      ]
+    },
+    "TableS7": {
+      "key": "TableS7",
+      "title": "Table S7. Paired Fusion-minus-M1 differences in the single-scan analysis",
+      "headers": [
+        "Metric",
+        "Fusion minus M1",
+        "95% paired interval"
+      ],
+      "notes": [
+        "Differences use the same 135 selected examinations and rebuilt grouped folds. Positive AUC or treatment-change AP differences favor Fusion; negative Brier-score or logarithmic-loss differences favor Fusion.",
+        "Intervals are the 2.5th and 97.5th percentiles of 2000 paired patient-bootstrap attempts with fixed OOF predictions and no refitting. All four intervals include zero. The result does not replace the primary comparison.",
+        "AP denotes average precision for treatment-related change. Differences are calculated from unrounded metrics and displayed to four decimals to preserve the small positive Brier difference. This is a sensitivity comparison within the selected cohort, not a paired contrast between the 135- and 182-examination analyses."
+      ],
+      "rows": [
+        [
+          "ROC AUC",
+          "+0.1203",
+          "[-0.0151, 0.2522]"
+        ],
+        [
+          "Treatment-related-change AP",
+          "+0.0385",
+          "[-0.0733, 0.1566]"
+        ],
+        [
+          "Brier score",
+          "+0.0004",
+          "[-0.0171, 0.0197]"
+        ],
+        [
+          "Logarithmic loss",
+          "-0.0141",
+          "[-0.0731, 0.0501]"
+        ]
+      ]
+    },
+    "TableS2": {
+      "key": "TableS2",
+      "title": "Table S2. Predictor definitions and processing",
+      "headers": [
+        "Variable",
+        "Definition",
+        "Models",
+        "Processing and units"
+      ],
+      "rows": [
+        [
+          "age_years",
+          "Age at imaging",
+          "M0 M1 Fusion",
+          "Years; standardized within each training fold."
+        ],
+        [
+          "sex_male",
+          "Male sex at birth",
+          "M0 M1 Fusion",
+          "Male=1, female=0; not scaled."
+        ],
+        [
+          "log_initial_event_days",
+          "Interval since initial event",
+          "M1 Fusion",
+          "Natural log of one plus elapsed days; training-fold median imputation and standardization."
+        ],
+        [
+          "other_treatment_prior",
+          "Other treatment before imaging",
+          "M1 Fusion",
+          "Yes=1, no=0; not scaled."
+        ],
+        [
+          "initial_event_missing",
+          "Missing initial-event interval",
+          "M1 Fusion",
+          "Missing=1, observed=0; not scaled."
+        ],
+        [
+          "FLAIR_mean",
+          "FLAIR mean",
+          "MRI Fusion",
+          "Dimensionless, unclipped percentile-scaled ROI mean; training-fold standardization."
+        ],
+        [
+          "FLAIR_std",
+          "FLAIR standard deviation",
+          "MRI Fusion",
+          "Dimensionless; population SD (ddof=0); training-fold standardization."
+        ],
+        [
+          "FLAIR_entropy",
+          "FLAIR entropy",
+          "MRI Fusion",
+          "Bits; Shannon entropy with 32 ROI-range bins; training-fold standardization."
+        ],
+        [
+          "FLAIR_glcm_contrast",
+          "FLAIR GLCM contrast",
+          "MRI Fusion",
+          "Squared bin-index differences; symmetric counts merged across 13 directions; training-fold standardization."
+        ],
+        [
+          "T1post_mean",
+          "Postcontrast T1 mean",
+          "MRI Fusion",
+          "Dimensionless, unclipped percentile-scaled ROI mean; training-fold standardization."
+        ],
+        [
+          "T1post_std",
+          "Postcontrast T1 standard deviation",
+          "MRI Fusion",
+          "Dimensionless; population SD (ddof=0); training-fold standardization."
+        ],
+        [
+          "T1post_entropy",
+          "Postcontrast T1 entropy",
+          "MRI Fusion",
+          "Bits; Shannon entropy with 32 ROI-range bins; training-fold standardization."
+        ],
+        [
+          "T1post_glcm_contrast",
+          "Postcontrast T1 GLCM contrast",
+          "MRI Fusion",
+          "Squared bin-index differences; symmetric counts merged across 13 directions; training-fold standardization."
+        ]
+      ],
+      "notes": [
+        "M0: age and sex; M1: expanded clinical model; MRI: image features only; Fusion: clinical and MRI inputs. All learning of imputation and scaling parameters was confined to training folds.",
+        "The initial event could be initial surgery, another initial treatment, or diagnosis; only strictly negative source offsets were accepted as preceding the examination. Missing or nonnegative offsets were not treated as valid elapsed intervals.",
+        "MRI inputs used the union of positive supplied BraTS labels, without tissue-specific reinterpretation. The supplied spatial units were unknown; physical volumes and quantitative ADC were not included."
+      ]
+    }
+  },
+  "figures": {
+    "Figure 1": {
+      "path": "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.png",
+      "caption": "Figure 1. Cohort assembly and analysis populations. Counts refer to examinations and source patients. After identifier quarantine, the imaging cohort included 182 examinations from 135 patients. The one-scan-per-patient sensitivity analysis selected the smallest available session number within this imaging cohort. It does not necessarily represent the first examination in the clinical course.",
+      "sha256": "defd01a050fa66a4490e23aa3dde3696f38caa46fff4056bd02ac1ca957bb5dd"
+    },
+    "Figure 2": {
+      "path": "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.png",
+      "caption": "Figure 2. Internal validation of the four fixed models in 182 examinations from 135 patients. A, ROC curves based on pooled patient-grouped OOF probabilities. B, Precision-recall curves for treatment-related change; the dashed horizontal line marks its examination-level prevalence. AP denotes average precision. C, Descriptive calibration using predicted-probability quantile groups, with mean predicted tumor probability plotted against observed tumor proportion. The diagonal line in A is a reference for nondiscrimination and in C for agreement. Calibration summaries were not used to recalibrate the evaluated probabilities.",
+      "sha256": "f963c084ebc75d93d6cd09851f7b23943cb8e5f64f2a40d9518bf86a64a0c6fd"
+    },
+    "Figure S1": {
+      "path": "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.png",
+      "caption": "Figure S1. Boundary sensitivity in the same 182 examinations from 135 patients. Points show pooled OOF AUCs for the original and eroded MRI and Fusion models. Error bars are 95% patient-cluster bootstrap percentile intervals conditional on fixed OOF probabilities, without model refitting. The paired eroded-minus-original Fusion difference is reported in the text and Table S4 notes. Erosion used one iteration of the six-neighbor operation on the supplied voxel grid; this was not interpreted as a fixed millimeter distance. The original ROI analysis remained primary.",
+      "sha256": "b0f191c7123c543e048b0202d94f32aa38cd59dc539aa536d0d5cd1db485416c"
+    },
+    "Figure 3": {
+      "path": "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.png",
+      "caption": "Figure 3. Sensitivity to 20 prespecified patient-grouped five-fold partitions. A, Pooled OOF AUC for each of the four fixed models within each repetition. B, Fusion-minus-M1 AUC differences calculated within the corresponding repetition; the dashed line marks zero. All repetitions reused the same 182 examinations from 135 patients. The repetitions are not independent validation cohorts, and their distribution does not define a confidence interval. Repetition 1 reproduces the primary partition. The highest AUC was not used to select a replacement analysis.",
+      "sha256": "c0653b915db7ca522b15f94e920accca79d78b63841f6b84634b3d7170ea9c0d"
+    },
+    "Figure S2": {
+      "path": "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.png",
+      "caption": "Figure S2. Sensitivity analysis using one available examination per patient. The selected cohort contains 135 examinations, including 113 tumor and 22 treatment-related-change examinations. A, Pooled OOF AUCs with patient-bootstrap 95% percentile intervals conditional on fixed predictions without refitting. B, Treatment-change recognition at the fixed tumor-probability threshold of 0.5, with exact correct/total counts. Selection used the smallest numeric session available in the imaging subset and does not establish the true first clinical visit. The analysis used rebuilt grouped folds and does not replace the primary 182-examination analysis.",
+      "sha256": "a6150303de742144942c485a5d1d4a820f3399ae17ee41a307150709937d081d"
+    }
+  },
+  "source_files_sha256": {
+    "data/processed/ucsd_clinical_revalidated_cohort.csv": "a57c9ee9c27cc261045a006675957482bd0bcfec9a9ce36735cd5abca5487006",
+    "data/processed/ucsd_clinical_image_features.csv": "d9e7041bc4d6d99fb53fd6057aae00ad958308968bf9ac38c0cb91995cb3b757",
+    "data/processed/ucsd_fusion_oof.csv": "a50d076eff8a49f1f97cbf2e32150a307757f1775bb9e3d99fcb7911b23a178d",
+    "reports/ucsd_fusion/metrics.json": "2cd0e75d4647644133827a4a521b8f286a994f8b6ddd7569aed8927db661d2ac",
+    "reports/ucsd_fusion/calibration_bins.csv": "bb339ad9b2597a1822cca67565133c08be5efd8f08e30bd493bc9bdc018e8a75",
+    "reports/ucsd_fusion/paired_comparisons.csv": "34426e0eea12e85559d69ad0d6ac97e77f8ab5db8206846e1fc42aa896126e8a",
+    "reports/ucsd_stability/metrics.json": "c536aa22d36fe2f658dde0ad5ad685a09411fe68c69953d9675fdb763f40f502",
+    "reports/ucsd_stability/repeated_metrics.csv": "22d5c081bc550e22baf903ab508b3bee0bf6f7fe392f0b040d591243c1d05ce5",
+    "reports/ucsd_stability/repeated_metric_distribution.csv": "e4937ad6202c69d9c7f342e7d710c39b3da89679e5a79e9406439e3dcad9a15b",
+    "reports/ucsd_stability/repeated_delta_distribution.csv": "73aeab62b42e76503cf578e862a5e3b592ed35e0c53d55065a0b2fc349b4ba91",
+    "reports/ucsd_stability/single_scan_metrics.csv": "dfacdf34d691a260b00c0fe4896ee2e6c921fa8acf953a3abf7b6e42f7e76357",
+    "reports/ucsd_batch_features/feature_dictionary.csv": "ed4f760acd7458e13362dbe8fd31d06c852d37db4708951d81e15b98b2429401",
+    "data/raw/reference/ucsd_ptgbm_clinical_v3.xlsx": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+    "reports/ucsd_clinical_revalidation/excluded_identity_conflicts.csv": "6eb454c93a4776ac334007bc4961bf46dc984148c935bc34569c1baa3b01f0ae",
+    "outputs/ucsd-paper-materials-20261029/tables/Table2.csv": "87b1c491f98965ea1049579f85afba1cba48e63912a0db503a4a9d37ab0ccaaa",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS2.csv": "c426fdaf40a6e1d6bc224d656461cf04d155608113926a5ee4c988468c7ce8b6",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS4.csv": "fe867cebfef2d7cf6eb26f7221f391a1e64672d13c60de375e1513b420e8c55d",
+    "outputs/ucsd-paper-materials-20261029/tables/Table1.csv": "8756d1457f4f2165cefeed9f3f5e861934b8b2e8ed8b8144810fe41ff01fb54f",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS6.csv": "149c088ea0a00911265c52b1f838045e3d326c661e1c022a9820923ea305ae0a",
+    "outputs/ucsd-paper-materials-20261029/tables/Table3.csv": "f27726581b9eb768203fd608d269943e8cd9f4bb4aff9da7b04f4d67a5aa0c1b",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS5B.csv": "ffe83df867f287aa7089ef0347aed452e5c3fa0abb0ddf016f115c26ab085a91",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS7.csv": "b0d90fa3635911584b38cad9aa9230fb23281441b9b9b934fbc34757e57f7bb0",
+    "outputs/ucsd-paper-materials-20261029/tables/baseline_numeric_details.csv": "438600e9adbc801c43cd4be883a719268b5816279db0049c74130c39ed6f6b46",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS5A.csv": "0ba5acec599be8ff2ad905340894643022a0cd1450fd5b359578a1a48ddfae01",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS1.csv": "a6f7a40398a160f53bc8ba55cb9b8a56e65140080c839b78e8020134902f2369",
+    "outputs/ucsd-paper-materials-20261029/tables/TableS3.csv": "09e739186144f5f1a44ca3a35a89603f5154837b2755ea2e19b31c3c3cf4faea",
+    "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.pdf": "8d194c10d9f06fcae135f237d19a7b6e299fafe3d1ccb43cb6a5c6f03b40fc1a",
+    "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.pdf": "f7f4d73ee0332a9726df3d1c5e2ee2098d5aa5328624bfdfbcb26d0f3853e822",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.png": "c0653b915db7ca522b15f94e920accca79d78b63841f6b84634b3d7170ea9c0d",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.pdf": "e4866c730bf0d130cd5a4e14d7b8c719697217a3d34bba05b4006b569ea3ec46",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.svg": "3450194852ffa1eb836ae02e840eb18588278f56e73c5d2aa289b494537dd442",
+    "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.png": "b0f191c7123c543e048b0202d94f32aa38cd59dc539aa536d0d5cd1db485416c",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.svg": "0376467c7559781b30f7df95dcca95a4058fba74f3f8c1892958e04352716abd",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure1_Cohort_Flow.png": "defd01a050fa66a4490e23aa3dde3696f38caa46fff4056bd02ac1ca957bb5dd",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.pdf": "26477dfd9685a687a35c03ec2e609cec3e5bb591c8cb12e3943d2ab4a52c8c76",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.png": "f963c084ebc75d93d6cd09851f7b23943cb8e5f64f2a40d9518bf86a64a0c6fd",
+    "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.svg": "0c90290cc3bf9ed6474e2b370dd383545683fcbe6b68e0c05658a0c33885af36",
+    "outputs/ucsd-paper-materials-20261029/figures/FigureS2_Single_Scan.png": "a6150303de742144942c485a5d1d4a820f3399ae17ee41a307150709937d081d",
+    "outputs/ucsd-paper-materials-20261029/figures/FigureS1_Boundary_Sensitivity.svg": "adaad873aa229c31f8300e50066b95ae8c1442e4efc6f25d77bfc84b5fb46772",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure3_Repeat_Stability.pdf": "4019c556d58a12d772cd186eb236c1204e18b4296588a3fee33089a80b0507a1",
+    "outputs/ucsd-paper-materials-20261029/figures/Figure2_Main_Comparison.svg": "1269f790be6bd9e5b5cfc4fe5ba9a95d18f74485d1356b1c12b12fd1364a34dc",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Candidate_References.ris": "c880ba8adb208a120fab1565f7d846e79aea863c86517841d6af5c707a4a1ab1",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Candidate_References.txt": "4f116bbae286b57c70e770d4e52f06b0bf08f66305a7b6a992ae2aac986bee35",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN.txt": "251b66876fcb2d626eed4a7a93b7ab83c60585a54a6a97b6a6fd461deba90d4a",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Manuscript_Methods_2_1_EN_ZH.docx": "fd1666efde9eec2f2ea8efe43e244187101cf8dd26d723e5346c8c5653d29db8",
+    "outputs/ucsd-manuscript-step23-20261029/UCSD_Reference_Evidence_Library.xlsx": "35a7e23aef16ec1161d484ec04bf82b38f5b191c905e1c22b8f86a38797e6235",
+    "reports/ucsd_writing_requirements_v2/requirements_and_outline.json": "8055a718f327a3e18243f25d5d6c6a524c8d04b3ad533207d5531efba17d7071",
+    "reports/ucsd_manuscript_step23/reference_library.json": "fc83b8dab91de32e75374b378be3c606fd458209d64fdf28f7b82ff699dcbbf3",
+    "reports/ucsd_manuscript_step23/methods_section21.json": "734954ffe49046d4c367ec202eac2c26cf8622322aacbc3dab59893ff1464dde",
+    "outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN_ZH.docx": "2887f60c47245db525b886e899175a6132e4832292d08c73a317647baa89aa96",
+    "outputs/ucsd-manuscript-step24-20261029/UCSD_Manuscript_Methods_2_2_EN.txt": "ac0e888408b9d74c21b01048870c8d1f6a7afed5e94be339b7b4e5b1aaa018d0",
+    "src/rn_public/ucsd_clinical_revalidation.py": "050a4aaf0e9602b7c9d79e0132301e415b5390a02a9151e084a416ace6db0413",
+    "src/rn_public/ucsd_fusion.py": "78f835bfe655d5445187f22bb606b477893c96444ad5eb2fbda1301b3afeef2a",
+    "reports/ucsd_fusion/fold_audit.json": "8e7893716ddb9fb840cfceadbe1c7d872bab1495e1a805102e8c7a3260f7cec4",
+    "reports/ucsd_fusion/cohort_and_fold_manifest.csv": "1614cb85aa55914a33a86fd28cdb5b9bab15e17b732ee1d1914917a87e061fcc",
+    "reports/ucsd_feature_audit/clinical_field_audit.csv": "d19c57a509f23fa94a2c9884372ab58291f26f07794520f6840973989f6d0a8d",
+    "reports/ucsd_clinical_revalidation_protocol.md": "7604aaa63d8007dd5562c3b8ee5b9fc5188b7313e395ab13e64b2e13fbee5554",
+    "outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN.txt": "2c1dec5430daeb1292ce3eb17f5674197bd510fac66ba808d8c94fcd79d1af94",
+    "outputs/ucsd-manuscript-step25-20261029/UCSD_Manuscript_Methods_2_3_EN_ZH.docx": "1686763a05d0c06272a96117892a09ca5bfba21499a644c41e3ef7311f9bbd96",
+    "reports/ucsd_batch_features/batch_receipt.json": "03f46387ba452b283a093444c20c798864f2c67905d0fb6049e78f5020bf67fe",
+    "reports/ucsd_batch_features/actual_file_QC.csv": "f4c52701950886256d52d5d22db3a38c8855bc8b350fef8d0796566a575ef5ce",
+    "reports/ucsd_batch_features/source_manifest.csv": "ab5e39540e033b81c3e38c4e37ff6ff91efe0cbc7b27054f4081e9126b20908c",
+    "reports/ucsd_batch_features_protocol.md": "97295726f97902b3f21480d825534b0b224d2ef905f6cb0e5dfb283490919109",
+    "reports/ucsd_roi_pilot_protocol.md": "b76ff2ff93676d6ea80445068b127c1c2f4cce3e191d9dc4729ab373f531ec91",
+    "src/rn_public/ucsd_batch_features.py": "5bd243d1f22e7e555d9e3b3689729bd88c3da7d5d2a77f712dcf89238aa94a96",
+    "src/rn_public/ucsd_roi_pilot.py": "291268b9aa038b02912d199178bb06e24f105268db95a8850e011d01a43bd6f0",
+    "reports/ucsd_mri_mirror/observed_header_notes.md": "b69beffaf90798ad306f4c94163efe1694998215fc818dfd420ec776280ac943",
+    "outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN.txt": "f486cbd9b3ad68fd66a83d3c671d4a1880e72deb8181cbc07d0cc7742edf1864",
+    "outputs/ucsd-manuscript-step26-20261029/UCSD_Manuscript_Methods_2_4_EN_ZH.docx": "2a1866a83ee9a69633cf1a20ccc689ef9104174c6012b5c82487bf3c8c3b2ce5",
+    "reports/ucsd_roi_pilot/normalization_choice.json": "ccd05f2434d6ecad762b579ba0adb735083d0efbd7bdd1a1ae8b5656e8e6d683",
+    "reports/ucsd_roi_pilot_intensity_amendment.md": "f6917cdfac7ab2bd50cbb0eb3fbe0c5bd096808f284595d0099a4f3503246a60",
+    "reports/ucsd_batch_features/normalization_and_texture_diagnostics.csv": "ac173a725a82f0dc840c5ff8003a91c379fa1fb8c0ca86b31ebb72fccd326e49",
+    "src/rn_public/ucsd_intensity_followup.py": "670290f35c2e5b79dc1de254b21fd0cc4a200b935ae0d2eb7779c3e3bf1b5774",
+    "outputs/ucsd-manuscript-step27-20261029/UCSD_Manuscript_Methods_2_5_EN.txt": "acc6177bd92b60a42c1062175b174d6bf8d7301dbff0a80847b4be85f3ceff58",
+    "outputs/ucsd-manuscript-step27-20261029/UCSD_Manuscript_Methods_2_5_EN_ZH.docx": "510bfbff52f030bc5ac27255c3084c13f23b140867ee8c8de54913d5df1bbaa6",
+    "reports/ucsd_fusion/analysis_lock.json": "95e1a60dbfff553c76209ba96d1262d0554e50d62b387c217cac9d840332485b",
+    "reports/ucsd_fusion_protocol.md": "83c590fbff2abf2dbaf657d2e61995c7f15a573876bfb3f99108b0693a8dc3eb",
+    "scripts/build_ucsd_methods_section25.py": "9ffa2fd239932e5e5606352135fee524d20f06c6dffe04d8d98301bb38d46f29",
+    "outputs/ucsd-manuscript-step28-20261029/UCSD_Manuscript_Methods_2_6_EN_ZH.docx": "7dadd42b5fe9a706560a75e4c566de64ac4fc775c21371cd9c55e76e00d89614",
+    "outputs/ucsd-manuscript-step28-20261029/UCSD_Manuscript_Methods_2_6_EN.txt": "1ce17fe0ccaed4541c02e7b04caf589245fcef1bcb808b9ced1ec743b60f5bee",
+    "reports/ucsd_fusion/paired_patient_bootstrap.csv": "b453e9da9a01c50361c33677542b8fee528f0b01142bd7ce1393f359aae69824",
+    "src/rn_public/ucsd_clinical_baseline.py": "28def6e181f9e7f8c273efa59aaa7af12299eb740d6d49530c0eeb8de29eea2a",
+    "outputs/ucsd-manuscript-step29-20261029/UCSD_Manuscript_Methods_2_7_EN_ZH.docx": "68084ef5142bcdf6048a87e311c13dc5123fb0aa91fb6226fd23e3b523ef5797",
+    "outputs/ucsd-manuscript-step29-20261029/UCSD_Manuscript_Methods_2_7_EN.txt": "b8d3cfaa7c877be70d54c45b39cc045a3ba67a0652c69dd0c094e38170eb7d9f",
+    "outputs/ucsd-manuscript-step30-20261029/UCSD_Manuscript_Methods_2_8_EN_ZH.docx": "f5ec3f6e499c86a2a3815bb440321b69757b423c0f267e5619c65fedf97702be",
+    "outputs/ucsd-manuscript-step30-20261029/UCSD_Manuscript_Methods_2_8_EN.txt": "daedd2652b0a4f7e617d42f392eedcc5ae2ef37babff30ab35d8b32fba5035c8",
+    "src/rn_public/ucsd_stability.py": "90e4a08be5a5389d701b7f79bdd8ce86371df83557f3a40fcfb442a2c3277005",
+    "reports/ucsd_stability_protocol.md": "6e631c9c0da479dc725a0a84779e585c0b53bd0802d3be8527a6497df42b163c",
+    "data/processed/ucsd_stability_repeated_oof.csv": "d8d51898035141c8e7080f3049886d00cccbcb854f157c49b969df1aa7585e0f",
+    "data/processed/ucsd_stability_single_scan_oof.csv": "07d93b8392287d3528169c791715075457c04e2e8b3ee2f6d31928b85caaa5e2",
+    "reports/ucsd_stability/repeated_paired_differences.csv": "51aefa520c7f6cb75695c4642f770f62b5c2d4967adc4b614271a08896c58322",
+    "reports/ucsd_stability/repeat_status.csv": "eb1bee709f1fe7853515fdd808181f9a3c046092f6bb0e5a55aef78e00b4e53c",
+    "reports/ucsd_stability/software_test_receipt.json": "7a538cf67fe8b477e381f7d553b9618dae55fa6ca8a299ed4fd1542766dfe611",
+    "reports/ucsd_stability/repeated_fold_metrics.csv": "e0c39c6a2f59ace7e5ad9f7755eba4c73b29f64f7ce84a5d71b0e591a20756ed",
+    "reports/ucsd_stability/analysis_lock.json": "86437fae2e7e8e1c5500b7d80b442cec2588cc50b7fb3579ada7182422f11917",
+    "reports/ucsd_stability/failures.json": "6c1db664439054b14cf5baade95beb5c1b194266ecf60003a2aab24c85fd8359",
+    "reports/ucsd_stability/single_scan_fold_audit.json": "42bc23cc737927069019dc20b846186033aa98e4a1b216e0c3a72d67861255fb",
+    "reports/ucsd_stability/single_scan_fold_manifest.csv": "04de82e500df85ecd45c220c2d1b4168d756b6b739dcc0ef842a7db6c034ef6d",
+    "reports/ucsd_stability/repeated_fold_manifest.csv": "918b37d18b25e2a0086e25cceca1cb1b0d11576453145d2e7deda291e152a085",
+    "reports/ucsd_stability/artifact_verification.json": "279204f5bcfd947a7c7ddc24ea0f5d729922f4b45bfce3670d7bf99487150822",
+    "reports/ucsd_stability/single_scan_patient_bootstrap.csv": "717f03f6df48b7fd91d1c47a7c0c49f0a7097c73c58a69b3b36490b9b0757c57",
+    "reports/ucsd_stability/single_scan_selection.csv": "cd914ac1c2bf142113c0e37b75b8b11284ef8e21d0396adf6ea39ac40c906fe7",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_16.json": "dadc2f6120f87dfde92cb4ce31d4cb4c40f8be7657cde6f0e825b11cebc49399",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_13.json": "81cbd0f734c8e06febda7e648bfae3d53e2b8a5ff308551eb05a4f999814ac5b",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_17.json": "11f774a3c52f7f130837d03cba998c8d6da397664326ab8ee5cebbc0abd384ce",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_10.json": "e619cd5f03857e6aed52e8e8a20759c6a32b3449f4a8a2e67c80898f15b10f4e",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_01.json": "60855ef81f978510e1af1316c4e6ef7e6f1ae30e7e3b908b89d61c713375e34e",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_04.json": "9ac1da392923b503182fe2697896578cc880b2fc9e54c797e9a687682de2304c",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_14.json": "d7797c9cceb03f56136d2f40e31c1b6a2a8fa0e762f04881abe4d96656ff67a6",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_08.json": "430b1d8dd46a9549fd29d67f03d252aeff7790183a12be06d80e229ba3e6d4e9",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_15.json": "44225b09301c963b838273905535043e979181593134313875eaa0c65f094332",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_19.json": "c8a1d0c714fc206f5e94d7253a4e3e06100e4fb3c0adf1079cb6706197d9e22b",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_20.json": "b9bcd23c5448acdea92e436b0a1f02a6bcb7f9d6b2c070647b938b87c7bce1c1",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_02.json": "34db451a46f3879fceaf357a08bed92d8c4d4022fb6431f375ba937de2e86328",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_05.json": "bd7a724c7e3bfcca29a94365095ab9bcf67f35b8a2c90e5d27063603522964c3",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_03.json": "719d6deb5901d1ff5dcda1968e023d3ea4de862a8eec93a1c857e1e615b7d315",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_11.json": "1077fcf28905c945d470ed3557fa8b1df9692a66403eb0bd8639d1196a70cff1",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_07.json": "09330733572ef6e8ed37bf00f86f0fec7743b1fd412698aa8ab8bee8d10b7cf5",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_09.json": "1d2a62216d8917e832729bc1539b9f32bfe41374d59bc70c8c21c36654163aea",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_06.json": "ab618687c8765bf22aee28bd88dcde87a41eb3b7b7324c93c7e46e2410e53ea3",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_12.json": "20b58e640f07266c02bffbee25060fe9a6826b284e81e596e73f5e7a69bab115",
+    "reports/ucsd_stability/repeated_fold_audits/repeat_18.json": "e5cefaad2e3cc53f1b8489dd6e489206f9d040d4bdeeefad8aa9a5dd35d9b8fd",
+    "reports/ucsd_stability/development/pre_fit_lock_v1.json": "e9886183d3e0bc0fa60562e2f6ede8025ab61af6a50d24f3475e1ffffaaa1569",
+    "outputs/ucsd-manuscript-step31-20261029/UCSD_Manuscript_Methods_2_9_EN.txt": "3011559a00383037a769edc2f0be53c5083070a41c80f6c5a9ad1da135926c15",
+    "outputs/ucsd-manuscript-step31-20261029/UCSD_Manuscript_Methods_2_9_EN_ZH.docx": "e7c2a020b9cf3922c5a76f16e251a546ab52a5937d8cdefeca466670fe660e77",
+    "requirements.txt": "f418b628834a60f480146a7fc11f4cb4c5f823d273008532391713120db747f6",
+    "requirements-imaging.txt": "8fa10e1685ae1bc63f3a95b30a3527292415078686c9b644c958cdf7cb1f4e70",
+    "pyproject.toml": "1ba281addc1034d6996b1d3ebc152a5c7938d79dab500e1ff89f83064b7c12ea",
+    "scripts/run_notebooks_kernel.py": "1b699918e838e39c4484b32e3ab08a3c1700634f1345b05edab317ce2958f844",
+    "src/rn_public/notebook_kernel.py": "dd128a2289d0a0b0687abaa85ae8bf469c4beda2a9cb573c7cbded7812e0ec35",
+    "scripts/restore_ucsd_batch_sources.py": "6cc1386a59f15d072fa43974a4735f3f613df29d852540c2a81efa3e08f70f09",
+    "scripts/run_ucsd_batch_features.py": "671570be5d5f6a434c3d032d696f44f2b988c93f0816845283fb69b55e839710",
+    "scripts/run_ucsd_fusion.py": "57e252e04de6aaa513d013c23db96f0c49c27d7587dff87d4b7915e3c020c398",
+    "scripts/run_ucsd_stability.py": "63fb79cea0c0ff58157ff74eda36087440731ec11942608102a5368c44e2b2d9",
+    "reports/ucsd_batch_features/source_archive_receipt.json": "f83423830f87e927f85d1209825f26960622d12797a1789499e3666162cbcb90",
+    "reports/ucsd_batch_features/source_archive_access.json": "1aa49aeeb5cf5eb6cc916605bf8b942728a51251d58d91b25d973e6acc112179",
+    "reports/ucsd_batch_features/source_restore_verification.json": "f704fd5b0810915734d5047b1a76306c3056a2eb901b704c7e9ceba26019db5d",
+    "reports/kernel_execution_17.json": "4041b399bcd2431e4096363633be8dbc6a00ac95212e8c265a7e7df6f1d34c35",
+    "notebooks/17_ucsd_batch_image_features.ipynb": "1ea5b47a60a0c1d6705a19b0a6b23fcb1434c595ae21f4f0b8e2872288cf5db8",
+    "reports/kernel_execution_18.json": "bc6654b9286f460876f01c7643308fee64d16a4b7235be538c82f0e0986667e8",
+    "notebooks/18_ucsd_clinical_mri_fusion.ipynb": "863ee53065f40128ef21047051eb8d255ce51eabd32cec425c7ae09cff3e5c52",
+    "reports/kernel_execution_19.json": "c6fcf6e4073441dae865184f6a8822ac0b784f621c292220b2898ec2ef57f26a",
+    "notebooks/19_ucsd_model_stability.ipynb": "0b8dfcf25a7eda8a83d28afa97a9a8a68b191821cabd14e26fe94d9f87f2701b",
+    "outputs/ucsd-manuscript-step32-20261029/UCSD_Manuscript_Methods_2_10_EN_ZH.docx": "63ae4ee67a39c354216987248cbe62553b7b37b37e4f597f5de4d05277045fb5",
+    "outputs/ucsd-manuscript-step32-20261029/UCSD_Manuscript_Methods_2_10_EN.txt": "49bd204f6d4533b265ee644a6d083ce56abfbf5ebb20a0f74e5854b51e5f7d59",
+    "data/processed/ucsd_clinical_baseline_cohort.csv": "0cadeb381ab02b6256c4afe903174ff99640bfa61579f4e2073ab7eeb0c29278",
+    "reports/ucsd_batch_features/all_clinical_case_status.csv": "01f3bc85fb0d98cb85279e119753a866458e10c78a4d706eb07e7742b6cbfaca",
+    "outputs/ucsd-manuscript-step33-20261029/UCSD_Manuscript_Results_3_1_EN.txt": "f3b5425797f1c638ccdfab39d68522681693339664b301fe420dc9c4ceef7654",
+    "outputs/ucsd-manuscript-step33-20261029/UCSD_Manuscript_Results_3_1_EN_ZH.docx": "aca8be285e8efdf1690706d5545e9b1395dc0d53ca889db14d464f90fcc96b3c",
+    "outputs/ucsd-manuscript-step34-20261029/TableS1_EN.csv": "bafe89d08f6bc62e454d9fb3bbefbf8fef38362eb88c430941733be4c6df492e",
+    "outputs/ucsd-manuscript-step34-20261029/UCSD_Manuscript_Results_3_2_EN_ZH.docx": "c295afe3ba2b94fecbcc33783af7aacc702ab3e3fc551970a7960466c529bcbd",
+    "outputs/ucsd-manuscript-step34-20261029/UCSD_Manuscript_Results_3_2_EN.txt": "def505ac4f09d9313215b5146739466bc031e97a9efe234a711f01c13b417566",
+    "outputs/ucsd-manuscript-step34-20261029/Table1_EN.csv": "95eb1851463def98c16bc4c841e0d33450cea4c3c6d3b82fb5e304067026e58b",
+    "reports/ucsd_fusion/model_metrics.csv": "3bedab6f85eb47b0967da1205f274c8453893c3ff1063663feaf27edcc297ffb",
+    "reports/ucsd_paper_materials/generation_receipt.json": "b785c0df3e363bf8da09b388ab34513381417c11c1904ff3f64baa95c849fca9",
+    "outputs/ucsd-manuscript-step35-20261029/Table2_EN.csv": "e44b1fc4fe4252515fe1366cdb06157901b674472ac7711ab6343bd1287acd00",
+    "outputs/ucsd-manuscript-step35-20261029/UCSD_Manuscript_Results_3_3_EN.txt": "05cb3c5b19761d2986e1a612b4fb10a020f33f2dce696f3bc13f956e865e4775",
+    "outputs/ucsd-manuscript-step35-20261029/UCSD_Manuscript_Results_3_3_EN_ZH.docx": "06debd5e0a3e41ea5e4c9a277dcf9945efc1a3568881283050b3096e0fd6b59c",
+    "outputs/ucsd-manuscript-step36-20261029/UCSD_Manuscript_Results_3_4_EN_ZH.docx": "823ff7fb382d82426d88a5fd4454c71938864ade239d3694f3a309a94ec29797",
+    "outputs/ucsd-manuscript-step36-20261029/Table3_EN.csv": "48575a7e18dc8e6129236373626350b00deb9808293a64be5097085855989233",
+    "outputs/ucsd-manuscript-step36-20261029/UCSD_Manuscript_Results_3_4_EN.txt": "db3eea0ca03a790c0954cd80eb3fcf09132578c44853839de07e39e19e1614ea",
+    "outputs/ucsd-manuscript-step37-20261029/TableS3_EN.csv": "e119881b8cb8a5c5c93ed99f5c30e6dd117485728e036f0f4a2a392e263d6846",
+    "outputs/ucsd-manuscript-step37-20261029/UCSD_Manuscript_Results_3_5_EN.txt": "8319d24666d88aef797ef4d76b1806be0bd1a7c81ef0f958f5ddc5a764bcd43a",
+    "outputs/ucsd-manuscript-step37-20261029/UCSD_Manuscript_Results_3_5_EN_ZH.docx": "6a6fd1c25b28d91d23a77e563dc717eae0e719d658ca2b6c80819e7ee4cdbb29",
+    "outputs/ucsd-manuscript-step38-20261029/UCSD_Manuscript_Results_3_6_EN.txt": "7fbbea3568d3d36a069d1165dbbe512fffd3b8b492aa34150bb1cd69dfa42929",
+    "outputs/ucsd-manuscript-step38-20261029/TableS4_EN.csv": "2cdfc06496bbf66f5aa38f85386638b1110f6c09e6b28e859f73835394d961ab",
+    "outputs/ucsd-manuscript-step38-20261029/UCSD_Manuscript_Results_3_6_EN_ZH.docx": "cdfbd52cfca761624077cabb8340b5b6fe28c0027077c246e0a0b9e75ddd2049",
+    "outputs/ucsd-manuscript-step39-20261029/TableS5A_EN.csv": "cd882aea0445ffa565a066e9dd05400dace6469af90c92c89251b8f05720e759",
+    "outputs/ucsd-manuscript-step39-20261029/UCSD_Manuscript_Results_3_7_EN_ZH.docx": "8aee4b2cb9d32656b6c59a59e75f32332e871bef923cb331e3e4793178037c7a",
+    "outputs/ucsd-manuscript-step39-20261029/UCSD_Manuscript_Results_3_7_EN.txt": "78df3d92d21bcbe67302df904d7a987a007062104d63979073bbbd1953480a1c",
+    "outputs/ucsd-manuscript-step39-20261029/TableS5B_EN.csv": "42b32e9cae27de86812d9da50e50454a1fda1fe9e2a252e6b5167971b5dd4a62",
+    "outputs/ucsd-manuscript-step40-20261029/TableS7_EN.csv": "6c1fa521147ea85ede6b6803ae69e7adcd4eb8d2285e31e26b9fe10d9c3e696b",
+    "outputs/ucsd-manuscript-step40-20261029/UCSD_Manuscript_Results_3_8_EN.txt": "87c0abcf929db99fd254133b922191135f06ea6371a8374eee900d86168aefc0",
+    "outputs/ucsd-manuscript-step40-20261029/TableS6_EN.csv": "27e609fc678b3d0df6230a4963a2c5bc83e0a2db2ee8da163605b926e5e77e13",
+    "outputs/ucsd-manuscript-step40-20261029/UCSD_Manuscript_Results_3_8_EN_ZH.docx": "27cdccd3bc589cc391ec0415ae4d5a4b2a8913584f6f90abad1fd27525e1fe5d",
+    "outputs/ucsd-manuscript-step41-20261029/UCSD_Manuscript_Discussion_4_1_EN_ZH.docx": "60a7c09cf33605b980f1523570f4bcf92f8226bff222a8e53f9d0169005d5185",
+    "outputs/ucsd-manuscript-step41-20261029/UCSD_Manuscript_Discussion_4_1_EN.txt": "8b22f5e6e1f97363347f0b31bc299225baf0c60d6411e4b5178816450dbe1c62",
+    "reports/ucsd_manuscript_step42/literature_evidence.json": "244d876ee3e244a5beb71b98fdbadc639a24e3c9a9c206832758e53b6a3eb4d9",
+    "outputs/ucsd-manuscript-step42-20261029/UCSD_Manuscript_Discussion_4_2_EN_ZH.docx": "46acc49e2921bf833488d13751a880301217707dd5d53312357778f12ae242c1",
+    "outputs/ucsd-manuscript-step42-20261029/UCSD_Manuscript_Discussion_4_2_EN.txt": "ffb6ac56df35f18f2fac65884aeb15497354ea9a2a335785eae9d68bdc522518",
+    "reports/ucsd_manuscript_step43/literature_evidence.json": "fe78f5860fd30bb0a54737126ac705d2493b95da28c7f5366db811c3810a135a",
+    "outputs/ucsd-manuscript-step43-20261030/UCSD_Manuscript_Discussion_4_3_EN.txt": "60f4aba85682860c32d728a6a74efea1b22eaf45b26e644fb2dd69abccf99f32",
+    "outputs/ucsd-manuscript-step43-20261030/UCSD_Manuscript_Discussion_4_3_EN_ZH.docx": "3cc3117d2673212fa4c845fdcb6c9b09b703e9ca3fca7fbceffc5a4ff3f994ae",
+    "reports/ucsd_manuscript_step44/literature_evidence.json": "a2bf326e987d1f22251582dbed99094489d7a827c577bd5b9406f891be9804b2",
+    "outputs/ucsd-manuscript-step44-20261030/UCSD_Manuscript_Discussion_4_4_EN_ZH.docx": "e0fd08bf08c0c46c38d9145b9c2a615b4680f7b9dce670e38f9d573201695d7c",
+    "outputs/ucsd-manuscript-step44-20261030/UCSD_Manuscript_Discussion_4_4_EN.txt": "d3b51c05b03abf1d171490b6a6090291067fd30639522f851e16bfb2e827e73d",
+    "reports/ucsd_manuscript_step26/methods_section24.json": "419b303781c8f423b47ee88ad65a490bffb1c0f90430b3ced1ab1b52bcd59474",
+    "reports/ucsd_manuscript_step27/methods_section25.json": "8274b35d58f7d03627e9909674e903fbeb1cb18701dd758ba2780c439406d622",
+    "reports/ucsd_manuscript_step45/literature_evidence.json": "f27c39b27f88966a16c5bf79166c8bba383b84e8ec97eedc8453b8864175b021",
+    "outputs/ucsd-manuscript-step45-20261030/UCSD_Manuscript_Discussion_4_5_EN_ZH.docx": "0d9fb190622468651123c10451449358ab129e95409d425db36a5ed6ae4e34e1",
+    "outputs/ucsd-manuscript-step45-20261030/UCSD_Manuscript_Discussion_4_5_EN.txt": "2f3ddf32ac95cf47e1edb1483a9218a8245c8807bfa6859e3388786cf7349d23",
+    "reports/ucsd_manuscript_step31/methods_section29.json": "f9b7252af77da8734b4d52e4821d7ebd6428960e0aa6ec8a221ca9395a5c6dc6",
+    "reports/ucsd_manuscript_step38/results_section36.json": "5eacb1889b63e7569c8491746d962f532d3e414e8feab8f38460ad792c9612a6",
+    "reports/ucsd_manuscript_step39/results_section37.json": "899bd5392236acb92daad6b00b73e8a15b917beb1ba8d9f3371500616a0d12a9",
+    "reports/ucsd_manuscript_step46/literature_evidence.json": "debd48b08e1e802eb1f9f09f1c43096cc6a16ea4e9d0b32aaa9b4503397326ee",
+    "outputs/ucsd-manuscript-step46-20261030/UCSD_Manuscript_Discussion_4_6_EN_ZH.docx": "8adec4f70aab6263b7392c071106d9980fecb7dfb558136bb050951453ff1080",
+    "outputs/ucsd-manuscript-step46-20261030/UCSD_Manuscript_Discussion_4_6_EN.txt": "6aa90a82b9cff6ea6d1cdd241329ed353e8ba090d5fd857d37af8d181131f933",
+    "reports/ucsd_manuscript_step40/results_section38.json": "e88560c79cabc0fa8ecd32a872bad2ad5b6408998c81590fd6f4c5b04bf4db43",
+    "reports/ucsd_manuscript_step47/literature_evidence.json": "6390ab34cae2a7196e4e94a96efd0d1adcfc2e90f012bd8861cace17c0a50ff2",
+    "outputs/ucsd-manuscript-step47-20261030/UCSD_Manuscript_Discussion_4_7_EN_ZH.docx": "38b4ddb05bd0f0c646efd4d138e743506cfeabe6677bf6b0a8ba05a039a94743",
+    "outputs/ucsd-manuscript-step47-20261030/UCSD_Manuscript_Discussion_4_7_EN.txt": "c9ab015c0f78937dad7c2143af32abda81815f57522d9e2c2cde27b79d0b5524",
+    "reports/ucsd_manuscript_step24/methods_section22.json": "8f7304d59fee07db09d15e560c2ce982646720699f4eda8c8a7d953aaa3221a8",
+    "data/raw/reference/ucsd_ptgbm_negative_cases.xlsx": "6d99db8ac1feac569e50c18ed214a1a761858fb8bfa614a29ec5f036946b96e4",
+    "data/processed/ucsd_ptgbm_subtype_count_comparison.csv": "6fb7782aff1fd2f469c4faa8a06f69b65332346baa9785905e1de78c6145dd38",
+    "reports/ucsd_manuscript_step48/literature_evidence.json": "3f758106d1e6f92a1c2eaf78516db80f99c4632578f1c097a6f8b8a0adae2199",
+    "outputs/ucsd-manuscript-step48-20261030/UCSD_Manuscript_Discussion_4_8_EN_ZH.docx": "e1fcb4c41c99992f5a8459d7938e9d3e18f28958cd721d97a9e268bcf6c9b344",
+    "outputs/ucsd-manuscript-step48-20261030/UCSD_Manuscript_Discussion_4_8_EN.txt": "7ac513c3bf4143f1a1382fea9bcbc43293c492326d1a78e01613cc240f27b7e0",
+    "reports/ucsd_manuscript_step49/literature_evidence.json": "fcd8aa81148fed854c35c81d01bbc39a422d1f41e8073746f4e888a809b0ce10",
+    "outputs/ucsd-manuscript-step49-20261030/UCSD_Manuscript_Discussion_4_9_EN.txt": "f2e162eef2052a567ea85b3cd7be5c2c2cceb64e51e45aa890f0aad85f60603a",
+    "outputs/ucsd-manuscript-step49-20261030/UCSD_Manuscript_Discussion_4_9_EN_ZH.docx": "35972220b48af9b21019bb32fedac3f84959f9fcdd92bb2854ee83850af45bf5",
+    "reports/ucsd_manuscript_step25/methods_section23.json": "c88acd1c1afd8f1539306103081ba421f8941fffc95557f3da1778ddb44c5d4e",
+    "reports/ucsd_manuscript_step29/methods_section27.json": "b2b6546bcb8c0826d6f2ffe17546c68bd550b79d7a8b9c409c687d456f81a1c7",
+    "reports/ucsd_manuscript_step50/literature_evidence.json": "5bf3ff82e4b6a38ac70020e827a17da18696fcadcb423954c98a19884e19b0d5",
+    "outputs/ucsd-manuscript-step50-20261030/UCSD_Manuscript_Discussion_4_10_EN_ZH.docx": "511cc1de3bbd066fc0016c7e6ff6f87c0f0908559d797e158b116747556404d1",
+    "outputs/ucsd-manuscript-step50-20261030/UCSD_Manuscript_Discussion_4_10_EN.txt": "09d24f6289a7d4a9c6c0317d020deaaea468ee72affc19dcc345d010686fc48a",
+    "reports/ucsd_manuscript_step36/results_section34.json": "c598fc9b58262556160157115e74feacc73503583982fd734f2df164f349bc05",
+    "reports/ucsd_manuscript_step37/results_section35.json": "cc2593e3cc64305b6908be03074e74b7afdf1ab612b55ddd628e8b6d6f27354d",
+    "reports/ucsd_manuscript_step30/methods_section28.json": "84c9795764ae40d843f93f267e7df41f4092ec2bd0d7c1eb9c1925e5027c574f",
+    "reports/ucsd_manuscript_step51/literature_evidence.json": "33e55df1dcb8e6aa1605a2d29a3d3c57d49317d7acbd849aa63d930c6ebc6cde",
+    "outputs/ucsd-manuscript-step51-20261030/UCSD_Manuscript_Discussion_4_11_EN.txt": "02bd83a516bbc0a97fbfbd5302d982bf7d01705692ab8b5a7874792ea17054e0",
+    "outputs/ucsd-manuscript-step51-20261030/UCSD_Manuscript_Discussion_4_11_EN_ZH.docx": "9d27f504d4efc23f47889b29cc10030441659ed0d2fe6afc80ac7494b6276f86",
+    "reports/ucsd_manuscript_step41/discussion_section41.json": "5ef3502f9d6ba278b40221fe0cf445e7b4b562e76f3e29ef9aedbc099bdbeda7",
+    "reports/ucsd_manuscript_step42/discussion_section42.json": "4221ee4bfcc5bd850d38747b8a93d94216677d15bac1132313d34b3e8aca0567",
+    "reports/ucsd_manuscript_step43/discussion_section43.json": "f6c16ed6ad029baf746a980741b94fe80c882cbf3c005feff46ec385ba52dc94",
+    "reports/ucsd_manuscript_step44/discussion_section44.json": "b416efe9f3eb6af046456641b2d461547e98e6fc93fbfccc3c017d8bbaa7e9ff",
+    "reports/ucsd_manuscript_step45/discussion_section45.json": "8daa34e5beb709f40c666620aaef1ca7e120eaef8671943c0a8a1c6f1f15cbb0",
+    "reports/ucsd_manuscript_step46/discussion_section46.json": "518e02a820ac6a183154f3e4f6c220e27c13cdd317eee8af2559330b67a88dc2",
+    "reports/ucsd_manuscript_step47/discussion_section47.json": "e74130f06b02aa4b0e76610429b6ea3182abd549d2872a482f11ebeb9a3a0bb2",
+    "reports/ucsd_manuscript_step48/discussion_section48.json": "92f203c12db6ea3784eaeef2fbb1c447f32a0194bc43c60044b83b8ccf23f125",
+    "reports/ucsd_manuscript_step49/discussion_section49.json": "24b36660a49158daa650f1e6ca2cee0f8a3787d739b0d44708ca530d5eaa4fce",
+    "reports/ucsd_manuscript_step50/discussion_section50.json": "de101e57669651c72c99ab8bc92681bf1632ae7ef6cb7e08e33fdb66cf169dc5",
+    "reports/ucsd_manuscript_step51/discussion_section51.json": "eea988adcee292e8a84f002ce841c9eb2f13ab64ab55d5edcb9b268267c8a01c",
+    "reports/ucsd_manuscript_step52/literature_evidence.json": "e740dcafc25f511b44f02d3a6c00478ccf5d9ca724ec7195f118871925ece8e1",
+    "outputs/ucsd-manuscript-step52-20261030/UCSD_Manuscript_Discussion_4_12_EN_ZH.docx": "479e75ebb6f5704f36a66f8ce776043e2a81eaecb78d8ff6e38c3a33bfcffaea",
+    "outputs/ucsd-manuscript-step52-20261030/UCSD_Manuscript_Discussion_4_12_EN.txt": "bc07b380ae04916cd8248217540f1f1c53583ea4392e7e69117b89204f858430",
+    "reports/ucsd_manuscript_step52/discussion_section52.json": "2e2f58bdc20b3a2d30ed253b4e970b88b20f16410b2506df98aa936ea09c1728",
+    "reports/ucsd_manuscript_step32/methods_section210.json": "9f965adb3b4c857de2595eb333651f098b1ec8862ab3f3bb46f4ed6d3c59b7f0",
+    "reports/ucsd_manuscript_step53/literature_evidence.json": "9ace51e21bc93f2e1452a6d69ba03f7bae34230dd9f0f96a35195c19249f6ea7",
+    "outputs/ucsd-manuscript-step53-20261030/UCSD_Manuscript_Conclusion_EN_ZH.docx": "d7004db7054a5953e572816b3876bc7689c8c2cd738926a92cc17e71f8973e47",
+    "outputs/ucsd-manuscript-step53-20261030/UCSD_Manuscript_Conclusion_EN.txt": "99fa08d7d8b49db606d34727caf98ffe87aaceec73c0592c488ddbb33362dcf2",
+    "reports/ucsd_manuscript_step53/conclusion_section53.json": "1aaac62fcdbba49534f3e06f29909b9f9dbdf6357cfbe8619d51203620a3907b",
+    "reports/ucsd_manuscript_step54/literature_evidence.json": "79143bb84dd36d30af075012779189bd34cb3ab2b584aa728b776a61380adeb7",
+    "outputs/ucsd-manuscript-step54-20261030/UCSD_Manuscript_Introduction_EN_ZH.docx": "5d522ba5840eab8f913c35f126dc8cb3dd666b8082682cf0ed2d9786db117773",
+    "outputs/ucsd-manuscript-step54-20261030/UCSD_Manuscript_Introduction_EN.txt": "1b9fdf402c1298207321f63822e3fb94abad00cdb5a956ae8a253136f2dd88fb",
+    "reports/ucsd_manuscript_step54/introduction_section54.json": "50c36e959906ea34110f8a9e09362b7619c6767dcfee7d8e5766164995628f30",
+    "reports/ucsd_manuscript_step28/methods_section26.json": "fc66228ad9b3b2a58723c953aea3c6ea44d803bab81671a9352ab7a37d755aa0",
+    "reports/ucsd_manuscript_step33/results_section31.json": "cf56fdce85848bc68d6b7b0801b56751e16437f668720cc280895187b7ad7997",
+    "reports/ucsd_manuscript_step34/results_section32.json": "97d065b5ed9f7a38ab8e23c9cbec1646eff60d420963b49f1ddbc1fb3b855d10",
+    "reports/ucsd_manuscript_step35/results_section33.json": "8d17cd1364a09c5bf563b7240f5cb4c20e14c7a8341cfab1649fd1e47009309d",
+    "reports/ucsd_manuscript_step55/abstract_content.json": "5e799d5333de9ac5fc3735ee75fd222a1702f91e8138c01d91619f7baf004a2d"
+  },
+  "native_equation_group_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "equation_objects_sha256": [
+    "6311ccf8b859a41e28ca9959b339a808d9f61100663480597a5d700ef7ad7a3f",
+    "d211f68a72a216bcf207c223c8e4ef72c0e76471f4f28ed6dd4f9fbeb19aa49f",
+    "96105721a8723da29fde0c97d84cca8a023efa300acc291c5c5542d7d9018c09",
+    "471fce954a6df755723145cc56d8f7d467e213a7c7de0ac90341c3b7b6016430",
+    "675f0b516bfaf6d90e815863f3309d608218567a8007ae03e99240894ff370b3",
+    "995a87c5f11de6135afc2fe51f7899b10ed444534ac142b7db18e43a071d9f73",
+    "f463ddad12194355cd6aa2fc3d4229baffd4157ed3fa8fb0d6b11470da605126",
+    "514b46d9db77f01d65faf16b10623903888df28a1d20c75499562378092f55a0",
+    "a83f76eff78a7e849fe26d928150916fee096d798f147e79fa8c29126c104dd5",
+    "75bc9e20f1dab6c8f679548ec406db63c91b5956d0e5730d0e849e796857bfcf"
+  ],
+  "outputs": {
+    "outputs/ucsd-manuscript-step55-20261030/UCSD_Abstract_EN_ZH.docx": "bc53ff81b28fe0ce28db4a0e46968325e3e3c141fb645c424fe5dd36035fbf07",
+    "outputs/ucsd-manuscript-step55-20261030/UCSD_Manuscript_Integrated_EN_ZH.docx": "f3acfd52f2dfcbaa920d5a58f04dc12d09e6d93ae0b98dead03a0007b2b147f5",
+    "outputs/ucsd-manuscript-step55-20261030/UCSD_Manuscript_Integrated_EN.docx": "20cd6424b6754e1c49914e38424fad1037f1b99e2b4b67f168322c83edbbc301",
+    "outputs/ucsd-manuscript-step55-20261030/UCSD_Supplementary_Material_EN.docx": "c62027e8276095b2d4997ec9579fcb26aef1b8d235b58d5791c2d983cee981a2"
+  },
+  "declarations_and_acknowledgments_omitted_by_user": true,
+  "author_affiliations_not_invented": true,
+  "existing_narrative_changes": "Only citation numbers; no wording edits in the47 confirmed narrative paragraphs",
+  "models_refitted": 0,
+  "new_bootstrap_draws": 0,
+  "new_hypothesis_tests": 0
+}

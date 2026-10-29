@@ -153,3 +153,6 @@ node_modules/
 /outputs/ucsd-manuscript-step53-20261030/docx_render*/
 
 /outputs/ucsd-manuscript-step54-20261030/docx_render*/
+
+# Stage55 reproducible Word layout QA
+outputs/ucsd-manuscript-step55-20261030/*_render/

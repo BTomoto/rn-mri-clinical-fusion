@@ -1,0 +1,30 @@
+[
+  {
+    "id": "A1",
+    "label": "Background",
+    "english": "Distinguishing residual or recurrent tumor from treatment-related change after high-grade glioma treatment remains difficult. We evaluated whether fixed magnetic resonance imaging (MRI) descriptors provide incremental discrimination beyond available clinical inputs in public data.",
+    "chinese": "高级别胶质瘤治疗后，残余或复发肿瘤与治疗相关改变的鉴别仍然困难。我们利用公开数据，评价固定磁共振成像（MRI）描述量能否在现有临床输入之外提供增量鉴别信息。",
+    "citation_ids": []
+  },
+  {
+    "id": "A2",
+    "label": "Methods",
+    "english": "This secondary analysis of the public UCSD-PTGBM collection included 182 examinations from 135 patients. Four fixed L2-penalized logistic models used age and sex, five clinical inputs, eight MRI descriptors, or their fusion. MRI features summarized fluid-attenuated inversion recovery (FLAIR) and postcontrast T1 intensity and texture within supplied annotation regions. Five-fold patient-grouped validation generated out-of-fold predictions. The primary comparison was the Fusion-minus-expanded-clinical area under the receiver operating characteristic curve (AUC) difference. 2000 patient-cluster bootstrap attempts provided intervals conditional on fixed predictions; boundary, repeated-split and single-scan analyses assessed sensitivity.",
+    "chinese": "本项基于公开UCSD-PTGBM数据集的二次分析纳入135名患者的182次检查。四个固定的L2惩罚Logistic模型分别使用年龄与性别、五项临床输入、八项MRI描述量，或二者的融合。MRI特征汇总所提供标注区域内液体衰减反转恢复（FLAIR）与增强T1的强度及纹理。采用五折患者分组验证生成折外预测，主要比较为Fusion减去扩展临床模型的受试者工作特征曲线下面积（AUC）差值。2000次患者聚类bootstrap尝试提供条件于固定预测的区间；通过边界、重复分折及单扫描分析评价敏感性。",
+    "citation_ids": []
+  },
+  {
+    "id": "A3",
+    "label": "Results",
+    "english": "Fusion achieved an AUC of 0.782 versus 0.672 for the expanded clinical model and 0.762 for MRI alone. The paired increment was 0.110 (95% percentile interval, 0.021 to 0.214) and remained positive across 20 repeated partitions. In the single-scan analysis, Fusion AUC was 0.730 and its increment was uncertain (0.120; interval, -0.015 to 0.252). At the fixed 0.5 threshold, primary Fusion recognized 130/141 tumor examinations but only 12/41 treatment-change examinations. Its descriptive calibration slope was 0.667; probability-error difference intervals included zero.",
+    "chinese": "Fusion的AUC为0.782，扩展临床模型为0.672，仅MRI模型为0.762。配对增量为0.110（95%百分位区间：0.021至0.214），在20套重复分折中均保持为正。单扫描分析中，Fusion的AUC为0.730，其增量仍不确定（0.120；区间：−0.015至0.252）。在固定0.5阈值下，主Fusion模型识别出130/141次肿瘤检查，但仅识别出12/41次治疗改变检查。其描述性校准斜率为0.667，概率误差差值的区间包含零。",
+    "citation_ids": []
+  },
+  {
+    "id": "A4",
+    "label": "Conclusions",
+    "english": "Clinical-MRI fusion showed an internal incremental signal, with uncertain single-scan benefit and limited treatment-change recognition. Independent evaluation is needed before inferring clinical usefulness. The model has not undergone external validation or clinical utility evaluation.",
+    "chinese": "临床–MRI融合显示了内部增量信号，但单扫描获益仍不确定，治疗改变识别也有限。推断临床实用性之前，仍需独立评价。该模型尚未接受外部验证或临床效用评价。",
+    "citation_ids": []
+  }
+]

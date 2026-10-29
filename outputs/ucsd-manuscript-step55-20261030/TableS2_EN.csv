@@ -1,0 +1,14 @@
+Variable,Definition,Models,Processing and units
+age_years,Age at imaging,M0 M1 Fusion,Years; standardized within each training fold.
+sex_male,Male sex at birth,M0 M1 Fusion,"Male=1, female=0; not scaled."
+log_initial_event_days,Interval since initial event,M1 Fusion,Natural log of one plus elapsed days; training-fold median imputation and standardization.
+other_treatment_prior,Other treatment before imaging,M1 Fusion,"Yes=1, no=0; not scaled."
+initial_event_missing,Missing initial-event interval,M1 Fusion,"Missing=1, observed=0; not scaled."
+FLAIR_mean,FLAIR mean,MRI Fusion,"Dimensionless, unclipped percentile-scaled ROI mean; training-fold standardization."
+FLAIR_std,FLAIR standard deviation,MRI Fusion,Dimensionless; population SD (ddof=0); training-fold standardization.
+FLAIR_entropy,FLAIR entropy,MRI Fusion,Bits; Shannon entropy with 32 ROI-range bins; training-fold standardization.
+FLAIR_glcm_contrast,FLAIR GLCM contrast,MRI Fusion,Squared bin-index differences; symmetric counts merged across 13 directions; training-fold standardization.
+T1post_mean,Postcontrast T1 mean,MRI Fusion,"Dimensionless, unclipped percentile-scaled ROI mean; training-fold standardization."
+T1post_std,Postcontrast T1 standard deviation,MRI Fusion,Dimensionless; population SD (ddof=0); training-fold standardization.
+T1post_entropy,Postcontrast T1 entropy,MRI Fusion,Bits; Shannon entropy with 32 ROI-range bins; training-fold standardization.
+T1post_glcm_contrast,Postcontrast T1 GLCM contrast,MRI Fusion,Squared bin-index differences; symmetric counts merged across 13 directions; training-fold standardization.

@@ -1,0 +1,13 @@
+Background
+Distinguishing residual or recurrent tumor from treatment-related change after high-grade glioma treatment remains difficult. We evaluated whether fixed magnetic resonance imaging (MRI) descriptors provide incremental discrimination beyond available clinical inputs in public data.
+
+Methods
+This secondary analysis of the public UCSD-PTGBM collection included 182 examinations from 135 patients. Four fixed L2-penalized logistic models used age and sex, five clinical inputs, eight MRI descriptors, or their fusion. MRI features summarized fluid-attenuated inversion recovery (FLAIR) and postcontrast T1 intensity and texture within supplied annotation regions. Five-fold patient-grouped validation generated out-of-fold predictions. The primary comparison was the Fusion-minus-expanded-clinical area under the receiver operating characteristic curve (AUC) difference. 2000 patient-cluster bootstrap attempts provided intervals conditional on fixed predictions; boundary, repeated-split and single-scan analyses assessed sensitivity.
+
+Results
+Fusion achieved an AUC of 0.782 versus 0.672 for the expanded clinical model and 0.762 for MRI alone. The paired increment was 0.110 (95% percentile interval, 0.021 to 0.214) and remained positive across 20 repeated partitions. In the single-scan analysis, Fusion AUC was 0.730 and its increment was uncertain (0.120; interval, -0.015 to 0.252). At the fixed 0.5 threshold, primary Fusion recognized 130/141 tumor examinations but only 12/41 treatment-change examinations. Its descriptive calibration slope was 0.667; probability-error difference intervals included zero.
+
+Conclusions
+Clinical-MRI fusion showed an internal incremental signal, with uncertain single-scan benefit and limited treatment-change recognition. Independent evaluation is needed before inferring clinical usefulness. The model has not undergone external validation or clinical utility evaluation.
+
+Keywords: high-grade glioma; treatment-related change; magnetic resonance imaging; feature fusion; logistic regression; internal validation

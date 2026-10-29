@@ -1,5 +1,15 @@
 # 高级别胶质瘤治疗后肿瘤与治疗相关改变的探索性鉴别
 
+
+**第55步已完成摘要和全文整合。** 英文摘要247词，正文8200词，合计8447词（图表、参考文献等不计入此数）。已保留47段既有正文，仅统一引文编号；新增4段摘要与对应中译。25篇实际引用按全文首次出现编号，其中23篇（92%）符合2022–2026近5年范围、17篇（68%）符合2024–2026近3年范围，均为英文文献。
+
+- [完整中英对照Word（42页）](outputs/ucsd-manuscript-step55-20261030/UCSD_Manuscript_Integrated_EN_ZH.docx)
+- [完整英文Word（25页）](outputs/ucsd-manuscript-step55-20261030/UCSD_Manuscript_Integrated_EN.docx)
+- [英文补充材料（10页）](outputs/ucsd-manuscript-step55-20261030/UCSD_Supplementary_Material_EN.docx)
+- [独立摘要中英对照Word（2页）](outputs/ucsd-manuscript-step55-20261030/UCSD_Abstract_EN_ZH.docx)
+
+见[第55步报告](reports/ucsd_manuscript_step55_20261030.md)、[整合回执](reports/ucsd_manuscript_step55/assembly_receipt.json)、[内容核对](reports/ucsd_manuscript_step55/artifact_verification.json)和[79页排版检查记录](reports/ucsd_manuscript_step55/visual_review.json)。正文3表3图与补充材料8表2图均已整理，S2变量字典补全英文，10组公式保留为原生可编辑Word公式。摘要所有显示数值已与保存的全精度结果核对；未重新拟合或增加抽样。按用户要求暂不写数据公开声明、致谢及其他结论后声明；作者名单、单位和目标期刊格式尚未定稿，当前为内容整合稿，等待用户审阅。
+
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
 **第54步已补全Introduction（I1–I6）。** [中英对照Word](outputs/ucsd-manuscript-step54-20261030/UCSD_Manuscript_Introduction_EN_ZH.docx)包含1054个英文词、六组对应中译及本节16篇英文参考文献，共8页。按临床场景、诊断定义、影像计算、融合证据、透明评价缺口和研究目标连续展开，无实际前言小标题，也未提前呈现本研究结果。
