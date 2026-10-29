@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第32步已完成Methods 2.10复现与软件说明（M20）。** [中英对照Word](outputs/ucsd-manuscript-step32-20261029/UCSD_Manuscript_Methods_2_10_EN_ZH.docx)包含181个英文词、一组中译及软件文献引用，共1页。说明软件/内核、OOF与分析锁、特征表复算和影像归档恢复的不同条件，以及数据可得性决定样本规模。
+
+见[第32步报告](reports/ucsd_manuscript_step32_20261029.md)、[段落与核查依据](reports/ucsd_manuscript_step32/methods_section210.json)及[核对回执](reports/ucsd_manuscript_step32/artifact_verification.json)。六条依赖记录、三个Notebook的15个代码单元哈希、两份分析锁、546行清单和18份Git样本核对一致；528份追加影像依据既有恢复回执核查，不声称其在GitHub公开或本轮重新恢复。方法M1–M20全部写齐，共3131个英文词、20组中译、10组编号公式；S40暂为引用5，全文尚未完成。下一节为Results 3.1队列流程（R1），等待用户批准。
+
 **第31步已完成Methods 2.9敏感性分析（M17–M19）。** [中英对照Word](outputs/ucsd-manuscript-step31-20261029/UCSD_Manuscript_Methods_2_9_EN_ZH.docx)包含472个英文词及三组中译，共3页。说明原网格六邻域一次腐蚀、20套预定患者分组五折及最小可用会话的每患者单扫描方案；保留条件区间、重复不独立和跨队列不可直接归因的限制。
 
 见[第31步报告](reports/ucsd_manuscript_step31_20261029.md)、[段落及核查依据](reports/ucsd_manuscript_step31/methods_section29.json)和[核对回执](reports/ucsd_manuscript_step31/artifact_verification.json)。123份既有文件、105折及420个保存模型记录核验；80个重复AUC、80个配对差值、36行描述汇总、135条单扫描选择及40个单扫描区间端点一致。本轮没有重训或修改原结果。已写M1–M19共2950个英文词，下一节为复现与软件（M20），等待用户批准。

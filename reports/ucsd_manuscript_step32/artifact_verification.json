@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "stage": 32,
+  "date": "2026-10-29",
+  "subsection": "2.10 Reproducibility and software",
+  "paragraph_ids": [
+    "M20"
+  ],
+  "english_word_count": 181,
+  "paragraph_word_counts": {
+    "M20": 181
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 1,
+  "visual_review_pages": [
+    1
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 143,
+  "pinned_package_entries_checked": 6,
+  "notebook_execution_receipts_checked": 3,
+  "notebook_code_cells_checked": 15,
+  "notebook_errors": 0,
+  "analysis_locks_checked": 2,
+  "image_source_manifest_rows_checked": 546,
+  "repository_image_sample_files_rehashed": 18,
+  "saved_archive_restore_verified_files": 528,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 1,
+  "current_section_citations": 1,
+  "cumulative_unique_cited_sources": 5,
+  "citation_mapping": {
+    "5": "S40"
+  },
+  "methods_v2_paragraphs_complete": true,
+  "completed_methods_subsections": 10,
+  "completed_methods_english_word_count": 3131,
+  "completed_methods_chinese_paragraphs": 20,
+  "completed_methods_equation_groups": 10,
+  "next_section": "Results 3.1 Cohort flow (R1)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step32-20261029/UCSD_Manuscript_Methods_2_10_EN_ZH.docx": "63ae4ee67a39c354216987248cbe62553b7b37b37e4f597f5de4d05277045fb5",
+    "outputs/ucsd-manuscript-step32-20261029/UCSD_Manuscript_Methods_2_10_EN.txt": "49bd204f6d4533b265ee644a6d083ce56abfbf5ebb20a0f74e5854b51e5f7d59"
+  }
+}

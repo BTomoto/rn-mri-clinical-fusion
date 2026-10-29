@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "scope": "Stage31 Methods 2.9 sensitivity analyses drafted; frozen erosion records, grouped partitions, repeated summaries and single-scan selection verified without fitting",
+  "scope": "Stage32 Methods 2.10 reproducibility and software drafted; all M1-M20 complete, historical software/notebook/lock/archive evidence verified without analysis reruns",
   "source_tables_verified": true,
   "selected_mri_download_complete": true,
   "downloaded_files": 42385,
@@ -78,7 +78,7 @@
   "additional_baseline_grid_equivalent_masks": 1,
   "additional_baseline_clinical_image_review_complete": false,
   "additional_imaging_qc_report": "reports/additional_imaging_qc_20261028.md",
-  "next_work_item": "Await user approval for reproducibility and software methods (M20)",
+  "next_work_item": "Await user approval for Results 3.1 cohort flow (R1)",
   "baseline_mask_series_all_file_technical_audit_complete": true,
   "baseline_mask_series_dicom_files": 6936,
   "baseline_mask_series_directories": 48,
@@ -407,8 +407,8 @@
   "manuscript_body_drafted": true,
   "ucsd_manuscript_step23_report": "reports/ucsd_manuscript_step23_20261029.md",
   "ucsd_manuscript_writing": {
-    "stage": 31,
-    "subsection": "2.9 Sensitivity analyses",
+    "stage": 32,
+    "subsection": "2.10 Reproducibility and software",
     "v2_paragraph_ids": [
       "M1",
       "M2",
@@ -428,11 +428,12 @@
       "M16",
       "M17",
       "M18",
-      "M19"
+      "M19",
+      "M20"
     ],
-    "english_word_count": 2950,
-    "chinese_paragraphs": 19,
-    "current_section_citations": 0,
+    "english_word_count": 3131,
+    "chinese_paragraphs": 20,
+    "current_section_citations": 1,
     "candidate_references": 40,
     "candidate_recent_5yr_english": 37,
     "candidate_recent_3yr_english": 31,
@@ -452,27 +453,27 @@
       "2.6 Model specification and grouped training",
       "2.7 Performance metrics and conditional uncertainty",
       "2.8 Calibration assessment",
-      "2.9 Sensitivity analyses"
+      "2.9 Sensitivity analyses",
+      "2.10 Reproducibility and software"
     ],
-    "latest_section_english_word_count": 472,
-    "latest_section_word_pages": 3,
-    "unique_citations_in_drafted_sections": 4,
+    "latest_section_english_word_count": 181,
+    "latest_section_word_pages": 1,
+    "unique_citations_in_drafted_sections": 5,
     "label_checks_are_independent_samples": false,
     "native_equation_groups": 10,
     "latest_stage_verification": {
-      "prior_files_unchanged": 123,
-      "boundary_cases_checked": 182,
-      "repeated_manifest_rows_checked": 3640,
-      "folds_checked": 105,
-      "saved_successful_fold_model_records_checked": 420,
-      "repeated_auc_values_checked": 80,
-      "repeated_paired_differences_checked": 80,
-      "descriptive_summary_rows_checked": 36,
-      "single_scan_selected": 135,
-      "single_bootstrap_paired_values_checked": 8000,
-      "single_bootstrap_interval_endpoints_checked": 40,
+      "prior_files_unchanged": 143,
+      "pinned_package_entries_checked": 6,
+      "notebook_execution_receipts_checked": 3,
+      "notebook_code_cells_checked": 15,
+      "analysis_locks_checked": 2,
+      "image_source_manifest_rows_checked": 546,
+      "repository_image_sample_files_rehashed": 18,
+      "saved_archive_restore_verified_files": 528,
+      "archive_restored_this_stage": false,
       "models_fitted": 0
-    }
+    },
+    "methods_v2_paragraphs_complete": true
   },
   "ucsd_manuscript_step24_report": "reports/ucsd_manuscript_step24_20261029.md",
   "ucsd_manuscript_step25_report": "reports/ucsd_manuscript_step25_20261029.md",
@@ -481,5 +482,6 @@
   "ucsd_manuscript_step28_report": "reports/ucsd_manuscript_step28_20261029.md",
   "ucsd_manuscript_step29_report": "reports/ucsd_manuscript_step29_20261029.md",
   "ucsd_manuscript_step30_report": "reports/ucsd_manuscript_step30_20261029.md",
-  "ucsd_manuscript_step31_report": "reports/ucsd_manuscript_step31_20261029.md"
+  "ucsd_manuscript_step31_report": "reports/ucsd_manuscript_step31_20261029.md",
+  "ucsd_manuscript_step32_report": "reports/ucsd_manuscript_step32_20261029.md"
 }
