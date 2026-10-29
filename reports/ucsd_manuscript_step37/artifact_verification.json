@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "stage": 37,
+  "date": "2026-10-29",
+  "subsection": "3.5 Calibration and errors",
+  "paragraph_ids": [
+    "R5"
+  ],
+  "english_word_count": 157,
+  "paragraph_word_counts": {
+    "R5": 157
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 161,
+  "original_table_numeric_values_checked": 28,
+  "classification_count_and_metric_values_reconstructed": 32,
+  "saved_calibration_variants_checked": 4,
+  "calibration_bin_rows_checked": 20,
+  "editable_english_tables": 1,
+  "table_numeric_values_changed": 0,
+  "always_tumor_reference_disclosed": true,
+  "calibration_diagnostics_refitted": 0,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.6 Boundary sensitivity (R6)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step37-20261029/TableS3_EN.csv": "e119881b8cb8a5c5c93ed99f5c30e6dd117485728e036f0f4a2a392e263d6846",
+    "outputs/ucsd-manuscript-step37-20261029/UCSD_Manuscript_Results_3_5_EN.txt": "8319d24666d88aef797ef4d76b1806be0bd1a7c81ef0f958f5ddc5a764bcd43a",
+    "outputs/ucsd-manuscript-step37-20261029/UCSD_Manuscript_Results_3_5_EN_ZH.docx": "6a6fd1c25b28d91d23a77e563dc717eae0e719d658ca2b6c80819e7ee4cdbb29"
+  }
+}

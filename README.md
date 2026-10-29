@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第37步已完成Results 3.5校准与分类错误（R5）。** [中英对照Word](outputs/ucsd-manuscript-step37-20261029/UCSD_Manuscript_Results_3_5_EN_ZH.docx)包含157个英文词、一组中译及可编辑英文Table S3，共2页。报告Fusion校准offset截距−0.121、斜率0.667，固定阈值识别肿瘤130/141及治疗改变12/41，总准确率78.0%与全判肿瘤77.5%参考并列。
+
+见[第37步报告](reports/ucsd_manuscript_step37_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step37/results_section35.json)和[核对回执](reports/ucsd_manuscript_step37/artifact_verification.json)。原表28个值、32个分类计数/指标及20行校准分组一致；仅验证保存参数，不重新拟合诊断。161份既有文件未变，未改概率或阈值。已写M1–M20及R1–R5，共4061个英文词，下一节为3.6边界敏感性（R6），等待用户批准。
+
 **第36步已完成Results 3.4配对增量比较（R4）。** [中英对照Word](outputs/ucsd-manuscript-step36-20261029/UCSD_Manuscript_Results_3_4_EN_ZH.docx)包含202个英文词、一组中译及可编辑英文Table 3，共2页。Fusion−M1 AUC差0.110［0.021，0.214］，辅助AP差0.152［0.026，0.268］；Brier及log loss差的区间均跨零，概率误差改善仍不确定。
 
 见[第36步报告](reports/ucsd_manuscript_step36_20261029.md)、[段落与全精度映射](reports/ucsd_manuscript_step36/results_section34.json)及[核对回执](reports/ucsd_manuscript_step36/artifact_verification.json)。原表12个值、4个点差、8000个保存的bootstrap配对差和8个区间端点一致，158份既有文件未变。差值先用未舍入指标计算，不由显示值或单模型区间端点相减。未重训或增加检验。已写M1–M20及R1–R4，共3904个英文词，下一节为3.5校准与错误（R5），等待用户批准。
