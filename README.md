@@ -2,6 +2,19 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第19步已完成20套固定患者分组验证及每患者单扫描敏感性。** 全部20套完整，420个折内模型无失败。182条人群中Fusion AUC中位数0.7840、范围0.7589–0.8092，相对M1的AUC差20套均为正（中位数0.1248）。这些是同一批患者的分折描述，不是独立研究或95%区间，不选择最高值替代第18步主AUC。
+
+每患者最小可用会话选出135条（113肿瘤、22治疗改变），Fusion AUC=0.7297（患者bootstrap 95%区间0.6060–0.8326），Fusion−M1 AUC差0.1203（−0.0151至0.2522）跨零；固定阈值仅识别2/22次治疗改变，单扫描增量仍不确定。该人群与182条主分析不同，不能将AUC差异直接归因于重复扫描。
+
+见[第19步报告](reports/ucsd_stability_step19_20261029.md)、[固定方案](reports/ucsd_stability_protocol.md)、[Notebook19](notebooks/19_ucsd_model_stability.ipynb)、[Excel](outputs/ucsd-stability-20261029/UCSD_Model_Stability.xlsx)、[全部重复OOF](data/processed/ucsd_stability_repeated_oof.csv)、[单扫描OOF](data/processed/ucsd_stability_single_scan_oof.csv)及[完整折参数和检查回执](reports/ucsd_stability/)。全项目85项测试通过；Notebook执行5单元、0错误；独立重建15,100个模型OOF概率一致。未调参、筛特征或改阈值。
+
+```bash
+python scripts/run_ucsd_stability.py --freeze-only
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_19.json notebooks/19_ucsd_model_stability.ipynb
+```
+
+第18步主结果保留。建议下一阶段停止扩展模型，整理研究人群表、主/敏感性表图及论文方法/结果草稿，等待用户批准。外部验证、标注盲法、少数类识别及校准限制仍在。
+
 **第18步已完成共同病例的临床、MRI与融合Logistic比较。** 同一182次扫描/135名患者、固定患者分组5折，M0/M1/MRI/Fusion的OOF AUC分别0.5255/0.6721/0.7625/0.7819。唯一主要比较Fusion−M1 AUC差为0.1098（患者聚类95%区间0.0214–0.2141），提示内部增量信号；Brier差区间跨0。固定0.5阈值只识别12/41次治疗改变，校准斜率0.6673，不能称临床可用。原ROI仍为主分析；腐蚀Fusion AUC=0.7881，相对原Fusion差值区间跨0，未改选较高版本。
 
 见[第18步报告](reports/ucsd_fusion_step18_20261029.md)、[拟合前固定协议](reports/ucsd_fusion_protocol.md)、[Notebook18](notebooks/18_ucsd_clinical_mri_fusion.ipynb)、[Excel](outputs/ucsd-fusion-20261029/UCSD_Clinical_MRI_Fusion.xlsx)、[逐例OOF预测](data/processed/ucsd_fusion_oof.csv)、[指标与完整折参数](reports/ucsd_fusion/)。2,000次患者配对抽样全部有效，但固定OOF概率，不覆盖全部训练/分折不确定性。全项目79项测试通过；Notebook实际执行5单元、0错误；独立重建1,092个模型OOF概率通过。没有调参、特征筛选或阈值优化。

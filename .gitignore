@@ -75,3 +75,7 @@ node_modules/
 /reports/ucsd_fusion_workbook_input.json
 /outputs/ucsd-fusion-20261029/preview_*.png
 /outputs/ucsd-fusion-20261029/*.inspect.ndjson
+
+/reports/ucsd_stability_workbook_input.json
+/outputs/ucsd-stability-20261029/preview_*.png
+/outputs/ucsd-stability-20261029/*.inspect.ndjson

@@ -1,0 +1,2643 @@
+{
+  "repeat": 6,
+  "seed": 20261034,
+  "complete": true,
+  "errors": [],
+  "folds": [
+    {
+      "fold": 1,
+      "n_train": 145,
+      "n_test": 37,
+      "train_patients": 109,
+      "test_patients": 26,
+      "train_tumor": 112,
+      "test_tumor": 29,
+      "test_treatment_change": 8,
+      "train_IDs": [
+        "UCSD-PTGBM-0005_01",
+        "UCSD-PTGBM-0005_02",
+        "UCSD-PTGBM-0006_01",
+        "UCSD-PTGBM-0007_01",
+        "UCSD-PTGBM-0007_02",
+        "UCSD-PTGBM-0008_01",
+        "UCSD-PTGBM-0008_02",
+        "UCSD-PTGBM-0008_03",
+        "UCSD-PTGBM-0009_01",
+        "UCSD-PTGBM-0010_01",
+        "UCSD-PTGBM-0011_01",
+        "UCSD-PTGBM-0012_01",
+        "UCSD-PTGBM-0016_01",
+        "UCSD-PTGBM-0017_01",
+        "UCSD-PTGBM-0017_02",
+        "UCSD-PTGBM-0018_01",
+        "UCSD-PTGBM-0018_02",
+        "UCSD-PTGBM-0020_01",
+        "UCSD-PTGBM-0021_01",
+        "UCSD-PTGBM-0022_01",
+        "UCSD-PTGBM-0022_02",
+        "UCSD-PTGBM-0023_01",
+        "UCSD-PTGBM-0024_01",
+        "UCSD-PTGBM-0025_01",
+        "UCSD-PTGBM-0025_02",
+        "UCSD-PTGBM-0025_03",
+        "UCSD-PTGBM-0026_01",
+        "UCSD-PTGBM-0029_01",
+        "UCSD-PTGBM-0031_01",
+        "UCSD-PTGBM-0032_01",
+        "UCSD-PTGBM-0032_02",
+        "UCSD-PTGBM-0032_03",
+        "UCSD-PTGBM-0032_04",
+        "UCSD-PTGBM-0034_01",
+        "UCSD-PTGBM-0034_02",
+        "UCSD-PTGBM-0035_01",
+        "UCSD-PTGBM-0037_01",
+        "UCSD-PTGBM-0037_02",
+        "UCSD-PTGBM-0037_03",
+        "UCSD-PTGBM-0045_01",
+        "UCSD-PTGBM-0047_01",
+        "UCSD-PTGBM-0047_02",
+        "UCSD-PTGBM-0049_01",
+        "UCSD-PTGBM-0051_01",
+        "UCSD-PTGBM-0053_01",
+        "UCSD-PTGBM-0053_02",
+        "UCSD-PTGBM-0053_03",
+        "UCSD-PTGBM-0055_01",
+        "UCSD-PTGBM-0056_01",
+        "UCSD-PTGBM-0058_01",
+        "UCSD-PTGBM-0059_01",
+        "UCSD-PTGBM-0060_01",
+        "UCSD-PTGBM-0063_01",
+        "UCSD-PTGBM-0064_01",
+        "UCSD-PTGBM-0066_01",
+        "UCSD-PTGBM-0066_02",
+        "UCSD-PTGBM-0071_01",
+        "UCSD-PTGBM-0072_01",
+        "UCSD-PTGBM-0074_01",
+        "UCSD-PTGBM-0075_01",
+        "UCSD-PTGBM-0076_01",
+        "UCSD-PTGBM-0077_01",
+        "UCSD-PTGBM-0078_01",
+        "UCSD-PTGBM-0079_01",
+        "UCSD-PTGBM-0080_01",
+        "UCSD-PTGBM-0081_01",
+        "UCSD-PTGBM-0082_01",
+        "UCSD-PTGBM-0083_01",
+        "UCSD-PTGBM-0084_01",
+        "UCSD-PTGBM-0085_01",
+        "UCSD-PTGBM-0086_01",
+        "UCSD-PTGBM-0088_01",
+        "UCSD-PTGBM-0089_01",
+        "UCSD-PTGBM-0090_01",
+        "UCSD-PTGBM-0091_01",
+        "UCSD-PTGBM-0093_01",
+        "UCSD-PTGBM-0094_01",
+        "UCSD-PTGBM-0097_01",
+        "UCSD-PTGBM-0099_01",
+        "UCSD-PTGBM-0100_01",
+        "UCSD-PTGBM-0101_01",
+        "UCSD-PTGBM-0101_02",
+        "UCSD-PTGBM-0103_01",
+        "UCSD-PTGBM-0103_02",
+        "UCSD-PTGBM-0104_01",
+        "UCSD-PTGBM-0106_01",
+        "UCSD-PTGBM-0107_01",
+        "UCSD-PTGBM-0108_01",
+        "UCSD-PTGBM-0113_01",
+        "UCSD-PTGBM-0117_01",
+        "UCSD-PTGBM-0118_01",
+        "UCSD-PTGBM-0119_01",
+        "UCSD-PTGBM-0119_02",
+        "UCSD-PTGBM-0122_01",
+        "UCSD-PTGBM-0123_01",
+        "UCSD-PTGBM-0123_02",
+        "UCSD-PTGBM-0123_03",
+        "UCSD-PTGBM-0126_01",
+        "UCSD-PTGBM-0128_01",
+        "UCSD-PTGBM-0130_01",
+        "UCSD-PTGBM-0131_01",
+        "UCSD-PTGBM-0133_01",
+        "UCSD-PTGBM-0133_02",
+        "UCSD-PTGBM-0134_01",
+        "UCSD-PTGBM-0136_01",
+        "UCSD-PTGBM-0137_01",
+        "UCSD-PTGBM-0137_02",
+        "UCSD-PTGBM-0138_01",
+        "UCSD-PTGBM-0139_01",
+        "UCSD-PTGBM-0140_01",
+        "UCSD-PTGBM-0140_02",
+        "UCSD-PTGBM-0142_01",
+        "UCSD-PTGBM-0147_01",
+        "UCSD-PTGBM-0147_02",
+        "UCSD-PTGBM-0148_01",
+        "UCSD-PTGBM-0150_01",
+        "UCSD-PTGBM-0150_02",
+        "UCSD-PTGBM-0151_01",
+        "UCSD-PTGBM-0152_01",
+        "UCSD-PTGBM-0154_01",
+        "UCSD-PTGBM-0155_01",
+        "UCSD-PTGBM-0155_02",
+        "UCSD-PTGBM-0156_01",
+        "UCSD-PTGBM-0157_01",
+        "UCSD-PTGBM-0158_01",
+        "UCSD-PTGBM-0159_01",
+        "UCSD-PTGBM-0160_01",
+        "UCSD-PTGBM-0161_01",
+        "UCSD-PTGBM-0162_01",
+        "UCSD-PTGBM-0162_02",
+        "UCSD-PTGBM-0163_01",
+        "UCSD-PTGBM-0163_02",
+        "UCSD-PTGBM-0163_03",
+        "UCSD-PTGBM-0164_01",
+        "UCSD-PTGBM-0165_01",
+        "UCSD-PTGBM-0166_01",
+        "UCSD-PTGBM-0169_01",
+        "UCSD-PTGBM-0171_01",
+        "UCSD-PTGBM-0173_01",
+        "UCSD-PTGBM-0174_01",
+        "UCSD-PTGBM-0174_02",
+        "UCSD-PTGBM-0176_01",
+        "UCSD-PTGBM-0176_02",
+        "UCSD-PTGBM-0178_01",
+        "UCSD-PTGBM-0178_02"
+      ],
+      "test_IDs": [
+        "UCSD-PTGBM-0002_01",
+        "UCSD-PTGBM-0019_01",
+        "UCSD-PTGBM-0019_02",
+        "UCSD-PTGBM-0039_01",
+        "UCSD-PTGBM-0044_01",
+        "UCSD-PTGBM-0050_01",
+        "UCSD-PTGBM-0050_02",
+        "UCSD-PTGBM-0050_03",
+        "UCSD-PTGBM-0050_04",
+        "UCSD-PTGBM-0062_01",
+        "UCSD-PTGBM-0073_01",
+        "UCSD-PTGBM-0073_02",
+        "UCSD-PTGBM-0087_01",
+        "UCSD-PTGBM-0092_01",
+        "UCSD-PTGBM-0105_01",
+        "UCSD-PTGBM-0110_01",
+        "UCSD-PTGBM-0114_01",
+        "UCSD-PTGBM-0120_01",
+        "UCSD-PTGBM-0120_02",
+        "UCSD-PTGBM-0124_01",
+        "UCSD-PTGBM-0124_02",
+        "UCSD-PTGBM-0125_01",
+        "UCSD-PTGBM-0127_01",
+        "UCSD-PTGBM-0129_01",
+        "UCSD-PTGBM-0132_01",
+        "UCSD-PTGBM-0135_01",
+        "UCSD-PTGBM-0135_02",
+        "UCSD-PTGBM-0135_03",
+        "UCSD-PTGBM-0153_01",
+        "UCSD-PTGBM-0167_01",
+        "UCSD-PTGBM-0167_02",
+        "UCSD-PTGBM-0168_01",
+        "UCSD-PTGBM-0170_01",
+        "UCSD-PTGBM-0172_01",
+        "UCSD-PTGBM-0172_02",
+        "UCSD-PTGBM-0175_01",
+        "UCSD-PTGBM-0177_01"
+      ],
+      "valid": true,
+      "errors": [],
+      "models": {
+        "M0": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "binary__sex_male"
+            ],
+            "intercept": 0.711032927068026,
+            "coefficients": [
+              0.4353241390610564,
+              0.7739154482239917
+            ],
+            "iterations": 7,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.93103448275862
+                ],
+                "scale": [
+                  14.414387052603354
+                ]
+              }
+            },
+            "binary": [
+              "sex_male"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.46336206896551724,
+            "ap_tumor": 0.8048799664581195,
+            "ap_treatment_change": 0.2383107389686337,
+            "brier": 0.17587924402847713,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.7837837837837838,
+            "tn": 0,
+            "fp": 8,
+            "fn": 0,
+            "tp": 29,
+            "log_loss": 0.5392009840414982,
+            "precision_tumor": 0.7837837837837838,
+            "precision_treatment_change": null
+          }
+        },
+        "M1": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing"
+            ],
+            "intercept": 0.5964706945025807,
+            "coefficients": [
+              0.24830736224843292,
+              -0.5004733918433917,
+              0.6950199341802469,
+              0.4321559252735492,
+              0.9945661815321081
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.93103448275862
+                ],
+                "scale": [
+                  14.414387052603354
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.918714843655778
+                ],
+                "scale": [
+                  1.2007801961826907
+                ],
+                "impute_median": 4.927253685157205
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7349137931034483,
+            "ap_tumor": 0.9166892425110834,
+            "ap_treatment_change": 0.38135169850433537,
+            "brier": 0.15333412640574348,
+            "sensitivity_tumor": 0.9655172413793104,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.4827586206896552,
+            "accuracy": 0.7567567567567568,
+            "tn": 0,
+            "fp": 8,
+            "fn": 1,
+            "tp": 28,
+            "log_loss": 0.4674045340866618,
+            "precision_tumor": 0.7777777777777778,
+            "precision_treatment_change": 0.0
+          }
+        },
+        "MRI": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.6825747252690935,
+            "coefficients": [
+              0.2840807207308652,
+              -0.0009712686402495176,
+              -0.097584476341757,
+              -0.11035483495597341,
+              -0.24460630147202514,
+              0.9619673095441461,
+              0.04559090068863377,
+              0.6539704152961056
+            ],
+            "iterations": 12,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7951764819223793,
+                  0.22127699074628523,
+                  4.088465023918352,
+                  9.633258828992181,
+                  0.28795942980215494,
+                  0.17850500871543318,
+                  3.6223340305852947,
+                  8.618760759531508
+                ],
+                "scale": [
+                  0.1210596367341774,
+                  0.08084506452294497,
+                  0.33792403701349794,
+                  5.1404454444024195,
+                  0.09905340599383965,
+                  0.06099035972110704,
+                  0.5248827765348507,
+                  5.813173414150719
+                ]
+              }
+            },
+            "binary": []
+          },
+          "metrics": {
+            "roc_auc": 0.8577586206896552,
+            "ap_tumor": 0.9553178350290548,
+            "ap_treatment_change": 0.7568078234638337,
+            "brier": 0.12231636589442493,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.25,
+            "balanced_accuracy": 0.625,
+            "accuracy": 0.8378378378378378,
+            "tn": 2,
+            "fp": 6,
+            "fn": 0,
+            "tp": 29,
+            "log_loss": 0.39006830253804375,
+            "precision_tumor": 0.8285714285714286,
+            "precision_treatment_change": 1.0
+          }
+        },
+        "Fusion": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing",
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 0.7845549548921514,
+            "coefficients": [
+              0.3182689202467601,
+              -0.18848253449999602,
+              1.060072380962207,
+              0.4877155491853304,
+              0.7334343086187002,
+              0.4152528229759593,
+              0.024159364207018773,
+              -0.017990139206389495,
+              -0.21847012302502772,
+              -0.47417675135653853,
+              0.9790859976198555,
+              0.13121530087299463,
+              0.6952981437690231
+            ],
+            "iterations": 16,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.93103448275862
+                ],
+                "scale": [
+                  14.414387052603354
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.918714843655778
+                ],
+                "scale": [
+                  1.2007801961826907
+                ],
+                "impute_median": 4.927253685157205
+              },
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7951764819223793,
+                  0.22127699074628523,
+                  4.088465023918352,
+                  9.633258828992181,
+                  0.28795942980215494,
+                  0.17850500871543318,
+                  3.6223340305852947,
+                  8.618760759531508
+                ],
+                "scale": [
+                  0.1210596367341774,
+                  0.08084506452294497,
+                  0.33792403701349794,
+                  5.1404454444024195,
+                  0.09905340599383965,
+                  0.06099035972110704,
+                  0.5248827765348507,
+                  5.813173414150719
+                ]
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.8706896551724137,
+            "ap_tumor": 0.9627845980303706,
+            "ap_treatment_change": 0.6285539215686274,
+            "brier": 0.11641369605223911,
+            "sensitivity_tumor": 0.9655172413793104,
+            "specificity_treatment_change": 0.375,
+            "balanced_accuracy": 0.6702586206896552,
+            "accuracy": 0.8378378378378378,
+            "tn": 3,
+            "fp": 5,
+            "fn": 1,
+            "tp": 28,
+            "log_loss": 0.36727346065803257,
+            "precision_tumor": 0.8484848484848485,
+            "precision_treatment_change": 0.75
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "n_train": 146,
+      "n_test": 36,
+      "train_patients": 107,
+      "test_patients": 28,
+      "train_tumor": 113,
+      "test_tumor": 28,
+      "test_treatment_change": 8,
+      "train_IDs": [
+        "UCSD-PTGBM-0002_01",
+        "UCSD-PTGBM-0005_01",
+        "UCSD-PTGBM-0005_02",
+        "UCSD-PTGBM-0006_01",
+        "UCSD-PTGBM-0007_01",
+        "UCSD-PTGBM-0007_02",
+        "UCSD-PTGBM-0008_01",
+        "UCSD-PTGBM-0008_02",
+        "UCSD-PTGBM-0008_03",
+        "UCSD-PTGBM-0010_01",
+        "UCSD-PTGBM-0012_01",
+        "UCSD-PTGBM-0017_01",
+        "UCSD-PTGBM-0017_02",
+        "UCSD-PTGBM-0018_01",
+        "UCSD-PTGBM-0018_02",
+        "UCSD-PTGBM-0019_01",
+        "UCSD-PTGBM-0019_02",
+        "UCSD-PTGBM-0020_01",
+        "UCSD-PTGBM-0021_01",
+        "UCSD-PTGBM-0022_01",
+        "UCSD-PTGBM-0022_02",
+        "UCSD-PTGBM-0023_01",
+        "UCSD-PTGBM-0024_01",
+        "UCSD-PTGBM-0026_01",
+        "UCSD-PTGBM-0029_01",
+        "UCSD-PTGBM-0031_01",
+        "UCSD-PTGBM-0032_01",
+        "UCSD-PTGBM-0032_02",
+        "UCSD-PTGBM-0032_03",
+        "UCSD-PTGBM-0032_04",
+        "UCSD-PTGBM-0037_01",
+        "UCSD-PTGBM-0037_02",
+        "UCSD-PTGBM-0037_03",
+        "UCSD-PTGBM-0039_01",
+        "UCSD-PTGBM-0044_01",
+        "UCSD-PTGBM-0045_01",
+        "UCSD-PTGBM-0050_01",
+        "UCSD-PTGBM-0050_02",
+        "UCSD-PTGBM-0050_03",
+        "UCSD-PTGBM-0050_04",
+        "UCSD-PTGBM-0053_01",
+        "UCSD-PTGBM-0053_02",
+        "UCSD-PTGBM-0053_03",
+        "UCSD-PTGBM-0055_01",
+        "UCSD-PTGBM-0056_01",
+        "UCSD-PTGBM-0058_01",
+        "UCSD-PTGBM-0059_01",
+        "UCSD-PTGBM-0060_01",
+        "UCSD-PTGBM-0062_01",
+        "UCSD-PTGBM-0063_01",
+        "UCSD-PTGBM-0064_01",
+        "UCSD-PTGBM-0066_01",
+        "UCSD-PTGBM-0066_02",
+        "UCSD-PTGBM-0071_01",
+        "UCSD-PTGBM-0072_01",
+        "UCSD-PTGBM-0073_01",
+        "UCSD-PTGBM-0073_02",
+        "UCSD-PTGBM-0075_01",
+        "UCSD-PTGBM-0077_01",
+        "UCSD-PTGBM-0078_01",
+        "UCSD-PTGBM-0079_01",
+        "UCSD-PTGBM-0083_01",
+        "UCSD-PTGBM-0084_01",
+        "UCSD-PTGBM-0085_01",
+        "UCSD-PTGBM-0086_01",
+        "UCSD-PTGBM-0087_01",
+        "UCSD-PTGBM-0088_01",
+        "UCSD-PTGBM-0089_01",
+        "UCSD-PTGBM-0091_01",
+        "UCSD-PTGBM-0092_01",
+        "UCSD-PTGBM-0093_01",
+        "UCSD-PTGBM-0094_01",
+        "UCSD-PTGBM-0099_01",
+        "UCSD-PTGBM-0100_01",
+        "UCSD-PTGBM-0103_01",
+        "UCSD-PTGBM-0103_02",
+        "UCSD-PTGBM-0105_01",
+        "UCSD-PTGBM-0106_01",
+        "UCSD-PTGBM-0108_01",
+        "UCSD-PTGBM-0110_01",
+        "UCSD-PTGBM-0113_01",
+        "UCSD-PTGBM-0114_01",
+        "UCSD-PTGBM-0117_01",
+        "UCSD-PTGBM-0118_01",
+        "UCSD-PTGBM-0119_01",
+        "UCSD-PTGBM-0119_02",
+        "UCSD-PTGBM-0120_01",
+        "UCSD-PTGBM-0120_02",
+        "UCSD-PTGBM-0124_01",
+        "UCSD-PTGBM-0124_02",
+        "UCSD-PTGBM-0125_01",
+        "UCSD-PTGBM-0126_01",
+        "UCSD-PTGBM-0127_01",
+        "UCSD-PTGBM-0128_01",
+        "UCSD-PTGBM-0129_01",
+        "UCSD-PTGBM-0130_01",
+        "UCSD-PTGBM-0131_01",
+        "UCSD-PTGBM-0132_01",
+        "UCSD-PTGBM-0133_01",
+        "UCSD-PTGBM-0133_02",
+        "UCSD-PTGBM-0134_01",
+        "UCSD-PTGBM-0135_01",
+        "UCSD-PTGBM-0135_02",
+        "UCSD-PTGBM-0135_03",
+        "UCSD-PTGBM-0137_01",
+        "UCSD-PTGBM-0137_02",
+        "UCSD-PTGBM-0138_01",
+        "UCSD-PTGBM-0139_01",
+        "UCSD-PTGBM-0142_01",
+        "UCSD-PTGBM-0147_01",
+        "UCSD-PTGBM-0147_02",
+        "UCSD-PTGBM-0148_01",
+        "UCSD-PTGBM-0150_01",
+        "UCSD-PTGBM-0150_02",
+        "UCSD-PTGBM-0151_01",
+        "UCSD-PTGBM-0152_01",
+        "UCSD-PTGBM-0153_01",
+        "UCSD-PTGBM-0155_01",
+        "UCSD-PTGBM-0155_02",
+        "UCSD-PTGBM-0157_01",
+        "UCSD-PTGBM-0159_01",
+        "UCSD-PTGBM-0160_01",
+        "UCSD-PTGBM-0162_01",
+        "UCSD-PTGBM-0162_02",
+        "UCSD-PTGBM-0163_01",
+        "UCSD-PTGBM-0163_02",
+        "UCSD-PTGBM-0163_03",
+        "UCSD-PTGBM-0164_01",
+        "UCSD-PTGBM-0165_01",
+        "UCSD-PTGBM-0166_01",
+        "UCSD-PTGBM-0167_01",
+        "UCSD-PTGBM-0167_02",
+        "UCSD-PTGBM-0168_01",
+        "UCSD-PTGBM-0170_01",
+        "UCSD-PTGBM-0171_01",
+        "UCSD-PTGBM-0172_01",
+        "UCSD-PTGBM-0172_02",
+        "UCSD-PTGBM-0173_01",
+        "UCSD-PTGBM-0174_01",
+        "UCSD-PTGBM-0174_02",
+        "UCSD-PTGBM-0175_01",
+        "UCSD-PTGBM-0176_01",
+        "UCSD-PTGBM-0176_02",
+        "UCSD-PTGBM-0177_01",
+        "UCSD-PTGBM-0178_01",
+        "UCSD-PTGBM-0178_02"
+      ],
+      "test_IDs": [
+        "UCSD-PTGBM-0009_01",
+        "UCSD-PTGBM-0011_01",
+        "UCSD-PTGBM-0016_01",
+        "UCSD-PTGBM-0025_01",
+        "UCSD-PTGBM-0025_02",
+        "UCSD-PTGBM-0025_03",
+        "UCSD-PTGBM-0034_01",
+        "UCSD-PTGBM-0034_02",
+        "UCSD-PTGBM-0035_01",
+        "UCSD-PTGBM-0047_01",
+        "UCSD-PTGBM-0047_02",
+        "UCSD-PTGBM-0049_01",
+        "UCSD-PTGBM-0051_01",
+        "UCSD-PTGBM-0074_01",
+        "UCSD-PTGBM-0076_01",
+        "UCSD-PTGBM-0080_01",
+        "UCSD-PTGBM-0081_01",
+        "UCSD-PTGBM-0082_01",
+        "UCSD-PTGBM-0090_01",
+        "UCSD-PTGBM-0097_01",
+        "UCSD-PTGBM-0101_01",
+        "UCSD-PTGBM-0101_02",
+        "UCSD-PTGBM-0104_01",
+        "UCSD-PTGBM-0107_01",
+        "UCSD-PTGBM-0122_01",
+        "UCSD-PTGBM-0123_01",
+        "UCSD-PTGBM-0123_02",
+        "UCSD-PTGBM-0123_03",
+        "UCSD-PTGBM-0136_01",
+        "UCSD-PTGBM-0140_01",
+        "UCSD-PTGBM-0140_02",
+        "UCSD-PTGBM-0154_01",
+        "UCSD-PTGBM-0156_01",
+        "UCSD-PTGBM-0158_01",
+        "UCSD-PTGBM-0161_01",
+        "UCSD-PTGBM-0169_01"
+      ],
+      "valid": true,
+      "errors": [],
+      "models": {
+        "M0": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "binary__sex_male"
+            ],
+            "intercept": 1.0886323562191376,
+            "coefficients": [
+              0.2836878385639483,
+              0.22104797747085025
+            ],
+            "iterations": 7,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  56.75342465753425
+                ],
+                "scale": [
+                  13.053400146896916
+                ]
+              }
+            },
+            "binary": [
+              "sex_male"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7544642857142857,
+            "ap_tumor": 0.9147907496331865,
+            "ap_treatment_change": 0.47577063740856845,
+            "brier": 0.15978453816844151,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.7777777777777778,
+            "tn": 0,
+            "fp": 8,
+            "fn": 0,
+            "tp": 28,
+            "log_loss": 0.49377076116965646,
+            "precision_tumor": 0.7777777777777778,
+            "precision_treatment_change": null
+          }
+        },
+        "M1": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing"
+            ],
+            "intercept": 1.0609816415138922,
+            "coefficients": [
+              0.0604471525474101,
+              -0.7095871636048774,
+              0.0693234841389205,
+              0.7896867152230823,
+              0.7079878758291145
+            ],
+            "iterations": 10,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  56.75342465753425
+                ],
+                "scale": [
+                  13.053400146896916
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.878420605768535
+                ],
+                "scale": [
+                  1.1460954083690384
+                ],
+                "impute_median": 4.927253685157205
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7410714285714286,
+            "ap_tumor": 0.8856415295884662,
+            "ap_treatment_change": 0.5027957454911789,
+            "brier": 0.14759940248181497,
+            "sensitivity_tumor": 0.9642857142857143,
+            "specificity_treatment_change": 0.375,
+            "balanced_accuracy": 0.6696428571428572,
+            "accuracy": 0.8333333333333334,
+            "tn": 3,
+            "fp": 5,
+            "fn": 1,
+            "tp": 27,
+            "log_loss": 0.46580515320773697,
+            "precision_tumor": 0.84375,
+            "precision_treatment_change": 0.75
+          }
+        },
+        "MRI": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.827046324039761,
+            "coefficients": [
+              0.1865968095285858,
+              -0.22314863782895272,
+              -0.3157452547249814,
+              -0.10171953340323278,
+              -0.3678529918837741,
+              1.0483486153890922,
+              0.1927517693817774,
+              0.6859490953363342
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7957460082959735,
+                  0.22120210670290488,
+                  4.071481204669489,
+                  9.624046671151286,
+                  0.2862133797611054,
+                  0.18048569444685753,
+                  3.6373372309488685,
+                  8.578809793992919
+                ],
+                "scale": [
+                  0.11361527263769189,
+                  0.08237270833085657,
+                  0.3448087535563777,
+                  5.16330646108561,
+                  0.10462267448168608,
+                  0.05971986443521013,
+                  0.48316144310575604,
+                  5.590055520648788
+                ]
+              }
+            },
+            "binary": []
+          },
+          "metrics": {
+            "roc_auc": 0.7008928571428572,
+            "ap_tumor": 0.8654603524665301,
+            "ap_treatment_change": 0.40770937761069337,
+            "brier": 0.16648477825842464,
+            "sensitivity_tumor": 0.8214285714285714,
+            "specificity_treatment_change": 0.25,
+            "balanced_accuracy": 0.5357142857142857,
+            "accuracy": 0.6944444444444444,
+            "tn": 2,
+            "fp": 6,
+            "fn": 5,
+            "tp": 23,
+            "log_loss": 0.5276472678835156,
+            "precision_tumor": 0.7931034482758621,
+            "precision_treatment_change": 0.2857142857142857
+          }
+        },
+        "Fusion": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing",
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.2809680232586922,
+            "coefficients": [
+              0.42128522383140576,
+              -0.3209021268152881,
+              0.5901375340555822,
+              0.7147780059549782,
+              0.3434328106820291,
+              0.40489982737735103,
+              -0.15459326452701522,
+              -0.1707081917922227,
+              -0.2729576583841118,
+              -0.5665674846649386,
+              1.121129602134105,
+              0.24789051919710373,
+              0.6454381752000254
+            ],
+            "iterations": 14,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  56.75342465753425
+                ],
+                "scale": [
+                  13.053400146896916
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.878420605768535
+                ],
+                "scale": [
+                  1.1460954083690384
+                ],
+                "impute_median": 4.927253685157205
+              },
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7957460082959735,
+                  0.22120210670290488,
+                  4.071481204669489,
+                  9.624046671151286,
+                  0.2862133797611054,
+                  0.18048569444685753,
+                  3.6373372309488685,
+                  8.578809793992919
+                ],
+                "scale": [
+                  0.11361527263769189,
+                  0.08237270833085657,
+                  0.3448087535563777,
+                  5.16330646108561,
+                  0.10462267448168608,
+                  0.05971986443521013,
+                  0.48316144310575604,
+                  5.590055520648788
+                ]
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.8035714285714286,
+            "ap_tumor": 0.9175179799330044,
+            "ap_treatment_change": 0.6256410256410256,
+            "brier": 0.1447672901110049,
+            "sensitivity_tumor": 0.8928571428571429,
+            "specificity_treatment_change": 0.5,
+            "balanced_accuracy": 0.6964285714285714,
+            "accuracy": 0.8055555555555556,
+            "tn": 4,
+            "fp": 4,
+            "fn": 3,
+            "tp": 25,
+            "log_loss": 0.49501397048103296,
+            "precision_tumor": 0.8620689655172413,
+            "precision_treatment_change": 0.5714285714285714
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "n_train": 146,
+      "n_test": 36,
+      "train_patients": 108,
+      "test_patients": 27,
+      "train_tumor": 113,
+      "test_tumor": 28,
+      "test_treatment_change": 8,
+      "train_IDs": [
+        "UCSD-PTGBM-0002_01",
+        "UCSD-PTGBM-0005_01",
+        "UCSD-PTGBM-0005_02",
+        "UCSD-PTGBM-0006_01",
+        "UCSD-PTGBM-0007_01",
+        "UCSD-PTGBM-0007_02",
+        "UCSD-PTGBM-0008_01",
+        "UCSD-PTGBM-0008_02",
+        "UCSD-PTGBM-0008_03",
+        "UCSD-PTGBM-0009_01",
+        "UCSD-PTGBM-0011_01",
+        "UCSD-PTGBM-0016_01",
+        "UCSD-PTGBM-0017_01",
+        "UCSD-PTGBM-0017_02",
+        "UCSD-PTGBM-0018_01",
+        "UCSD-PTGBM-0018_02",
+        "UCSD-PTGBM-0019_01",
+        "UCSD-PTGBM-0019_02",
+        "UCSD-PTGBM-0020_01",
+        "UCSD-PTGBM-0021_01",
+        "UCSD-PTGBM-0024_01",
+        "UCSD-PTGBM-0025_01",
+        "UCSD-PTGBM-0025_02",
+        "UCSD-PTGBM-0025_03",
+        "UCSD-PTGBM-0026_01",
+        "UCSD-PTGBM-0029_01",
+        "UCSD-PTGBM-0034_01",
+        "UCSD-PTGBM-0034_02",
+        "UCSD-PTGBM-0035_01",
+        "UCSD-PTGBM-0037_01",
+        "UCSD-PTGBM-0037_02",
+        "UCSD-PTGBM-0037_03",
+        "UCSD-PTGBM-0039_01",
+        "UCSD-PTGBM-0044_01",
+        "UCSD-PTGBM-0045_01",
+        "UCSD-PTGBM-0047_01",
+        "UCSD-PTGBM-0047_02",
+        "UCSD-PTGBM-0049_01",
+        "UCSD-PTGBM-0050_01",
+        "UCSD-PTGBM-0050_02",
+        "UCSD-PTGBM-0050_03",
+        "UCSD-PTGBM-0050_04",
+        "UCSD-PTGBM-0051_01",
+        "UCSD-PTGBM-0053_01",
+        "UCSD-PTGBM-0053_02",
+        "UCSD-PTGBM-0053_03",
+        "UCSD-PTGBM-0055_01",
+        "UCSD-PTGBM-0056_01",
+        "UCSD-PTGBM-0058_01",
+        "UCSD-PTGBM-0060_01",
+        "UCSD-PTGBM-0062_01",
+        "UCSD-PTGBM-0063_01",
+        "UCSD-PTGBM-0066_01",
+        "UCSD-PTGBM-0066_02",
+        "UCSD-PTGBM-0071_01",
+        "UCSD-PTGBM-0073_01",
+        "UCSD-PTGBM-0073_02",
+        "UCSD-PTGBM-0074_01",
+        "UCSD-PTGBM-0075_01",
+        "UCSD-PTGBM-0076_01",
+        "UCSD-PTGBM-0077_01",
+        "UCSD-PTGBM-0078_01",
+        "UCSD-PTGBM-0079_01",
+        "UCSD-PTGBM-0080_01",
+        "UCSD-PTGBM-0081_01",
+        "UCSD-PTGBM-0082_01",
+        "UCSD-PTGBM-0083_01",
+        "UCSD-PTGBM-0084_01",
+        "UCSD-PTGBM-0085_01",
+        "UCSD-PTGBM-0086_01",
+        "UCSD-PTGBM-0087_01",
+        "UCSD-PTGBM-0088_01",
+        "UCSD-PTGBM-0090_01",
+        "UCSD-PTGBM-0091_01",
+        "UCSD-PTGBM-0092_01",
+        "UCSD-PTGBM-0094_01",
+        "UCSD-PTGBM-0097_01",
+        "UCSD-PTGBM-0101_01",
+        "UCSD-PTGBM-0101_02",
+        "UCSD-PTGBM-0103_01",
+        "UCSD-PTGBM-0103_02",
+        "UCSD-PTGBM-0104_01",
+        "UCSD-PTGBM-0105_01",
+        "UCSD-PTGBM-0106_01",
+        "UCSD-PTGBM-0107_01",
+        "UCSD-PTGBM-0108_01",
+        "UCSD-PTGBM-0110_01",
+        "UCSD-PTGBM-0113_01",
+        "UCSD-PTGBM-0114_01",
+        "UCSD-PTGBM-0117_01",
+        "UCSD-PTGBM-0118_01",
+        "UCSD-PTGBM-0120_01",
+        "UCSD-PTGBM-0120_02",
+        "UCSD-PTGBM-0122_01",
+        "UCSD-PTGBM-0123_01",
+        "UCSD-PTGBM-0123_02",
+        "UCSD-PTGBM-0123_03",
+        "UCSD-PTGBM-0124_01",
+        "UCSD-PTGBM-0124_02",
+        "UCSD-PTGBM-0125_01",
+        "UCSD-PTGBM-0126_01",
+        "UCSD-PTGBM-0127_01",
+        "UCSD-PTGBM-0128_01",
+        "UCSD-PTGBM-0129_01",
+        "UCSD-PTGBM-0132_01",
+        "UCSD-PTGBM-0133_01",
+        "UCSD-PTGBM-0133_02",
+        "UCSD-PTGBM-0134_01",
+        "UCSD-PTGBM-0135_01",
+        "UCSD-PTGBM-0135_02",
+        "UCSD-PTGBM-0135_03",
+        "UCSD-PTGBM-0136_01",
+        "UCSD-PTGBM-0138_01",
+        "UCSD-PTGBM-0140_01",
+        "UCSD-PTGBM-0140_02",
+        "UCSD-PTGBM-0147_01",
+        "UCSD-PTGBM-0147_02",
+        "UCSD-PTGBM-0151_01",
+        "UCSD-PTGBM-0152_01",
+        "UCSD-PTGBM-0153_01",
+        "UCSD-PTGBM-0154_01",
+        "UCSD-PTGBM-0156_01",
+        "UCSD-PTGBM-0157_01",
+        "UCSD-PTGBM-0158_01",
+        "UCSD-PTGBM-0160_01",
+        "UCSD-PTGBM-0161_01",
+        "UCSD-PTGBM-0162_01",
+        "UCSD-PTGBM-0162_02",
+        "UCSD-PTGBM-0163_01",
+        "UCSD-PTGBM-0163_02",
+        "UCSD-PTGBM-0163_03",
+        "UCSD-PTGBM-0165_01",
+        "UCSD-PTGBM-0167_01",
+        "UCSD-PTGBM-0167_02",
+        "UCSD-PTGBM-0168_01",
+        "UCSD-PTGBM-0169_01",
+        "UCSD-PTGBM-0170_01",
+        "UCSD-PTGBM-0172_01",
+        "UCSD-PTGBM-0172_02",
+        "UCSD-PTGBM-0173_01",
+        "UCSD-PTGBM-0175_01",
+        "UCSD-PTGBM-0176_01",
+        "UCSD-PTGBM-0176_02",
+        "UCSD-PTGBM-0177_01",
+        "UCSD-PTGBM-0178_01",
+        "UCSD-PTGBM-0178_02"
+      ],
+      "test_IDs": [
+        "UCSD-PTGBM-0010_01",
+        "UCSD-PTGBM-0012_01",
+        "UCSD-PTGBM-0022_01",
+        "UCSD-PTGBM-0022_02",
+        "UCSD-PTGBM-0023_01",
+        "UCSD-PTGBM-0031_01",
+        "UCSD-PTGBM-0032_01",
+        "UCSD-PTGBM-0032_02",
+        "UCSD-PTGBM-0032_03",
+        "UCSD-PTGBM-0032_04",
+        "UCSD-PTGBM-0059_01",
+        "UCSD-PTGBM-0064_01",
+        "UCSD-PTGBM-0072_01",
+        "UCSD-PTGBM-0089_01",
+        "UCSD-PTGBM-0093_01",
+        "UCSD-PTGBM-0099_01",
+        "UCSD-PTGBM-0100_01",
+        "UCSD-PTGBM-0119_01",
+        "UCSD-PTGBM-0119_02",
+        "UCSD-PTGBM-0130_01",
+        "UCSD-PTGBM-0131_01",
+        "UCSD-PTGBM-0137_01",
+        "UCSD-PTGBM-0137_02",
+        "UCSD-PTGBM-0139_01",
+        "UCSD-PTGBM-0142_01",
+        "UCSD-PTGBM-0148_01",
+        "UCSD-PTGBM-0150_01",
+        "UCSD-PTGBM-0150_02",
+        "UCSD-PTGBM-0155_01",
+        "UCSD-PTGBM-0155_02",
+        "UCSD-PTGBM-0159_01",
+        "UCSD-PTGBM-0164_01",
+        "UCSD-PTGBM-0166_01",
+        "UCSD-PTGBM-0171_01",
+        "UCSD-PTGBM-0174_01",
+        "UCSD-PTGBM-0174_02"
+      ],
+      "valid": true,
+      "errors": [],
+      "models": {
+        "M0": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "binary__sex_male"
+            ],
+            "intercept": 0.6963246280413733,
+            "coefficients": [
+              0.4534252776269267,
+              0.8340302434686874
+            ],
+            "iterations": 7,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.486301369863014
+                ],
+                "scale": [
+                  13.57840565084006
+                ]
+              }
+            },
+            "binary": [
+              "sex_male"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.3995535714285714,
+            "ap_tumor": 0.7841964417345886,
+            "ap_treatment_change": 0.20872549019607844,
+            "brier": 0.18526536171180585,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.7777777777777778,
+            "tn": 0,
+            "fp": 8,
+            "fn": 0,
+            "tp": 28,
+            "log_loss": 0.5641444203449422,
+            "precision_tumor": 0.7777777777777778,
+            "precision_treatment_change": null
+          }
+        },
+        "M1": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing"
+            ],
+            "intercept": 0.5916826576440853,
+            "coefficients": [
+              0.202205067523493,
+              -0.5809387261575554,
+              0.7453709039181194,
+              0.6405467531303751,
+              0.7915293611463887
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.486301369863014
+                ],
+                "scale": [
+                  13.57840565084006
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.904684301458038
+                ],
+                "scale": [
+                  1.1947645769230768
+                ],
+                "impute_median": 4.852030263919617
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.6830357142857143,
+            "ap_tumor": 0.8972298320423095,
+            "ap_treatment_change": 0.45883763227513225,
+            "brier": 0.16032821518290896,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.7777777777777778,
+            "tn": 0,
+            "fp": 8,
+            "fn": 0,
+            "tp": 28,
+            "log_loss": 0.4910727099901935,
+            "precision_tumor": 0.7777777777777778,
+            "precision_treatment_change": null
+          }
+        },
+        "MRI": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.7318829124572988,
+            "coefficients": [
+              0.29372722440729,
+              -0.20778749479220965,
+              -0.3264412946965044,
+              0.15950615901134974,
+              -0.5660432104206841,
+              1.1048629447875862,
+              -0.19262013156605662,
+              0.5720839198612236
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7905814683957942,
+                  0.22514412644610982,
+                  4.081266481688418,
+                  9.439788084992099,
+                  0.28569222447678405,
+                  0.17764832400486144,
+                  3.667492084778534,
+                  8.654416589974488
+                ],
+                "scale": [
+                  0.11916014931667179,
+                  0.08435848508474611,
+                  0.3277473057882475,
+                  5.189911633701552,
+                  0.10442383356405613,
+                  0.060239666856108334,
+                  0.46945461317957393,
+                  5.633687293652177
+                ]
+              }
+            },
+            "binary": []
+          },
+          "metrics": {
+            "roc_auc": 0.8258928571428572,
+            "ap_tumor": 0.9457167103024093,
+            "ap_treatment_change": 0.5523065476190476,
+            "brier": 0.14856737575342793,
+            "sensitivity_tumor": 0.9642857142857143,
+            "specificity_treatment_change": 0.25,
+            "balanced_accuracy": 0.6071428571428572,
+            "accuracy": 0.8055555555555556,
+            "tn": 2,
+            "fp": 6,
+            "fn": 1,
+            "tp": 27,
+            "log_loss": 0.44993533512903006,
+            "precision_tumor": 0.8181818181818182,
+            "precision_treatment_change": 0.6666666666666666
+          }
+        },
+        "Fusion": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing",
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 0.7579881146381936,
+            "coefficients": [
+              0.39867014702257286,
+              -0.27574110736533847,
+              1.2564746117274315,
+              0.5709256533147206,
+              0.6111109090897343,
+              0.4993396104365957,
+              -0.1747575861482692,
+              -0.290238069605446,
+              0.017052970073274647,
+              -0.8642522908016925,
+              1.1703627181486105,
+              -0.17118898275924327,
+              0.5798280285912678
+            ],
+            "iterations": 15,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.486301369863014
+                ],
+                "scale": [
+                  13.57840565084006
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.904684301458038
+                ],
+                "scale": [
+                  1.1947645769230768
+                ],
+                "impute_median": 4.852030263919617
+              },
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7905814683957942,
+                  0.22514412644610982,
+                  4.081266481688418,
+                  9.439788084992099,
+                  0.28569222447678405,
+                  0.17764832400486144,
+                  3.667492084778534,
+                  8.654416589974488
+                ],
+                "scale": [
+                  0.11916014931667179,
+                  0.08435848508474611,
+                  0.3277473057882475,
+                  5.189911633701552,
+                  0.10442383356405613,
+                  0.060239666856108334,
+                  0.46945461317957393,
+                  5.633687293652177
+                ]
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7857142857142858,
+            "ap_tumor": 0.9283833800480243,
+            "ap_treatment_change": 0.5246362433862433,
+            "brier": 0.15999003327334313,
+            "sensitivity_tumor": 0.9642857142857143,
+            "specificity_treatment_change": 0.125,
+            "balanced_accuracy": 0.5446428571428572,
+            "accuracy": 0.7777777777777778,
+            "tn": 1,
+            "fp": 7,
+            "fn": 1,
+            "tp": 27,
+            "log_loss": 0.49109781695853744,
+            "precision_tumor": 0.7941176470588235,
+            "precision_treatment_change": 0.5
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "n_train": 146,
+      "n_test": 36,
+      "train_patients": 107,
+      "test_patients": 28,
+      "train_tumor": 113,
+      "test_tumor": 28,
+      "test_treatment_change": 8,
+      "train_IDs": [
+        "UCSD-PTGBM-0002_01",
+        "UCSD-PTGBM-0007_01",
+        "UCSD-PTGBM-0007_02",
+        "UCSD-PTGBM-0008_01",
+        "UCSD-PTGBM-0008_02",
+        "UCSD-PTGBM-0008_03",
+        "UCSD-PTGBM-0009_01",
+        "UCSD-PTGBM-0010_01",
+        "UCSD-PTGBM-0011_01",
+        "UCSD-PTGBM-0012_01",
+        "UCSD-PTGBM-0016_01",
+        "UCSD-PTGBM-0019_01",
+        "UCSD-PTGBM-0019_02",
+        "UCSD-PTGBM-0022_01",
+        "UCSD-PTGBM-0022_02",
+        "UCSD-PTGBM-0023_01",
+        "UCSD-PTGBM-0025_01",
+        "UCSD-PTGBM-0025_02",
+        "UCSD-PTGBM-0025_03",
+        "UCSD-PTGBM-0031_01",
+        "UCSD-PTGBM-0032_01",
+        "UCSD-PTGBM-0032_02",
+        "UCSD-PTGBM-0032_03",
+        "UCSD-PTGBM-0032_04",
+        "UCSD-PTGBM-0034_01",
+        "UCSD-PTGBM-0034_02",
+        "UCSD-PTGBM-0035_01",
+        "UCSD-PTGBM-0037_01",
+        "UCSD-PTGBM-0037_02",
+        "UCSD-PTGBM-0037_03",
+        "UCSD-PTGBM-0039_01",
+        "UCSD-PTGBM-0044_01",
+        "UCSD-PTGBM-0045_01",
+        "UCSD-PTGBM-0047_01",
+        "UCSD-PTGBM-0047_02",
+        "UCSD-PTGBM-0049_01",
+        "UCSD-PTGBM-0050_01",
+        "UCSD-PTGBM-0050_02",
+        "UCSD-PTGBM-0050_03",
+        "UCSD-PTGBM-0050_04",
+        "UCSD-PTGBM-0051_01",
+        "UCSD-PTGBM-0056_01",
+        "UCSD-PTGBM-0058_01",
+        "UCSD-PTGBM-0059_01",
+        "UCSD-PTGBM-0060_01",
+        "UCSD-PTGBM-0062_01",
+        "UCSD-PTGBM-0064_01",
+        "UCSD-PTGBM-0066_01",
+        "UCSD-PTGBM-0066_02",
+        "UCSD-PTGBM-0071_01",
+        "UCSD-PTGBM-0072_01",
+        "UCSD-PTGBM-0073_01",
+        "UCSD-PTGBM-0073_02",
+        "UCSD-PTGBM-0074_01",
+        "UCSD-PTGBM-0076_01",
+        "UCSD-PTGBM-0078_01",
+        "UCSD-PTGBM-0079_01",
+        "UCSD-PTGBM-0080_01",
+        "UCSD-PTGBM-0081_01",
+        "UCSD-PTGBM-0082_01",
+        "UCSD-PTGBM-0085_01",
+        "UCSD-PTGBM-0086_01",
+        "UCSD-PTGBM-0087_01",
+        "UCSD-PTGBM-0089_01",
+        "UCSD-PTGBM-0090_01",
+        "UCSD-PTGBM-0091_01",
+        "UCSD-PTGBM-0092_01",
+        "UCSD-PTGBM-0093_01",
+        "UCSD-PTGBM-0097_01",
+        "UCSD-PTGBM-0099_01",
+        "UCSD-PTGBM-0100_01",
+        "UCSD-PTGBM-0101_01",
+        "UCSD-PTGBM-0101_02",
+        "UCSD-PTGBM-0103_01",
+        "UCSD-PTGBM-0103_02",
+        "UCSD-PTGBM-0104_01",
+        "UCSD-PTGBM-0105_01",
+        "UCSD-PTGBM-0106_01",
+        "UCSD-PTGBM-0107_01",
+        "UCSD-PTGBM-0108_01",
+        "UCSD-PTGBM-0110_01",
+        "UCSD-PTGBM-0114_01",
+        "UCSD-PTGBM-0117_01",
+        "UCSD-PTGBM-0119_01",
+        "UCSD-PTGBM-0119_02",
+        "UCSD-PTGBM-0120_01",
+        "UCSD-PTGBM-0120_02",
+        "UCSD-PTGBM-0122_01",
+        "UCSD-PTGBM-0123_01",
+        "UCSD-PTGBM-0123_02",
+        "UCSD-PTGBM-0123_03",
+        "UCSD-PTGBM-0124_01",
+        "UCSD-PTGBM-0124_02",
+        "UCSD-PTGBM-0125_01",
+        "UCSD-PTGBM-0126_01",
+        "UCSD-PTGBM-0127_01",
+        "UCSD-PTGBM-0128_01",
+        "UCSD-PTGBM-0129_01",
+        "UCSD-PTGBM-0130_01",
+        "UCSD-PTGBM-0131_01",
+        "UCSD-PTGBM-0132_01",
+        "UCSD-PTGBM-0133_01",
+        "UCSD-PTGBM-0133_02",
+        "UCSD-PTGBM-0135_01",
+        "UCSD-PTGBM-0135_02",
+        "UCSD-PTGBM-0135_03",
+        "UCSD-PTGBM-0136_01",
+        "UCSD-PTGBM-0137_01",
+        "UCSD-PTGBM-0137_02",
+        "UCSD-PTGBM-0139_01",
+        "UCSD-PTGBM-0140_01",
+        "UCSD-PTGBM-0140_02",
+        "UCSD-PTGBM-0142_01",
+        "UCSD-PTGBM-0147_01",
+        "UCSD-PTGBM-0147_02",
+        "UCSD-PTGBM-0148_01",
+        "UCSD-PTGBM-0150_01",
+        "UCSD-PTGBM-0150_02",
+        "UCSD-PTGBM-0151_01",
+        "UCSD-PTGBM-0152_01",
+        "UCSD-PTGBM-0153_01",
+        "UCSD-PTGBM-0154_01",
+        "UCSD-PTGBM-0155_01",
+        "UCSD-PTGBM-0155_02",
+        "UCSD-PTGBM-0156_01",
+        "UCSD-PTGBM-0158_01",
+        "UCSD-PTGBM-0159_01",
+        "UCSD-PTGBM-0161_01",
+        "UCSD-PTGBM-0163_01",
+        "UCSD-PTGBM-0163_02",
+        "UCSD-PTGBM-0163_03",
+        "UCSD-PTGBM-0164_01",
+        "UCSD-PTGBM-0166_01",
+        "UCSD-PTGBM-0167_01",
+        "UCSD-PTGBM-0167_02",
+        "UCSD-PTGBM-0168_01",
+        "UCSD-PTGBM-0169_01",
+        "UCSD-PTGBM-0170_01",
+        "UCSD-PTGBM-0171_01",
+        "UCSD-PTGBM-0172_01",
+        "UCSD-PTGBM-0172_02",
+        "UCSD-PTGBM-0173_01",
+        "UCSD-PTGBM-0174_01",
+        "UCSD-PTGBM-0174_02",
+        "UCSD-PTGBM-0175_01",
+        "UCSD-PTGBM-0177_01"
+      ],
+      "test_IDs": [
+        "UCSD-PTGBM-0005_01",
+        "UCSD-PTGBM-0005_02",
+        "UCSD-PTGBM-0006_01",
+        "UCSD-PTGBM-0017_01",
+        "UCSD-PTGBM-0017_02",
+        "UCSD-PTGBM-0018_01",
+        "UCSD-PTGBM-0018_02",
+        "UCSD-PTGBM-0020_01",
+        "UCSD-PTGBM-0021_01",
+        "UCSD-PTGBM-0024_01",
+        "UCSD-PTGBM-0026_01",
+        "UCSD-PTGBM-0029_01",
+        "UCSD-PTGBM-0053_01",
+        "UCSD-PTGBM-0053_02",
+        "UCSD-PTGBM-0053_03",
+        "UCSD-PTGBM-0055_01",
+        "UCSD-PTGBM-0063_01",
+        "UCSD-PTGBM-0075_01",
+        "UCSD-PTGBM-0077_01",
+        "UCSD-PTGBM-0083_01",
+        "UCSD-PTGBM-0084_01",
+        "UCSD-PTGBM-0088_01",
+        "UCSD-PTGBM-0094_01",
+        "UCSD-PTGBM-0113_01",
+        "UCSD-PTGBM-0118_01",
+        "UCSD-PTGBM-0134_01",
+        "UCSD-PTGBM-0138_01",
+        "UCSD-PTGBM-0157_01",
+        "UCSD-PTGBM-0160_01",
+        "UCSD-PTGBM-0162_01",
+        "UCSD-PTGBM-0162_02",
+        "UCSD-PTGBM-0165_01",
+        "UCSD-PTGBM-0176_01",
+        "UCSD-PTGBM-0176_02",
+        "UCSD-PTGBM-0178_01",
+        "UCSD-PTGBM-0178_02"
+      ],
+      "valid": true,
+      "errors": [],
+      "models": {
+        "M0": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "binary__sex_male"
+            ],
+            "intercept": 0.958897304900827,
+            "coefficients": [
+              0.2454333256679878,
+              0.4199947787080496
+            ],
+            "iterations": 7,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  56.86986301369863
+                ],
+                "scale": [
+                  12.836305371783311
+                ]
+              }
+            },
+            "binary": [
+              "sex_male"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7790178571428572,
+            "ap_tumor": 0.865841417298975,
+            "ap_treatment_change": 0.7767001915708812,
+            "brier": 0.15651222310075216,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.7777777777777778,
+            "tn": 0,
+            "fp": 8,
+            "fn": 0,
+            "tp": 28,
+            "log_loss": 0.4885348783485461,
+            "precision_tumor": 0.7777777777777778,
+            "precision_treatment_change": null
+          }
+        },
+        "M1": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing"
+            ],
+            "intercept": 0.8116075874374227,
+            "coefficients": [
+              0.05337385188394614,
+              -0.6130658875401436,
+              0.2521311011507835,
+              1.0156730586363643,
+              1.022132980320253
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  56.86986301369863
+                ],
+                "scale": [
+                  12.836305371783311
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.915342432985574
+                ],
+                "scale": [
+                  1.14989649192154
+                ],
+                "impute_median": 5.062595033026967
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7455357142857143,
+            "ap_tumor": 0.8749094405582963,
+            "ap_treatment_change": 0.6448308270676691,
+            "brier": 0.1410484295470277,
+            "sensitivity_tumor": 0.9642857142857143,
+            "specificity_treatment_change": 0.25,
+            "balanced_accuracy": 0.6071428571428572,
+            "accuracy": 0.8055555555555556,
+            "tn": 2,
+            "fp": 6,
+            "fn": 1,
+            "tp": 27,
+            "log_loss": 0.45679556930748927,
+            "precision_tumor": 0.8181818181818182,
+            "precision_treatment_change": 0.6666666666666666
+          }
+        },
+        "MRI": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.7548480850806678,
+            "coefficients": [
+              0.03725960212754415,
+              0.02071758531592044,
+              -0.34274503294403197,
+              -0.08710262772264642,
+              -0.11987403064449476,
+              1.3450784932278874,
+              -0.2639014303824065,
+              0.48581911782163384
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7924060325267912,
+                  0.22205241348361313,
+                  4.088703789260818,
+                  9.678649078993232,
+                  0.28762762034256095,
+                  0.1816079456263949,
+                  3.6384146794782324,
+                  8.528089264429912
+                ],
+                "scale": [
+                  0.11413181128878078,
+                  0.08623256793493209,
+                  0.3259173537959374,
+                  5.230780208495133,
+                  0.09957247384319795,
+                  0.061025237550959247,
+                  0.5103309567506368,
+                  5.123178888250858
+                ]
+              }
+            },
+            "binary": []
+          },
+          "metrics": {
+            "roc_auc": 0.7633928571428572,
+            "ap_tumor": 0.9329629533687347,
+            "ap_treatment_change": 0.4405483405483405,
+            "brier": 0.16321259790854417,
+            "sensitivity_tumor": 0.7857142857142857,
+            "specificity_treatment_change": 0.25,
+            "balanced_accuracy": 0.5178571428571428,
+            "accuracy": 0.6666666666666666,
+            "tn": 2,
+            "fp": 6,
+            "fn": 6,
+            "tp": 22,
+            "log_loss": 0.47087742585102377,
+            "precision_tumor": 0.7857142857142857,
+            "precision_treatment_change": 0.25
+          }
+        },
+        "Fusion": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing",
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.051017105264791,
+            "coefficients": [
+              0.12597860419123497,
+              -0.3879311659081134,
+              0.6682084746625497,
+              1.0190769983640369,
+              0.8398204253006478,
+              0.09007842964349608,
+              0.04711716810145762,
+              -0.2644419976125106,
+              -0.12574967812318022,
+              -0.2965568522693818,
+              1.4126686006996676,
+              -0.33058835104687584,
+              0.5139186032261919
+            ],
+            "iterations": 16,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  56.86986301369863
+                ],
+                "scale": [
+                  12.836305371783311
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  4.915342432985574
+                ],
+                "scale": [
+                  1.14989649192154
+                ],
+                "impute_median": 5.062595033026967
+              },
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.7924060325267912,
+                  0.22205241348361313,
+                  4.088703789260818,
+                  9.678649078993232,
+                  0.28762762034256095,
+                  0.1816079456263949,
+                  3.6384146794782324,
+                  8.528089264429912
+                ],
+                "scale": [
+                  0.11413181128878078,
+                  0.08623256793493209,
+                  0.3259173537959374,
+                  5.230780208495133,
+                  0.09957247384319795,
+                  0.061025237550959247,
+                  0.5103309567506368,
+                  5.123178888250858
+                ]
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7991071428571429,
+            "ap_tumor": 0.9387513350633587,
+            "ap_treatment_change": 0.49417270531400964,
+            "brier": 0.14998775136454437,
+            "sensitivity_tumor": 0.8571428571428571,
+            "specificity_treatment_change": 0.75,
+            "balanced_accuracy": 0.8035714285714286,
+            "accuracy": 0.8333333333333334,
+            "tn": 6,
+            "fp": 2,
+            "fn": 4,
+            "tp": 24,
+            "log_loss": 0.44999013739989974,
+            "precision_tumor": 0.9230769230769231,
+            "precision_treatment_change": 0.6
+          }
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "n_train": 145,
+      "n_test": 37,
+      "train_patients": 109,
+      "test_patients": 26,
+      "train_tumor": 113,
+      "test_tumor": 28,
+      "test_treatment_change": 9,
+      "train_IDs": [
+        "UCSD-PTGBM-0002_01",
+        "UCSD-PTGBM-0005_01",
+        "UCSD-PTGBM-0005_02",
+        "UCSD-PTGBM-0006_01",
+        "UCSD-PTGBM-0009_01",
+        "UCSD-PTGBM-0010_01",
+        "UCSD-PTGBM-0011_01",
+        "UCSD-PTGBM-0012_01",
+        "UCSD-PTGBM-0016_01",
+        "UCSD-PTGBM-0017_01",
+        "UCSD-PTGBM-0017_02",
+        "UCSD-PTGBM-0018_01",
+        "UCSD-PTGBM-0018_02",
+        "UCSD-PTGBM-0019_01",
+        "UCSD-PTGBM-0019_02",
+        "UCSD-PTGBM-0020_01",
+        "UCSD-PTGBM-0021_01",
+        "UCSD-PTGBM-0022_01",
+        "UCSD-PTGBM-0022_02",
+        "UCSD-PTGBM-0023_01",
+        "UCSD-PTGBM-0024_01",
+        "UCSD-PTGBM-0025_01",
+        "UCSD-PTGBM-0025_02",
+        "UCSD-PTGBM-0025_03",
+        "UCSD-PTGBM-0026_01",
+        "UCSD-PTGBM-0029_01",
+        "UCSD-PTGBM-0031_01",
+        "UCSD-PTGBM-0032_01",
+        "UCSD-PTGBM-0032_02",
+        "UCSD-PTGBM-0032_03",
+        "UCSD-PTGBM-0032_04",
+        "UCSD-PTGBM-0034_01",
+        "UCSD-PTGBM-0034_02",
+        "UCSD-PTGBM-0035_01",
+        "UCSD-PTGBM-0039_01",
+        "UCSD-PTGBM-0044_01",
+        "UCSD-PTGBM-0047_01",
+        "UCSD-PTGBM-0047_02",
+        "UCSD-PTGBM-0049_01",
+        "UCSD-PTGBM-0050_01",
+        "UCSD-PTGBM-0050_02",
+        "UCSD-PTGBM-0050_03",
+        "UCSD-PTGBM-0050_04",
+        "UCSD-PTGBM-0051_01",
+        "UCSD-PTGBM-0053_01",
+        "UCSD-PTGBM-0053_02",
+        "UCSD-PTGBM-0053_03",
+        "UCSD-PTGBM-0055_01",
+        "UCSD-PTGBM-0059_01",
+        "UCSD-PTGBM-0062_01",
+        "UCSD-PTGBM-0063_01",
+        "UCSD-PTGBM-0064_01",
+        "UCSD-PTGBM-0072_01",
+        "UCSD-PTGBM-0073_01",
+        "UCSD-PTGBM-0073_02",
+        "UCSD-PTGBM-0074_01",
+        "UCSD-PTGBM-0075_01",
+        "UCSD-PTGBM-0076_01",
+        "UCSD-PTGBM-0077_01",
+        "UCSD-PTGBM-0080_01",
+        "UCSD-PTGBM-0081_01",
+        "UCSD-PTGBM-0082_01",
+        "UCSD-PTGBM-0083_01",
+        "UCSD-PTGBM-0084_01",
+        "UCSD-PTGBM-0087_01",
+        "UCSD-PTGBM-0088_01",
+        "UCSD-PTGBM-0089_01",
+        "UCSD-PTGBM-0090_01",
+        "UCSD-PTGBM-0092_01",
+        "UCSD-PTGBM-0093_01",
+        "UCSD-PTGBM-0094_01",
+        "UCSD-PTGBM-0097_01",
+        "UCSD-PTGBM-0099_01",
+        "UCSD-PTGBM-0100_01",
+        "UCSD-PTGBM-0101_01",
+        "UCSD-PTGBM-0101_02",
+        "UCSD-PTGBM-0104_01",
+        "UCSD-PTGBM-0105_01",
+        "UCSD-PTGBM-0107_01",
+        "UCSD-PTGBM-0110_01",
+        "UCSD-PTGBM-0113_01",
+        "UCSD-PTGBM-0114_01",
+        "UCSD-PTGBM-0118_01",
+        "UCSD-PTGBM-0119_01",
+        "UCSD-PTGBM-0119_02",
+        "UCSD-PTGBM-0120_01",
+        "UCSD-PTGBM-0120_02",
+        "UCSD-PTGBM-0122_01",
+        "UCSD-PTGBM-0123_01",
+        "UCSD-PTGBM-0123_02",
+        "UCSD-PTGBM-0123_03",
+        "UCSD-PTGBM-0124_01",
+        "UCSD-PTGBM-0124_02",
+        "UCSD-PTGBM-0125_01",
+        "UCSD-PTGBM-0127_01",
+        "UCSD-PTGBM-0129_01",
+        "UCSD-PTGBM-0130_01",
+        "UCSD-PTGBM-0131_01",
+        "UCSD-PTGBM-0132_01",
+        "UCSD-PTGBM-0134_01",
+        "UCSD-PTGBM-0135_01",
+        "UCSD-PTGBM-0135_02",
+        "UCSD-PTGBM-0135_03",
+        "UCSD-PTGBM-0136_01",
+        "UCSD-PTGBM-0137_01",
+        "UCSD-PTGBM-0137_02",
+        "UCSD-PTGBM-0138_01",
+        "UCSD-PTGBM-0139_01",
+        "UCSD-PTGBM-0140_01",
+        "UCSD-PTGBM-0140_02",
+        "UCSD-PTGBM-0142_01",
+        "UCSD-PTGBM-0148_01",
+        "UCSD-PTGBM-0150_01",
+        "UCSD-PTGBM-0150_02",
+        "UCSD-PTGBM-0153_01",
+        "UCSD-PTGBM-0154_01",
+        "UCSD-PTGBM-0155_01",
+        "UCSD-PTGBM-0155_02",
+        "UCSD-PTGBM-0156_01",
+        "UCSD-PTGBM-0157_01",
+        "UCSD-PTGBM-0158_01",
+        "UCSD-PTGBM-0159_01",
+        "UCSD-PTGBM-0160_01",
+        "UCSD-PTGBM-0161_01",
+        "UCSD-PTGBM-0162_01",
+        "UCSD-PTGBM-0162_02",
+        "UCSD-PTGBM-0164_01",
+        "UCSD-PTGBM-0165_01",
+        "UCSD-PTGBM-0166_01",
+        "UCSD-PTGBM-0167_01",
+        "UCSD-PTGBM-0167_02",
+        "UCSD-PTGBM-0168_01",
+        "UCSD-PTGBM-0169_01",
+        "UCSD-PTGBM-0170_01",
+        "UCSD-PTGBM-0171_01",
+        "UCSD-PTGBM-0172_01",
+        "UCSD-PTGBM-0172_02",
+        "UCSD-PTGBM-0174_01",
+        "UCSD-PTGBM-0174_02",
+        "UCSD-PTGBM-0175_01",
+        "UCSD-PTGBM-0176_01",
+        "UCSD-PTGBM-0176_02",
+        "UCSD-PTGBM-0177_01",
+        "UCSD-PTGBM-0178_01",
+        "UCSD-PTGBM-0178_02"
+      ],
+      "test_IDs": [
+        "UCSD-PTGBM-0007_01",
+        "UCSD-PTGBM-0007_02",
+        "UCSD-PTGBM-0008_01",
+        "UCSD-PTGBM-0008_02",
+        "UCSD-PTGBM-0008_03",
+        "UCSD-PTGBM-0037_01",
+        "UCSD-PTGBM-0037_02",
+        "UCSD-PTGBM-0037_03",
+        "UCSD-PTGBM-0045_01",
+        "UCSD-PTGBM-0056_01",
+        "UCSD-PTGBM-0058_01",
+        "UCSD-PTGBM-0060_01",
+        "UCSD-PTGBM-0066_01",
+        "UCSD-PTGBM-0066_02",
+        "UCSD-PTGBM-0071_01",
+        "UCSD-PTGBM-0078_01",
+        "UCSD-PTGBM-0079_01",
+        "UCSD-PTGBM-0085_01",
+        "UCSD-PTGBM-0086_01",
+        "UCSD-PTGBM-0091_01",
+        "UCSD-PTGBM-0103_01",
+        "UCSD-PTGBM-0103_02",
+        "UCSD-PTGBM-0106_01",
+        "UCSD-PTGBM-0108_01",
+        "UCSD-PTGBM-0117_01",
+        "UCSD-PTGBM-0126_01",
+        "UCSD-PTGBM-0128_01",
+        "UCSD-PTGBM-0133_01",
+        "UCSD-PTGBM-0133_02",
+        "UCSD-PTGBM-0147_01",
+        "UCSD-PTGBM-0147_02",
+        "UCSD-PTGBM-0151_01",
+        "UCSD-PTGBM-0152_01",
+        "UCSD-PTGBM-0163_01",
+        "UCSD-PTGBM-0163_02",
+        "UCSD-PTGBM-0163_03",
+        "UCSD-PTGBM-0173_01"
+      ],
+      "valid": true,
+      "errors": [],
+      "models": {
+        "M0": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "binary__sex_male"
+            ],
+            "intercept": 0.9392029167825273,
+            "coefficients": [
+              0.4596970722969959,
+              0.5134042703603455
+            ],
+            "iterations": 7,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.97241379310345
+                ],
+                "scale": [
+                  14.030481510446538
+                ]
+              }
+            },
+            "binary": [
+              "sex_male"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.5277777777777778,
+            "ap_tumor": 0.8063628104792759,
+            "ap_treatment_change": 0.31695106383938443,
+            "brier": 0.18608202534889803,
+            "sensitivity_tumor": 1.0,
+            "specificity_treatment_change": 0.0,
+            "balanced_accuracy": 0.5,
+            "accuracy": 0.7567567567567568,
+            "tn": 0,
+            "fp": 9,
+            "fn": 0,
+            "tp": 28,
+            "log_loss": 0.5594597590217173,
+            "precision_tumor": 0.7567567567567568,
+            "precision_treatment_change": null
+          }
+        },
+        "M1": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing"
+            ],
+            "intercept": 0.9326349743709828,
+            "coefficients": [
+              0.12825775745621987,
+              -0.8562561367017872,
+              0.3892903906469236,
+              0.5861732490238828,
+              1.2104194136390407
+            ],
+            "iterations": 11,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.97241379310345
+                ],
+                "scale": [
+                  14.030481510446538
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  5.004616823191753
+                ],
+                "scale": [
+                  1.1955150559651533
+                ],
+                "impute_median": 5.18951913410549
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.5634920634920635,
+            "ap_tumor": 0.7838805814007832,
+            "ap_treatment_change": 0.4021689231248055,
+            "brier": 0.1969203853037615,
+            "sensitivity_tumor": 0.9642857142857143,
+            "specificity_treatment_change": 0.1111111111111111,
+            "balanced_accuracy": 0.5376984126984127,
+            "accuracy": 0.7567567567567568,
+            "tn": 1,
+            "fp": 8,
+            "fn": 1,
+            "tp": 27,
+            "log_loss": 0.6135003213269347,
+            "precision_tumor": 0.7714285714285715,
+            "precision_treatment_change": 0.5
+          }
+        },
+        "MRI": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 1.7939837615012852,
+            "coefficients": [
+              0.13694152480466953,
+              0.08927032227695869,
+              -0.4680825573558351,
+              0.5195776409024404,
+              -0.25024451555794663,
+              1.148024765160643,
+              -0.2399006125512335,
+              0.503157602789831
+            ],
+            "iterations": 12,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.795577725561318,
+                  0.2181801176857955,
+                  4.072635698280823,
+                  9.213847263592442,
+                  0.282924621645463,
+                  0.17866738765378212,
+                  3.592025780272759,
+                  8.038304405921979
+                ],
+                "scale": [
+                  0.11554003765890296,
+                  0.08422587686737483,
+                  0.34802027082857157,
+                  4.308619083053473,
+                  0.09569166238309183,
+                  0.059632129025117685,
+                  0.49143890103227544,
+                  5.060152693823025
+                ]
+              }
+            },
+            "binary": []
+          },
+          "metrics": {
+            "roc_auc": 0.8015873015873016,
+            "ap_tumor": 0.8989895504929121,
+            "ap_treatment_change": 0.5576617826617827,
+            "brier": 0.14195133240884897,
+            "sensitivity_tumor": 0.9285714285714286,
+            "specificity_treatment_change": 0.2222222222222222,
+            "balanced_accuracy": 0.5753968253968254,
+            "accuracy": 0.7567567567567568,
+            "tn": 2,
+            "fp": 7,
+            "fn": 2,
+            "tp": 26,
+            "log_loss": 0.48989359346820216,
+            "precision_tumor": 0.7878787878787878,
+            "precision_treatment_change": 0.5
+          }
+        },
+        "Fusion": {
+          "success": true,
+          "parameters": {
+            "transformed_names": [
+              "age__age_years",
+              "interval__log_initial_event_days",
+              "binary__sex_male",
+              "binary__other_treatment_prior",
+              "binary__initial_event_missing",
+              "MRI__FLAIR_mean",
+              "MRI__FLAIR_std",
+              "MRI__FLAIR_entropy",
+              "MRI__FLAIR_glcm_contrast",
+              "MRI__T1post_mean",
+              "MRI__T1post_std",
+              "MRI__T1post_entropy",
+              "MRI__T1post_glcm_contrast"
+            ],
+            "intercept": 0.9331940235436527,
+            "coefficients": [
+              0.08174758801935077,
+              -0.4275457164067006,
+              0.8738524518848618,
+              0.7807333532653932,
+              1.23450180068837,
+              0.2738615677630377,
+              0.11295286442629363,
+              -0.30201672227721754,
+              0.35923863394802735,
+              -0.4764272044322189,
+              1.2109972754235694,
+              -0.11606290786823024,
+              0.3513916575317003
+            ],
+            "iterations": 17,
+            "classes": [
+              0,
+              1
+            ],
+            "continuous": {
+              "age": {
+                "columns": [
+                  "age_years"
+                ],
+                "mean": [
+                  55.97241379310345
+                ],
+                "scale": [
+                  14.030481510446538
+                ]
+              },
+              "interval": {
+                "columns": [
+                  "log_initial_event_days"
+                ],
+                "mean": [
+                  5.004616823191753
+                ],
+                "scale": [
+                  1.1955150559651533
+                ],
+                "impute_median": 5.18951913410549
+              },
+              "MRI": {
+                "columns": [
+                  "FLAIR_mean",
+                  "FLAIR_std",
+                  "FLAIR_entropy",
+                  "FLAIR_glcm_contrast",
+                  "T1post_mean",
+                  "T1post_std",
+                  "T1post_entropy",
+                  "T1post_glcm_contrast"
+                ],
+                "mean": [
+                  0.795577725561318,
+                  0.2181801176857955,
+                  4.072635698280823,
+                  9.213847263592442,
+                  0.282924621645463,
+                  0.17866738765378212,
+                  3.592025780272759,
+                  8.038304405921979
+                ],
+                "scale": [
+                  0.11554003765890296,
+                  0.08422587686737483,
+                  0.34802027082857157,
+                  4.308619083053473,
+                  0.09569166238309183,
+                  0.059632129025117685,
+                  0.49143890103227544,
+                  5.060152693823025
+                ]
+              }
+            },
+            "binary": [
+              "sex_male",
+              "other_treatment_prior",
+              "initial_event_missing"
+            ]
+          },
+          "metrics": {
+            "roc_auc": 0.7976190476190477,
+            "ap_tumor": 0.9049733549768357,
+            "ap_treatment_change": 0.6244975431249942,
+            "brier": 0.14455731504455302,
+            "sensitivity_tumor": 0.9642857142857143,
+            "specificity_treatment_change": 0.2222222222222222,
+            "balanced_accuracy": 0.5932539682539683,
+            "accuracy": 0.7837837837837838,
+            "tn": 2,
+            "fp": 7,
+            "fn": 1,
+            "tp": 27,
+            "log_loss": 0.47308861153999243,
+            "precision_tumor": 0.7941176470588235,
+            "precision_treatment_change": 0.6666666666666666
+          }
+        }
+      }
+    }
+  ]
+}

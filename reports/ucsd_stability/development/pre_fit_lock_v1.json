@@ -1,0 +1,82 @@
+{
+  "protocol_sha256": "6e631c9c0da479dc725a0a84779e585c0b53bd0802d3be8527a6497df42b163c",
+  "analysis_code_sha256": "9ae5eafad5f5c906d1c7d87169bab8fcb3c72648d62534240ee7367be7292157",
+  "prior_model_code_sha256": "78f835bfe655d5445187f22bb606b477893c96444ad5eb2fbda1301b3afeef2a",
+  "input_sha256": {
+    "data/processed/ucsd_clinical_revalidated_cohort.csv": "a57c9ee9c27cc261045a006675957482bd0bcfec9a9ce36735cd5abca5487006",
+    "data/processed/ucsd_clinical_image_features.csv": "d9e7041bc4d6d99fb53fd6057aae00ad958308968bf9ac38c0cb91995cb3b757",
+    "data/processed/ucsd_image_features.csv": "8dad4becca7e373865f35240a437af9de79f941ac4bc701f3a08e97ff11036e7",
+    "data/processed/ucsd_image_features_eroded.csv": "11c6774baeba08492400b2b2ab103794ccbd370adf634b3b53bb78cf00d086e0",
+    "reports/ucsd_fusion/analysis_lock.json": "95e1a60dbfff553c76209ba96d1262d0554e50d62b387c217cac9d840332485b",
+    "reports/ucsd_fusion/metrics.json": "2cd0e75d4647644133827a4a521b8f286a994f8b6ddd7569aed8927db661d2ac",
+    "data/processed/ucsd_fusion_oof.csv": "a50d076eff8a49f1f97cbf2e32150a307757f1775bb9e3d99fcb7911b23a178d"
+  },
+  "seeds": [
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042,
+    20261043,
+    20261044,
+    20261045,
+    20261046,
+    20261047,
+    20261048
+  ],
+  "single_scan_seed": 20261029,
+  "single_scan_bootstrap_seed": 20261101,
+  "single_scan_rule": "minimum_numeric_session_within_current_imaged_subset_then_ID",
+  "models": {
+    "M0": [
+      "age_years",
+      "sex_male"
+    ],
+    "M1": [
+      "age_years",
+      "log_initial_event_days",
+      "sex_male",
+      "other_treatment_prior",
+      "initial_event_missing"
+    ],
+    "MRI": [
+      "FLAIR_mean",
+      "FLAIR_std",
+      "FLAIR_entropy",
+      "FLAIR_glcm_contrast",
+      "T1post_mean",
+      "T1post_std",
+      "T1post_entropy",
+      "T1post_glcm_contrast"
+    ],
+    "Fusion": [
+      "age_years",
+      "log_initial_event_days",
+      "sex_male",
+      "other_treatment_prior",
+      "initial_event_missing",
+      "FLAIR_mean",
+      "FLAIR_std",
+      "FLAIR_entropy",
+      "FLAIR_glcm_contrast",
+      "T1post_mean",
+      "T1post_std",
+      "T1post_entropy",
+      "T1post_glcm_contrast"
+    ]
+  },
+  "manifest_sha256": {
+    "repeated_fold_manifest.csv": "918b37d18b25e2a0086e25cceca1cb1b0d11576453145d2e7deda291e152a085",
+    "single_scan_selection.csv": "cd914ac1c2bf142113c0e37b75b8b11284ef8e21d0396adf6ea39ac40c906fe7",
+    "single_scan_fold_manifest.csv": "04de82e500df85ecd45c220c2d1b4168d756b6b739dcc0ef842a7db6c034ef6d"
+  }
+}

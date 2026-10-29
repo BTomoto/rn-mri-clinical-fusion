@@ -1,0 +1,5 @@
+comparison,metric,statistic,n_complete,median,q25,q75,minimum,maximum,positive_count,zero_count,negative_count,interpretation
+Fusion_minus_M1,roc_auc,difference,20,0.12480539699014004,0.11788617886178865,0.1347950181629476,0.1028368794326241,0.15040650406504064,20,0,0,descriptive_split_distribution_not_confidence_interval
+Fusion_minus_M1,ap_treatment_change,difference,20,0.12521289801003246,0.10765611440804747,0.13936411856195552,0.06835346419669847,0.17607057535657544,20,0,0,descriptive_split_distribution_not_confidence_interval
+Fusion_minus_M1,brier,difference,20,-0.019096504960279495,-0.022719168384313287,-0.017616986787790147,-0.026674901391777417,-0.013777015962466027,0,0,20,descriptive_split_distribution_not_confidence_interval
+Fusion_minus_M1,log_loss,difference,20,-0.046701590639044194,-0.05824426953123259,-0.037748362888875245,-0.07129745107054064,-0.021600729246146644,0,0,20,descriptive_split_distribution_not_confidence_interval
