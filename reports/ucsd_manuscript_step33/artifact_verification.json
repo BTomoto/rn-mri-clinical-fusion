@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "stage": 33,
+  "date": "2026-10-29",
+  "subsection": "3.1 Cohort flow",
+  "paragraph_ids": [
+    "R1"
+  ],
+  "english_word_count": 204,
+  "paragraph_word_counts": {
+    "R1": 204
+  },
+  "matched_chinese_paragraphs": 1,
+  "word_pages": 2,
+  "visual_review_pages": [
+    1,
+    2
+  ],
+  "native_editable_equations": 0,
+  "equation_numbers": [],
+  "equation_images": 0,
+  "prior_files_unchanged": 147,
+  "cohort_count_fields_checked": 20,
+  "label_rows_compared_to_source": 425,
+  "clinical_status_rows_checked": 238,
+  "imaging_file_sets_checked": 182,
+  "finite_mri_feature_values_checked": 1456,
+  "table_count_cells_checked": 12,
+  "overlapping_diagnostic_patient_groups_disclosed": true,
+  "unchanged_figure_embedded": true,
+  "models_refitted": 0,
+  "new_hypothesis_tests": 0,
+  "new_manuscript_references": 0,
+  "cumulative_unique_cited_sources": 5,
+  "next_section": "Results 3.2 Clinical characteristics (R2)",
+  "sha256": {
+    "outputs/ucsd-manuscript-step33-20261029/UCSD_Manuscript_Results_3_1_EN.txt": "f3b5425797f1c638ccdfab39d68522681693339664b301fe420dc9c4ceef7654",
+    "outputs/ucsd-manuscript-step33-20261029/UCSD_Manuscript_Results_3_1_EN_ZH.docx": "aca8be285e8efdf1690706d5545e9b1395dc0d53ca889db14d464f90fcc96b3c"
+  }
+}

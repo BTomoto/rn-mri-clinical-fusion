@@ -2,6 +2,10 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
+**第33步已完成Results 3.1队列流程（R1）。** [中英对照Word](outputs/ucsd-manuscript-step33-20261029/UCSD_Manuscript_Results_3_1_EN_ZH.docx)包含204个英文词、一组中译，附未改变的既有英文Figure 1，共2页。描述243→238→182次检查及178→176→135名患者、56次未覆盖记录、影像标签构成和两类患者人数的8名交叉。
+
+见[第33步报告](reports/ucsd_manuscript_step33_20261029.md)、[段落与计数依据](reports/ucsd_manuscript_step33/results_section31.json)及[核对回执](reports/ucsd_manuscript_step33/artifact_verification.json)。五个人群20个计数、425行嵌套标签核查、238条覆盖状态及原表12个计数一致；147份既有文件未变。未重训、提取特征或增加检验。已写M1–M20及R1，共3335个英文词，下一节为3.2临床特征（R2），等待用户批准。
+
 **第32步已完成Methods 2.10复现与软件说明（M20）。** [中英对照Word](outputs/ucsd-manuscript-step32-20261029/UCSD_Manuscript_Methods_2_10_EN_ZH.docx)包含181个英文词、一组中译及软件文献引用，共1页。说明软件/内核、OOF与分析锁、特征表复算和影像归档恢复的不同条件，以及数据可得性决定样本规模。
 
 见[第32步报告](reports/ucsd_manuscript_step32_20261029.md)、[段落与核查依据](reports/ucsd_manuscript_step32/methods_section210.json)及[核对回执](reports/ucsd_manuscript_step32/artifact_verification.json)。六条依赖记录、三个Notebook的15个代码单元哈希、两份分析锁、546行清单和18份Git样本核对一致；528份追加影像依据既有恢复回执核查，不声称其在GitHub公开或本轮重新恢复。方法M1–M20全部写齐，共3131个英文词、20组中译、10组编号公式；S40暂为引用5，全文尚未完成。下一节为Results 3.1队列流程（R1），等待用户批准。
