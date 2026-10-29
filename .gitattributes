@@ -1,0 +1,2 @@
+# Preserve this mirror source exactly (CP1252, CRLF and trailing empty field).
+data/raw/reference/ucsd_mirror_participants.tsv -text -diff

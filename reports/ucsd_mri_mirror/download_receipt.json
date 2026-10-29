@@ -1,0 +1,156 @@
+{
+  "checked_at_utc": "2026-10-29T05:41:42.022421+00:00",
+  "metadata": {
+    "path": "data/raw/reference/ucsd_mirror_participants.tsv",
+    "bytes": 60110,
+    "sha256": "718854757eba9332f0e2872e93b88809987aff204a3d01350e138f8ae0a5960e",
+    "release_digest_matches": true,
+    "reused": true
+  },
+  "files": [
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "ADC_vendor",
+      "filename": "sub-0002_ses-01_ADC_vendor.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0002_ses-01_ADC_vendor.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1407565,
+      "sha256": "42d5f1ea124ee628548ecfb5a4214142927c03c3a34249d0d1c64acf9ae9cc8d",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "BraTS_tumor_seg",
+      "filename": "sub-0002_ses-01_BraTS_tumor_seg.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0002_ses-01_BraTS_tumor_seg.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 33354,
+      "sha256": "9d61432845dd730350df6e61cc05b1e93e6ea35366fe1f031223662f8acd1199",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "FLAIR",
+      "filename": "sub-0002_ses-01_FLAIR.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0002_ses-01_FLAIR.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_FLAIR.nii.gz",
+      "bytes": 1516394,
+      "sha256": "89bfa3dcdcae053657e8b7407c860a80850ecef444b2dcd85e81985e7a19ed24",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "T1post",
+      "filename": "sub-0002_ses-01_run-post_T1w.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0002_ses-01_run-post_T1w.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1511179,
+      "sha256": "d0e4b535a42c74817147bc019350bff715ed519847998457c0aa43ddb38024cd",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "T1pre",
+      "filename": "sub-0002_ses-01_run-pre_T1w.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0002_ses-01_run-pre_T1w.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1517704,
+      "sha256": "2b3cd8df7a45a6d88e8c3cffa79984a734d25704849c144f0021b37538c65aae",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "T2",
+      "filename": "sub-0002_ses-01_T2w.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0002_ses-01_T2w.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_T2w.nii.gz",
+      "bytes": 1443226,
+      "sha256": "e26a5b4d358bd414d82415f462cf4561d217f98a3af8d258db6c591570eaf62e",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "ADC_vendor",
+      "filename": "sub-0005_ses-01_ADC_vendor.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0005_ses-01_ADC_vendor.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1298889,
+      "sha256": "1dc88d1e79bd2eff2fcbff0e9374aeccccdd5b8b43904db160baae3211d40dc7",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "BraTS_tumor_seg",
+      "filename": "sub-0005_ses-01_BraTS_tumor_seg.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0005_ses-01_BraTS_tumor_seg.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 18969,
+      "sha256": "22393136d2e55b94fdc8fc59018e00d9ef5dac41220bfeac5c3bdae3fb114628",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "FLAIR",
+      "filename": "sub-0005_ses-01_FLAIR.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0005_ses-01_FLAIR.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_FLAIR.nii.gz",
+      "bytes": 1433135,
+      "sha256": "1f4851f2ec6baa1a987ef8c2d0b6cac2bb487ae4fb2cf316193e68f073bf57f5",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "T1post",
+      "filename": "sub-0005_ses-01_run-post_T1w.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0005_ses-01_run-post_T1w.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1292197,
+      "sha256": "f08bcf8ab77531037464e2b133398200b25421e7c1e76e7b63e045d60c038a9c",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "T1pre",
+      "filename": "sub-0005_ses-01_run-pre_T1w.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0005_ses-01_run-pre_T1w.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1425681,
+      "sha256": "2ace846c846f60358522db52d52ce225590a24969e6419b93ee5c380b40f6f4d",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "T2",
+      "filename": "sub-0005_ses-01_T2w.nii.gz",
+      "url": "https://github.com/data-nih/tcia/releases/download/ucsd-ptgbm/sub-0005_ses-01_T2w.nii.gz",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_T2w.nii.gz",
+      "bytes": 1353272,
+      "sha256": "977e5f5187a19f15f5b908d5297e326faeb6e856954888a19b62873423b2bc9b",
+      "release_digest_matches": true,
+      "reused": true
+    }
+  ]
+}

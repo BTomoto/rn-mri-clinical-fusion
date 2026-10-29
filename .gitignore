@@ -60,3 +60,6 @@ node_modules/
 /reports/ucsd_revalidation_workbook_input.json
 /outputs/ucsd-clinical-revalidation-20261029/preview_*.png
 /outputs/ucsd-clinical-revalidation-20261029/*.inspect.ndjson
+/reports/ucsd_mirror_workbook_input.json
+/outputs/ucsd-mri-mirror-20261029/preview_*.png
+/outputs/ucsd-mri-mirror-20261029/*.inspect.ndjson

@@ -1,0 +1,3 @@
+ID,mirror_metadata_ID,brats_ID,patient_id,tumor_label,label_source,two_identifier_fields_match
+UCSD-PTGBM-0002_01,sub-0002_01,BraTS-GLI-02251-100,UCSD-PTGBM-0002,0,explicit_negative_case_list,True
+UCSD-PTGBM-0005_01,sub-0005_01,BraTS-GLI-02254-100,UCSD-PTGBM-0005,1,derived_from_published_243_equals_192_plus_51_partition,True
