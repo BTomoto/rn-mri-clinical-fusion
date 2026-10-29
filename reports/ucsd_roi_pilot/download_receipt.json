@@ -1,0 +1,365 @@
+{
+  "checked_at_utc": "2026-10-29T07:22:33.252106+00:00",
+  "files": [
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "ADC_vendor",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1407565,
+      "sha256": "42d5f1ea124ee628548ecfb5a4214142927c03c3a34249d0d1c64acf9ae9cc8d",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "BraTS_tumor_seg",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 33354,
+      "sha256": "9d61432845dd730350df6e61cc05b1e93e6ea35366fe1f031223662f8acd1199",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "FLAIR",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_FLAIR.nii.gz",
+      "bytes": 1516394,
+      "sha256": "89bfa3dcdcae053657e8b7407c860a80850ecef444b2dcd85e81985e7a19ed24",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "T1post",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1511179,
+      "sha256": "d0e4b535a42c74817147bc019350bff715ed519847998457c0aa43ddb38024cd",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "T1pre",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1517704,
+      "sha256": "2b3cd8df7a45a6d88e8c3cffa79984a734d25704849c144f0021b37538c65aae",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0002_01",
+      "sequence": "T2",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0002_ses-01_T2w.nii.gz",
+      "bytes": 1443226,
+      "sha256": "e26a5b4d358bd414d82415f462cf4561d217f98a3af8d258db6c591570eaf62e",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "ADC_vendor",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1298889,
+      "sha256": "1dc88d1e79bd2eff2fcbff0e9374aeccccdd5b8b43904db160baae3211d40dc7",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "BraTS_tumor_seg",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 18969,
+      "sha256": "22393136d2e55b94fdc8fc59018e00d9ef5dac41220bfeac5c3bdae3fb114628",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "FLAIR",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_FLAIR.nii.gz",
+      "bytes": 1433135,
+      "sha256": "1f4851f2ec6baa1a987ef8c2d0b6cac2bb487ae4fb2cf316193e68f073bf57f5",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "T1post",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1292197,
+      "sha256": "f08bcf8ab77531037464e2b133398200b25421e7c1e76e7b63e045d60c038a9c",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "T1pre",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1425681,
+      "sha256": "2ace846c846f60358522db52d52ce225590a24969e6419b93ee5c380b40f6f4d",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0005_01",
+      "sequence": "T2",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0005_ses-01_T2w.nii.gz",
+      "bytes": 1353272,
+      "sha256": "977e5f5187a19f15f5b908d5297e326faeb6e856954888a19b62873423b2bc9b",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0006_01",
+      "sequence": "ADC_vendor",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0006_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1328422,
+      "sha256": "e261dfe0daada2cfc8ef3254a7dfa5ab8ee1aec081a912c36ee9145c181d9901",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0006_01",
+      "sequence": "BraTS_tumor_seg",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0006_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 35284,
+      "sha256": "37531b5c8abbf2ab2f5abc9e3038ac4856cb5622f181144bb4b044750e2914e2",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0006_01",
+      "sequence": "FLAIR",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0006_ses-01_FLAIR.nii.gz",
+      "bytes": 1400882,
+      "sha256": "469ccff732e4eea45236a90a68bec33dd2b3172bf56ed75bdfdb4b00ffef6f57",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0006_01",
+      "sequence": "T1post",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0006_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1249069,
+      "sha256": "6ef7f6c0394352c23376254c4a195e3f3be429e3e85fac68576cb02bdd8a163b",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0006_01",
+      "sequence": "T1pre",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0006_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1381952,
+      "sha256": "f3a3acf39721ba9232dc73f337c9142fdf129bcaf11ab99556ece185d4a2f790",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0006_01",
+      "sequence": "T2",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0006_ses-01_T2w.nii.gz",
+      "bytes": 1358695,
+      "sha256": "aa4df3516561d258dd138117ad39edfadfb909567ea72a697d71448488c7bc00",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0007_01",
+      "sequence": "ADC_vendor",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0007_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1294437,
+      "sha256": "e5e996ef034f95cf0b6f7205c6ee85f48f7307fbb2a47b4ba25b41de2ca40452",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0007_01",
+      "sequence": "BraTS_tumor_seg",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0007_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 31327,
+      "sha256": "61e6a54e92540943a611e899e4e2cc65c82093dd798d212e4562359a129f4a70",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0007_01",
+      "sequence": "FLAIR",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0007_ses-01_FLAIR.nii.gz",
+      "bytes": 1411340,
+      "sha256": "2f2cbf184b2111aac7f87c421e540a8d599ea4567f6df57c315cb26d150055d3",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0007_01",
+      "sequence": "T1post",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0007_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1419845,
+      "sha256": "3ad8f90c91aff7eebee830464ecba3da3d78461b27a846a552333584ce030d55",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0007_01",
+      "sequence": "T1pre",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0007_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1416492,
+      "sha256": "9679bd77a896a09f3ba6781102f911509ae05502a652230d00db6e7d59f2ea00",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0007_01",
+      "sequence": "T2",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0007_ses-01_T2w.nii.gz",
+      "bytes": 1332677,
+      "sha256": "54468041fe0badea538dd496f4a51c81542a531a2fdcc04b7156c4d35b387eb5",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0008_02",
+      "sequence": "ADC_vendor",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0008_ses-02_ADC_vendor.nii.gz",
+      "bytes": 1470039,
+      "sha256": "43de3723d96a7033299bf73cd032a11767adbde9f4980c5cefa59dd9e0db42b3",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0008_02",
+      "sequence": "BraTS_tumor_seg",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0008_ses-02_BraTS_tumor_seg.nii.gz",
+      "bytes": 21421,
+      "sha256": "3a24b9da5a502e3ede7bc0d0dbdfb8b66dd41e687a3b0c242678fe96df89cfdd",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0008_02",
+      "sequence": "FLAIR",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0008_ses-02_FLAIR.nii.gz",
+      "bytes": 1587650,
+      "sha256": "f757d73eb307204a5095bc1cab3f84180e3f8ddd3d1d1f85b75f9d910d44944c",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0008_02",
+      "sequence": "T1post",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0008_ses-02_run-post_T1w.nii.gz",
+      "bytes": 1601883,
+      "sha256": "1ba309f3472b4047273ae0047bc35c8ba8cd90515a4dbec2e5bc46ec012c4b51",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0008_02",
+      "sequence": "T1pre",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0008_ses-02_run-pre_T1w.nii.gz",
+      "bytes": 1597688,
+      "sha256": "c5a62fbf02104666cafc0361a358bb4859bfd0dfbbb2fb5fa9788e61f14799ee",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0008_02",
+      "sequence": "T2",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0008_ses-02_T2w.nii.gz",
+      "bytes": 1546124,
+      "sha256": "519b446460236fc82f4db45b6bcae45f06542b10d9fc528f6fc4a7edd0677243",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0010_01",
+      "sequence": "ADC_vendor",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0010_ses-01_ADC_vendor.nii.gz",
+      "bytes": 1499890,
+      "sha256": "e17b60e267789814baa2c2ab5e7287bbe42447d71fa48a84e56682ce6b336ac0",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0010_01",
+      "sequence": "BraTS_tumor_seg",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0010_ses-01_BraTS_tumor_seg.nii.gz",
+      "bytes": 20767,
+      "sha256": "2cded3126ee71fa6d395de3919e47723dfc17b387829234567735a0153895dbe",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0010_01",
+      "sequence": "FLAIR",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0010_ses-01_FLAIR.nii.gz",
+      "bytes": 1629814,
+      "sha256": "77cf936da86a5550bc266b3b7637bc777ed8bd4086c5025390b58a80edeb3bef",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0010_01",
+      "sequence": "T1post",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0010_ses-01_run-post_T1w.nii.gz",
+      "bytes": 1435476,
+      "sha256": "ff50b341a12374822c195074c6e0296461c73a96fde8ece2fd0ffa4e0986c2f0",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0010_01",
+      "sequence": "T1pre",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0010_ses-01_run-pre_T1w.nii.gz",
+      "bytes": 1617691,
+      "sha256": "36f91519ffc5acbfc7631099b0d9551fa4d98bba80eb35245d27a6adcfa4afed",
+      "release_digest_matches": true,
+      "reused": true
+    },
+    {
+      "ID": "UCSD-PTGBM-0010_01",
+      "sequence": "T2",
+      "success": true,
+      "path": "data/samples/ucsd_mirror/sub-0010_ses-01_T2w.nii.gz",
+      "bytes": 1515525,
+      "sha256": "db06feb14a67b3d0aef5646b7c4736eac3a0702c79774f0d3bba3fcec89df171",
+      "release_digest_matches": true,
+      "reused": true
+    }
+  ]
+}

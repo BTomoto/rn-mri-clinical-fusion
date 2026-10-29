@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-29T07:21:32.967864+00:00",
+  "tests_run": 67,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "elapsed_seconds": 3.855,
+  "new_ROI_pilot_tests": 6,
+  "synthetic_array_tests_are_not_patient_data": true
+}

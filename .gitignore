@@ -63,3 +63,6 @@ node_modules/
 /reports/ucsd_mirror_workbook_input.json
 /outputs/ucsd-mri-mirror-20261029/preview_*.png
 /outputs/ucsd-mri-mirror-20261029/*.inspect.ndjson
+/reports/ucsd_roi_workbook_input.json
+/outputs/ucsd-roi-pilot-20261029/preview_*.png
+/outputs/ucsd-roi-pilot-20261029/*.inspect.ndjson

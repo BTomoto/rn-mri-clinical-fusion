@@ -2,7 +2,19 @@
 
 公开UCSD-PTGBM数据二次分析项目。用户已明确批准从原脑转移瘤未来RN风险预测问题，调整为高级别胶质瘤治疗后残余/复发肿瘤与治疗相关改变的鉴别。仓库名保留以维持链接；原项目资料作为历史记录保留，不合并两队列。
 
-**第15步已通过普通HTTPS镜像取得两例真实MRI，用户无需手动下载或安装Aspera。** 固定0002_01（治疗改变）与0005_01（肿瘤），12文件共14.25 MB全部完整下载、校验及解码；[实际NIfTI](data/samples/ucsd_mirror/)、[Notebook15](notebooks/15_ucsd_mri_mirror_samples.ipynb)、[Excel](outputs/ucsd-mri-mirror-20261029/UCSD_MRI_Mirror_Samples.xlsx)和[报告](reports/ucsd_mri_mirror_step15_20261029.md)均保留。三组真实图像预览已生成，5个代码单元实际执行成功，全项目61项测试通过。
+**第16步已完成六例MRI技术扩展与统一ROI/强度处理试验。** 共6名不同源患者、两类各3例，36文件43.46 MB全部取得并解码；6例按普通BraTS全部正标签并集生成非空“源标注区域”，24份结构图像完成处理。原分位裁切会合并部分ROI高信号，最高26.33%；保留初始结果后追加不裁切线性缩放，24份成功，推荐下一阶段固定此方法。它是执行后工程修正，不是预注册或经独立样本证明最佳。尚未训练MRI模型或估计AUC。
+
+见[第16步报告](reports/ucsd_roi_pilot_step16_20261029.md)、[原固定协议](reports/ucsd_roi_pilot_protocol.md)、[明确追加的强度修正](reports/ucsd_roi_pilot_intensity_amendment.md)、[Notebook16](notebooks/16_ucsd_roi_and_intensity_pilot.ipynb)、[Excel](outputs/ucsd-roi-pilot-20261029/UCSD_ROI_Intensity_Pilot.xlsx)及[派生二值ROI](data/processed/ucsd_roi_pilot_masks/)。Notebook实际执行5个单元、0错误；全项目67项测试通过。36份空间单位仍为unknown，30份强度图均uint8；不计算mL体积、毫米形态或定量ADC。源标注区域不是纯肿瘤，标注盲法未确认，技术成功不等于临床有效性。下一阶段建议按固定方法批量提取有限探索性特征，等待用户批准。
+
+```bash
+python scripts/run_ucsd_roi_pilot.py
+python scripts/run_ucsd_intensity_followup.py
+python scripts/run_notebooks_kernel.py --report reports/kernel_execution_16.json notebooks/16_ucsd_roi_and_intensity_pilot.ipynb
+python scripts/make_ucsd_roi_deliverables.py
+python scripts/verify_ucsd_roi_artifacts.py
+```
+
+第15步记录：通过普通HTTPS镜像取得最初两例真实MRI，用户无需手动下载或安装Aspera。固定0002_01（治疗改变）与0005_01（肿瘤），12文件共14.25 MB全部完整下载、校验及解码；[实际NIfTI](data/samples/ucsd_mirror/)、[Notebook15](notebooks/15_ucsd_mri_mirror_samples.ipynb)、[Excel](outputs/ucsd-mri-mirror-20261029/UCSD_MRI_Mirror_Samples.xlsx)和[报告](reports/ucsd_mri_mirror_step15_20261029.md)均保留。三组真实图像预览已生成，5个代码单元实际执行成功，当时61项测试通过。
 
 所有样本空间单位unknown，10份强度图像为uint8、范围0–255。因此12份均可解码且相对原生网格一致，但预设物理尺度检查仍未通过；未将步长1解释成1 mm，ADC不能作为原始定量值，普通分割尚未批准为预测ROI，没有训练MRI模型。镜像目录在既有238条临床队列内覆盖182次扫描/135名源患者（141肿瘤、41治疗改变），**这是候选目录数，当前实际只取得两例12文件**。本步用户已批准采用其他下载途径，不要求额外认证官方原文件来源；保留地址、编号与文件校验供正确连接及复现。
 
@@ -156,8 +168,9 @@ GitHub版本将超过3 MiB的原始表格、分割ZIP和完整目录索引保存
 14. `13_ucsd_clinical_revalidation.ipynb`：隔离5条后的M0/M1临床比较、患者簇成对区间、完整间隔资料敏感性分析和两例MRI传输重试记录。
 15. `14_ucsd_mri_intake_and_qc.ipynb`：两例MRI精确接收、完整体素/几何质控及ROI边界；当前缺实际文件，真实质控未完成。
 16. `15_ucsd_mri_mirror_samples.ipynb`：替代HTTPS镜像两例12文件实际下载、解码、相对网格、物理尺度问题、真实图像预览及238行覆盖表。
+17. `16_ucsd_roi_and_intensity_pilot.ipynb`：六例36文件、统一源标注区域、24份结构图像处理、一次腐蚀诊断，以及明确标记为执行后增加的不裁切方案。
 
-00—04保留普通Python顺序执行器验证的输出。05—15已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—15分别独立保存对应的执行JSON。00—10未训练模型；11生成历史性能，12发现双ID问题，13完成隔离后的重新验证和扩展临床比较，14—15未拟合模型。
+00—04保留普通Python顺序执行器验证的输出。05—16已使用进程内Jupyter/ipykernel执行，每份5个代码单元均成功，标准输出、标准错误及结果写回Notebook。05—07执行回执见 `reports/kernel_execution.json`，08—16分别独立保存对应的执行JSON。00—10未训练模型；11生成历史性能，12发现双ID问题，13完成隔离后的重新验证和扩展临床比较，14—16未拟合模型。
 
 当前环境禁止常规独立内核所需的TCP/IPC通信。新增的进程内执行器不打开端口，但仍使用ipykernel和Jupyter消息队列；这不等于验证了独立内核服务器或浏览器前端。该模式仅运行可信项目Notebook，没有硬超时或独立进程隔离。Notebook也可在正常JupyterLab环境中重跑。requirements.txt已加入本轮实际验证的pydicom和nibabel版本。先前的抽样和结构核查可依次运行：
 

@@ -1,0 +1,15 @@
+{
+  "recommended_next_stage_method": "per_image_p01_p99_affine_unclipped_then_ROI_FBN32",
+  "added_after_observing_clipping": true,
+  "uses_clinical_class": false,
+  "model_performance_used": false,
+  "reason": "Avoid additional tail collapse measured under the original clipping rule",
+  "original_clipping_outputs_preserved": true,
+  "structural_records": 24,
+  "successful_records": 24,
+  "quantitative_ADC_allowed": false,
+  "physical_volume_allowed": false,
+  "independent_optimality_validated": false,
+  "amendment_sha256": "f6917cdfac7ab2bd50cbb0eb3fbe0c5bd096808f284595d0099a4f3503246a60",
+  "code_sha256": "670290f35c2e5b79dc1de254b21fd0cc4a200b935ae0d2eb7779c3e3bf1b5774"
+}
