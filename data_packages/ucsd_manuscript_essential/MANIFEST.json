@@ -1,0 +1,520 @@
+{
+  "package": "UCSD_Manuscript_Essential_Data_20261030",
+  "created_date": "2026-10-30",
+  "source_commit": "73f04f53c42257a7c45a64aaa96066d8dc61660f",
+  "scope": "Original clinical sources and derived MRI-feature analysis data; voxel images referenced, not bundled",
+  "files": [
+    {
+      "path": "DATA_DICTIONARY.csv",
+      "bytes": 1790,
+      "sha256": "bda3294618305928bc67ac20b3591bded07e010bf3cddb2061a3c2fb8a97489b",
+      "role": "package_documentation_or_verification",
+      "source_repository_path": null,
+      "source_git_blob_sha": null
+    },
+    {
+      "path": "DATA_LICENSES.md",
+      "bytes": 2663,
+      "sha256": "d0ceb506ab171b11eed783c3f0ad36c9825d0cb2331198c110e93d91441616bd",
+      "role": "provenance_or_environment",
+      "source_repository_path": "DATA_LICENSES.md",
+      "source_git_blob_sha": "a9c2dc8c31d8e0845b70a299da9a98318434a563"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6203,
+      "sha256": "542f56c4529f95aa2bb7573e0be086bf7e33fa8d866094ff42b0ff2b386a924b",
+      "role": "package_documentation_or_verification",
+      "source_repository_path": null,
+      "source_git_blob_sha": null
+    },
+    {
+      "path": "Verify_Essential_Data.ipynb",
+      "bytes": 911,
+      "sha256": "d0572455cd87b1f9a6e75b9b507a28f6f09ce9391d3542a236898fa3d1cea05a",
+      "role": "package_documentation_or_verification",
+      "source_repository_path": null,
+      "source_git_blob_sha": null
+    },
+    {
+      "path": "data/metadata/public_label_audit_20261029/downloaded_sources.json",
+      "bytes": 973,
+      "sha256": "ad3a3228b79b2c584fc9dcff4e8834a54ffcfd2dfbdf79b8e97779f8ce8db807",
+      "role": "provenance_or_environment",
+      "source_repository_path": "data/metadata/public_label_audit_20261029/downloaded_sources.json",
+      "source_git_blob_sha": "1e088b19e012d84361690b7d016d609ace852952"
+    },
+    {
+      "path": "data/metadata/ucsd_mirror_inventory_receipt.json",
+      "bytes": 1476,
+      "sha256": "e9fdf0347be99c047eacd8d40ae7cfe620f736fec795203536d5630a216637db",
+      "role": "provenance_or_environment",
+      "source_repository_path": "data/metadata/ucsd_mirror_inventory_receipt.json",
+      "source_git_blob_sha": "cc83714e0c5ddbfe05ef2117de7a8f1be6ba11f5"
+    },
+    {
+      "path": "data/processed/ucsd_clinical_all_fields_raw.csv",
+      "bytes": 61602,
+      "sha256": "f284ea356c753f190cd53f00a3ed7a803ad0ed44534ed6a2dd8564e97004ccb6",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_clinical_all_fields_raw.csv",
+      "source_git_blob_sha": "361abc06354bec9361b94de06be3b40cb833e079"
+    },
+    {
+      "path": "data/processed/ucsd_clinical_image_features.csv",
+      "bytes": 62817,
+      "sha256": "d9e7041bc4d6d99fb53fd6057aae00ad958308968bf9ac38c0cb91995cb3b757",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_clinical_image_features.csv",
+      "source_git_blob_sha": "d0dc6a947bdcece7ce5713fbb9963b9391041416"
+    },
+    {
+      "path": "data/processed/ucsd_clinical_revalidated_cohort.csv",
+      "bytes": 46249,
+      "sha256": "a57c9ee9c27cc261045a006675957482bd0bcfec9a9ce36735cd5abca5487006",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_clinical_revalidated_cohort.csv",
+      "source_git_blob_sha": "5ba648e7efed45435b6045dc6fbb00a5bf10d114"
+    },
+    {
+      "path": "data/processed/ucsd_fusion_oof.csv",
+      "bytes": 41123,
+      "sha256": "a50d076eff8a49f1f97cbf2e32150a307757f1775bb9e3d99fcb7911b23a178d",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_fusion_oof.csv",
+      "source_git_blob_sha": "2f2c47f1a0c8cccb034b82f399fd983c0fe5914f"
+    },
+    {
+      "path": "data/processed/ucsd_image_features.csv",
+      "bytes": 31006,
+      "sha256": "8dad4becca7e373865f35240a437af9de79f941ac4bc701f3a08e97ff11036e7",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_image_features.csv",
+      "source_git_blob_sha": "3f82feb77d1ef01a167538dcebcea1756931fb34"
+    },
+    {
+      "path": "data/processed/ucsd_image_features_eroded.csv",
+      "bytes": 31020,
+      "sha256": "11c6774baeba08492400b2b2ab103794ccbd370adf634b3b53bb78cf00d086e0",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_image_features_eroded.csv",
+      "source_git_blob_sha": "30934b633d56bf0de751ecb4aa3efdd2a417173f"
+    },
+    {
+      "path": "data/processed/ucsd_ptgbm_label_feasibility.csv",
+      "bytes": 37262,
+      "sha256": "36054aebcdc0d41edc2f7cb0e5dedf73386eb7f92029029ff8c8a0d203b10f58",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_ptgbm_label_feasibility.csv",
+      "source_git_blob_sha": "0353ed27919f5f243f22554e469b046d1e395771"
+    },
+    {
+      "path": "data/processed/ucsd_stability_repeated_oof.csv",
+      "bytes": 660001,
+      "sha256": "d8d51898035141c8e7080f3049886d00cccbcb854f157c49b969df1aa7585e0f",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_stability_repeated_oof.csv",
+      "source_git_blob_sha": "316c6e29910a159991a9f3c220bdc37235fe62ba"
+    },
+    {
+      "path": "data/processed/ucsd_stability_single_scan_oof.csv",
+      "bytes": 23133,
+      "sha256": "07d93b8392287d3528169c791715075457c04e2e8b3ee2f6d31928b85caaa5e2",
+      "role": "derived_analysis_data",
+      "source_repository_path": "data/processed/ucsd_stability_single_scan_oof.csv",
+      "source_git_blob_sha": "618e2395eeeff3e87e79c72cf1a9b68c138c2907"
+    },
+    {
+      "path": "data/raw/reference/ucsd_mirror_participants.tsv",
+      "bytes": 60110,
+      "sha256": "718854757eba9332f0e2872e93b88809987aff204a3d01350e138f8ae0a5960e",
+      "role": "original_public_source",
+      "source_repository_path": "data/raw/reference/ucsd_mirror_participants.tsv",
+      "source_git_blob_sha": "bf6636cda96fd83150c6093ba4dd081425b830b4"
+    },
+    {
+      "path": "data/raw/reference/ucsd_ptgbm_clinical_v3.xlsx",
+      "bytes": 93648,
+      "sha256": "bbf40bbdd289266924869052806de4d7e8fc9ee73286cdc0cc066672ef5bb51d",
+      "role": "original_public_source",
+      "source_repository_path": "data/raw/reference/ucsd_ptgbm_clinical_v3.xlsx",
+      "source_git_blob_sha": "92a41d05a143dff8ee932c31e693eeef66bc6ee8"
+    },
+    {
+      "path": "data/raw/reference/ucsd_ptgbm_negative_cases.xlsx",
+      "bytes": 9890,
+      "sha256": "6d99db8ac1feac569e50c18ed214a1a761858fb8bfa614a29ec5f036946b96e4",
+      "role": "original_public_source",
+      "source_repository_path": "data/raw/reference/ucsd_ptgbm_negative_cases.xlsx",
+      "source_git_blob_sha": "2f861e6943d64688af4a26ddeb7c8571a0b1fda0"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 396,
+      "sha256": "1ba281addc1034d6996b1d3ebc152a5c7938d79dab500e1ff89f83064b7c12ea",
+      "role": "provenance_or_environment",
+      "source_repository_path": "pyproject.toml",
+      "source_git_blob_sha": "7d8214a83c07997c5b0a2055fca25f3e16c8bbb4"
+    },
+    {
+      "path": "reports/ucsd_batch_features/actual_file_QC.csv",
+      "bytes": 178867,
+      "sha256": "f4c52701950886256d52d5d22db3a38c8855bc8b350fef8d0796566a575ef5ce",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features/actual_file_QC.csv",
+      "source_git_blob_sha": "8cc87c63d2ea27016a11d931852f09c246dfdb99"
+    },
+    {
+      "path": "reports/ucsd_batch_features/all_clinical_case_status.csv",
+      "bytes": 57362,
+      "sha256": "01f3bc85fb0d98cb85279e119753a866458e10c78a4d706eb07e7742b6cbfaca",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features/all_clinical_case_status.csv",
+      "source_git_blob_sha": "59b1ff764e62f58b911ab257c7e0ffb3abd60f0c"
+    },
+    {
+      "path": "reports/ucsd_batch_features/coverage_by_status_and_label.csv",
+      "bytes": 151,
+      "sha256": "3b81fe9a6cb9fbbe9704c43de73a41bb49c1b97b2555118e5d0d90f0a4c74601",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features/coverage_by_status_and_label.csv",
+      "source_git_blob_sha": "14581e67dad7ef2cc49197a5f1cd90110514a184"
+    },
+    {
+      "path": "reports/ucsd_batch_features/feature_dictionary.csv",
+      "bytes": 2184,
+      "sha256": "ed4f760acd7458e13362dbe8fd31d06c852d37db4708951d81e15b98b2429401",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features/feature_dictionary.csv",
+      "source_git_blob_sha": "c4c8715a6a9647d178122816b8b4785cf176ca38"
+    },
+    {
+      "path": "reports/ucsd_batch_features/normalization_and_texture_diagnostics.csv",
+      "bytes": 50836,
+      "sha256": "ac173a725a82f0dc840c5ff8003a91c379fa1fb8c0ca86b31ebb72fccd326e49",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features/normalization_and_texture_diagnostics.csv",
+      "source_git_blob_sha": "5d4141ee5021f03da7acc2fb964ec18454b424e8"
+    },
+    {
+      "path": "reports/ucsd_batch_features/source_manifest.csv",
+      "bytes": 147774,
+      "sha256": "ab5e39540e033b81c3e38c4e37ff6ff91efe0cbc7b27054f4081e9126b20908c",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features/source_manifest.csv",
+      "source_git_blob_sha": "8150bc98a6430b85189003b6919624096d612c9a"
+    },
+    {
+      "path": "reports/ucsd_batch_features_protocol.md",
+      "bytes": 5374,
+      "sha256": "97295726f97902b3f21480d825534b0b224d2ef905f6cb0e5dfb283490919109",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_batch_features_protocol.md",
+      "source_git_blob_sha": "8d50236c9c5813dbe084cff090b34b9ddf406343"
+    },
+    {
+      "path": "reports/ucsd_clinical_revalidation/excluded_identity_conflicts.csv",
+      "bytes": 744,
+      "sha256": "6eb454c93a4776ac334007bc4961bf46dc984148c935bc34569c1baa3b01f0ae",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_clinical_revalidation/excluded_identity_conflicts.csv",
+      "source_git_blob_sha": "e3ebdfa58c32eaed38b0c31d2bf259a6381f0335"
+    },
+    {
+      "path": "reports/ucsd_feature_audit/identity_mapping.csv",
+      "bytes": 23921,
+      "sha256": "ee6e0653032e311f09c68afd694981d5cc3609ed52bbd6eae86104a87db5b89b",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_feature_audit/identity_mapping.csv",
+      "source_git_blob_sha": "685679423fa40805ffbc7058945b75d27e74b9d8"
+    },
+    {
+      "path": "reports/ucsd_fusion/analysis_lock.json",
+      "bytes": 1600,
+      "sha256": "95e1a60dbfff553c76209ba96d1262d0554e50d62b387c217cac9d840332485b",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/analysis_lock.json",
+      "source_git_blob_sha": "1638dacc7bf0246fd324073f50a997fbe724c51a"
+    },
+    {
+      "path": "reports/ucsd_fusion/calibration_bins.csv",
+      "bytes": 1625,
+      "sha256": "bb339ad9b2597a1822cca67565133c08be5efd8f08e30bd493bc9bdc018e8a75",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/calibration_bins.csv",
+      "source_git_blob_sha": "945785ce404db95c6af50e95408ebf181e2589c0"
+    },
+    {
+      "path": "reports/ucsd_fusion/cohort_and_fold_manifest.csv",
+      "bytes": 14272,
+      "sha256": "1614cb85aa55914a33a86fd28cdb5b9bab15e17b732ee1d1914917a87e061fcc",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/cohort_and_fold_manifest.csv",
+      "source_git_blob_sha": "8931fe885bb5992e01a4f1d02332f9839e579185"
+    },
+    {
+      "path": "reports/ucsd_fusion/fold_audit.json",
+      "bytes": 104600,
+      "sha256": "8e7893716ddb9fb840cfceadbe1c7d872bab1495e1a805102e8c7a3260f7cec4",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/fold_audit.json",
+      "source_git_blob_sha": "b47767082d1eb3eabd3dc5ebdef3ab5b883475da"
+    },
+    {
+      "path": "reports/ucsd_fusion/full_fit_coefficients.csv",
+      "bytes": 2404,
+      "sha256": "0dda9d1fbd77de242f929482aab1419c94420ae96fd2a98d6ece1bf919c14781",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/full_fit_coefficients.csv",
+      "source_git_blob_sha": "23d2687235c99f31e5ae5cf1917829366d396ddc"
+    },
+    {
+      "path": "reports/ucsd_fusion/metrics.json",
+      "bytes": 24293,
+      "sha256": "2cd0e75d4647644133827a4a521b8f286a994f8b6ddd7569aed8927db661d2ac",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/metrics.json",
+      "source_git_blob_sha": "d09fca61c8bd14db8aac9b5359c9a2e98ebb846c"
+    },
+    {
+      "path": "reports/ucsd_fusion/model_metrics.csv",
+      "bytes": 3205,
+      "sha256": "3bedab6f85eb47b0967da1205f274c8453893c3ff1063663feaf27edcc297ffb",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/model_metrics.csv",
+      "source_git_blob_sha": "bbd118c78e3a03a31be87f4d6ca2d6fbbae425bf"
+    },
+    {
+      "path": "reports/ucsd_fusion/paired_comparisons.csv",
+      "bytes": 2012,
+      "sha256": "34426e0eea12e85559d69ad0d6ac97e77f8ab5db8206846e1fc42aa896126e8a",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/paired_comparisons.csv",
+      "source_git_blob_sha": "9ee594b14917deb69b1c9f001ada51276eec943a"
+    },
+    {
+      "path": "reports/ucsd_fusion/paired_patient_bootstrap.csv",
+      "bytes": 1776176,
+      "sha256": "b453e9da9a01c50361c33677542b8fee528f0b01142bd7ce1393f359aae69824",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion/paired_patient_bootstrap.csv",
+      "source_git_blob_sha": "6e4829e7fbbc032e31c2d734bd94b59402a83b14"
+    },
+    {
+      "path": "reports/ucsd_fusion_protocol.md",
+      "bytes": 5292,
+      "sha256": "83c590fbff2abf2dbaf657d2e61995c7f15a573876bfb3f99108b0693a8dc3eb",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_fusion_protocol.md",
+      "source_git_blob_sha": "3696847dd9a57d177eb10f6d4fe37df799fd9d1b"
+    },
+    {
+      "path": "reports/ucsd_stability/analysis_lock.json",
+      "bytes": 2682,
+      "sha256": "86437fae2e7e8e1c5500b7d80b442cec2588cc50b7fb3579ada7182422f11917",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/analysis_lock.json",
+      "source_git_blob_sha": "1410fcca7418d0e58cb9a0200275c66aa8603f2b"
+    },
+    {
+      "path": "reports/ucsd_stability/metrics.json",
+      "bytes": 27873,
+      "sha256": "c536aa22d36fe2f658dde0ad5ad685a09411fe68c69953d9675fdb763f40f502",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/metrics.json",
+      "source_git_blob_sha": "bab866379c3846996b366b360015b80714cda532"
+    },
+    {
+      "path": "reports/ucsd_stability/repeated_fold_manifest.csv",
+      "bytes": 326050,
+      "sha256": "918b37d18b25e2a0086e25cceca1cb1b0d11576453145d2e7deda291e152a085",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/repeated_fold_manifest.csv",
+      "source_git_blob_sha": "f39111465bde6f73ae45def25bb4d0584341e708"
+    },
+    {
+      "path": "reports/ucsd_stability/repeated_metrics.csv",
+      "bytes": 23204,
+      "sha256": "22d5c081bc550e22baf903ab508b3bee0bf6f7fe392f0b040d591243c1d05ce5",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/repeated_metrics.csv",
+      "source_git_blob_sha": "bd357273ad42690dcc8dba9bae8fc96dfe1cd3c0"
+    },
+    {
+      "path": "reports/ucsd_stability/repeated_paired_differences.csv",
+      "bytes": 4753,
+      "sha256": "51aefa520c7f6cb75695c4642f770f62b5c2d4967adc4b614271a08896c58322",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/repeated_paired_differences.csv",
+      "source_git_blob_sha": "c3e1e0bcc188a47ede951a5187b0d7744ef59f6d"
+    },
+    {
+      "path": "reports/ucsd_stability/single_scan_fold_manifest.csv",
+      "bytes": 10606,
+      "sha256": "04de82e500df85ecd45c220c2d1b4168d756b6b739dcc0ef842a7db6c034ef6d",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/single_scan_fold_manifest.csv",
+      "source_git_blob_sha": "548a076e5d06d0b8d1ac2bf6a053188a1f48d7a1"
+    },
+    {
+      "path": "reports/ucsd_stability/single_scan_metrics.csv",
+      "bytes": 2099,
+      "sha256": "dfacdf34d691a260b00c0fe4896ee2e6c921fa8acf953a3abf7b6e42f7e76357",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/single_scan_metrics.csv",
+      "source_git_blob_sha": "ef4b6777117f86baf7b4d38ec4b338f310897ae5"
+    },
+    {
+      "path": "reports/ucsd_stability/single_scan_patient_bootstrap.csv",
+      "bytes": 794485,
+      "sha256": "717f03f6df48b7fd91d1c47a7c0c49f0a7097c73c58a69b3b36490b9b0757c57",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/single_scan_patient_bootstrap.csv",
+      "source_git_blob_sha": "5c17761d632b3b959a8a010d3c9d10c315c60364"
+    },
+    {
+      "path": "reports/ucsd_stability/single_scan_selection.csv",
+      "bytes": 24726,
+      "sha256": "cd914ac1c2bf142113c0e37b75b8b11284ef8e21d0396adf6ea39ac40c906fe7",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability/single_scan_selection.csv",
+      "source_git_blob_sha": "095e39e76c62cc6dc86eb29ab83589319e5e1273"
+    },
+    {
+      "path": "reports/ucsd_stability_protocol.md",
+      "bytes": 4449,
+      "sha256": "6e631c9c0da479dc725a0a84779e585c0b53bd0802d3be8527a6497df42b163c",
+      "role": "saved_result_or_audit",
+      "source_repository_path": "reports/ucsd_stability_protocol.md",
+      "source_git_blob_sha": "3a1fab313c17d7f7b73bc7451c11bf5d4e5cc1be"
+    },
+    {
+      "path": "requirements-imaging.txt",
+      "bytes": 84,
+      "sha256": "8fa10e1685ae1bc63f3a95b30a3527292415078686c9b644c958cdf7cb1f4e70",
+      "role": "provenance_or_environment",
+      "source_repository_path": "requirements-imaging.txt",
+      "source_git_blob_sha": "7f2af1223269c60aa50d3970e37bc0df85893166"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 213,
+      "sha256": "f418b628834a60f480146a7fc11f4cb4c5f823d273008532391713120db747f6",
+      "role": "provenance_or_environment",
+      "source_repository_path": "requirements.txt",
+      "source_git_blob_sha": "d5adbb4bc2ab8bdfaebc3dac0bb3845d049a3383"
+    },
+    {
+      "path": "requirements_verify.txt",
+      "bytes": 77,
+      "sha256": "3ea5c5ce4f9477291eca8d32bdb1c108eea9f6cff37bb73957b768f5ddaac459",
+      "role": "package_documentation_or_verification",
+      "source_repository_path": null,
+      "source_git_blob_sha": null
+    },
+    {
+      "path": "src/rn_public/__init__.py",
+      "bytes": 85,
+      "sha256": "f60fc32fcb17ce958aa590156c815a7b579b526f2f80aede56cc28b16db1fd2d",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/__init__.py",
+      "source_git_blob_sha": "b7cb7cd94da6b7d5ea6dcc4927c0a140cbd6dff8"
+    },
+    {
+      "path": "src/rn_public/remotezip.py",
+      "bytes": 6225,
+      "sha256": "e9fad8aae812f33f05fb650368400d0ec97484508714c623475f867b888769f9",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/remotezip.py",
+      "source_git_blob_sha": "c7e90e718334cac842432a999ae90a49ede1ae09"
+    },
+    {
+      "path": "src/rn_public/ucsd_batch_features.py",
+      "bytes": 16025,
+      "sha256": "5bd243d1f22e7e555d9e3b3689729bd88c3da7d5d2a77f712dcf89238aa94a96",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_batch_features.py",
+      "source_git_blob_sha": "ccbe79d5c56566441e42bcbaf425b2b1eab86084"
+    },
+    {
+      "path": "src/rn_public/ucsd_clinical_baseline.py",
+      "bytes": 14838,
+      "sha256": "28def6e181f9e7f8c273efa59aaa7af12299eb740d6d49530c0eeb8de29eea2a",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_clinical_baseline.py",
+      "source_git_blob_sha": "c2af2b35f713a250b4bb9ecd4bb7e56d57e3c0f0"
+    },
+    {
+      "path": "src/rn_public/ucsd_clinical_revalidation.py",
+      "bytes": 14298,
+      "sha256": "050a4aaf0e9602b7c9d79e0132301e415b5390a02a9151e084a416ace6db0413",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_clinical_revalidation.py",
+      "source_git_blob_sha": "117ab91f43183bcf7a8fc0f9796bf579fe5c60f9"
+    },
+    {
+      "path": "src/rn_public/ucsd_feature_audit.py",
+      "bytes": 14810,
+      "sha256": "6ef434637ae15ec6f0c34a047413fa2ada292502bfd3ec50c1af31b1d3040506",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_feature_audit.py",
+      "source_git_blob_sha": "5968740aadd08c8f9ca06fe94bf2538a192445e8"
+    },
+    {
+      "path": "src/rn_public/ucsd_fusion.py",
+      "bytes": 15352,
+      "sha256": "78f835bfe655d5445187f22bb606b477893c96444ad5eb2fbda1301b3afeef2a",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_fusion.py",
+      "source_git_blob_sha": "6a8c4dbb10cc802232f337148ab9c6ec2799e9ce"
+    },
+    {
+      "path": "src/rn_public/ucsd_intensity_followup.py",
+      "bytes": 4085,
+      "sha256": "670290f35c2e5b79dc1de254b21fd0cc4a200b935ae0d2eb7779c3e3bf1b5774",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_intensity_followup.py",
+      "source_git_blob_sha": "aa7b9749694f9a9e4b85dc164d438627393d2f07"
+    },
+    {
+      "path": "src/rn_public/ucsd_mri_intake.py",
+      "bytes": 12826,
+      "sha256": "b9da93e85b8cec68cf98317f254b5d6ede2c2067e054b6fa4a17c541950ebf39",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_mri_intake.py",
+      "source_git_blob_sha": "51ff55d31ddf63092a7d169cf60cf704eba5fbdf"
+    },
+    {
+      "path": "src/rn_public/ucsd_mri_mirror.py",
+      "bytes": 16062,
+      "sha256": "ce408292e53a38937f6c4b71e4e9b29949a04011e3a8bde596a1084f5b8e3e17",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_mri_mirror.py",
+      "source_git_blob_sha": "29fcae30b5105c7d5bda626d9905e7eb06dd6d51"
+    },
+    {
+      "path": "src/rn_public/ucsd_roi_pilot.py",
+      "bytes": 14382,
+      "sha256": "291268b9aa038b02912d199178bb06e24f105268db95a8850e011d01a43bd6f0",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_roi_pilot.py",
+      "source_git_blob_sha": "85c44ef7ce8ad204a36445fb6c6d146824c23e56"
+    },
+    {
+      "path": "src/rn_public/ucsd_stability.py",
+      "bytes": 13659,
+      "sha256": "90e4a08be5a5389d701b7f79bdd8ce86371df83557f3a40fcfb442a2c3277005",
+      "role": "original_analysis_code",
+      "source_repository_path": "src/rn_public/ucsd_stability.py",
+      "source_git_blob_sha": "dc0a906ed5a198868c4fcba5fd3fe8d30ba27626"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 6794,
+      "sha256": "db3e7d4b047277e0587c52b95ababa16524fc56b5445f0708f33c30630c36abd",
+      "role": "package_documentation_or_verification",
+      "source_repository_path": null,
+      "source_git_blob_sha": null
+    }
+  ]
+}
